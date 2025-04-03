@@ -1,0 +1,64 @@
+**Prompt de révision académique pour la prochaine version du document**  
+---
+
+### **Consignes générales**  
+1. **Alignement structurel** :  
+   - Restructurer le document selon les **4 piliers** :  
+     - **Fondamentaux techniques**  
+     - **Écosystème applicatif**  
+     - **Gouvernance et sécurité**  
+     - **Stratégie d’adoption**  
+   - Appliquer la **taxonomie révisée** (cf. schéma joint en annexe).  
+
+2. **Exigences critiques** :  
+   - **Hiérarchiser les extensions** par *maturité* (communauté vs entreprise), *performance* (benchmarks), et *impact sectoriel* (ex. santé, IoT).  
+   - **Éliminer les redondances** (ex. fusionner *Vecteurs* et *Documents* sous *Données non structurées*).  
+   - **Annoter chaque extension** avec :  
+     - ✅ **Avantage clé** (ex. *TimescaleDB : compression 44% vs InfluxDB*).  
+     - ⚠️ **Limite/Risque** (ex. *Apache AGE : manque de support OpenCypher avancé*).  
+     - 📊 **Source empirique** (lien vers étude/benchmark).  
+
+3. **Rigueur académique** :  
+   - **Intégrer 3 références minimum par section** issues de :  
+     - Publications peer-reviewed (ex. ACM, IEEE, VLDB).  
+     - Benchmarks indépendants (ex. TPC-H, DB-Engines).  
+     - Livres blancs d’entreprises (ex. Timescale, Supabase).  
+   - **Ajouter des visualisations** :  
+     - Schémas d’architecture (ex. *Stack PostgreSQL + Extensions*).  
+     - Matrices comparatives (ex. *FDW : latence vs débit*).  
+
+4. **Analyse stratégique** :  
+   - **Inclure un SWOT** pour les sections *Compétitivité* et *Services managés*.  
+   - **Relier les outils à des cas réels** :  
+     - Exemple : *PostGIS → Projet Smart City de Barcelone (source : [35])*.  
+     - Exemple : *pgvector → RAG chez OpenAI (source : blog technique, 2023)*.  
+   - **Quantifier les gains** :  
+     - Réduction TCO (ex. *Neon vs Aurora : -30% de coûts*).  
+     - Performance (ex. *Citus : 1M req/s sur cluster Kubernetes*).  
+
+5. **Style et ton** :  
+   - **Éviter le catalogue technique** : Privilégier l’analyse critique (*Pourquoi cette extension ? Pour qui ?*).  
+   - **Adopter un vocabulaire académique** : Utiliser *"il est démontré que..."*, *"les données suggèrent..."*.  
+   - **Bannir les affirmations non sourcées** : Remplacer *"PostgreSQL est rapide"* par *"PostgreSQL atteint 72k TPS en OLTP (source : TPC-E, 2022)"*.  
+
+---
+
+### **Checklist de validation**  
+- [ ] Toutes les sections suivent le schéma **Fondamentaux → Applicatif → Gouvernance → Stratégie**.  
+- [ ] Chaque extension est annotée (✅/⚠️/📊).  
+- [ ] 100% des affirmations techniques sont sourcées (pas de *"selon des tests internes"*).  
+- [ ] Les visualisations incluent des légendes académiques (ex. *"Figure 1 : Flux de données pgvector → LLM"*).  
+- [ ] Les risques sont cartographiés (ex. tableau *"Extensions à éviter en production"*).  
+
+---
+
+### **Pièces jointes obligatoires**  
+1. **Grille d’évaluation des extensions** (ex. *Maturité, Licence, Support*).  
+2. **Glossaire des acronymes techniques** (ex. *FDW, TCO, OLAP*).  
+3. **Bibliographie normée** (format APA ou IEEE).  
+
+--- 
+
+**Objectif final** : Transformer le document d’une liste technique en un **rapport stratégique**, utilisable par des CTO, architectes et chercheurs pour justifier des choix d’infrastructure et anticiper les tendances.  
+
+✒️ *« Une analyse n’est rigoureuse que si elle survive à la critique par les pairs. »* — Adaptation de Karl Popper.

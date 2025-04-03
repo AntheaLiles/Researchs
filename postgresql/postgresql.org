@@ -1,0 +1,793 @@
+#+title: Exploration de l'écosystème applicatif de PostgreSQL
+#+subtitle: Note de veille technologique
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/Projects/research-templates/lualatex.org"
+#+PROPERTY: header-args:R :results output graphics :exports results
+
+#+begin_abstract
+Abstract
+#+end_abstract
+
+#+latex: \textbf{Mots clés : }\keywords{Mots clés}
+
+#+latex: \begin{multicols*}{2}
+
+* Introduction
+Contexte
+# Mutation des besoins data (multi-modalité, échelle, sécurité)
+# PostgreSQL dans l’ère des données multi-modales
+# Echo au secteur de la construction
+
+# Pourquoi est-il intéressant d'explorer en profondeur un écosystème applicatif ?
+
+# Pourquoi s'intéresser à PostgreSQL ?
+#+NAME: db-ranking-graph
+#+CAPTION: Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL
+#+BEGIN_SRC R :file charts/top5.pdf :width 10 :height 6 :exports results :results graphics
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+csv_file <- "dataset/2025-04-DBEngineRanking.csv"
+
+tryCatch({
+  data <- read_csv2(csv_file, col_names = TRUE, locale = locale(encoding = "latin1"))
+}, error = function(e) {
+  stop(paste("Erreur lors de la lecture du fichier CSV:", csv_file, "-", e))
+})
+
+plot_object <- ggplot(data, aes(x = Date)) +
+  geom_line(aes(y = Oracle, color = "Oracle")) +
+  geom_line(aes(y = MySQL, color = "MySQL")) +
+  geom_line(aes(y = PostgreSQL, color = "PostgreSQL")) +
+  labs(x = "Date",
+       y = "Score",
+       color = "Base de Données") +
+  theme_minimal() +
+  scale_color_manual(values = c("Oracle" = "blue", "MySQL" = "red", "PostgreSQL" = "green"))
+
+print(plot_object)
+#+END_SRC
+
+#+RESULTS: db-ranking-graph
+
+#+CAPTION: Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL
+#+NAME: fig:db-ranking                    
+#+ATTR_LATEX: :placement [H]
+[[file:charts/top5.pdf]] 
+
+Objectif 
+# Analyser les capacités différentielles de PostgreSQL dans le paysage DBMS moderne
+# Identifier les composantes à l'origine de la modularité de PostgreSQL, les fonctions sur lesquelles chaque extensions se reposent etc.
+
+Enjeux
+# Lier la modularité de PostgreSQL à des défis organisationnels (ex. maintenance des compétences techniques en entreprise).
+# La centralisation de toutes ses sources d’informations et de connaissance d’un actif en exploitation permet de mettre en œuvre diverses solution de valorisation des assets numériques et particulièrement ceux créés lors des phases de conception.
+
+Méthodologie
+# Préciser les critères de sélection des extensions (popularité, maintenance, licence) et les limites de l’étude (exclusions, biais de source).
+# Benchmark technique, analyse d'extensions, études de cas documentées.
+# Intégrer des critères complémentaires (ex. maintenance active, support industriel).
+
+Concentration sur les projets les plus populaires, sourcés via [[https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb][PostgreSQL is Enough]] et [[https://gist.github.com/joelonsql/e5aa27f8cc9bd22b8999b7de8aee9d47][1000+ PostgreSQL Extensions]], filtré à plus de 100 étoiles et dont les développements sont toujours en cours (Mars 2025).
+
+* Fondamentaux techniques  
+** Extensions multi-modèles
+# Couverture des paradigmes (relationnel, graphe, vecteurs)
+
+Bien que PostgreSQL soit initialement une base de données relationnelle orientée objet, il permet de créer des types de données personnalisés pour en étendre ses fonctionnalités.
+
+Associé à ses capacités d'extensions, cette capacité de modification du logiciel lui permet de prendre un charge la quasi totalité des modèles de données existantes comme à venir.
+
+Un grand nombre d'extensions communautaires, parfois portées par des entreprises, sont employés à cet effet.
+
+*** Relationnel étendu
+# Relationnel, Objet, Multivalues
+# Compatibilité Oracle, MySQL
+
+# Souligner la compatibilité avec les standards industriels (ex. Oracle).
+
+- [[https://github.com/tembo-io/pg_auto_dw][pg_auto_dw]] :: An auto data warehouse extension for Postgres
+- [[https://github.com/darold/pgtt][pgtt]] :: extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
+
+*** Traitement en temps réel
+# Séries temporelles, Event Store
+
+#+caption: Ingestion des données en temps réel
+#+attr_latex: :placement [H] :width \linewidth
+| Nom           | Particularité      |
+|---------------+--------------------|
+| [[https://github.com/timescale/timescaledb][TimescaleDB]]   | Hypertables        |
+|               | Chunking           |
+|               | Compression TSPC   |
+| [[https://github.com/tembo-io/pg_timeseries][pg_timeseries]] | time-series tables |
+|               |                    |
+|               |                    |
+| [[https://github.com/pipelinedb/pipelinedb][PipelineDB]]    | *Discontinued*     |
+|               | Streaming          |
+|               |                    |
+
+- [[https://github.com/arkhipov/temporal_tables][temporal_tables]] :: Temporal Tables PostgreSQL Extension
+- [[https://github.com/xocolatl/periods][periods]] :: recreates the behavior defined in SQL:2016 (originally in SQL:2011) around periods and tables with SYSTEM VERSIONING.
+
+# Magasin d'évènements
+
+#+caption: Execution programmée de scripts
+#+attr_latex: :placement [H] :width \linewidth
+| Nom          | Particularité              |
+|--------------+----------------------------|
+| [[https://github.com/cybertec-postgresql/pg_timetable][pg_timetable]] | Plannificateur d'évènement |
+|              |                            |
+|              |                            |
+| [[https://github.com/citusdata/pg_cron][pg_cron]]      | Execution periodique       |
+|              |                            |
+|              |                            |
+| [[https://github.com/tembo-io/pg_later][pg_later]]     | Prééxecution               |
+|              |                            |
+|              |                            |
+| [[https://github.com/CyberDem0n/bg_mon][bg_mon]]       | Moniteur d'arrière plan    |
+|              |                            |
+|              |                            |
+
+# Change data capture
+#+caption: Capture et traitement d'évènements dans la base de données
+#+attr_latex: :placement [H] :width \linewidth
+| Nom      | Particularité        |
+|----------+----------------------|
+| [[https://github.com/eulerto/wal2json][wal2json]] | Changeset extraction |
+|          | JSON output          |
+|          |                      |
+| [[https://github.com/cpursley/walex][walex]]    | CDC in Elixir        |
+|          |                      |
+|          |                      |
+
+*** Géospatial
+[[https://github.com/postgis/postgis][PostGIS]], base de données Geospaciale pour PostgreSQL, 78% des SIG open-source [41] et est notamment utilisé par [[https://qgis.org/][QGIS]].
+Reconnu dans le domaine du SIG, [41] [42] PostGIS permet entre autres de stocker efficacement les données géospatiales et géométriques. Son déploiement permet de relier les informations issues du BIM et du CIM avec les données temps-réel de l’exploitation.
+
+# Geospacial tooling
+#+caption: Outils de manipulation de données géospaciales
+#+attr_latex: :placement [H] :width \linewidth
+| Nom              | Particularité          |
+|------------------+------------------------|
+| [[https://github.com/pgRouting/pgrouting][pgRouting]]        | Routage géospacial     |
+|                  | Analyse de réseau      |
+|                  |                        |
+| [[https://github.com/MobilityDB/MobilityDB][MobilityDB]]       | Analyse et de gestion  |
+|                  | des trajectoires       |
+|                  |                        |
+|                  |                        |
+| [[https://github.com/zachasme/h3-pg][h3-pg]]            | bindings for Uber's H3 |
+|                  |                        |
+|                  |                        |
+| [[https://github.com/pgpointcloud/pointcloud][pgpointcloud]]     | Storing LIDAR data     |
+|                  |                        |
+|                  |                        |
+| [[https://github.com/Giswater/giswater_dbmodel][giswater_dbmodel]] | SQL files for          |
+|                  | Giswater's             |
+|                  | database model         |
+
+
+#+caption: Logos : PostGIS, pgRouting, MobilityDB, H3, GISWater
+#+name: fig:logos-gis
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-geospacial.pdf]]
+
+- [[https://github.com/dr-jts/pg_svg][pg_svg]] :: Postgres/PostGIS functions for generating SVG documents
+  usage : génération de cartes, de plans, etc.
+- Raster format, Bitmap extensions etc.
+
+*** Données non structurées
+# Graph, Document, Key Value, Wide column, Navigationnal, Triple store, Extensible record store
+# Graph
+- [[https://github.com/apache/age][Apache AGE]] :: Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL (OpenCypher)
+
+# Documents
+- [[https://github.com/microsoft/documentdb][MS DocumentDB]] :: offers a native implementation of document-oriented NoSQL database, enabling seamless CRUD operations on BSON data types within a PostgreSQL framework
+- [[https://github.com/JasperFx/marten][Marten]] :: .NET Transactional Document DB and Event Store on PostgreSQL
+
+#+caption: Logos : Apache AGE, FerretDB, pg_duck, Marten, Pongo
+#+name: fig:logos-doc
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-documents.pdf]]
+
+- [[https://github.com/postgrespro/jsquery][JsQuery]] :: json query language with GIN indexing support
+- [[https://github.com/FerretDB/FerretDB][FerretDB]] :: A proxy that converts MongoDB 5.0+ wire protocol queries to SQL and uses PostgreSQL with DocumentDB extension as a database engine
+- [[https://github.com/robconery/dox][dox]] :: A Document Database API extension for Postgres
+
+Expliquer le principe "NoSQL" et les divergences d'interprétations
+- [[https://github.com/supabase/pg_graphql][pg_render]] :: Render HTML in SQL. PostgreSQL extension
+- [[https://github.com/Florents-Tselai/pgpdf][pgpdf]] :: pdf type for Postgres
+- [[https://github.com/event-driven-io/Pongo][Pongo]] :: Mongo but on Postgres and with strong consistency benefits
+
+# Clées valeurs
+Pour la mise en cache 
+Solutions : pg_catcache (LRU), pgmemcache (intégration Memcached)
+Mise en cache et file d’attente : postgres’s Unlogged table puis memcache (ou equivalent)
+- [[https://github.com/supabase/pg_jsonschema][pg_jsonschema]] :: PostgreSQL extension providing JSON Schema validation
+
+- [[https://github.com/duckdb/pg_duckdb][pg_duckdb]] :: a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres
+
+# Manque pg_mooncake
+
+*** Récupération d'information et IA
+# Vecteurs DB, alborythm de recherches, ML, RAG...
+# PostgreSQL comme plateforme d’IA générative
+
+#+begin_quote
+/Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance./ -- [48]
+#+end_quote
+
+La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. [45] Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines, [46] lutant ainsi contre l’amnésie organisationnelle. [47] 
+
+Discuter de l’avantage stratégique de pgvector face à des bases dédiées (Elasticsearch).
+
+- [[https://github.com/pgvector/pgvector][pgVector]] :: Implémentation des vecteurs 
+- [[https://github.com/timescale/pgvectorscale][pgvectorescale]] :: A complement to pgvector for high performance, cost efficient vector search on large workloads. (timescaledb)
+- [[https://github.com/tembo-io/pg_vectorize][pg_vectorize]] :: A Postgres extension that automates the transformation and orchestration of text to embeddings and provides hooks into the most popular LLMs. This allows you to do vector search and build LLM applications on existing data with as little as two function calls.
+- [[https://github.com/lanterndata/lantern][lantern]] :: PostgreSQL vector database extension for building AI applications
+
+#+caption: Logos : ParadeDB, ZomboDB, PGroonga, PostgresML, Lantern
+#+name: fig:logos-search
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-search.pdf]]
+
+
+Dans le paysage en évolution de l'IA, la malléabilité de PostgreSQL devient un avantage stratégique. Le framework PostgresML , intégrant des modules tels que pgCat , pgVector  et pg_partman , permet d’architecturer directement au niveau de la base de données des systèmes de Machine Learning. 
+
+- [[https://github.com/postgresml/postgresml][PostgresML]] :: Postgres with GPUs for ML/AI apps
+- [[https://github.com/timescale/pgai][pgai]] :: A suite of tools to develop RAG, semantic search, and other AI applications more easily with PostgreSQL (TimescaleDB)
+Cas concret : Chatbot RAG avec pgvector + Llama2
+- [[https://github.com/tensorchord/pgvecto.rs][pgvecto.rs]] :: Scalable, Low-latency and Hybrid-enabled Vector Search in Postgres. Revolutionize Vector Search, not Database
+- [[https://github.com/ElKornacio/pg_auto_embeddings][pg_auto_embeddings]] :: Text embeddings calculation for Postgres, without extensions. Simple, atomic, supports OpenAI/Anthropic models. Does not require any additional extensions, making it suitable for managed databases and other restricted environments
+
+Korvus, Ollama...
+
+- [[https://github.com/apache/datasketches-postgresql][datasketches-postgresql]] :: extension providing approximate algorithms based on Apache Datasketches-cpp
+- [[https://github.com/cybertec-postgresql/pgfaceting][pgfaceting]] :: extension to quickly calculate facet counts using inverted index built with roaring bitmaps
+- [[https://github.com/citusdata/postgresql-topn][TopN]] :: Extension that returns the top values in a database according to some criteria
+- [[https://github.com/OneSparse/OneSparse][OneSparse]] :: Accelerated Sparse Linear Algebra with Postgres and SuiteSparse
+
+- [[https://github.com/apache/arrow-flight-sql-postgresql/][ParadeDB]] :: (recherche sémantique)
+- [[https://github.com/zombodb/zombodb][ZomboDB]] :: Making Postgres and Elasticsearch work together
+- [[https://github.com/amutu/zhparser][zhparser]] :: zhparser is a PostgreSQL extension for full-text search of Chinese language
+- [[https://github.com/pgroonga/pgroonga][pgroonga]] :: extension to use Groonga as index. PGroonga makes PostgreSQL fast full text search platform for all languages! 
+- [[https://github.com/pgbigm/pg_bigm][pg_bigm]] :: The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
+- [[https://github.com/jirutka/smlar][smlar]] :: Extension for an effective similarity search
+- [[https://github.com/ChenHuajun/pg_roaringbitmap][pg_roaringbitmap]] :: Roaring bitmaps are compressed bitmaps which tend to outperform conventional compressed bitmaps such as WAH, EWAH or Concise. In some instances, roaring bitmaps can be hundreds of times faster and they often offer significantly better compression. They can even be faster than uncompressed bitmaps
+
+** Solutions d'optimisation
+# Optimisations natives et extensions pour la performance
+- Fonctions natives
+- Cas d'usage : Transactions ACID à haute charge (ERP, systèmes financiers)
+
+OLTP historiquement "lent" comparé à OLAP  
+
+- [[https://github.com/postgrespro/aqo][Aqo]] :: Adaptive query optimization for PostgreSQL
+- [[https://github.com/dalibo/emaj][E-Maj]] :: extension that tracks updates on tables sets with rollback capabilities
+
+# Partitionnement 
+- [[https://github.com/pgpartman/pg_partman][pg_partman]] :: Partition management extension for PostgreSQL
+- [[https://github.com/postgrespro/pg_pathman][pg_pathman]] :: Partitioning tool for PostgreSQL
+- [[https://github.com/ankane/pgslice][pgslice]] :: Postgres partitioning as easy as pie
+
+Citus ajoute la capacité de mise à l’échelle horizontale par répartition de la charge de calcul sur les serveurs disponibles. Cette approche est appellée ~sharding~. Cette extension ajoute notamment la prise en charge des tables distribuées, des tables de références, du stockage en colonnes (Wide column store) et intègre un moteur de requête distribué.
+
+TimescaleDB propose une approche différente appelée ~chunking~.
+
+# Hardware tuning
+- [[https://github.com/heterodb/pg-strom][PG-Strom]] :: Extension conçue pour accélérer les charges de travails en lots et les traitements analytiques en les exécutant lorsque nécessaire sur les GPU disponibles. (from HeteroDB)
+- [[https://github.com/le0pard/pgtune?tab=readme-ov-file][pgtune]] :: tuning PostgreSQL config by your hardware
+
+*** Stratégies de stockage
+# Compression, tiering, WAL
+
+# Compression
+- zheap :: (réduction WAL) Extension initialement créée par EDB puis maintenu par Cybertec avant d'être intégré à PostgreSQL core en version [cite:@ZheapPostgreSQLWiki2021] 
+- pg_dump :: (algo GZip/LZ4/Zstd)
+How did TimescaleDB comp is working ?
+
+# VACUUM
+Alternatives to CLUSTER and VACUUM
+- [[https://github.com/cybertec-postgresql/pg_squeeze][pg_squeeze]] :: Optimise la mémoire en réorganisant les tables et indexes en minimisant les verrouillages de la base de donnéees (Logical decoding on server only using background workers)
+- [[https://github.com/reorg/pg_repack][pg_repack]] :: Optimise la mémoire en réorganisant les tables et indexes en minimisant les verrouillages de la base de donnéees (Triggers on Client + Server)
+
+- [[https://github.com/CrunchyData/pg_parquet][pg_parquet]] :: Copy to/from Parquet in S3 or Azure Blob Storage from within PostgreSQL
+- [[https://github.com/tembo-io/pg_tier][pg_tier]] :: Postgres Extension written in Rust, to enable data tiering to AWS S3
+- [[https://github.com/scottpersinger/pgwarehouse][pgwarehouse]] :: Easily sync your Postgres database to a Snowflake, ClickHouse, or DuckDB warehouse
+- [[https://github.com/supabase/storage][storage]] :: S3 compatible object storage service that stores metadata in Postgres
+
+- [[https://github.com/crunchydata/pg_incremental][pg_incremental]] :: Incremental Data Processing in PostgreSQL
+- [[https://github.com/sraoss/pg_ivm][pg_ivm]] :: Incremental View Maintenance implementation as a PostgreSQL extension
+- [[https://github.com/adriangb/pgpq][pgpq]] :: Stream Apache Arrow RecordBatches into Postgres
+- [[https://github.com/postgrespro/vops][VOPS]] :: VOPS provides set of standard operators for tile types, allowing to write SQL queries in the way similar with normal SQL queries. 
+- [[https://github.com/ankane/pgsync][pgsync]] :: Sync data from one Postgres database to another
+
+# Colonne, à vérifier
+- [[https://github.com/orioledb/orioledb][OrioleDB]] :: Remplace le moteur de stockage dans le heap de PostgreSQL, change de row à column based querying, améliore la compression des données, nettoie automatiquement les espacces libres.
+- Citus :: (Microsoft) : Ajoute la capacité de mise à l’échelle horizontale par répartition de la charge de calcul sur les serveurs disponibles. Cette extension ajoute notamment la prise en charge des tables distribuées, des tables de références, du stockage en colonnes (Wide column store) et intègre un moteur de requête distribué.
+- [[https://github.com/hydradatabase/columnar][columnar]] :: Postgres-native columnar storage extension
+
+*** Indexation avancée
+# BRIN, GIN et HypoPG
+
+- BRIN :: (Big Data),
+- GIN :: (full-text),
+- Bloom :: (requêtes complexes)
+- [[https://github.com/ankane/dexter][dexter]] :: Automatic indexer for Postgres
+- [[https://github.com/postgrespro/rum][RUM]] :: RUM access method - inverted index with additional information in posting lists
+- [[https://github.com/HypoPG/hypopg][HypoPG]] :: Création d'index hypothétique
+
+#+BEGIN_QUOTE
+/An hypothetical, or virtual, index is an index that doesn't really exists, and thus doesn't cost CPU, disk or any resource to create./
+/They're useful to know if specific indexes can increase performance for problematic queries, since you can know if PostgreSQL will use these indexes or not without having to spend resources to create them./ -- HypoPG
+#+END_QUOTE
+
+- [[https://github.com/supabase/index_advisor][index_advisor]] :: Outils pour recommander des index appropriés
+- [[https://github.com/ossc-db/pg_hint_plan][pg_hint_plan]] :: Extension adding support for optimizer hints in PostgreSQL
+- [[https://github.com/ossc-db/pg_plan_advsr][pg_plan_advsr]] :: extension for automated execution plan tuning
+
+** Architectures distribuées
+# Edge computing, réplication
+
+# Edge computing
+- ElectricSQL :: (CRDTs)
+- [[https://github.com/electric-sql/pglite][PGLite]] :: Embeddable Postgres with real-time, reactive bindings. (Wasm/Deno)
+Use case : Synchronisation offline-first (apps mobiles)
+
+Expliquer les intérêts en matière de performance et de fort découplage des environnements serveurs et clients.
+
+# Réplication
+Étudier les garanties de pglogical en environnement distribué
+
+- [[https://github.com/supabase/pg_replicate][pg_replicate]] :: a Rust crate to quickly build replication solutions for Postgres.
+- [[https://github.com/PeerDB-io/peerdb][peerdb]] :: Fast, Simple and a cost effective tool to replicate data from Postgres to Data Warehouses, Queues and Storage
+- [[https://github.com/EnterpriseDB/pg_failover_slots][pg_failover_slots]] :: PG Failover Slots is for anyone with Logical Replication Slots on Postgres databases that are also part of a Physical Streaming Replication architecture.
+- [[https://github.com/2ndQuadrant/pglogical][pglogical]] :: provides logical streaming replication for PostgreSQL, using a publish/subscribe model
+- [[https://github.com/EnterpriseDB/repmgr][repmgr]] :: A lightweight replication manager for PostgreSQL
+
+* Écosystème applicatif
+** Compatibilité
+# REST, GraphQL et WebSockets
+
+#+begin_quote
+*Compatibilité*, n.f.
+/Le fait pour un matériel ou un logiciel d'être utilisable en connexion avec d'autres matériels, d'autres logiciels, dans un système informatique défini, sans en altérer les conditions de fonctionnement./ -- CNRTL
+#+end_quote
+
+La compatibilité diffère de l'intéropérabilité par l'absence de nécessité de connaitre l'architecture interne des solutions informatiques avec lesquelles le système étudier s'interface.
+
+- [[https://github.com/supabase/pg_net][pg_net]] :: A PostgreSQL extension that enables asynchronous (non-blocking) HTTP/HTTPS requests with SQL
+- [[https://github.com/pramsey/pgsql-http][pgsql-http]] :: Client HTTP permettant de récupérer des pages Web depuis la base de données
+
+API REST :
+- [[https://github.com/prest/prest][prest]] :: PostgreSQL, REST, low-code, simplify and accelerate development, instant, realtime, high-performance on any Postgres application, existing or new
+- [[https://github.com/PostgREST/postgrest][PostgREST]] :: API RESTful gérée par PostgreSQL
+- [[https://github.com/supabase/postgres-meta][postgres-meta]] :: A RESTful API for managing your Postgres. Fetch tables, add roles, and run queries 
+
+API GraphQL :
+- [[https://github.com/graphile/crystal/tree/main/postgraphile/postgraphile][PostGraphile]] :: API GraphQL bidirectionnelle gérée par PostgreSQL I/O
+- [[https://github.com/supabase/pg_graphql][pg_graphql]] :: Permet de requéter PostgreSQL avec une API GraphQL
+- [[https://github.com/hasura/graphql-engine][graphql-engine]] :: Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events
+
+WebHook :  
+- [[https://github.com/xataio/pgstream][pgstream]] :: Change Data Capture CLI et librairie pour PostgreSQL avec un envois via WebHook
+
+WebSocket :
+- [[https://github.com/diogob/postgres-websockets][postgres-websockets]] :: Middleware permettant d'ajouter la prise en charge de Websockets à PostgreSQL en l'interfaçant avec les commandes LISTEN/NOTIFY
+
+** Interopérabilité
+# FDW, migrations et hybridation
+
+#+begin_quote
+*Interopérabilité*, n.f.
+/Capacité que possède un produit ou un système, dont les interfaces sont intégralement connues, à fonctionner avec d’autres produits ou systèmes existants ou futurs et ce sans restriction d’accès ou de mise en œuvre./ -- Wikitionnaire
+#+end_quote
+
+# Foreign Data Wrapper : Performances et limites des connecteurs cross-DB
+Évaluer les performances des FDW (ex. mysql_fdw vs oracle_fdw) et leur utilité dans les architectures hybrides.
+
+postgres_fdw
+- [[https://github.com/supabase/wrappers][wrappers]] :: Postgres Foreign Data Wrapper development framework in Rust. 
+- [[https://github.com/pgsql-io/multicorn2][multicorn2]] :: 
+
+How it works ??
+- [[https://github.com/alitrack/duckdb_fdw][duckdb_fdw]] :: Permet de requéter DuckDB
+- [[https://github.com/EnterpriseDB/hdfs_fdw][hdfs_fdw]] :: Permet de requéter Apache Hadoop
+- [[https://github.com/EnterpriseDB/mongo_fdw][mongo_fdw]] :: Permet de requéter MongoDB 
+- [[https://github.com/EnterpriseDB/mysql_fdw][mysql_fdw]] :: Permet de requéter MySQL
+- [[https://github.com/laurenz/oracle_fdw][oracle_fdw]] :: Permet de requéter Oracle
+- [[https://github.com/adjust/parquet_fdw][parquet_fdw]] :: Permet de requéter Apache Parquet
+- [[https://github.com/pramsey/pgsql-ogr-fdw][ogr_fdw]] :: Permet de requéter OGR, un sous ensemble de [[http://www.gdal.org/][GDAL]]
+- [[https://github.com/pg-redis-fdw/redis_fdw][redis_fdw]] :: Permet de requéter Redis 
+- [[https://github.com/pgspider/sqlite_fdw][sqlite_fdw]] :: Permet de requéter SQLite 
+- [[https://github.com/tds-fdw/tds_fdw?tab=readme-ov-file][tds_fdw]] :: Permet de requéter les bases de données utilisant le protocole TDS comme [[https://www.microsoft.com/fr-fr/sql-server/][MS SQL Server]]
+- [[https://github.com/adjust/kafka_fdw][kafka_fdw]] :: kafka foreign database wrapper for postresql
+- [[https://github.com/supabase/wrappers][wrappers]] :: Postgres Foreign Data Wrapper development framework in Rust
+
+# Migration et stratégie : Outils et pièges (Babelfish, pgRoll)
+Discuter des défis techniques (ex. différences de syntaxe SQL) et des outils comme Babelfish pour réduire la dépendance à Microsoft SQL Server.
+
+- [[https://github.com/Hornetlabs/synchdb][SynchDB]] :: Extension permettant la migration de données d'un DBMS externe vers PostgreSQL
+- [[https://github.com/babelfish-for-postgresql/babelfish_extensions][babelfish_extensions]] :: Babelfish for PostgreSQL provides the capability for PostgreSQL to work with applications written for Microsoft SQL Server. Babelfish understands the SQL Server wire-protocol and T-SQL, the Microsoft SQL Server query and procedural language, so you don’t have to switch database drivers or rewrite all of your application queries
+- [[https://github.com/orafce/orafce][orafce]] ::  The "orafce" project implements in Postgres some of the functions from the Oracle database that are missing (or behaving differently).Those functions were verified on Oracle 10g, and the module is useful for production work.
+- [[https://github.com/xataio/pgroll][pgroll]] :: PostgreSQL zero-downtime migrations made easy
+- [[https://github.com/CrunchyData/pgCompare][pgCompare]] :: a straightforward utility crafted to simplify the data comparison process, providing a robust solution for comparing data across various database platforms
+- [[https://github.com/stripe/pg-schema-diff][pg-schema-diff]] :: Go library for diffing Postgres schemas and generating SQL migrations
+  
+** Écosystème de développement
+# Front end
+# Critiquer l’ergonomie de pgHero vs Mathesar pour les non-experts.
+#+caption: Interfaces et clients
+#+attr_latex: :placement [H] :width \linewidth
+| Nom      | Particularité             |
+|----------+---------------------------|
+| [[https://www.postgresql.org/docs/current/static/app-psql.html][psql]]     | CLI                       |
+|          | Solution native           |
+|          |                           |
+| [[https://github.com/dbcli/pgcli][pgcli]]    | CLI                       |
+|          |                           |
+|          |                           |
+| [[https://github.com/ankane/pghero][pghero]]   | Performance dashboard     |
+|          |                           |
+|          |                           |
+| [[https://github.com/cybertec-postgresql/pgwatch/][pgwatch]]  | Metrics monitor/dashboard |
+|          |                           |
+|          |                           |
+| [[https://github.com/achristmascarl/rainfrog][rainfrog]] | TUI                       |
+|          |                           |
+|          |                           |
+| [[https://github.com/mathesar-foundation/mathesar][mathesar]] | Spreadsheet-like          |
+|          | Collaborative             |
+|          | User-friendly             |
+
+# Langages d'extensions
+# PL/Rust vs PL/pgSQL : Performance et cas d’usage
+- [[https://github.com/okbob/plpgsql_check][plpgsql_check]] :: Linter dédié à l'analyse des procédures et fonctions PL/pgSQL
+ 
+Framework de développement :
+- [[https://github.com/aws/pg_tle][pg_tle]] :: Framework for building trusted language extensions for PostgreSQL
+- [[https://github.com/pgcentralfoundation/pgrx][pgrx]] :: Build Postgres Extensions with Rust
+
+Officiels : [[https://www.postgresql.org/docs/current/plpgsql.html][PL/pgSQL]], [[https://www.postgresql.org/docs/current/plpython.html][PL/Python]], [[https://www.postgresql.org/docs/current/plperl.html][PL/Perl]], [[https://www.postgresql.org/docs/current/pltcl.html][PL/Tcl]]
+
+Communautaires : [[https://github.com/Brick-Abode/pldotnet/][PL/Dotnet]] pour les langages utilisant l'environnement .NET (C#, F#, VB...), [[https://github.com/ed-o-saurus/PLHaskell][PL/Haskell]], [[https://github.com/tada/pljava/][PL/Java]] pour les languages utilisant la JVM (Java, Scala, Clojure...), [[https://github.com/plv8/plv8][PL/V8]] pour les langages pouvant fonctionner sur la machine virtuelle V8 (JS, TS, AS, WASM...), [[https://github.com/petere/plsh][PL/sh]] pour executer des scripts d'administration systèmes (BASH, ZSH, FISH...) et [[https://github.com/postgres-plr/plr][PL/R]] pour créer des pipelines ETL et automatiser la génération de graphiques.
+
+[[https://github.com/tcdi/plrust/][PL/Rust]]
+
+D'autres ont été créées par le passé mais sont actuellement non maintenu. Nous pouvons identifier [[https://github.com/pljulia/pljulia][PL/Julia]], [[https://github.com/pllua/pllua-ng/][PL/Lua]], [[https://github.com/commandprompt/PL-php][PL/PHP]], [[https://github.com/knu/postgresql-plruby][PL/Ruby]] et [[https://github.com/vy/plscheme][PL/Scheme]].
+
+La montée progressive de l'utilisation de Julia en science des données et son positionnement comme langage de programmation dynamique et performant pourrait entrainner un regain d'intérêt dans le développement de PL/Julia par la communauté. Son utilisation pourrait permettre de progressivement remplacer PL/R.
+De son coté, Lua étant un langage de script et d'extension, il concurence directement Python dans cet emploi. Ce second étant très largement supporté et employé par la communauté des sciences des données et du développement en général, il est peu probable de voir PL/Lua supplanter PL/Python à l'avenir. 
+PL/PHP pourrait revenir sur le devant de la scène à travers le développement d'initiatives telles que [[https://github.com/wlp-builders/whitelabelpress-wlp][White Label Press]] cherchant à fournir une alternative moderne à [[https://github.com/WordPress/WordPress][WordPress]].
+
+- [[https://github.com/petere/plxslt][PL/XSLT]],
+- [[https://github.com/kaspermarstal/plprql][PL/prql]],
+- [[https://github.com/plproxy/plproxy][PL/Proxy]] Permet de faire des appels de procédure à distance entre les bases de données
+
+# Gestionnaire de paquets
+#+caption: Gestionnaires de paquets
+#+attr_latex: :placement [H] :width \linewidth
+| Nom    | Particularité |
+|--------+---------------|
+| [[https://github.com/petere/pex][Pex]]    |               |
+|        |               |
+|        |               |
+| [[https://github.com/pgxman/pgxman][pgxman]] |               |
+|        |               |
+|        |               |
+| [[https://github.com/supabase/dbdev][dbdev]]  |               |
+|        |               |
+|        |               |
+| [[https://github.com/tembo-io/trunk][trunk]]  |               |
+|        |               |
+|        |               |
+
+# DX Expérience de développement
+- [[https://github.com/adelsz/pgtyped][pgtyped]] :: Typesafe SQL in TypeScript
+- [[https://github.com/jawj/zapatos?tab=readme-ov-file][zapatos]] :: Zero-abstraction Postgres for TypeScript: a non-ORM database library
+- [[https://github.com/graphile/crystal/tree/main/utils/pg-introspection][pg-introspection]] :: A strongly-typed PostgreSQL introspection library for PostgreSQL built automatically from the PostgreSQL system catalog documentation, with the TypeScript documentation for each attribute/type also pulled from the PostgreSQL documentation for easy reference directly in your editor.
+- [[https://github.com/supabase-community/postgres_lsp][postgres-lsp]] :: A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.
+- [[https://github.com/graphile/crystal/tree/main/utils/pg-sql2][pg-sql2]] :: Create highly dynamic SQL in a powerful and flexible manner without opening yourself to SQL injection attacks.
+- [[https://github.com/PostgREST/plmustache][plmustache]] :: Logic-less templates for Postgres
+
+
+# Connecteurs cloud-native : JavaScript, Python, Rust, .NET
+# Mettre en avant l’écosystème JavaScript (node-postgres, Postgres.js) pour les applications modernes.
+# Orchestration
+#+caption: Connecteurs et ORM
+#+attr_latex: :placement [H] :width \linewidth
+| Nom           | Particularité                   |
+|---------------+---------------------------------|
+| [[https://github.com/brianc/node-postgres][node-postgres]] | PostgreSQL client for node.js   |
+|               |                                 |
+|               |                                 |
+| [[https://github.com/porsager/postgres][postgres.js]]   | Client for Node.js, Deno,       |
+|               | Bun and CloudFlare              |
+|               | Utilisé par TypeORM et Drizzle  |
+| [[https://github.com/gajus/slonik][slonik]]        | Node.js client                  |
+|               | Runtime and build time          |
+|               | type safety, and composable SQL |
+| [[https://github.com/npgsql/npgsql][npgsql]]        | .NET data provider              |
+|               |                                 |
+|               |                                 |
+| [[https://github.com/sfackler/rust-postgres][rust-postgres]] | Native driver for Rust          |
+|               |                                 |
+|               |                                 |
+
+# Autres à catégoriser
+- [[https://github.com/sqlpage/SQLPage][SQLPage]] :: Fast SQL-only data application builder. Automatically build a UI on top of SQL queries
+
+* Gouvernance et sécurité
+** Conformité et audit
+# RGPD, SOC2, pgaudit
+# Analyser *pgaudit* pour les certifications SOC2 ou ISO 27001.
+
+- [[https://github.com/eradman/pg-safeupdate][pg-safeupdate]] :: a simple extension to PostgreSQL that raises an error if UPDATE and DELETE are executed without specifying conditions. This extension was initially designed to protect data from accidental obliteration of data that is writable by PostgREST.
+- [[https://github.com/timescale/pgspot][pgspot]] :: pgspot checks extension scripts for following PostgreSQL security best practices. In addition to checking extension scripts it can also be used to check security definer functions or any other PostgreSQL SQL code.
+
+# Tests et qualité
+- [[https://github.com/theory/pgtap][pgTAP]] :: Suite applicative pour créer des tests unitaires
+- [[https://github.com/stack-auth/pgmock][pgmock]] :: In-memory PostgreSQL mock server for unit and E2E tests
+- [[https://github.com/peterldowns/pgtestdb][pgtestdb]] :: Quickly run tests in their own temporary, isolated, postgres databases
+- [[https://github.com/bytebase/bytebase][bytebase]] :: DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps
+- [[https://github.com/postgres-ai/database-lab-engine][database-lab-engine]] :: DBLab enables database branching and thunder thin cloning for any Postgres database and empowers DB testing in CI/CD. This optimizes database-related costs while improving time-to-market and software quality
+
+# Observabilité
+La longue liste de modules et extensions d'observabilité peut indiquer une vigilence particulière des utilisateurs au fonctionnement et aux performances du DBMS.
+
+Cet intérêt peut être une des raisons de l'amélioration progressive des performances natives et du développement d'extensions sectorielles.
+- [[https://github.com/pgaudit/pgaudit][pgaudit]] :: PostgreSQL Audit Extension (SOC2)
+- [[https://github.com/pgsentinel/pgsentinel][pgsentinel]] :: postgresql extension providing Active session history
+- [[https://github.com/paradedb/pg_analytics][pg_analytics]] :: Permet de requeter des stockages comme AWS3 et des tables comme Iceberg ou Delta Lake. Les réponses sont envoyés à DuckDB pour l'analyse.
+- [[https://github.com/zubkov-andrei/pg_profile][pg_profile]] :: Postgres historic workload reports
+- [[https://github.com/powa-team/pg_qualstats/][pg_qualstats]] :: Collecte des statistiques sur les prédicats et aide à trouver les indices manquants
+- [[https://github.com/postgrespro/pg_query_state][pg_query_state]] :: Tool for query progress monitoring in PostgreSQL 
+- [[https://github.com/powa-team/pg_stat_kcache/][pg_stat_kcache]] :: Regroupe les statistiques sur les lectures et écritures effectués par le système de fichiers
+- [[https://github.com/percona/pg_stat_monitor][pg_stat_monitor]] :: Outils d'analyse des performances
+- [[https://github.com/postgrespro/pg_wait_sampling][pg_wait_sampling]] :: Sampling based statistics of wait events
+- [[https://github.com/powa-team/powa][PoWA]] :: PostgreSQL Workload Analyzer
+- [[https://codeberg.org/Data-Bene/StatsMgr][StatsMgr]] :: Gestion des statistiques de performance et d'utilisation
+- [[https://github.com/EnterpriseDB/system_stats][system_stats]] :: Permet d'exposer les données du système comme l'utilisation du CPU, de la mémoire et des disques 
+- [[https://github.com/dalibo/pg_activity][pg_activity]] :: pg_activity is a top like application for PostgreSQL server activity monitoring
+- [[https://github.com/EnterpriseDB/pg_catcheck][pg_catcheck]] :: Outil pour diagnostiquer la corruption du catalogue système
+- [[https://github.com/df7cb/pg_dirtyread][pg_dirtyread]] :: Read dead but unvacuumed tuples from a PostgreSQL relation 
+- [[https://github.com/cybertec-postgresql/pg_show_plans][pg_show_plans]] :: Show query plans of all currently running SQL statements 
+
+- pgMustard ::
+- [[https://github.com/nexsol-technologies/pgassistant][pgassistant]] :: Tool designed to help developers understand and optimize their PostgreSQL database performance
+- [[https://github.com/CrunchyData/pgmonitor-extension][pgmonitor]] :: Suite de surveillance des performances et de l'état des bases de données
+- [[https://github.com/bigsql/plprofiler][plprofiler]] :: Permet de créer des profils de performance pour les procédures stockées
+- [[https://github.com/tvondra/tdigest][tdigest]] :: Extension for estimating percentiles using t-digest 
+- [[https://gitlab.com/postgres-ai/joe][Joe]] :: (AI tool) Provide developers access to experiment on automatically provisioned production-size DB testing replica. Joe will provide recommendations for query optimization and the ability to rollback.
+
+** Chiffrement
+# Comparer pgcrypto et pgsodium en termes d’algorithmes supportés et de conformité RGPD.
+- pg_anonymize :: (GDPR),
+- pgcrypto :: (AES-256/Q-Safe),
+- [[https://github.com/michelp/pgsodium][pgsodium]] :: Modern cryptography for PostgreSQL using libsodium
+- [[https://gitlab.com/dalibo/postgresql_anonymizer][PostgreSQL Anonymizer]] ::  Anonymization & Data Masking for PostgreSQL
+- [[https://github.com/supabase/supautils][supautils]] :: PostgreSQL extension that secures a cluster on a cloud environment
+- [[https://github.com/supabase/walrus][walrus]] :: Applying Row-Level-Security to PostgreSQL WAL
+
+# Post Quantum security
+Industrie : PostgreSQL Quantum-Safe (NIST PQC integration [23])
+Explorer les initiatives émergentes (ex. intégration NIST PQC).
+Parler de l'avancée de Google avec le craque du SHA
+
+# Blockchain
+
+** Gestion des accès
+# OAuth2, LDAP et rôles
+- [[https://github.com/arkhipov/acl][acl]] :: Access Control Lists (ACL) PostgreSQL Extension
+LDAP/Kerberos : Intégration Active Directory native
+- pg_iam :: (PoC CNRS [source 29])
+OAuth2/OIDC : Extension
+- [[https://github.com/cybertec-postgresql/pg_permissions][pg_permissions]] :: A simple set of views to see ALL permissions in a PostgreSQL database
+
+** Continuité de service
+# Sauvegardes
+#+caption: Solutions de sauvegarde et de récupération
+#+attr_latex: :placement [H] :width \linewidth
+| Nom          | Particularité |
+|--------------+---------------|
+| [[https://github.com/EnterpriseDB/barman][barman]]       |               |
+|              |               |
+|              |               |
+| [[https://github.com/postgrespro/pg_probackup][pg_probackup]] |               |
+|              |               |
+|              |               |
+
+# Load balancing
+#+caption: Solutions d'absorbtion de la charge de requête
+#+attr_latex: :placement [H] :width \linewidth
+| Nom       | Particularité            |
+|-----------+--------------------------|
+| [[https://github.com/postgresml/pgcat][pgcat]]     | Pooler, Proxy            |
+|           | Sharding, Mirroring      |
+|           | Multi-threadé            |
+| [[https://github.com/pgbouncer/pgbouncer][pgBouncer]] | Pooler                   |
+|           |                          |
+|           |                          |
+| [[https://github.com/pgpool/pgpool2][Pgpool-II]] | Pooler                   |
+|           |                          |
+|           |                          |
+| [[https://github.com/supabase/supavisor][supavisor]] | Cloud-native             |
+|           | Multi-tenant             |
+|           | Pooler                   |
+| [[https://github.com/yandex/odyssey][Odyssey]]   | Multi-threadé            |
+|           | Pooler et router         |
+|           |                          |
+| [[https://github.com/agroal/pgagroal][pgAgroal]]  | Protocole native         |
+|           | Mémoire partagée         |
+|           | Validation de connexions |
+
+#+caption: Logos : PGCat, pgBouncer, pgPool-II
+#+name: fig:logos-loadbalancer
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-loadbalancer.pdf]]
+
+# File d'attente
+#+caption: Solutions de création de file d'attente
+#+attr_latex: :placement [H] :width \linewidth
+| Nom      | Particularité          |
+|----------+------------------------|
+| [[https://github.com/tembo-io/pgmq][pgmq]]     |                        |
+|          |                        |
+|          |                        |
+| [[https://github.com/pgq/pgq][PgQ]]      | Lockless queue         |
+|          | Based on SQL functions |
+|          |                        |
+| [[https://github.com/janbjorge/PgQueuer][pgqueuer]] | Librairie Python       |
+|          |                        |
+|          |                        |
+
+- [[https://github.com/pg-sharding/spqr][spqr]] :: Stateless Postgres Query Router
+- [[https://github.com/cybertec-postgresql/vip-manager][vip-manager]] :: Manages a virtual IP based on state kept in etcd or Consul
+- [[https://github.com/readysettech/readyset][readyset]] :: a MySQL and Postgres wire-compatible caching layer that sits in front of existing databases to speed up queries and horizontally scale read throughput. Under the hood, ReadySet caches the results of cached select statements and incrementally updates these results over time as the underlying data changes
+  
+* Stratégie d’adoption
+# Stratégie d’adoption relie technique et business (ex. TCO, risques).
+** Mise en production
+# Kubernetes, opérateurs et services managés
+# Analyser les trade-offs des opérateurs Kubernetes (CloudNativePG vs Zalando).
+
+# Conteneurisation
+#+caption: Solutions de déploiement
+#+attr_latex: :placement [H] :width \linewidth
+| Nom                  | Particularité |
+|----------------------+---------------|
+| [[https://github.com/zalando/spilo][spilo]]                |               |
+|                      |               |
+|                      |               |
+| [[https://github.com/pgautoupgrade/docker-pgautoupgrade][docker-pgautoupgrade]] |               |
+|                      |               |
+|                      |               |
+
+# Orchestration
+#+caption: Solutions d'orchestration
+#+attr_latex: :placement [H] :width \linewidth
+| Nom                | Particularité |
+|--------------------+---------------|
+| [[https://github.com/patroni/patroni][Patroni]]            |               |
+|                    |               |
+|                    |               |
+| [[https://github.com/CrunchyData/crunchy-containers][crunchy-containers]] |               |
+|                    |               |
+|                    |               |
+| [[https://github.com/cloudnative-pg/cloudnative-pg][cloudnative-pg]]     |               |
+|                    |               |
+|                    |               |
+| [[https://github.com/CrunchyData/postgres-operator][postgres-operator]]  |               |
+|                    |               |
+|                    |               |
+| [[https://gitlab.com/ongresinc/stackgres][StackGres]]          |               |
+|                    |               |
+|                    |               |
+
+# Operateur
+
+# Services managés (DBaaS)
+# AWS Aurora (40% perf. > vanilla),
+# Google AlloyDB (AI intégrée)
+# Zalando Operator, Fujitsu Postgres, 
+
+#+caption: Solutions de développement et d'hébergement cloud
+#+attr_latex: :placement [H] :width \linewidth
+| Nom      | Particularité                |
+|----------+------------------------------|
+| [[https://github.com/neondatabase/neon][Neon]]     | Stockage à froid             |
+|          | Séparation compute-storage   |
+|          | Snapshots instantanés        |
+| [[https://github.com/tembo-io/tembo][Tembo]]    | Multi-tenant                 |
+|          | API simplifiée               |
+|          | Observabilité intégrée       |
+| [[https://github.com/supabase/supabase][Supabase]] | Tems réel,                   |
+|          | Autentification intégrée     |
+|          | Stockage objet (S3-like)     |
+| [[https://github.com/vitabaks/autobase?tab=readme-ov-file][Autobase]] | Réplication CRDT             |
+|          | Gestion conflits automatique |
+|          | Bases distribuées            |
+| [[https://github.com/omnigres/omnigres][Omnigres]] | HTTP/WebSocket natif         |
+|          | Logique dans PostgreSQL      |
+|          | Mise à jour temps réel       |
+
+#+caption: Logos : Tembo, Neon, Supabase, Autobase, Omnigress
+#+name: fig:logos-cloud
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-cloud.pdf]]
+
+#+caption: Framework de développement
+#+attr_latex: :placement [H] :width \linewidth
+| Nom    | Particularité                 |
+|--------+-------------------------------|
+| [[https://github.com/geldata/gel][Gel]]    | Transactions globales         |
+|        | Synchronisation inter-cluster |
+|        | Cohérence forte               |
+| [[https://github.com/pgEdge/pgedge][pgEdge]] | Réplication multi-région      |
+|        | Bases distribuées             |
+|        | Haute disponibilité           |
+| [[https://github.com/Vonng/pigsty][Pigsty]] | Gestion cluster PostgreSQL    |
+|        | Monitoring intégré            |
+|        | Configuration automatisée     |
+| [[https://github.com/alantech/iasql][iasql]]  |                               |
+
+#+caption: Logos : Gel, pgEdge, Pigsty, iaSQL, 
+#+name: fig:logos-cloud2
+#+attr_latex: :height 1.2cm :placement [H]
+[[file:icons/pg-cloud2.pdf]]
+
+
+# Trade-offs : Self-hosted (Patroni) vs Cloud (Neon, Supabase)
+# Coûts TCO : Aurora vs PostgreSQL natif
+
+** Analyse de compétitive
+Analyse comparative : Expliquer pourquoi PostgreSQL résiste face à des concurrents propriétaires (coût, flexibilité) ou open source (MySQL).
+
+# PostgreSQL vs Oracle : Avantages coût/performance
+# Utiliser une analyse SWOT pour positionner PostgreSQL contre Oracle (coût) et MongoDB (flexibilité schématique).
+Oracle : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
+MySQL : Parallel Query + CTE vs limitations replication
+MSSQL : 
+
+# PostgreSQL face aux SGBD NoSQL et NewSQL
+MongoDB : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
+
+# Compétiteurs émergentes : SurrealDB, DuckDB
+# Discuter de la menace de SurrealDB (all-in-one) et de DuckDB (OLAP embarqué).
+
+- SurrealDB : All-in-one vs modularité PostgreSQL
+- SpacetimeDB : +Blockchain+ Stored Procedures vs maturité écosystème
+- DuckDB : OLAP embarqué vs scalabilité Citus
+- ElasticSearch vs ParadeDB
+
+* Conclusion et discussions
+# Lacunes techniques et opportunités
+
+* Evolution du document
+|    Date | Changements           |
+|---------+-----------------------|
+| 2025-03 | Rédaction du document |
+
+* Glossaire
+# Fixer la position, l'export
+# #+include: ~/org/glossary.org
+# #+print_glossary: :type glossary
+
+* Acronymes
+# #+print_glossary: :type acronyms
+
+* Références
+# Séparer les entrées de bibliographie (Livres, Infographies, Normes, Articles, Divers)
+# Associer les chapitres de livres aux livres sources (crossref in biblatex)
+#+print_bibliography: :heading none
+
+* Footnotes
+[fn:1] PostgreSQL License : [[https://opensource.org/license/postgresql]]
+[fn:2] MIT Licence : [[https://opensource.org/license/mit]]
+[fn:3] Server Side Public Licence : [[https://www.mongodb.com/legal/licensing/server-side-public-license]]
+[fn:4] GNU Public Licenve v2.0 : [[https://opensource.org/license/gpl-2-0]]
+
+#+LaTeX: \end{multicols*}

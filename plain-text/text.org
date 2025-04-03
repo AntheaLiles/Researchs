@@ -1,0 +1,22 @@
+#+title: Les technologies de manipulations du texte
+
+Rédaction rapide et suite bureautique : Org-Mode
+Mise en page, édition et impression : TeX
+Correction et interprétation : Grammarly
+Reconnaissance : OCR
+
+Thésaurus, Dictionnaires, glossaires, acronymes, substitutions
+
+Types d'assistances algorythmiques avancées
+- LLM
+  - Agents
+    - Chaines de réflexions
+      Régression
+
+    Diffusion
+- OCR
+RAG
+
+Labelisation (tag)
+
+Graphs, networks, vectors, documents

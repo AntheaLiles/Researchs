@@ -1,0 +1,268 @@
+% Created 2025-03-20 Thu 11:09
+% Intended LaTeX compiler: lualatex
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage[autolanguage]{numprint}
+\usepackage{amsfonts,amssymb,amsmath,mathrsfs,stmaryrd}
+\usepackage[default]{sourcesanspro}
+\usepackage[top=2.4cm, bottom=2.4cm, left=2.16cm, right=2.16cm]{geometry}
+\usepackage{setspace,fancyhdr,indentfirst,adjustbox,caption,multicol,lastpage,datetime,authblk,ifthen}
+\setlength{\columnsep}{0.8cm}
+\setlength{\marginparwidth}{1.6cm}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+\setcounter{page}{1}
+\usepackage[toc,page]{appendix}
+\usepackage{titletoc}
+\usepackage{array,booktabs,multirow,tabularx,colortbl,diagbox,makecell,ltablex}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}\setlist{nosep}\setlist[itemize]{leftmargin=*}
+\usepackage{graphicx,xcolor,pgf,tikz,pgfplots,pgfplotstable}
+\usepackage{algorithm2e,algorithm,arydshln,subcaption}
+\usepackage{forest}
+\usetikzlibrary{calc,positioning,shapes,arrows,arrows.meta,fit,automata,quotes}
+\pgfplotsset{compat=1.18}
+\usepackage[acronym]{glossaries}
+\makenoidxglossaries
+\usepackage{fvextra,csquotes}
+\usepackage{etoolbox}
+\definecolor{customgray}{HTML}{505050}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{orcidlink}
+\usepackage{url,hyperref}
+\hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}}
+\author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
+\date{2025-03-20}
+\title{Exploration des méthodologies de test d'applications\\\medskip
+\large Note de veille technologique}
+\hypersetup{
+ pdfauthor={Cyprien PIERRE \orcidlink{0009-0009-9040-6795}},
+ pdftitle={Exploration des méthodologies de test d'applications},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={},
+ pdflang={French}}
+\usepackage[style=backend=biber,style=iso-numeric,doi=true,isbn=true,mincrossrefs=1,autocite=superscript]{biblatex}
+\addbibresource{~/org/references.bib}
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\todo[inline]{Rédiger l'abstract}
+\end{abstract}
+
+\renewcommand\{\keywordsname\{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
+
+\begin{multicols}{2}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\section*{Introduction}
+\label{sec:orge5c2725}
+
+\section*{Vue d'ensemble}
+\label{sec:orgfce0227}
+Contexte : Architecture microservice, Vue.js, PostgreSQL
+Type d'application : Aggrégation et analyse de données
+\section*{Stratégies}
+\label{sec:org9e94f23}
+Approches théorisées : Test Driven Design, Behavior Driven Design
+
+Quoi, Qui, Où, Quand, Comment, Pourquoi ?
+
+Objectif : the shortest feedback loop possible
+
+Continuous integrations rules
+\begin{enumerate}
+\item Always run commit tests locally before commiting
+\item After commiting, always wait for the results of the testing pipeline
+\item Fix or reverse failures within 10 minutes (start a clock, pomodoro)
+\item Revert changes done by a teamate if it breaks the rules
+\item Monitore your change throught the pipeline
+\item Treat a broken build as a build sin (gamifying things)
+\item Commit small but often
+\item Maintain a fast commit feedback loop
+\item Automate everything
+\item Take ownership of failures
+\end{enumerate}
+
+Test Driven Development => Design
+\begin{itemize}
+\item Path :
+\begin{itemize}
+\item Express intent in the form of code
+\item Test the test by running it and seeing it FAIL
+\item Create the minimum code to meet the needs of the tests
+\item Run it and see it PASS
+\item In a stable and passing state, REFACTOR test \& code for quality \& generality
+\end{itemize}
+\end{itemize}
+\subsection*{Tests fonctionnels}
+\label{sec:orgd8f4277}
+\begin{description}
+\item[{Test unitaire}] Valide le fonctionnement d'une fonction unique. Est très performant. Est le niveau le plus précis des types de tests. Est exécuté dans un pipeline d'intégration continue.
+\item[{Test de composant}] 
+
+\item Test d'intégration
+\item Test de gestion des erreurs
+\end{description}
+\subsection*{Non régression}
+\label{sec:orgaf7cc6f}
+\begin{description}
+\item[{Test de contrat}] 
+
+\item Contract Driven Testing 
+=> Specmatics \& YAML
+\begin{itemize}
+\item Contract compatibility testing
+\item Backward compatibility
+\item Shared contracts specifications
+\item Zero code contract testing
+\end{itemize}
+\item[{Test d'acceptation}] Est rédigé avant de coder une fonctionnalité. Spécifie uniquement ce que le système est censé faire. Ce type de test est le premier pillier du TDD. Son exécution est consommatrice de ressource, ces tests se concentrent sur les comportements généraux et sont à voir comme une confirmation complémentaire aux tests unitaires. Ils sont utilisés pour initialisés et valider le développement d'une feature, pour vérifier la stabilité du système au fil des évolutions et permet de remplacer les tests manuels de regression.
+\item[{Test d'approbation}] Vérifie qu'un code produit le même résultat entre deux exécutions. Est intéressant pour s'assurer de la stabilité d'un service et de la répétabilité de composition d'une interface.
+\end{description}
+\subsection*{Expérience utilisateur}
+\label{sec:org7055eb5}
+\begin{description}
+\item[{Test de comportement}] Niveau le plus macroscopique des types de test, il vise à définir des spécifications (fonctionnalités) et des scénarions (user story) dans un langage proche du langage naturel (eg. Gherkins). Ces descriptions sont converties en code et éxecutées par des outils comme Cucumber.
+\item[{Test d'interface}] Permet de tester les schémas de navigations dans l'application et de vérifier le comportement des éléments d'interface. Des technologies comme \href{https://www.cypress.io/}{Cypress} prennent en charge ces types de tests.
+\item[{Test utilisateur}] Exploration manuelle de l'application client par un utilisateur "beta testeur".
+\end{description}
+
+Ces modes de tests et les technologies citées (Cypress et Cucumber) peuvent être utilisées conjointement pour permettre à la fois l'automatisation des tests, la collaboration des équipes diverses et l'expérimentation manuelle.
+\subsection*{Performance}
+\label{sec:org931fe08}
+Définir des seuils maximums de temps de réponse
+Pour assurer une bonne expérience utilisateur
+Pour limiter la consommation des ressources et les frais de computing en serverless
+Pour limiter les goulots d'étranglements
+
+\begin{description}
+\item[{Test de résistance}] Pour identifier la charge maximale admissible par le système. Monter progressivement la charge jusqu'à faire tomber les services.
+\item[{Test d'endurance}] Maintiens de la charge maximum sur de longue période (de plusieurs heures à plusieurs jours) pour s'assurer de la stabilité des services.
+\item[{Test de pointes}] Vérification de la capaciter à traiter des pics soudains de charge. A tester à 100\%, 125\%, 150\% et 200\% de capacité. Est associé à une analyse des probabilités d'occurences pour le calcul du taux de disponnibilité.
+\item[{Test des temps de réponses}] 
+\end{description}
+
+Barely equal to a benchmark
+\subsection*{Sécurité}
+\label{sec:org6cebf9d}
+\begin{description}
+\item[{Test d'autenticité}] Test des mécanismes d'autentifications de l'API
+\item[{Test d'autorisation}] chaque utilisateur ne doit accéder qu'à ses propres données (sécurité granulaire au niveau des lignes).
+\item[{Test de pénétration}] "Simule une cyberattaque pour identifier les vulnérabilités de l'API qu'un attaquant potentiel pourrait exploiter. Ces tests sont effectués à l'aide d'algorithmes spécialisés qui recherchent les injections de code et arrêtent ces requêtes avant qu'elles ne puissent causer des dommages au serveur."
+\item Dépendancy injection
+\item {[}\ldots{}]
+\end{description}
+
+Prérequis
+\section*{<=====DATA=====>}
+\label{sec:org6e9ae36}
+
+Domain Driven Development
+=> Code is the simulation of the problem we try to solve
+
+idea : org-mode documents that describe behaviors \& business logic ?
+
+\begin{itemize}
+\item End-to-end testing
+
+\item Behavior Driven Design
+=> Cucumber, SpecFlow \& Gherkins Language
+\begin{itemize}
+\item Specifications + Senarios
+\end{itemize}
+
+=> Functionnal testing
+
+\item Integration testing => Not really neaded if acceptance test is well defined
+\begin{itemize}
+\item Here to fail faster
+\end{itemize}
+\end{itemize}
+
+Others
+\begin{itemize}
+\item Approval test
+\begin{itemize}
+\item Verify the repetability of the code through the results
+\item Valuable for stability
+\item Great for UI stability
+\item Verify that nothing has changed
+\end{itemize}
+
+\item Manual testing
+\begin{itemize}
+\item Use humans for exploratory and usability testing (human in the loop)
+\item Exploratory test
+\end{itemize}
+
+\item Soak test
+\item Sanity test
+\item Smoke test
+\end{itemize}
+
+\noindent\rule{\textwidth}{0.5pt}
+Financial costs : Resource and network consumption
+Energy efficiency, carbon footprint
+
+\noindent\rule{\textwidth}{0.5pt}
+DORA metrics => Research papers + the "Accelerate" book (sociologic)
+\begin{itemize}
+\item Stability \texttt{is a measure of the quality of the code that we produce}
+\url{https://www.youtube.com/watch?v=hbeyCECbLhk\&list=PLwLLcwQlnXBwvH8Iqs9zqkbSWdvWoyX4v}
+\begin{itemize}
+\item Change failure rate => Bug count
+\item Mean time to recovery => Bug count
+\end{itemize}
+\item Throughput \texttt{is a measure of the efficiency of your approach}
+=> Work on smaller changes
+\begin{itemize}
+\item Lead time for changes => Features
+\item Deployment frequency [x]
+\end{itemize}
+\end{itemize}
+
+\noindent\rule{\textwidth}{0.5pt}
+Database testing :
+\begin{itemize}
+\item Schema testting : test de la logique structurelle de la base (procedures, functions, tables columns…).
+\item Functionnal testing : test de l’intégrité des données (clefs uniques, suppression en cascade …)
+\item Non functionnal testing : tests de performances et de sécurité
+\item Unit testing : test des fonctionnalités individuelles.
+\item Routing testing : test des différentes routes et de leurs réponses.
+\item Client testing
+\item Component testing : test du fonctionnement d’un composant.
+\item E2E : test de l’intégration des composants entre eux.
+\item Other services testing :
+\end{itemize}
+
+Faire attention à ne tester que la logique implémentée en interne. On ne teste pas que pg sait bien faire un select ou une librairie externe.
+
+Ce que l’on veut tester dans Rail\_on  at the moment:
+
+Database :
+Que le schéma d’une base migré soit bien celui qui est typé dans typeORM.
+Que les cascades et les clefs uniques et les relations sont ce qui est attendu
+API :
+On veut tester les routes et ce qu’elles retournent
+On veut tester les fonctions communes utilisées dans les middlewares
+Client : TO BE DEFINED
+
+\end{multicols}
+\end{document}

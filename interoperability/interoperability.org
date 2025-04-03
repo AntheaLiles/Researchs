@@ -1,0 +1,9 @@
+
+Tout actif construit évolue durant sa durée d’exploitation et jusqu’à son démantèlement . Les données d’ingénieries issues des diverses phases de conceptions peuvent être agrégées avec les données d’exploitations et servir de socle pour les divers travaux d’analyses, de simulations et de préparation d’intervention ultérieures sur l’ouvrage .
+Notre approche privilégie les transactions de données filtrées plutôt que les formats de fichiers structurés. [24] [25] Cette vision s’aligne avec les objectifs annoncés par la buildingSMART International  (bSI) en matière d’évolution du standard IFC, [26] les efforts de l’Alliance for OpenUSD  (AOUSD) pour un écosystème 3D standardisé, [27] la collaboration entre l’AOUSD, l’Association for Manufacturing Technology  (AMT), l’Alliance for Open Media  (AOM) et la bSI. [28]
+Nous avons choisi de supporter le standard OPC-UA  pour les communications IoT et d’assurer la compatibilité avec les autres protocoles de l’OT et de l’IT avec Fluentd . Notre choix s’inscrit dans un contexte de recherche grandissant autour des Smart Factories [29], Smart Buildings [30], Smart Grids [31].
+Nous implémentons un pipeline de données d’ingénierie unifié avec Speckle . Cette solution OpenBIM permet de centraliser les données d’objets dans un dépôt centralisé et de les redistribuer grâce à un écosystème de connecteurs pour les applications métiers et d’assurer le suivi des évolutions des objets. [32]
+ 
+Figure 12 : Pipeline d'information de conception
+La prise en charge par PostGIS de GDAL  permet également de pouvoir supporter l’intégration en base de données d’une grande variété de formats d’image raster comme vectorielle.
+Possibilité de développer sur demande des connecteurs spécifiques. Ces connecteurs seront partagés avec les communautés Open Source des différentes solutions (Fluentd, Speckle, GDAL) sous licence libre CeCILL v2.1.  

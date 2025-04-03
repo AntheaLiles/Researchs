@@ -1,0 +1,62 @@
+
+* TODO Inclure un tableau croisant "Cas d’usage", "Performance", "Maturité", "Risques", et "Limitations" par extension
+* TODO Inlure une taxonomie et classification standard (ex. OLAP vs OLTP : Inclure graphique choix modèle ?, Open Source vs Entreprise)
+* TODO Questionner la valeur ajoutée réelle de chaque extension (ex. Apache AGE vs Neo4j pour les graphes)
+* TODO Citer des articles clés (ex. "PostgreSQL vs MongoDB : A Comparative Study", ACM 2023)
+* TODO Utiliser des modèles théoriques (ex. TOGAF pour l’architecture)
+* TODO Lier la description technique de chaque extension à un scénario réel
+
+#+LaTeX: \begin{multicols}{2}
+# +latex: \raggedcolumns
+
+* TODO A trier
+# Données spécialisées
+- [[https://github.com/theory/pg-semver][pg-semver]] :: A semantic version data type for PostgreSQL  
+- [[https://github.com/fboulnois/pg_uuidv7][pg_uuidv7]] :: Extension to create version 7 UUIDs
+- [[https://github.com/tvondra/sequential-uuids][sequential-uuids]] :: generator of sequential UUIDs
+- [[https://github.com/dimitri/prefix][Prefix]] :: Prefix Range module for PostgreSQL
+- [[https://github.com/mpartel/postgres-protobuf][postgres-protobuf]] :: Protocol Buffer extension for PostgreSQL
+- [[https://github.com/citusdata/postgresql-hll][postgresql-hll]] :: Implémentation des structures de données de HyperLogLog 
+- [[https://github.com/df7cb/postgresql-unit][postgresql-unit]] :: implements a PostgreSQL datatype for SI units, plus byte. The eight base units can be combined to arbitrarily complex derived units using operators defined in the PostgreSQL type system. SI and IEC binary prefixes are used for input and output, and quantities can be converted to arbitrary scale.
+
+* TODO Rédiger l'abstract
+Insister sur l’objectif de démontrer comment PostgreSQL s’adapte aux besoins modernes (multi-modèle, scalabilité, IA).
+
+
+**** TODO Mettre en garde contre les "extensions fantômes" (peu maintenues mais populaires).}
+
+# Présentant un dépot non archivé GitHub, GitLab ou Codeberg ou, à défaut, un mirroir sur ces plateformes, ayant été mis à jour depuis la sortie de PostgreSQL version 16.0 et disposant de plus de 100 étoiles, à l'exception d'éléments permettant de compléter un propos.
+
+*Norme NF EN 61 355-1* ??
+
+PostgreSQL est l'un des DBMS les plus populaires, faisant partis du top 10 des DBMS au classement DB-engines depuis de nombreuses années. [36]
+
+Sa nature versatile, sa facilité d'utilisation et son écosystème d'extension [37] lui ont permis de gagner toujours plus en popularité et en adoption au fil des ans. 
+
+#+begin_quote
+/PostgreSQL is used by 49% of developers and is the most popular database for the second year in a row./ -- Stack Overflow [38]
+#+end_quote
+
+**** TODO Classement des SGDB les plus populaires selon [[https://db-engines.com/en/ranking_trend][DB-Engine]], limité au top 5
+**** TODO Recréer le graphique avec le dataset originel, demande envoyée
+
+Ce système de gestion de base de données maintiens une position particulière au regard de ses compétiteur. 
+Il s'agit d'un logiciel libre et opensource sous licence PostgreSQL [fn:1] similaire à la licence MIT[fn:2].
+Ses concurents directs étant Oracle (propriétaire), MySQL (GPL v2.0[fn:4]), MS SQL Server (propriétaire) et MongoDB (SSPL[fn:3]).
+
+**** TODO Intégrer des graphiques issus de GitHub Stars et autres sources (dbdb?) pour illustrer la croissance.
+
+**** TODO Illustrer l’impact de HypoPG sur les temps de requête avec des données réelles
+**** TODO Comparer les gains de compression de TimescaleDB avec d’autres solutions (ex. Citus)
+#+latex: \todo[inline]{Expliquer le usecase : Observabilité de réseaux GTC, etc.}
+#+latex: \todo[inline]{Expliquer le usecase : CAO, GIS, BIM etc.}
+#+latex: \todo[inline]{Analyser l’impact de PostGIS dans les projets Smart City et son son impact sur l’industrie}
+#+latex: \todo[inline]{Usecase : MobilityDB pour la logistique, Giswater : gestion des eaux d'orage, Pointcloud, H3, etc.}
+#+latex: \todo[inline]{Intégrer des benchmarks issus de VLDB ou IEEE comparant PGSQL, TimescaleDB et InfluxDB au regard du stockage, de la latence, du temps de traitement etc.}
+#+latex: \todo[inline]{Esxpliquer le usecase : IoT, IIoT, OT, SCADA, etc.}
+
+#+latex: \todo[inline]{Expliquer le usecase : Supervision, GTB, GTC, etc.}
+#+latex: \todo[inline]{Mettre l’accent sur l’expérience développeur (DevEx), facteur clé pour l’adoption.}
+#+latex: \todo[inline]{Référencer des frameworks comme ISO 27001 ou NIST}
+#+latex: \todo[inline]{Fixer les renvois à la ligne}
+#+latex: \todo[inline]{Glossaire détaillé des acronymes techniques (ex. FDW, CDC).}

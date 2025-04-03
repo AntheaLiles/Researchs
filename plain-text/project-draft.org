@@ -1,0 +1,38 @@
+#+title: Project draft
+
+* Goal
+Rewrite the TeX ecosystem in Common Lisp.
+Rewrite the Org ecosystem in Common Lisp.
+
+* TeX ecosystem
+Package archive : CTAN
+
+** TeX
+*** LaTeX
+**** LuaLaTeX
+**** XeLaTeX
+**** BibLaTeX
+*** XeTeX
+Font systems : 
+*** PDFTeX
+*** AUCTeX
+*** ConTeXt
+*** TeXinfo
+*** LuaTeX
+*** LyX
+*** TeXLive
+*** TeXmacs
+*** TeXStudio
+*** MikTeX
+*** KaTeX
+*** BibTeX
+
+* Org ecosystem
+Package archive : ELPA
+
+* Drawing systems
+** PlantUML
+** GraphViz
+** Mermaid
+** TikZ
+** GNUPlot
