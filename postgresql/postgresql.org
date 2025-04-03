@@ -3,8 +3,7 @@
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
-#+setupfile: "~/Projects/research-templates/lualatex.org"
-#+PROPERTY: header-args:R :results output graphics :exports results
+#+setupfile: "~/org/config-tex.org"
 
 #+begin_abstract
 Abstract
@@ -23,9 +22,8 @@ Contexte
 # Pourquoi est-il intéressant d'explorer en profondeur un écosystème applicatif ?
 
 # Pourquoi s'intéresser à PostgreSQL ?
-#+NAME: db-ranking-graph
 #+CAPTION: Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL
-#+BEGIN_SRC R :file charts/top5.pdf :width 10 :height 6 :exports results :results graphics
+#+BEGIN_SRC R :file charts/top5.pdf
 library(readr)
 library(dplyr)
 library(ggplot2)
@@ -51,7 +49,7 @@ plot_object <- ggplot(data, aes(x = Date)) +
 print(plot_object)
 #+END_SRC
 
-#+RESULTS: db-ranking-graph
+#+RESULTS:
 
 #+CAPTION: Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL
 #+NAME: fig:db-ranking                    

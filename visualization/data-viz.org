@@ -1,9 +1,9 @@
 #+title: Méthode de sélection, configuration et validation des représentations graphiques des corpus d'informations
+#+subtitle: Revue de litérature
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
-#+LICENSE: AFL-3.0
-#+setupfile: "~/Projects/charte-unique/config.org"
+#+setupfile: "~/org/config-tex.org"
 
 #+begin_abstract
 \todo[inline]{Rédiger l'abstract}

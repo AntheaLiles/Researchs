@@ -1,4 +1,9 @@
-
+#+title: Méthodologie de conception d'une documentation logicielle à forte valeur ajoutée
+#+subtitle: Note de veille technologique
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/org/config-tex.org"
 
 Theory, best way to learn :
 Teaching > Doing > Playing > Reading > Listening

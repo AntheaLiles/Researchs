@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{stephenfewIntroduction2012}{inbook}{}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{stephenfewIntroduction2012}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
            family={{Stephen Few}},
@@ -34,6 +34,7 @@
       \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -48,7 +49,7 @@
       \range{pages}{14}
       \keyw{/done,nosource}
     \endentry
-    \entry{safurazabidinBibliometricScientometricMapping2020}{article}{}
+    \entry{safurazabidinBibliometricScientometricMapping2020}{article}{}{}
       \name{author}{3}{}{%
         {{hash=e0bf7ea05402ddb6740c2c7b392e0123}{%
            family={Safura\bibnamedelima Zabidin},
@@ -68,10 +69,12 @@
       }
       \strng{namehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{fullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{fullhashraw}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{bibnamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authorbibnamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authornamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authorfullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{authorfullhashraw}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -108,7 +111,7 @@
       \endverb
       \keyw{/unread}
     \endentry
-    \entry{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020}{article}{}
+    \entry{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020}{article}{}{}
       \name{author}{2}{}{%
         {{hash=aa55ca65be4e2bb77d7272f468da9124}{%
            family={{Asia University, Taichung, Taiwan}},
@@ -121,10 +124,12 @@
       }
       \strng{namehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{fullhash}{7f357700b43471499ad9c11bb83c6849}
+      \strng{fullhashraw}{7f357700b43471499ad9c11bb83c6849}
       \strng{bibnamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authorbibnamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authornamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authorfullhash}{7f357700b43471499ad9c11bb83c6849}
+      \strng{authorfullhashraw}{7f357700b43471499ad9c11bb83c6849}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -158,7 +163,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{sosulskiDataVisualizationMade2019}{book}{}
+    \entry{sosulskiDataVisualizationMade2019}{book}{}{}
       \name{author}{1}{}{%
         {{hash=a1d8f9a3e172b359362317dd6883ac0e}{%
            family={Sosulski},
@@ -174,10 +179,12 @@
       }
       \strng{namehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{fullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{fullhashraw}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{authorfullhashraw}{a1d8f9a3e172b359362317dd6883ac0e}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -195,7 +202,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{schwabishCenteringAccessibilityData2022a}{inbook}{}
+    \entry{schwabishCenteringAccessibilityData2022a}{inbook}{}{}
       \name{bookauthor}{3}{}{%
         {{hash=4297ecd0035e3a6b6674b79bad127077}{%
            family={Schwabish},
@@ -219,6 +226,7 @@
       \strng{bookauthorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthornamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
+      \strng{bookauthorfullhashraw}{ebbe9d2ebc5f596043750b769650aff2}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
@@ -234,7 +242,7 @@
       \range{pages}{5}
       \keyw{/done,nosource}
     \endentry
-    \entry{frankelavskyRightToolsJob2022}{incollection}{}
+    \entry{frankelavskyRightToolsJob2022}{incollection}{}{}
       \name{author}{1}{}{%
         {{hash=e986f96806172338671b5f104947725b}{%
            family={{Frank Elavsky}},
@@ -245,10 +253,12 @@
       }
       \strng{namehash}{e986f96806172338671b5f104947725b}
       \strng{fullhash}{e986f96806172338671b5f104947725b}
+      \strng{fullhashraw}{e986f96806172338671b5f104947725b}
       \strng{bibnamehash}{e986f96806172338671b5f104947725b}
       \strng{authorbibnamehash}{e986f96806172338671b5f104947725b}
       \strng{authornamehash}{e986f96806172338671b5f104947725b}
       \strng{authorfullhash}{e986f96806172338671b5f104947725b}
+      \strng{authorfullhashraw}{e986f96806172338671b5f104947725b}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -265,7 +275,7 @@
       \range{pages}{9}
       \keyw{/done,nosource}
     \endentry
-    \entry{yanholtzDataViz2018}{artwork}{}
+    \entry{yanholtzDataViz2018}{artwork}{}{}
       \name{author}{2}{}{%
         {{hash=14b0f97b665c1a0d1b02edc870a39d86}{%
            family={{Yan Holtz}},
@@ -276,10 +286,12 @@
       }
       \strng{namehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{fullhash}{c16c9c145bf6a137f3c2a878c530a20f}
+      \strng{fullhashraw}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{bibnamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorbibnamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authornamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorfullhash}{c16c9c145bf6a137f3c2a878c530a20f}
+      \strng{authorfullhashraw}{c16c9c145bf6a137f3c2a878c530a20f}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -300,7 +312,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{jonathanschwabishGraphicContinuum2014}{artwork}{}
+    \entry{jonathanschwabishGraphicContinuum2014}{artwork}{}{}
       \name{author}{2}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -311,10 +323,12 @@
       }
       \strng{namehash}{6179acdac197289e51e14ed161361f3a}
       \strng{fullhash}{6179acdac197289e51e14ed161361f3a}
+      \strng{fullhashraw}{6179acdac197289e51e14ed161361f3a}
       \strng{bibnamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorbibnamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authornamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorfullhash}{6179acdac197289e51e14ed161361f3a}
+      \strng{authorfullhashraw}{6179acdac197289e51e14ed161361f3a}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -339,7 +353,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{alansmithLexiqueVisuel}{artwork}{}
+    \entry{alansmithLexiqueVisuel}{artwork}{}{}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{shorttitle}
@@ -359,7 +373,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{lindabealeInsightsArcGIS2017}{artwork}{}
+    \entry{lindabealeInsightsArcGIS2017}{artwork}{}{}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
@@ -383,7 +397,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{schwabishNotHarmGuide2022}{book}{}
+    \entry{schwabishNotHarmGuide2022}{book}{}{}
       \name{editor}{3}{}{%
         {{hash=4297ecd0035e3a6b6674b79bad127077}{%
            family={Schwabish},
@@ -406,10 +420,12 @@
       }
       \strng{namehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{fullhash}{ebbe9d2ebc5f596043750b769650aff2}
+      \strng{fullhashraw}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{editorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{editornamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{editorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
+      \strng{editorfullhashraw}{ebbe9d2ebc5f596043750b769650aff2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{editor}
@@ -427,7 +443,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{andreaskrauseBestPracticesData2024}{article}{}
+    \entry{andreaskrauseBestPracticesData2024}{article}{}{}
       \name{author}{3}{}{%
         {{hash=112eb0b147c4a7f674d015a86e5dea70}{%
            family={Krause},
@@ -450,10 +466,12 @@
       }
       \strng{namehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{fullhash}{9b0f3360f69411ca9451bf59b8fcb8be}
+      \strng{fullhashraw}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{bibnamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authorbibnamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authornamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authorfullhash}{9b0f3360f69411ca9451bf59b8fcb8be}
+      \strng{authorfullhashraw}{9b0f3360f69411ca9451bf59b8fcb8be}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -486,7 +504,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{stephenfewTableDesign2012}{inbook}{}
+    \entry{stephenfewTableDesign2012}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
            family={{Stephen Few}},
@@ -501,6 +519,7 @@
       \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -515,7 +534,7 @@
       \range{pages}{36}
       \keyw{/done,nosource}
     \endentry
-    \entry{jonathanschwabishQualitative2021}{inbook}{}
+    \entry{jonathanschwabishQualitative2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -530,6 +549,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -559,7 +579,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{beechamUseGlyphmapsAnalysing2021}{article}{}
+    \entry{beechamUseGlyphmapsAnalysing2021}{article}{}{}
       \name{author}{4}{}{%
         {{hash=472d6714e0e04ec98320c16cfb5f9c94}{%
            family={Beecham},
@@ -584,10 +604,12 @@
       }
       \strng{namehash}{0787aace756414da3c111be75b8bced6}
       \strng{fullhash}{0787aace756414da3c111be75b8bced6}
+      \strng{fullhashraw}{0787aace756414da3c111be75b8bced6}
       \strng{bibnamehash}{0787aace756414da3c111be75b8bced6}
       \strng{authorbibnamehash}{0787aace756414da3c111be75b8bced6}
       \strng{authornamehash}{0787aace756414da3c111be75b8bced6}
       \strng{authorfullhash}{0787aace756414da3c111be75b8bced6}
+      \strng{authorfullhashraw}{0787aace756414da3c111be75b8bced6}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -625,7 +647,7 @@
       \endverb
       \keyw{/unread}
     \endentry
-    \entry{rose-greenlandColorPerceptionSociology2016}{article}{}
+    \entry{rose-greenlandColorPerceptionSociology2016}{article}{}{}
       \name{author}{1}{}{%
         {{hash=eb7882d12ae519daf5ac710b931c409c}{%
            family={Rose-Greenland},
@@ -635,10 +657,12 @@
       }
       \strng{namehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{fullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{fullhashraw}{eb7882d12ae519daf5ac710b931c409c}
       \strng{bibnamehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{authorbibnamehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{authornamehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{authorfullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorfullhashraw}{eb7882d12ae519daf5ac710b931c409c}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -675,7 +699,7 @@
       \endverb
       \keyw{/unread}
     \endentry
-    \entry{tranDiscoveringAccessibleData2024}{inproceedings}{}
+    \entry{tranDiscoveringAccessibleData2024}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=80e7e5cb5d290af97722f70f12713478}{%
            family={Tran},
@@ -701,10 +725,12 @@
       }
       \strng{namehash}{cf885afd9a52278c6960e008e725865f}
       \strng{fullhash}{cf885afd9a52278c6960e008e725865f}
+      \strng{fullhashraw}{cf885afd9a52278c6960e008e725865f}
       \strng{bibnamehash}{cf885afd9a52278c6960e008e725865f}
       \strng{authorbibnamehash}{cf885afd9a52278c6960e008e725865f}
       \strng{authornamehash}{cf885afd9a52278c6960e008e725865f}
       \strng{authorfullhash}{cf885afd9a52278c6960e008e725865f}
+      \strng{authorfullhashraw}{cf885afd9a52278c6960e008e725865f}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -740,7 +766,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{wilkeCommonPitfallsColor2019}{inbook}{}
+    \entry{wilkeCommonPitfallsColor2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -754,6 +780,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -781,7 +808,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{wilkeColorScales2019}{inbook}{}
+    \entry{wilkeColorScales2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -795,6 +822,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -822,7 +850,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{jonathanschwabishDevelopingDataVisualization2021}{inbook}{}
+    \entry{jonathanschwabishDevelopingDataVisualization2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -837,6 +865,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -866,7 +895,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{kirkDataRepresentation2019}{inbook}{}
+    \entry{kirkDataRepresentation2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=bffbeab802f44e07986dac869ceb2b46}{%
            family={Kirk},
@@ -883,6 +912,7 @@
       \strng{bookauthorbibnamehash}{bffbeab802f44e07986dac869ceb2b46}
       \strng{bookauthornamehash}{bffbeab802f44e07986dac869ceb2b46}
       \strng{bookauthorfullhash}{bffbeab802f44e07986dac869ceb2b46}
+      \strng{bookauthorfullhashraw}{bffbeab802f44e07986dac869ceb2b46}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
@@ -897,7 +927,7 @@
       \range{pages}{1}
       \keyw{/unread,imprime,nosource}
     \endentry
-    \entry{wilkeRedundantCoding2019}{inbook}{}
+    \entry{wilkeRedundantCoding2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -911,6 +941,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
@@ -938,7 +969,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{stephenfewComponentlevelGraphDesign2012}{inbook}{}
+    \entry{stephenfewComponentlevelGraphDesign2012}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
            family={{Stephen Few}},
@@ -953,6 +984,7 @@
       \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
@@ -967,7 +999,7 @@
       \range{pages}{52}
       \keyw{/done,nosource}
     \endentry
-    \entry{dougschepersDesigningDataCognitive2022}{incollection}{}
+    \entry{dougschepersDesigningDataCognitive2022}{incollection}{}{}
       \name{author}{1}{}{%
         {{hash=8be7d1e68d9ada9cdfd223a72f58639a}{%
            family={{Doug Schepers}},
@@ -978,10 +1010,12 @@
       }
       \strng{namehash}{8be7d1e68d9ada9cdfd223a72f58639a}
       \strng{fullhash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{fullhashraw}{8be7d1e68d9ada9cdfd223a72f58639a}
       \strng{bibnamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
       \strng{authorbibnamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
       \strng{authornamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
       \strng{authorfullhash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{authorfullhashraw}{8be7d1e68d9ada9cdfd223a72f58639a}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -998,7 +1032,7 @@
       \range{pages}{11}
       \keyw{/done,nosource}
     \endentry
-    \entry{sarahfossheimCreatingBetterScreen2022}{incollection}{}
+    \entry{sarahfossheimCreatingBetterScreen2022}{incollection}{}{}
       \name{author}{1}{}{%
         {{hash=4b48a3dccb3635441dd47d7f2e715e80}{%
            family={{Sarah Fossheim}},
@@ -1009,10 +1043,12 @@
       }
       \strng{namehash}{4b48a3dccb3635441dd47d7f2e715e80}
       \strng{fullhash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{fullhashraw}{4b48a3dccb3635441dd47d7f2e715e80}
       \strng{bibnamehash}{4b48a3dccb3635441dd47d7f2e715e80}
       \strng{authorbibnamehash}{4b48a3dccb3635441dd47d7f2e715e80}
       \strng{authornamehash}{4b48a3dccb3635441dd47d7f2e715e80}
       \strng{authorfullhash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{authorfullhashraw}{4b48a3dccb3635441dd47d7f2e715e80}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -1029,7 +1065,7 @@
       \range{pages}{11}
       \keyw{/done,nosource}
     \endentry
-    \entry{mikeyiHowChooseRight2020}{misc}{}
+    \entry{mikeyiHowChooseRight2020}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=0fa28bc257327d5b4f1e4787966f5209}{%
            family={{Mike Yi}},
@@ -1040,10 +1076,12 @@
       }
       \strng{namehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{fullhash}{0fa28bc257327d5b4f1e4787966f5209}
+      \strng{fullhashraw}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{bibnamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authorbibnamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authornamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authorfullhash}{0fa28bc257327d5b4f1e4787966f5209}
+      \strng{authorfullhashraw}{0fa28bc257327d5b4f1e4787966f5209}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -1063,7 +1101,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{stephenfewShowMeNumbers2012}{book}{}
+    \entry{stephenfewShowMeNumbers2012}{book}{}{}
       \name{author}{1}{}{%
         {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
            family={{Stephen Few}},
@@ -1077,10 +1115,12 @@
       }
       \strng{namehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{fullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{fullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{authorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -1098,7 +1138,7 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
-    \entry{NFENISO9241-125ErgonomieLinteractionHommesysteme2017}{standard}{}
+    \entry{NFENISO9241-125ErgonomieLinteractionHommesysteme2017}{standard}{}{}
       \list{publisher}{1}{%
         {AFNOR}%
       }
@@ -1120,7 +1160,7 @@
       \endverb
       \keyw{/unread,broken,imprime}
     \endentry
-    \entry{ISO8601-1DateHeureRepresentations2019}{standard}{}
+    \entry{ISO8601-1DateHeureRepresentations2019}{standard}{}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
@@ -1132,7 +1172,7 @@
       \field{dateera}{ce}
       \keyw{/unread,nosource}
     \endentry
-    \entry{sosulskiGraphics2019}{inbook}{}
+    \entry{sosulskiGraphics2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=a1d8f9a3e172b359362317dd6883ac0e}{%
            family={Sosulski},
@@ -1149,6 +1189,7 @@
       \strng{bookauthorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{bookauthorfullhashraw}{a1d8f9a3e172b359362317dd6883ac0e}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
@@ -1162,7 +1203,7 @@
       \range{pages}{28}
       \keyw{/done,nosource}
     \endentry
-    \entry{jonathanschwabishDistribution2021}{inbook}{}
+    \entry{jonathanschwabishDistribution2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -1177,6 +1218,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
@@ -1206,7 +1248,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{jonathanschwabishComparingCategories2021}{inbook}{}
+    \entry{jonathanschwabishComparingCategories2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -1221,6 +1263,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
@@ -1250,7 +1293,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{jonathanschwabishParttowhole2021}{inbook}{}
+    \entry{jonathanschwabishParttowhole2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -1265,6 +1308,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
@@ -1294,7 +1338,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{wilkeDirectoryVisualizations2019}{inbook}{}
+    \entry{wilkeDirectoryVisualizations2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1308,6 +1352,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
@@ -1335,7 +1380,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{wilkeVisualizingAmounts2019}{inbook}{}
+    \entry{wilkeVisualizingAmounts2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1349,6 +1394,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
@@ -1376,7 +1422,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{jonathanschwabishTime2021}{inbook}{}
+    \entry{jonathanschwabishTime2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -1391,6 +1437,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1420,7 +1467,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{jonathanschwabishRelationship2021}{inbook}{}
+    \entry{jonathanschwabishRelationship2021}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=0bc4f0014731309707d3862b9edb260a}{%
            family={{Jonathan Schwabish}},
@@ -1435,6 +1482,7 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
+      \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1464,7 +1512,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{wilkeVisualizingManyDistributions2019}{inbook}{}
+    \entry{wilkeVisualizingManyDistributions2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1478,6 +1526,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1505,7 +1554,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{wilkeVisualizingUncertainty2019}{inbook}{}
+    \entry{wilkeVisualizingUncertainty2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1519,6 +1568,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1546,7 +1596,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{wilkeVisualizingDistributionsHistograms2019}{inbook}{}
+    \entry{wilkeVisualizingDistributionsHistograms2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1560,6 +1610,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1587,7 +1638,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{weissgerberBarLineGraphs2015}{article}{}
+    \entry{weissgerberBarLineGraphs2015}{article}{}{}
       \name{author}{4}{}{%
         {{hash=1d18514c33f13abc1a5e619d9a2795f9}{%
            family={Weissgerber},
@@ -1612,10 +1663,12 @@
       }
       \strng{namehash}{7b8d8f140f0351daebbd8d51a6218ea5}
       \strng{fullhash}{7b8d8f140f0351daebbd8d51a6218ea5}
+      \strng{fullhashraw}{7b8d8f140f0351daebbd8d51a6218ea5}
       \strng{bibnamehash}{7b8d8f140f0351daebbd8d51a6218ea5}
       \strng{authorbibnamehash}{7b8d8f140f0351daebbd8d51a6218ea5}
       \strng{authornamehash}{7b8d8f140f0351daebbd8d51a6218ea5}
       \strng{authorfullhash}{7b8d8f140f0351daebbd8d51a6218ea5}
+      \strng{authorfullhashraw}{7b8d8f140f0351daebbd8d51a6218ea5}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1654,7 +1707,7 @@
       \endverb
       \keyw{/done,imprime}
     \endentry
-    \entry{hofmannLettervaluePlotsBoxplots2017}{article}{}
+    \entry{hofmannLettervaluePlotsBoxplots2017}{article}{}{}
       \name{author}{3}{}{%
         {{hash=aab385203b295bcea3e72bd9a22eebae}{%
            family={Hofmann},
@@ -1674,10 +1727,12 @@
       }
       \strng{namehash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \strng{fullhash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
+      \strng{fullhashraw}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \strng{bibnamehash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \strng{authorbibnamehash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \strng{authornamehash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \strng{authorfullhash}{78d47abd4772e1eb75fd0cf5c3cb83c9}
+      \strng{authorfullhashraw}{78d47abd4772e1eb75fd0cf5c3cb83c9}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1715,7 +1770,7 @@
       \endverb
       \keyw{/unread,imprime}
     \endentry
-    \entry{sosulskiBecomingVisual2019}{inbook}{}
+    \entry{sosulskiBecomingVisual2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=a1d8f9a3e172b359362317dd6883ac0e}{%
            family={Sosulski},
@@ -1732,6 +1787,7 @@
       \strng{bookauthorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{bookauthorfullhashraw}{a1d8f9a3e172b359362317dd6883ac0e}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
@@ -1745,7 +1801,7 @@
       \range{pages}{24}
       \keyw{/done,nosource}
     \endentry
-    \entry{wongWallStreetJournal2010}{book}{}
+    \entry{wongWallStreetJournal2010}{book}{}{}
       \name{author}{1}{}{%
         {{hash=d36331834df2821ec820ed7bb96ebe59}{%
            family={Wong},
@@ -1761,10 +1817,12 @@
       }
       \strng{namehash}{d36331834df2821ec820ed7bb96ebe59}
       \strng{fullhash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{fullhashraw}{d36331834df2821ec820ed7bb96ebe59}
       \strng{bibnamehash}{d36331834df2821ec820ed7bb96ebe59}
       \strng{authorbibnamehash}{d36331834df2821ec820ed7bb96ebe59}
       \strng{authornamehash}{d36331834df2821ec820ed7bb96ebe59}
       \strng{authorfullhash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{authorfullhashraw}{d36331834df2821ec820ed7bb96ebe59}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1782,7 +1840,7 @@
       \endverb
       \keyw{/unread}
     \endentry
-    \entry{mikecisnerosWhatLineGraph2024}{online}{}
+    \entry{mikecisnerosWhatLineGraph2024}{online}{}{}
       \name{author}{1}{}{%
         {{hash=ac1648407d04e61c27c42d13dd3b9c85}{%
            family={{Mike Cisneros}},
@@ -1793,10 +1851,12 @@
       }
       \strng{namehash}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{fullhash}{ac1648407d04e61c27c42d13dd3b9c85}
+      \strng{fullhashraw}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{bibnamehash}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{authorbibnamehash}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{authornamehash}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{authorfullhash}{ac1648407d04e61c27c42d13dd3b9c85}
+      \strng{authorfullhashraw}{ac1648407d04e61c27c42d13dd3b9c85}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1818,7 +1878,7 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{wilkeVisualizingNestedProportions2019}{inbook}{}
+    \entry{wilkeVisualizingNestedProportions2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1832,6 +1892,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -1859,7 +1920,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{wilkeVisualizingTimeSeries2019}{inbook}{}
+    \entry{wilkeVisualizingTimeSeries2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
            family={Wilke},
@@ -1873,6 +1934,7 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -1900,7 +1962,7 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
-    \entry{stephenfewGeneralGraphDesign2012}{inbook}{}
+    \entry{stephenfewGeneralGraphDesign2012}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
            family={{Stephen Few}},
@@ -1915,6 +1977,7 @@
       \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -1929,7 +1992,7 @@
       \range{pages}{14}
       \keyw{/done,nosource}
     \endentry
-    \entry{NeurodiversityDesignSystem}{online}{}
+    \entry{NeurodiversityDesignSystem}{online}{}{}
       \list{organization}{1}{%
         {Neurodiversity Design System}%
       }

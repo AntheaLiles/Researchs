@@ -1,3 +1,9 @@
+#+title: Technologies d'intéropérabilité des outils d'ingénierie de la construction
+#+subtitle: Note de veille technologique
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/org/config-tex.org"
 
 Tout actif construit évolue durant sa durée d’exploitation et jusqu’à son démantèlement . Les données d’ingénieries issues des diverses phases de conceptions peuvent être agrégées avec les données d’exploitations et servir de socle pour les divers travaux d’analyses, de simulations et de préparation d’intervention ultérieures sur l’ouvrage .
 Notre approche privilégie les transactions de données filtrées plutôt que les formats de fichiers structurés. [24] [25] Cette vision s’aligne avec les objectifs annoncés par la buildingSMART International  (bSI) en matière d’évolution du standard IFC, [26] les efforts de l’Alliance for OpenUSD  (AOUSD) pour un écosystème 3D standardisé, [27] la collaboration entre l’AOUSD, l’Association for Manufacturing Technology  (AMT), l’Alliance for Open Media  (AOM) et la bSI. [28]
