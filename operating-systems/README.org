@@ -1,0 +1,8 @@
+Analyse comparative des architectures de systèmes d'exploitations
+
+- LibOS
+
+- Wayland vs X11
+
+- Kernels (monolithique, micro-kernel, pico-kernel, lib-kernel)
+

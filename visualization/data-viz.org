@@ -11,16 +11,16 @@
 
 \renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
 
-#+LaTeX: \begin{multicols}{2}
+#+LaTeX: \begin{multicols}{2}\raggedcolumns
 
 * Introduction
-La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées.
+La représentations graphiques des informations est une discipline ancienne [cite:@ref?] pour laquelle il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux d'amélioration des pratiques.
 
 La production d'information réalisée par ordinateur ayant tendance à être perçue comme authentique et fiable, [cite:@stephenfewIntroduction2012] il convient de respecter un certain nombre de rêgles et de bonnes pratiques pour ne pas introduire de biais complémentaires. Nous tentons, à travers ce document, d'objectiver les usages des diverses représentations et leurs configurations.
 
 Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@safurazabidinBibliometricScientometricMapping2020] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
 
-L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
+Le besoin de solution de visualization d'information dans le secteur de la construction est  grandissant [cite:@ref?]. Les technologies de Big Data, CAO, SIG et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. Cela a conduit à l'émergence de nouceaux paradigmes de conceptions tels que le BIM, le CIM ou encore le VDC. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
 L'accès à l'information et à sa bonne interprétation permet aux organisations d'adopter une démarche de prise de décision orienté sur les données. [cite:@sosulskiDataVisualizationMade2019]  \todo[inline]{expliquer les enjeux inhérents + références}
 
 
@@ -57,7 +57,7 @@ Le choix d'une police de texte a de multiples impacts sur la perception des grap
 
 Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est également conseillé de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
 
-La taille de la police joue un role majeur dans l'accessibilité du texte. Il est recommendé d'utiliser une hauteur de police de 12 points.[cite:@andreaskrauseBestPracticesData2024] Le nombre de tailles et de type de police doit être limité en nombre.[cite:@andreaskrauseBestPracticesData2024]
+La taille de la police joue un role majeur dans l'accessibilité du texte. Il est recommendé d'utiliser une hauteur de police minimale de 12 points.[cite:@andreaskrauseBestPracticesData2024] Le nombre de tailles et de type de police doit être limité en nombre.[cite:@andreaskrauseBestPracticesData2024]
 
 Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, StateFace...).[cite:@jonathanschwabishQualitative2021] L'intérêt des icones est discuté plus tard dans ce rapport.
 
@@ -66,11 +66,11 @@ Il est important de prévoir le chargement de toutes polices non standard (eg. S
 ** Couleurs
 L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. [cite:@beechamUseGlyphmapsAnalysing2021]
 
-Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020]
+Cependant, utilisée convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020]
 
 La conception de palettes de couleurs est un exercice difficile. Cette opération implique de considérer les facultées de perception visuelle des utilisateurs mais également le médium et les habitudes associées.
 
-Les études de *(Tran et al)* ont mis en évidence une efficacité particulière de l'utilisation du vert vis à vis du rouge et du bleu dans la vitesse de transmission des informations. L'écart n'est cependant pas suffisement significatif pour justifier à ce titre de l'abandon de l'utilisation de l'une ou l'autre des couleurs.
+Les études de [cite/t:@tranDiscoveringAccessibleData2024] ont mis en évidence une efficacité particulière de l'utilisation du vert vis à vis du rouge et du bleu dans la vitesse de transmission des informations. L'écart n'est cependant pas suffisement significatif pour justifier à ce titre de l'abandon de l'utilisation de l'une ou l'autre des couleurs.
 
 Pour créer une palette de couleur accessible, celle-ci doit être adaptée à :
 - L'achromatopsie et par extension à l'impression en noir et blanc,
@@ -815,22 +815,30 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 
 La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF.
   
-* Evolution
+* Liste des tables
+# +TOC: tables
+#+latex: \listoftables
+
+* Liste des figures
+# +TOC: fig
+#+latex: \listoffigures
+
+* Evolutions
 |    Date | Changements           |
 |---------+-----------------------|
-| 2025-02 | Rédaction du document |
+| 2025-04 | Rédaction du document |
 
 * Glossaire
 # Fixer la position, l'export
-# #+include: ~/org/glossary.org
-# #+print_glossary: :type glossary
+# +print_glossary: :type glossary
 
 * Acronymes
-# #+print_glossary: :type acronyms
+# Fixer la position, l'export
+# +print_glossary: :type acronyms
 
 * Références
 # Séparer les entrées de bibliographie (Livres, Infographies, Normes, Articles, Divers)
 # Associer les chapitres de livres aux livres sources (crossref in biblatex)
 #+print_bibliography: :heading none
 
-#+LaTeX_HEADER: \end{multicols}
+#+LaTeX: \end{multicols}

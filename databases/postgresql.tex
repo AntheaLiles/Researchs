@@ -1,4 +1,4 @@
-% Created 2025-04-03 jeu. 12:47
+% Created 2025-04-03 jeu. 18:21
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -42,6 +42,7 @@
 \usepackage{microtype}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{orcidlink}
+\usepackage{fvextra}
 \usepackage{url,hyperref}
 \hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
@@ -68,13 +69,13 @@ Abstract
 
 \begin{multicols*}{2}
 \section*{Introduction}
-\label{sec:orgee83def}
+\label{sec:orgb64e2d5}
 Contexte
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{charts/top5.pdf}
-\caption{\label{fig:org188e03e}Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL}
+\caption{\label{fig:orgeeed9f2}Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL}
 \end{figure} 
 
 Objectif 
@@ -85,22 +86,22 @@ Méthodologie
 
 Concentration sur les projets les plus populaires, sourcés via \href{https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb}{PostgreSQL is Enough} et \href{https://gist.github.com/joelonsql/e5aa27f8cc9bd22b8999b7de8aee9d47}{1000+ PostgreSQL Extensions}, filtré à plus de 100 étoiles et dont les développements sont toujours en cours (Mars 2025).
 \section*{Fondamentaux techniques}
-\label{sec:org95e740e}
+\label{sec:org15f6bea}
 \subsection*{Extensions multi-modèles}
-\label{sec:org26d4019}
+\label{sec:orgc9cae8c}
 Bien que PostgreSQL soit initialement une base de données relationnelle orientée objet, il permet de créer des types de données personnalisés pour en étendre ses fonctionnalités.
 
 Associé à ses capacités d'extensions, cette capacité de modification du logiciel lui permet de prendre un charge la quasi totalité des modèles de données existantes comme à venir.
 
 Un grand nombre d'extensions communautaires, parfois portées par des entreprises, sont employés à cet effet.
 \subsubsection*{Relationnel étendu}
-\label{sec:org85a622f}
+\label{sec:org6e9cd3f}
 \begin{description}
 \item[{\href{https://github.com/tembo-io/pg\_auto\_dw}{pg\_auto\_dw}}] An auto data warehouse extension for Postgres
 \item[{\href{https://github.com/darold/pgtt}{pgtt}}] extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
 \end{description}
 \subsubsection*{Traitement en temps réel}
-\label{sec:org5e976d6}
+\label{sec:org9c993dd}
 \begin{table}[H]
 \caption{Ingestion des données en temps réel}
 \centering
@@ -160,9 +161,8 @@ Nom & Particularité\\
 \end{tabular}
 \end{table}
 \subsubsection*{Géospatial}
-\label{sec:org9f9ce3f}
-\href{https://github.com/postgis/postgis}{PostGIS}, base de données Geospaciale pour PostgreSQL, 78\% des SIG open-source [41] et est notamment utilisé par \href{https://qgis.org/}{QGIS}.
-Reconnu dans le domaine du SIG, [41] [42] PostGIS permet entre autres de stocker efficacement les données géospatiales et géométriques. Son déploiement permet de relier les informations issues du BIM et du CIM avec les données temps-réel de l’exploitation.
+\label{sec:org5117d28}
+\href{https://github.com/postgis/postgis}{PostGIS} est l'une des extensions de PostgreSQL les plus connues. Elle permet principalement de prendre en charge des modèles de données géographiques, géométriques et géospaciales.
 
 \begin{table}[H]
 \caption{Outils de manipulation de données géospaciales}
@@ -193,7 +193,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-geospacial.pdf}
-\caption{\label{fig:orgce023fb}Logos : PostGIS, pgRouting, MobilityDB, H3, GISWater}
+\caption{\label{fig:org4d01cd1}Logos : PostGIS, pgRouting, MobilityDB, H3, GISWater}
 \end{figure}
 
 \begin{description}
@@ -202,7 +202,7 @@ usage : génération de cartes, de plans, etc.
 \item Raster format, Bitmap extensions etc.
 \end{description}
 \subsubsection*{Données non structurées}
-\label{sec:org1e30163}
+\label{sec:org9b7dd53}
 \begin{description}
 \item[{\href{https://github.com/apache/age}{Apache AGE}}] Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL (OpenCypher)
 \end{description}
@@ -215,7 +215,7 @@ usage : génération de cartes, de plans, etc.
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-documents.pdf}
-\caption{\label{fig:org12e785b}Logos : Apache AGE, FerretDB, pg\_duck, Marten, Pongo}
+\caption{\label{fig:orgbc5035a}Logos : Apache AGE, FerretDB, pg\_duck, Marten, Pongo}
 \end{figure}
 
 \begin{description}
@@ -240,9 +240,9 @@ Mise en cache et file d’attente : postgres’s Unlogged table puis memcache (o
 \item[{\href{https://github.com/duckdb/pg\_duckdb}{pg\_duckdb}}] a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres
 \end{description}
 \subsubsection*{Récupération d'information et IA}
-\label{sec:org3b4d9a7}
+\label{sec:org6eb7140}
 \begin{quote}
-\emph{Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance.} -- [48]
+\emph{Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance.} -- Urban-Galindo\autocite{jean-jacquesurban-galindoGestionConfigurationIngenierie2008}
 \end{quote}
 
 La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. [45] Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines, [46] lutant ainsi contre l’amnésie organisationnelle. [47] 
@@ -259,7 +259,7 @@ Discuter de l’avantage stratégique de pgvector face à des bases dédiées (E
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-search.pdf}
-\caption{\label{fig:orgadbfc13}Logos : ParadeDB, ZomboDB, PGroonga, PostgresML, Lantern}
+\caption{\label{fig:org31154c2}Logos : ParadeDB, ZomboDB, PGroonga, PostgresML, Lantern}
 \end{figure}
 
 
@@ -292,7 +292,7 @@ Korvus, Ollama\ldots{}
 \item[{\href{https://github.com/ChenHuajun/pg\_roaringbitmap}{pg\_roaringbitmap}}] Roaring bitmaps are compressed bitmaps which tend to outperform conventional compressed bitmaps such as WAH, EWAH or Concise. In some instances, roaring bitmaps can be hundreds of times faster and they often offer significantly better compression. They can even be faster than uncompressed bitmaps
 \end{description}
 \subsection*{Solutions d'optimisation}
-\label{sec:org9f75b25}
+\label{sec:orgc3ee3ba}
 \begin{itemize}
 \item Fonctions natives
 \item Cas d'usage : Transactions ACID à haute charge (ERP, systèmes financiers)
@@ -320,7 +320,7 @@ TimescaleDB propose une approche différente appelée \texttt{chunking}.
 \item[{\href{https://github.com/le0pard/pgtune?tab=readme-ov-file}{pgtune}}] tuning PostgreSQL config by your hardware
 \end{description}
 \subsubsection*{Stratégies de stockage}
-\label{sec:orge95e7a7}
+\label{sec:org6499b78}
 \begin{description}
 \item[{zheap}] (réduction WAL) Extension initialement créée par EDB puis maintenu par Cybertec avant d'être intégré à PostgreSQL core en version \autocite{ZheapPostgreSQLWiki2021}
 \item[{pg\_dump}] (algo GZip/LZ4/Zstd)
@@ -350,7 +350,7 @@ Alternatives to CLUSTER and VACUUM
 \item[{\href{https://github.com/hydradatabase/columnar}{columnar}}] Postgres-native columnar storage extension
 \end{description}
 \subsubsection*{Indexation avancée}
-\label{sec:org4b299d9}
+\label{sec:orga069981}
 \begin{description}
 \item[{BRIN}] (Big Data),
 \item[{GIN}] (full-text),
@@ -371,7 +371,7 @@ Alternatives to CLUSTER and VACUUM
 \item[{\href{https://github.com/ossc-db/pg\_plan\_advsr}{pg\_plan\_advsr}}] extension for automated execution plan tuning
 \end{description}
 \subsection*{Architectures distribuées}
-\label{sec:orge5ed58e}
+\label{sec:org45e1dae}
 \begin{description}
 \item[{ElectricSQL}] (CRDTs)
 \item[{\href{https://github.com/electric-sql/pglite}{PGLite}}] Embeddable Postgres with real-time, reactive bindings. (Wasm/Deno)
@@ -390,9 +390,9 @@ Expliquer les intérêts en matière de performance et de fort découplage des e
 \item[{\href{https://github.com/EnterpriseDB/repmgr}{repmgr}}] A lightweight replication manager for PostgreSQL
 \end{description}
 \section*{Écosystème applicatif}
-\label{sec:org67543d5}
+\label{sec:org245f8e5}
 \subsection*{Compatibilité}
-\label{sec:orgd757236}
+\label{sec:org864ce4f}
 \begin{quote}
 \textbf{Compatibilité}, n.f.
 \emph{Le fait pour un matériel ou un logiciel d'être utilisable en connexion avec d'autres matériels, d'autres logiciels, dans un système informatique défini, sans en altérer les conditions de fonctionnement.} -- CNRTL
@@ -429,7 +429,7 @@ WebSocket :
 \item[{\href{https://github.com/diogob/postgres-websockets}{postgres-websockets}}] Middleware permettant d'ajouter la prise en charge de Websockets à PostgreSQL en l'interfaçant avec les commandes LISTEN/NOTIFY
 \end{description}
 \subsection*{Interopérabilité}
-\label{sec:orga058b49}
+\label{sec:org24c9e98}
 \begin{quote}
 \textbf{Interopérabilité}, n.f.
 \emph{Capacité que possède un produit ou un système, dont les interfaces sont intégralement connues, à fonctionner avec d’autres produits ou systèmes existants ou futurs et ce sans restriction d’accès ou de mise en œuvre.} -- Wikitionnaire
@@ -470,7 +470,7 @@ Discuter des défis techniques (ex. différences de syntaxe SQL) et des outils c
 \item[{\href{https://github.com/stripe/pg-schema-diff}{pg-schema-diff}}] Go library for diffing Postgres schemas and generating SQL migrations
 \end{description}
 \subsection*{Écosystème de développement}
-\label{sec:org0635bc9}
+\label{sec:org918ba78}
 \begin{table}[H]
 \caption{Interfaces et clients}
 \centering
@@ -585,9 +585,9 @@ Nom & Particularité\\
 \item[{\href{https://github.com/sqlpage/SQLPage}{SQLPage}}] Fast SQL-only data application builder. Automatically build a UI on top of SQL queries
 \end{description}
 \section*{Gouvernance et sécurité}
-\label{sec:org0a50383}
+\label{sec:org430646b}
 \subsection*{Conformité et audit}
-\label{sec:org9a1e11b}
+\label{sec:orgac86c4d}
 \begin{description}
 \item[{\href{https://github.com/eradman/pg-safeupdate}{pg-safeupdate}}] a simple extension to PostgreSQL that raises an error if UPDATE and DELETE are executed without specifying conditions. This extension was initially designed to protect data from accidental obliteration of data that is writable by PostgREST.
 \item[{\href{https://github.com/timescale/pgspot}{pgspot}}] pgspot checks extension scripts for following PostgreSQL security best practices. In addition to checking extension scripts it can also be used to check security definer functions or any other PostgreSQL SQL code.
@@ -631,7 +631,7 @@ Cet intérêt peut être une des raisons de l'amélioration progressive des perf
 \item[{\href{https://gitlab.com/postgres-ai/joe}{Joe}}] (AI tool) Provide developers access to experiment on automatically provisioned production-size DB testing replica. Joe will provide recommendations for query optimization and the ability to rollback.
 \end{description}
 \subsection*{Chiffrement}
-\label{sec:org528f3e7}
+\label{sec:org22c2988}
 \begin{description}
 \item[{pg\_anonymize}] (GDPR),
 \item[{pgcrypto}] (AES-256/Q-Safe),
@@ -645,7 +645,7 @@ Industrie : PostgreSQL Quantum-Safe (NIST PQC integration [23])
 Explorer les initiatives émergentes (ex. intégration NIST PQC).
 Parler de l'avancée de Google avec le craque du SHA
 \subsection*{Gestion des accès}
-\label{sec:orgda4dd77}
+\label{sec:orgb9c52c4}
 \begin{description}
 \item[{\href{https://github.com/arkhipov/acl}{acl}}] Access Control Lists (ACL) PostgreSQL Extension
 \end{description}
@@ -658,7 +658,7 @@ OAuth2/OIDC : Extension
 \item[{\href{https://github.com/cybertec-postgresql/pg\_permissions}{pg\_permissions}}] A simple set of views to see ALL permissions in a PostgreSQL database
 \end{description}
 \subsection*{Continuité de service}
-\label{sec:orgb998797}
+\label{sec:org6fc6654}
 \begin{table}[H]
 \caption{Solutions de sauvegarde et de récupération}
 \centering
@@ -704,7 +704,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-loadbalancer.pdf}
-\caption{\label{fig:org42c4f43}Logos : PGCat, pgBouncer, pgPool-II}
+\caption{\label{fig:orgac0d35d}Logos : PGCat, pgBouncer, pgPool-II}
 \end{figure}
 
 \begin{table}[H]
@@ -731,9 +731,9 @@ Nom & Particularité\\
 \item[{\href{https://github.com/readysettech/readyset}{readyset}}] a MySQL and Postgres wire-compatible caching layer that sits in front of existing databases to speed up queries and horizontally scale read throughput. Under the hood, ReadySet caches the results of cached select statements and incrementally updates these results over time as the underlying data changes
 \end{description}
 \section*{Stratégie d’adoption}
-\label{sec:org4b18ed5}
+\label{sec:org3de4da9}
 \subsection*{Mise en production}
-\label{sec:orgbc16795}
+\label{sec:orgd3dc424}
 \begin{table}[H]
 \caption{Solutions de déploiement}
 \centering
@@ -800,7 +800,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-cloud.pdf}
-\caption{\label{fig:org37aeea3}Logos : Tembo, Neon, Supabase, Autobase, Omnigress}
+\caption{\label{fig:orgc407214}Logos : Tembo, Neon, Supabase, Autobase, Omnigress}
 \end{figure}
 
 \begin{table}[H]
@@ -825,10 +825,10 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-cloud2.pdf}
-\caption{\label{fig:orgcc4c695}Logos : Gel, pgEdge, Pigsty, iaSQL,}
+\caption{\label{fig:orgbd9ecf5}Logos : Gel, pgEdge, Pigsty, iaSQL,}
 \end{figure}
 \subsection*{Analyse de compétitive}
-\label{sec:org4bcbbbd}
+\label{sec:org5b089e7}
 Analyse comparative : Expliquer pourquoi PostgreSQL résiste face à des concurrents propriétaires (coût, flexibilité) ou open source (MySQL).
 
 Oracle : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
@@ -844,9 +844,9 @@ MongoDB : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
 \item ElasticSearch vs ParadeDB
 \end{itemize}
 \section*{Conclusion et discussions}
-\label{sec:orga2c2f8a}
+\label{sec:org76f1875}
 \section*{Evolution du document}
-\label{sec:org4e8c22b}
+\label{sec:org2ff56a3}
 \begin{center}
 \begin{tabular}{rl}
 Date & Changements\\
@@ -855,6 +855,6 @@ Date & Changements\\
 \end{tabular}
 \end{center}
 \section*{Références}
-\label{sec:org7405c8a}
+\label{sec:orge3e1d63}
 \printbibliography[heading=none]
 \end{document}

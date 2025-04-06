@@ -71,6 +71,10 @@ Méthodologie
 
 Concentration sur les projets les plus populaires, sourcés via [[https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb][PostgreSQL is Enough]] et [[https://gist.github.com/joelonsql/e5aa27f8cc9bd22b8999b7de8aee9d47][1000+ PostgreSQL Extensions]], filtré à plus de 100 étoiles et dont les développements sont toujours en cours (Mars 2025).
 
+# Avec Postgresql comme DBMS il convient de se demander comment s'y prendre à la place de est-ce possible -- En conclusion, la question deviendrait "qu'est-ce qui est le plus performant" dont les critères de performances sont relatives à un cas d'étude.
+
+# Note : ANSI/ISO SQL Compliance coverage of related DBMS
+
 * Fondamentaux techniques  
 ** Extensions multi-modèles
 # Couverture des paradigmes (relationnel, graphe, vecteurs)
@@ -142,8 +146,9 @@ Un grand nombre d'extensions communautaires, parfois portées par des entreprise
 |          |                      |
 
 *** Géospatial
-[[https://github.com/postgis/postgis][PostGIS]], base de données Geospaciale pour PostgreSQL, 78% des SIG open-source [41] et est notamment utilisé par [[https://qgis.org/][QGIS]].
-Reconnu dans le domaine du SIG, [41] [42] PostGIS permet entre autres de stocker efficacement les données géospatiales et géométriques. Son déploiement permet de relier les informations issues du BIM et du CIM avec les données temps-réel de l’exploitation.
+[[https://github.com/postgis/postgis][PostGIS]] est l'une des extensions de PostgreSQL les plus connues. Elle permet principalement de prendre en charge des modèles de données géographiques, géométriques et géospaciales.
+
+# Usecase : CAO, BIM, CIM, etc. 
 
 # Geospacial tooling
 #+caption: Outils de manipulation de données géospaciales
@@ -215,10 +220,10 @@ Mise en cache et file d’attente : postgres’s Unlogged table puis memcache (o
 # PostgreSQL comme plateforme d’IA générative
 
 #+begin_quote
-/Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance./ -- [48]
+/Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance./ -- Urban-Galindo[cite:@jean-jacquesurban-galindoGestionConfigurationIngenierie2008]
 #+end_quote
 
-La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. [45] Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines, [46] lutant ainsi contre l’amnésie organisationnelle. [47] 
+La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. [cite:@vidicKnowledgeAssetCompetitive2022] Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines,[cite:@thoumsinQuellesStrategiesFautil2019] lutant ainsi contre l’amnésie organisationnelle.[cite:@lucierivardCycleRetentionConnaissances2010]
 
 Discuter de l’avantage stratégique de pgvector face à des bases dédiées (Elasticsearch).
 
@@ -233,7 +238,7 @@ Discuter de l’avantage stratégique de pgvector face à des bases dédiées (E
 [[file:icons/pg-search.pdf]]
 
 
-Dans le paysage en évolution de l'IA, la malléabilité de PostgreSQL devient un avantage stratégique. Le framework PostgresML , intégrant des modules tels que pgCat , pgVector  et pg_partman , permet d’architecturer directement au niveau de la base de données des systèmes de Machine Learning. 
+Dans le paysage en évolution de l'IA, la malléabilité de PostgreSQL devient un avantage stratégique. Le framework PostgresML, intégrant des modules tels que pgCat, pgVector  et pg_partman, permet d’architecturer directement au niveau de la base de données des systèmes de Machine Learning. 
 
 - [[https://github.com/postgresml/postgresml][PostgresML]] :: Postgres with GPUs for ML/AI apps
 - [[https://github.com/timescale/pgai][pgai]] :: A suite of tools to develop RAG, semantic search, and other AI applications more easily with PostgreSQL (TimescaleDB)
@@ -457,9 +462,10 @@ Communautaires : [[https://github.com/Brick-Abode/pldotnet/][PL/Dotnet]] pour le
 
 D'autres ont été créées par le passé mais sont actuellement non maintenu. Nous pouvons identifier [[https://github.com/pljulia/pljulia][PL/Julia]], [[https://github.com/pllua/pllua-ng/][PL/Lua]], [[https://github.com/commandprompt/PL-php][PL/PHP]], [[https://github.com/knu/postgresql-plruby][PL/Ruby]] et [[https://github.com/vy/plscheme][PL/Scheme]].
 
-La montée progressive de l'utilisation de Julia en science des données et son positionnement comme langage de programmation dynamique et performant pourrait entrainner un regain d'intérêt dans le développement de PL/Julia par la communauté. Son utilisation pourrait permettre de progressivement remplacer PL/R.
-De son coté, Lua étant un langage de script et d'extension, il concurence directement Python dans cet emploi. Ce second étant très largement supporté et employé par la communauté des sciences des données et du développement en général, il est peu probable de voir PL/Lua supplanter PL/Python à l'avenir. 
-PL/PHP pourrait revenir sur le devant de la scène à travers le développement d'initiatives telles que [[https://github.com/wlp-builders/whitelabelpress-wlp][White Label Press]] cherchant à fournir une alternative moderne à [[https://github.com/WordPress/WordPress][WordPress]].
+Nous pouvons réaliser quelques observations au sujet de ces langages d'extensions :
+- La montée progressive de l'utilisation de Julia en science des données et son positionnement comme langage de programmation dynamique et performant pourrait entrainner un regain d'intérêt dans le développement de PL/Julia par la communauté. Son utilisation pourrait permettre de progressivement remplacer PL/R.
+- De son coté, Lua étant un langage de script et d'extension, il concurence directement Python dans cet emploi. Ce second étant très largement supporté et employé par la communauté des sciences des données et du développement en général, il est peu probable de voir PL/Lua supplanter PL/Python à l'avenir. 
+- PL/PHP pourrait revenir sur le devant de la scène à travers le développement d'initiatives telles que [[https://github.com/wlp-builders/whitelabelpress-wlp][White Label Press]] cherchant à fournir une alternative moderne à [[https://github.com/WordPress/WordPress][WordPress]].
 
 - [[https://github.com/petere/plxslt][PL/XSLT]],
 - [[https://github.com/kaspermarstal/plprql][PL/prql]],
@@ -571,7 +577,7 @@ Cet intérêt peut être une des raisons de l'amélioration progressive des perf
 - [[https://github.com/supabase/walrus][walrus]] :: Applying Row-Level-Security to PostgreSQL WAL
 
 # Post Quantum security
-Industrie : PostgreSQL Quantum-Safe (NIST PQC integration [23])
+Industrie : PostgreSQL Quantum-Safe (NIST PQC integration)
 Explorer les initiatives émergentes (ex. intégration NIST PQC).
 Parler de l'avancée de Google avec le craque du SHA
 
@@ -746,20 +752,21 @@ Analyse comparative : Expliquer pourquoi PostgreSQL résiste face à des concurr
 
 # PostgreSQL vs Oracle : Avantages coût/performance
 # Utiliser une analyse SWOT pour positionner PostgreSQL contre Oracle (coût) et MongoDB (flexibilité schématique).
-Oracle : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
-MySQL : Parallel Query + CTE vs limitations replication
-MSSQL : 
+Oracle, propriétarie : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
+MSSQL, propriétaire : 
+MySQL, Version communautaire GPL-2.0[fn:4] sinon propriétaire : Parallel Query + CTE vs limitations replication
+
 
 # PostgreSQL face aux SGBD NoSQL et NewSQL
-MongoDB : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
+MongoDB, licence "source-accessible" SSPL[fn:3] : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
 
 # Compétiteurs émergentes : SurrealDB, DuckDB
 # Discuter de la menace de SurrealDB (all-in-one) et de DuckDB (OLAP embarqué).
 
-- SurrealDB : All-in-one vs modularité PostgreSQL
-- SpacetimeDB : +Blockchain+ Stored Procedures vs maturité écosystème
-- DuckDB : OLAP embarqué vs scalabilité Citus
-- ElasticSearch vs ParadeDB
+- SurrealDB, licence "source-accessible" BSL[fn:5] : All-in-one vs modularité PostgreSQL
+- SpacetimeDB, licence "source-accessible" BSL[fn:5] : +Blockchain+ Stored Procedures vs maturité écosystème
+- DuckDB, licence open source MIT[fn:2] : OLAP embarqué vs scalabilité Citus
+- ElasticSearch,  Elastic License[fn:6]; AGPL[fn:7]; SSPL[fn:5] : vs ParadeDB
 
 * Conclusion et discussions
 # Lacunes techniques et opportunités
@@ -783,9 +790,13 @@ MongoDB : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
 #+print_bibliography: :heading none
 
 * Footnotes
-[fn:1] PostgreSQL License : [[https://opensource.org/license/postgresql]]
-[fn:2] MIT Licence : [[https://opensource.org/license/mit]]
-[fn:3] Server Side Public Licence : [[https://www.mongodb.com/legal/licensing/server-side-public-license]]
-[fn:4] GNU Public Licenve v2.0 : [[https://opensource.org/license/gpl-2-0]]
+# A transformer en définitions et créer un sBOM depuis postgresql
+[fn:1] PostgreSQL License : [[https://spdx.org/licenses/PostgreSQL.html]]
+[fn:2] MIT Licence : [[https://spdx.org/licenses/MIT.html]]
+[fn:3] Server Side Public Licence 1.0 : [[https://spdx.org/licenses/preview/SSPL-1.0.html]]
+[fn:4] GNU Public Licenve 2.0 : [[https://spdx.org/licenses/GPL-2.0-only.html]]
+[fn:5] Business Source License 1.1 : [[https://spdx.org/licenses/BUSL-1.1.html]] 
+[fn:6] Elastic License : [[https://spdx.org/licenses/Elastic-2.0.html]]
+[fn:7] Affero GNU Public License 3.0 : [[https://spdx.org/licenses/AGPL-3.0-only.html]]
 
 #+LaTeX: \end{multicols*}

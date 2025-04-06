@@ -35,10 +35,11 @@
       \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{bookauthorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{annotation}{crossref: stephenfewShowMeNumbers2012}
+      \field{booktitle}{Show {{Me}} the {{Numbers}} - {{Designing Tables}} and {{Graphs}} to {{Enlighten}}}
       \field{edition}{Seconde Edition}
       \field{isbn}{978-0-9706019-7-1}
       \field{langid}{english}
@@ -75,8 +76,8 @@
       \strng{authornamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authorfullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authorfullhashraw}{a0d5f9d56c167c99bd3a6bb0887e79ab}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industry 4.0 embraces digitization and smart products or processes that are integrated with several technological developments to control the entire value chain of workflows. The construction industry is also captivated with the idea of Industry 4.0 transformation that changes the traditional system into digital and cyberphysical system that interacts and connects across the geographical and organizational borders. However, as construction is commonly known as a low-technologically advanced industry, studies on Industry 4.0 in construction still remains elusive, as compared to other sectors such as manufacturing, electrical and electronic engineering and computer science. Therefore, this study aims to explore the current state of Industry 4.0 application from the construction engineering perspective. A systematic literature review (SLR) was conducted to identify publications related to Industry 4.0 in construction. A bibliometric analysis has been outlined through exclusion and inclusion principles, while a scientometric analysis has been further applied to enhance the SLR findings through `science mapping' visualization techniques. This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
@@ -130,8 +131,8 @@
       \strng{authornamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authorfullhash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authorfullhashraw}{7f357700b43471499ad9c11bb83c6849}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Data visualization is the combination of design aesthetics and rigorous science, and the selection on visual representations is ultimately determined by the integration of aesthetics and design information. For the design knowledge and experience on this aspect is rather deficient, designers often cannot keep the balance between design and functions. This study is aim at developing a data visualization design method targeted to design on design education, to enable students to have specific methods to follow when engaging in information design and to provide reference to designers for design. The content analysis method is employed to discuss relevant literature and to summarize the data visualization design cases, and the data visualization design patterns are established to facilitate learning and knowledge inheritance of data visualization design.}
@@ -185,8 +186,8 @@
       \strng{authornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authorfullhashraw}{a1d8f9a3e172b359362317dd6883ac0e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Data Visualization Made Simple is a practical guide to the fundamentals, strategies, and real-world cases for data visualization, an essential skill required in today's information-rich world. With foundations rooted in statistics, psychology, and computer science, data visualization offers practitioners in almost every field a coherent way to share findings from original research, big data, learning analytics, and more. In nine appealing chapters, the book: - examines the role of data graphics in decision making, sharing information, sparking discussions, and inspiring future research; - scrutinizes data graphics, deliberates on the messages they convey, and looks at options for design visualization; and - includes cases and interviews to provide a contemporary view of how data graphics are used by professionals across industries. Both novices and seasoned designers in education, business, and other areas can use this book's effective, linear process to develop data visualization literacy and promote exploratory, inquiry-based approaches to visualization problems.}
@@ -227,8 +228,8 @@
       \strng{bookauthornamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthorfullhashraw}{ebbe9d2ebc5f596043750b769650aff2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
       \field{langid}{english}
@@ -259,8 +260,8 @@
       \strng{authornamehash}{e986f96806172338671b5f104947725b}
       \strng{authorfullhash}{e986f96806172338671b5f104947725b}
       \strng{authorfullhashraw}{e986f96806172338671b5f104947725b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
@@ -292,8 +293,8 @@
       \strng{authornamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorfullhash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorfullhashraw}{c16c9c145bf6a137f3c2a878c530a20f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{"From Data to Viz" is a classification of chart types based on input data format. It will help you find the perfect chart in three simple steps : 1. Identify what type of data you have, 2. Go to the corresponding decision tree and follow it down to a set of possible charts, 3. Choose the chart from the set that will suit your data and your needs best. Dataviz is a world with endless possibilities ans this project does not claim to be exhaustive. However it should provide you with good starting point. For an interactive version and much more, visit : data-to-viz.com}
@@ -329,8 +330,8 @@
       \strng{authornamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorfullhash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorfullhashraw}{6179acdac197289e51e14ed161361f3a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Graphic Continuum is our view of the many different types of visualizations available to us when we encode and present data. We've plotted nearly 90 different graphics across five main categories: Distribution, Time, Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space does not include every type of graphic, nor does it display every link between visualizations, but we view it as a thought-starter. We hope readers will use it to develop ideas, consider different options, or simply as a piece of art.}
@@ -354,8 +355,8 @@
       \keyw{,/done,imprime}
     \endentry
     \entry{alansmithLexiqueVisuel}{artwork}{}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Il existe un très grand nombre de manières de visualiser les données - comment savoir laquelle choisir ? Utilisez les catégories en haut de la page pour décider quelle est la relation entre les données la plus pertinente par rapport à l'histoire que vous souhaitez raconter. Passez ensuite en revue les différents types de graphiques de la catégorie : vous aurez ainsi quelques idées préliminaires sur le type de représentation le plus approprié. Cette liste n'est pas exhaustive, elle ne constitue pas non plus un assistant automatique : elle vous aidera en revanche à réaliser des visualisations de données informatives et éloquentes.}
       \field{annotation}{Financial Times}
@@ -374,8 +375,8 @@
       \keyw{,/done,imprime}
     \endentry
     \entry{lindabealeInsightsArcGIS2017}{artwork}{}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{annotation}{Esri}
       \field{langid}{english}
@@ -523,7 +524,8 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{annotation}{crossref: stephenfewShowMeNumbers2012}
+      \field{booktitle}{Show {{Me}} the {{Numbers}} - {{Designing Tables}} and {{Graphs}} to {{Enlighten}}}
       \field{edition}{Seconde Edition}
       \field{isbn}{978-0-9706019-7-1}
       \field{langid}{english}
@@ -647,58 +649,6 @@
       \endverb
       \keyw{/unread}
     \endentry
-    \entry{rose-greenlandColorPerceptionSociology2016}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=eb7882d12ae519daf5ac710b931c409c}{%
-           family={Rose-Greenland},
-           familyi={R\bibinithyphendelim G\bibinitperiod},
-           given={Fiona},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{fullhash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{fullhashraw}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{bibnamehash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{authorbibnamehash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{authornamehash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{authorfullhash}{eb7882d12ae519daf5ac710b931c409c}
-      \strng{authorfullhashraw}{eb7882d12ae519daf5ac710b931c409c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece---brightly painted reconstructions of ancient Greek and Roman marble sculptures---triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
-      \field{issn}{0735-2751, 1467-9558}
-      \field{journaltitle}{Sociological Theory}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{number}{2}
-      \field{shortjournal}{Sociol. Theor.}
-      \field{shorttitle}{Color {{Perception}} in {{Sociology}}}
-      \field{title}{Color {{Perception}} in {{Sociology}}: {{Materiality}} and {{Authenticity}} at the {{{\mkbibemph{Gods}}}}{\mkbibemph{ in }}{{{\mkbibemph{Color}}}} {{Show}}}
-      \field{urlday}{16}
-      \field{urlmonth}{2}
-      \field{urlyear}{2025}
-      \field{volume}{34}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{81\bibrangedash 105}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1177/0735275116648178
-      \endverb
-      \verb{file}
-      \verb /home/anthea/Zotero/storage/3ZGDRVG4/Rose-Greenland - 2016 - Color Perception in Sociology Materiality and Authenticity at the Gods in Color Show.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
-      \endverb
-      \verb{url}
-      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
-      \endverb
-      \keyw{/unread}
-    \endentry
     \entry{tranDiscoveringAccessibleData2024}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=80e7e5cb5d290af97722f70f12713478}{%
@@ -766,6 +716,58 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
+    \entry{rose-greenlandColorPerceptionSociology2016}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=eb7882d12ae519daf5ac710b931c409c}{%
+           family={Rose-Greenland},
+           familyi={R\bibinithyphendelim G\bibinitperiod},
+           given={Fiona},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{fullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{fullhashraw}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{bibnamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorbibnamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authornamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorfullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorfullhashraw}{eb7882d12ae519daf5ac710b931c409c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece---brightly painted reconstructions of ancient Greek and Roman marble sculptures---triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
+      \field{issn}{0735-2751, 1467-9558}
+      \field{journaltitle}{Sociological Theory}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Sociol. Theor.}
+      \field{shorttitle}{Color {{Perception}} in {{Sociology}}}
+      \field{title}{Color {{Perception}} in {{Sociology}}: {{Materiality}} and {{Authenticity}} at the {{{\mkbibemph{Gods}}}}{\mkbibemph{ in }}{{{\mkbibemph{Color}}}} {{Show}}}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{34}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 105}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1177/0735275116648178
+      \endverb
+      \verb{file}
+      \verb /home/anthea/Zotero/storage/3ZGDRVG4/Rose-Greenland - 2016 - Color Perception in Sociology Materiality and Authenticity at the Gods in Color Show.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
+      \endverb
+      \keyw{/unread}
+    \endentry
     \entry{wilkeCommonPitfallsColor2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
@@ -823,8 +825,8 @@
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhashraw}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -866,8 +868,8 @@
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
@@ -988,7 +990,8 @@
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{annotation}{crossref: stephenfewShowMeNumbers2012}
+      \field{booktitle}{Show {{Me}} the {{Numbers}} - {{Designing Tables}} and {{Graphs}} to {{Enlighten}}}
       \field{edition}{Seconde Edition}
       \field{isbn}{978-0-9706019-7-1}
       \field{langid}{english}
@@ -1082,8 +1085,8 @@
       \strng{authornamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authorfullhash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authorfullhashraw}{0fa28bc257327d5b4f1e4787966f5209}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -1121,8 +1124,8 @@
       \strng{authornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authorfullhashraw}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{Seconde Edition}
@@ -1264,8 +1267,8 @@
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhashraw}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
@@ -1981,7 +1984,8 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{annotation}{crossref: stephenfewShowMeNumbers2012}
+      \field{booktitle}{Show {{Me}} the {{Numbers}} - {{Designing Tables}} and {{Graphs}} to {{Enlighten}}}
       \field{edition}{Seconde Edition}
       \field{isbn}{978-0-9706019-7-1}
       \field{langid}{english}
@@ -2020,6 +2024,7 @@
   \enddatalist
   \missing{REF???}
   \missing{principe}
+  \missing{ref?}
 \endrefsection
 \endinput
 
