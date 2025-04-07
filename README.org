@@ -1,0 +1,17 @@
+#+title: Recherches opérationnelles dans l'intéraction Humain-données
+#+subtitle: Table des matières
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/org/config-tex.org"
+
+* [[./3d-files/][Formats de fichiers 3D]]
+* [[./databases/][Systèmes de bases de données]]
+* [[./documentation/][Documentations logicielles]]
+* [[./interoperability/][Intergiciels et interopérabilité]]
+* [[./operating-systems][Systèmes d'exploitations]]
+* [[./plain-text/][Langages de balisages légers]]
+* [[./storage/][Stockages de données]]
+* [[./testing/][Tests informatiques]]
+* [[./visualization/][Visualisation de données]]
+Projet de recherche visant à établir un cadre formel et une méthode de sélection et de préparation des représentations graphiques des informations issues de bases de données.

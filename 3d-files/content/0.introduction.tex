@@ -1,0 +1,46 @@
+\sectionnn{Introduction}
+
+Le temps du stylo Rotring et des planches à dessin n'est plus qu'un lointain souvenir dans l'univers de la construction. Depuis l'avènement de la conception assisté par ordinateur (CAO), Bureaux d'études, Maîtres d'ouvrages et Architectes se sont tournés vers les technologies de l'information pour gagner en rapidité et en qualité.
+
+Cependant, l'industrie de la construction fait l'objet de nombreuses innovations ces dernières années. Des technologies issues d'autres secteurs industriels comme les industries manufacturières, le jeu vidéo ou encore les technologies de l'information viennent enrichir les outils à disposition des experts de la construction. 
+
+Ces nouveaux apports à la filière viennent parfois bousculer des paradigmes de conception bien ancrés.
+
+La modélisation 3D et les systèmes de Big Data ont permis l'avènement de la modélisation paramétrique et la réalisation de maquettes numériques de hautes précision, les modèles reposant sur l'intelligence artificielle générative accompagnent les études architecturales et la robotique comme l'impression 3D font leurs apparitions sur les chantiers.
+
+L'ensemble de ces changements reposent sur un concept simple : l'information doit être partagée entre tous les acteurs et la collaboration est la clé de l'efficacité.
+
+Pour atteindre cet objectif, de nombreux outils, standards et méthodologies ont été mise au point. Parmi eux, c'est le framework \textit{Virtual Design and Construction}\cite{brittanygielReturnInvestmentAnalysis2013} (VDC) accompagné des outils de \textit{Building Information Modeling}\cite{burcinbecerik-gerberPERCEIVEDVALUEBUILDING2010} (BIM) et le standard international, \textit{l'Industry Foundation Classes}\cite{yacinerezguiGOVERNANCEAPPROACHBIM2013} (IFC) qui ont été adoptés largement par la communauté.
+
+
+Aujourd'hui, 12 ans après la percée de ces nouveaux paradigmes sur le territoire français, les promesses de collaboration et de simplifications initiales semblent pourtant être encore loin de la réalité.
+
+Il n'existe sur le marché aucune plate-forme de conception offrant de la collaboration multi-curseur instantanée. Les technologies Cloud tendent à maintenir les paradigmes de travail en silos de données (travail isolé) et les plates-formes dites "collaboratives" n'offrent que peu voir pas de fonctionnalité d'ingénierie. 
+
+Une des raisons pouvant justifier ces constats peut être que : seules les technologies du web peuvent permettre une collaboration efficace entre les différents corps d'état, mais ces technologies n'ont pas été pensées pour le domaine qui nous concerne.
+
+C'est sur la base de cette réflexion que j'ai démarré mon étude des standards du web et de leurs rapprochements possibles avec le format IFC et les autres standards de l'ingénierie.
+
+Ce rapport vient exposer les facultés offertes par un ensemble de formats de données 3D permettant le partage des informations géométriques des objets de la constructions tout en leur associant leurs données techniques. 
+
+Ont été retenus uniquement les formats en sources ouvertes suivants : QIF, IFC, CityGML, USD et glTF.
+
+Ce choix permettra de mieux exposer les enjeux liés à la sélection d'un format de fichier au dépens d'un autre selon l'objectif à atteindre. Un filtre préliminaire a été effectué afin ne pas surcharger ce rapport. Il conviendrait d'étudier chaque cas d'usage avec leurs formats de fichiers indépendamment. (e.g. la modélisation des espaces urbains via l'utilisation de CityGML, LandXML et autres.)
+
+Cette restriction du domaine d'étude est également établie en considérant les contraintes d'interopérabilité. Ont donc étés écartés par défaut les formats de fichiers lorsqu'ils se trouvent :
+\begin{itemize}
+    \item être des formats propriétaires ou de spécification payante ;
+    \item ne disposant pas d'un schéma standardisé ;
+    \item ne pas être activement maintenu ;
+    \item ne pas être largement adopté par l'industrie.
+\end{itemize}
+
+Seule exception faite pour le format QIF. Cette exception sera défendue plus tard dans le rapport.
+
+\smallskip
+
+
+
+
+
+

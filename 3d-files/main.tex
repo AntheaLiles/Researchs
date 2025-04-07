@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt]{article}
+% Encodage et langue
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% Polices et symboles mathématiques
+\usepackage{amsfonts,amssymb,amsmath,mathrsfs,stmaryrd}
+
+% Tableaux
+\usepackage{boldline,multirow,tabularx,colortbl,diagbox,makecell,ltablex}
+
+% Graphiques et couleurs
+\usepackage{pgf,tikz,xcolor,pgfplots,pgfplotstable}
+\usetikzlibrary{calc,positioning,shapes.geometric,shapes.symbols,shapes.misc,fit,shapes,arrows,arrows.meta}
+\pgfplotsset{compat=1.18}
+
+% Mise en page et style
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.25cm, right=2.25cm]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{multicol}
+
+% Hyperliens
+\usepackage{hyperref}
+
+% Diagrammes UML
+\usepackage{plantuml}
+
+% remarques et commentaires
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+
+%==[DO NOT CHANGE ANYTHING HERE]====================
+\input{variables}
+\input{advanced.params/misc.commands}
+\input{advanced.params/titlevars.tex}
+\input{cover/covermain.tex}
+
+\begin{document}
+    \input{content/__all__.tex}
+\end{document}
+%==[DO NOT CHANGE ANYTHING HERE]====================
+
+
