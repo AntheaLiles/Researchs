@@ -1,0 +1,23 @@
+| Langage    | Norme         | Date |
+|------------+---------------+------|
+| Ada        | ISO/IEC 8652  | 2023 |
+| ALGOL 60   | ISO 1538      | 1984 |
+| APL        | ISO/IEC 13751 | 2001 |
+| BASIC      | ISO/IEC 10279 | 1991 |
+| C++        | ISO/IEC 14882 | 2024 |
+| C          | ISO/IEC 9899  | 2024 |
+| C#         | ISO/IEC 23270 | 2018 |
+| CHILL      | ISO/IEC 9496  | 2003 |
+| COBOL      | ISO/IEC 1989  | 2023 |
+| ECMAScript | ISO/IEC 22275 | 2018 |
+| Eiffel     | ISO/IEC 25436 | 2006 |
+| Forth      | ISO/IEC 15145 | 1997 |
+| Fortran    | ISO/IEC 1539  | 2018 |
+| ISLISP     | ISO/IEC 13816 | 2007 |
+| Modula-2   | ISO/IEC 10514 | 1996 |
+| M          | ISO/IEC 11756 | 1999 |
+| Pascal     | ISO/IEC 10206 | 1991 |
+| PL/1       | ISO 6160      | 1979 |
+| Prolog     | ISO/IEC 13211 | 1995 |
+| Ruby       | ISO/IEC 30170 | 2012 |
+| SQL        | ISO/IEC 9075  | 2023 |
