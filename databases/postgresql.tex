@@ -1,4 +1,4 @@
-% Created 2025-04-03 jeu. 18:21
+% Created 2025-04-10 Thu 16:41
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -46,7 +46,7 @@
 \usepackage{url,hyperref}
 \hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\date{2025-04-03}
+\date{2025-04-10}
 \title{Exploration de l'écosystème applicatif de PostgreSQL\\\medskip
 \large Note de veille technologique}
 \hypersetup{
@@ -69,13 +69,13 @@ Abstract
 
 \begin{multicols*}{2}
 \section*{Introduction}
-\label{sec:orgb64e2d5}
+\label{sec:org011d216}
 Contexte
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{charts/top5.pdf}
-\caption{\label{fig:orgeeed9f2}Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL}
+\caption{\label{fig:orga650cb8}Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL}
 \end{figure} 
 
 Objectif 
@@ -86,22 +86,22 @@ Méthodologie
 
 Concentration sur les projets les plus populaires, sourcés via \href{https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb}{PostgreSQL is Enough} et \href{https://gist.github.com/joelonsql/e5aa27f8cc9bd22b8999b7de8aee9d47}{1000+ PostgreSQL Extensions}, filtré à plus de 100 étoiles et dont les développements sont toujours en cours (Mars 2025).
 \section*{Fondamentaux techniques}
-\label{sec:org15f6bea}
+\label{sec:org12498be}
 \subsection*{Extensions multi-modèles}
-\label{sec:orgc9cae8c}
+\label{sec:org6e967d1}
 Bien que PostgreSQL soit initialement une base de données relationnelle orientée objet, il permet de créer des types de données personnalisés pour en étendre ses fonctionnalités.
 
 Associé à ses capacités d'extensions, cette capacité de modification du logiciel lui permet de prendre un charge la quasi totalité des modèles de données existantes comme à venir.
 
 Un grand nombre d'extensions communautaires, parfois portées par des entreprises, sont employés à cet effet.
 \subsubsection*{Relationnel étendu}
-\label{sec:org6e9cd3f}
+\label{sec:org32f95a3}
 \begin{description}
 \item[{\href{https://github.com/tembo-io/pg\_auto\_dw}{pg\_auto\_dw}}] An auto data warehouse extension for Postgres
 \item[{\href{https://github.com/darold/pgtt}{pgtt}}] extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
 \end{description}
 \subsubsection*{Traitement en temps réel}
-\label{sec:org9c993dd}
+\label{sec:org9efd3c1}
 \begin{table}[H]
 \caption{Ingestion des données en temps réel}
 \centering
@@ -161,7 +161,7 @@ Nom & Particularité\\
 \end{tabular}
 \end{table}
 \subsubsection*{Géospatial}
-\label{sec:org5117d28}
+\label{sec:org9752d82}
 \href{https://github.com/postgis/postgis}{PostGIS} est l'une des extensions de PostgreSQL les plus connues. Elle permet principalement de prendre en charge des modèles de données géographiques, géométriques et géospaciales.
 
 \begin{table}[H]
@@ -193,7 +193,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-geospacial.pdf}
-\caption{\label{fig:org4d01cd1}Logos : PostGIS, pgRouting, MobilityDB, H3, GISWater}
+\caption{\label{fig:orgbcf62c9}Logos : PostGIS, pgRouting, MobilityDB, H3, GISWater}
 \end{figure}
 
 \begin{description}
@@ -202,7 +202,7 @@ usage : génération de cartes, de plans, etc.
 \item Raster format, Bitmap extensions etc.
 \end{description}
 \subsubsection*{Données non structurées}
-\label{sec:org9b7dd53}
+\label{sec:org334dcd8}
 \begin{description}
 \item[{\href{https://github.com/apache/age}{Apache AGE}}] Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL (OpenCypher)
 \end{description}
@@ -215,7 +215,7 @@ usage : génération de cartes, de plans, etc.
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-documents.pdf}
-\caption{\label{fig:orgbc5035a}Logos : Apache AGE, FerretDB, pg\_duck, Marten, Pongo}
+\caption{\label{fig:orgfda4b73}Logos : Apache AGE, FerretDB, pg\_duck, Marten, Pongo}
 \end{figure}
 
 \begin{description}
@@ -240,12 +240,12 @@ Mise en cache et file d’attente : postgres’s Unlogged table puis memcache (o
 \item[{\href{https://github.com/duckdb/pg\_duckdb}{pg\_duckdb}}] a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres
 \end{description}
 \subsubsection*{Récupération d'information et IA}
-\label{sec:org6eb7140}
+\label{sec:orgb01d90a}
 \begin{quote}
 \emph{Dans un monde plus ouvert qu’il n’a jamais été, notre Société traverse une nouvelle mutation en passant de l’économie industrielle à l’économie du service et de la connaissance.} -- Urban-Galindo\autocite{jean-jacquesurban-galindoGestionConfigurationIngenierie2008}
 \end{quote}
 
-La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. [45] Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines, [46] lutant ainsi contre l’amnésie organisationnelle. [47] 
+La mise en place d’un environnement d’apprentissage, d’exploration et de partage de connaissance offre la capacité de développer son expertise. \autocite{vidicKnowledgeAssetCompetitive2022} Il s’agit d’une opportunité stratégique de long terme permettant le maintien des connaissances au sein d’une entreprise dans un contexte de raréfaction des ressources humaines,\autocite{thoumsinQuellesStrategiesFautil2019} lutant ainsi contre l’amnésie organisationnelle.\autocite{lucierivardCycleRetentionConnaissances2010}
 
 Discuter de l’avantage stratégique de pgvector face à des bases dédiées (Elasticsearch).
 
@@ -259,11 +259,11 @@ Discuter de l’avantage stratégique de pgvector face à des bases dédiées (E
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-search.pdf}
-\caption{\label{fig:org31154c2}Logos : ParadeDB, ZomboDB, PGroonga, PostgresML, Lantern}
+\caption{\label{fig:orgcebf87c}Logos : ParadeDB, ZomboDB, PGroonga, PostgresML, Lantern}
 \end{figure}
 
 
-Dans le paysage en évolution de l'IA, la malléabilité de PostgreSQL devient un avantage stratégique. Le framework PostgresML , intégrant des modules tels que pgCat , pgVector  et pg\_partman , permet d’architecturer directement au niveau de la base de données des systèmes de Machine Learning. 
+Dans le paysage en évolution de l'IA, la malléabilité de PostgreSQL devient un avantage stratégique. Le framework PostgresML, intégrant des modules tels que pgCat, pgVector  et pg\_partman, permet d’architecturer directement au niveau de la base de données des systèmes de Machine Learning. 
 
 \begin{description}
 \item[{\href{https://github.com/postgresml/postgresml}{PostgresML}}] Postgres with GPUs for ML/AI apps
@@ -292,7 +292,7 @@ Korvus, Ollama\ldots{}
 \item[{\href{https://github.com/ChenHuajun/pg\_roaringbitmap}{pg\_roaringbitmap}}] Roaring bitmaps are compressed bitmaps which tend to outperform conventional compressed bitmaps such as WAH, EWAH or Concise. In some instances, roaring bitmaps can be hundreds of times faster and they often offer significantly better compression. They can even be faster than uncompressed bitmaps
 \end{description}
 \subsection*{Solutions d'optimisation}
-\label{sec:orgc3ee3ba}
+\label{sec:org0af4708}
 \begin{itemize}
 \item Fonctions natives
 \item Cas d'usage : Transactions ACID à haute charge (ERP, systèmes financiers)
@@ -320,7 +320,7 @@ TimescaleDB propose une approche différente appelée \texttt{chunking}.
 \item[{\href{https://github.com/le0pard/pgtune?tab=readme-ov-file}{pgtune}}] tuning PostgreSQL config by your hardware
 \end{description}
 \subsubsection*{Stratégies de stockage}
-\label{sec:org6499b78}
+\label{sec:org006e8d8}
 \begin{description}
 \item[{zheap}] (réduction WAL) Extension initialement créée par EDB puis maintenu par Cybertec avant d'être intégré à PostgreSQL core en version \autocite{ZheapPostgreSQLWiki2021}
 \item[{pg\_dump}] (algo GZip/LZ4/Zstd)
@@ -350,7 +350,7 @@ Alternatives to CLUSTER and VACUUM
 \item[{\href{https://github.com/hydradatabase/columnar}{columnar}}] Postgres-native columnar storage extension
 \end{description}
 \subsubsection*{Indexation avancée}
-\label{sec:orga069981}
+\label{sec:org06914b8}
 \begin{description}
 \item[{BRIN}] (Big Data),
 \item[{GIN}] (full-text),
@@ -371,7 +371,7 @@ Alternatives to CLUSTER and VACUUM
 \item[{\href{https://github.com/ossc-db/pg\_plan\_advsr}{pg\_plan\_advsr}}] extension for automated execution plan tuning
 \end{description}
 \subsection*{Architectures distribuées}
-\label{sec:org45e1dae}
+\label{sec:orgf2de65d}
 \begin{description}
 \item[{ElectricSQL}] (CRDTs)
 \item[{\href{https://github.com/electric-sql/pglite}{PGLite}}] Embeddable Postgres with real-time, reactive bindings. (Wasm/Deno)
@@ -390,9 +390,9 @@ Expliquer les intérêts en matière de performance et de fort découplage des e
 \item[{\href{https://github.com/EnterpriseDB/repmgr}{repmgr}}] A lightweight replication manager for PostgreSQL
 \end{description}
 \section*{Écosystème applicatif}
-\label{sec:org245f8e5}
+\label{sec:orgb22f6e7}
 \subsection*{Compatibilité}
-\label{sec:org864ce4f}
+\label{sec:org06c5502}
 \begin{quote}
 \textbf{Compatibilité}, n.f.
 \emph{Le fait pour un matériel ou un logiciel d'être utilisable en connexion avec d'autres matériels, d'autres logiciels, dans un système informatique défini, sans en altérer les conditions de fonctionnement.} -- CNRTL
@@ -429,7 +429,7 @@ WebSocket :
 \item[{\href{https://github.com/diogob/postgres-websockets}{postgres-websockets}}] Middleware permettant d'ajouter la prise en charge de Websockets à PostgreSQL en l'interfaçant avec les commandes LISTEN/NOTIFY
 \end{description}
 \subsection*{Interopérabilité}
-\label{sec:org24c9e98}
+\label{sec:org048b437}
 \begin{quote}
 \textbf{Interopérabilité}, n.f.
 \emph{Capacité que possède un produit ou un système, dont les interfaces sont intégralement connues, à fonctionner avec d’autres produits ou systèmes existants ou futurs et ce sans restriction d’accès ou de mise en œuvre.} -- Wikitionnaire
@@ -470,7 +470,7 @@ Discuter des défis techniques (ex. différences de syntaxe SQL) et des outils c
 \item[{\href{https://github.com/stripe/pg-schema-diff}{pg-schema-diff}}] Go library for diffing Postgres schemas and generating SQL migrations
 \end{description}
 \subsection*{Écosystème de développement}
-\label{sec:org918ba78}
+\label{sec:orgbc88a70}
 \begin{table}[H]
 \caption{Interfaces et clients}
 \centering
@@ -516,11 +516,12 @@ Communautaires : \href{https://github.com/Brick-Abode/pldotnet/}{PL/Dotnet} pour
 
 D'autres ont été créées par le passé mais sont actuellement non maintenu. Nous pouvons identifier \href{https://github.com/pljulia/pljulia}{PL/Julia}, \href{https://github.com/pllua/pllua-ng/}{PL/Lua}, \href{https://github.com/commandprompt/PL-php}{PL/PHP}, \href{https://github.com/knu/postgresql-plruby}{PL/Ruby} et \href{https://github.com/vy/plscheme}{PL/Scheme}.
 
-La montée progressive de l'utilisation de Julia en science des données et son positionnement comme langage de programmation dynamique et performant pourrait entrainner un regain d'intérêt dans le développement de PL/Julia par la communauté. Son utilisation pourrait permettre de progressivement remplacer PL/R.
-De son coté, Lua étant un langage de script et d'extension, il concurence directement Python dans cet emploi. Ce second étant très largement supporté et employé par la communauté des sciences des données et du développement en général, il est peu probable de voir PL/Lua supplanter PL/Python à l'avenir. 
-PL/PHP pourrait revenir sur le devant de la scène à travers le développement d'initiatives telles que \href{https://github.com/wlp-builders/whitelabelpress-wlp}{White Label Press} cherchant à fournir une alternative moderne à \href{https://github.com/WordPress/WordPress}{WordPress}.
-
+Nous pouvons réaliser quelques observations au sujet de ces langages d'extensions :
 \begin{itemize}
+\item La montée progressive de l'utilisation de Julia en science des données et son positionnement comme langage de programmation dynamique et performant pourrait entrainner un regain d'intérêt dans le développement de PL/Julia par la communauté. Son utilisation pourrait permettre de progressivement remplacer PL/R.
+\item De son coté, Lua étant un langage de script et d'extension, il concurence directement Python dans cet emploi. Ce second étant très largement supporté et employé par la communauté des sciences des données et du développement en général, il est peu probable de voir PL/Lua supplanter PL/Python à l'avenir.
+\item PL/PHP pourrait revenir sur le devant de la scène à travers le développement d'initiatives telles que \href{https://github.com/wlp-builders/whitelabelpress-wlp}{White Label Press} cherchant à fournir une alternative moderne à \href{https://github.com/WordPress/WordPress}{WordPress}.
+
 \item \href{https://github.com/petere/plxslt}{PL/XSLT},
 \item \href{https://github.com/kaspermarstal/plprql}{PL/prql},
 \item \href{https://github.com/plproxy/plproxy}{PL/Proxy} Permet de faire des appels de procédure à distance entre les bases de données
@@ -563,15 +564,15 @@ Nom & Particularité\\
 \begin{tabular}{ll}
 Nom & Particularité\\
 \hline
-\href{https://github.com/brianc/node-postgres}{node-postgres} & PostgreSQL client for node.js\\
+\href{https://github.com/brianc/node-postgres}{node-postgres} & Client pour Node.js\\
  & \\
  & \\
-\href{https://github.com/porsager/postgres}{postgres.js} & Client for Node.js, Deno,\\
+\href{https://github.com/porsager/postgres}{postgres.js} & Client pour Node.js, Deno,\\
  & Bun and CloudFlare\\
  & Utilisé par TypeORM et Drizzle\\
-\href{https://github.com/gajus/slonik}{slonik} & Node.js client\\
- & Runtime and build time\\
- & type safety, and composable SQL\\
+\href{https://github.com/gajus/slonik}{slonik} & Client pour Node.js\\
+ & Type safety\\
+ & Composable SQL\\
 \href{https://github.com/npgsql/npgsql}{npgsql} & .NET data provider\\
  & \\
  & \\
@@ -585,53 +586,121 @@ Nom & Particularité\\
 \item[{\href{https://github.com/sqlpage/SQLPage}{SQLPage}}] Fast SQL-only data application builder. Automatically build a UI on top of SQL queries
 \end{description}
 \section*{Gouvernance et sécurité}
-\label{sec:org430646b}
+\label{sec:org8dab8d7}
 \subsection*{Conformité et audit}
-\label{sec:orgac86c4d}
+\label{sec:orge5e59d4}
 \begin{description}
 \item[{\href{https://github.com/eradman/pg-safeupdate}{pg-safeupdate}}] a simple extension to PostgreSQL that raises an error if UPDATE and DELETE are executed without specifying conditions. This extension was initially designed to protect data from accidental obliteration of data that is writable by PostgREST.
 \item[{\href{https://github.com/timescale/pgspot}{pgspot}}] pgspot checks extension scripts for following PostgreSQL security best practices. In addition to checking extension scripts it can also be used to check security definer functions or any other PostgreSQL SQL code.
 \end{description}
 
-\begin{description}
-\item[{\href{https://github.com/theory/pgtap}{pgTAP}}] Suite applicative pour créer des tests unitaires
-\item[{\href{https://github.com/stack-auth/pgmock}{pgmock}}] In-memory PostgreSQL mock server for unit and E2E tests
-\item[{\href{https://github.com/peterldowns/pgtestdb}{pgtestdb}}] Quickly run tests in their own temporary, isolated, postgres databases
-\item[{\href{https://github.com/bytebase/bytebase}{bytebase}}] DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps
-\item[{\href{https://github.com/postgres-ai/database-lab-engine}{database-lab-engine}}] DBLab enables database branching and thunder thin cloning for any Postgres database and empowers DB testing in CI/CD. This optimizes database-related costs while improving time-to-market and software quality
-\end{description}
+\begin{table}[H]
+\caption{Tests et qualité}
+\centering
+\begin{tabular}{ll}
+Nom & Particularité\\
+\hline
+\href{https://github.com/theory/pgtap}{pgTAP} & Suite applicative pour\\
+ & créer des tests unitaires\\
+ & \\
+\href{https://github.com/stack-auth/pgmock}{pgmock} & In-memory PostgreSQL mock\\
+ & server for unit and E2E tests\\
+ & \\
+\href{https://github.com/peterldowns/pgtestdb}{pgtestdb} & Quickly run tests in their\\
+ & own temporary, isolated,\\
+ & databases\\
+\href{https://github.com/bytebase/bytebase}{bytebase} & DevSecOps solution for Developer,\\
+ & Security, DBA and Platform\\
+ & Engineering teams\\
+\href{https://github.com/postgres-ai/database-lab-engine}{database-lab-engine} & Enables database branching and\\
+ & thunder thin cloning for any database\\
+ & and empowers DB testing in CI/CD\\
+ & \\
+\end{tabular}
+\end{table}
 
 La longue liste de modules et extensions d'observabilité peut indiquer une vigilence particulière des utilisateurs au fonctionnement et aux performances du DBMS.
 
 Cet intérêt peut être une des raisons de l'amélioration progressive des performances natives et du développement d'extensions sectorielles.
+
+\begin{table}[H]
+\caption{Observabilité}
+\centering
+\begin{tabular}{ll}
+Nom & Particularité\\
+\hline
+\href{https://github.com/pgaudit/pgaudit}{pgaudit} & SOC2\\
+ & \\
+ & \\
+\href{https://github.com/pgsentinel/pgsentinel}{pgsentinel} & Active session history\\
+ & \\
+ & \\
+\href{https://github.com/paradedb/pg\_analytics}{pg\_analytics} & Requeter des stockages comme AWS3 et\\
+ & des tables comme Iceberg ou Delta Lake.\\
+ & Les réponses sont envoyés à DuckDB\\
+\href{https://github.com/zubkov-andrei/pg\_profile}{pg\_profile} & Postgres historic workload reports\\
+ & \\
+ & \\
+\href{https://github.com/powa-team/pg\_qualstats/}{pg\_qualstats} & Collecte des statistiques sur\\
+ & les prédicats et aide à\\
+ & trouver les indices manquants\\
+\href{https://github.com/postgrespro/pg\_query\_state}{pg\_query\_state} & Requeter le moniteur d'avancement\\
+ & \\
+ & \\
+\href{https://github.com/powa-team/pg\_stat\_kcache/}{pg\_stat\_kcache} & Regroupe les statistiques sur\\
+ & les lectures et écritures\\
+ & effectués par le système de fichiers\\
+\href{https://github.com/percona/pg\_stat\_monitor}{pg\_stat\_monitor} & Analyse des performances\\
+ & \\
+ & \\
+\href{https://github.com/postgrespro/pg\_wait\_sampling}{pg\_wait\_sampling} & Sampling based statistics of\\
+ & wait events\\
+ & \\
+\href{https://github.com/powa-team/powa}{PoWA} & Workload Analyzer\\
+ & \\
+ & \\
+\href{https://codeberg.org/Data-Bene/StatsMgr}{StatsMgr} & Gestion des statistiques de\\
+ & performance et d'utilisation\\
+ & \\
+\href{https://github.com/EnterpriseDB/system\_stats}{system\_stats} & Expose les données du système comme\\
+ & l'utilisation du CPU,\\
+ & de la mémoire et des disques\\
+\href{https://github.com/dalibo/pg\_activity}{pg\_activity} & Server activity monitoring\\
+ & \\
+ & \\
+\href{https://github.com/EnterpriseDB/pg\_catcheck}{pg\_catcheck} & Outil pour diagnostiquer la\\
+ & corruption du catalogue système\\
+ & \\
+\href{https://github.com/df7cb/pg\_dirtyread}{pg\_dirtyread} & Read dead but unvacuumed tuples\\
+ & from a PostgreSQL relation\\
+ & \\
+\href{https://github.com/cybertec-postgresql/pg\_show\_plans}{pg\_show\_plans} & Show query plans of all\\
+ & currently running\\
+ & SQL statements\\
+\href{https://github.com/nexsol-technologies/pgassistant}{pgassistant} & Tool designed to help\\
+ & understand and\\
+ & optimize performances\\
+\href{https://github.com/CrunchyData/pgmonitor-extension}{pgmonitor} & Suite de surveillance des\\
+ & performances et de l'état\\
+ & des bases de données\\
+\href{https://github.com/bigsql/plprofiler}{plprofiler} & Permet de créer des profils de\\
+ & performance pour\\
+ & les procédures stockées\\
+\href{https://github.com/tvondra/tdigest}{tdigest} & Estimation des  percentiles\\
+ & avec T-Digest\\
+ & \\
+\href{https://gitlab.com/postgres-ai/joe}{Joe} & (AI tool) to experiment on\\
+ & automatically provisioned\\
+ & production-size DB testing replica\\
+ & \\
+\end{tabular}
+\end{table}
+
 \begin{description}
-\item[{\href{https://github.com/pgaudit/pgaudit}{pgaudit}}] PostgreSQL Audit Extension (SOC2)
-\item[{\href{https://github.com/pgsentinel/pgsentinel}{pgsentinel}}] postgresql extension providing Active session history
-\item[{\href{https://github.com/paradedb/pg\_analytics}{pg\_analytics}}] Permet de requeter des stockages comme AWS3 et des tables comme Iceberg ou Delta Lake. Les réponses sont envoyés à DuckDB pour l'analyse.
-\item[{\href{https://github.com/zubkov-andrei/pg\_profile}{pg\_profile}}] Postgres historic workload reports
-\item[{\href{https://github.com/powa-team/pg\_qualstats/}{pg\_qualstats}}] Collecte des statistiques sur les prédicats et aide à trouver les indices manquants
-\item[{\href{https://github.com/postgrespro/pg\_query\_state}{pg\_query\_state}}] Tool for query progress monitoring in PostgreSQL
-\item[{\href{https://github.com/powa-team/pg\_stat\_kcache/}{pg\_stat\_kcache}}] Regroupe les statistiques sur les lectures et écritures effectués par le système de fichiers
-\item[{\href{https://github.com/percona/pg\_stat\_monitor}{pg\_stat\_monitor}}] Outils d'analyse des performances
-\item[{\href{https://github.com/postgrespro/pg\_wait\_sampling}{pg\_wait\_sampling}}] Sampling based statistics of wait events
-\item[{\href{https://github.com/powa-team/powa}{PoWA}}] PostgreSQL Workload Analyzer
-\item[{\href{https://codeberg.org/Data-Bene/StatsMgr}{StatsMgr}}] Gestion des statistiques de performance et d'utilisation
-\item[{\href{https://github.com/EnterpriseDB/system\_stats}{system\_stats}}] Permet d'exposer les données du système comme l'utilisation du CPU, de la mémoire et des disques
-\item[{\href{https://github.com/dalibo/pg\_activity}{pg\_activity}}] pg\_activity is a top like application for PostgreSQL server activity monitoring
-\item[{\href{https://github.com/EnterpriseDB/pg\_catcheck}{pg\_catcheck}}] Outil pour diagnostiquer la corruption du catalogue système
-\item[{\href{https://github.com/df7cb/pg\_dirtyread}{pg\_dirtyread}}] Read dead but unvacuumed tuples from a PostgreSQL relation
-\item[{\href{https://github.com/cybertec-postgresql/pg\_show\_plans}{pg\_show\_plans}}] Show query plans of all currently running SQL statements
-
 \item[{pgMustard}] 
-
-\item[{\href{https://github.com/nexsol-technologies/pgassistant}{pgassistant}}] Tool designed to help developers understand and optimize their PostgreSQL database performance
-\item[{\href{https://github.com/CrunchyData/pgmonitor-extension}{pgmonitor}}] Suite de surveillance des performances et de l'état des bases de données
-\item[{\href{https://github.com/bigsql/plprofiler}{plprofiler}}] Permet de créer des profils de performance pour les procédures stockées
-\item[{\href{https://github.com/tvondra/tdigest}{tdigest}}] Extension for estimating percentiles using t-digest
-\item[{\href{https://gitlab.com/postgres-ai/joe}{Joe}}] (AI tool) Provide developers access to experiment on automatically provisioned production-size DB testing replica. Joe will provide recommendations for query optimization and the ability to rollback.
 \end{description}
 \subsection*{Chiffrement}
-\label{sec:org22c2988}
+\label{sec:org5d1b9b0}
 \begin{description}
 \item[{pg\_anonymize}] (GDPR),
 \item[{pgcrypto}] (AES-256/Q-Safe),
@@ -641,11 +710,11 @@ Cet intérêt peut être une des raisons de l'amélioration progressive des perf
 \item[{\href{https://github.com/supabase/walrus}{walrus}}] Applying Row-Level-Security to PostgreSQL WAL
 \end{description}
 
-Industrie : PostgreSQL Quantum-Safe (NIST PQC integration [23])
+Industrie : PostgreSQL Quantum-Safe (NIST PQC integration)
 Explorer les initiatives émergentes (ex. intégration NIST PQC).
 Parler de l'avancée de Google avec le craque du SHA
 \subsection*{Gestion des accès}
-\label{sec:orgb9c52c4}
+\label{sec:orgabe8ae9}
 \begin{description}
 \item[{\href{https://github.com/arkhipov/acl}{acl}}] Access Control Lists (ACL) PostgreSQL Extension
 \end{description}
@@ -658,7 +727,7 @@ OAuth2/OIDC : Extension
 \item[{\href{https://github.com/cybertec-postgresql/pg\_permissions}{pg\_permissions}}] A simple set of views to see ALL permissions in a PostgreSQL database
 \end{description}
 \subsection*{Continuité de service}
-\label{sec:org6fc6654}
+\label{sec:orge03c9b3}
 \begin{table}[H]
 \caption{Solutions de sauvegarde et de récupération}
 \centering
@@ -704,7 +773,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-loadbalancer.pdf}
-\caption{\label{fig:orgac0d35d}Logos : PGCat, pgBouncer, pgPool-II}
+\caption{\label{fig:org1b652d4}Logos : PGCat, pgBouncer, pgPool-II}
 \end{figure}
 
 \begin{table}[H]
@@ -731,9 +800,9 @@ Nom & Particularité\\
 \item[{\href{https://github.com/readysettech/readyset}{readyset}}] a MySQL and Postgres wire-compatible caching layer that sits in front of existing databases to speed up queries and horizontally scale read throughput. Under the hood, ReadySet caches the results of cached select statements and incrementally updates these results over time as the underlying data changes
 \end{description}
 \section*{Stratégie d’adoption}
-\label{sec:org3de4da9}
+\label{sec:org0b27c94}
 \subsection*{Mise en production}
-\label{sec:orgd3dc424}
+\label{sec:org0239586}
 \begin{table}[H]
 \caption{Solutions de déploiement}
 \centering
@@ -800,7 +869,7 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-cloud.pdf}
-\caption{\label{fig:orgc407214}Logos : Tembo, Neon, Supabase, Autobase, Omnigress}
+\caption{\label{fig:orga776d95}Logos : Tembo, Neon, Supabase, Autobase, Omnigress}
 \end{figure}
 
 \begin{table}[H]
@@ -825,28 +894,30 @@ Nom & Particularité\\
 \begin{figure}[H]
 \centering
 \includegraphics[height=1.2cm]{icons/pg-cloud2.pdf}
-\caption{\label{fig:orgbd9ecf5}Logos : Gel, pgEdge, Pigsty, iaSQL,}
+\caption{\label{fig:org6785ce2}Logos : Gel, pgEdge, Pigsty, iaSQL,}
 \end{figure}
 \subsection*{Analyse de compétitive}
-\label{sec:org5b089e7}
+\label{sec:orga750c22}
 Analyse comparative : Expliquer pourquoi PostgreSQL résiste face à des concurrents propriétaires (coût, flexibilité) ou open source (MySQL).
 
-Oracle : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
-MySQL : Parallel Query + CTE vs limitations replication
-MSSQL : 
+Oracle, propriétarie : Coût licence (PostgreSQL = 0) vs Advanced Features Pack (50k)
+MSSQL, propriétaire : 
+MySQL, Version communautaire GPL-2.0\footnote{GNU Public Licenve 2.0 : \url{https://spdx.org/licenses/GPL-2.0-only.html}} sinon propriétaire : Parallel Query + CTE vs limitations replication
 
-MongoDB : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
+
+MongoDB, licence "source-accessible" SSPL\footnote{Server Side Public Licence 1.0 : \url{https://spdx.org/licenses/preview/SSPL-1.0.html}} : Flexibilité schéma (JSONB) + ACID vs AP de MongoDB
 
 \begin{itemize}
-\item SurrealDB : All-in-one vs modularité PostgreSQL
-\item SpacetimeDB : \sout{Blockchain} Stored Procedures vs maturité écosystème
-\item DuckDB : OLAP embarqué vs scalabilité Citus
-\item ElasticSearch vs ParadeDB
+\item SurrealDB, licence "source-accessible" BSL\footnote{Business Source License 1.1 : \url{https://spdx.org/licenses/BUSL-1.1.html}\label{org0339e17}} : All-in-one vs modularité PostgreSQL
+\item SpacetimeDB, licence "source-accessible" BSL\textsuperscript{\ref{org0339e17}} : \sout{Blockchain} Stored Procedures vs maturité écosystème
+\item DuckDB, licence open source MIT\footnote{MIT Licence : \url{https://spdx.org/licenses/MIT.html}} : OLAP embarqué vs scalabilité Citus
+\item ElasticSearch,  Elastic License\footnote{Elastic License : \url{https://spdx.org/licenses/Elastic-2.0.html}}; AGPL\footnote{Affero GNU Public License 3.0 : \url{https://spdx.org/licenses/AGPL-3.0-only.html}
+\end{multicols*}}; SSPL\textsuperscript{\ref{org0339e17}} : vs ParadeDB
 \end{itemize}
 \section*{Conclusion et discussions}
-\label{sec:org76f1875}
+\label{sec:orge5b710e}
 \section*{Evolution du document}
-\label{sec:org2ff56a3}
+\label{sec:org9837f43}
 \begin{center}
 \begin{tabular}{rl}
 Date & Changements\\
@@ -854,7 +925,11 @@ Date & Changements\\
 2025-03 & Rédaction du document\\
 \end{tabular}
 \end{center}
+\section*{Glossaire}
+\label{sec:orgb34ef3c}
+\section*{Acronymes}
+\label{sec:org99b465d}
 \section*{Références}
-\label{sec:orge3e1d63}
+\label{sec:org39bbb97}
 \printbibliography[heading=none]
 \end{document}

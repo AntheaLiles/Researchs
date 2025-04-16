@@ -22,7 +22,6 @@ Contexte
 # Pourquoi est-il intéressant d'explorer en profondeur un écosystème applicatif ?
 
 # Pourquoi s'intéresser à PostgreSQL ?
-#+CAPTION: Tendances DB-Engine Ranking pour Oracle, MySQL, et PostgreSQL
 #+BEGIN_SRC R :file charts/top5.pdf
 library(readr)
 library(dplyr)
@@ -139,6 +138,7 @@ Un grand nombre d'extensions communautaires, parfois portées par des entreprise
 
 - [[https://github.com/tembo-io/pg_auto_dw][pg_auto_dw]] :: An auto data warehouse extension for Postgres
 - [[https://github.com/darold/pgtt][pgtt]] :: extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
+
 
 *** Traitement en temps réel
 # Séries temporelles, Event Store
@@ -549,23 +549,23 @@ Nous pouvons réaliser quelques observations au sujet de ces langages d'extensio
 # Orchestration
 #+caption: Connecteurs et ORM
 #+attr_latex: :placement [H] :width \linewidth
-| Nom           | Particularité                   |
-|---------------+---------------------------------|
-| [[https://github.com/brianc/node-postgres][node-postgres]] | PostgreSQL client for node.js   |
-|               |                                 |
-|               |                                 |
-| [[https://github.com/porsager/postgres][postgres.js]]   | Client for Node.js, Deno,       |
-|               | Bun and CloudFlare              |
-|               | Utilisé par TypeORM et Drizzle  |
-| [[https://github.com/gajus/slonik][slonik]]        | Node.js client                  |
-|               | Runtime and build time          |
-|               | type safety, and composable SQL |
-| [[https://github.com/npgsql/npgsql][npgsql]]        | .NET data provider              |
-|               |                                 |
-|               |                                 |
-| [[https://github.com/sfackler/rust-postgres][rust-postgres]] | Native driver for Rust          |
-|               |                                 |
-|               |                                 |
+| Nom           | Particularité                  |
+|---------------+--------------------------------|
+| [[https://github.com/brianc/node-postgres][node-postgres]] | Client pour Node.js            |
+|               |                                |
+|               |                                |
+| [[https://github.com/porsager/postgres][postgres.js]]   | Client pour Node.js, Deno,     |
+|               | Bun and CloudFlare             |
+|               | Utilisé par TypeORM et Drizzle |
+| [[https://github.com/gajus/slonik][slonik]]        | Client pour Node.js            |
+|               | Type safety                    |
+|               | Composable SQL                 |
+| [[https://github.com/npgsql/npgsql][npgsql]]        | .NET data provider             |
+|               |                                |
+|               |                                |
+| [[https://github.com/sfackler/rust-postgres][rust-postgres]] | Native driver for Rust         |
+|               |                                |
+|               |                                |
 
 # Autres à catégoriser
 - [[https://github.com/sqlpage/SQLPage][SQLPage]] :: Fast SQL-only data application builder. Automatically build a UI on top of SQL queries
@@ -578,40 +578,102 @@ Nous pouvons réaliser quelques observations au sujet de ces langages d'extensio
 - [[https://github.com/eradman/pg-safeupdate][pg-safeupdate]] :: a simple extension to PostgreSQL that raises an error if UPDATE and DELETE are executed without specifying conditions. This extension was initially designed to protect data from accidental obliteration of data that is writable by PostgREST.
 - [[https://github.com/timescale/pgspot][pgspot]] :: pgspot checks extension scripts for following PostgreSQL security best practices. In addition to checking extension scripts it can also be used to check security definer functions or any other PostgreSQL SQL code.
 
-# Tests et qualité
-- [[https://github.com/theory/pgtap][pgTAP]] :: Suite applicative pour créer des tests unitaires
-- [[https://github.com/stack-auth/pgmock][pgmock]] :: In-memory PostgreSQL mock server for unit and E2E tests
-- [[https://github.com/peterldowns/pgtestdb][pgtestdb]] :: Quickly run tests in their own temporary, isolated, postgres databases
-- [[https://github.com/bytebase/bytebase][bytebase]] :: DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps
-- [[https://github.com/postgres-ai/database-lab-engine][database-lab-engine]] :: DBLab enables database branching and thunder thin cloning for any Postgres database and empowers DB testing in CI/CD. This optimizes database-related costs while improving time-to-market and software quality
+#+caption: Tests et qualité
+#+attr_latex: :placement [H] :width \linewidth
+| Nom                 | Particularité                         |
+|---------------------+---------------------------------------|
+| [[https://github.com/theory/pgtap][pgTAP]]               | Suite applicative pour                |
+|                     | créer des tests unitaires             |
+|                     |                                       |
+| [[https://github.com/stack-auth/pgmock][pgmock]]              | In-memory PostgreSQL mock             |
+|                     | server for unit and E2E tests         |
+|                     |                                       |
+| [[https://github.com/peterldowns/pgtestdb][pgtestdb]]            | Quickly run tests in their            |
+|                     | own temporary, isolated,              |
+|                     | databases                             |
+| [[https://github.com/bytebase/bytebase][bytebase]]            | DevSecOps solution for Developer,     |
+|                     | Security, DBA and Platform            |
+|                     | Engineering teams                     |
+| [[https://github.com/postgres-ai/database-lab-engine][database-lab-engine]] | Enables database branching and        |
+|                     | thunder thin cloning for any database |
+|                     | and empowers DB testing in CI/CD      |
+|                     |                                       |
 
 # Observabilité
 La longue liste de modules et extensions d'observabilité peut indiquer une vigilence particulière des utilisateurs au fonctionnement et aux performances du DBMS.
 
 Cet intérêt peut être une des raisons de l'amélioration progressive des performances natives et du développement d'extensions sectorielles.
-- [[https://github.com/pgaudit/pgaudit][pgaudit]] :: PostgreSQL Audit Extension (SOC2)
-- [[https://github.com/pgsentinel/pgsentinel][pgsentinel]] :: postgresql extension providing Active session history
-- [[https://github.com/paradedb/pg_analytics][pg_analytics]] :: Permet de requeter des stockages comme AWS3 et des tables comme Iceberg ou Delta Lake. Les réponses sont envoyés à DuckDB pour l'analyse.
-- [[https://github.com/zubkov-andrei/pg_profile][pg_profile]] :: Postgres historic workload reports
-- [[https://github.com/powa-team/pg_qualstats/][pg_qualstats]] :: Collecte des statistiques sur les prédicats et aide à trouver les indices manquants
-- [[https://github.com/postgrespro/pg_query_state][pg_query_state]] :: Tool for query progress monitoring in PostgreSQL 
-- [[https://github.com/powa-team/pg_stat_kcache/][pg_stat_kcache]] :: Regroupe les statistiques sur les lectures et écritures effectués par le système de fichiers
-- [[https://github.com/percona/pg_stat_monitor][pg_stat_monitor]] :: Outils d'analyse des performances
-- [[https://github.com/postgrespro/pg_wait_sampling][pg_wait_sampling]] :: Sampling based statistics of wait events
-- [[https://github.com/powa-team/powa][PoWA]] :: PostgreSQL Workload Analyzer
-- [[https://codeberg.org/Data-Bene/StatsMgr][StatsMgr]] :: Gestion des statistiques de performance et d'utilisation
-- [[https://github.com/EnterpriseDB/system_stats][system_stats]] :: Permet d'exposer les données du système comme l'utilisation du CPU, de la mémoire et des disques 
-- [[https://github.com/dalibo/pg_activity][pg_activity]] :: pg_activity is a top like application for PostgreSQL server activity monitoring
-- [[https://github.com/EnterpriseDB/pg_catcheck][pg_catcheck]] :: Outil pour diagnostiquer la corruption du catalogue système
-- [[https://github.com/df7cb/pg_dirtyread][pg_dirtyread]] :: Read dead but unvacuumed tuples from a PostgreSQL relation 
-- [[https://github.com/cybertec-postgresql/pg_show_plans][pg_show_plans]] :: Show query plans of all currently running SQL statements 
+
+#+caption: Observabilité
+#+attr_latex: :placement [H] :width \linewidth
+| Nom              | Particularité                           |
+|------------------+-----------------------------------------|
+| [[https://github.com/pgaudit/pgaudit][pgaudit]]          | SOC2                                    |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/pgsentinel/pgsentinel][pgsentinel]]       | Active session history                  |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/paradedb/pg_analytics][pg_analytics]]     | Requeter des stockages comme AWS3 et    |
+|                  | des tables comme Iceberg ou Delta Lake. |
+|                  | Les réponses sont envoyés à DuckDB      |
+| [[https://github.com/zubkov-andrei/pg_profile][pg_profile]]       | Postgres historic workload reports      |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/powa-team/pg_qualstats/][pg_qualstats]]     | Collecte des statistiques sur           |
+|                  | les prédicats et aide à                 |
+|                  | trouver les indices manquants           |
+| [[https://github.com/postgrespro/pg_query_state][pg_query_state]]   | Requeter le moniteur d'avancement       |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/powa-team/pg_stat_kcache/][pg_stat_kcache]]   | Regroupe les statistiques sur           |
+|                  | les lectures et écritures               |
+|                  | effectués par le système de fichiers    |
+| [[https://github.com/percona/pg_stat_monitor][pg_stat_monitor]]  | Analyse des performances                |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/postgrespro/pg_wait_sampling][pg_wait_sampling]] | Sampling based statistics of            |
+|                  | wait events                             |
+|                  |                                         |
+| [[https://github.com/powa-team/powa][PoWA]]             | Workload Analyzer                       |
+|                  |                                         |
+|                  |                                         |
+| [[https://codeberg.org/Data-Bene/StatsMgr][StatsMgr]]         | Gestion des statistiques de             |
+|                  | performance et d'utilisation            |
+|                  |                                         |
+| [[https://github.com/EnterpriseDB/system_stats][system_stats]]     | Expose les données du système comme     |
+|                  | l'utilisation du CPU,                   |
+|                  | de la mémoire et des disques            |
+| [[https://github.com/dalibo/pg_activity][pg_activity]]      | Server activity monitoring              |
+|                  |                                         |
+|                  |                                         |
+| [[https://github.com/EnterpriseDB/pg_catcheck][pg_catcheck]]      | Outil pour diagnostiquer la             |
+|                  | corruption du catalogue système         |
+|                  |                                         |
+| [[https://github.com/df7cb/pg_dirtyread][pg_dirtyread]]     | Read dead but unvacuumed tuples         |
+|                  | from a PostgreSQL relation              |
+|                  |                                         |
+| [[https://github.com/cybertec-postgresql/pg_show_plans][pg_show_plans]]    | Show query plans of all                 |
+|                  | currently running                       |
+|                  | SQL statements                          |
+| [[https://github.com/nexsol-technologies/pgassistant][pgassistant]]      | Tool designed to help                   |
+|                  | understand and                          |
+|                  | optimize performances                   |
+| [[https://github.com/CrunchyData/pgmonitor-extension][pgmonitor]]        | Suite de surveillance des               |
+|                  | performances et de l'état               |
+|                  | des bases de données                    |
+| [[https://github.com/bigsql/plprofiler][plprofiler]]       | Permet de créer des profils de          |
+|                  | performance pour                        |
+|                  | les procédures stockées                 |
+| [[https://github.com/tvondra/tdigest][tdigest]]          | Estimation des  percentiles             |
+|                  | avec T-Digest                           |
+|                  |                                         |
+| [[https://gitlab.com/postgres-ai/joe][Joe]]              | (AI tool) to experiment on              |
+|                  | automatically provisioned               |
+|                  | production-size DB testing replica      |
+|                  |                                         |
 
 - pgMustard ::
-- [[https://github.com/nexsol-technologies/pgassistant][pgassistant]] :: Tool designed to help developers understand and optimize their PostgreSQL database performance
-- [[https://github.com/CrunchyData/pgmonitor-extension][pgmonitor]] :: Suite de surveillance des performances et de l'état des bases de données
-- [[https://github.com/bigsql/plprofiler][plprofiler]] :: Permet de créer des profils de performance pour les procédures stockées
-- [[https://github.com/tvondra/tdigest][tdigest]] :: Extension for estimating percentiles using t-digest 
-- [[https://gitlab.com/postgres-ai/joe][Joe]] :: (AI tool) Provide developers access to experiment on automatically provisioned production-size DB testing replica. Joe will provide recommendations for query optimization and the ability to rollback.
 
 ** Chiffrement
 # Comparer pgcrypto et pgsodium en termes d’algorithmes supportés et de conformité RGPD.

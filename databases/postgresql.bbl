@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{jean-jacquesurban-galindoGestionConfigurationIngenierie2008}{misc}{}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{jean-jacquesurban-galindoGestionConfigurationIngenierie2008}{misc}{}
       \name{author}{1}{}{%
         {{hash=c8a528e39e730aec5e5c77bb38bd481b}{%
            family={{Jean-Jacques Urban-Galindo}},
@@ -30,12 +30,10 @@
       }
       \strng{namehash}{c8a528e39e730aec5e5c77bb38bd481b}
       \strng{fullhash}{c8a528e39e730aec5e5c77bb38bd481b}
-      \strng{fullhashraw}{c8a528e39e730aec5e5c77bb38bd481b}
       \strng{bibnamehash}{c8a528e39e730aec5e5c77bb38bd481b}
       \strng{authorbibnamehash}{c8a528e39e730aec5e5c77bb38bd481b}
       \strng{authornamehash}{c8a528e39e730aec5e5c77bb38bd481b}
       \strng{authorfullhash}{c8a528e39e730aec5e5c77bb38bd481b}
-      \strng{authorfullhashraw}{c8a528e39e730aec5e5c77bb38bd481b}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -43,7 +41,7 @@
       \field{day}{24}
       \field{langid}{english}
       \field{month}{5}
-      \field{title}{La << Gestion de Configuration >> En Ingénierie Ou Ce Que : Tout Responsable Doit Comprendre, Tout Progiciel Devrait Permettre de Maîtriser}
+      \field{title}{La « Gestion de Configuration » En Ingénierie Ou Ce Que : Tout Responsable Doit Comprendre, Tout Progiciel Devrait Permettre de Maîtriser}
       \field{urlday}{3}
       \field{urlmonth}{4}
       \field{urlyear}{2025}
@@ -51,7 +49,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/RLKTGBGG/a61206 UGC Gest_Conf_PLN_v0_97.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\RLKTGBGG\a61206 UGC Gest_Conf_PLN_v0_97.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.plmlab.fr/public/jjug/a61206%20UGC%20Gest_Conf_PLN_v0_97.pdf
@@ -59,14 +57,127 @@
       \verb{url}
       \verb https://www.plmlab.fr/public/jjug/a61206%20UGC%20Gest_Conf_PLN_v0_97.pdf
       \endverb
+    \endentry
+    \entry{vidicKnowledgeAssetCompetitive2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7539a812d0ebf488b25ef8009844dce1}{%
+           family={Vidic},
+           familyi={V\bibinitperiod},
+           given={Franc},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7539a812d0ebf488b25ef8009844dce1}
+      \strng{fullhash}{7539a812d0ebf488b25ef8009844dce1}
+      \strng{bibnamehash}{7539a812d0ebf488b25ef8009844dce1}
+      \strng{authorbibnamehash}{7539a812d0ebf488b25ef8009844dce1}
+      \strng{authornamehash}{7539a812d0ebf488b25ef8009844dce1}
+      \strng{authorfullhash}{7539a812d0ebf488b25ef8009844dce1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge is a strategic, high-quality source of power. Knowledge assets – technological and human capital - have been recognized as key resource for sustaining competitive advantage in a dynamic turbulent environment. Past research argued that knowledge is important to facilitate and leverage knowledge assets. Most of the firm’s knowledge and skills reside in its human capital, often in tacit and explicit knowledge. Existing knowledge is not enough to be competitive on the future market. Firms must collect, disseminate and create knowledge capital. According to the theory of dynamic organization knowledge creation (SECI; processes of socialization, externalization, combination and internalization), knowledge assets are the key elements that facilitate knowledge creation processes. Knowledge can be created on personal / organizational level, and also externally, such as with customers, partners and suppliers. Nonaka, Toyama and Konno (2005) identified four dimensions of construct of organizational knowledge capital: experimental knowledge assets, conceptual knowledge assets, routine knowledge assets and system knowledge assets. Each form of knowledge has specific individual support in process of knowledge creation. The firms needs vision and synchronized entire team.}
+      \field{issn}{2520-6214, 2520-6621}
+      \field{journaltitle}{SocioEconomic Challenges}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shortjournal}{SocioEcon. Chall.}
+      \field{title}{Knowledge Asset as Competitive Resource}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{8\bibrangedash 20}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.21272/sec.6(4).8-20.2022
+      \endverb
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\FHIKU5LS\Vidic - 2022 - Knowledge asset as competitive resource.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://armgpublishing.com/journals/sec/volume-6-issue-4/article-2/
+      \endverb
+      \verb{url}
+      \verb https://armgpublishing.com/journals/sec/volume-6-issue-4/article-2/
+      \endverb
       \keyw{/unread}
     \endentry
-    \entry{ZheapPostgreSQLWiki2021}{online}{}{}
+    \entry{thoumsinQuellesStrategiesFautil2019}{report}{}
+      \name{author}{1}{}{%
+        {{hash=be98e71d3f44df1c66ec5a0044ac2314}{%
+           family={Thoumsin},
+           familyi={T\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université catholique de Louvain / Faculté des sciences économiques, sociales, politiques et de communication}%
+      }
+      \strng{namehash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \strng{fullhash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \strng{bibnamehash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \strng{authorbibnamehash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \strng{authornamehash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \strng{authorfullhash}{be98e71d3f44df1c66ec5a0044ac2314}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quelles Stratégies Faut-Il Mettre En Place Pour Attirer et Embaucher de Nouveaux Candidats Vers Des Métiers En Pénurie? {{Cas Adecco}}}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\NKG52TWW\Thoumsin - 2019 - Quelles stratégies faut-il mettre en place pour attirer et embaucher de nouveaux candidats vers des.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://hdl.handle.net/2078.1/thesis:18580
+      \endverb
+      \verb{url}
+      \verb http://hdl.handle.net/2078.1/thesis:18580
+      \endverb
+      \keyw{broken}
+    \endentry
+    \entry{lucierivardCycleRetentionConnaissances2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=123b5faea3f7112feb2915af87e552ce}{%
+           family={{Lucie Rivard}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=886418b07cb9e0f35832d2576510d168}{%
+           family={{Marie-Christine Roy}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \strng{fullhash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \strng{bibnamehash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \strng{authorbibnamehash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \strng{authornamehash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \strng{authorfullhash}{cf1b311142acdb7f255a3f8eb1bc9e1c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Télescope}
+      \field{number}{1}
+      \field{title}{Un Cycle de Rétention Des Connaissances Pour Combattre l'amnésie Organisationnelle}
+      \field{volume}{16}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{67\bibrangedash 81}
+      \range{pages}{15}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\ZPMUW3Q6\Rivard - 2010 - uN CyCLE DE RéTENTioN DES CoNNAiSSANCES PouR CoMBATTRE L’AMNéSiE oRGANiSATioNNELLE.pdf
+      \endverb
+    \endentry
+    \entry{ZheapPostgreSQLWiki2021}{online}{}
       \list{organization}{1}{%
         {PostgreSQL Wiki}%
       }
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{shorttitle}
       \field{day}{1}
       \field{langid}{english}
@@ -81,7 +192,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/BW2AYLGE/Zheap.html
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\BW2AYLGE\Zheap.html
       \endverb
       \verb{urlraw}
       \verb https://wiki.postgresql.org/wiki/Zheap
