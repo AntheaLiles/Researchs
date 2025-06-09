@@ -6,12 +6,37 @@
 #+setupfile: "~/org/config-tex.org"
 
 * [[./3d-files/][Formats de fichiers 3D]]
+** Formats de fichiers 3D pour l'ingénierie de la construction
+- Veille technologique
+
 * [[./databases/][Systèmes de bases de données]]
+** Exploration de l'écosystème applicatif de PostgreSQL
+- Veille technologique
+  
 * [[./documentation/][Documentations logicielles]]
+** Méthodologie de conception d'une documentation logicielle à forte valeur ajoutée
+- Méthode et protocole
+
 * [[./interoperability/][Intergiciels et interopérabilité]]
+** Technologies d'intéropérabilité des outils d'ingénierie de la construction
+- Veille technologique
+
 * [[./operating-systems][Systèmes d'exploitations]]
+** TBD
+
 * [[./plain-text/][Langages de balisages légers]]
+** TBD
+
 * [[./storage/][Stockages de données]]
+** Exploration des technologies de stockage et de gestion des fichiers informatiques
+- Veille technologique
+
 * [[./testing/][Tests informatiques]]
+** Exploration des méthodologies de test d'applications
+- Veille technologique
+
 * [[./visualization/][Visualisation de données]]
+** Méthode de sélection, configuration et validation des représentations graphiques des corpus d'informations
+- Meta analyse
+  
 Projet de recherche visant à établir un cadre formel et une méthode de sélection et de préparation des représentations graphiques des informations issues de bases de données.
