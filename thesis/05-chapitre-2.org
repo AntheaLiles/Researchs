@@ -1,0 +1,22 @@
+** Formulation de la problématique
+*** Questions de recherche
+Question principale : Comment développer une approche d'ingénierie par les contraintes pour améliorer la conception et la validation des systèmes de génie électrique ?
+
+Questions secondaires :
+- Quels mécanismes de vérification formelle intégrer dans cette approche ?
+- Comment remonter aux utilisateurs [...] (IHM)
+- Comment assurer la traçabilité des contraintes techniques ?
+- Quelle est l'efficacité de cette approche comparée aux méthodes traditionnelles ?
+
+*** Hypothèses de recherche
+
+** Approche méthodologique
+*** Méthodologie de recherche
+*** Stratégie de validation
+*** Métriques d'évaluation
+
+** Outils et environnement de recherche
+*** Outils de développement
+*** Cas d'études
+
+** Conclusion

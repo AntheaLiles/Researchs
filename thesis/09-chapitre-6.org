@@ -1,0 +1,25 @@
+** Analyse des contributions
+*** Contributions théoriques
+*** Contributions méthodologiques
+*** Contributions pratiques
+
+** Limites et défis
+*** Limites théoriques
+*** Limites pratiques
+*** Défis organisationnels
+
+** Perspectives d'amélioration
+*** Extensions théoriques
+
+#+CAPTION: Vers une ingénierie sans confiance ?
+#+NAME: fig:long-term-goal
+#+ATTR_LATEX: :placement [htbp]
+[[./svg/long-term-goal.pdf]]
+
+*** Améliorations techniques
+*** Extensions domaines
+
+** Impact scientifique et industriel
+*** Impact sur la recherche
+*** Impact industriel
+*** Impact sociétal

@@ -1,0 +1,70 @@
+* FRONTMATTER
+# la carte grise du programme
+UUID : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+AUTHORS : Cyprien Pierre, Alice, Bob.
+LICENSE : MIT
+
+TYPE : CRON frequency ; Background worker
+       BATCH schedule
+       EVENT on channel
+       DICTIONARY define onthology, semantics, i18n etc. using tables
+       DATASET usign properties drawers in a JSON like style
+       
+* RECIPE
+# comment le récupérer, l'assembler, le compilier
+
+DATABASE : adress
+
+* GOAL
+# Behavior and constraints part
+** FEATURE
+# Scénario, Règle...
+- GIVEN
+  - WHEN
+  - AND
+  - THEN MUST
+  - AND SHOULD
+  - AND CAN.
+
+** DEFINITIONS
+DEFINE : get-human
+  SELECT ALL FROM human-db
+  WHERE ?
+  RETURN RESULTS
+
+DEFINE : age
+  SET integer 3
+  SET UNIT year IF age IS 1 ELSE years
+  RETURN VALUE
+
+DEFINE : get-human-with-age
+  DO : get-human WHERE age BELOW 35 years
+  
+DEFINE : function-name
+  DO :
+  - OPERATION-A,
+  - OPERATION-B,
+  - OPERATION-C.
+  # ASYNC
+  RETURN : RESULT, STATE, DURATION.
+
+DEFINE : function-name
+  DO :
+  1. OPERATION-1,
+  2. OPERATION-2,
+  3. OPERATION-3.
+  # SYNC
+  RETURN : RESULT, STATE, DURATION.
+  
+
+* PROGRAM
+# le programme en lui-même
+** DEPENDANCIES
+LOAD : a, b, c, d.
+
+** PROCEDURE
+
+** TESTS
+
+

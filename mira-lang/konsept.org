@@ -1,0 +1,360 @@
+#+TITLE: Plateforme applicative partagée KonSept (K7)
+#+subtitle: Livre Blanc
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/Projects/research-templates/lualatex.org"
+
+#+begin_abstract
+\todo[inline]{Rédiger l'abstract}
+#+end_abstract
+
+#+LaTeX: \begin{multicols}{2}
+
+* Introduction
+Hardware et Software ne sont que deux constituants d'un système devant s'harmoniser pour atteindre ses objectifs.
+
+KonSept c'est une plateforme de développement Web constitué de
+- Un langage de programmation basé sur le lambda-calculus
+- Un gestionnaire de base de données multi-modèles
+- Un runtime, compilateur et interpréteur pour WebAssembly
+- Un gestionnaire de paquets
+
+KonSept c'est également une suite d'applications de
+- Rédaction de documents
+- Développement
+- De calculs et simulations
+- Design thinking
+
+Le développement, l'amélioration et l'organisation communautaire de KonSept s'organise sur la plateforme collaborative konsept.dev
+
+* Objectifs
+** Sécurité
+CubeOS (Séparation en espaces virtualisés)
+Subuser (Full containerisation)
+Wayland (Isolation des utilitaires),
+GNU Hurd (Pico kernel et le reste en service dans l'espace utilisateur),
+GNU Shepherd (Transparence totale dans la configuration)
+** Modularité
+LibOS
+
+Le système offer un environnement par défaut facile à comprendre et à utiliser. Cet environnement est personnalisable au grès des envies des utilisateurs par l'ajout de modules. Ces modules constituent les applications du système. Ils s'apparentent aux plugins de navigateurs mais sont plus comparables aux modules d'Emacs ou des plugins Neovim.
+
+Les modules sont des pièces atomiques réalisant des objectifs précis. Ils sont ajouter par le téléversement de leurs code source depuis la plateforme officielle vers la base de donnée du système. Immédiatement, est créé un registre de modification qui permettra de monitorer toutes les évolutions futures apportés par l'utilisateur ou le dépot officiel.
+
+En ce sens, l'approche de "layers" propulsé par Spacemacs est une excellente approche. L'application, suivant l'usage de l'utilisateur, ajoute les couches logiques nécessaires et complémentaires aux couches fondamentales.
+
+Soil implémente CLIM (Common Lisp Interface Manager) comme base pour toute les interfaces graphiques.
+
+La modularité du système est une composante essentielle facilitant à la fois sa conception, sa personnalisation, sa distribution et sa maintenance. Le projet est conçu en respectant une architecture hexgagonale. Tout utilisateur doit avoir la possibilité d'accéder aux codes sources, de les modifier, de créer des modules et d'ajouter toutes les fonctionnalités souhaitées. Le système doit donc offrir tous les outils et possibilités de modifications. Cet objectif vise à favoriser le développement et l'engagement volontaire et opportuniste permettant de nourrir l'écosystème et la communauté.
+
+Chaque utilisateur a la liberté de créer et d'utiliser autant d'environnement de travail qu'il le souhaite. Ces environnements sont défini et executés depuis le compte de l'utilisateur. Ils sont constitués par la rédaction d'un manifeste au format Org. Ces manifestes contiennent en plein texte les annotations de l'utilisateur et dans des blocs de codes la déclaration des modules de configuration souhaités par l'utilisateur.
+
+Rompant avec les systèmes de fichiers historiques et des arbres de navigations verticaux, Soil se base sur un système de gestion de base de donnée pour administrer l'intégralité de son contenu : sessions et droits utilisateurs, applications, services, interface graphique, modules, etc.
+Ce paradigme permet aux utilisateurs de créer l'architecture de navigation de leurs choix, rendu possible par la gestion des métadonnées.
+
+** Portabilité
+Le système doit être "architecture agnostic" et donc déployable sur tout type de matériel sans nécessiter de compilation dédiée.
+Soil repose donc sur l'utilisation notable de UIOP pour ses abstractions de bas niveau.
+
+En tant qu'application, Soil doit pouvoir fonctionner en stand alone (sans installation) sur toute machine et tout système d'exploitation hôte. Le logiciel doit donc s'auto-virtualiser.
+
+** Atomicité
+Chaque module doit être aussi atomique que possible. La réponse au strict besoin de l'utilisateur est l'absolu priorité.
+
+Suckless phylosophie
+
+A ce titre, et sans s'y limiter, seront téléchargés sur la machine de l'utilisateur uniquement les logiciels et utilitaires dont il a usage. Par exemple, la prise en charge des fichiers de toutes nature sera suggérée à l'utilisateur seulement lorsqu'il tentera d'accéder au dit fichier.
+
+L'environnement graphique doit être unique et en mesure d'accueillir tous les usages potentiels. De la rédaction de texte à la navigation web générale.
+
+En ce sens, l'approche du logiciel Emacs est particulièrement pertinente. Elle offre un cadre d'execution et d'affichage unifiée pour tous ses applicatifs.
+
+L'ensemble des applicatifs devront être interopérables. C'est à dire que les outils de manipulation d'une donnée doit être réutilisée partout où cela est nécessarie, sans redéveloppement. Par exemple, qu'un utilisateur souhaite afficher une image ou la modifier, le système d'affichage doit être identique à ces deux modes d'utilisation.
+
+Les modules sont analysés en avance de phases pour en identifier les dépendances. Si ces dernières existent dans le système d'exploitation alors elles ne seront pas chargées. Des algorythmes d'optimisations sémantiques sont réalisées pour assurer la bonne intégration des modules.
+
+Database Operating System
+
+** Résiliance
+Résiliant:
+    Erlang's BEAM (failure proof)
+Répétable :
+    GNU Guix & Straight.el (Compiling from sources, Declarative configuration, Dedicated workspace configuration)
+Prédictif :
+    DBOS (exactly once execution)
+    BSD ("don't fix it until it break" : Long term support and stability)
+** Efficacité
+Dans un objectif long terme, Soil implémentera un fonctionnement basé sur la mémoire et nottament sur le stockage en mémoire non-volatile des données. Nous souhaitons tendre vers l'utilisation d'un espace mémoire commun tout en maintenant des niveaux d'isolations suffisants en matière de sécurité. L'objectif étant de maximiser la modularité, d'augmenter les vitesses d'executions en tirant avantage des mémoires de tyme NVRAM, de simplifier l'architecture d'ensemble en se passant d'un système de stockage traditionnel.
+
+Le partage de l'espace mémoire à travers le module "shared memory" permet une grande capacité d'intéropérabilité des modules du systèmes.
+
+* Plateforme de développement
+** Langage de programmation
+*** Data-flow
+Post processing : Envois les données au client une fois que la base de données les a sauvegardées
+#+begin_src plantuml :file drawings/dataflow-postprocessing.svg :cmdline -tsvg
+@startuml
+Queue -> DB : Transaction
+DB -> DB : Processing
+DB --> Queue : OK
+Queue -> Queue : Clear
+DB -> Client : Push data
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:drawings/dataflow-postprocessing.svg]]
+
+Préprocessing : Envois des données aux clients dès qu'elles arrivent.
+#+begin_src plantuml :file drawings/dataflow-preprocessing.svg :cmdline -tsvg
+@startuml
+Queue -> DB : Transaction
+Queue -> Client : Push data
+DB -> DB : Processing
+DB --> Queue : OK
+Client --> Queue : OK
+Queue -> Queue : Clear
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:drawings/dataflow-preprocessing.svg]]
+
+*** Event-driven
+S'il ne se passe rien alors ne fait rien.
+Scheduled tasks :
+
+#+begin_src: elisp :results verbatim
+(defunc count)
+(count new-entry)
+(@count 10 block) ;; at + event + rule  = action 
+#+end_src
+
+*** Agent based
+*** Stack based
+*** Bloc oriented
+*** Transactionnel
+*** Batteries included
+Pas de langages d'extensions, pas d'ORM, pas d'applications "in the middle".
+KonSept est autoporteur :
+- Building :: Macroprogrammation, business logic, IHM, etc.
+- Querying :: Echanges avec les bases de données (SQL, Spark, GraphQL, etc.)
+- Operate :: Command line interface, package management, automatisation, administration...
+
+** Runtime
+Inspiration de [[https://starpu.gitlabpages.inria.fr/][StarPU]] : optimisation du calcul parallele sur des macines hétérogènes
+Subroutines Token-threaded
+
+** Base de données
+- Row, Column, Graph, Vector, Geospacial, Document, RDF, Objet...
+- Temporaire en cache L3, en mémoire RAM
+- Partagée, distribuée, répliquée et décentralisée
+- Persistente en stockage physique
+- Une base de configuration par utilisateur et une base d'ensemble
+- Mise à l'échelle automatique et sans maintenance (network discovery, hardware discovery)
+- Basée sur la pile (stack) et optimisation du (heap)
+
+*LambdaLite*
+
+Le système de gestion de base de donnée administre l'intégralité des informations et fichiers stockés par l'utilisateur.
+
+** Ligne de commande
+*Lish* signifie LIsp SHell
+
+Il s'agit d'une interface système basée sur la synthaxe Common-Lisp permettant d'éxecuter des fonctions d'administrations. Cette interface peut être appelée n'importe ou dans le système, y compris depuis le code source d'une application. Cela permet un développement plus étroit des modules avec le système.
+
+Cette interface fonctionne nativement avec le reste des composants du système. Il constitue notamment l'orchestrateur de la base de donnée.
+
+Inspirations : Bash, Linux cmd, Git, Guix, SQL, Nu shell, etc.
+
+Le système d'exploitation utilise son propre langage d'administration. Il s'agit de *Lish* :
+- *L* ish *i* s a *sh* el
+- *L* isp *i* n a *sh* el
+
+Lish est une utilisation en invite de commande de Common Lisp.
+
+Sa synthaxe est excessivement simple et explicite :
+#+begin_src lisp :results verbatim
+(fonction :propriété valeurs)
+#+end_src
+
+La requette suivante :
+#+begin_src bash :results verbatim
+find / -type f -name "*.mp3"
+#+end_src
+
+Devient :
+#+begin_src lisp :results verbatim
+(list :file-type mp3)
+#+end_src
+
+Nous remarquons la proximité avec une requette SQL qui pourrait être :
+#+begin_src sql :results verbatim
+    SELECT * FROM root WHERE mime_type = 'audio/mpeg';
+#+end_src
+
+La synthaxe de Lish se veut claire et explicite. L'avantage d'être basée sur Common Lisp est que cela offre la capacité de réaliser des requettes complexe en tirant avantage des s-expressions.
+
+
+Voici à quoi ressemble une session shell avec *lish* :
+#+begin_src common-lisp :results verbatim
+;; prompt
+username@domain[target][branch]: lambda (list :filetype mp3)]
+
+;; run
+(list (branch (target (domain nom-domain) nom-target) nom-branch)
+      :filetype mp3)
+
+;; return
+| file | size   | date      | etc.   |
+|------+--------+-----------+--------|
+| a    | xxx ko | timestamp | ...    |
+| b    | yyy ko | timestamp | ...    |
+| c    | zzz ko | timestamp | ...    |
+
+;; exemple d'erreur
+echo : no such file type on target
+
+#+end_src
+
+* Suite d'application
+* Plateforme collaborative
+** Démarche qualité
+Les logiciels devraient toujours servir les intérêts de leurs utilisateurs.
+
+Les archétypes d'utilisateurs sont très variés selon la catégorie de logiciel, ce qui est tout à fait normal.
+
+Cependant, tout projet de développement se doit de s'intéresser en premier lieux à répondre aux besoins des utilisateurs finaux. Qu'il s'agisse d'un empoyé de bureau, d'un chercheur, d'un étudiant, d'un développeur, peu importe.
+
+Dans un second temps, tout logiciel se doit d'offrir la meilleure expérience d'utilisation possible au moment de sa diffusion. Cela inclu, mais sans s'y limiter, la vitesse d'execution, la résilience du logiciel, l'ergonomie, la protection de l'utilisateur.
+
+Ensuite, comme n'importe quel système, il est nécessaire de le documenter, de le maintenir et de l'améliorer.
+
+Pour remplir ces objectifs. Est mis en oeuvre une approche qualitative de la gestion du projet de développement dès son initialisation.
+
+Cela inclu une étude systématique du besoin, des personas et de la chaine logistique (SIPOC) avant tout démarrage de développement. Nous sommes convaincu que cette approche, bien que peu agile à première vue, permet d'améliorer à la fois la qualité des produits livrés et l'expérience de développement.
+
+Nous avons la conviction que, dans tout projet d'ingénierie, le plus important est la compréhension du contexte.
+
+Pour intégrer l'utilisateur au coeur du processus de développement, tous les moyens doivent êtres mis en oeuvre. Cela peut prendre la forme d'enquête, de formulaire d'évaluation, d'échanges textuels, de rencontre lors de forums, etc.
+
+Définition des types de besoins :
+- Besoins de base ::  Constitunt les exigences fondamentales. Leurs réponse est obligatoire. L'utilisateur s'attend à ce que ces besoins soient remplis.
+- Besoins de performance :: Constituent les exigences améliorant l'expérience utilisateur. Leurs réponse n'est pas primordiale mais nécessaire pour assurer la satifaction.
+- Besoins de nouveautés ::  Constituent les exigences non formalisées par l'utilisateur mais portées par l'équipe de développement. Leurs réponse permet d'apporter des facteurs de différentiation.
+- Besoins indifférents ::  Constituent les exigences n'apportant pas de valeur sensible. Il convient de limiter leurs traitement.
+- Besoins inversés ::  Constituent toutes exigences risquant de dégrader l'expérience d'ensemble.
+
+Description du besoin fonctionnel :
+
+
+C'est aussi grâce aux réfractaires qu'un projet prend.
+
+#+caption: Identification des key-users
+| type                          | définition | Observation | alpha test | beta test |
+|                               |    <c>     |     <c>     |    <c>     |    <c>    |
+|-------------------------------+------------+-------------+------------+-----------|
+| Volontaire                    |     x      |             |     x      |           |
+| Non-volontaire mais demandeur |            |             |            |     x     |
+| Réfractaire                   |     x      |      x      |            |           |
+
+#+caption: Identification du besoin
+| Besoins        | Vu de l'utilisateur | Vu du concepteur                                 |
+|----------------+---------------------+--------------------------------------------------|
+| Fondamentaux   |                     |                                                  |
+| De performance |                     | Efficacité d'execution à ressources contraintes  |
+| De nouveauté   |                     | Identification des outils et méthodes opportunes |
+| Indiférents    |                     | Limitation des tâches à faible valeur ajoutée    |
+| Inversés       |                     | Mitigation des risques                           |
+
+Théorie des contraintes && Supply chain management
+R&D && Veille technologique && Knowledge management
+Démarche qualité && VSM
+
+** Etat des lieux
+Avant de démarrer le développement du système d'exploitation, un vaste état des lieux est réalisé.
+
+Cela commence par une étude comparative des solutions informatiques apparues depuis 1960.
+Cette étude sera agrémentée autant que possible des retours d'expérience pertinents aidant à l'exploration des résultat.
+Cet historique doit offrir une vue d'ensemble de l'écosystème informatique actuel et de son évolution. Il doit également permettre de tirer les bonnes pratiques et solutions aux problématiques à venir.
+
+Nous sommes convaincu que cette première étude permettra de remonter les connaissances de nos prédécesseurs, potentiellement oubliées depuis leurs parutions initiales.
+
+Cet étude comparative porte sur l'analyse des interfaces et experiences utilisateurs, l'efficacité des systèmes (consommation de ressources matériel et d'énergies ainsi que leurs temps d'execution).
+Elle s'étend sur les technologies et environnements suivants :
+- Langages de programmations
+- Systèmes d'administration de bases de données
+- Compilateurs et interpréteurs
+- Technologies de virtualisations (machines virtuelles, conteneurs, sandbox, cibles de compilation eg. WASM)
+- Systèmes d'exploitations (unix, unix-like, non-unix)
+- Gestionnaires de fenêtres
+- Moteurs de rendu graphiques
+- Systèmes et formats de fichiers
+- Applications et environnements graphiques
+
+** Rescencement
+Pour initier cette collaboration, plannifier les développements et par la même occasion, offrir une plateforme commune d'étude et d'échange, un regroupement des codes sources libres doit être opéré.
+
+Après agrégation des sources, une analyse systématique est opérée pour déterminer l'usage du programme et ses métriques et dépendances avant d'être historisé et mis à disposition.
+
+Ce rescensement doit être raisonné et se concentré en premier lieu sur les composants développés en Common Lisp. Puis être étendu aux autres dialectes Lisp. Enfin, et lorsque cela est justifié, être étendu à d'autres langages haut niveau. Nous entendons, dans ce derniers cas, des programmes n'existant que dans un langage précis et n'ayant pas d'équivalent en Lisp.
+
+Ces bibliothèques devront finalement être rationnalisées. Des tests, benchmarks et mises en situation étendus devront être réalisés pour arriver à les discriminer convenablement. L'ensemble des essais perpétrés devront être reproductibles. Dans le même temps, il convient de collecter du retour d'expérience au près d'utilisateurs pour chacune des technologies étudiées.
+
+Le caneva de recherche proposé est le suivant :
+#+begin_src ascii :results verbatim
+'* Nom de l'élément analysé
+'#+BEGIN_METADATA
+'#+END_METADATA
+-----
+- Courte description (TL;DR)
+- Résumé de l'analyse
+- ~Code~
+- Retours d'expérience
+- Stratégie de test
+- Environnement de test
+- Résultats des tests
+- Forces de l'élément
+- Axes d'améliorations
+-----
+- Forum de discussion
+#+end_src
+
+La plateforme d'évaluation doit également être un centre de veille technologique.
+
+\todo[inline]{Note au sujet de la documentation et référence à Hex (Elixir)}
+
+** Coordonation
+Le développement du système d'exploitation peut profiter d'un écosystème applicatif déjà riche. Seulement, les initiatives de développement sont actuellement désorganisés et un projet d'une telle envergure nécessite une coordonation robuste.
+
+Une plateforme de coordonation des développements est à mettre en oeuvre.
+
+Cette plateforme permettra de créer une communauté de développeur.
+Elle offrira ainsi des fonctionnalitées suivantes :
+- Blogging, avec abonnement par flux RSS,
+- Forum de réflexion,
+- Echange par messagerie instantanée.
+
+La création d'une telle plateforme offre également l'opportunité d'associer, dans un cadre cohérent, l'ensemble des éléments de documentation, d'aide à l'utilisation et de formation. Le partage de connaissance et l'accompagnement des nouveaux utilisateurs sera ainsi être au coeur des prérogatives de la communauté.
+
+Pour améliorer ce transfert de connaissances, pourront être créer des parcours de formations incluant des tutoriels et des exercices.
+
+** Licences et protections
+Ce projet promeut l'usage de licence libre.
+
+L'environnement légal du libre est actuellement bien défini. Une étude sur les licences disponnible doit être menée pour déterminer la ou les licences adaptées au projet. Cette étude offre l'opportunité de définir une licence générale et configurable suivant le modèle proposé par Créative Commons ou, à défaut la création d'un outil d'accompagnement dans la sélection d'une licence appropriée.
+
+Seront sous licence les éléments suivants :
+- Codes sources,
+- Documentations,
+- Ouvrages pédagogiques,
+- Bases de données,
+- Productions visuelles.
+
+** Token economie (K7C)
+- Default token à "miner" en réalisant les formations KonSept
+- Creation token obtenu lors du développement plannifié, de l'amélioration, optimisation ou sécurisation d'une cassette
+- Utilisation des K7C (KonSept Coin) pour déployer ou consommer des services sur le réseau distribué
+
+#+LaTeX_HEADER: \end{multicols}

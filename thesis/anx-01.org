@@ -1,0 +1,129 @@
+** Introduction
+# Précise le statut scientifique du travail (projet de recherche, ancrage institutionnel, etc.)
+
+# Présenter le contexte normatif croissant dans la construction.
+
+# Problématique : la difficulté d’accès et de quantification de la charge normative, les impacts potentiels de l'ampleur et la difficulté d'en connaitre
+
+# Objectif : quantifier, caractériser et comparer la norme dans la construction.
+
+** Périmètre de l'étude
+L’étude se concentre sur les normes volontaires françaises (NF) référencées par AFNOR et publiées à la date de la collecte.
+Le périmètre inclut toutes les normes relevant du domaine “Construction et urbanisme” selon la classification AFNOR Norm’Info.
+
+Les normes ISO/IEC sont souvent transposées en normes NF (NF EN ISO, etc.)
+
+AFNOR est le point d’entrée national reconnu par l’État pour la normalisation volontaire.
+
+Les normes d’application obligatoire sont issues de ce corpus (via réglementations).
+
+Par l'analyse des textes et de leurs métadonnées, nous tenterons de répondre aux questions suivantes :
+
+Q1 : Quelle est l’ampleur documentaire du corpus normatif applicable à l’industrie de la construction, mesurée en nombre de documents et en volume paginé ?
+Q2 : La filière construction présente-t-elle une densité normative supérieure à celle d’autres secteurs industriels comparables, en termes de nombre de normes actives et de leur volumétrie documentaire ?
+Q3 : Comment les textes normatifs se répartissent-ils entre les sous-domaines techniques, professions et spécialités représentatives de la filière construction, selon les descripteurs et indices de classement ?
+
+
+** Méthodologie
+*** Cadre juridique
+Il n'existe pas de base de données publiques recenssant l'ensemble des textes de normes et leurs métadonnées. Il convient donc de constituer cette base de donnée en collectant les informations publiquement accessibles.
+
+Cette opération implique l'emplois du webscraping.
+
+#+BEGIN_QUOTE
+Le webscraping consiste à extraire automatiquement (to scrape : gratter), de manière massive des données d'un site web. -- INRAE[cite:@quesnevilleRecommandationsUsagesWebscraping2024]
+#+END_QUOTE
+
+La légalité d'une telle opération semble parfois faire débat. (ref à ajouter)
+
+En droit français, le Code de la propriété intellectuelle précise les modalités de copie et de reproduction des bases de données :
+#+BEGIN_QUOTE
+Lorsqu'une base de données est mise à la disposition du public par le titulaire des droits, celui-ci ne peut interdire :
+
+[...]
+
+6° Les extractions, copies ou reproductions numériques d'une base de données, en vue de la fouille de textes et de données réalisée dans les conditions prévues à l'article L. 122-5-3. Pour l'application de cet article, les auteurs et titulaires des droits d'auteur s'entendent des producteurs de bases de données et les copies ou reproductions numériques d'œuvres s'entendent des extractions, copies ou reproductions numériques de bases de données ;
+
+-- Article L342-3[cite:@CodeProprieteIntellectuelle]
+#+END_QUOTE
+
+Ce code précise également les droits de manipulation des textes dans un cadre de recherche :
+#+BEGIN_QUOTE
+Lorsque l'oeuvre a été divulguée, l'auteur ne peut interdire :
+
+[...]
+
+10° Les copies ou reproductions numériques d'une œuvre en vue de la fouille de textes et de données réalisée dans les conditions prévues à l'article L. 122-5-3 ;
+
+-- Article L122-5[cite:@CodeProprieteIntellectuelle]
+#+END_QUOTE
+
+Et :
+#+BEGIN_QUOTE
+I.-On entend par fouille de textes et de données, au sens du 10° de l'article L. 122-5, la mise en œuvre d'une technique d'analyse automatisée de textes et données sous forme numérique afin d'en dégager des informations, notamment des constantes, des tendances et des corrélations.
+
+II.-Des copies ou reproductions numériques d'œuvres auxquelles il a été accédé de manière licite peuvent être réalisées sans autorisation des auteurs en vue de fouilles de textes et de données menées à bien aux seules fins de la recherche scientifique par les organismes de recherche, les bibliothèques accessibles au public, les musées, les services d'archives ou les institutions dépositaires du patrimoine cinématographique, audiovisuel ou sonore, ou pour leur compte et à leur demande par d'autres personnes, y compris dans le cadre d'un partenariat sans but lucratif avec des acteurs privés.
+
+[...]
+
+Les copies et reproductions numériques effectuées lors d'une fouille de textes et de données sont stockées avec un niveau de sécurité approprié et peuvent être conservées à des fins exclusives de recherche scientifique, y compris pour la vérification des résultats de la recherche.
+
+-- Article L122-5-3[cite:@CodeProprieteIntellectuelle]
+#+END_QUOTE
+
+*** Données collectées
+Métadonnées accessibles publiquement via Norm’Info et Boutique AFNOR :
+    Référence (ex : NF C15-100)
+    Titre
+    Date de publication
+    Nombre de pages
+    Codes ICS
+    Indice de classement
+    Domaine technique
+    Commission de normalisation
+# Prévois un tableau synthétique des métadonnées collectées pour la transparence méthodologique
+
+*** Protocole technique
+Méthode de collecte : Web scraping (à documenter)
+
+# Langage : Python 3
+# Stockage : Fichier CSV encodé UTF-8
+
+Limite : seules les normes publiées et publiquement référencées sur le site marchand de l'AFNOR disponibles à la vente ou référencées, sont incluses.
+
+#+CAPTION: Code de collecte des informations
+#+NAME: fig:afnor.py
+#+ATTR_LATEX: :placement [htbp]
+#+BEGIN_SRC python :results verbatim
+
+#+END_SRC
+
+** Méthodes d'analyse
+    Analyse descriptive :
+        Nombre total de documents / pages
+        Évolution temporelle des publications (si date disponible)
+
+    Analyse comparative :
+        Densité normative dans la construction vs autres domaines AFNOR (en comparant les volumes ICS sectoriels)
+
+    Analyse thématique / taxonomique :
+        Catégorisation des normes par code ICS, indice de classement, domaine technique
+        Projection possible par métier : architecture, génie civil, thermique, électricité…
+
+Outils recommandés : Python (pandas + matplotlib)
+
+** Résultats obtenus
+Cartographie de la norme dans la construction
+# Vis : Graphe, Timeline
+
+Poids normatif par spécialité
+# Vis : diagramme de barre,
+
+Identification d’une sur-normativité éventuelle
+
+Premiers indicateurs pour évaluer la « charge de la norme »
+# Vis : Quantification des pages par documents et par périmètres : diagramme de boite à moustache ou violon
+
+** Discussion et perspectives
+
+

@@ -1,0 +1,29 @@
+** Fondements théoriques
+*** Définition et concepts de base
+*** Approches de résolution de contraintes
+*** Applications en ingénierie
+
+** Architecture conceptuelle du framework
+*** Vue d'ensemble
+*** Principes directeurs
+
+** Extension des contraintes électriques
+*** Syntaxe CBE
+*** Opérateurs de contraintes
+*** Gestion de l'incertitude
+
+** Mécanismes de résolution de contraintes
+*** Traitement multi-niveaux
+*** Algorithmes adaptatifs
+*** Intégration de métamodèles
+
+** Vérification formelle
+*** Génération automatique de propriétés
+*** Model checking adaptatif
+*** Analyse de robustesse
+
+** Interface utilisateur et outils
+*** Environnement de développement intégré
+*** Intégration aux outils métiers
+
+** Conclusion

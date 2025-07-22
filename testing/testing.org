@@ -1,25 +1,7 @@
-#+title: Exploration des méthodologies de test d'applications
-#+subtitle: Note de veille technologique
-#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
-#+EMAIL: cyprien.pierre@eiffage.com
-#+DATE: {{{time(%Y-%m-%d)}}}
-#+setupfile: "~/org/config-tex.org"
-
-#+begin_abstract
-\todo[inline]{Rédiger l'abstract}
-#+end_abstract
-
-\renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
-
-#+LaTeX: \begin{multicols}{2}
-
 * Introduction
 
 * Vue d'ensemble
-Contexte : Architecture microservice, Vue.js, PostgreSQL
-Type d'application : Aggrégation et analyse de données
 
-* Stratégies
 Approches théorisées : Test Driven Design, Behavior Driven Design
 
 Quoi, Qui, Où, Quand, Comment, Pourquoi ?
@@ -125,10 +107,9 @@ Others
 - Sanity test
 - Smoke test
 
------
 Financial costs : Resource and network consumption
 Energy efficiency, carbon footprint
------
+
 DORA metrics => Research papers + the "Accelerate" book (sociologic)
 - Stability =is a measure of the quality of the code that we produce=
   https://www.youtube.com/watch?v=hbeyCECbLhk&list=PLwLLcwQlnXBwvH8Iqs9zqkbSWdvWoyX4v
@@ -138,7 +119,7 @@ DORA metrics => Research papers + the "Accelerate" book (sociologic)
   => Work on smaller changes
   - Lead time for changes => Features
   - Deployment frequency [x]
------
+
 Database testing :
 - Schema testting : test de la logique structurelle de la base (procedures, functions, tables columns…).
 - Functionnal testing : test de l’intégrité des données (clefs uniques, suppression en cascade …)
@@ -152,14 +133,3 @@ Database testing :
 
 Faire attention à ne tester que la logique implémentée en interne. On ne teste pas que pg sait bien faire un select ou une librairie externe.
 
-Ce que l’on veut tester dans Rail_on  at the moment:
-
-Database :
-Que le schéma d’une base migré soit bien celui qui est typé dans typeORM.
-Que les cascades et les clefs uniques et les relations sont ce qui est attendu
-API :
-On veut tester les routes et ce qu’elles retournent
-On veut tester les fonctions communes utilisées dans les middlewares
-Client : TO BE DEFINED
-
-#+LaTeX: \end{multicols}

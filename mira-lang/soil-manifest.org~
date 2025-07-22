@@ -1,0 +1,1260 @@
+** Système d'exploitation
+*Soil* signifie LIsp  Operating System
+
+Il s'agit d'un système d'exploitation créé "top to bottom". C'est à dire, en s'intéressant d'abord aux besoins des utilisateurs puis en descendant progressivement vers les fonctionnalités de bas niveau.
+
+Ce projet de système d'exploitation (OS) s'inspire de l'âge d'or des machines Lisp, où la programmation symbolique et l'interaction homme-machine étaient au cœur de l'innovation. Il vise à réintroduire cette philosophie en intégrant des technologies modernes de gestion de base de données et d'administration système et à offrir un environnement de travail flexible et fiable.
+
+Le choix du développement de ce système en Common Lisp est volontaire et justifié par les raisons suivantes :
+- La structure du langage est accessible aux utilisateurs souhaitant s'y former, y compris les non informaticiens,
+- L'écosystème de ce langage est riche et mature,
+- La communauté de ce langage et des dialectes assimilées est grande.
+
+Ce système sera complété en trois (3) couches logiques :
+1. L'espace utilisateur : il contient tous les services, applications, interfaces graphiques et données d'utilisation,
+2. Le système de base de données : il administre l'intégralité du système en assurant les transactions des données et des procédures appelées en espace utilisateur,
+3. Le noyau : il est chargé d'administrer les services.
+
+Inspirations : DBOS, GNU Emacs, Firefox.
+
+* Résiliant
+** Distributé
+Le hardware est conçu comme un écosystème distribué à part entière.
+Chaque fonction spécifique est réalisée par une puce dédiée (GPU, DSP, NPU, VPU...). En cas de défaillance d'un de ces systèmes, le CPU est utilisé en système redondant.
+
+L'ensemble des ordinateurs sont maillables en un réseau d'entreprise peer-to-peer utilisant WebRTC pour communiquer.
+Cela permet de distribuer le risque sur l'ensemble de son système d'information et évite les risques inérants à l'administration d'un serveur centralisé. En some, plus un organisme utilise le système, plus il devient résiliant.
+
+Le système permet également le partage des ressources non utilisés pour le calcul distribué, permettant la réalisation d'opérations complexes telle que le calcul de rayon ou la simulation par élément finis de façon optimale sans nécéssiter l'emploi de machine dédiée.
+
+L'utilisations d'algorythmes d'autentification cryptographiques assure une forte sécurité au niveau de l'authentification des utilisateurs.
+Les données sont stockées dans des iSIM qualifiés au plus haut niveau de résistance à la pénétration.
+
+Grace à ce système d'autentification robuste, l'administration du réseau peut s'effectué depuis n'importe quelle machine, sous réserve de s'etre authentifier avec le bon niveau de privilège.
+
+Orchestration des réseaux distribués automatiques #Kubernetes
+
+** Higly scalable
+S'adapte automatiquement aux ressources disponnibles sur l'équipement et sur le réseau.
+
+** Non-linéaire
+L'ensemble des éléments chargés sur un ordinateur est administré par un SGBD. Il n'y a pas de système de fichiers.
+Cette approche évite la pollution numérique en assurant qu'un fichier n'existe qu'exactement une fois sur une machine. Son évolution est ensuite assuré par un système de suivi de version approprié au type de l'élément.
+
+nota // exactement une transaction
+
+* Productif
+** Collaboratif
+- prise en charge de plusieurs souris et claviers sur un même ordinateur,
+- synchronisation verticale de plusieurs ordinateurs d'un même réseau, #PowerToy_MouseWithoutBorders
+
+** Suffisant
+- généralisation de Org-Mode
+- simple, épuré, focus
+- une UI pour tout (CLOS, CLOG, McClim)
+
+* Engagé
+** Power reduction
+- Utilisation d'un ecran eInk pour limiter la consommation d'energie
+	Une fois que l'image est affichée, cela ne consomme plus d'énergie,
+- cadençage du système par une horloge variable :
+	Gestion de la fréquence adaptée à la charge de travail,
+	Reprise assurée par le maintiens in-memory des programmes grace aux STT-MRAM
+	Si pas de calcul à réaliser : arrêt des processus,
+    "start-and-stop"
+
+* Innovation
+
+Ce système d'exploitation ouvre la voie à l'implémentation de nouvelles innovation. Voici quelques idées de technologies envisageables :
+- Intégration de système cryptographiques distribués pour assurer une traçabilité immuable et transparente des modifications du système.
+- Utilisation de modèle d'IA pour la surveillance en temps réel des vulnérabilités et comportements anormaux, renforçant ainsi la sécurité du système.
+- Implémentation d'algorithmes d'apprentissage automatique pour ajuster dynamiquement l'allocation des ressources en fonction des charges de travail.
+- Automatisation des actions d'administration courantes.
+- Utilisation d'interfaces adaptatives personnalisant l'expérience utilisateur selon les préférences et habitudes.
+- Anticipation et résolution automatique des conflits lors des mises à jour et installations.
+- Amélioration des capacités d'inférence pour une meilleure compréhension contextuelle des données.
+- Création d'environnements de développement isolés pour faciliter le développement, test et déploiement.
+- Auto conteneurisation de l'environnement de développement pour une mise en production simplifiée
+
+* Défis et améliorations
+** la communauté
+
+Game theory : comment récompenser, rémunérer, l'engagement personnel ?
+
+** le projet
+La charge logique de ce système d'exploitation revenant en premier lieu au DBMS, il est absolument primordial de réaliser tous les ajustements nécessaires à son optimisation.
+Celui-ci devra pouvoir assurer la mise en cache de tables clés-valeurs ainsi que la gestion de données structurées et relationnelles pour remplir certaines de ses missions.
+
+La modélisation en RDF apporte une couche de complexitée supplémentaire mais peut également succiter un changement de paradigme quand à l'approche de l'administration système.
+
+* Conclusion
+
+Le projet de conception d'un nouveau système d'exploitation s'inscrit dans une démarche réfléchie et ambitieuse, alliant les principes du logiciel libre à des technologies contemporaines. En réintroduisant la philosophie des machines Lisp tout en intégrant les dernières avancées technologiques, nous visons à créer un environnement de développement flexible et sécurisé.
+
+Les innovations potentielles ouvrent la voie à de nouvelles façons d'aborder les systèmes d'exploitations.
+
+En pensant le système avec une volontée centrale de collaboration entre les utilisateurs et en offrant des outils d'automatisation performants, nous souhaitons permettre aux développeurs de se concentrer sur des tâches essentielles tout en garantissant une expérience utilisateur fluide.
+
+Ce projet ne se limite pas à la création d'un simple système d'exploitation ; il aspire à établir un écosystème où l'innovation et la collaboration sont valorisées. En rassemblant une communauté autour de ces valeurs, nous espérons que ce système d'exploitation pourra transformer la manière dont les utilisateurs et les développeurs interagissent avec la technologie, tout en assurant une sécurité et une flexibilité adéquates.
+
+ce projet représente une opportunité de redéfinir l'avenir des systèmes d'exploitation, en plaçant l'utilisateur au centre de l'expérience et en exploitant les technologies émergentes pour construire un environnement numérique plus efficace et sécurisé.
+
+Nous sommes confiants que, grâce à cette initiative, nous pourrons contribuer à une évolution positive dans le domaine des systèmes d'exploitation.
+
+* Spécifications - Package Manager
+** Nom
+~sugoi~ : l'utilitaire fait référence au mot japonais =すごい= signifiant "incroyable". Les lettes ~su~ indiquent une élévation de privilège nécessaire pour l'execution de la commande. L'intégralité du système s'executant dans l'espace utilisateur, il n'y a pas de "super utilisateur" au sens des systèmes Linux. ~sugoi~ est à comparer à un déclancheur d'évènement couplé à une invite ~sudo~.
+
+Sugoi vient avec divers flags :
+- ~+c~ ou ~+clean~ : pour supprimer les dépendances orphelines
+- ~+d~ ou ~+download~ : pour télécharger un paquet sans l'installer
+- ~+g~ ou ~+git~ : pour ajouter un dépot
+- ~+h~ ou ~+help~ : pour afficher l'aide et les informations d'un paquet
+- ~+i~ ou ~+install~ : pour installer des paquets et leurs dépendances
+- ~+l~ ou ~+list~ : pour afficher la liste des paquets installtés
+  Cette liste est affichée sous la forme d'un tableur avec identification des catégories de paquets pour faciliter la recherche d'information.
+- ~+p~ ou ~+purge~ : pour vider le cache
+- ~+q~ ou ~+quid~ : pour savoir à quel paquet appartiens un fichier
+- ~+r~ ou ~+remove~ : pour supprimer des paquets et leurs dépendances non utilisées
+- ~+s~ ou ~+search~ : pour rechercher un paquet dans un repos
+- ~+u~ ou ~+upgrade~ : pour mettre à jour des paquets
+- ~+v~ ou ~+verify~ : pour vérifier l'intégrité des paquets
+
+Exemple d'installation d'un paquet :
+
+#+begin_src lisp :results verbatim
+(sugoi +i name_or_path)
+#+end_src
+
+* Spécifications - Sécurité
+Le système d'exploitation doit être construit suivant les règles de sécurité par design. L'architecture du système d'exploitation doit être "Zero-trust" par défaut. Ainsi, les applications sont compilé juste à temps dans des bacs à sables aux ressources justes nécessaires. Les accès utilisateurs sont régies par des règles de moindre privilèges.
+
+** Protection de la mémoire
+Le système d'exploitation embarque un ramasse miette (garbage collecteur) au nioveau de son noyau. Cela permet d'éviter toute faille de sécurité au niveau de la mémoire comme : la corruption de la méloire, les dangling pointers, la double libération, le buffer overflow, le use-after-free, les fuites de mémoires.
+
+L'ensemble du système et de ses modules fonctionne par la compilation juste à temps des codes sources. Le système administre donc nativement les codes sources et ne gère aucun fichier binaire ou conçu dans un langage intermédiaire difficile à lire pour un non-initié (assembleur, code machine...). Cela vise à garantir la capacité d'audition des codes sources par tout utilisateur. Ce système favorise également une gestion fine des dépendances.
+
+** Surveillance
+L'intégralité des composantes du système d'exploitation est surveillé. Les fichiers sont journalisés par des technologies de suivi de versions appropriés (git pour le texte, etc.). L'ensemble des transactions sont journalisés dans un registre cryptographique distribué. Ces éléments permettent de pouvoir, en tout instant, revenir à des états antérieurs du système et de façon très rapide.
+
+** Redémarrage automatique
+Le système d'exploitation embarque un superviseur hierarchique dans son noyau. Les erreurs de processus sont isolés et un système de redémarrage automatique assure la continuité de service. #BEAM_Erlang
+- Asynchrone et ordonancé #BEAM #cl-scheduler
+
+** Maitrise des sources
+Fonctionne uniquement sur l'interprétation des sources CL. Evite les problèmes de DLL, empêche la création de BLOBs. Maintiens l'hackabilité utilisateur.
+
+** Zones et environnements de sécurité
+Le projet prône le partage et invite fortement les participants à tester du code source externe.
+
+L'execution de code source sur une machine est une opération présantant un risque systématique. Ce risque est augmenté lorsque la source du code à auditer n'est pas réputée fiable. En tout état de cause, le système doit permettre l'execution de test dans des environnements isolés et sécurisés avant toute approbation.
+
+Inspiration : Subuser
+
+Les codes sources sont approuvés collégialement.
+
+Inspiration du fonctionnement des repos P2P et des téléchargements torrent (réputation).
+
+| Kernel              | Applicatif | Virtualisation     |
+|---------------------+------------+--------------------|
+| Espace de noms      | Seccomp    | Uni et microkernel |
+| Groupes de contrôle | AppArmor   | Conteneur          |
+| Capabilities        | SE Linux   | Sandbox            |
+
+Inspiration du fonctionnement de Graphène OS, un LibOS multithreaded, multiprocessus et créant des sandbox dynamiquement.
+
+* Spécifications - Développement
+#+caption: Interopérabilité
+#+begin_quote
+/Se dit d'un produit ou d'un système, dont les interfaces sont intégralement connues, pouvant fonctionner avec d'autres produits ou systèmes existants ou futurs et ce sans restriction d'accès ou de mise en oeuvre./ -- *Wikitionary*
+#+end_quote
+
+- Avec les interfaces externes (npm, git, etc.)
+
+  Interopérabilité Technique, sémantiques, organisationnels
+
+enjeux :
+engagements :
+
+#+caption: Compatible
+#+begin_quote
+/(qui est) Facilement modulable ou connectable sans interface ou manipulation compliquée./ -- *Wikitionary*
+#+end_quote
+
+- Des modules avec l'OS
+- Entre les modules - cannaux IPC
+
+enjeux :
+engagements :
+
+** Expérience de développement
+Unification de l'environnement de développement
+
+Technologies possibles : Electron ; WebAssembly
+
+IDE + Console Web + Terminal et multiplexeur
+=> Emacs-ng ; Nyxt ; Lem ; Emacs EAF
+
+Défi technique : Boucle REPL à implémenter dans un compilateur WASM
+Interopérabilité : npm, yarn ; node.js, deno ; webpack, vite ; cypress, jest ; git, svn ; jenkins
+Inspirations : VS code, WebStorm, Chrome DevTools
+
+Maintiens de l'homonoïcité : CLSS cl-css parenscript ; emacs-lisp pour les fichiers de configuration
+
+** Expérience de développement
+
+https://godbolt.org/ : Compiler Explorer \(\Rightarrow\) A recréer pour SBCL & co.
+
+L'expérience de développement doit être irréprochable en tout état de cause.
+
+De ce fait, chaque développeurs doit pouvoir jouïr des outils adaptés à son langage de prédilection de :
+- Gestion de paquet (Quicklisp, ergonomie à retravailler)
+- Gestion de projet (asdf/defsystem)
+- Gestion de portabilité (uiop)
+- Optimisations de bas niveaux
+- Outils de tests dont tests unitaires
+- Outils de détection d'erreurs à la volée
+- Outils de débogage
+- Outils de déploiement intégrés (eg. =go build=)
+- Outils permettant le développement et l'intégration continu
+- Outils de formatage automatique (parinfer)
+- Outils de navigation dans le code (lispy)
+- Outils de refactorisation
+- Outils d'autocompletion
+- Outils de profilage statique
+- Outils d'analyse de performance
+- Outils d'optimisation de la compilation
+- Outils de désassemblage (décompilation)
+
+à étudier : SLIME SBCL CLASP CCL CLISP ABCL ECL, DrRacket, CIDER, Geiser, Gambit REPL, SLY (alternative moderne à SLIME), Portacle, Lem, SLIMA, Alive, SLT.
+
+
+Force de CL :
+- Multi-paradigmes : fonctionnel, impératif, orienté objet, transactionnel
+- Système de macros avancé
+- REPL
+- variété d'implémentation : SBCL, CCL, ECL, etc.
+
+Garanties :
+- Standard stable
+- Forte longévité du code
+- Résistance à l'obsolescence technologique
+
+Environnements :
+- Emacs + SLIME
+- Lem
+
+Manque :
+- Centralisation des ressources et de la documentation
+  - Ergonomie des outils repoussante
+  - Fragmentation de la communautée
+- Mise à jour des documentations
+- Cohérence d'ensemble
+- Fonctionnalités modernes telles que
+  - eee
+  - fff
+- Lobbying et entretiens de la communautée
+- Outils de dev web et mobile
+- Outils de conteneurisation adaptés
+- Compatibilité cloud
+- Ressources de formation
+- Gestion des dépendances (quicklisp fait pas ce taff)
+- Programmation concurente limitée, à mettre au goût du jour
+- Pas de primitive de concurence standardisées
+
+
+Trucs importants :
+- Disponnibilité, activité et bienveillance de la communauté
+- Open source
+- Performance et temps de compilation
+- Documentation et ressources d'apprentissage
+- Coordination de la communautée
+  - S'inspirer de Linux, Parti Pirate
+- Environnement collaboratis (space, github...)
+
+
+Innovations :
+- Optimisation par IA
+- Assistant IA spécialisé CL
+- Frameworks DataOps et DevSecOps
+- Design pattern moderne
+- Analyse de pipeline CI/CD
+- Conteneurisation spécialisée CL + Orchestration
+- Outils de surveillance et de maintenance de la codebase
+
+* Spécifications - Logiciel
+** Interface utilisateur
+
+#+begin_src ditaa :file drawings/ui-composition.svg
++-------------------------+
+|  Backend      Frontend  |
+| +-------+    +--------+ |
+| |       |--->| HTML   | |
+| | CLOG  |<---|        | |
+| |       |    +--------+ |
+| |       |--->| CSS    | |
+| +-------+    +--------+ |
++-------------------------+
+#+end_src
+
+#+RESULTS:
+[[file:drawings/hello-world-round.svg]]
+
+** Architecture du Système
+L'interface utilisateur est constitué de déclancheurs de macros qui changent le code de l'élément manipulé par l'utilisateur.
+
+#+begin_src ditaa :file drawings/ui-macros.svg
++----------------------------+
+|  +-------+   +----------+  |
+|  |       |<--|          |  |
+|  | CODE  |   | WORKFLOW |  |
+|  |       |-->|          |  |
+|  +-------+   +----------+  |
+|    |   ^        |    ^     |
+|    |   |        |    |     |
+|    v   |        |    |     |
+|  +-------+      |    |     |
+|  |       |<-----+    |     |
+|  | OBJET |           |     |
+|  |       |-----------+     |
+|  +-------+                 |
++----------------------------+
+#+end_src
+
+#+RESULTS:
+[[file:drawings/ui-macros.svg]]
+
+Le système d'exploitation est structuré en quatre couches distinctes :
+- Le noyau,
+- Le système de gestion de base de donnée (DBMS)
+- Le gestionnaire de paquets
+- L'interface homme-machine
+
+*** Le noyau
+
+Créé sur la base de GNU Mach (micro-noyeau) et de GNU Hurd (serveur).
+
+GNU Hard occupe la position fondamentale en tant que noyau du système.
+
+GNU Hard est une implémentation au niveau fondamental d'un système de gestion de base de données. Il administre les processus, métadonnées, fichiers, réseaux, protocoles et autres et assure les transactions entre eux. Il est également chargé de l'administration de la mémoire, du stockage et de l'utilisation des processeurs.
+
+Dans le cadre du projet, qui est conçu pour répondre aux exigences des environnements orientés bases de données et cloud, GNU Hard fournit une base robuste et sécurisée pour l'exécution de tâches complexes et le traitement de volumes importants de données.
+
+En intégrant GNU Hard, l'OS bénéficie d'une architecture flexible et adaptable, capable de s'ajuster aux besoins spécifiques des utilisateurs tout en préservant la transparence et la sécurité inhérentes aux logiciels libres.
+
+**** Micro-noyau
+
+Le micro-noyau est basé sur GNU March.
+
+Le micro-noyau gère les transactions et la communication inter-processus, permettant aux serveurs de données de fonctionner de manière coordonnée.
+
+- Gestion des Transactions : Assure la cohérence et l'intégrité des données en cas de pannes.
+- IPC pour Données : Facilite la communication entre les processus gérant les données.
+
+**** Serveurs
+
+Le système serveur est basé sur GNU Hurd.
+
+Les serveurs utilisent des appels de procédures distantes pour interagir, assurant la modularité et la flexibilité du système.
+
+- Serveur de Fichiers : Gère le stockage et l'accès aux fichiers de données.
+- Serveur de Réseau : Gère les protocoles de communication pour l'accès distant aux données.
+- Serveur de métadonnées :
+
+Les serveurs assure les transactions entre le micro-noyau et les applications.
+
+** Administration
+** Le système de base de données
+
+Le système de gestion de base de données constitue le cœur du système. Intégré au noyau de l'OS, il gère les métadonnées, des relations complexes entre les processus, les fichiers, les codes sources, les librairies, les dépendances et les utilisateurs. Cela permet de modéliser précisément les ressources du système, d'en assurer un suivi rigoureux et de minimiser la redondance de code.
+
+Cette architecture garanti la cohérence d'ensemble du système.
+
+Il utilise SPARQL pour exécuter des requêtes sophistiquées et modélise les ressources système via des graphes RDF, assurant ainsi une représentation précise et dynamique du système.
+
+L'administration système est enrichie par la gestion spécialisée des graphes RDF, permettant des analyses complexes grâce aux requêtes SPARQL.
+
+L'implémentation d'AllegroGraph comme DBMS étand les capacités de raisonnement sémantique et permet d'inférer de nouvelles informations à partir des données existantes, optimisant ainsi la gestion des ressources et renforçant la sécurité.
+
+La sécurité et l'accès sont garantis par des contrôles basés sur les graphes, utilisant la sécurité triple-niveau pour assurer la confidentialité des données.
+
+La scalabilité et la flexibilité sont assurées par la capacité à gérer de grandes quantités de données RDF et à modéliser des relations complexes.
+
+L'historisation des évolutions étant réalisé par des transactions atomiques, il est possible de suivre tous les changements sur le système et de revenir à des versions antérieures. Cette fonctionnalité assure également une traçabilité complète pour la vérification des développement comme pour l'administration système.
+
+L'implémentation en Common Lisp de ce DBMS défini un socle de développement commun et performant pour le reste du système.
+
+Exactly one transaction (dbos)
+*** Le gestionnaire de paquets
+
+La gestion des logiciels et de leurs dépendances est assuré par le gestionnaire GNU Guix.
+
+Il repose entièrement sur un modèle déclaratif, garantissant la reproductibilité des environnements. Ce modèle sert de fondation à l'ensemble des fonctionnalités, favorisant une gestion précise et fiable des logiciels.
+
+L'expérience utilisateur est enrichie par la gestion transactionnelle des paquets, où chaque installation et mise à jour est atomique et réversible. La reproductibilité est assurée, permettant de recréer exactement le même environnement logiciel à tout moment.
+
+La gestion des profils utilisateur est intégralement supportée, permettant à chaque utilisateur de gérer ses paquets sans nécessiter de privilèges administratifs.
+
+Cette flexibilité est complétée par un système de collecte des déchets (garbage collection) qui libère automatiquement de l'espace en supprimant les paquets non utilisés.
+
+Cette implémentation offre une personnalisation poussée et une intégration en profondeur avec le système, assurant une cohérence et une interopérabilité exceptionnelles entre chaque composant logiciel.
+
+*** Le gestionnaire de versions
+
+La gestion des versions est assurée par Git et administre l'intégralisé du système.
+
+*** L'interface homme-machine
+
+L'interface utilisateur de l'OS est intégralement supporté par un éditeur de text non modal (GNU Emacs). Celui-ci sert de plateforme principale à l'ensemble des applicatifs. Il favorise la légèreté de l'interface au profit d'une haute rapidité d'execution.
+
+L'expérience utilisateur est agrémenté par l'utilisation intensive et extensive des raccourcis clavier (Vim motion).
+La disposition des fenetres (buffer) est gérée automatiquement par un système d'empilement (tilling windows management).
+
+Intégralement implémenté en =elisp=, l'IHM est aussi configurable que le souhaite l'utilisateur. Cette implémentation permet également une intégration en profondeur de l'interface utilisateur avec le reste du système, offrant une expérience cohérente et une interopérabilité inégalée entre chaque brique technologique.
+
+** Fonctionnalités de texte
+*** Fonts
+Metafonts
+Nerd fonts
+*** Org-Mode
+WYSIWYG par défaut.
+*** TeX
+**** Plain TeX
+**** LaTeX
+**** KaTeX
+**** BibLaTeX
+*** Maxima Lisp
+*** Slash commandes
+
+| commande | nom logique | action                            |
+|----------+-------------+-----------------------------------|
+| /image   | add-img     | embed une image depuis un lien    |
+| /video   | add-video   | embed une vidéo depuis un lien    |
+| /draw    | add-drawing | embed une frame drawio            |
+| /math    | add-math    | embed un bloc Maxima              |
+| /graph   | add-graph   | embed un bloc mermaid ou plantUML |
+
+** Base de données
+A trouver : un système de gestion de base de donnée léger, scalable, en mémoire, newsql comme modèle de référence.
+
+Comment convertir la stack sous-jacente à DBOS-Transact pour mettre en oeuvre un orchestrator Common Lisp et ainsi coder des lisp⁻workers ?
+
+** Réseaux
+WebRTC x WebTransport : P2P x HTTP3 x UDP x QUICK
+
+Wireshark - surveillance, administration des flux
+DNS, Firewall, VPN, VPS, DNS...
+
+** Ergonomie
+*** Principes d'ergonomie
+Veiller à :
+- Compatibilité,
+- Guidage,
+- Homogénéité,
+- Flexibilité,
+- Contrôle,
+- Erreurs et
+- Charge mentale.
+
+*** Gamification
+Non flashy, réservé aux "trucs chiants", à implémenter avec parcimonie.
+
+Le logiciel doit être agréable à utilisé, simple et serrieux. Des éléments de gamification peuvent être implémentés pour accompagner l'utilisateur dans la réalisation de tâches potentiellement anxiogenes ou rébarbatives mais ce concept doit être évalué avec prudence pour ne pas perturber l'expérience utilisateur.
+
+*** Expérience utilisateur
+Maintiens de l'expérience entre l'usage Web, l'usage desktop et l'usage mobile.
+
+Forte fléxibilité
+
+Proposition : Web Application
+
+* Spécifications - Matériel
+** Interface utilisateur
+Ordinateur tout en un composé d'un écran tactile mat, d'un port d'alimentation, d'un ensemble de connectteurs réseaux, d'un bouton de mise sous tension et d'un port USB-C.
+
+Dédié au travail profesionnel et artistique.
+
+Vise l'intégration tout en un pour l'ensemble des activités informatiques de :
+- Traitement du signal
+- Traitement de l'image
+- Calculs mathématique
+
+L'écran est tactile sur demande (un switch en haut de l'écran active physiquement la fonctionnalité et la prise en charge du crayon)
+
+L'écran peut être rammené devant l'utilisateur pour une position en tablette graphique grace à son pied bi-articulé.
+** Processeurs embarqués
+L'ensemble des processeurs doivent prendre en charge l'adaptation des tensions et des fréquences à la charge de calcul (DVFS) pour ajuster la consommation d'énergie aux besoins réels du système.
+
+*** Central Processing Unit - CPU
+Le CPU doit être basé sur une architecture ouverte telle que RISCV.
+
+Ce CPU doit être optimisé dans son architecture pour l'execution native de bytecode WASM.
+*** Graphical Processing Unit - GPU
+*** Network Processin Unit - NPU
+Dédié à l'administration réseau. Cette unité gère les rêgles de pare-feu, de DNS, de Proxy, de Modem et routeur.
+
+L'intégration d'interface WiFi, 5G et Bluetooth permet à cette unité de prendre en charge une grande variété de connexions sans fils.
+
+L'intégration d'une iSIM permet à l'utilisateur d'accéder, grâce à un abonnement chez le FAI de son choix, au réseau 5G.
+
+La captation du réseau 5G peut être redistribué en réseau WiFi local.
+
+Le NPU est relié à une prise RJ45 en face arrière pour l'accès au réseau internet (entrée). Il est également relié à 4 ports RJ45 en face arrière pour distribuer le réseau à d'autres équipements (sorties).
+
+*** Application Specific Integrated Circuits - ASIC
+Cryptographie et blockchain
+
+*** Digital Signal Processor - DSP
+Le DSP assure le traitement de tous les signaux numériques.
+Il est relié aux ports d'entrée sortie audio du bus USB-C.
+
+Il est également relié au port RJ45 dédié aux cannaux AES67.
+
+*** Contrôleur d'entrée sorties - ICH
+Dédié à la prise en charge des claviers et souris.
+
+L'ICH est capable de gérer plusieurs associations claviers/souris sur un même appareil, lors d'utilisation concurente. Il est associé à un système sans fil dédié à ces appareils.
+
+*** Processeur de traitement des flux lumineux
+Inspiration : Luminex LumiNode RJ45.
+
+** Connectivité
+*** RJ45
+Les connecteurs RJ45 peuvent être configurés pour prendre en charge l'alimentation sur éthernet PoE.
+*** Wireless
+L'ordinateur intègre une iSim, un NPU et des antennes Wifi, 5G et Bluetooth.
+Cela lui permet de se connecter, au moyen des credentials de l'utilisateur, aux divers réseaux précités.
+
+* Charte d'engagement
+GNOME Code of conduct, Mozilla community participation guidelines
+** Liberté et Transparence
+Publiez régulièrement des mises à jour sur le développement du projet et assurez-vous que toutes les décisions importantes sont documentées et accessibles à tous les membres de la communauté.
+=> Programmation lettrée ????
+
+** Collaboration et Inclusivité
+Encourager la collaboration et l'inclusivité parmi les contributeurs.
+Créez des espaces de discussion ouverts et encouragez la participation de tous les membres, indépendamment de leur niveau d'expérience ou de leur origine.
+
+** Partage de la connaissance
+Parler de ses outils à son entourage et les aider à les adopter s'ils montrent de l'intérêt.
+
+** Responsabilité Éthique
+Maintenir une approche éthique dans toutes les activités de développement.
+Établissez un code de conduite clair et veillez à ce que tous les membres de la communauté le respectent dans leurs interactions.
+
+** Engagement envers l'Innovation
+S'engager à adopter des technologies innovantes.
+Encouragez l'expérimentation et l'adoption de nouvelles technologies en organisant des hackathons et des ateliers réguliers.
+
+** Protection des Données
+Assurer la protection et la confidentialité des données des utilisateurs.
+Implémentez des mesures de sécurité robustes pour protéger les données des utilisateurs et assurez-vous que toutes les pratiques de gestion des données respectent les réglementations en vigueur.
+
+** Promotion de la Coopération
+Favoriser la coopération entre chercheurs et éducateurs.
+Établissez des partenariats avec des institutions académiques et des organisations pour favoriser la recherche collaborative.
+
+** Diversité des Savoirs
+Valoriser la diversité des approches académiques et scientifiques.
+Intégrez des experts de différents domaines pour enrichir les discussions et les orientations du projet.
+
+** Intégrité Scientifique
+Respecter la rigueur et l'éthique scientifique.
+=> Recherche reproductible
+=> Benchmarking strict, rigoureux et proche de la réalité.
+Assurez-vous que toutes les publications et résultats de recherche sont rigoureusement vérifiés et validés par des pairs.
+
+** Ouverture à l'Enseignement
+Intégrer l'enseignement dans les activités du projet.
+Développez des ressources éducatives libres et accessibles pour former les nouveaux contributeurs et utilisateurs.
+
+** Ouverture à la Recherche
+Encourager l'ouverture et l'accès aux résultats de recherche.
+Partagez librement les résultats de recherche et encouragez la réutilisation et l'amélioration des travaux existants.
+
+** Ouverture à la Société Civile
+Impliquer la société civile dans les projets de recherche.
+Impliquez les acteurs de la société civile dans les projets en organisant des consultations publiques et des ateliers participatifs.
+
+** Formats de Fichiers Libres
+Utiliser et promouvoir des formats de fichiers ouverts.
+Utilisez des formats ouverts pour toutes les données et documents du projet afin d'assurer l'interopérabilité et la pérennité.
+
+** Liberté de la Connaissance
+Partager librement les ressources éducatives et de recherche.
+Publiez toutes les ressources éducatives et les résultats de recherche sous des licences libres pour garantir un accès sans restriction.
+
+** Structure Organisationnelle
+Établir une structure claire pour la gouvernance du projet.
+Définissez clairement les rôles et responsabilités au sein de la communauté pour assurer une gouvernance efficace.
+
+** Processus de Prise de Décision
+Mettre en place des processus de décision transparents.
+Mettez en place des processus décisionnels transparents et participatifs, impliquant tous les membres concernés.
+
+** Rôles et Responsabilités
+Définir clairement les rôles et responsabilités des membres.
+Clarifiez les attentes et les responsabilités de chaque membre pour éviter les conflits et améliorer l'efficacité.
+
+** Méthodologie de Développement
+Adopter une méthodologie de développement structurée.
+Adoptez une méthodologie agile pour permettre une adaptation rapide aux changements et aux retours des utilisateurs.
+
+** Gestion des Versions
+Gérer efficacement les versions et contributions.
+Utilisez des systèmes de contrôle de version pour suivre les modifications et faciliter la collaboration entre les développeurs.
+
+** Intégration Continue et Tests
+Mettre en œuvre des pratiques d'intégration continue et de tests.
+Mettez en place des pipelines d'intégration continue pour automatiser les tests et garantir la qualité du code.
+
+** Canaux de Communication
+Utiliser des canaux de communication efficaces.
+Maintenez des canaux de communication clairs et accessibles pour tous les membres de la communauté.
+
+** Documentation Technique et Utilisateur
+Fournir une documentation complète et accessible.
+Fournissez une documentation complète et à jour pour aider les utilisateurs et les développeurs à comprendre et utiliser le projet.
+
+** Gestion des Connaissances
+Gérer et partager les connaissances au sein du projet.
+Créez une base de connaissances centralisée où toutes les informations pertinentes sont stockées et facilement accessibles.
+
+** Stratégies d'Inclusion et de Diversité
+Promouvoir l'inclusion et la diversité dans la communauté.
+Mettez en œuvre des initiatives pour attirer et retenir des contributeurs issus de milieux divers.
+
+** Programmes de Mentorat
+Mettre en place des programmes de mentorat et de formation.
+Offrez des programmes de mentorat pour soutenir les nouveaux contributeurs et faciliter leur intégration dans la communauté.
+
+** Événements et Conférences
+Organiser des événements pour renforcer l'engagement communautaire.
+Organisez régulièrement des événements pour renforcer les liens communautaires et partager les avancées du projet.
+
+** Indicateurs de Performance
+Définir des indicateurs pour mesurer le succès du projet.
+Définissez des indicateurs clairs pour mesurer les progrès et l'impact du projet.
+
+** Évaluation et Amélioration Continue
+Évaluer et améliorer continuellement le projet.
+Évaluez régulièrement les processus et les résultats pour identifier les opportunités d'amélioration et ajuster les stratégies en conséquence.
+
+** Gouvernance
+Engagement sur la transparence de la gouvernance avec :
+- La publication des comptes de résultat
+- La publication des frais d'administrations et d'infrastructure
+
+Demande d'aide et conseils d'améliorations.
+
+Exemple : x xxx € de frais d'hébergement pour yy To de stockage et z zzz connexions à fréquence donnée. => Meilleure offre ?
+
+* Plateforme de la communauté
+** Participation au projet
+Motiver l'investissement communautaire par la conception d'un écosystème gratifiant et tokenisé.
+
+Cet écosystème offrira-t-il des avantages particuliers ? P-E des offres d'hébergement chez des partenaires ou autre. Sinon des rétributions cosmétiques.
+
+Ce qui est valorisé :
+- la réalisation de benchmark,
+- le développement d'une feature plannifiée,
+- la remontée ou correction d'un problème de sécurité.
+
+  Participation volontaire des non-informaticiens, non-développeurs :
+- voter pour les prochaiens features,
+- signaler les bogues notamment via le bouton "reporter un bogue",
+- participer aux retours d'expériences.
+
+* Stack CL intéressantes
+Framework : [[][Clack]]
+        [[https://github.com/40ants/reblocks?tab=readme-ov-file][Reblocks]]
+        Permet de faire de l'Ajax sans javascript.
+
+RESTful web API & URL Router : [[https://github.com/joaotavora/snooze?tab=readme-ov-file][Snooze]]
+        utilisation de la synthaxe CL pour les requetes (routes = fonctions && HTTP conditions = lisp conditions)
+HTTP server : [[https://github.com/fukamachi/woo?tab=readme-ov-file][Woo]]
+        rapide et non bloquant, asynchrone, peut-être le serveur http le plus rapide ?
+        Claim to be faster than node.js and even go.
+DBMS : [[][LambdaLite]]
+        240 lignes de code seulement
+        utilise CL pour les requetes et la définition des métadonnées
+Shell : [[][Lish]]
+        Utilise CL pour les tâches d'administration
+
+note : LibreSSL \checkmark
+
+à explorer :
+        mr : commande "shell" additionnelle pour réaliser des actions sur un ensemble de fichiers séparés dans différents dossiers comme s'ils étaient au meme endroit https://joeyh.name/code/mr/
+        /"mr is a Multiple Repository management tool for git, svn, mercurial, bzr, darcs, cvs, fossil and veracity."/
+
+        endatabas https://github.com/endatabas/endb
+        Full history and schemaless document database
+
+        Trial
+        Modular game engine https://github.com/shirakumo/trial?tab=readme-ov-file
+
+
+Gestionnaire de paquets
+        GNU Stow https://www.gnu.org/software/stow/manual/stow.html
+        GNU Guix, Nix, rpm, npm, etc.
+        \Rightarrow Créer une interface unique, unifiée, à travers lish.
+                \rightarrow Cette interface doit d'abord permetre l'administration interne
+                \rightarrow Puis la gestion de paquets Common Lisp
+                \rightarrow Puis la gestion de librairies CL
+                \rightarrow Puis l'administration d'autres systèmes
+
+
+#+title: Soil
+
+
+#+name: Icones du projet
+#+caption: Proposition d'icones pour les 3 composantes phares du projet, inspirés de la lettre Lambda.
+#+results:
+[[file:~/draws_out/soil-icons.svg]]
+
+Note // \lambda calculus & s-expressions & métamathématiques
+
+
+* Spécifications - DSL
+** 1. Principes Fondamentaux
+*** 1.1 Basé uniquement sur les S-expressions
+Toutes les constructions du langage utilisent la syntaxe des S-expressions.
+
+Chaque expression sera écrite sous la forme de listes parenthésées, ce qui facilitera la manipulation du code comme une structure de données. Par exemple :
+
+#+begin_src lisp :results verbatim
+(define (add x y)
+  (+ x y))
+#+end_src
+
+Ici, =define= est utilisé pour définir une fonction, et + est une opération arithmétique.
+
+*** 1.2 Fonctionnel et Procédural
+Le langage supporte à la fois la programmation fonctionnelle et procédurale.
+
+- Fonctionnel : Toutes les fonctions seront pures, c'est-à-dire qu'elles ne modifieront pas l'état global et retourneront toujours le même résultat pour les mêmes arguments.
+- Procédural : Bien que le langage soit fonctionnel, il permettra également de définir des séquences d'instructions qui peuvent être exécutées dans un certain ordre.
+
+Cependant, chaque élément du langage, y compris les données, est traité comme une fonction.
+Par conséquent : Une donnée est treprésentée par une fonction qui alloue de la mémoire et écrit des informations.
+
+Par exemple, une structure de donnée peut être définie comme une fonction qui retourne un pointeur vers un espace mémoire alloué.
+
+#+begin_src lisp :results verbatim
+(define (create-array size)
+  (let ((arr (allocate-memory size))) ; allocation de mémoire
+    (write-initial-values arr)         ; écriture des valeurs initiales
+    arr))
+#+end_src
+
+Ici, =create-array= est une fonction qui alloue de la mémoire pour un tableau et initialise ses valeurs.
+
+La gestion de la mémoire devient également une fonction pure.
+Les opérations d'allocation et de libération de mémoire sont encapsulées dans des fonctions pures qui ne modifient pas l'état global.
+Exemple
+
+#+begin_src lisp :results verbatim
+(define (allocate-memory size)
+  ;; Imaginons que cette fonction utilise un appel système pour allouer de la mémoire
+  ;; et retourne un pointeur vers l'espace alloué.
+  (system-allocate size))
+
+(define (free-memory ptr)
+  ;; Libération de l'espace mémoire alloué.
+  (system-free ptr))
+#+end_src
+
+L'écriture d'informations dans cet espace mémoire alloué est également traitée comme une opération fonctionnelle.
+Les fonctions qui modifient les données doivent être conçues pour retourner un nouvel état sans modifier l'état existant.
+Exemple
+
+#+begin_src lisp :results verbatim
+(define (write-value arr index value)
+  (let ((new-arr (copy-array arr))) ; copie pour maintenir la pureté
+    (set-value new-arr index value)   ; modification sur la copie
+    new-arr))                         ; retourne le nouveau tableau
+#+end_src
+
+Bien que les opérations d'allocation et d'écriture soient intrinsèquement liées à des effets secondaires, nous pouvons les modéliser comme des transformations sur des états.
+En utilisant des types monadiques ou des structures similaires, nous pouvons gérer ces effets tout en maintenant la pureté.
+
+#+begin_src lisp :results verbatim
+(define-monoid (memory-action action)
+  ;; Modèle pour encapsuler les effets d'allocation et d'écriture
+  ;; tout en conservant la pureté.
+)
+
+(define (perform-action action)
+  ;; Exécution d'une action qui pourrait inclure allocation ou écriture,
+  ;; mais encapsulée dans un contexte pur.
+)
+#+end_src
+
+*** 1.4 Homoiconicité
+Le code peut être manipulé comme des données.
+
+Le langage sera homoiconique, ce qui signifie que le code peut être manipulé comme des données. Cela permettra de créer des macros et d'autres abstractions au sein du langage. Par exemple, une macro pourrait être définie pour transformer des structures de code :
+
+#+begin_src lisp :results verbatim
+(define-macro (when condition body)
+  (if condition body '()))
+#+end_src
+
+*** 1.5 Compilation vers WebAssembly
+Les fonctions s'étendent en code WAT avant d'être optimisées pour générer du bytecode WASM.
+
+#+begin_src lisp :results verbatim
+(define-macro expand-to-wat
+  (lambda (expression)
+    (case (car expression)
+      ((define-pipeline) (expand-pipeline-to-wat expression))
+      ((define-node) (expand-distributed-to-wat expression))
+      ;; ... expansions pour chaque paradigme
+      )))
+#+end_src
+
+Les fonctions écrites dans ce langage seront d'abord étendues en code WAT (WebAssembly Text format), qui utilise également des s-expressions. Voici un exemple d'une fonction add en WAT :
+
+#+begin_src wat :results verbatim
+(module
+  (func $add (param $x i32) (param $y i32) (result i32)
+    local.get $x
+    local.get $y
+    i32.add))
+#+end_src
+
+Ce code représente une fonction simple qui additionne deux entiers.
+
+Après l'expansion en WAT, le code sera optimisé pour générer du bytecode WASM. Cela impliquera l'utilisation d'un compilateur qui transformera le code WAT en un format binaire exécutable par les navigateurs ou d'autres environnements compatibles avec WASM.
+*** Aucune boucles logique
+les boucles traditionnelles comme "while", "foreach", etc. sont effectivement évitées pour plusieurs raisons fondamentales liées à notre approche basée sur les fonctions pures et l'immutabilité. Voici pourquoi ces boucles sont considérées comme problématiques et comment notre langage propose des alternatives plus sûres et efficaces :
+
+**** Problèmes des boucles traditionnelles
+- *Mutation d'état* : Les boucles traditionnelles encouragent souvent la mutation d'état, ce qui va à l'encontre du principe de pureté des fonctions.
+- *Effets de bord* : Elles peuvent facilement introduire des effets de bord non intentionnels, rendant le code moins prévisible et plus difficile à tester.
+- *Complexité cognitive* : Les boucles imbriquées ou complexes peuvent rapidement devenir difficiles à comprendre et à maintenir.
+- *Risques d'erreurs* : Les boucles infinies ou mal terminées sont des sources courantes d'erreurs.
+- *Manque d'expressivité* : Elles ne communiquent pas toujours clairement l'intention du programmeur.
+
+**** Alternatives
+Notre langage évite ces problèmes en favorisant des approches fonctionnelles et déclaratives :
+
+*Récursion* : Au lieu de boucles, nous utilisons la récursion pour des opérations répétitives.
+
+#+begin_src lisp :results verbatim
+(define (sum-list lst)
+  (if (null? lst)
+      0
+      (+ (car lst) (sum-list (cdr lst)))))
+#+end_src
+
+*Fonctions d'ordre supérieur* : Des opérations comme map, filter, et reduce remplacent efficacement les boucles pour le traitement des collections.
+
+#+begin_src lisp :results verbatim
+(define (double-list lst)
+  (map (lambda (x) (* x 2)) lst))
+#+end_src
+
+*Structures de données immuables* : L'utilisation de structures immuables élimine le besoin de boucles modifiant l'état.
+
+*Flux de données* : Pour les opérations sur des séquences potentiellement infinies, nous utilisons des flux de données (streams) plutôt que des boucles.
+
+#+begin_src lisp :results verbatim
+(define (natural-numbers-stream)
+  (stream-cons 1 (stream-map (lambda (x) (+ x 1)) (natural-numbers-stream))))
+#+end_src
+
+*Transformations de données déclaratives* : Les opérations sur les données sont exprimées de manière déclarative plutôt qu'impérative.
+
+#+begin_src lisp :results verbatim
+(define (process-data data)
+  (-> data
+      (filter positive?)
+      (map square)
+      (reduce sum)))
+#+end_src
+
+**** Avantages de cette approche
+*Sécurité accrue* : Élimination des risques liés aux boucles infinies et aux mutations d'état non contrôlées.
+
+*Meilleure lisibilité* : Le code exprime plus clairement l'intention du programmeur.
+
+*Facilité de parallélisation* : Les opérations fonctionnelles sont souvent plus faciles à paralléliser que les boucles impératives.
+
+*Optimisations potentielles* : Le compilateur peut plus facilement optimiser des constructions fonctionnelles pures.
+
+*Raisonnement plus simple* : L'absence de mutation d'état facilite le raisonnement sur le comportement du code.
+
+** 2. Paradigmes de Programmation
+*** 2.1 Dataflow
+La programmation dataflow se concentre sur le flux de données entre les opérations plutôt que sur l'exécution séquentielle. Dans ce langage, nous allons introduire des constructions qui permettent de définir des flux de données.
+
+#+BEGIN_SRC lisp :results verbatim
+(dataflow
+  (define (process-data input)
+    (let ((processed (transform input)))
+      (output processed))))
+#+END_SRC
+
+Ici, dataflow est une construction qui encapsule un ensemble d'opérations qui se déclenchent lorsque les données sont disponibles. Les fonctions comme transform et output peuvent être définies comme des fonctions pures.
+
+*** 2.2 Array
+Le paradigme array permet de travailler avec des collections de données. Nous allons introduire des opérations sur les tableaux qui respectent la pureté fonctionnelle.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (map-array func arr)
+  (if (null? arr)
+      '()
+      (cons (func (car arr)) (map-array func (cdr arr)))))
+#+END_SRC
+
+Cette fonction map-array applique une fonction à chaque élément d'un tableau, retournant un nouveau tableau sans modifier l'original.
+
+*** 2.3 Logique
+La programmation logique repose sur la déclaration de faits et de règles. Nous allons intégrer une syntaxe pour définir des relations et interroger ces relations.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-fact (parent alice bob))
+(define-rule (grandparent X Y)
+  (parent X Z)
+  (parent Z Y))
+#+END_SRC
+
+Ici, define-fact permet de déclarer des faits, tandis que define-rule définit une règle logique. Les requêtes peuvent être formulées pour interroger ces relations.
+
+*** 2.4 Pipeline
+Le paradigme pipeline permet de chaîner des opérations de manière séquentielle.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-pipeline data-processing
+  (input-data)
+  (transform-data)
+  (analyze-data)
+  (output-results))
+#+END_SRC
+
+*** 2.5 Distribué
+Pour la programmation distribuée, nous introduisons des primitives pour la communication entre nœuds.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-node worker
+  (receive-message msg
+    (process-data msg)
+    (send-result (get-master-node))))
+#+END_SRC
+
+*** 2.6 Réflectif
+La réflexivité permet au programme de s'examiner et de se modifier pendant l'exécution.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (reflect-on-function func)
+  (let ((ast (get-ast func)))
+    (optimize-ast ast)
+    (recompile-function func ast)))
+#+END_SRC
+
+*** 2.7 Concurrent
+Pour la concurrence, nous introduisons des primitives pour la création et la gestion de tâches parallèles.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-concurrent-task task1
+  (perform-computation)
+  (sync-results))
+
+(spawn-tasks task1 task2 task3)
+#+END_SRC
+
+*** 2.8 Contraint
+La programmation par contraintes permet de définir des relations entre variables.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-constraint-problem sudoku
+  (variables (cell-00 cell-01 ... cell-88))
+  (domain 1 2 3 4 5 6 7 8 9)
+  (constraints
+    (all-different row-1)
+    (all-different column-1)))
+#+END_SRC
+
+*** 2.9 Visuel
+Pour la programmation visuelle, nous pouvons définir des primitives qui génèrent des représentations visuelles du code.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-visual-block addition
+  (inputs x y)
+  (output (+ x y))
+  (shape rectangle)
+  (color blue))
+#+END_SRC
+
+*** 2.10 Réactif
+La programmation réactive permet de définir des flux de données qui réagissent aux changements.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-reactive-stream temperature-stream
+  (source (sensor-data))
+  (map fahrenheit-to-celsius)
+  (filter (lambda (temp) (> temp 25)))
+  (sink display-warning))
+#+END_SRC
+
+*** 2.11 Événementiel
+Pour la programmation événementielle, nous introduisons des primitives pour définir et gérer des événements.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-event temperature-critical
+  (when (> (get-temperature) 100)
+    (trigger-alarm)
+    (shutdown-system)))
+#+END_SRC
+
+*** 2.12 Multiple-dispatch
+Le multiple dispatch permet de sélectionner la méthode à exécuter en fonction des types de tous les arguments.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-multi-method draw
+  ((shape:circle color) (draw-circle shape color))
+  ((shape:square color) (draw-square shape color))
+  ((shape:triangle color) (draw-triangle shape color)))
+#+END_SRC
+
+*** 2.13 Knowledge-based
+Pour la programmation basée sur la connaissance, nous introduisons des primitives pour définir et interroger une base de connaissances.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-knowledge-base animal-classification
+  (fact (is-mammal dog))
+  (fact (is-mammal cat))
+  (rule (is-pet X) (is-mammal X) (is-domesticated X)))
+#+END_SRC
+
+*** 2.14 Agent-based
+La programmation basée sur les agents permet de définir des entités autonomes qui interagissent dans un environnement.
+
+#+BEGIN_SRC lisp :results verbatim
+(define-agent robot
+  (state (position 0 0) (energy 100))
+  (behavior
+    (when (low-energy?)
+      (move-to-charging-station))
+    (when (task-available?)
+      (execute-task))))
+#+END_SRC
+
+** 3. Gestion de la Mémoire et des Données
+*** Evaluation paraisseuse
+*** Evaluation réticente
+L'évaluation réticente est une approche de gestion d'exécution qui vise à prévenir les surcharges de ressources au runtime. Dans le contexte d'un langage homoiconique avec des fonctions pures, cette approche présente des défis et des opportunités uniques. *** Enjeux principaux :
+
+    Préservation de la pureté fonctionnelle
+    Maintien de l'homoiconicité
+    Gestion efficace des ressources
+    Feedback constructif pour les développeurs
+
+**** Définition de base
+
+#+BEGIN_SRC lisp :results verbatim
+(defmacro define-reticent (name params &body body)
+`(defun ,name ,params
+(let ((cost-estimate (estimate-cost ',body)))
+(if (> cost-estimate reticence-threshold)
+(signal 'reticence-error
+:message "Coût d'exécution estimé trop élevé. Optimisation requise.")
+(progn ,@body))))) (defun estimate-cost (expr)
+;; Implémentation de l'estimation du coût
+) (defparameter reticence-threshold 1000)
+#+END_SRC
+
+Cette macro ~define-reticent~ encapsule la logique de l'évaluation réticente. Elle maintient la pureté fonctionnelle en n'introduisant pas d'effets de bord directs.
+
+Exemple d'utilisation :
+
+#+BEGIN_SRC lisp :results verbatim
+(define-reticent process-large-text (text)
+(reduce #'concat (map #'process-word (split-text text)))) (defun process-word (word)
+;; Traitement d'un mot
+) (defun split-text (text)
+;; Découpage du texte en mots
+) (defun concat (a b)
+;; Concaténation de chaînes
+)
+#+END_SRC
+
+**** Analyse des Choix de Conception
+1. Préservation de l'Homoiconicité
+   Le code et les données restent représentés de manière uniforme, respectant le principe d'homoiconicité. Cela permet une manipulation aisée du code comme données, facilitant les analyses statiques et les transformations de code.
+
+2. Pureté Fonctionnelle
+   L'évaluation réticente est implémentée via une macro, préservant la pureté des fonctions. Les effets de l'évaluation réticente sont gérés au niveau de la définition de la fonction, sans affecter sa pureté lors de l'exécution.
+
+3. Gestion des Ressources
+   L'estimation du coût (~estimate-cost~) est cruciale. Elle doit être précise sans introduire elle-même une surcharge significative. Des heuristiques basées sur la structure du code peuvent être utilisées pour une estimation rapide.
+
+4. Feedback Développeur
+   L'utilisation de signaux (~signal~) permet de fournir un feedback riche aux développeurs, tout en maintenant la nature fonctionnelle du langage. Ces signaux peuvent être capturés et gérés de manière appropriée dans l'environnement de développement.
+
+**** Implications et Considérations
+1. Performance
+   L'estimation du coût à chaque appel de fonction peut introduire une surcharge. Des optimisations, comme la mémoïsation des estimations, pourraient être nécessaires.
+
+2. Prédictibilité
+   L'évaluation réticente peut rendre le comportement du programme moins prévisible, car l'exécution dépend de facteurs dynamiques.
+
+3. Débogage
+   Des outils spécifiques pourraient être nécessaires pour aider les développeurs à comprendre et optimiser leur code en fonction des seuils d'évaluation réticente.
+
+4. Seuils Adaptatifs
+   Le seuil de réticence (~reticence-threshold~) pourrait être ajusté dynamiquement en fonction des ressources système disponibles.
+
+*** 3.1 Tout est Fonction
+Les données sont représentées comme des fonctions d'allocation et d'écriture.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (create-array size)
+  (let ((arr (allocate-memory size)))
+    (write-initial-values arr)
+    arr))
+#+END_SRC
+
+*** 3.2 Allocation de Mémoire
+#+BEGIN_SRC lisp :results verbatim
+(define (allocate-memory size)
+  (system-allocate size))
+
+(define (free-memory ptr)
+  (system-free ptr))
+#+END_SRC
+
+*** 3.3 Écriture d'Information
+#+BEGIN_SRC lisp :results verbatim
+(define (write-value arr index value)
+  (let ((new-arr (copy-array arr)))
+    (set-value new-arr index value)
+    new-arr))
+#+END_SRC
+
+*** 3.4 Effets Secondaires Contrôlés
+#+BEGIN_SRC lisp :results verbatim
+(define-monoid (memory-action action))
+
+(define (perform-action action))
+#+END_SRC
+
+** 4. Structures de Contrôle
+*** 4.1 Récursion
+Utilisée à la place des boucles traditionnelles.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (sum-list lst)
+  (if (null? lst)
+      0
+      (+ (car lst) (sum-list (cdr lst)))))
+#+END_SRC
+
+Pour améliorer les performances et éviter les débordements de pile, on peut utiliser la récursion terminale :
+
+#+begin_src lisp :results verbatim
+(define (sum-range-tail f start end step acc)
+  (if (> start end)
+      acc
+      (sum-range-tail f (+ start step) end step (+ acc (f start)))))
+
+(define (sum-range f start end step)
+  (sum-range-tail f start end step 0))
+#+end_src
+
+*** 4.2 Fonctions d'Ordre Supérieur
+Remplacent les boucles pour le traitement des collections.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (double-list lst)
+  (map (lambda (x) (* x 2)) lst))
+#+END_SRC
+
+*** 4.3 Flux de Données
+Pour les opérations sur des séquences potentiellement infinies.
+
+#+BEGIN_SRC lisp :results verbatim
+(define (natural-numbers-stream)
+  (stream-cons 1 (stream-map (lambda (x) (+ x 1)) (natural-numbers-stream))))
+#+END_SRC
+
+*** 4.4 Transformations de Données Déclaratives
+#+BEGIN_SRC lisp :results verbatim
+(define (process-data data)
+  (-> data
+      (filter positive?)
+      (map square)
+      (reduce sum)))
+#+END_SRC
+
+** 5. Compilation et Exécution
+** 6. Caractéristiques Clés
+- Pas de boucles traditionnelles (while, foreach, etc.)
+- Immutabilité des données
+- Expressivité élevée
+- Sécurité accrue grâce à l'élimination des effets de bord non contrôlés
+- Facilité de parallélisation et d'optimisation
+** Code de bonnes pratiques
+*** Développement d'une fonction
+Toute fonction doit faire l'objet d'un document d'explication.
+Celui-ci doit contenir à minima :
+- La fonction dans un exemple d'utilisation
+- Les contextes et cas d'utilisations
+- Sa construction logique
+- Sa construction mathématique
+- Une zone de test
+** Ligatures et i18n
+La particularité de KonSept est qu'il peut être traduit en différentes langues sans impacter la fonctionnalité du code source.
+
+*** Assignations et flux de données
+
+| Symbole | EN      | FR       | Action                                                                |
+|---------+---------+----------+-----------------------------------------------------------------------|
+| ⎀       | import  | importe  |                                                                       |
+| ≝       | defunc  |          |                                                                       |
+| ≜       | pass-to | envois-a | Transmet le résultat de la fonction précédente à la fonction suivante |
+
+*** Validations de données
+
+| Symbole | EN                    | FR                    | Action                                                              |
+|---------+-----------------------+-----------------------+---------------------------------------------------------------------|
+| =       | equal                 | egal                  | Vérification de l'égalité des valeurs à transformation de type près |
+| ≈       | barely-equal          | presque-egal          | Vérifie l'égalité du schémas de valeurs au type près                |
+| ≉       | not-barely-equal      | pas-presque-egal      | Vérifie la non égalité du schéma de valeurs au type près            |
+| ≠       | not-equal             | pas-egal              | Vérifie la non égalité des valeurs au type près                     |
+| ≡       | equivalent            | identique             | Vérifie l'équivalence de valeur et de type                          |
+| ≋       | barely-equivalent     | presque-identique     | Vérifie l'équivalence du schéma de valeur et l'égalité de type      |
+| CUSTOM  | barely-not-equivalent | pas-presque-identique | Vérifie la non équivalence du schéma de valeur et l'égalité de type |
+| ≢       | not-equivalent        | pas-identique         | Vérifie la non équivalence de type et de valeur                     |
+
+*** Opérateurs logiques
+
+Défini les jonctions (SQL's ~INNER JOIN~, etc.)
+
+| Symbole | Unicode | EN     | FR              | Wittgenstein table |
+|---------+---------+--------+-----------------+--------------------|
+| ⋀       | U+22C0  | and    | et              | (T F F F)(p, q)    |
+| ⊼       | U+22BC  | nand   | non-et          | (F T T T)(p, q)    |
+| ⋁       | U+22C1  | or     | ou              | (T T T F)(p, q)    |
+| ⊽       | U+22BD  | nor    | non-ou          | (F F F T)(p, q)    |
+| ⊻       | U+22BB  | xor    | ou-exclusif     | (F T T F)(p, q)    |
+| v̲̅      |         | xnor   | non-ou-exclusif | (T F F T)(p, q)    |
+| ¬       | U+00AC  | not    | non             | (F F T T)(p, q)    |
+| →       |         | imply  | implique        | (T F T T)(p, q)    |
+| ↛      |         | nimply | non-implique    | (F T F F)(p, q)    |
+
+*** Comparaison de données
+
+| Symbole | Unicode | EN | FR                | Action |
+|---------+---------+----+-------------------+--------|
+| <       | U+003C  |    | inf               |        |
+| ≤       | U+2264  |    | inf-egal          |        |
+| ≦       | U+2266  |    | inf-equiv         |        |
+| ≲       | U+2272  |    | inf-presque-egal  |        |
+| ⪅       | U+2A85  |    | inf-presque-equiv |        |
+| >       | U+003E  |    | sup               |        |
+| ≥       | U+2265  |    | sup-egal          |        |
+| ≧       | U+2267  |    | sup-equiv         |        |
+| ≳       | U+2273  |    | sup-presque-egal  |        |
+| ⪆       | U+2A86  |    | sup-presque-equiv |        |

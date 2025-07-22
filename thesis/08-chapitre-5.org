@@ -1,0 +1,11 @@
+** Protocole d'essais
+
+** Cas d'étude 1 : 
+** Cas d'étude 2 : 
+** Cas d'étude 3 : 
+
+** Analyse comparative
+*** Métriques de performance
+*** Limitations identifiées
+
+** Conclusion

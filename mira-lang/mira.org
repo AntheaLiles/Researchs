@@ -1,0 +1,137 @@
+* Fiche pilote : Mira langage
+** Determine scope
+What features are supported?
+
+What features are explicitly not supported?
+
+** Design the syntax
+How will the DSL look like?
+
+Does it have JS-style curly braces or significant whitespace like Python?
+
+What are the keywords we're supporting?
+
+** Implementation
+Which language will it be implemented in? (also called the "host language")
+    JavaScript
+    
+How do we transform the DSL into host language instructions?
+
+Will the DSL features require run-time functionality?
+
+
+============================
+
+* Perplexity advices :
+Given your DSL’s **custom, non-JavaScript syntax** and **structured sections** (like FRONTMATTER, REQUIREMENTS, PROGRAM), your implementation in JavaScript will require:
+
+- **Parsing the structured text into a data structure** (typically an AST or simply nested JavaScript objects)
+- **Processing/compiling this structure into something executable/useful**
+
+To **avoid deep language-building complexity**, here are specific shortcuts and steps you can take:
+
+** 1. Keep the Grammar Simple and Line-Based
+
+- **Exploit the DSL’s explicit section and subsection markers ("*", "**", "#", etc.):** Parse the file line-by-line and use the indentation or marker level to infer hierarchy, minimizing the need for complex parsing[4].
+
+```javascript
+const lines = input.split('\n');
+let currentSection = null;
+let data = {};
+
+for (let line of lines) {
+    if (line.startsWith('* ')) {
+        // New top-level section
+        currentSection = line.slice(2).trim();
+        data[currentSection] = {};
+    } else if (line.startsWith('** ')) {
+        // New subsection
+        const subSection = line.slice(3).trim();
+        data[currentSection][subSection] = {};
+        // Add your logic for deeper nesting
+    }
+    // Add parsing for deeper/nested levels as needed
+}
+```
+
+** 2. Use Existing Libraries for Parsing and Processing
+
+- For more complex structure, use a **parser combinator library** or a **PEG.js grammar** to avoid manual tokenization[2][4]. PEG.js lets you directly map your DSL's format to JavaScript objects and has a very approachable learning curve if you stick to line/keyword-based rules.
+
+** 3. Build an AST as a Simple Data Structure
+
+- As you parse, construct a tree or nested object representing the program structure[2]. For example:
+
+```javascript
+{
+  FRONTMATTER: { UUID: "...", AUTHORS: "...", ... },
+  REQUIREMENTS: {
+    EXPECTATIONS: { FEATURE: { RULE: "...", SCENARIO: "..." }, ... },
+    CONSTRAINTS: {...}
+  },
+  PROGRAM: {...}
+}
+```
+
+- You don’t need to get formal with AST classes; simple JavaScript objects and arrays will work for a DSL like yours[4].
+
+** 4. Evaluate or Transform the Structure
+
+- Once parsed into a structured format, write functions to process or execute each section, e.g., generating documentation, validating constraints, or transforming recipes.
+
+** 5. Tools to Accelerate Development
+
+- **For parsing:**  
+  - For simple, keyword-driven DSLs, use line-by-line parsing.
+  - For more advanced structure, **PEG.js**, **nearley.js**, or similar[2].
+- **For syntax highlighting/editor support (optional):**
+  - Use editors like CodeMirror or Ace[5][6].
+
+** 6. Example: Parsing a Section Line-by-line
+
+```javascript
+function parseDSL(input) {
+  const lines = input.split('\n');
+  const doc = {};
+  let curSection = null;
+  let curSubSection = null;
+  for (let line of lines) {
+    if (line.startsWith('* ')) {
+      curSection = line.slice(2).trim();
+      doc[curSection] = {};
+    } else if (line.startsWith('** ')) {
+      curSubSection = line.slice(3).trim();
+      doc[curSection][curSubSection] = {};
+    } else if (line.includes(':')) {
+      // Key-value
+      const [k, v] = line.split(':', 2);
+      if (curSubSection) {
+        doc[curSection][curSubSection][k.trim()] = v.trim();
+      } else if (curSection) {
+        doc[curSection][k.trim()] = v.trim();
+      }
+    }
+    // Extend with further structure for deeper nesting/EXAMPLES, etc.
+  }
+  return doc;
+}
+```
+
+** 7. Summary of Shortcuts
+
+- **Favor line-oriented, marker-driven parsing**: Quick to implement in JS, especially for your format[4].
+- **Use an existing parsing library** if your grammar doesn’t remain line-based.
+- **Build a tree with JavaScript objects** (no custom AST classes unless truly needed).
+- **Write simple transformation/evaluation functions** after parsing.
+
+This approach lets you implement your DSL in JavaScript **without "language engineering,"** focusing your effort on processing your domain logic[2][4]. If you keep your syntax marker-driven, you’ll avoid most parser headaches.
+
+[1] https://venkatperi.github.io/js-dsl/
+[2] https://www.rudderstack.com/blog/how-we-crafted-a-domain-specific-language-dsl-for-json-transformation-at-rudderstack/
+[3] https://dev.to/effect/building-custom-dsls-in-typescript-29el
+[4] https://andi.dev/blog/javascript-dsl/
+[5] https://stackoverflow.com/questions/2135537/what-is-a-good-javascript-editor-for-editing-custom-dsl-code
+[6] https://javascript.plainenglish.io/agl-your-dsl-in-the-web-c9f54595691b
+[7] https://www.reddit.com/r/javascript/comments/1f7aipe/write_a_domainspecific_language_in_javascript/
+[8] https://coderanger.net/writing-dsls/
+[9] https://github.com/PrismJS/prism/issues/2538

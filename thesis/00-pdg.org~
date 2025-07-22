@@ -1,0 +1,108 @@
+#+LATEX: \begin{titlepage}
+
+#+LATEX: \begin{minipage}[t]{7cm}
+#+LATEX: \vglue0.0cm
+#+LATEX: \includegraphics[scale=1]{./logo/Logo_INSA_HDF-01-2.png}
+#+LATEX: \end{minipage}
+#+LATEX: \hfill
+#+LATEX: \begin{minipage}[t]{5.5cm}
+#+LATEX: \vglue0.3cm
+#+LATEX: \includegraphics[scale=0.12]{./logo/Logo_UPHF.png}
+#+LATEX: \end{minipage}
+
+#+LATEX: \begin{center}
+* Thèse de doctorat
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{-6pt}
+* Pour obtenir le grade de Docteur de
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END: 
+  #+LATEX: \vspace*{-6pt}
+* l'UNIVERSITE POLYTECHNIQUE HAUTS-DE-FRANCE
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{-6pt}
+* et de l'INSA HAUTS-DE-FRANCE
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  
+  Discipline, spécialité selon la liste des spécialités pour lesquelles l'Ecole Doctorale est accréditée :
+  #+LATEX: \vspace*{-12pt}
+
+*** Informatique et applications
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{12pt}
+
+** Présentée et soutenue par Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:  
+
+** Le JJ/MM/2028, à Valenciennes*
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+
+  #+LATEX: \end{center}
+
+*** Ecole doctorale :
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{-6pt}
+
+  Ecole Doctorale Polytechnique Hauts-de-France (ED PHF n°635)
+
+*** Unité de recherche :
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{-6pt}
+
+  Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Humaines (LAMIH - UMR CNRS 8201)
+
+  #+LATEX: \begin{center}
+
+* Systématisation de la remontée de conformité en ingénierie de la construction par approche d'interaction humain-machine sensible aux contraintes
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{12pt}  
+
+** JURY
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \vspace*{-12pt}
+  #+LATEX: \end{center}
+  #+LATEX: \begin{multicols}{2}
+**** Président du jury
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+  #+LATEX: \vspace*{-12pt}
+**** Rapporteurs
+- Nom, Prénom. Titre, fonction. Lieu d'exercice.
+- Nom, Prénom. Titre, fonction. Lieu d'exercice.
+  #+LATEX: \vspace*{-12pt}
+**** Examinateurs
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+  #+LATEX: \vspace*{-12pt}
+**** Co-directeurs de thèse
+- Christophe KOLSKI Professeur des universités, Université Polytechnique Hauts-de-France
+- Alexis HELOIR Professeur des universités, Université Polytechnique Hauts-de-France
+  #+LATEX: \vspace*{-12pt}
+**** Membres invités
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+- Nom, Prénom. Titre, fonction. Lieu d'exercice
+
+#+LATEX: \end{multicols}
+#+LATEX: \end{titlepage}

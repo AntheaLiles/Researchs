@@ -1,0 +1,59 @@
+* FRONTMATTER
+  # la carte grise du programme
+  UUID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+  AUTHORS: Cyprien Pierre.
+  LICENSE: MIT
+
+  TYPE: DICTIONARY
+       
+* REQUIREMENTS
+# Behavior and constraints part
+** EXPECTATIONS
+   # Scénario, Règle...
+   FEATURE:
+   
+     RULE:
+     
+     SCENARIO:
+
+     EXAMPLE:
+     
+       - GIVEN
+         - WHEN 
+         - AND
+         - THEN MUST
+         - AND SHOULD
+         - AND CAN.
+
+** CONSTRAINTS
+   LOAD:
+#    - OWL-
+#    - OWL-BRICK
+#    - OWL-IFC
+     - RFC2119
+#    - SAREF-CORE
+#    - SAREF-BLDG
+#    - ISO-xxxx-2023
+#    - ISO-80000
+
+** DEFINITIONS
+
+** TESTS
+
+* PROGRAM
+# le programme en lui-même
+** RECIPE
+   GIT:
+   DATABASE: http://database.adress
+
+** DEPENDANCIES
+   LOAD: dep-a, dep-b, dep-c, dep-d.
+
+** PROCEDURE
+   BATCH
+   BULK
+   CRON
+   DICTIONARY
+   
+   

@@ -1,0 +1,24 @@
+Synthèse des contributions
+
+Contribution théorique majeure
+
+Innovation méthodologique
+
+Validation expérimentale
+
+Réponse à la question principale
+
+Réponse à la questions secondaires
+
+Perspectives d'avenir
+
+
+#+begin_quote
+[!Info] Commentaire prospectif sur l'ouvrage et ses conclusions
+#+end_quote
+
+Espérer une évolution des plateformes d'accès aux normes (cobaz) pour simplifier la configuration des environnements de travail (NF EN etc. et gestion des exigences)
+
+L'avenir, un terrain fertile pour l'ingénierie intégrée ?
+
+Les futures ruptures technologiques (?)

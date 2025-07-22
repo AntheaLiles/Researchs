@@ -1,0 +1,92 @@
+#+TITLE: Approche de l'ingéniérie de la construction basé sur les contraintes
+#+SUBTITLE: Thèse de doctorat
+#+AUTHOR: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+SETUPFILE: "~/org/config-tex.org"
+#+OPTIONS: num:3
+#+latex: \begin{document}
+#+LATEX: \clearpage
+
+* Remerciements
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+INCLUDE: "./00-thanks.org"
+  #+LATEX: \clearpage
+
+* Résumé
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+INCLUDE: "./01-resume.org"
+  #+LATEX: \clearpage
+  
+* Abstract
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+INCLUDE: "./02-abstract.org"
+  #+LATEX: \clearpage
+
+* Table des matières
+  :PROPERTIES:
+  :UNNUMBERED: notoc
+  :END:
+  #+LATEX: \begin{multicols}{2}
+  #+TOC: :no-title
+  #+LATEX: \end{multicols}
+  #+LATEX: \clearpage
+
+  #+LATEX: \setcounter{section}{-1}
+* Introduction générale
+  #+INCLUDE: "./03-introduction.org"
+  #+LATEX: \clearpage
+
+* Etat de l'art
+  #+INCLUDE: "./04-chapitre-1.org"
+  #+LATEX: \clearpage
+
+* Problématique et méthodologie de recherche
+  #+INCLUDE: "./05-chapitre-2.org"
+  #+LATEX: \clearpage
+  
+* Approche de l'ingénierie par les contraintes
+  #+INCLUDE: "./06-chapitre-3.org"
+  #+LATEX: \clearpage
+
+* Implémentation et validation expérimentale
+  #+INCLUDE: "./07-chapitre-4.org"
+  #+LATEX: \clearpage
+
+* Discussion et perspectives
+  #+INCLUDE: "./08-chapitre-5.org"
+  #+LATEX: \clearpage
+
+* Conclusion générale
+  #+INCLUDE: "./09-conclusion.org"
+  #+LATEX: \clearpage
+  
+* Références du document
+** Liste des figures
+  #+LATEX: \listoffigures
+
+** Liste des tableaux
+  #+TOC: tables
+
+** Liste des codes sources
+  #+TOC: listings
+
+** Liste des glosses
+  #+print_glossary: :type glossary :only-contents t
+
+** Liste des acronymes
+  #+print_glossary: :type acronym :only-contents t
+  #+LATEX: \clearpage
+
+* Bibliographie
+  #+print_bibliography: :heading none
+  # Séparer les entrées de bibliographie (Livres, Infographies, Normes, Articles, Divers)
+  # Associer les chapitres de livres aux livres sources (crossref in biblatex)
+
+#+latex: \end{document}
