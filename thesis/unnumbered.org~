@@ -1,9 +1,0 @@
-(defun my/org-latex-section-nonumber (headline backend info)
-  (when (org-export-derived-backend-p backend 'latex)
-    (let ((level (org-element-property :level headline)))
-      (when (= level 1)
-        (let ((title (org-export-data (org-element-property :title headline) info)))
-          (concat (format "\\section*{%s}\n\\addcontentsline{toc}{section}{%s}\n" title title)))))))
-
-(add-to-list 'org-export-filter-headline-functions
-             'my/org-latex-section-nonumber)
