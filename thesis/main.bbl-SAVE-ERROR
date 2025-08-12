@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{GestionSureteFonctionnement2014}{standard}{}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{GestionSureteFonctionnement2014}{standard}{}
       \list{publisher}{1}{%
         {AFNOR}%
       }
@@ -39,7 +39,7 @@
       \verb C:\Users\CPIERRE\Documents\My Library\storage\6GQG3BY3\NF EN 60300-1.pdf
       \endverb
     \endentry
-    \entry{quesnevilleRecommandationsUsagesWebscraping2024}{article}{}{}
+    \entry{quesnevilleRecommandationsUsagesWebscraping2024}{article}{}
       \name{author}{8}{}{%
         {{hash=e4c96d1d49fcc89bab63ddd42d7677f5}{%
            family={Quesneville},
@@ -84,12 +84,10 @@
       }
       \strng{namehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{fullhash}{5801b4b5812607c02fa2d7d8737e4b88}
-      \strng{fullhashraw}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{bibnamehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorbibnamehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authornamehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorfullhash}{5801b4b5812607c02fa2d7d8737e4b88}
-      \strng{authorfullhashraw}{5801b4b5812607c02fa2d7d8737e4b88}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -118,7 +116,7 @@
       \verb https://hal.inrae.fr/hal-04803028
       \endverb
     \endentry
-    \entry{CodeProprieteIntellectuelle}{legislation}{}{}
+    \entry{CodeProprieteIntellectuelle}{legislation}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}

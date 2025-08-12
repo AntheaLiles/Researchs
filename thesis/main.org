@@ -1,7 +1,9 @@
 #+SETUPFILE: "~/org/config-tex.org"
+#+glossary_sources: ~/org/glossary.org
+
 #+OPTIONS: num:3
 
-#+latex: \begin{document}
+# +latex: \begin{document}
 
 # Page de garde
   #+INCLUDE: "./00-pdg.org"
@@ -33,6 +35,7 @@
   :END:
   #+LATEX: \renewcommand{\contentsname}{\vspace{-2em}}
   #+TOC: headlines 3
+  
 * Annexes
   :PROPERTIES:
   :UNNUMBERED: notoc
@@ -83,7 +86,7 @@
   #+TOC: tables
 
 ** Liste des codes sources
- #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
+  #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
   #+TOC: listings
 
 ** Liste des glosses
@@ -98,7 +101,6 @@
 
 * Bibliographie
   #+print_bibliography: :heading none
-  # Séparer les entrées de bibliographie (Livres, Infographies, Normes, Articles, Divers)
   # Associer les chapitres de livres aux livres sources (crossref in biblatex)
   #+LATEX: \clearpage
 
@@ -106,8 +108,9 @@
 * Analyse des normes
   #+INCLUDE: "./anx-01.org"
   #+LATEX: \clearpage
-  
+
+# * Visualisation de données
   # +INCLUDE: "./anx-02.org"
   # +LATEX: \clearpage
   
-#+latex: \end{document}
+# +latex: \end{document}

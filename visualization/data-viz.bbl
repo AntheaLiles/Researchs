@@ -80,15 +80,14 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Industry 4.0 embraces digitization and smart products or processes that are integrated with several technological developments to control the entire value chain of workflows. The construction industry is also captivated with the idea of Industry 4.0 transformation that changes the traditional system into digital and cyberphysical system that interacts and connects across the geographical and organizational borders. However, as construction is commonly known as a low-technologically advanced industry, studies on Industry 4.0 in construction still remains elusive, as compared to other sectors such as manufacturing, electrical and electronic engineering and computer science. Therefore, this study aims to explore the current state of Industry 4.0 application from the construction engineering perspective. A systematic literature review (SLR) was conducted to identify publications related to Industry 4.0 in construction. A bibliometric analysis has been outlined through exclusion and inclusion principles, while a scientometric analysis has been further applied to enhance the SLR findings through `science mapping' visualization techniques. This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
+      \field{abstract}{Industry 4.0 embraces digitization and smart products or processes that are integrated with several technological developments to control the entire value chain of workflows. The construction industry is also captivated with the idea of Industry 4.0 transformation that changes the traditional system into digital and cyberphysical system that interacts and connects across the geographical and organizational borders. However, as construction is commonly known as a low-technologically advanced industry, studies on Industry 4.0 in construction still remains elusive, as compared to other sectors such as manufacturing, electrical and electronic engineering and computer science. Therefore, this study aims to explore the current state of Industry 4.0 application from the construction engineering perspective. A systematic literature review (SLR) was conducted to identify publications related to Industry 4.0 in construction. A bibliometric analysis has been outlined through exclusion and inclusion principles, while a scientometric analysis has been further applied to enhance the SLR findings through ‘science mapping’ visualization techniques. This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
       \field{annotation}{TLDR: This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
       \field{day}{15}
       \field{issn}{1874-4753}
-      \field{journaltitle}{Journal of Information Technology in Construction}
+      \field{journaltitle}{J. Inf. Technol. Construct.}
       \field{langid}{english}
       \field{month}{6}
-      \field{shortjournal}{J. Inf. Technol. Construct.}
-      \field{title}{A Bibliometric and Scientometric Mapping of {{Industry}} 4.0 in Construction}
+      \field{title}{A Bibliometric and Scientometric Mapping of Industry 4.0 in Construction}
       \field{urlday}{16}
       \field{urlmonth}{2}
       \field{urlyear}{2025}
@@ -102,7 +101,7 @@
       \verb 10.36680/j.itcon.2020.017
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/LDN39WV6/Safura Zabidin et al. - 2020 - A bibliometric and scientometric mapping of Industry 4.0 in construction.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\LDN39WV6\Safura Zabidin et al. - 2020 - A bibliometric and scientometric mapping of Industry 4.0 in construction.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.itcon.org/paper/2020/17
@@ -110,7 +109,6 @@
       \verb{url}
       \verb https://www.itcon.org/paper/2020/17
       \endverb
-      \keyw{/unread}
     \endentry
     \entry{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020}{article}{}{}
       \name{author}{2}{}{%
@@ -138,9 +136,8 @@
       \field{abstract}{Data visualization is the combination of design aesthetics and rigorous science, and the selection on visual representations is ultimately determined by the integration of aesthetics and design information. For the design knowledge and experience on this aspect is rather deficient, designers often cannot keep the balance between design and functions. This study is aim at developing a data visualization design method targeted to design on design education, to enable students to have specific methods to follow when engaging in information design and to provide reference to designers for design. The content analysis method is employed to discuss relevant literature and to summarize the data visualization design cases, and the data visualization design patterns are established to facilitate learning and knowledge inheritance of data visualization design.}
       \field{annotation}{TLDR: This study aims at developing a data visualization design method targeted to design on design education, to enable students to have specific methods to follow when engaging in information design and to provide reference to designers for design.}
       \field{issn}{17982340}
-      \field{journaltitle}{Journal of Advances in Information Technology}
+      \field{journaltitle}{J. Adv. Inf. Technol.}
       \field{langid}{english}
-      \field{shortjournal}{J. Adv. Inf. Technol.}
       \field{title}{Research on the Application of Function-Technology-Aesthetics Framework in the Design Knowledge Modelling of Data Visualization}
       \field{urlday}{22}
       \field{urlmonth}{1}
@@ -154,7 +151,7 @@
       \verb 10.12720/jait.11.1.10-14
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/LF3KZDGK/Asia University, Taichung, Taiwan et Chen - 2020 - Research on the application of function-technology-aesthetics framework in the design knowledge mode.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\LF3KZDGK\Asia University, Taichung, Taiwan et Chen - 2020 - Research on the application of function-technology-aesthetics framework in the design knowledge mode.pdf
       \endverb
       \verb{urlraw}
       \verb http://www.jait.us/index.php?m=content&c=index&a=show&catid=197&id=1084
@@ -162,7 +159,7 @@
       \verb{url}
       \verb http://www.jait.us/index.php?m=content&c=index&a=show&catid=197&id=1084
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐}
     \endentry
     \entry{sosulskiDataVisualizationMade2019}{book}{}{}
       \name{author}{1}{}{%
@@ -190,7 +187,7 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Data Visualization Made Simple is a practical guide to the fundamentals, strategies, and real-world cases for data visualization, an essential skill required in today's information-rich world. With foundations rooted in statistics, psychology, and computer science, data visualization offers practitioners in almost every field a coherent way to share findings from original research, big data, learning analytics, and more. In nine appealing chapters, the book: - examines the role of data graphics in decision making, sharing information, sparking discussions, and inspiring future research; - scrutinizes data graphics, deliberates on the messages they convey, and looks at options for design visualization; and - includes cases and interviews to provide a contemporary view of how data graphics are used by professionals across industries. Both novices and seasoned designers in education, business, and other areas can use this book's effective, linear process to develop data visualization literacy and promote exploratory, inquiry-based approaches to visualization problems.}
+      \field{abstract}{Data Visualization Made Simple is a practical guide to the fundamentals, strategies, and real-world cases for data visualization, an essential skill required in today’s information-rich world. With foundations rooted in statistics, psychology, and computer science, data visualization offers practitioners in almost every field a coherent way to share findings from original research, big data, learning analytics, and more. In nine appealing chapters, the book: - examines the role of data graphics in decision making, sharing information, sparking discussions, and inspiring future research; - scrutinizes data graphics, deliberates on the messages they convey, and looks at options for design visualization; and - includes cases and interviews to provide a contemporary view of how data graphics are used by professionals across industries. Both novices and seasoned designers in education, business, and other areas can use this book’s effective, linear process to develop data visualization literacy and promote exploratory, inquiry-based approaches to visualization problems.}
       \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
       \field{langid}{english}
       \field{pagetotal}{272}
@@ -199,9 +196,9 @@
       \field{year}{2019}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/XXMPY8FL/Sosulski - 2019 - Data visualization made simple insights into becoming visual.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\XXMPY8FL\Sosulski - 2019 - Data visualization made simple insights into becoming visual.pdf
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐}
     \endentry
     \entry{schwabishCenteringAccessibilityData2022a}{inbook}{}{}
       \name{bookauthor}{3}{}{%
@@ -231,7 +228,7 @@
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{booktitle}{Centering {{Accessibility}} in {{Data Visualization}}}
       \field{langid}{english}
       \field{month}{12}
       \field{number}{3}
@@ -264,7 +261,7 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{booktitle}{Centering {{Accessibility}} in {{Data Visualization}}}
       \field{langid}{english}
       \field{month}{12}
       \field{number}{3}
@@ -303,7 +300,7 @@
       \field{year}{2018}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/8HRDTZXG/poster-big.png
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\8HRDTZXG\poster-big.png
       \endverb
       \verb{urlraw}
       \verb data-to-viz.com
@@ -311,7 +308,7 @@
       \verb{url}
       \verb data-to-viz.com
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐⭐}
     \endentry
     \entry{jonathanschwabishGraphicContinuum2014}{artwork}{}{}
       \name{author}{2}{}{%
@@ -334,7 +331,7 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Graphic Continuum is our view of the many different types of visualizations available to us when we encode and present data. We've plotted nearly 90 different graphics across five main categories: Distribution, Time, Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space does not include every type of graphic, nor does it display every link between visualizations, but we view it as a thought-starter. We hope readers will use it to develop ideas, consider different options, or simply as a piece of art.}
+      \field{abstract}{The Graphic Continuum is our view of the many different types of visualizations available to us when we encode and present data. We’ve plotted nearly 90 different graphics across five main categories: Distribution, Time, Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space does not include every type of graphic, nor does it display every link between visualizations, but we view it as a thought-starter. We hope readers will use it to develop ideas, consider different options, or simply as a piece of art.}
       \field{langid}{english}
       \field{title}{The Graphic Continuum}
       \field{urlday}{18}
@@ -344,7 +341,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/SGQBX9T4/Jonathan Schwabish et Severino Ribecca - 2014 - The Graphic Continuum.jpg
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\SGQBX9T4\Jonathan Schwabish et Severino Ribecca - 2014 - The Graphic Continuum.jpg
       \endverb
       \verb{urlraw}
       \verb https://www.informationisbeautifulawards.com/showcase/611-the-graphic-continuum
@@ -352,19 +349,47 @@
       \verb{url}
       \verb https://www.informationisbeautifulawards.com/showcase/611-the-graphic-continuum
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐}
     \endentry
     \entry{alansmithLexiqueVisuel}{artwork}{}{}
+      \name{namea}{7}{}{%
+        {{hash=390d3f2db02f465a401ad8821c1dd1c0}{%
+           family={{Alan Smith}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=144647f3eb21dfaa34541984c0387075}{%
+           family={{Chris Campbell}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=61d8e0b647ce790d5e4fc56f733e39b3}{%
+           family={{Ian Bott}},
+           familyi={I\bibinitperiod}}}%
+        {{hash=1e3578fbd02ef40ef5f5ab82b57a92a0}{%
+           family={{Liz Faunce}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=634d7f203a23d2fbbd828419528a225d}{%
+           family={{Billy Ehrenberg-Shannon}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=c852cf7fd46ed756748c61f284bc6cbe}{%
+           family={{Paul McCallum}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=67e04b0ac7a6af32c55bbcae30afdf50}{%
+           family={{Martin Stabe}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{nameabibnamehash}{55cd6521bf9616325af3a2d9fc80979f}
+      \strng{nameanamehash}{55cd6521bf9616325af3a2d9fc80979f}
+      \strng{nameafullhash}{55cd6521bf9616325af3a2d9fc80979f}
+      \strng{nameafullhashraw}{55cd6521bf9616325af3a2d9fc80979f}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Il existe un très grand nombre de manières de visualiser les données - comment savoir laquelle choisir ? Utilisez les catégories en haut de la page pour décider quelle est la relation entre les données la plus pertinente par rapport à l'histoire que vous souhaitez raconter. Passez ensuite en revue les différents types de graphiques de la catégorie : vous aurez ainsi quelques idées préliminaires sur le type de représentation le plus approprié. Cette liste n'est pas exhaustive, elle ne constitue pas non plus un assistant automatique : elle vous aidera en revanche à réaliser des visualisations de données informatives et éloquentes.}
+      \field{abstract}{Il existe un très grand nombre de manières de visualiser les données - comment savoir laquelle choisir ? Utilisez les catégories en haut de la page pour décider quelle est la relation entre les données la plus pertinente par rapport à l’histoire que vous souhaitez raconter. Passez ensuite en revue les différents types de graphiques de la catégorie : vous aurez ainsi quelques idées préliminaires sur le type de représentation le plus approprié. Cette liste n’est pas exhaustive, elle ne constitue pas non plus un assistant automatique : elle vous aidera en revanche à réaliser des visualisations de données informatives et éloquentes.}
       \field{annotation}{Financial Times}
       \field{langid}{english}
+      \field{nameatype}{collaborator}
       \field{shorttitle}{Lexique Visuel}
       \field{title}{Lexique Visuel}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/ZZ8VEAKU/Alan Smith et al. - Lexique visuel.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\ZZ8VEAKU\Alan Smith et al. - Lexique visuel.pdf
       \endverb
       \verb{urlraw}
       \verb https://github.com/Financial-Times/chart-doctor/tree/main
@@ -372,14 +397,24 @@
       \verb{url}
       \verb https://github.com/Financial-Times/chart-doctor/tree/main
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐}
     \endentry
     \entry{lindabealeInsightsArcGIS2017}{artwork}{}{}
+      \name{namea}{1}{}{%
+        {{hash=8bd379c5665d422a6c64a310ecec93e9}{%
+           family={{Linda Beale}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{nameabibnamehash}{8bd379c5665d422a6c64a310ecec93e9}
+      \strng{nameanamehash}{8bd379c5665d422a6c64a310ecec93e9}
+      \strng{nameafullhash}{8bd379c5665d422a6c64a310ecec93e9}
+      \strng{nameafullhashraw}{8bd379c5665d422a6c64a310ecec93e9}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{annotation}{Esri}
       \field{langid}{english}
+      \field{nameatype}{collaborator}
       \field{title}{Insights for {{ArcGIS}}}
       \field{urlday}{18}
       \field{urlmonth}{7}
@@ -388,7 +423,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/EKKXWFIU/Linda Beale - 2017 - Insights for ArcGIS.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\EKKXWFIU\Linda Beale - 2017 - Insights for ArcGIS.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.esri.com/content/dam/esrisites/fr-fr/media/pdf/data-visualization-options-in-insights-3.0.pdf
@@ -396,7 +431,7 @@
       \verb{url}
       \verb https://www.esri.com/content/dam/esrisites/fr-fr/media/pdf/data-visualization-options-in-insights-3.0.pdf
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐}
     \endentry
     \entry{schwabishNotHarmGuide2022}{book}{}{}
       \name{editor}{3}{}{%
@@ -436,13 +471,13 @@
       \field{number}{3}
       \field{pagetotal}{112}
       \field{series}{Do {{Not Harm Guide}}}
-      \field{title}{Do {{Not Harm Guide}} - {{Centering}} Accessibility in Data Visualization}
+      \field{title}{Do Not Harm Guide - Centering Accessibility in Data Visualization}
       \field{year}{2022}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/7MXHRVTT/Schwabish et al. - 2022 - Centering accessibility in data visualization.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\7MXHRVTT\Schwabish et al. - 2022 - Centering accessibility in data visualization.pdf
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐⭐}
     \endentry
     \entry{andreaskrauseBestPracticesData2024}{article}{}{}
       \name{author}{3}{}{%
@@ -462,6 +497,18 @@
            given={Brian},
            giveni={B\bibinitperiod}}}%
       }
+      \name{namea}{2}{}{%
+        {{hash=b019c92816a2e9d0b67094270a1cf178}{%
+           family={Storopoli},
+           familyi={S\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b8b27fc03bb65080e1de86d34893316}{%
+           family={Shirk},
+           familyi={S\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
       \list{publisher}{1}{%
         {Royal Statistical Society}%
       }
@@ -473,6 +520,10 @@
       \strng{authornamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authorfullhash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authorfullhashraw}{9b0f3360f69411ca9451bf59b8fcb8be}
+      \strng{nameabibnamehash}{02ebe9f86a497994124f08b7ecff698e}
+      \strng{nameanamehash}{02ebe9f86a497994124f08b7ecff698e}
+      \strng{nameafullhash}{02ebe9f86a497994124f08b7ecff698e}
+      \strng{nameafullhashraw}{02ebe9f86a497994124f08b7ecff698e}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -481,6 +532,7 @@
       \field{day}{1}
       \field{langid}{english}
       \field{month}{2}
+      \field{nameatype}{collaborator}
       \field{title}{Best Practices for Data Visualisation}
       \field{urlday}{30}
       \field{urlmonth}{12}
@@ -495,7 +547,7 @@
       \verb 10.5281/ZENODO.10600718
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/QVACFZC9/Andreas Krause et al. - 2024 - Best practices for data visualisation.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\QVACFZC9\Andreas Krause et al. - 2024 - Best practices for data visualisation.pdf
       \endverb
       \verb{urlraw}
       \verb https://zenodo.org/doi/10.5281/zenodo.10600718
@@ -503,7 +555,7 @@
       \verb{url}
       \verb https://zenodo.org/doi/10.5281/zenodo.10600718
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐}
     \endentry
     \entry{stephenfewTableDesign2012}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -555,7 +607,6 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -571,7 +622,7 @@
       \field{pages}{311\bibrangedash 326}
       \range{pages}{16}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/F75J95VX/2021 - 10. Qualitative.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\F75J95VX\2021 - 10. Qualitative.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -620,12 +671,11 @@
       \field{annotation}{TLDR: This work presents several glyphmap designs for addressing the challenge applied to local authority data in England whereby charts displaying multiple aspects related to the pandemic are given a geographic arrangement.}
       \field{day}{1}
       \field{issn}{2220-9964}
-      \field{journaltitle}{ISPRS International Journal of Geo-Information}
+      \field{journaltitle}{ISPRS Int. J. Geo-Inf.}
       \field{langid}{english}
       \field{month}{4}
       \field{number}{4}
-      \field{shortjournal}{IJGI}
-      \field{title}{On the {{Use}} of `{{Glyphmaps}}' for {{Analysing}} the {{Scale}} and {{Temporal Spread}} of {{COVID-19 Reported Cases}}}
+      \field{title}{On the Use of ‘Glyphmaps’ for Analysing the Scale and Temporal Spread of {{COVID-19}} Reported Cases}
       \field{urlday}{16}
       \field{urlmonth}{2}
       \field{urlyear}{2025}
@@ -639,7 +689,7 @@
       \verb 10.3390/ijgi10040213
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/X6Z26YXQ/Beecham et al. - 2021 - On the Use of ‘Glyphmaps’ for Analysing the Scale and Temporal Spread of COVID-19 Reported Cases.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\X6Z26YXQ\Beecham et al. - 2021 - On the Use of ‘Glyphmaps’ for Analysing the Scale and Temporal Spread of COVID-19 Reported Cases.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.mdpi.com/2220-9964/10/4/213
@@ -647,7 +697,6 @@
       \verb{url}
       \verb https://www.mdpi.com/2220-9964/10/4/213
       \endverb
-      \keyw{/unread}
     \endentry
     \entry{tranDiscoveringAccessibleData2024}{inproceedings}{}{}
       \name{author}{3}{}{%
@@ -685,7 +734,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{There have been many studies on understanding data visualizations regarding general users. However, we have a limited understanding of how people with ADHD comprehend data visualizations and how it might be diferent from the general users. To understand accessible data visualization for people with ADHD, we conducted a crowd-sourced survey involving 70 participants with ADHD and 77 participants without ADHD. Specifcally, we tested the chart components of color, text amount, and use of visual embellishments/pictographs, fnding that some of these components and ADHD afected participants' response times and accuracy. We outlined the neurological traits of ADHD and discussed specifc fndings on accessible data visualizations for people with ADHD. We found that various chart embellishment types afected accuracy and response times for those with ADHD diferently depending on the types of questions. Based on these results, we suggest visual design recommendations to make accessible data visualizations for people with ADHD.}
+      \field{abstract}{There have been many studies on understanding data visualizations regarding general users. However, we have a limited understanding of how people with ADHD comprehend data visualizations and how it might be diferent from the general users. To understand accessible data visualization for people with ADHD, we conducted a crowd-sourced survey involving 70 participants with ADHD and 77 participants without ADHD. Specifcally, we tested the chart components of color, text amount, and use of visual embellishments/pictographs, fnding that some of these components and ADHD afected participants’ response times and accuracy. We outlined the neurological traits of ADHD and discussed specifc fndings on accessible data visualizations for people with ADHD. We found that various chart embellishment types afected accuracy and response times for those with ADHD diferently depending on the types of questions. Based on these results, we suggest visual design recommendations to make accessible data visualizations for people with ADHD.}
       \field{annotation}{TLDR: It was found that various chart embellishment types affected accuracy and response times for those with ADHD differently depending on the types of questions.}
       \field{booktitle}{Proceedings of the {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
       \field{day}{11}
@@ -706,7 +755,7 @@
       \verb 10.1145/3613904.3642112
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/AWFK3ZZT/Tran et al. - 2024 - Discovering accessible data visualizations for people with ADHD.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\AWFK3ZZT\Tran et al. - 2024 - Discovering accessible data visualizations for people with ADHD.pdf
       \endverb
       \verb{urlraw}
       \verb https://dl.acm.org/doi/10.1145/3613904.3642112
@@ -714,7 +763,7 @@
       \verb{url}
       \verb https://dl.acm.org/doi/10.1145/3613904.3642112
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐⭐}
     \endentry
     \entry{rose-greenlandColorPerceptionSociology2016}{article}{}{}
       \name{author}{1}{}{%
@@ -736,15 +785,14 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece---brightly painted reconstructions of ancient Greek and Roman marble sculptures---triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
+      \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece—brightly painted reconstructions of ancient Greek and Roman marble sculptures—triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
       \field{issn}{0735-2751, 1467-9558}
-      \field{journaltitle}{Sociological Theory}
+      \field{journaltitle}{Sociol. Theor.}
       \field{langid}{english}
       \field{month}{6}
       \field{number}{2}
-      \field{shortjournal}{Sociol. Theor.}
-      \field{shorttitle}{Color {{Perception}} in {{Sociology}}}
-      \field{title}{Color {{Perception}} in {{Sociology}}: {{Materiality}} and {{Authenticity}} at the {{{\mkbibemph{Gods}}}}{\mkbibemph{ in }}{{{\mkbibemph{Color}}}} {{Show}}}
+      \field{shorttitle}{Color Perception in Sociology}
+      \field{title}{Color Perception in Sociology: Materiality and Authenticity at the {\mkbibemph{Gods in Color}} Show}
       \field{urlday}{16}
       \field{urlmonth}{2}
       \field{urlyear}{2025}
@@ -758,7 +806,7 @@
       \verb 10.1177/0735275116648178
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/3ZGDRVG4/Rose-Greenland - 2016 - Color Perception in Sociology Materiality and Authenticity at the Gods in Color Show.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\3ZGDRVG4\Rose-Greenland - 2016 - Color Perception in Sociology Materiality and Authenticity at the Gods in Color Show.pdf
       \endverb
       \verb{urlraw}
       \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
@@ -766,7 +814,6 @@
       \verb{url}
       \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
       \endverb
-      \keyw{/unread}
     \endentry
     \entry{wilkeCommonPitfallsColor2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -871,7 +918,6 @@
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -887,7 +933,7 @@
       \field{pages}{349\bibrangedash 368}
       \range{pages}{20}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/AVI7ZUR7/2021 - 12. Developing a data visualization style guide.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\AVI7ZUR7\2021 - 12. Developing a data visualization style guide.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -922,12 +968,12 @@
       \field{edition}{2nd edition}
       \field{isbn}{978-1-5264-6893-2 978-1-5264-6892-5}
       \field{langid}{english}
-      \field{title}{Data {{Representation}}}
+      \field{title}{Data Representation}
       \field{year}{2019}
       \field{dateera}{ce}
       \field{pages}{135}
       \range{pages}{1}
-      \keyw{/unread,imprime,nosource}
+      \keyw{nosource}
     \endentry
     \entry{wilkeRedundantCoding2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -1023,7 +1069,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{booktitle}{Centering {{Accessibility}} in {{Data Visualization}}}
       \field{langid}{english}
       \field{month}{12}
       \field{number}{3}
@@ -1056,7 +1102,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{booktitle}{Centering {{Accessibility}} in {{Data Visualization}}}
       \field{langid}{english}
       \field{month}{12}
       \field{number}{3}
@@ -1094,7 +1140,7 @@
       \field{year}{2020}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/GIR2FCRS/Mike Yi - 2020 - How to choose the right data visualization.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\GIR2FCRS\Mike Yi - 2020 - How to choose the right data visualization.pdf
       \endverb
       \verb{urlraw}
       \verb https://res.cloudinary.com/dun3slcfg/image/upload/v1711993110/cloud-files/How-to-Choose-the-right-data-visualization.pdf
@@ -1102,7 +1148,7 @@
       \verb{url}
       \verb https://res.cloudinary.com/dun3slcfg/image/upload/v1711993110/cloud-files/How-to-Choose-the-right-data-visualization.pdf
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐}
     \endentry
     \entry{stephenfewShowMeNumbers2012}{book}{}{}
       \name{author}{1}{}{%
@@ -1137,18 +1183,18 @@
       \field{year}{2012}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/A7N88557/Stephen Few - 2012 - Show me the numbers - designing tables and graphs to enlighten.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\A7N88557\Stephen Few - 2012 - Show me the numbers - designing tables and graphs to enlighten.pdf
       \endverb
-      \keyw{,/done,imprime}
+      \keyw{/done,⭐⭐⭐⭐}
     \endentry
-    \entry{NFENISO9241-125ErgonomieLinteractionHommesysteme2017}{standard}{}{}
+    \entry{ErgonomieLinteractionHommesysteme2017a}{standard}{}{}
       \list{publisher}{1}{%
         {AFNOR}%
       }
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
-      \field{abstract}{Le présent document fournit un document d'orientation pour la présentation visuelle d'informations sous le contrôle d'un logiciel, indépendamment du support. Il inclut des propriétés spécifiques telles que les aspects syntaxiques ou sémantiques des informations, par exemple les techniques de codage, et fournit des dispositions relatives à l'organisation des informations en tenant compte des capacités humaines de perception et de mémorisation. Les dispositions qui ne s'appliquent pas à des types spécifiques d'interfaces visuelles indiquent clairement les éventuelles limites de leur applicabilité. Ne sont pas concernés les détails spécifiques des tableaux, des graphiques ou ceux de la visualisation des informations. Le présent document ne concerne pas la présentation auditive ou tactile/haptique des informations, ni le transfert de modalité à une fin de présentation d'informations visuelles dans d'autres modalités.}
+      \field{abstract}{Le présent document fournit un document d’orientation pour la présentation visuelle d’informations sous le contrôle d'un logiciel, indépendamment du support. Il inclut des propriétés spécifiques telles que les aspects syntaxiques ou sémantiques des informations, par exemple les techniques de codage, et fournit des dispositions relatives à l’organisation des informations en tenant compte des capacités humaines de perception et de mémorisation. Les dispositions qui ne s’appliquent pas à des types spécifiques d’interfaces visuelles indiquent clairement les éventuelles limites de leur applicabilité. Ne sont pas concernés les détails spécifiques des tableaux, des graphiques ou ceux de la visualisation des informations. Le présent document ne concerne pas la présentation auditive ou tactile/haptique des informations, ni le transfert de modalité à une fin de présentation d’informations visuelles dans d’autres modalités.}
       \field{langid}{english}
       \field{month}{10}
       \field{number}{NF EN ISO 9241-125}
@@ -1159,21 +1205,20 @@
       \field{year}{2017}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/HAC78V3J/NF EN ISO 9241-125.pdf;/home/anthea/Zotero/storage/IE5P3KBH/2017 - Ergonomie de l'interaction homme-système - partie 125 recommandations relatives à la présentation.pdf
+      \verb C\:\\Users\\CPIERRE\\Documents\\My Library\\storage\\HAC78V3J\\NF EN ISO 9241-125.pdf;C\:\\Users\\CPIERRE\\Documents\\My Library\\storage\\IE5P3KBH\\2017 - Ergonomie de l'interaction homme-système - partie 125 recommandations relatives à la présentation.pdf
       \endverb
-      \keyw{/unread,broken,imprime}
     \endentry
-    \entry{ISO8601-1DateHeureRepresentations2019}{standard}{}{}
+    \entry{DateHeureRepresentations2019}{standard}{}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{number}{ISO 8601-1}
-      \field{title}{Date et Heure - {{Représentations}} Pour l'échange d'information -- Partie 1: {{Règles}} de Base}
+      \field{title}{Date et Heure - Représentations Pour l'échange d'information – Partie 1: Règles de Base}
       \field{type}{Norme Internationale}
       \field{year}{2019}
       \field{dateera}{ce}
-      \keyw{/unread,nosource}
+      \keyw{nosource}
     \endentry
     \entry{sosulskiGraphics2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -1196,7 +1241,7 @@
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Data Visualization Made Simple: Insights into Becoming Visual}
+      \field{booktitle}{Data {{Visualization Made Simple}}: {{Insights}} into {{Becoming Visual}}}
       \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
       \field{langid}{english}
       \field{title}{The Graphics}
@@ -1225,7 +1270,6 @@
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -1241,7 +1285,7 @@
       \field{pages}{179\bibrangedash 216}
       \range{pages}{38}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/DFIH9F7K/2021 - 6. Distribution.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\DFIH9F7K\2021 - 6. Distribution.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -1270,7 +1314,6 @@
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -1286,7 +1329,7 @@
       \field{pages}{68\bibrangedash 132}
       \range{pages}{65}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/ULAFMWJC/2021 - 4. Comparing categories.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\ULAFMWJC\2021 - 4. Comparing categories.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -1315,7 +1358,6 @@
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -1331,7 +1373,7 @@
       \field{pages}{289\bibrangedash 310}
       \range{pages}{22}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/JGAT9DUE/2021 - 9. Part-to-whole.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\JGAT9DUE\2021 - 9. Part-to-whole.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -1444,7 +1486,6 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -1460,7 +1501,7 @@
       \field{pages}{133\bibrangedash 178}
       \range{pages}{46}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/3TJDEGMC/2021 - 5. Time.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\3TJDEGMC\2021 - 5. Time.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -1489,7 +1530,6 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{annotation}{crossref: {$<$}jonathanschwabishBetterDataVisualizations2021{$>$}}
       \field{booktitle}{Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks}
       \field{day}{31}
       \field{isbn}{978-0-231-55015-4}
@@ -1505,7 +1545,7 @@
       \field{pages}{249\bibrangedash 288}
       \range{pages}{40}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/MFNELCRJ/2021 - 8. Relationship.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\MFNELCRJ\2021 - 8. Relationship.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
@@ -1680,11 +1720,10 @@
       \field{annotation}{564 citations (Semantic Scholar/DOI) [2024-08-03]\\ TLDR: A systematic review of research articles published in top physiology journals suggests that, as scientists, the authors urgently need to change their practices for presenting continuous data in small sample size studies.}
       \field{day}{22}
       \field{issn}{1545-7885}
-      \field{journaltitle}{PLOS Biology}
+      \field{journaltitle}{PLOS Biol.}
       \field{langid}{english}
       \field{month}{4}
       \field{number}{4}
-      \field{shortjournal}{PLOS Biol.}
       \field{shorttitle}{Beyond Bar and Line Graphs}
       \field{title}{Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm}
       \field{urlday}{22}
@@ -1700,7 +1739,7 @@
       \verb 10.1371/journal.pbio.1002128
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/IAGQI66D/Weissgerber et al. - 2015 - Beyond bar and line graphs time for a new data presentation paradigm.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\IAGQI66D\Weissgerber et al. - 2015 - Beyond bar and line graphs time for a new data presentation paradigm.pdf
       \endverb
       \verb{urlraw}
       \verb https://dx.plos.org/10.1371/journal.pbio.1002128
@@ -1708,7 +1747,7 @@
       \verb{url}
       \verb https://dx.plos.org/10.1371/journal.pbio.1002128
       \endverb
-      \keyw{/done,imprime}
+      \keyw{/done}
     \endentry
     \entry{hofmannLettervaluePlotsBoxplots2017}{article}{}{}
       \name{author}{3}{}{%
@@ -1740,14 +1779,13 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Conventional boxplots (Tukey, 1977) are useful displays for conveying rough information about the central 50\% and the extent of data. For small-sized data sets (n {$<$} 200), detailed estimates of tail behavior beyond the quartiles may not be trustworthy, so the information provided by boxplots is appropriately somewhat vague beyond the quartiles, and the expected number of ``outliers'' of size n is often less than 10 (Hoaglin et al., 1986). Larger data sets (n {$\approx$} 10, 000--100, 000) afford more precise estimates of quantiles beyond the quartiles, but conventional boxplots do not show this information about the tails, and, in addition, show large numbers of extreme, but not unexpected, observations.}
+      \field{abstract}{Conventional boxplots (Tukey, 1977) are useful displays for conveying rough information about the central 50\% and the extent of data. For small-sized data sets (n {$<$} 200), detailed estimates of tail behavior beyond the quartiles may not be trustworthy, so the information provided by boxplots is appropriately somewhat vague beyond the quartiles, and the expected number of “outliers” of size n is often less than 10 (Hoaglin et al., 1986). Larger data sets (n ≈ 10, 000–100, 000) afford more precise estimates of quantiles beyond the quartiles, but conventional boxplots do not show this information about the tails, and, in addition, show large numbers of extreme, but not unexpected, observations.}
       \field{day}{3}
       \field{issn}{1061-8600, 1537-2715}
-      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{journaltitle}{J. Comput. Graphical Stat.}
       \field{langid}{english}
       \field{month}{7}
       \field{number}{3}
-      \field{shortjournal}{J. Comput. Graphical Stat.}
       \field{shorttitle}{Letter-Value Plots}
       \field{title}{Letter-Value Plots: Boxplots for Large Data}
       \field{urlday}{4}
@@ -1763,7 +1801,7 @@
       \verb 10.1080/10618600.2017.1305277
       \endverb
       \verb{file}
-      \verb /home/anthea/Zotero/storage/7NZ65JNF/Hofmann et al. - 2017 - Letter-Value Plots Boxplots for Large Data.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\7NZ65JNF\Hofmann et al. - 2017 - Letter-Value Plots Boxplots for Large Data.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1305277
@@ -1771,7 +1809,6 @@
       \verb{url}
       \verb https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1305277
       \endverb
-      \keyw{/unread,imprime}
     \endentry
     \entry{sosulskiBecomingVisual2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -1794,7 +1831,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Data Visualization Made Simple: Insights into Becoming Visual}
+      \field{booktitle}{Data {{Visualization Made Simple}}: {{Insights}} into {{Becoming Visual}}}
       \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
       \field{langid}{english}
       \field{title}{Becoming Visual}
@@ -1839,9 +1876,8 @@
       \field{year}{2010}
       \field{dateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/582JNYMH/Wong - 2010 - The wall street journal guide to information graphics the dos and don'ts of presenting data, facts,.pdf
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\582JNYMH\Wong - 2010 - The wall street journal guide to information graphics the dos and don'ts of presenting data, facts,.pdf
       \endverb
-      \keyw{/unread}
     \endentry
     \entry{mikecisnerosWhatLineGraph2024}{online}{}{}
       \name{author}{1}{}{%
@@ -1850,7 +1886,7 @@
            familyi={M\bibinitperiod}}}%
       }
       \list{organization}{1}{%
-        {Storytelling with data}%
+        {Storytelling with Data}%
       }
       \strng{namehash}{ac1648407d04e61c27c42d13dd3b9c85}
       \strng{fullhash}{ac1648407d04e61c27c42d13dd3b9c85}
@@ -1879,7 +1915,7 @@
       \verb{url}
       \verb https://www.storytellingwithdata.com/blog/2020/3/24/what-is-a-line-graph
       \endverb
-      \keyw{/done}
+      \keyw{/done,nosource}
     \endentry
     \entry{wilkeVisualizingNestedProportions2019}{inbook}{}{}
       \name{bookauthor}{1}{}{%
@@ -2011,7 +2047,7 @@
       \field{urlyear}{2025}
       \field{urldateera}{ce}
       \verb{file}
-      \verb /home/anthea/Zotero/storage/6U6BB9JY/neurodiversity.design.html
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\6U6BB9JY\neurodiversity.design.html
       \endverb
       \verb{urlraw}
       \verb https://www.neurodiversity.design/
@@ -2019,7 +2055,6 @@
       \verb{url}
       \verb https://www.neurodiversity.design/
       \endverb
-      \keyw{/unread}
     \endentry
   \enddatalist
   \missing{REF???}
