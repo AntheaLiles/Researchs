@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Fondements théoriques
 *** Définition et concepts de base
 *** Approches de résolution de contraintes

@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Introduction
 # Précise le statut scientifique du travail (projet de recherche, ancrage institutionnel, etc.)
 
@@ -19,9 +20,9 @@ Les normes d’application obligatoire sont issues de ce corpus (via réglementa
 
 Par l'analyse des textes et de leurs métadonnées, nous tenterons de répondre aux questions suivantes :
 
-Q1 : Quelle est l’ampleur documentaire du corpus normatif applicable à l’industrie de la construction, mesurée en nombre de documents et en volume paginé ?
-Q2 : La filière construction présente-t-elle une densité normative supérieure à celle d’autres secteurs industriels comparables, en termes de nombre de normes actives et de leur volumétrie documentaire ?
-Q3 : Comment les textes normatifs se répartissent-ils entre les sous-domaines techniques, professions et spécialités représentatives de la filière construction, selon les descripteurs et indices de classement ?
+- Q1 : Quelle est l’ampleur documentaire du corpus normatif applicable à l’industrie de la construction, mesurée en nombre de documents et en volume paginé ?
+- Q2 : La filière construction présente-t-elle une densité normative supérieure à celle d’autres secteurs industriels comparables, en termes de nombre de normes actives et de leur volumétrie documentaire ?
+- Q3 : Comment les textes normatifs se répartissent-ils entre les sous-domaines techniques, professions et spécialités représentatives de la filière construction, selon les descripteurs et indices de classement ?
 
 
 ** Méthodologie

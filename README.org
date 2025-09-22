@@ -5,38 +5,19 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "~/org/config-tex.org"
 
-* [[./3d-files/][Formats de fichiers 3D]]
-** Formats de fichiers 3D pour l'ingénierie de la construction
-- Veille technologique
+* [[./quickDoc/][quickDoc]]
+Projet de recherche visant la création d'un langage de balisage léger cohérent, robuste et complet en remplacement de Markdown et en alternative à Org-mode.
 
-* [[./databases/][Systèmes de bases de données]]
-** Exploration de l'écosystème applicatif de PostgreSQL
-- Veille technologique
-  
-* [[./documentation/][Documentations logicielles]]
-** Méthodologie de conception d'une documentation logicielle à forte valeur ajoutée
-- Méthode et protocole
+* [[./quickLang][quickLang]]
+Projet de recherche visant le développement d'un langage de programmation dédié à la manipulation de documents.
 
-* [[./interoperability/][Intergiciels et interopérabilité]]
-** Technologies d'intéropérabilité des outils d'ingénierie de la construction
-- Veille technologique
+* [[./quickMotion][quickMotion]]
+Projet de recherche visant à définir schéma d'intéraction humain machine ergonomique, inspiré des pratiques du jeu vidéo et sur l'emplois des racourcis claviers.
 
-* [[./operating-systems][Systèmes d'exploitations]]
-** TBD
-
-* [[./plain-text/][Langages de balisages légers]]
-** TBD
-
-* [[./storage/][Stockages de données]]
-** Exploration des technologies de stockage et de gestion des fichiers informatiques
-- Veille technologique
-
-* [[./testing/][Tests informatiques]]
-** Exploration des méthodologies de test d'applications
-- Veille technologique
-
-* [[./visualization/][Visualisation de données]]
-** Méthode de sélection, configuration et validation des représentations graphiques des corpus d'informations
-- Meta analyse
-  
+* [[./quickViz/][quickViz]]
 Projet de recherche visant à établir un cadre formel et une méthode de sélection et de préparation des représentations graphiques des informations issues de bases de données.
+
+* [[./thesis/][Thèse]]
+Travaux poursuivis dans le cadre de mon doctora en informatique et applicatif à l'école doctorale de l'Univesité Polytechnique Haut de France.
+
+Ce projet de recherche vise à faciliter l'appreciation, la négociation et la vérification des contraintes d'un projet d'ingéniérie.

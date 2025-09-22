@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Analyse des contributions
 *** Contributions théoriques
 *** Contributions méthodologiques

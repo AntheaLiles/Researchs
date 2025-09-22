@@ -1,6 +1,5 @@
 #+SETUPFILE: "~/org/config-tex.org"
 #+glossary_sources: ~/org/glossary.org
-
 #+OPTIONS: num:3
 
 # +latex: \begin{document}

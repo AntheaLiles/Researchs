@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Formulation de la problématique
 *** Questions de recherche
 Question principale : Comment développer une approche d'ingénierie par les contraintes pour améliorer la conception et la validation des systèmes de génie électrique ?

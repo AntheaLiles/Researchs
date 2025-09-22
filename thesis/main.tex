@@ -1,4 +1,4 @@
-% Created 2025-08-07 Thu 16:42
+% Created 2025-09-19 Fri 12:02
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -15,15 +15,19 @@
 \usepackage{microtype}
 \usepackage[autolanguage]{numprint}
 \npthousandsep{~}
+\usepackage{bxtexlogo}
+\bxtexlogoimport{*}
+\bxtexlogoimport{**}
 \usepackage{fontspec}
+\usepackage{ulem}
+\usepackage{soul}
 \setmainfont{Source Serif 4}[Path=/home/anthea/org/fonts/Source_Serif_4/static/, UprightFont=SourceSerif4-Regular.ttf, ItalicFont=SourceSerif4-Italic.ttf, BoldFont=SourceSerif4-Bold.ttf, BoldItalicFont=SourceSerif4-BoldItalic.ttf]
 \setsansfont{Source Sans 3}[Path=/home/anthea/org/fonts/Source_Sans_3/static/, UprightFont=SourceSans3-Regular.ttf, ItalicFont=SourceSans3-Italic.ttf, BoldFont=SourceSans3-Bold.ttf, BoldItalicFont=SourceSans3-BoldItalic.ttf]
-\setmonofont{Source Code Pro}[Path=/home/anthea/org/fonts/Source_Code_Pro/static/, UprightFont=SourceCodePro-Regular.ttf, ItalicFont=SourceCodePro-Italic.ttf, BoldFont=SourceCodePro-Bold.ttf, BoldItalicFont=SourceCodePro-BoldItalic.ttf]
+\setmonofont{JetBrains Mono}[Path=/home/anthea/org/fonts/JetBrains_Mono/static/, UprightFont=JetBrainsMono-Regular.ttf, ItalicFont=JetBrainsMono-Italic.ttf, BoldFont=JetBrainsMono-Bold.ttf, BoldItalicFont=JetBrainsMono-BoldItalic.ttf]
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{customgray}{HTML}{505050}
 \usepackage[top=3.2cm, bottom=3.2cm, left=2.4cm, right=2.4cm]{geometry}
-\usepackage[cm]{fullpage}
 \usepackage{setspace,fancyhdr,indentfirst,lastpage,datetime,authblk,ifthen,etoolbox,titling}
 \singlespacing
 \pagestyle{fancy}
@@ -238,75 +242,72 @@
 \addbibresource{~/org/references.bib}
 \begin{document}
 
+\newgeometry{top=2.2cm, bottom=2.2cm, left=1.8cm, right=1.8cm}
+
 \begin{titlepage}
 
-\begin{minipage}[t]{7cm}
+\begin{minipage}[t]{0cm}
 \vglue0.0cm
-\includegraphics[scale=1]{./logo/Logo_INSA_HDF-01-2.png}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{5.5cm}
-\vglue0.3cm
-\includegraphics[scale=0.12]{./logo/Logo_UPHF.png}
+\includegraphics[scale=.725]{./logo/logos.png}
 \end{minipage}
 
 \begin{center}
 \section*{Thèse de doctorat}
-\label{sec:org2d82f11}
+\label{sec:org358ac2e}
 \vspace*{-6pt}
 \section*{Pour obtenir le grade de Docteur de}
-\label{sec:orgbc92321}
+\label{sec:org2e6e22f}
 \vspace*{-6pt}
 \section*{l'UNIVERSITE POLYTECHNIQUE HAUTS-DE-FRANCE}
-\label{sec:orgce937df}
+\label{sec:org573acf3}
 \vspace*{-6pt}
 \section*{et de l'INSA HAUTS-DE-FRANCE}
-\label{sec:orgce92926}
+\label{sec:orgb7dc469}
 Discipline, spécialité selon la liste des spécialités pour lesquelles l'Ecole Doctorale est accréditée :
 \vspace*{-12pt}
 \subsubsection*{Informatique et applications}
-\label{sec:org53700bc}
+\label{sec:org1e17bd5}
 \vspace*{12pt}
 \subsection*{Présentée et soutenue par Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\label{sec:org502df80}
+\label{sec:orgbb3b286}
 \subsection*{Le JJ/MM/2028, à Valenciennes}
-\label{sec:orgfe2e9c5}
+\label{sec:orgfa6db83}
 \end{center}
 \subsubsection*{Ecole doctorale :}
-\label{sec:org1c33166}
+\label{sec:orgf545e35}
 \vspace*{-6pt}
 
 Ecole Doctorale Polytechnique Hauts-de-France (ED PHF n°635)
 \subsubsection*{Unité de recherche :}
-\label{sec:orgb5eff7a}
+\label{sec:org15d8b2b}
 \vspace*{-6pt}
 
 Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Humaines (LAMIH - UMR CNRS 8201)
 
 \begin{center}
 \section*{Systématisation de la remontée de conformité en ingénierie de la construction par approche d'interaction humain-machine sensible aux contraintes}
-\label{sec:org4b63b13}
+\label{sec:org3fb22a1}
 \vspace*{12pt}
 \subsection*{JURY}
-\label{sec:org523b2c3}
+\label{sec:org4c0b53c}
 \vspace*{-12pt}
 \end{center}
 \begin{multicols}{2}
 \paragraph*{Président du jury}
-\label{sec:orgfb8618d}
+\label{sec:orgc119a21}
 \begin{itemize}
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice
 \vspace*{-12pt}
 \end{itemize}
 \paragraph*{Rapporteurs}
-\label{sec:orge8203eb}
+\label{sec:orge1f7f12}
 \begin{itemize}
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice.
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice.
 \vspace*{-12pt}
 \end{itemize}
 \paragraph*{Examinateurs}
-\label{sec:org3ca6270}
+\label{sec:orgf43770d}
 \begin{itemize}
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice
@@ -315,14 +316,14 @@ Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Huma
 \vspace*{-12pt}
 \end{itemize}
 \paragraph*{Co-directeurs de thèse}
-\label{sec:org1be4e9f}
+\label{sec:org65c6a68}
 \begin{itemize}
-\item Christophe KOLSKI Professeur des universités, Université Polytechnique Hauts-de-France
-\item Alexis HELOIR Professeur des universités, Université Polytechnique Hauts-de-France
+\item Christophe KOLSKI. Professeur des universités, Université Polytechnique Hauts-de-France
+\item Alexis HELOIR. Professeur des universités, Université Polytechnique Hauts-de-France
 \vspace*{-12pt}
 \end{itemize}
 \paragraph*{Membres invités}
-\label{sec:org819712c}
+\label{sec:orgbd15d70}
 \begin{itemize}
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice
 \item Nom, Prénom. Titre, fonction. Lieu d'exercice
@@ -330,9 +331,10 @@ Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Huma
 
 \end{multicols}
 \end{titlepage}
+\restoregeometry
 \clearpage
 \section*{Remerciements}
-\label{sec:orgcef2f85}
+\label{sec:orgce792aa}
 Remercier :
 \begin{enumerate}
 \item Christophe Kolski
@@ -345,51 +347,45 @@ Le LAMIH et EESF
 Mes collègues et amis
 \clearpage
 \section*{Résumé}
-\label{sec:org103a4f3}
-\begin{abstract}
+\label{sec:orgcae78c7}
 Logoden biniou degemer mat an, penn ar bed. Pa ya frouezh gaer e, kig eviti out. Traonienn amzer gallout gador beajourien, kloc’h nec’h c’hontadenn. Diskar ar koulskoude laouen c’hardeur, ostaleri da korn. Diriaou prad klouar a bugel, bro birviñ troc’hañ. Nebeutoc’h ur kenañ eñ puñs, aet gazek gorre. Planvour arvor niverenn leun merc’her, nebeutoc’h meud hi. Plad treñ pomper traezh ar, Moel plij skuizh. Stêr Ar Gall las Malo bleunioù, kontañ Pask a. Skignañ doñjer c’hardeur endervezh davarn, godell Mellag saout.
 
 Plouared werenn lavarout Mikael ha, war kig aval. Ar gwiskamant c’haod ouzhpenn, Santeg brudet, warlene stur. Blev degas gomz enep en, c’hoarvezout vamm digant. Keit leal marteze torgenn eured, plijadur Remengol Pederneg. Gwalenn ya envel seizh Breizh, war kleuz pe. Tavarnour dro sukr plijet anzav, bugale kregiñ ahont. Garantez kelien rumm n’eus arc’hant, ya santout fazi. Holl c’henwerzh bale Pembo anal, ouzhpenn abeg an. Doñjer gantañ tavarn kreion dispign, kaol doug uhelder. Kalet da kerkoulz ganto gar, da kambrig arvar.
 
 Toenn an beleg a mesk, yec’hed dont skrabañ. C’haod er naon istor c’havr, soñj bleunioù war. Va tenn warnañ, a goleiñ, dad forzh patatez. Keit dorn goap mouchouer Montroulez, danvez kas vamm. Evidout sukr ehan eget ennon, ahont eviti delioù. Ael divskouarn loar peurvuiañ tabut, goulenn ar kouezhañ. Gouren nijal da aval godell, lenn ur matezh. Siminal fazi leur daou trec’h, gouel graet gwer. Doñv ur Nazer da disheol, tresañ naetaat koumoul. Feunten tog c’hroc’hen Mellag Oskaleg, an ganimp, ganeomp keit.
-\end{abstract}
-\subsection*{Mots-clés}
-\label{sec:org0e3c6d8}
+
 \begin{keyword}
 Logoden, biniou, degemer mat, an, penn, ar bed.
 \end{keyword}
 \section*{Abstract}
-\label{sec:orgfd80f1e}
-\begin{abstract}
+\label{sec:org6693243}
 Logoden biniou degemer mat an, penn ar bed. Pa ya frouezh gaer e, kig eviti out. Traonienn amzer gallout gador beajourien, kloc’h nec’h c’hontadenn. Diskar ar koulskoude laouen c’hardeur, ostaleri da korn. Diriaou prad klouar a bugel, bro birviñ troc’hañ. Nebeutoc’h ur kenañ eñ puñs, aet gazek gorre. Planvour arvor niverenn leun merc’her, nebeutoc’h meud hi. Plad treñ pomper traezh ar, Moel plij skuizh. Stêr Ar Gall las Malo bleunioù, kontañ Pask a. Skignañ doñjer c’hardeur endervezh davarn, godell Mellag saout.
 
 Plouared werenn lavarout Mikael ha, war kig aval. Ar gwiskamant c’haod ouzhpenn, Santeg brudet, warlene stur. Blev degas gomz enep en, c’hoarvezout vamm digant. Keit leal marteze torgenn eured, plijadur Remengol Pederneg. Gwalenn ya envel seizh Breizh, war kleuz pe. Tavarnour dro sukr plijet anzav, bugale kregiñ ahont. Garantez kelien rumm n’eus arc’hant, ya santout fazi. Holl c’henwerzh bale Pembo anal, ouzhpenn abeg an. Doñjer gantañ tavarn kreion dispign, kaol doug uhelder. Kalet da kerkoulz ganto gar, da kambrig arvar.
 
 Toenn an beleg a mesk, yec’hed dont skrabañ. C’haod er naon istor c’havr, soñj bleunioù war. Va tenn warnañ, a goleiñ, dad forzh patatez. Keit dorn goap mouchouer Montroulez, danvez kas vamm. Evidout sukr ehan eget ennon, ahont eviti delioù. Ael divskouarn loar peurvuiañ tabut, goulenn ar kouezhañ. Gouren nijal da aval godell, lenn ur matezh. Siminal fazi leur daou trec’h, gouel graet gwer. Doñv ur Nazer da disheol, tresañ naetaat koumoul. Feunten tog c’hroc’hen Mellag Oskaleg, an ganimp, ganeomp keit.
-\end{abstract}
-\subsection*{Keywords}
-\label{sec:org0200d8a}
+
 \begin{keyword}
 Logoden, biniou, degemer mat, an, penn, ar bed.
 \end{keyword}
 \clearpage
 \section*{Table des matières}
-\label{sec:orgfb52257}
+\label{sec:orgc10b9f0}
 \renewcommand{\contentsname}{\vspace{-2em}}
 \setcounter{tocdepth}{3}
 \tableofcontents
 \section*{Annexes}
-\label{sec:org695dd87}
+\label{sec:org5e8e69a}
 \listofappendices
 \clearpage
 
 \setcounter{section}{-1}
 \section{Introduction générale}
-\label{sec:org3c63f3e}
+\label{sec:orgf024d15}
 \subsection{Contexte et motivation}
-\label{sec:orgc2c2499}
+\label{sec:orgd1d250a}
 \subsubsection{Sclérosité systémique des lotissements traditionnels}
-\label{sec:orgd5c0208}
+\label{sec:org644d165}
 => Chaines de valeurs traditionnelles devenu rigides et incapable de s'adapter ou d'évoluer à cause de
       la bureaucratisation des procédés ("tamponé, double tamponé\ldots{}" Au service de la France)
       la dérive des régulations (normes, réglements\ldots{})   
@@ -399,12 +395,12 @@ Logoden, biniou, degemer mat, an, penn, ar bed.
 => Recherche en refonte des organisation ?
 => Identification des leviers
 \subsubsection{Emergence de nouveaux acteurs}
-\label{sec:orgf905baa}
+\label{sec:org5af09ba}
 (informatique et numérique, Les ESN dans la construction ?)
 => Nouveaux outils et moyens de production
 => Besoins, impacts et opportunités
 \subsubsection{Discorde entre ergonomie et fonctionnalités}
-\label{sec:org3b2c8ac}
+\label{sec:org5820898}
 Objectif : définir le besoin de simplification, de convergence et d'apport de soin dans l'expérience utilisateur
 Ergonomie des interfaces, ergonomie des flux et procédures, charge cognitive \& co
 => Inéficience des ergonomies applicatives et des expériences utilisateurs, dégradées au profit d'une inflation de fonctionnalités
@@ -419,7 +415,7 @@ etc.
 Explorer les bonnes pratiques en IHM, Ui, Ux, définir les "prérequis" 
 Explorer le Behavior Driven Design 
 \subsubsection{Tabula rasa}
-\label{sec:org387bc73}
+\label{sec:orga7cf5d0}
 Objectif : proposer un modèle organisationnel scalable à forte valeur ajoutée et identification des rôles et périmètres 
 Prérequis avant toute tentative de digitalisation (en 1 : on se remet en question et on balaie devant sa porte)
 \begin{itemize}
@@ -429,7 +425,7 @@ Prérequis avant toute tentative de digitalisation (en 1 : on se remet en questi
 
 Explorer la décentralisation de la confiance notamment à travers les ZKP
 \subsection{Problématique de recherche}
-\label{sec:org45bc8fe}
+\label{sec:org8479631}
 Question principale :
 
 Questions complémentaires :
@@ -438,17 +434,17 @@ Comment créer un environnement de gestion des contraintes hétéroclytes ?
 
 Comment décrire une contrainte en langage naturel ?
 \subsection{Objectifs et contributions}
-\label{sec:orgcdf9064}
+\label{sec:orgabaf4ca}
 
 \subsection{Organisation du document}
-\label{sec:orgb7ce62f}
+\label{sec:org6c47372}
 \clearpage
 \section{Etat de l'art}
-\label{sec:orgc85fc05}
+\label{sec:orgcabc623}
 \subsection{Les contraintes de la construction}
-\label{sec:org32e5916}
+\label{sec:org20f4862}
 \subsubsection{Taxonomie des contraintes}
-\label{sec:org39d5ce2}
+\label{sec:orgb9f9df7}
 Nature technique :
 \begin{itemize}
 \item Géométriques : espacements, tolérances…
@@ -477,7 +473,7 @@ Nature organisationnelle :
 \item Contractuelles :
 \end{itemize}
 \subsubsection{Médiums et volumétrie}
-\label{sec:org6758251}
+\label{sec:org3522a78}
 Sources, origines et finalités
 
 Brevets, Normes, Législation, Contrats, Jurisprudences\ldots{}
@@ -487,22 +483,22 @@ Volume conséquent => faire un compte du nombre de pages par domaine pour illust
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./svg/360-view-engineering-environment.pdf}
-\caption{\label{fig:org54ac1f0}Proposition de représentation des environnements de contraintes}
+\caption{\label{fig:orgf2cc33c}Proposition de représentation des environnements de contraintes}
 \end{figure}
 \subsubsection{Exercice des contraintes}
-\label{sec:orgae6cfc0}
+\label{sec:org85af1d5}
 Dans l'industrie de la construction, les parties prenantes se coordonnent dans la réponse à des exigences exprimées. Cette gestion des éxigences vise l'atteinte des objectifs du client en respect des contraintes légales, réglementaires et normatives.
 
 \begin{quote}
 Les exigences sont déterminées à partir des besoins des parties prenantes et des contraintes comme les conditions d’utilisation, les ressources et la législation. -- NF EN 60300-1:2014\autocite{GestionSureteFonctionnement2014}
 \end{quote}
 
-La relation entre éxigences et contraintes est représentée par la \ref{fig:orgcb644d9}. Ainsi, une exigence est une spécification d'un besoin tenant compte des contraintes du domaine d'étude. Cependant, la limite est souvent floue entre un besoin, une contrainte et une exigence. Les professionnels de la construction ont donc tendance à les mélanger.
+La relation entre éxigences et contraintes est représentée par la \ref{fig:org3a43453}. Ainsi, une exigence est une spécification d'un besoin tenant compte des contraintes du domaine d'étude. Cependant, la limite est souvent floue entre un besoin, une contrainte et une exigence. Les professionnels de la construction ont donc tendance à les mélanger.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./svg/relation-contraintes-exigences.pdf}
-\caption{\label{fig:orgcb644d9}La relation entre contraintes et exigences selont l'ISO 60300-1\autocite{GestionSureteFonctionnement2014}}
+\caption{\label{fig:org3a43453}La relation entre contraintes et exigences selont l'ISO 60300-1\autocite{GestionSureteFonctionnement2014}}
 \end{figure}
 
 Une matrice de traçabilité des exigences est employé pour réalisé le suivi des exigences.
@@ -528,33 +524,33 @@ Utilisation de la matrice :
 La matrice de traçabilité des exigences est un document vivant qui \textbf{doit être régulièrement mis à jour tout au long du projet}. Les ajouts, les suppressions ou les modifications d'exigences, ainsi que l'évolution des plans de livrables, doivent être reflétés dans la matrice pour maintenir sa précision et sa pertinence.
 Elle est employée en complément d'une liste des documents exécutés par le prestataire.
 
-La nature de sa composition s'apparente à une table de jonction d'une base de donnée relationnelle tel que pourrait définir, sous forme de MLD la figure \ref{fig:orgcc8dbf8}.
+La nature de sa composition s'apparente à une table de jonction d'une base de donnée relationnelle tel que pourrait définir, sous forme de MLD la figure \ref{fig:org78ba979}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./svg/db-exigences-lde.pdf}
-\caption{\label{fig:orgcc8dbf8}MLD - Association des éxigences aux livrables}
+\caption{\label{fig:org78ba979}MLD - Association des éxigences aux livrables}
 \end{figure}
 
 Pour la suite de l'étude, le mot "contrainte" regroupera l'ensemble des éléments impactant la poursuite d'un projet. Il regroupera donc également la notion d'égigence et la notion de besoin.
 \subsection{Génie électrique et systèmes contraints}
-\label{sec:org1333e00}
+\label{sec:org1e2c2f0}
 \subsubsection{Spécificités du génie électrique}
-\label{sec:org46e7538}
+\label{sec:orga924b67}
 Expression sous forme de diagramme SIPOC de la chaine de valeur en électrotechnique ?
 \subsubsection{Contraintes en conception électrique}
-\label{sec:org9f22e3c}
+\label{sec:org57ba31d}
 \subsubsection{Optimisation multicritères}
-\label{sec:orgdd45a23}
+\label{sec:org1ccf9a3}
 \subsection{Vérification et validation en ingénierie}
-\label{sec:orgee41e7f}
+\label{sec:org6667464}
 \subsubsection{Concepts fondamentaux}
-\label{sec:org3e3458d}
+\label{sec:orgd26b8f9}
 \textbf{Vérification} : "Construisons-nous le produit correctement ?" - Conformité aux spécifications
 
 \textbf{Validation} : "Construisons-nous le bon produit ?" - Adéquation aux besoins utilisateur
 \subsubsection{Méthodes de traitement}
-\label{sec:org685305d}
+\label{sec:org320f9ec}
 Langage naturel :
 \begin{itemize}
 \item Rédaction
@@ -564,11 +560,11 @@ Langage naturel :
 \item Model checking : vérification exhaustive d'états finis, non systématique à date et loop sur rapport produit
 \end{itemize}
 \subsubsection{Défis en génie électrique}
-\label{sec:org6c77b3b}
+\label{sec:org2dc0018}
 \subsection{Apports du génie logiciel}
-\label{sec:orgc58a2a7}
+\label{sec:org5ae2a84}
 \subsubsection{Programmation déclarative et logique}
-\label{sec:orgcc89692}
+\label{sec:org268be95}
 Langage formels déclaratif textuel : Prolog, Claire, Raku, OCL, COBOL
 
 ? : OCL
@@ -578,7 +574,7 @@ Paradigme de programmation par les contraintes : Prolog, Claire, Raku
 Paradigme de programmation en langage proche du naturel : COBOL, Structured Query Language
  (\protect\hyperlink{gls-2}{\label{gls-2-use-1}SQL})
 \subsubsection{Programmation piloté par le comportement}
-\label{sec:orgccd30d9}
+\label{sec:org0ac4e91}
 Fondements du Behavior-Driven Development
  (\protect\hyperlink{gls-3}{\label{gls-3-use-1}BDD}) :
 \begin{itemize}
@@ -605,15 +601,15 @@ Synthaxe
     Alors il ne peut pas se connecter
 \end{Verbatim}
 \end{Code}
-\caption{\label{lst:org5e92ca9}Exemple de scénario Gherkin}
+\caption{\label{lst:orgf85acf2}Exemple de scénario Gherkin}
 \end{listing}
 \subsubsection{Méthodes de descritpions et ontologies}
-\label{sec:org6e87e6f}
+\label{sec:org941ca41}
 Ontologie BRICS
 
 Aproche d'ensemble puis subset par spécificité (activité ou domaine)
 \subsubsection{Business rule engine}
-\label{sec:org8049ed2}
+\label{sec:org509c3b2}
 Langages formels déclaratif visuels : 
 \begin{itemize}
 \item Business Process Model
@@ -626,48 +622,49 @@ Langages formels déclaratif visuels :
  (\protect\hyperlink{gls-9}{\label{gls-9-use-1}SysML}), UAFML…
 \end{itemize}
 \subsubsection{Visualisations et interactions}
-\label{sec:org3c95976}
+\label{sec:orgd85c678}
 \subsection{Analyse critique et positionnement}
-\label{sec:org3b6d653}
+\label{sec:org024796f}
 \subsubsection{Lacunes identifiées}
-\label{sec:org340a7e3}
+\label{sec:org4b73742}
 Très hétéroclite, besoin d’abstraction pour généraliser les approches.
 
 La définition de l'environnement d'étude en particulier duquel le périmètre de texte institutionnel applicable n'est pas aisé à réalisé.
 Il manque en ce sens un mécanisme de sélection de l'environnement permettant de soucer automatiquement les contraintes appropriées.
 
-\begin{verbatim}
 Exemple 1 : Travaux dans une base opérationnelle
-- imposition du respect de l'Arrêté Qualité de 1984 (AQ84)
-- import des contraintes de l'AQ84 dans la base des contraintes du projet.
-\end{verbatim}
+\begin{itemize}
+\item imposition du respect de l'Arrêté Qualité de 1984 (AQ84)
+\item import des contraintes de l'AQ84 dans la base des contraintes du projet.
+\end{itemize}
 
-\begin{verbatim}
+
 Exemple 2 : Travaux de distribution d'énergie électrique
-- imposition du respect de la norme obligatoire NF C15-100
-- import des contraintes de la NF C15-100 dans la base des contraintes du projet.
-\end{verbatim}
+\begin{itemize}
+\item imposition du respect de la norme obligatoire NF C15-100
+\item import des contraintes de la NF C15-100 dans la base des contraintes du projet.
+\end{itemize}
 
 
-\begin{verbatim}
 Exemple 3 : Travaux d'installation d'équipement dans une zone sismique 3
-- imposition d'une résistance sismique particulière des équipements
-- import des contraintes de l'EUROCODE 3 dans la base des contraintes du projet.
-\end{verbatim}
+\begin{itemize}
+\item imposition d'une résistance sismique particulière des équipements
+\item import des contraintes de l'EUROCODE 3 dans la base des contraintes du projet.
+\end{itemize}
 \subsubsection{Opportunités de recherche}
-\label{sec:org9127ba2}
+\label{sec:orgc7df853}
 Recherches potentiellements associées : gestion du contexte, quality information framework
 
 vers un DSL de la construction ?
 \subsection{Conclusion}
-\label{sec:orgc0d56de}
+\label{sec:org9356486}
 \clearpage
 \section{Problématique et méthodologie de recherche}
-\label{sec:orgdb8bff9}
+\label{sec:org3745661}
 \subsection{Formulation de la problématique}
-\label{sec:orgadba33b}
+\label{sec:orgd268b67}
 \subsubsection{Questions de recherche}
-\label{sec:org8fcad56}
+\label{sec:org446c674}
 Question principale : Comment développer une approche d'ingénierie par les contraintes pour améliorer la conception et la validation des systèmes de génie électrique ?
 
 Questions secondaires :
@@ -678,150 +675,150 @@ Questions secondaires :
 \item Quelle est l'efficacité de cette approche comparée aux méthodes traditionnelles ?
 \end{itemize}
 \subsubsection{Hypothèses de recherche}
-\label{sec:org447340c}
+\label{sec:org31802d4}
 \subsection{Approche méthodologique}
-\label{sec:orgaecb0f6}
+\label{sec:orgb9d23f5}
 \subsubsection{Méthodologie de recherche}
-\label{sec:org5590d33}
+\label{sec:org6b81365}
 \subsubsection{Stratégie de validation}
-\label{sec:org92b5e03}
+\label{sec:org276a411}
 \subsubsection{Métriques d'évaluation}
-\label{sec:org1850808}
+\label{sec:orgd1adc0a}
 \subsection{Outils et environnement de recherche}
-\label{sec:org91296c3}
+\label{sec:orga816438}
 \subsubsection{Outils de développement}
-\label{sec:orgc54e4d8}
+\label{sec:org271b81a}
 \subsubsection{Cas d'études}
-\label{sec:orgcf70716}
+\label{sec:orgd53a2f6}
 \subsection{Conclusion}
-\label{sec:org4b72735}
+\label{sec:org3b93ee8}
 \clearpage
 \section{Approche de l'ingénierie par les contraintes}
-\label{sec:org5b7b2a3}
+\label{sec:orgd977fc3}
 \subsection{Fondements théoriques}
-\label{sec:orgc4e0480}
+\label{sec:org115dbf1}
 \subsubsection{Définition et concepts de base}
-\label{sec:orgb6d6be0}
+\label{sec:orge1feb11}
 \subsubsection{Approches de résolution de contraintes}
-\label{sec:org7a68e33}
+\label{sec:org6d6cd3c}
 \subsubsection{Applications en ingénierie}
-\label{sec:orgdd7ca93}
+\label{sec:org452881a}
 \subsection{Architecture conceptuelle du framework}
-\label{sec:org290e736}
+\label{sec:org37d5487}
 \subsubsection{Vue d'ensemble}
-\label{sec:orgffcfb60}
+\label{sec:orgb44c0c8}
 \subsubsection{Principes directeurs}
-\label{sec:org8d2b3dd}
+\label{sec:org99711d5}
 \subsection{Extension des contraintes électriques}
-\label{sec:orgad7a901}
+\label{sec:orge980b4a}
 \subsubsection{Syntaxe CBE}
-\label{sec:orge5c9f54}
+\label{sec:org787c88a}
 \subsubsection{Opérateurs de contraintes}
-\label{sec:org4937e1a}
+\label{sec:orga3185b6}
 \subsubsection{Gestion de l'incertitude}
-\label{sec:org18a0522}
+\label{sec:orgabdc90c}
 \subsection{Mécanismes de résolution de contraintes}
-\label{sec:orgfe5feda}
+\label{sec:org8e4a613}
 \subsubsection{Traitement multi-niveaux}
-\label{sec:org85fd8f4}
+\label{sec:org83f05e3}
 \subsubsection{Algorithmes adaptatifs}
-\label{sec:orgb4e9367}
+\label{sec:org9f36b5b}
 \subsubsection{Intégration de métamodèles}
-\label{sec:org4a4557d}
+\label{sec:orgb9f2478}
 \subsection{Vérification formelle}
-\label{sec:org46bb08b}
+\label{sec:org40c502f}
 \subsubsection{Génération automatique de propriétés}
-\label{sec:orgb6349a5}
+\label{sec:orgee998da}
 \subsubsection{Model checking adaptatif}
-\label{sec:orgf024cdc}
+\label{sec:org759f101}
 \subsubsection{Analyse de robustesse}
-\label{sec:org5517e43}
+\label{sec:org68f5791}
 \subsection{Interface utilisateur et outils}
-\label{sec:org63863f0}
+\label{sec:org57d56b3}
 \subsubsection{Environnement de développement intégré}
-\label{sec:org85215ef}
+\label{sec:org389e13e}
 \subsubsection{Intégration aux outils métiers}
-\label{sec:org2b25acd}
+\label{sec:org49b88de}
 \subsection{Conclusion}
-\label{sec:org4c81367}
+\label{sec:org623f16f}
 \clearpage
 \section{Implémentation}
-\label{sec:orgef22b1d}
+\label{sec:org086f6d8}
 \subsection{Architecture logicielle}
-\label{sec:org71e378a}
+\label{sec:org70dbe78}
 \subsubsection{Choix technologiques}
-\label{sec:orgb06c2b1}
+\label{sec:orgb68769b}
 \subsubsection{Modules principaux}
-\label{sec:org1e902e9}
+\label{sec:orgc827ccb}
 \subsubsection{Tests unitaires et d'intégration}
-\label{sec:org2f42814}
+\label{sec:orgba61f67}
 \subsection{Conclusion}
-\label{sec:orgb14e390}
+\label{sec:org729b666}
 \clearpage
 \section{Validation expérimentale}
-\label{sec:orgf62d2b0}
+\label{sec:org3c0e874}
 \subsection{Protocole d'essais}
-\label{sec:org8aad2ce}
+\label{sec:org4c7b5ff}
 
 \subsection{Cas d'étude 1 :}
-\label{sec:org42f7066}
+\label{sec:orga431f3d}
 \subsection{Cas d'étude 2 :}
-\label{sec:orgd12366b}
+\label{sec:org189adca}
 \subsection{Cas d'étude 3 :}
-\label{sec:orga253282}
+\label{sec:orgde45a9e}
 
 \subsection{Analyse comparative}
-\label{sec:org153bd39}
+\label{sec:orgb621d09}
 \subsubsection{Métriques de performance}
-\label{sec:org61b787f}
+\label{sec:orga4feaff}
 \subsubsection{Limitations identifiées}
-\label{sec:org3676a1d}
+\label{sec:org4b3ccc4}
 \subsection{Conclusion}
-\label{sec:orgf8c3c69}
+\label{sec:orgfa39bb9}
 \clearpage
 \section{Discussion et perspectives}
-\label{sec:orge6b871b}
+\label{sec:org9b5d79b}
 \subsection{Analyse des contributions}
-\label{sec:org57c4c15}
+\label{sec:org8cf3218}
 \subsubsection{Contributions théoriques}
-\label{sec:orgdf492ed}
+\label{sec:org954d99b}
 \subsubsection{Contributions méthodologiques}
-\label{sec:org1d4dc1f}
+\label{sec:org13e4d19}
 \subsubsection{Contributions pratiques}
-\label{sec:orgcacf4d3}
+\label{sec:org33bfc5f}
 \subsection{Limites et défis}
-\label{sec:orga128286}
+\label{sec:org96a757f}
 \subsubsection{Limites théoriques}
-\label{sec:orga371b15}
+\label{sec:org3951e71}
 \subsubsection{Limites pratiques}
-\label{sec:org3358c3b}
+\label{sec:org8f75426}
 \subsubsection{Défis organisationnels}
-\label{sec:orgc69dd2c}
+\label{sec:orgb385434}
 \subsection{Perspectives d'amélioration}
-\label{sec:org350ed6b}
+\label{sec:org27eacb8}
 \subsubsection{Extensions théoriques}
-\label{sec:orgadc6d65}
+\label{sec:org93d91dd}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./svg/long-term-goal.pdf}
-\caption{\label{fig:org4ef3224}Vers une ingénierie sans confiance ?}
+\caption{\label{fig:org9f2ee2b}Vers une ingénierie sans confiance ?}
 \end{figure}
 \subsubsection{Améliorations techniques}
-\label{sec:org484d27d}
+\label{sec:orga6c76ba}
 \subsubsection{Extensions domaines}
-\label{sec:org7174e8b}
+\label{sec:org533ba29}
 \subsection{Impact scientifique et industriel}
-\label{sec:org4f1466c}
+\label{sec:org7597866}
 \subsubsection{Impact sur la recherche}
-\label{sec:org5373fbe}
+\label{sec:orgc76d573}
 \subsubsection{Impact industriel}
-\label{sec:org46baa28}
+\label{sec:orgbde4d30}
 \subsubsection{Impact sociétal}
-\label{sec:org9f542f4}
+\label{sec:org14d8684}
 \clearpage
 \section{Conclusion générale}
-\label{sec:org939865c}
+\label{sec:orge803294}
 Synthèse des contributions
 
 Contribution théorique majeure
@@ -848,56 +845,56 @@ L'avenir, un terrain fertile pour l'ingénierie intégrée ?
 Les futures ruptures technologiques (?)
 \clearpage
 \section{Références du document}
-\label{sec:org0233442}
+\label{sec:org4c3c3cc}
 \subsection{Liste des figures}
-\label{sec:org63c0c10}
+\label{sec:orgaffb63c}
 \renewcommand{\listfigurename}{\vspace{-2em}}
 \listoffigures
 \subsection{Liste des tableaux}
-\label{sec:org8fe4ac0}
+\label{sec:orgc3c0a9c}
 \renewcommand{\listtablename}{\vspace{-2em}}
 \listoftables
 \subsection{Liste des codes sources}
-\label{sec:org3d8cd15}
+\label{sec:orgc7486d8}
 \renewcommand{\lstlistingname}{\vspace{-2em}}
 \listoflistings
 \subsection{Liste des glosses}
-\label{sec:org02a6de4}
+\label{sec:org926ae8e}
 \textbf{\hypertarget{gls-25}{Jalon}}\hspace*{1em}Etape de validation partielle d'un projet.\hspace*{.5em}\pageref{gls-1-use-1}
 \subsection{Liste des acronymes}
-\label{sec:org4f44166}
-\textbf{\hypertarget{gls-78}{BPMN}}\hspace*{1em}Business Process Model and Notation\hspace*{.5em}\pageref{gls-7-use-1}
+\label{sec:orgc9787c8}
+\textbf{\hypertarget{gls-80}{BPMN}}\hspace*{1em}Business Process Model and Notation\hspace*{.5em}\pageref{gls-7-use-1}
 
-\textbf{\hypertarget{gls-77}{BPM}}\hspace*{1em}Business Process Model\hspace*{.5em}\pageref{gls-6-use-1}
+\textbf{\hypertarget{gls-79}{BPM}}\hspace*{1em}Business Process Model\hspace*{.5em}\pageref{gls-6-use-1}
 
-\textbf{\hypertarget{gls-67}{BDD}}\hspace*{1em}Behavior-Driven Development\hspace*{.5em}\pageref{gls-3-use-1}
+\textbf{\hypertarget{gls-69}{BDD}}\hspace*{1em}Behavior-Driven Development\hspace*{.5em}\pageref{gls-3-use-1}
 
-\textbf{\hypertarget{gls-117}{DDD}}\hspace*{1em}Domain-Driven Design\hspace*{.5em}\pageref{gls-5-use-1}
+\textbf{\hypertarget{gls-121}{DDD}}\hspace*{1em}Domain-Driven Design\hspace*{.5em}\pageref{gls-5-use-1}
 
-\textbf{\hypertarget{gls-179}{ICS}}\hspace*{1em}International Classification for Standards\hspace*{.5em}\pageref{gls-10-use-1}, \pageref{gls-10-use-2}, \pageref{gls-10-use-3}
+\textbf{\hypertarget{gls-185}{ICS}}\hspace*{1em}International Classification for Standards\hspace*{.5em}\pageref{gls-10-use-1}, \pageref{gls-10-use-2}, \pageref{gls-10-use-3}
 
-\textbf{\hypertarget{gls-318}{SysML}}\hspace*{1em}System Model Language\hspace*{.5em}\pageref{gls-9-use-1}
+\textbf{\hypertarget{gls-330}{SysML}}\hspace*{1em}System Model Language\hspace*{.5em}\pageref{gls-9-use-1}
 
-\textbf{\hypertarget{gls-310}{SQL}}\hspace*{1em}Structured Query Language\hspace*{.5em}\pageref{gls-2-use-1}
+\textbf{\hypertarget{gls-322}{SQL}}\hspace*{1em}Structured Query Language\hspace*{.5em}\pageref{gls-2-use-1}
 
-\textbf{\hypertarget{gls-320}{TDD}}\hspace*{1em}Test-Driven Development\hspace*{.5em}\pageref{gls-4-use-1}
+\textbf{\hypertarget{gls-332}{TDD}}\hspace*{1em}Test-Driven Development\hspace*{.5em}\pageref{gls-4-use-1}
 
-\textbf{\hypertarget{gls-325}{UML}}\hspace*{1em}Unified Model Language\hspace*{.5em}\pageref{gls-8-use-1}
+\textbf{\hypertarget{gls-337}{UML}}\hspace*{1em}Unified Model Language\hspace*{.5em}\pageref{gls-8-use-1}
 
 \clearpage
 \section{Bibliographie}
-\label{sec:org18fa8ea}
+\label{sec:org3a10577}
 \printbibliography[heading=none]
 
 \clearpage
 
 \appendix
 \section{Analyse des normes}
-\label{sec:org5656cea}
+\label{sec:orgece216d}
 \subsection{Introduction}
-\label{sec:org94c9099}
+\label{sec:orgd4c5ec8}
 \subsection{Périmètre de l'étude}
-\label{sec:orga4dd353}
+\label{sec:orgb5ef134}
 L’étude se concentre sur les normes volontaires françaises (NF) référencées par AFNOR et publiées à la date de la collecte.
 Le périmètre inclut toutes les normes relevant du domaine “Construction et urbanisme” selon la classification AFNOR Norm’Info.
 
@@ -909,13 +906,15 @@ Les normes d’application obligatoire sont issues de ce corpus (via réglementa
 
 Par l'analyse des textes et de leurs métadonnées, nous tenterons de répondre aux questions suivantes :
 
-Q1 : Quelle est l’ampleur documentaire du corpus normatif applicable à l’industrie de la construction, mesurée en nombre de documents et en volume paginé ?
-Q2 : La filière construction présente-t-elle une densité normative supérieure à celle d’autres secteurs industriels comparables, en termes de nombre de normes actives et de leur volumétrie documentaire ?
-Q3 : Comment les textes normatifs se répartissent-ils entre les sous-domaines techniques, professions et spécialités représentatives de la filière construction, selon les descripteurs et indices de classement ?
+\begin{itemize}
+\item Q1 : Quelle est l’ampleur documentaire du corpus normatif applicable à l’industrie de la construction, mesurée en nombre de documents et en volume paginé ?
+\item Q2 : La filière construction présente-t-elle une densité normative supérieure à celle d’autres secteurs industriels comparables, en termes de nombre de normes actives et de leur volumétrie documentaire ?
+\item Q3 : Comment les textes normatifs se répartissent-ils entre les sous-domaines techniques, professions et spécialités représentatives de la filière construction, selon les descripteurs et indices de classement ?
+\end{itemize}
 \subsection{Méthodologie}
-\label{sec:org7c14f04}
+\label{sec:org19b9b95}
 \subsubsection{Cadre juridique}
-\label{sec:org15af1b8}
+\label{sec:org36ddb86}
 Il n'existe pas de base de données publiques recenssant l'ensemble des textes de normes et leurs métadonnées. Il convient donc de constituer cette base de donnée en collectant les informations publiquement accessibles.
 
 Cette opération implique l'emplois du webscraping.
@@ -961,7 +960,7 @@ Les copies et reproductions numériques effectuées lors d'une fouille de textes
 -- Article L122-5-3\autocite{CodeProprieteIntellectuelle}
 \end{quote}
 \subsubsection{Données collectées}
-\label{sec:orgf31c719}
+\label{sec:orgbe018a6}
 Métadonnées accessibles publiquement via Norm’Info et Boutique AFNOR :
     Référence (ex : NF C15-100)
     Titre
@@ -973,12 +972,12 @@ Métadonnées accessibles publiquement via Norm’Info et Boutique AFNOR :
     Domaine technique
     Commission de normalisation
 \subsubsection{Protocole technique}
-\label{sec:org54b7fdf}
+\label{sec:org1ee43ba}
 Méthode de collecte : Web scraping (à documenter)
 
 Limite : seules les normes publiées et publiquement référencées sur le site marchand de l'AFNOR disponibles à la vente ou référencées, sont incluses.
 \subsection{Méthodes d'analyse}
-\label{sec:org10f9eeb}
+\label{sec:org84ec3d6}
 Analyse descriptive :
     Nombre total de documents / pages
     Évolution temporelle des publications (si date disponible)
@@ -992,7 +991,7 @@ Analyse thématique / taxonomique :
 
 Outils recommandés : Python (pandas + matplotlib)
 \subsection{Résultats obtenus}
-\label{sec:orga8da7c7}
+\label{sec:org7df4a8b}
 Cartographie de la norme dans la construction
 
 Poids normatif par spécialité
@@ -1001,6 +1000,6 @@ Identification d’une sur-normativité éventuelle
 
 Premiers indicateurs pour évaluer la « charge de la norme »
 \subsection{Discussion et perspectives}
-\label{sec:org9400144}
+\label{sec:orgdfff58a}
 \clearpage
 \end{document}

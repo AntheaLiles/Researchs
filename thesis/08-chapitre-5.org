@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Protocole d'essais
 
 ** Cas d'étude 1 : 

@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 Remercier :
 1. Christophe Kolski
 2. Alexis Heloir

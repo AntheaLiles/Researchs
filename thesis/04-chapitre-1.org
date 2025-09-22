@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Les contraintes de la construction
 *** Taxonomie des contraintes
 Nature technique :
@@ -155,24 +156,19 @@ Très hétéroclite, besoin d’abstraction pour généraliser les approches.
 La définition de l'environnement d'étude en particulier duquel le périmètre de texte institutionnel applicable n'est pas aisé à réalisé.
 Il manque en ce sens un mécanisme de sélection de l'environnement permettant de soucer automatiquement les contraintes appropriées.
 
-#+BEGIN_EXAMPLE
 Exemple 1 : Travaux dans une base opérationnelle
 - imposition du respect de l'Arrêté Qualité de 1984 (AQ84)
 - import des contraintes de l'AQ84 dans la base des contraintes du projet.
-#+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
+
 Exemple 2 : Travaux de distribution d'énergie électrique
 - imposition du respect de la norme obligatoire NF C15-100
 - import des contraintes de la NF C15-100 dans la base des contraintes du projet.
-#+END_EXAMPLE
 
 
-#+BEGIN_EXAMPLE
 Exemple 3 : Travaux d'installation d'équipement dans une zone sismique 3
 - imposition d'une résistance sismique particulière des équipements
 - import des contraintes de l'EUROCODE 3 dans la base des contraintes du projet.
-#+END_EXAMPLE
 
 *** Opportunités de recherche
 Recherches potentiellements associées : gestion du contexte, quality information framework

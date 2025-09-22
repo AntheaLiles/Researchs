@@ -1,3 +1,4 @@
+#+glossary_sources: ~/org/glossary.org
 ** Contexte et motivation
 *** Sclérosité systémique des lotissements traditionnels
 => Chaines de valeurs traditionnelles devenu rigides et incapable de s'adapter ou d'évoluer à cause de

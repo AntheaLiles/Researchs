@@ -117,6 +117,7 @@
       \verb{url}
       \verb https://hal.inrae.fr/hal-04803028
       \endverb
+      \keyw{broken}
     \endentry
     \entry{CodeProprieteIntellectuelle}{legislation}{}{}
       \field{sortinit}{6}
@@ -128,6 +129,7 @@
       \verb{file}
       \verb C:\Users\CPIERRE\Documents\My Library\storage\6VPMU3CD\Code de la propriété intellectuelle.pdf
       \endverb
+      \keyw{broken}
     \endentry
   \enddatalist
 \endrefsection
