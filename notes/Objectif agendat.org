@@ -1,0 +1,372 @@
+* Types
+
+int8
+int16
+int32
+int64
+int128
+
+uint8
+uint16
+uint32
+uint64
+uint128
+
+fint8
+fint16
+fint32
+fint64
+fint128
+
+float
+
+decimal
+
+numeric
+
+char
+nchar
+string
+
+pi, phy, etc. => formula + limit => π i32
+Précalculé ?
+
+* Style and types of code
+
+Programmation logistique
+
+Dynamic programing > recurtions & trees
+Monads (>>=) over side effects (void)
+Lazy computing, Lazy load, 
+
+Parallele, multi-thread, concurrent, asynchrone (optionnaly ?)
+
+Programmation fonctionnelle concurrente par contraintes paresseuses
+
+* Ultrapersonnalisation
+:PROPERTIES:
+:CREATED:  [2024-07-29 Mon 19:26]
+:END:
+
+Rapprochement entre industrie 5.0 (ultra personnalisation) et l'industrie de la construction et l'ingéniérie de systeme complexes (construction en série de pièces uniques
+
+* Token Shop
+:PROPERTIES:
+:CREATED:  [2024-07-29 Mon 21:26]
+:END:
+
+Créer un store pour les collaborateurs pour dépenser les tokens.
+- extra CP
+- Goodies & Vetements
+- Actions
+- etc.
+
+* LispOS
+:PROPERTIES:
+:CREATED:  [2024-09-01 Sun 23:35]
+:END:
+
+POSIX : PicoLisp (dialecte)
+OS complet : Mezzano, LispOS
+Langage cible : Common Lisp
+Environnement de développement d'OS : Movitz, Lone, Schemix
+
+Architecture Hexagonale
+- Micro-noyau
+    - ?
+- Serveurs en espace utilisateur
+    - ?
+- Gestion de la mémoire
+    - Automatic Reference Counting
+    - Garbage collection 
+    - One Reference Only (NewLisp)
+- Ordonnanceur de processus
+    - Common Lisp Scheduler
+    - CLPM
+- Communication inter-processus (IPC)
+    - Losak
+- Gestion des périphériques
+    - ?
+- Système de fichiers
+    - LambdaLite
+    - CLDB
+    - Manardb
+    - PLOB! 
+    - Datafly
+    - DABA
+- Interface utilisateur
+    - IUP
+- Applications utilisateur
+    - Emacs
+    - Nyxt
+    - Lum
+    - Rune
+- Constructeur d'application
+    - ASDF
+- Lanceur d'application 
+    - cl-launch
+- Gestion des versions
+    - cl-git
+- Gestion des dépendances 
+    - Guix
+- Isolation
+    - Sandboxing => cl-isolated
+    - VM => ?
+    - Micro-VM => ?
+    - Conteneur => ?
+
+* Lish
+:PROPERTIES:
+:CREATED:  [2024-09-04 Wed 18:57]
+:END:
+
+Lish Is a SHell
+Lisp In a SHell
+
+Utilisation de la synthaxe Common Lisp comme fondement des commandes shell avec des commandes simples, fonctionnelles et explicites :
+
+Simple condition
+#+Begin_src Lish
+username$(list :filetype 'mp3 "~/documents")
+#+End_src
+
+Multiples conditions
+#+Begin_src Lish
+username$(list (:filetype mp3 wav flac) "~/documents")
+#+End_src
+
+* Griade
+:PROPERTIES:
+:CREATED:  [2024-09-04 Wed 19:10]
+:END:
+
+Griade Is A Database Environment
+Get Informations At Deep Elevation
+
+Système de gestion de base de données interfaçant le noyau et l'espace utilisateur.
+
+* Soil
+:PROPERTIES:
+:CREATED:  [2024-09-22 Sun 16:40]
+:END:
+
+Ce projet ne cherche pas à réinventer la roue ni à créer de nouveaux paradigmes.
+
+L'intention est de tirer avantage des connaissances existantes en les contextualisant dans un environnement cohérent.
+
+* KonSept : K7 (new lisp)
+:PROPERTIES:
+:CREATED:  [2024-10-08 Tue 08:14]
+:END:
+
+Message d'erreurs du shell eg :
+Core dumped    (╯° □°） ╯︵ ┻━┻ 
+
+-----
+
+Langage pure fonctions :
+Tout est fonction 
+(defun data-struc ...) ;; K7
+
+Retourne des instructions d'allocation de mémoire etc au runtime 
+
+(expand (defun data-struct ...) ;; K7
+-> (alloc i32 ...) ;; WAT
+
+---- 
+
+**Concept et objectifs**
+
+Le nouveau langage de publication proposé, que nous appellerons **LispTeX**, est conçu pour remplacer les systèmes existants comme TeX et LaTeX, tout en intégrant la puissance de la syntaxe Lisp. Ce langage sera spécifiquement destiné à être une extension d'Org-mode, permettant aux utilisateurs de tirer parti de la structure et des fonctionnalités d'Org tout en bénéficiant d'une syntaxe plus expressive et programmable.
+
+Sourcer les modules TeX et comparer avec la synthaxe Org-Mode
+Identifier toutes les options manquantes
+Proposer une interface WYSIWYM come LyX
+
+**Caractéristiques principales**
+
+- **Syntaxe Lisp** : Utilisation de la syntaxe Lisp pour définir des documents, ce qui permet une manipulation facile des structures de données et une extensibilité à travers des macros.
+  
+- **Séparation du contenu et de la présentation** : Comme LaTeX, LispTeX encouragera la séparation entre le contenu (texte) et sa présentation (mise en forme), permettant aux utilisateurs de se concentrer sur l'écriture sans se soucier du formatage immédiat.
+
+- **Intégration avec Org-mode** : Les utilisateurs pourront facilement intégrer leurs documents LispTeX dans le flux de travail Org-mode, en utilisant des balises et des structures familières.
+
+- **Extensibilité** : Grâce à la nature macro de Lisp, les utilisateurs pourront créer leurs propres commandes et environnements personnalisés, facilitant l'adaptation du langage à des besoins spécifiques.
+
+**Syntaxe proposée**
+
+Voici quelques exemples illustrant comment pourrait se présenter la syntaxe de LispTeX :
+
+**Définition d'un document**
+
+```lisp
+(document
+  (title "Mon Document")
+  (author "Auteur")
+  (date "2024-11-12")
+  (content
+    (section "Introduction"
+      (paragraph "Ceci est une introduction à mon document."))
+    (section "Méthodologie"
+      (subsection "Étape 1"
+        (paragraph "Description de l'étape 1."))
+      (subsection "Étape 2"
+        (paragraph "Description de l'étape 2.")))))
+```
+
+**Mise en forme du texte**
+
+Pour le formatage du texte, nous pourrions utiliser des macros Lisp :
+
+```lisp
+(bold "Texte en gras")
+(italic "Texte en italique")
+```
+
+**Éléments mathématiques**
+
+Pour les notations mathématiques, une syntaxe similaire à celle de LaTeX pourrait être adoptée :
+
+```lisp
+(equation
+  (equal
+    (quadratic-formula)
+    (/ (- b (sqrt (- (* b b) (* 4 a c))) ) (* 2 a)))
+)
+```
+
+**Fonctionnalités avancées**
+
+- **Support des références croisées** : Comme dans LaTeX, le langage pourrait inclure un système robuste pour gérer les références croisées entre sections, figures et tableaux.
+
+- **Exportation vers divers formats** : En s'intégrant à Org-mode, LispTeX pourrait permettre l'exportation facile vers HTML, PDF, et d'autres formats pris en charge par Org.
+
+- **Personnalisation via Elisp** : Les utilisateurs pourraient configurer leur environnement de publication via des variables Elisp, permettant une personnalisation approfondie des comportements d'exportation.
+
+**Conclusion**
+
+LispTeX représente une approche innovante pour la publication scientifique et technique, combinant la puissance de la syntaxe Lisp avec les fonctionnalités éprouvées d'Org-mode. En facilitant l'écriture structurée tout en offrant une flexibilité maximale grâce à son extensibilité, ce langage pourrait devenir un outil précieux pour les chercheurs et les professionnels souhaitant optimiser leur flux de travail.
+
+* Gain perf requete columnar vs row
+:PROPERTIES:
+:CREATED:  [2024-12-12 Thu 00:25]
+:END:
+
+"Trouve la syllabe avant la rime en [oa]"
+
+Recherche en ligne :
++-------
+|Newton, voyant tomber la pomme,
++------
+|Conçut la matière et ses lois :
++-------
+|Oh ! surgira-t-il un_e_ *fois*
++-------
+|Un Newton pour l'âme de l'homme ?
++-------
+
+Recherche en colonne :
+
+|  1.    |  2.   |
++-------+------+
+| New | ton, | voy | ant | tom | ber | la | pomme |
+| Con | çut | la | ma | tièr | e et | ses | lois|
+| Oh ! | Sur | gi | ra- | t-il | un | _e_ | *fois* |
+| Un | New | ton | pour | l'am | e | de | l'homme|
++-------+------+
+
+
+Rene-francois Sully Prudhomme
+Le monde des ames
+
+* Memory management
+:PROPERTIES:
+:CREATED:  [2025-03-29 Sat 22:56]
+:END:
+
+You shall not have to manage memory by yoursefl.
+
+You shall not have to use a garbage collector.
+
+Nothing shall remain in memory at all.
+
+You can't have memory breach if you don't have things in memory in the first place.
+
+ * Data structures shall be provided by a data management system.
+
+ * It shall never be any computing ops that enter a waiting mode.
+
+So, if any event shall be awaited for, it must be a signal trigger from the source.
+
+* Sources, Licensing and Processing
+:PROPERTIES:
+:CREATED:  [2025-03-29 Sat 22:59]
+:END:
+
+Shall be shared on a distributed network.
+
+CI CD standards shall be aknowledged over this network.
+
+Regulation works (i.e. standards and regulations) shall too.
+
+* Web archives shall be distributed
+:PROPERTIES:
+:CREATED:  [2025-03-29 Sat 23:16]
+:END:
+
+* Quest
+
+Le projet Konsept est une meta-quête
+Elle présente :
+- des étapes d'accomplissement
+- divers chemins d'exploration
+- des défis à résoudre
+
+Il serait possible de dessiner cette quête et de la rendre participative
+
+"Define the future"
+
+* System for
+
+Types (int, float, fixed, etc.)
+Units (m, l, Pa...)
+Derived units (inches form meters...)
+Indexes (Matrices, Vectors, Arrays...)
+Operators
+
+Physics stuffs eg Rho for mass/volume
+
+Remarquable numbers (Pi, Phi...)
+
+Universal constants (Plank constant...)
+
+* Langage
+
+Arrondi inf, moins égal -=
+Arrondi sup, plus égal +=
+Avec - et + en diacritique
+
+* Semantique et syntaxe
+
+ * A section
+A section starts with an asterix.
+A section composed from one to many sentenses.
+
+A sentense begins with a capitals and ends with a dot.
+A sentense is a computationable instruction.
+A sentense is composed with words.
+
+A word is a token.
+A word is a function.
+A word is defined.
+A word has a type.
+
+A type can be one of : noun, verb, conditional, transitionnal.
+
+
+* Rail-On
+
+Créer un vrais calendrier partagé => Agendat personnel, de groupe, etc. connecté aux tâches, planning & co. 
+
+Main goal : pouvoir caler des évènements de groupes (weekly, monthly, etc.) Ou avec une équipe diverse (eg. Equipes capgémini + Equipes Ferlioz + Equipe EESF => compliqué de trouver des créneau sans partage des dispos)
+

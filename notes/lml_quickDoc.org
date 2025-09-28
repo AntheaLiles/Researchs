@@ -1,0 +1,176 @@
+#+TITLE: TeXDown : Redéfinition des LML par une approche mnémonique inspirée d'APL
+
+* TODO Introduction
+* TODO Etat de l'art
+** Langages de notes
+Markdown est le LML le plus populaire mais aussi le plus critiqué. Sa définition simple (MD Basics) en fait un langage très facile d'approche, facile à apprendre par tout individu. Ses faiblaisses résident néanmoins de la diversité de ses implémentations. MD Basic est supporté de façon homogène mais n'inclus pas l'ensemble des usages textuels possibles. Ces ommissions ont tendu à la création de douzaines de dérivés non cohérents entres eux. Les utilisateurs sont donc contraint d'apprendre plusieurs Markdown selon l'environnement dans lequel ils rédigent leurs documents.
+
+** Langages de wiki
+
+** Langages de documents
+
+* DOING Syntaxe
+** Formatings
+A formatted text shall be explicitly surrounded by its markup.
+
+#+CAPTION: Text formatings
+|-----------+--------+---------|
+| Type      | Lemma  | Variant |
+|-----------+--------+---------|
+| Bold      | *word* | *w*orks |
+| Italique  | /word/ | /w/orks |
+| Inline Math | $word$ | $w$orks|
+| Underline | _word_ | _w_orks |
+| Highlight | =word= | =w=orks |
+| Strique   | ~word~ | ~w~orks |
+| Verbatim  | :word: | :w:orks |
+| Inline Code |`word`| `w`orks |
+| Superscript |+word+| +w+orks |
+| Subscript | -word- | -w-orks |
+| Comment   | \word\ | \w\orks |
+|-----------+--------+---------| 
+
+Text formatting can be combined to a certain extent. In the table [[table:compatibility]], combining the subscript and superscript outputs a middlescript.
+
+#+CAPTION: Compatibility matrix between formatings
+#+NAME: table:compatibility
+|-------------+----+---+---+---+---+---+---+---+---+---+----+----|
+| Beacon Type | N° | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|-------------+----+---+---+---+---+---+---+---+---+---+----+----|
+| Comment     |  1 | x | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 |  0 |  0 |
+| Superscript |  2 | 1 | x | 1 | 1 | 1 | 1 | 1 | 1 | 1 |  0 |  0 |
+| Subscript   |  3 | 1 | 1 | x | 1 | 1 | 1 | 1 | 1 | 1 |  0 |  0 |
+| Strike      |  4 | 1 | 1 | 1 | x | 1 | 1 | 1 | 1 | 1 |  0 |  0 |
+| Highlight   |  5 | 1 | 1 | 1 | 1 | x | 1 | 1 | 1 | 1 |  0 |  0 |
+| Bold        |  6 | 1 | 1 | 1 | 1 | 1 | x | 1 | 1 | 0 |  0 |  0 |
+| Italique    |  7 | 1 | 1 | 1 | 1 | 1 | 1 | x | 1 | 0 |  0 |  0 |
+| Underline   |  8 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | x | 0 |  0 |  0 |
+| Verbatim    |  9 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | x |  0 |  0 |
+| Inline Math | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  x |  0 |
+| Inline Code | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  0 |  x |
+|-------------+----+---+---+---+---+---+---+---+---+---+----+----|
+
+There are only two kinds of lists :
+- Unordered ones that always start with a ~ - ~ followed by a space.
+- Ordered ones that always start with ~ 1. ~ followed by a space.
+These beginnings of lists are called "Bullets".
+
+Sublevels (nested lists) must have 4 spaces before the sub bullet.
+#+begin_example:
+- First unordered level list
+    - Second unordered level list
+1. First ordered level list
+    1.1. Second ordered level list
+#+end_example
+
+The export backend shall provide settings to customise desired formatting outputs of ordered lists (alpha-numeric numbering, dots, parentheses...) 
+
+** Foreign entries
+
+#+CAPTION: Foreign entries
+|-----------+--------+----------| 
+| Type      | Lemma  | Behavior |
+|-----------+--------+----------|
+| LaTeX     | \word  | TeX Macro|
+| Ref Link  | @element |        |
+| Tag       | #tag   |          |
+| Property  | propName:value |  |
+|-----------+--------+----------|
+
+** Callouts
+
+Callouts are bidirectional links inside the current document. They are used to quickly jump to content, a reference, or a definition.
+
+#+CAPTION: Text callouts
+|-----------+--------+----------| 
+| Type      | Lemma  | Behavior |
+|-----------+--------+----------|
+| Reference | [ref:@entry] |    |
+| Foot Note | [fn:note]  |      |
+| Quote     | [cite:@entry]|    |
+| Figure ref| [fig:name] |      |
+| Table ref | [tbl:name] |      |
+| Code ref  | [src:name] |      |
+| Header jump | [header] |      |
+|-----------+--------+----------|
+
+** Links
+
+Any link follows the lemma ~[[CONTEXT:LINK::QUERY][TEXT]]~ where only the ~LINK~ must be written. 
+- ~CONTEXT~ provides extra information for the link display. One can define an in-buffer display of an image, a player for a video, a display of the last RSS entry, etc.
+- ~LINK~ is the path of the resource on the World Wide Web, in a file system, or on any supported network. We can call a `Header ID` from the current document or from another one.
+- ~QUERY~ is used to jump to a specific section of the resources (e.g., a Header, a Page, a Timestamp...) 
+  - Querying a known value can be done with ~?key:value~, where the value can be any string
+  - Querying an unknown value can be done either with ~(regex)~, ~{datalog}~ or ~[sql-like]~.
+- ~TEXT~ is the text to display instead of the link.
+
+
+#+CAPTION: Link types
+|-----------+--------+----------| 
+| Type      | Lemma  | Behavior |
+|-----------+--------+----------|
+| Web link  | [[https:link]] |  |
+| File      | [[file:link]]  |  |
+| Image     | [[img:link]] |    |
+| Document  | [[doc:link]] |    |
+| Video     | [[vid:link]] |    |
+| Header ID | [[id:headerId]] | |
+| RSS Flow  | [[rss:link]] |    |
+| IRC Flow  | [[irc:link]] |    | 
+| Email     | [[mailto:email]]| |
+|-----------+--------+----------|
+
+** Environments
+One might consider using a separate file to manage, preserve, and share all its configurations.
+That might be a file for LML styles and tweaks, one for special export settings (e.g., TeX, ODT, or HTML).
+A good way to go is by declaring at the first line of the document 
+: #+environment: [[file:file1]] [[file:file...]] [[file:fileN]]
+
+*** Text layout
+First, define a style like
+: #+text_style: name:paraghaphe al:justif size:12 long:80char color:black font:source-sans-pro
+
+Then apply it, it will be set from the statement until the new one.
+: #+text: style:paragraphe
+
+** Text blocks
+Any text blocks have an opening `#+begin_` and a closing `#+end_` beacon followed by the block type.
+
+#+CAPTION: Types of text blocks
+|------+--------------------|
+| Type | Behavior           |
+|------+--------------------|
+| code | a code environment |
+| multicols | a multicolumns display |
+|------+--------------------|
+
+* DOING Consistency analysis
+A consistent lightweight markup language shall have only one way to format text.
+
+Markdown variants on the [[table:consistency]] are limited to those introduced by [[https://www.rfc-editor.org/rfc/rfc7764][RFC7764]].
+
+#+CAPTION: Text formatting consistency
+#+NAME: table:consistency
+|--------+-----+-----+------+-----|
+| Format | M⬇️ | Org | Mine | MDX |
+|--------+-----+-----+------+-----|
+| Bold   |   2 |     |    1 |  |
+| Italique | 2 |     |    1 |  |
+| Ordered list | 1 |  |   1 |  |
+| Unordered list | 3 |  | 1 |  |
+| Underline |  |  | 1 |  |
+| Highlight | 0 | 0 | 1 |  |
+| Strique   |  |  | 1 |  |
+| Verbatim  |  |  | 1 |  |
+| Inline Code |  |  | 1 |  |
+| Superscript |  |  | 1 |  |
+| Subscript |  |  | 1 |  |
+| Comment   |  |  | 1 |  |
+| To Do     |  |  | 1 |  |
+|--------+-----+-----+------+-----|
+# add Notion, AsciiDoc, atx, BBCode, Creole, Crossmark, Djot, Epytext, Haml, JsonML, MakeDoc, POD (Perl), reST (Python), RD (Ruby), Setext, SiSU, SPIP, Xupl, Texy!, Textile, txt2tags, UDO, Wikitext, Curl.
+
+* TODO Capacity analysis
+
+* TODO Typesystem compatibility
+# study Scrible, Typst, LaTeX, HTML...

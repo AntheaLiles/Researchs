@@ -1,0 +1,143 @@
+* Systèmes IoT et contrôle industriel 
+– Normes pour l’IoT 
+    - IEEE P2413‑2019, cadre d’architecture IoT et 
+    - IEEE 1451 pour les interfaces de capteurs/actionneurs. 
+- Protocoles industriels standard :
+    - OPC UA (IEC 62541) pour l’interopérabilité des automates industriels, 
+    - Modbus, 
+    - DNP3,
+    - IEC 60870‑5‑104 et
+    - IEC 61850 (automatisation de postes électriques), 
+    - BACnet (automatisation du bâtiment),
+    - MQTT (IIoT)
+    - SNMP (RFC 3410…) pour la gestion réseau. 
+    - IEC 61970 Modèle d’Information Commun pour l’énergie 
+    - IEC 61968 pour les systèmes électriques intelligents. 
+    - Normes ISA-95 (IEC 62264) et
+    - ISA-88 (IEC 61512) pour l’intégration entreprise‑atelier de production, etc.
+
+* BIM, CAO et ingénierie 
+– Normes BIM :
+    - ISO 19650 (gestion de l’information BIM), 
+    - IFC (ISO 16739) pour échange de données BIM ouvertes,
+    - COBie 
+    - NBIMS, 
+    - BIM Collaboration Format.
+- CAO/PLM : 
+    - ISO 10303 (STEP) pour la représentation et l’échange des données produit/CAO (p. ex. AP203/AP242 pour le 3D). 
+- Normes d’ingénierie : 
+    - ISO 128/ISO 129 pour le dessin technique et le cotation, 
+    - ISO 5455/ISO 5456 pour l’implantation, 
+    - ISO 216 (formats papier), 
+    - IEC 81346 (désignations systématiques), etc.
+
+* Systèmes géospatiaux (SIG/GIS) 
+– Standards de l’OGC : 
+    - Web Map Service WMS, 
+    - Web Feature Service WFS, 
+    - Geography Markup Language GML, 
+    - GeoPackage, 
+    - SensorThings API, etc.
+- ISO TC211 (ISO 191xx) pour la géomatique 
+    - ISO 19115 pour métadonnées spatiales, 
+    - ISO 19107 pour topologie, etc. 
+- Protocoles d’échange : 
+    - GeoJSON, 
+    - KML (OGC), 
+    - WCS/WFS (OGC), etc.
+
+* Gestion des connaissances & e-learning 
+– Normes ISO 30401 (systèmes de management des connaissances). 
+- Standards e‑learning : 
+    - SCORM (Sharable Content Object Reference Model) et 
+    - xAPI (Experience API/Tin Can, IEEE 9274.1.1‑2023) pour le contenu pédagogique et son suivi. 
+    - IMS Common Cartridge (IMS Global) pour paquetage de cours. 
+    - IEEE LTSC (Learning Technology Standards) pour LMS, 
+    - OAI/ORE pour réutilisabilité, etc.
+
+* Traitement et visualisation de données
+- Cadres d’observabilité : 
+    - OpenTelemetry (CNCF) comme standard vendor‑neutre pour traces, métriques et logs. 
+    - Vocabulaire DCAT (W3C) pour fédérer les métadonnées de catalogues de données. 
+- Standards de flux et d’intégration : 
+    - CSV (RFC 4180), 
+    - JSON (ECMA-404), 
+    - XML (W3C), 
+    - OData (OASIS). 
+    - Normes de métadonnées (ISO/IEC 11179), 
+    - data lineage (W3C PROV). 
+- Visualisation : 
+    - recommandations W3C (SVG, HTML5 Canvas, WebGL) et 
+    - charte graphiques (ISO 9241-151 ergonomie UI).
+
+* Modélisation visuelle et no-code
+- Normes de modélisation métier : 
+    - BPMN (ISO/IEC 19510) pour modéliser les processus métier, 
+    - DMN pour la décision,
+    - UML (ISO/IEC 19505) pour modéliser systèmes. 
+    - IDEF, 
+    - ArchiMate (TOGAF) pour architectures. 
+
+Plateformes no-code/low-code s’appuient souvent sur ces notations (ex. Node‑RED pour IoT, Microsoft Power Platform, etc.).
+
+* Systèmes d’entreprise 
+– Normes et bonnes pratiques globales : 
+    - ISO 9001 (qualité), 
+    - ISO/IEC 20000 (gestion des services IT), 
+    - COBIT (gouvernance IT), 
+    - ITIL (ITSM). 
+- PLM/ERP : reprise des normes STEP/IFC pour l’ingénierie produit, 
+- ALM/DevOps : 
+    - ISO/IEC 12207 et 
+    - 15288 pour cycle de vie logiciel/système. 
+- Gestion patrimoniale : 
+    - ISO 55000 (management des actifs physiques, p. ex. GMAO). 
+- Gestion RH : 
+    - ISO 30414 (reporting capital humain). 
+- CRM/Sales : 
+    - ISO 10002 (satisfaction client), 
+    - IFRS (finances). 
+- GMAO/CMMS : 
+    - ISO 55000. 
+- Contrats et collaboration : 
+    - ISO 44001 (relations collaboratives). 
+- Agile/ALM : 
+    - CMMI ou 
+    - Agile frameworks (Scrum Guide, SAFe) pour l’ingénierie logicielle et projets.
+
+* Gestion de projets & portefeuilles
+- Normes organisationnelles :
+    - PMI PMBOK, 
+    - PRINCE2,
+    - ISO 21500 lignes directrices sur la gestion de projet.
+- Gestion de programmes et de portefeuilles : 
+    - ISO 21502 (programmes) et 
+    - ISO 21503 (portefeuilles). 
+    - Méthodes Agile (Scrum, Kanban, SAFe) et 
+    - Standards de management de projet 
+        - ISO 10006 pour projets de qualité, 
+        - ISO 10007 pour configuration.
+
+* Administration TI & réseaux 
+– IT Service Management : 
+    - ISO/IEC 20000 (système de management des services), 
+    - ISO 38500 (gouvernance IT), 
+    - COBIT (gouvernance) et
+    - ITIL v4. 
+- Gestion de la continuité : 
+    - ISO 22301. 
+- Protocoles réseau :
+    - SNMP v3 (RFC 3410+). 
+    - Active Directory/LDAP, 
+    - RADIUS (accès) sont des normes de l’IETF.
+
+* Architecture système & haute disponibilité 
+– Cadre d’architecture : 
+    - ISO/IEC/IEEE 42010 pour la description des architectures systèmes. 
+- Cadres d’entreprise : 
+    - TOGAF, Zachman. 
+- Haute disponibilité : 
+    - IEC 62439‑3 (PRP/HSR pour réseaux Ethernet redondants). 
+    - ISO 22301 (continuité), guides Cloud/Kubernetes, 
+    - 12‑factor app pour applications résilientes. 
+    - Kubernetes et service mesh recommandent des patterns HA (pas de norme unique).

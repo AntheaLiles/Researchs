@@ -220,10 +220,11 @@ Sublevels (nested lists) are supported for headers, ordered and unordered lists.
 
 The export backend shall provide settings to customise desired formatting outputs of ordered lists (alpha-numeric numbering, dots, parentheses...) 
 
-** Tags
+** Snippets
 Tous les blocs de textes peuvent être associées à des tags.
 Un tag s'écrit ~#<tag>~ peut être insérée à n'importe quel endroit du bloc de texte en respectant les rêgles de balisage décrites au paragraphe [[Balisage]].
 
+#+CAPTION: liste des snippets
 |----------+------------+--------------------------------------|
 | Type     | Lemma      | Behavior                             |
 |----------+------------+--------------------------------------|

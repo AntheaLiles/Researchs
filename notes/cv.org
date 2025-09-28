@@ -1,0 +1,104 @@
+#+TITLE: DorctorPh.D. Student in constraint-based engineering
+#+SUBTITLE: Specialised in electrotechnical and HVAC studies for industrial projects
+#+AUTHOR: Cyprien PIERRE
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/org/config-tex.org"
+
+#+BEGIN_ABSTRACT
+- Travaux
+- Valeurs
+#+END_ABSTRACT
+
+
+#+LATEX: \textbf{Keywords: }\keywords{Human-Computer Interaction, Constraints, Collaboration, Engineering, Management}
+
+* Publications
+*Thesis:*
+    - set title
+*Articles:*
+    - eduBIM 2025
+*Conferences:*
+    - eduBIM 2025
+*Posters:*
+    - None
+*Others:*
+    - SBA's second white book on BIS BOS
+
+* Personal projects
+- quickDoc:
+- quickMotion:
+- quickViz:
+- quickPublish:
+
+* Education
+#+CAPTION: Degree
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+| *Date* | *Degree*   | *School*       | *Field*                                                                                        |
+|   2028 | Ph.D.      | ED PHF         | Informatique and applications - Constraint based engineering                                   |
+|   2024 | Master     | INSA UPHF      | Civil Engineering - Ingénierie Numérique Collaborative pour la Construction                    |
+|   2018 | Licence    | IUT Toulouse   | Professionnal degree in HVAC Engineering and construction                                      |
+|   2017 | Technician | Licée G. Monge | Fluides Energie and Domotique - Génie Climatique et Fluidique                                  |
+|   2016 | DUT        | IUT Nantes     | Thermal and energetic engineering                                                              |
+|   2015 | Bachelor   | Licée Livet    | Sciences et Technologies de l’Industrie et du Développement Durable - Energie et Environnement |
+
+#+CAPTION: Trainning course
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+| *Date* | *Degree* | *School* | *Field* |
+|        |          |          |         |
+
+
+* Experiences
+#+CAPTION: Professionnal experiences
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+|     *Date* | *Role*          | *Company*                            | *type*     |
+| since 2025 | Researcher      | LAMIH UMR CNRS 8201 /(Valenciennes)/ | CDD        |
+| since 2024 | Project Manager | EES FERROVIAIRE /(Rennes)/           | CDI        |
+|  2022-2024 | Engineer        | EES CLEMESSY ADS /(Rennes)/          | CDD        |
+|  2020-2022 | Consulting      | ADENTIS /(Brest)/                    | CDI        |
+|  2020-2020 | Designer        | A.T.B.E. /(Toulouse)/                | CDI        |
+|  2018-2020 | Designer        | BETEM XD /(Toulouse)/                | CDI        |
+|  2017-2018 | Designer        | SNCF GARES & CONNEXIONS /(Toulouse)/ | CDD        |
+|  2017-2017 | Designer        | LOMBARDI /(Lyon)/                    | INTERNSHIP |
+  
+#+CAPTION: Engineering experiences
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+|     *Date* | *Role*          | *Company*                             | *Localization*           |
+| since 2024 | Project Manager | Villeneuve Demain                            | Villeneuve Saint Georges |
+|  2022-2023 | BIM Manager     | Boat maintenance area                        | Toulon                   |
+|  2021-2022 | BIM Coordinator | Electricity supply plant                     | Finistere                |
+|       2020 | BIM Modeler     | Centre industriel de métallurgie extractive  | Bessines-sur-Gartempe    |
+|       2020 | BIM Modeler     | Quai Deschamps                               | Bordeaux                 |
+|       2019 | BIM Modeler     | Centre de détention                          | Koné                     |
+|       2020 | BIM Modeler     | Hôtel de police                              | Cayenne                  |
+|       2018 | BIM Modeler     | Ariane 6 Launch site                         | Kourou                   |
+|       2019 | BIM Modeler     | Centre de valorisation énergétique du SYCTOM | Saint Ouens              |
+|       2019 | BIM Modeler     | Luggages sorting – Félix Eboué's Airport     | Matoury                  |
+|       2019 | BIM Modeler     | Siège social de Latécoère                    | Toulouse                 |
+|       2019 | BIM Modeler     | AMP's Offices                                | Marseille                |
+|       2019 | BIM Modeler     | Ilot 6D Zac de Montaudran                    | Montaudran               |
+|       2019 | BIM Modeler     | Projet de conservatoire de La Rochelle       | La Rochelle              |
+|       2018 | BIM Modeler     | Cinaspic Le MA.AT                            | Arcachon                 |
+|       2019 | BIM Modeler     | Thermes de Bagnères-de-Luchon                | Bagnères-de-Luchon       |
+|       2019 | BIM Modeler     | C.R.E.A.T.I.F.                               | Gradignan                |
+|       2019 | BIM Modeler     | Collège Achmat Kartadinama                   | Grand Santi              |
+|       2016 | BIM Modeler     | Fréjus tunnel's LT ST2-01-20                 | Modane                   |
+
+#+CAPTION: Non-profit organization experiences
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+| *Date*     | *Role*          | *Name*           | *Type*               |
+| since 2015 | Founder,        | FarfaDub                | Music group          |
+| since 2015 | Founder         | The Solar Voices System | Association de fait  |
+| 2021–2022  | Trésorier       | Collectif Insolite      | Association loi 1901 |
+| 2019–2020  | Membre          | Contrasted Collective   | Association de fait  |
+| 2018–2020  | Project manager | Open My Mind Kindly     | Association loi 1901 |
+| 2018–2020  | Membre          | Asso’Berhanena Selam    | Association loi 1901 |
+| 2018–2020  | Bénévole        | Elevent                 | Association loi 1901 |
+| 2018–2019  | Bénévole        | Labophonix              | Association loi 1901 |
+| 2017–2018  | Bénévole        | Planet AJAL             | Association loi 1901 |
+| 2017–2019  | Bénévole        | Get Up                  | Association loi 1901 |
+| 2016–2018  | Membre          | 40 Hz                   | Association loi 1901 |
+
+#+CAPTION: Cultural events experiences
+#+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
+| *Date* | *Role* | *Name*      | *Type* |
+|        |        |         |        |
