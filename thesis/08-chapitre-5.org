@@ -7,6 +7,8 @@
 
 ** Analyse comparative
 *** Métriques de performance
+Comment mesurerer l'efficacité ? Temps gagné ? Nombre d'erreurs détectées en amont ?
+Envisager des questionnaires pour évaluer la charge mentale (ex: NASA-TLX) avant et après l'utilisation de votre outil.
 *** Limitations identifiées
 
 ** Conclusion
