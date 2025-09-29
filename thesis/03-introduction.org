@@ -6,7 +6,7 @@
       la dérive des régulations (normes, réglements...)   
       la résistance au changement des collaborateurs
       l'amnésie organisationnelle et l'obsolescence des pratiques
-      la déchéance du système de confiance (limites de la preuve par la formation ou par le nom)
+      la déchéance du système de confiance (limites de la preuve par la formation ou par la réputation)
 => Recherche en refonte des organisation ?
 => Identification des leviers
 
@@ -15,13 +15,16 @@
 => Nouveaux outils et moyens de production
 => Besoins, impacts et opportunités
 
+La réalisation et la maintenance des maquettes numériques, en se contentant de se superposer aux métiers historiques de la construction, court le risque d’évoluer en une forme d’organisation autonome dont l’objectif principal est la pérennisation et le développement de son organisation [cite:@lourauAnalyseInstitutionnelleQuestion1973]. Cette tendance se manifeste d’ores et déjà par la refonte des organisations de projets qui incluent des structures dédiées au BIM et composées d’une ligne de management et d’un cadre contractuel adaptés aux seules finalités de cette discipline.
+Cette transformation impacte inévitablement des cultures et attitudes historiquement adoptées par les acteurs des entreprises de la construction dont les délais serrés et les objectifs parfois antagonistes favorisent le maintien d’un statu quo au sein des organisations et des pratiques [cite:@lindbladBIMImplementationOrganisational2015;@paulagordogregorioContinuiteInformationnelleDans2023]. 
+
 *** Discorde entre ergonomie et fonctionnalités
 Objectif : définir le besoin de simplification, de convergence et d'apport de soin dans l'expérience utilisateur
 Ergonomie des interfaces, ergonomie des flux et procédures, charge cognitive & co
 => Inéficience des ergonomies applicatives et des expériences utilisateurs, dégradées au profit d'une inflation de fonctionnalités
 => Besoin de retrouver de l'abstraction
 
-Après avoir simplifier sa structure, simplifier ses outils et monter en compétences
+Après avoir simplifié sa structure, simplifier ses outils et monter en compétences
 
 Ici sourcer : Blender > All car "all-in-one" un peu moins bien c'est mieux que des verticales très maitrisés mais une absence d'interopérabilité => perte de valeur dû à la non continuité des informations, la perte de contexte, etc.
 Idem possible : Notion vs MS365, Revit vs AutoCAD et ses "flavours"

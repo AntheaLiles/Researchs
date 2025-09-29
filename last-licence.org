@@ -1,0 +1,22 @@
+#+TITLE: Last Licence (LL)
+#+SUBTITLE: Un framework homogène pour tout les besoins de protection de la propriété intellectuelle
+#+AUTHOR: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+#+setupfile: "~/org/config-tex.org"
+#+glossary_sources: ~/org/glossary.org
+
+#+begin_abstract
+Abstract
+#+end_abstract
+
+#+latex: \textbf{Mots clés : }\keywords{Mots clés}
+
+* Introduction
+
+* Etat de l'art
+
+
+** Conclusion
+
+* Proposition

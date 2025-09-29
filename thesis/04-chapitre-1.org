@@ -13,6 +13,10 @@ Nature fonctionnelle :
 - Sécuritaires : Cybersécurité, sécurité physique des personnes, Stockage produits dangereux, protection individuelle
 - Logiques : Behavior-Driven Design, Domain-Driven Design, Test-Driven Development...
 
+#+BEGIN_QUOTE
+Il peut aussi exister des contraintes liées au coût, à la disponibilité des composants ou des ressources de l’entité, ou des calendriers fixes susceptibles de nécessiter un compromis entre la fonctionnalité et la sûreté de fonctionnement. -- NF EN 60300-1:2014[cite:@GestionSureteFonctionnement2014]
+#+END_QUOTE
+
 Nature organisationnelle :
 - Protocolaires : Procédures de validation, processus de gestion de projet
 - Politique : Urbanisme...

@@ -108,8 +108,8 @@
   #+INCLUDE: "./anx-01.org"
   #+LATEX: \clearpage
 
-# * Visualisation de données
-  # +INCLUDE: "./anx-02.org"
-  # +LATEX: \clearpage
+* Taxonomie des contraintes
+  #+INCLUDE: "./anx-02.org"
+  #+LATEX: \clearpage
   
 # +latex: \end{document}

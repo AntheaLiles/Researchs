@@ -1,0 +1,35 @@
+#+glossary_sources: ~/org/glossary.org
+** Introduction
+
+** Analyse sémantique
+- Définitions Larousse, Robert...
+- Définitions normative
+
+
+#+BEGIN_QUOTE
+(procédé juridique) moyens qu’offre la loi pour faire respecter des obligations et des droits. -- Comité d’Orientation
+pour la Simplification du Langage Administratif [cite:@LexiqueAdministratif2004]
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+limite imposée extérieurement ou intérieurement par le projet qui écarte le choix d'une option si la limite est dépassée -- ISO 15663:2021
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+<UML> condition ou restriction exprimée par un texte en langage naturel (3.52) ou dans un langage lisible par une machine, afin de déclarer une partie de la sémantique d’un élément ou d’un ensemble d’éléments -- ISO 19103:2024
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+restriction imposée de l’extérieur sur les exigences (3.1.1), la conception ou la mise en œuvre d’un système ou sur le processus utilisé pour développer ou modifier un système
+Note 1 à l’article: Une contrainte est un facteur qui est imposé sur la solution par la force ou la contrainte et peut limiter ou modifier les changements de conception. -- ISO 25065:2019
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+caractéristique, résultat ou élément de conception qui est rendu obligatoire ou a été interdit quelle qu’en soit la raison
+Note 1 à l’article: Les contraintes sont généralement des restrictions sur les choix de solutions dans un système.
+Note 2 à l’article: On considère deux catégories de contraintes, celles relatives aux solutions, et celles relatives à l’utilisation du système.
+Note 3 à l’article: À titre d’exemples, les contraintes peuvent provenir de conditions d’environnement ou d’utilisation, de la loi, de normes, de la demande du marché, de la disponibilité d’investissements et de moyens, de la politique d’un organisme.
+Note 4 à l’article: Adapté de l’EN 1325-1. -- ISO 21351:2005
+#+END_QUOTE
+
+** 

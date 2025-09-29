@@ -6,9 +6,6 @@
 #+setupfile: "~/org/config-tex.org"
 #+glossary_sources: ~/org/glossary.org
 
-#+latex_header: \bxtexlogoimport{*}
-#+latex_header: \bxtexlogoimport{**}
-
 #+begin_abstract
 Abstract
 #+end_abstract
