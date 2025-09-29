@@ -1,0 +1,203 @@
+* Scheduler bottleneck
+can't we "weight" the task so the scheduler dispatch them to equilibrate weights instead of tasks ?
+https://www.linkedin.com/posts/henrimaximedemoulin_work-stealing-is-a-core-scheduling-concept-activity-7377008945384562688-lG7I?utm_source=share&utm_medium=member_android&rcm=ACoAABXvvIABzEK6qkXlIjvBNnzeoC1Q9pZDhvo
+
+* quickPublish
+- to blog
+=> creates a basic website folder if not exist or updates it
+- to mail
+=> sent well formated mail to a contact
+- to pdf
+=> produces a formated PDF/UA archive
+- to odt
+=> produces an odt doc and set its layout
+- to ...
+
+* Doctorat
+:PROPERTIES:
+:CREATED:  [2024-07-17 Wed 13:08]
+:END:
+
+Lire abstract & conclusion
+=> est-ce utile ?
+
+Synthèse en bullet points de l'abstract
+=> GPT
+
+Trouver les graphiques intéressants
+
+Tag : Méthode, Idée, Revue de littérature, Découverte
+
+* Technologies remarquables
+:PROPERTIES:
+:CREATED:  [2024-07-17 Wed 13:10]
+:END:
+
+** Peer-tube
+
+Architecture hybride entre peer-to-peer et client-serveur avec switch automatique permettant de rationnaliser la bande passante
+
+** The Elder scroll Online
+
+Algorithmes d'interpolation coté serveur permettant initialement d'éviter la triche en jeu. Il permet de prédire les états des clients avant leurs réponse et permet de fluidifier l'expérience utilisateur. Est très intéressant lorsqu'il y a beaucoup de clients à synchroniser.
+
+** CS Go
+
+Ultra fast, CPU only, graphics & networking
+
+* Questions
+:PROPERTIES:
+:CREATED:  [2024-07-17 Wed 13:11]
+:END:
+
+- Comment fonctionne les eSim et la téléphonie IP ?
+- Comment assurer la continuité numérique des projets d'électrotechnique ?
+- Quel est l'implication numérique de la théorie des graphes dans la collaboration en technique ?
+- Quels sont les meilleurs médiums d’informations techniques à l’ère du web 3.0, de l’avènement de l'intelligence artificielle et de l’industrie 4.0 ?
+- Comment la transmission d’une information technique est-elle influencée par la psychologie du destinataire ?
+- Considérer les phénomènes sociologiques améliore t’il la transmission de l’information technique ?
+- L’utilisation de la dialectique dans la présentation de l’information technique impacte-t-elle la bonne acquisition de celle-ci ?
+- L’adoption d’une démarche scientifique en ingénierie de système améliore t’il la qualité des livrables ?
+- Quel rôle joue la sémantique dans la diffusion d’une information technique ? (étude selon abstraction)
+- Quel est l'intérêt de créer un gestionnaire d’asset et d’information multiparadigme ?
+
+"Le cerveau humain n'aime pas le vide et cherchera toujours à le remplir."
+Comment utiliser ce principe dans 
+- La transmission de connaissance => Risque de remplissage par des hallucinations
+- La conduite du changement => peut favoriser l'émergence d'idées
+- L'ingénierie => à étudier
+
+* Citations
+:PROPERTIES:
+:CREATED:  [2024-07-17 Wed 13:13]
+:END:
+
+"La première étape est de se doter d'un plan." J.M. Jancovici - PTEF
+
+* Démarche RH
+:PROPERTIES:
+:CREATED:  [2024-07-20 Sat 20:32]
+:END:
+
+Cataloguer les compétences, prévoir plans de carrières et plans de formations
+
+* Vendeur temple du jeux : Fabian
+:PROPERTIES:
+:CREATED:  [2024-10-19 Sat 22:26]
+:END:
+
+* Book
+:PROPERTIES:
+:CREATED:  [2024-11-12 Tue 07:30]
+:END:
+
+Multiples histoires entrelacées avec :
+- des hommes de foi (religions etc.)
+- des fanatiques (sectes, cultistes)
+- des chercheurs, scientifiques #antarctique
+- des bulletions d'informations (météo, climat, catastrophes naturelles, politique)
+- des marins et explorateurs #carnets de board
+
+* Phrases perso
+:PROPERTIES:
+:CREATED:  [2024-12-10 Tue 16:02]
+:END:
+
+On a beau parler la même langue, on ne parle pas toujours le même langage.
+
+* Finissons en avec la fausse complexité
+:PROPERTIES:
+:CREATED:  [2025-03-16 Sun 19:57]
+:END:
+
+BIM CIM CAD PIM RIM LIM CDE PLM ERP BIS BOS LCV LCP ACV AVC
+
+Vous en voulez d'autres ? 
+
+* Markup language
+:PROPERTIES:
+:CREATED:  [2025-03-20 Thu 13:22]
+:END:
+
+Ergonomie
+
+Différence entre accessibilitée ergonomique de l'utilisation du clavier Querty, Azerty etc.
+Avec la représentation symbolique et l'image mentale associé aux repères 
+
+Eg : -strique- ; +strique+ : représentation du résultat vs accès aux touches
+
+Dactylographie : accès aux symboles f(type de clavier)
+
+Fréquence de modification du display du texte (-strique- vs *bold* vs /italic/ vs _underline_ vs =highlight=...)
+
+* LL : Last License
+:PROPERTIES:
+:CREATED:  [2025-03-25 Tue 18:19]
+:END:
+
+Framework de licence libératives
+-> de la plus contraignante à la plus libre
+
+Principe à l'image de Creative Common
+(CC0, CC BY, CC BY SA, CC BY ND, CC BY SA ND, ...)
+
+- LL CHECK : Read Only
+- LL PERSO : Personal Projects
+- LL LEARN : ACademics
+    - All right granted to and exclusively to Schools, Research labs and students as a learning material or in use of a research project.
+- LL OFFIC : Public Officies & NGO
+    - AC extended to every non profit organisations and public officies of any forms.
+- LL FAIRU : Fair Use
+    - For everyone
+    - Copy distribution is limit to certain amount. If the distributor need more amount, he shall ask for a commercial exploitation licence.
+- LL NOWAR : No Warranty => MIT
+    - Allow full commercial rights without limitation
+    - disclaim of every warranty
+    - use at your own risk
+- LL PUBLI : Public Domain => CC0
+    - The only one without needs for credits
+
+Restrictions :
+- N-A : No AI processing nor ORC
+- N-B : No Branding Rights
+- N-C : No Commercial use
+- N-D : No Derivative
+- N-P : No Pattern Rights
+- N-R : No Relicensing
+ 
+Special Obligation :
+- AK : AKnowledgement
+    - Derived works must aknowledge the use of this project.
+
+* Les ecosystèmes programmatiques
+
+ * Text
+Neovim, Emacs, Eclipse
+Org, Tex
+
+ * Modeling
+Blender, Godot
+
+* Intermed
+
+Service d'effacement des données personnelles => Incogni, Deletme...
+
+Service de gestion des abonnements, y compris désabonnement
+
+* ZKP pour preuve d'identité
+
+Système d'autentification, preuve de l'age, anonyma...
+
+* Verification de document
+
+Processus humain partiellement automatisé 
+
+Verifications superficielles de mise en page, typographie, codification et indiçage.
+
+Pas de vérification du contenu automatique.
+
+* Spécification vs Prescription
+
+Spécification => charactéristiques techniques
+Prescription => référence du matériel
+

@@ -34,6 +34,8 @@ Explorer les bonnes pratiques en IHM, Ui, Ux, définir les "prérequis"
 Explorer le Behavior Driven Design 
 
 *** Tabula rasa
+Expliquer le besoin de rééquilibrer les responsabilités et d'assainir la base avant de construire, notion de refondation de la chaine de valeur.
+
 Objectif : proposer un modèle organisationnel scalable à forte valeur ajoutée et identification des rôles et périmètres 
 Prérequis avant toute tentative de digitalisation (en 1 : on se remet en question et on balaie devant sa porte)
 + spécialisations horizontales versus verticale 

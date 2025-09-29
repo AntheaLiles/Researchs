@@ -11,6 +11,8 @@ Questions secondaires :
 
 *** Hypothèses de recherche
 
+1. "Une approche d'ingénierie basée sur une grammaire formelle et naturelle des contraintes, intégrée dans un environnement de vérification automatisé, permet de réduire significativement les non-conformités et la charge cognitive des acteurs par rapport aux processus traditionnels basés sur des matrices de traçabilité manuelles."
+
 ** Approche méthodologique
 *** Méthodologie de recherche
 *** Stratégie de validation

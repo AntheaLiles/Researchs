@@ -27,6 +27,9 @@ Nature organisationnelle :
 - Temporelles : Hiérarchisation et dépendance des actions
 - Contractuelles : 
 
+  
+Justifier le besoin d'une "méthode de rédaction générique".
+
 *** Médiums et volumétrie
 Sources, origines et finalités
 
@@ -81,6 +84,10 @@ La nature de sa composition s'apparente à une table de jonction d'une base de d
 [[./svg/db-exigences-lde.pdf]]
 
 Pour la suite de l'étude, le mot "contrainte" regroupera l'ensemble des éléments impactant la poursuite d'un projet. Il regroupera donc également la notion d'égigence et la notion de besoin.
+
+
+Démontrer l'hétérogénéité et le chaos actuels, et conclure sur l'inefficacité des approches qui tentent de "traduire" ce chaos au lieu de le "discipliner" à la source.
+La question "vers un DSL de la construction ?" (1.5.2) est la conclusion naturelle de cette analyse.
 
 ** Génie électrique et systèmes contraints
 *** Spécificités du génie électrique
