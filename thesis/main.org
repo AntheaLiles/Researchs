@@ -103,13 +103,19 @@
   # Associer les chapitres de livres aux livres sources (crossref in biblatex)
   #+LATEX: \clearpage
 
-  #+LATEX: \appendix
+#+LATEX: \appendix
 * Analyse des normes
   #+INCLUDE: "./anx-01.org"
   #+LATEX: \clearpage
 
-* Taxonomie des contraintes
-  #+INCLUDE: "./anx-02.org"
+* Analyse des ontologies
+Echanger avec A.Vial du CSTB pour une collaboration
+Application des ontologies en gestion des contraintes
+Panorama et comportement
+
+* Analyse des méthodes de test logiciels
+* Analyse des langages de balisage légers
+* Analyse des standards d'information
   #+LATEX: \clearpage
   
 # +latex: \end{document}

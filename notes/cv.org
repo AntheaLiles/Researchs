@@ -1,4 +1,4 @@
-#+TITLE: DorctorPh.D. Student in constraint-based engineering
+#+TITLE: Ph.D. Student in constraint-based engineering
 #+SUBTITLE: Specialised in electrotechnical and HVAC studies for industrial projects
 #+AUTHOR: Cyprien PIERRE
 #+DATE: {{{time(%Y-%m-%d)}}}
@@ -62,7 +62,7 @@
   
 #+CAPTION: Engineering experiences
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
-|     *Date* | *Role*          | *Company*                             | *Localization*           |
+|     *Date* | *Role*          | *Company*                                    | *Localization*           |
 | since 2024 | Project Manager | Villeneuve Demain                            | Villeneuve Saint Georges |
 |  2022-2023 | BIM Manager     | Boat maintenance area                        | Toulon                   |
 |  2021-2022 | BIM Coordinator | Electricity supply plant                     | Finistere                |
@@ -85,7 +85,7 @@
 
 #+CAPTION: Non-profit organization experiences
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
-| *Date*     | *Role*          | *Name*           | *Type*               |
+| *Date*     | *Role*          | *Name*                  | *Type*               |
 | since 2015 | Founder,        | FarfaDub                | Music group          |
 | since 2015 | Founder         | The Solar Voices System | Association de fait  |
 | 2021–2022  | Trésorier       | Collectif Insolite      | Association loi 1901 |
@@ -100,5 +100,5 @@
 
 #+CAPTION: Cultural events experiences
 #+ATTR_LATEX: :environment longtable :align |p{2cm}|p{3cm}|p{5cm}|p{7cm}|
-| *Date* | *Role* | *Name*      | *Type* |
-|        |        |         |        |
+| *Date* | *Role* | *Name* | *Type* |
+|        |        |        |        |

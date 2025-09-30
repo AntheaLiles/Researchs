@@ -1,6 +1,43 @@
 #+glossary_sources: ~/org/glossary.org
-** Les contraintes de la construction
+** Les contraintes dans la construction
+*** Définition de contrainte
+À l’origine, contraindre et contrainte évoquent l’idée d’une pression exercée pour restreindre la liberté d’action d’une personne [cite:@CONTRAINTEEtymologieCONTRAINTE]. Dans le langage courant, une contrainte désigne tout ce qui force ou limite la liberté d’action [cite:@DefinitionContrainte]. Par extension, le mot s’applique à toute obligation ou règle à laquelle on doit se plier et qui réduit le champ de liberté.
+
+En outre, certains domaines techniques ont des acceptions spécifiques du terme. En droit, une contrainte peut désigner un acte coercitif [cite:@DefinitionContrainte]. En mécanique, le mot contrainte sert à traduire l’anglais stress, soit une force appliquée à un matériau qui tend à le déformer [cite:@francaiseContrainteDictionnaireLAcademie]. Ces usages spécialisés gardent néanmoins l’idée commune de force appliquée ou de limite imposée.
+
+Dans de nombreuses normes techniques et scientifiques, le terme contrainte est employé avec un sens plus formalisé, mais toujours avec l’idée centrale de restriction imposée. Voici quelques définitions normatives issues de standards ISO illustrant la variété d’usages du mot : 
+- restriction de paramètres ou de degré de liberté (orientation, taille, position, proximité) [cite:@ISO_4351],
+- restriction attachée à un type de données [cite:@ISO/CEI_2382],
+- condition formelle "exprimée en langage naturel ou dans un langage formel" qui précise ou limite la sémantique d’un modèle  [cite:@ISO_19103:2024].
+- borne de l’espace de recherche de solutions [cite:@ISO/CEI_2382-28] dans les systèmes experts.
+
+En synthèse, qu’il s’agisse de géométrie, de données, de modélisation ou d’autres domaines, toutes ces définitions normatives s’accordent pour voir la contrainte comme un élément limitatif : c’est une condition, une règle ou un ensemble de paramètres qui restreignent les possibilités afin de satisfaire à des critères donnés. Une contrainte borne un espace (espace de tolérance, domaine de valeurs, comportement autorisé, etc.) *en écartant ce qui n’est pas admissible*.
+
+Dans le domaine de l’ingénierie et de la gestion de projets de construction, on peut considérer la contrainte comme une notion englobant tous les éléments qui délimitent l’espace de solution d’un projet. Autrement dit, l’ensemble des facteurs qui, pris en compte conjointement, circonscrivent ce qu’il est possible ou acceptable de réaliser. Ces facteurs incluent :
+- le contexte et les données d’entrée du projet :
+    - les contraintes de site (encombrement, climat, sol),
+    - les contraintes réglementaires et normatives (codes de construction, normes de sécurité),
+    - les ressources disponibles (budget, délai imparti, main-d’œuvre)
+- Les besoins à satisfaire
+    - besoins explicitement formulés par le client ou les utilisateurs,
+    - besoins implicites (non dits mais attendus)
+- Les objectifs : niveau de performance ou un résultat à atteindre (par ex. efficacité énergétique visée, capacité fonctionnelle, niveau de qualité)
+- Les exigences : condition à remplir ("le système doit faire X")
+- Les spécifications : détaille les paramètres mesurables ("telle performance, telle dimension, tel standard à respecter")
+- Les prescriptions techniques : impose les moyens à mettre en oeuvre (un équipement, un composant, un matériau).
+
+En somme, toute condition à satisfaire, qu’elle provienne du contexte, d’un besoin, d’une règle ou d’un choix stratégique, constitue une contrainte du projet. Cette vision rejoint la définition mathématique d’une contrainte comme condition que doit satisfaire la solution d’un problème, la solution admissible étant celle qui respecte l’ensemble des contraintes. Dans un projet, les contraintes dessinent ainsi les frontières de l’acceptable : elles forment un cadre à l’intérieur duquel l’équipe de conception doit trouver sa liberté de manœuvre. Ainsi nous pouvons définir les contraintes tel que:
+#+BEGIN_VERSE
+Expression d'une condition, limitation ou obligation, formulée en langage naturel ou formel, qui restreint l’espace des solutions possibles afin de garantir que la solution retenue soit conforme au contexte (environnement légal, social, économique, ecologique et technique) du projet.
+
+*Synonymes :* besoin, objectif, spécification, exigence.
+#+END_VERSE
+
+Par cette définition, la notion de contrainte reste agnostique du cycle de vie du projet. Qu’il s’agisse de la phase de planification, de conception, de réalisation ou d’exploitation, les contraintes forment le fil directeur immuable auquel se référer pour prendre les bonnes décisions.
+
 *** Taxonomie des contraintes
+#+LATEX: \todo[inline]{Illustrer chaque catégorie de contrainte par des exemples précis}
+#+LATEX: \todo[inline]{expliciter le périmètre de contrainte de la thèse}
 Nature technique :
 - Géométriques : espacements, tolérances…
   Comment les décrire? eg. mode de pose des câbles, espacement d’une prise d’un point d’eau…
@@ -27,10 +64,11 @@ Nature organisationnelle :
 - Temporelles : Hiérarchisation et dépendance des actions
 - Contractuelles : 
 
-  
+
 Justifier le besoin d'une "méthode de rédaction générique".
 
 *** Médiums et volumétrie
+#+LATEX: \todo[inline]{expliciter la problèmatique : taille du corpus, diversité des sources, silotage des rédactions (pas de travail conjoint entre les organismes producteurs de contraintes), difficulté d'en connaitre, etc.}
 Sources, origines et finalités
 
 # Définition
@@ -43,7 +81,10 @@ Volume conséquent => faire un compte du nombre de pages par domaine pour illust
 #+ATTR_LATEX: :placement [htbp]
 [[./svg/360-view-engineering-environment.pdf]]
 
+#+LATEX: \todo[inline]{voie de recherche possible : création d'un service de fourniture de contrainte standardisé et unifié appelable via des requettes API}
+
 *** Exercice des contraintes
+#+LATEX: \todo[inline]{expliciter le cycle de vie des contraintes}
 Dans l'industrie de la construction, les parties prenantes se coordonnent dans la réponse à des exigences exprimées. Cette gestion des éxigences vise l'atteinte des objectifs du client en respect des contraintes légales, réglementaires et normatives.
 
 #+BEGIN_QUOTE
@@ -89,6 +130,23 @@ Pour la suite de l'étude, le mot "contrainte" regroupera l'ensemble des éléme
 Démontrer l'hétérogénéité et le chaos actuels, et conclure sur l'inefficacité des approches qui tentent de "traduire" ce chaos au lieu de le "discipliner" à la source.
 La question "vers un DSL de la construction ?" (1.5.2) est la conclusion naturelle de cette analyse.
 
+*** Cadre de travail
+#+LATEX: \todo[inline]{on pose ici les 3 composantes du projet de recherche lié aux contraintes}
+Les contraintes étant centraux à la caractérisation d'un ouvrage, il convient de définir un cadre de travail rigoureux permettant leurs manipulation.
+
+Ce cadre doit poséder à minimum 3 composantes :
+- Modélisation : formulation, négociation et amélioration des contraintes ;
+- Résolution : vérification de l'espace de solution, contrôle automatisé du respect des contraintes ;
+- Préservation : suivi des évolutions, association contextuelle, recherche d'information, etc.
+
+Modélisation des contraintes : c’est l’activité de formulation et de négociation des contraintes en amont et au fil du projet. Il s’agit d’identifier clairement toutes les contraintes pertinentes (contextuelles, contractuelles, techniques…), de les exprimer de façon non ambiguë (rédaction dans le cahier des charges, spécifications, notes de calcul, modèles UML, etc.) et de s’assurer qu’elles sont comprises et acceptées par les parties prenantes. La modélisation inclut éventuellement la négociation de certaines contraintes : par exemple discuter d’une tolérance plus large si une exigence s’avère trop restrictive par rapport au coût, ou reformuler un besoin implicite en exigences explicites testables. Un bon modèle de contraintes se veut complet, traçable et partagé par tous, servant de référence commune.
+
+Résolution des contraintes : ce volet recouvre la satisfaction effective des contraintes lors de la recherche de solution et de la réalisation du projet. Il s’agit d’abord de procéder à la résolution du problème en trouvant un espace de solution qui respecte l’ensemble des contraintes identifiées – en d’autres termes, vérifier qu’il existe au moins une solution faisable (vérification de la non-surcontrainte). Ensuite, on s’assure du juste niveau de contrainte : éviter d’ajouter des contraintes inutiles ou trop sévères qui surcontraindraient le projet par rapport au besoin réel. Cela implique une optimisation : assez de contraintes pour rencontrer le besoin et les objectifs, mais pas au point d’éliminer des solutions viables ou d’alourdir le projet inutilement. Enfin, ce volet inclut la vérification du respect des contraintes tout au long des études et de l’exécution – par des revues de conception, des simulations, des prototypes ou des tests. Chaque décision technique ou modification doit être évaluée au prisme des contraintes : si une solution envisagée viole une contrainte (par exemple une charge dépassant la contrainte de poids maximal), il faut soit l’ajuster, soit envisager de redéfinir la contrainte si cela est justifié et approuvé.
+
+Préservation des contraintes (capitalisation) : au-delà du respect ponctuel, il est crucial de préserver la mémoire des contraintes du projet et de leur évolution. Ce troisième volet consiste à historiser et documenter les contraintes, leurs justifications d’origine, et les éventuelles modifications apportées en cours de route (assouplissements, ajouts, suppressions), de sorte que l’on sache à tout moment pourquoi telle contrainte a été posée et pourquoi tel choix de conception a été fait en conséquence. Cette traçabilité garantit la cohérence du projet sur la durée et facilite la maintenance ou les évolutions futures. Par exemple, conserver dans un registre ou une base de connaissance le raisonnement ayant conduit à une contrainte particulière (issue d’une norme, d’un retour d’expérience, d’une demande client spécifique…) permettra, des années plus tard, à un nouvel intervenant de comprendre le rationnel de conception. La préservation des contraintes et de leur historique de négociation contribue ainsi à une gestion de configuration rigoureuse et à l’amélioration continue du référentiel de conception de l’entreprise.
+
+En conjuguant ces trois dimensions, on dote la notion de contrainte d’un véritable cadre de gestion sur le projet. Cela permet d’assurer la définition unifiée de "contrainte" proposée au paragraphe [[Définition de contrainte]].
+
 ** Génie électrique et systèmes contraints
 *** Spécificités du génie électrique
 Expression sous forme de diagramme SIPOC de la chaine de valeur en électrotechnique ?
@@ -114,7 +172,7 @@ Langage naturel :
 
 
 ** Apports du génie logiciel
-*** Programmation déclarative et logique
+*** Programmation par contraintes
 Langage formels déclaratif textuel : Prolog, Claire, Raku, OCL, COBOL
 
 ? : OCL
@@ -122,6 +180,8 @@ Langage formels déclaratif textuel : Prolog, Claire, Raku, OCL, COBOL
 Paradigme de programmation par les contraintes : Prolog, Claire, Raku
 
 Paradigme de programmation en langage proche du naturel : COBOL, SQL
+
+Solveurs de contraintes : CSL, SAT, etc.
 
 *** Programmation piloté par le comportement
 Fondements du BDD :
@@ -146,10 +206,9 @@ Synthaxe
       Alors il ne peut pas se connecter
 #+end_src
 
-*** Méthodes de descritpions et ontologies
-Ontologie BRICS
-
-Aproche d'ensemble puis subset par spécificité (activité ou domaine)
+*** Traitement automatique langage
+Natural Language Processing, en français Traitement automatique du langage naturel.
+Large Language Model, Small Language Model...
 
 *** Business rule engine
 Langages formels déclaratif visuels : 

@@ -1,4 +1,4 @@
-% Created 2025-09-18 Thu 17:43
+% Created 2025-09-29 Mon 11:31
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -28,7 +28,6 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{customgray}{HTML}{505050}
 \usepackage[top=3.2cm, bottom=3.2cm, left=2.4cm, right=2.4cm]{geometry}
-\usepackage[cm]{fullpage}
 \usepackage{setspace,fancyhdr,indentfirst,lastpage,datetime,authblk,ifthen,etoolbox,titling}
 \singlespacing
 \pagestyle{fancy}
@@ -61,10 +60,8 @@
 \makenoidxglossaries
 \usepackage{url,orcidlink,hyperref}
 \hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}, unicode=true}
-\bxtexlogoimport{*}
-\bxtexlogoimport{**}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\date{2025-09-18}
+\date{2025-09-29}
 \title{quickDoc\\\medskip
 \large An ergonomic lightweight markup language with mnemonic inspirations for writing all kind of documents}
 \hypersetup{
@@ -85,7 +82,7 @@ Abstract
 
 \textbf{Mots clés : }\keywords{Mots clés}
 \section{Introduction}
-\label{sec:orgef1d8bc}
+\label{sec:org8eeffe3}
 
 \begin{verbatim}
 parler en revue de litérature de l'avantage des LML // LaTeX et // word
@@ -99,14 +96,15 @@ parler des problématiques d'incohérences et des specs non rigides
 parler des limites actuelles
 \end{verbatim}
 \section{Etat de l'art}
-\label{sec:org329d5a4}
+\label{sec:org3f75bc9}
 Il existe de multiples approches à la production de documents formatés. L'utilisation de logiciels de traitement de texte tels que MS Word, Google Docs ou encore Only Office est probablement la voies la plus largement répendue. Ces solutions proposent des environnements graphiques qui présentent aux utilisateurs les modifications qu'ils peuvent apporter à leurs document. Cette approche a des limitation notamment dans la réalisations de documents exécutable \footnote{\textbf{Document exécutable :} Désigne un document dont des éléments sont executé (p. ex. code) et remplacés par le produit de l'exécution (p. ex. schéma ou diagrammes).}.
 
 Une autre approche très répendue est d'écrire le formatage du texte en même temps que le contenu. Cette seconde approche implique généralement l'utilisation d'un éditeur de texte comme Neovim, Emacs, iA Writter, etc. associé à un logiciel adapté à la convention de rédaction choisie par l'utilisateur. De manière générale, l'utilisateur utilisera un langage de balisage pour déclarer le formatage.
 
-Il existe ainsi deux grandes catégories de langages de balisages appliqués à la rédaction de documents : les langages formels (\TeX{}, HTML, TEI\ldots{}) et les langages informels (Markdown, Org-Mode, AsciiDoc\ldots{})\autocite{leonardGuidanceMarkdownDesign2016}. Cette seconde catégorie constitue la famille des  (\protect\hyperlink{gls-1}{\label{gls-1-use-1}LML}).
+Il existe ainsi deux grandes catégories de langages de balisages appliqués à la rédaction de documents : les langages formels (\TeX{}, HTML, TEI\ldots{}) et les langages informels (Markdown, Org-Mode, AsciiDoc\ldots{})\autocite{leonardGuidanceMarkdownDesign2016}. Cette seconde catégorie constitue la famille des Lightweight Markup Language
+ (\protect\hyperlink{gls-1}{\label{gls-1-use-1}LML}).
 \subsection{Langages de définition de documents}
-\label{sec:orgcb60bc5}
+\label{sec:org39da9f3}
 Le standard actuel de rédaction de documents aux mises en formes rigoureuse est \TeX{}. Il s'agit à la fois un langage de programmation et un logiciel d'impression de document. Pour l'utiliser lors de la rédaction de document nous utilisons un format de rédaction tels que \LaTeX{}, ConTeXt, Texinfo, ou encore OpTeX. Ces formats emploient des macros \TeX{} pour faciliter la mise en page. Le format le plus répendu, nottament dans le monde académique, est le \LaTeX{}. La production d'un fichier \TeX{} prêt à être exporté (en PDF, DVI, HTML, PostScript\ldots{}) requiert une ou plusieurs étapes de compilation du texte source. Les compilateurs (ou moteurs) les plus fréquents sont pdfTeX, LuaTeX, et XeTeX et ils utilisent respectivement les variantes \LaTeX{} que sont pdfLaTeX, LuaLaTeX et XeLaTeX. Ces variantes sont similaires à \LaTeX{} avec des fonctions complémentaires adaptées au moteur choisis. \LaTeX{} bénéficie d'extensions communautaires compatibles ou spécialisées à un moteur et permettant de créer programmatiquement les documents. Nous pouvons citer ici les paquets XyMTeX pour dessiner des structures moléculaires, Biber pour générer les bibliographies, TikZ pour réaliser tout type de dessins ou encore ArabTeX qui permet la prise en charge des langues arabes. Pour rédiger des documents \LaTeX{}, il est nécessaire d'installer une distribution \TeX{}. La plus connue est \TeX{} Live dont il existe de multiples dérivés et pour les utilisateurs de Windows il semblerait que MikTeX soit apprécié. Enfin, l'emploi d'un éditeur (Emacs avec AUCTeX, le logiciel LyX, ou encore l'application web Overleaf) facilite la rédaction grace à des fonctionnalités d'assistance et de précomplétion. Des projets comme LTeX+\autocite{LtexplusLtexlsplus2025}  et Writefull\autocite{Writefull} permettent de porter ces techniques d'assistances dans d'autres logiciels.
 
 A la lecture de ce descriptif nous remarquons que la production de document avec \LaTeX{} implique en de multiples endroits de réaliser des choix et des arbitrages avant même de commencer à rédiger. Quel compileur utiliser ? Quels sont les extensions les plus à jours ou les plus stables ? Dans quel environnement vais-je travailler ? etc. Ces considérations persistent durant tout le processus de rédaction ce qui entraine des périodes de déconcentration et parasite le travail de l'utilisateur. Ce constat semble inciter à la création d'un système probablement plus restreint mais résiliant. 
@@ -115,7 +113,7 @@ A la lecture de ce descriptif nous remarquons que la production de document avec
 Parler de Typst/Quatro et de Scribble (lisp)
 \end{verbatim}
 \subsection{Langages de balisage léger}
-\label{sec:orgf12d34a}
+\label{sec:org39ff988}
 Markdown est le \protect\hyperlink{gls-1}{\label{gls-1-use-2}LML} le plus populaire mais aussi le plus critiqué. Sa définition simple (MD Basics) en fait un langage très facile d'approche, facile à apprendre par tout individu. Ses faiblaisses résident néanmoins de la diversité de ses implémentations. MD Basic est supporté de façon homogène mais n'inclus pas l'ensemble des usages textuels possibles. Ces ommissions ont tendu à la création de douzaines de dérivés non cohérents entres eux. Les utilisateurs sont donc contraint d'apprendre plusieurs Markdown selon l'environnement dans lequel ils rédigent leurs documents.
 
 \begin{verbatim}
@@ -126,25 +124,25 @@ Org-mode, dont le document Orgdown décris la synthaxe, est un \protect\hyperlin
 
 AsciiDoc est une référence majeure des \protect\hyperlink{gls-1}{\label{gls-1-use-4}LML}. Il bénéficie d'une gouvernance de projet communautaire éprouvée, administrée par l'Eclipse Foundation. Ce langage couvre probablement tous les besoins de rédaction existant. Sa documentation est riche mais peut être intimidante pour un nouvel utilisateur.
 \subsection{Emergence d'un besoin}
-\label{sec:org3b4e94e}
+\label{sec:org5f9f0af}
 => Specify (github)
 => LLM
 => CBE
 
 conclusion : création de \textbf{quickDoc}
 \section{Syntaxe}
-\label{sec:orgdb802e5}
+\label{sec:org273971a}
 \subsection{Définition}
-\label{sec:orgd58cfb7}
+\label{sec:orgac35a72}
 Un bloc de texte est constituée d'une ligne continue et de la première ligne vide immédiatement en dessous. Un retour chario n'entraine alors pas de création d'un nouveau bloc.
 \subsection{Balisage}
-\label{sec:orgdfd852b}
+\label{sec:orgd1165fe}
 Le texte d'un bloc peut être formaté au niveau d'une lettre, d'un mot, d'une ligne continue ou d'un ensemble de ligne continue espacées entres elles d'un unique retour chariot.
 
-Le formattage se réalise en entourant \emph{explicitement} le contenu à formater par les balises de formatage. Ces balises sont des symboles textuels accessibles facilement sur un clavier. Le tableau \ref{tab:org5687a90} liste les balises utilisées par \textbf{quickDoc} et présente 3 des modalitées d'emplois. Il existe une tollérance pour le formatage d'une ligne complète, comme l'ensemble de la ligne est formatée jusqu'au retour chariot alors il convient d'apposer \emph{uniquement} une double marque en début de ligne.  
+Le formattage se réalise en entourant \emph{explicitement} le contenu à formater par les balises de formatage. Ces balises sont des symboles textuels accessibles facilement sur un clavier. Le tableau \ref{tab:org93900dd} liste les balises utilisées par \textbf{quickDoc} et présente 3 des modalitées d'emplois. Il existe une tollérance pour le formatage d'une ligne complète, comme l'ensemble de la ligne est formatée jusqu'au retour chariot alors il convient d'apposer \emph{uniquement} une double marque en début de ligne.  
 
 \begin{longtable}{llllll}
-\caption{\label{tab:org5687a90}Liste des balisages}
+\caption{\label{tab:org93900dd}Liste des balisages}
 \\
 \hline
 Type & Balise & HTML5 & Une lettre & Un mot & Une ligne\\
@@ -256,10 +254,10 @@ Les verbatims peuvent également être utilisés pour collecter des entrées uti
 \item \texttt{:[[[get user-lang string:2]]]:} donnera \texttt{\_\_} et sera affecté à la propriété "user-lang".
 \end{itemize}
 
-Les balises peuvent être combinées entre elles dans les limites de la matrice de compatibilité présentée par le tableau \ref{tab:orgbbe6cb8}. La combinaison du superscript et du subscript produit un middlescript.
+Les balises peuvent être combinées entre elles dans les limites de la matrice de compatibilité présentée par le tableau \ref{tab:org734ee2d}. La combinaison du superscript et du subscript produit un middlescript.
 
 \begin{table}[htbp]
-\caption{\label{tab:orgbbe6cb8}Compatibility matrix between formatings}
+\caption{\label{tab:org734ee2d}Compatibility matrix between formatings}
 \centering
 \begin{tabular}{lrlllllllllll}
 \hline
@@ -325,12 +323,14 @@ Sublevels (nested lists) are supported for headers, ordered and unordered lists.
 \end{multicols}
 
 The export \protect\hyperlink{gls-2}{\label{gls-2-use-1}backend} shall provide settings to customise desired formatting outputs of ordered lists (alpha-numeric numbering, dots, parentheses\ldots{}) 
-\subsection{Tags}
-\label{sec:org15013c8}
+\subsection{Snippets}
+\label{sec:org971a147}
 Tous les blocs de textes peuvent être associées à des tags.
-Un tag s'écrit \texttt{\#<tag>} peut être insérée à n'importe quel endroit du bloc de texte en respectant les rêgles de balisage décrites au paragraphe \ref{sec:orgdfd852b}.
+Un tag s'écrit \texttt{\#<tag>} peut être insérée à n'importe quel endroit du bloc de texte en respectant les rêgles de balisage décrites au paragraphe \ref{sec:orgd1165fe}.
 
-\begin{center}
+\begin{table}[htbp]
+\caption{liste des snippets}
+\centering
 \begin{tabular}{lll}
 \hline
 Type & Lemma & Behavior\\
@@ -339,7 +339,7 @@ Ref Link & \texttt{@element} & Insère un \texttt{[[lien]]} unidirectionnel\\
 Tag & \texttt{\#tag} & Insère un \texttt{[[lien]]} bidirectionnel\\
 \hline
 \end{tabular}
-\end{center}
+\end{table}
 
 Les tags sont utilisés pour faire de l'analyse sémantique. Ecrire un tag entraine la création ou la mise à jour d'un fichier "tag\_<nom-du-tag>.qdo" constitué comme ceci :
 \begin{verbatim}
@@ -352,7 +352,7 @@ L'instruction \texttt{[[[get blocs:?nom-du-tag]]]} peut être complété par un 
 
 Un système de trâme permettant aux utilisateurs de préconfigurer ces documents et de modifier en lot leurs configuration serait un atoût en matière d'expérience utilisateur.
 \subsection{Callouts}
-\label{sec:org0ccae96}
+\label{sec:org8a188ff}
 Callouts are bidirectional links inside the current document. They are used to quickly jump to content, a reference, or a definition.
 
 \begin{table}[htbp]
@@ -373,7 +373,7 @@ Header jump & \texttt{[header]} & \\
 \end{tabular}
 \end{table}
 \subsection{Links}
-\label{sec:org2cf0a46}
+\label{sec:org9136aab}
 Tous les liens suivent l'écriture \texttt{[[<CONTEXT>:<LINK>:<QUERY>][<TEXT>]]} pù seul le \texttt{<LINK>} \textbf{doit} être renseigné. Les autres éléments sont : 
 \begin{itemize}
 \item \texttt{<CONTEXT>} fournis des informations complémentaires pour l'affichage du lien. Cela permet de mettre en oeuvre des affichages adaptés aux images, vidéos, player de musique, flux RSS, etc.
@@ -405,7 +405,7 @@ Email & \texttt{[[mailto:<email>]]} & Display a contact form\\
 \end{tabular}
 \end{table}
 \subsection{Macroprogramme}
-\label{sec:orga74100d}
+\label{sec:org53a60a1}
 Des utilisations avancées de documentation programmatique peuvent faire appel à des macros définies par l'utilisateur ou par la plateforme de service.
 
 Dans quickDoc, ces macros sont appellées avec trois crochets tels que : \texttt{[[[<macro-name>]]]}
@@ -417,7 +417,7 @@ Elles sont définies par l'utilisateur comme ceci :
 ]]]
 \end{verbatim}
 \subsection{Configuration}
-\label{sec:org562ce93}
+\label{sec:org5f7e3ea}
 One might consider using a separate file to manage, preserve, and share all its configurations.
 That might be a file for \protect\hyperlink{gls-1}{\label{gls-1-use-5}LML} styles and tweaks, one for special export settings (e.g., \TeX{}, ODT, or HTML).
 A good way to go is by declaring at the first line of the document 
@@ -425,7 +425,7 @@ A good way to go is by declaring at the first line of the document
 ;;[[[set config file:file1 file:file... file:fileN]]]
 \end{verbatim}
 \subsubsection{Text layout}
-\label{sec:orgfdc0e8b}
+\label{sec:org0b50a57}
 First, define a style like
 \begin{verbatim}
 [[[set text_style name:paraghaphe scope:raw-text al:justif size:12 long:80char color:black font:source-sans-pro columns:nil]]]
@@ -436,13 +436,13 @@ Then apply it, it will be set from the statement until the new one.
 [[[use text-style name:paragraphe]]]
 \end{verbatim}
 \section{Consistency analysis}
-\label{sec:org6fb774f}
+\label{sec:org22c5cf5}
 A consistent lightweight markup language shall have only one way to format text.
 
-Markdown variants on the \ref{tab:org79aea84} are limited to those listed by IANA's "Markdown Variant" \autocite{MarkdownVariants2023}. We exclude SSW and Quarto, the first one is too contextual and the second is based on Pandoc markdown.
+Markdown variants on the \ref{tab:org5bfcfec} are limited to those listed by IANA's "Markdown Variant" \autocite{MarkdownVariants2023}. We exclude SSW and Quarto, the first one is too contextual and the second is based on Pandoc markdown.
 
 \begin{table}[htbp]
-\caption{\label{tab:org79aea84}Text formatting consistency versus Markdown variants}
+\caption{\label{tab:org5bfcfec}Text formatting consistency versus Markdown variants}
 \centering
 \begin{tabular}{lrrrrrrrrrrrr}
 \hline
@@ -489,23 +489,23 @@ Setext &  &  &  &  &  &  &  &  &  &  &  & \\
 \end{multicols}
 \end{tablenotes}
 \section{Capacity analysis}
-\label{sec:org123507c}
+\label{sec:org9d29ef0}
 
 \section{Typesystem compatibility}
-\label{sec:org05f0891}
+\label{sec:orgdd03df3}
 \section{Termes et définitions}
-\label{sec:org2aaceb0}
+\label{sec:org1eb7196}
 \emph{Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage.}
 \begin{multicols}{3}
 \subsection{Glossaire}
-\label{sec:org270bb3e}
+\label{sec:org857aefb}
 \textbf{\hypertarget{gls-5}{Backend}}\hspace*{1em}Couche logicielle gérant la logique métier, la gestion des données et la communication entre les applications\hspace*{.5em}\pageref{gls-2-use-1}
 \subsection{Acronymes}
-\label{sec:orgb16bc22}
-\textbf{\hypertarget{gls-348}{LML}}\hspace*{1em}\hspace*{.5em}\pageref{gls-1-use-1}, \pageref{gls-1-use-2}, \pageref{gls-1-use-3}, \pageref{gls-1-use-4}, \pageref{gls-1-use-5}
+\label{sec:org5978807}
+\textbf{\hypertarget{gls-206}{LML}}\hspace*{1em}Lightweight Markup Language\hspace*{.5em}\pageref{gls-1-use-1}, \pageref{gls-1-use-2}, \pageref{gls-1-use-3}, \pageref{gls-1-use-4}, \pageref{gls-1-use-5}
 
 \end{multicols}
 \section{Références}
-\label{sec:orga108136}
+\label{sec:org44c844f}
 \printbibliography[heading=none]
 \end{document}

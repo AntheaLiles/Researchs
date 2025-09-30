@@ -19,6 +19,219 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{lourauAnalyseInstitutionnelleQuestion1973}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8b203584e0a405dffc18a3dcb586edf}{%
+           family={Lourau},
+           familyi={L\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{fullhash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{fullhashraw}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{bibnamehash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{authorbibnamehash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{authornamehash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{authorfullhash}{e8b203584e0a405dffc18a3dcb586edf}
+      \strng{authorfullhashraw}{e8b203584e0a405dffc18a3dcb586edf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-4306}
+      \field{journaltitle}{homso}
+      \field{langid}{french}
+      \field{number}{1}
+      \field{title}{Analyse institutionnelle et question politique}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{29}
+      \field{year}{1973}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{21\bibrangedash 34}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.3406/homso.1973.1831
+      \endverb
+      \verb{urlraw}
+      \verb http://www.persee.fr/web/revues/home/prescript/article/homso_0018-4306_1973_num_29_1_1831
+      \endverb
+      \verb{url}
+      \verb http://www.persee.fr/web/revues/home/prescript/article/homso_0018-4306_1973_num_29_1_1831
+      \endverb
+    \endentry
+    \entry{lindbladBIMImplementationOrganisational2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f9534094e4e3f659a23a265c2ed14897}{%
+           family={Lindblad},
+           familyi={L\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3ef6315aaae9b1e2c7aa82fa22b1ad15}{%
+           family={Vass},
+           familyi={V\bibinitperiod},
+           given={Susanna},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{fullhash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{fullhashraw}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{bibnamehash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{authorbibnamehash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{authornamehash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{authorfullhash}{4337c8210cf0ca81d854251e021f3ac8}
+      \strng{authorfullhashraw}{4337c8210cf0ca81d854251e021f3ac8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{One of the current trends in the construction industry’s effort to increase performance is to implement Building Information Modelling (BIM). Recent research suggests that changes to the work practices and business processes must accompany the implementation process if the desired goals and expectations of implementing IT are to be met. However, there is still limited knowledge on what types of change are required in an organisation as a whole in relation to BIM implementation. The purpose of this study is to explore how a large public client is initiating BIM implementation in their organisation. The main focus is to investigate what types of changes are being proposed to the work practices and processes in relation to BIM implementation. This paper studies the BIM initiation project at a large Swedish public infrastructure client. It is based on a case study involving both interviews and active participation. The findings indicate that the BIM initiation project proposes changes to the routines for how projects are initiated and conducted by introducing the concept of BIM in guiding documents. Yet, how these changes will influence the actual work practices and process is unclear. From these results, it can be argued that the organisation as such is not yet certain of how the implementation of BIM should and will influence the organisation. Rather, the initiation of BIM at the public client is a learning process about BIM and how it can improve productivity in the organisation.}
+      \field{issn}{22125671}
+      \field{journaltitle}{Procedia Econ. Finance}
+      \field{langid}{english}
+      \field{shorttitle}{{{BIM}} Implementation and Organisational Change}
+      \field{title}{{{BIM}} Implementation and Organisational Change: A Case Study of a Large Swedish Public Client}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{21}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{178\bibrangedash 184}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/S2212-5671(15)00165-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\UMQFK6JW\Lindblad et Vass - 2015 - BIM implementation and organisational change a case study of a large swedish public client.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2212567115001653
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2212567115001653
+      \endverb
+    \endentry
+    \entry{paulagordogregorioContinuiteInformationnelleDans2023}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=0e2db578f6019e016d7484825255f1f1}{%
+           family={{Paula Gordo Gregorio}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {HESAM Université}%
+      }
+      \strng{namehash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{fullhash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{fullhashraw}{0e2db578f6019e016d7484825255f1f1}
+      \strng{bibnamehash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{authorbibnamehash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{authornamehash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{authorfullhash}{0e2db578f6019e016d7484825255f1f1}
+      \strng{authorfullhashraw}{0e2db578f6019e016d7484825255f1f1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{pagetotal}{382}
+      \field{title}{La continuité informationnelle dans les projets BIM, de la conception à la gestion du bâtiment : une analyse du système d'acteurs}
+      \field{type}{phdthesis}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{vendredi 26 mai 2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\99M6I8LS\CNAM_GORDOGREGORIO_2023.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://theses.hal.science/tel-04167158v1/file/CNAM_GORDOGREGORIO_2023.pdf
+      \endverb
+      \verb{url}
+      \verb https://theses.hal.science/tel-04167158v1/file/CNAM_GORDOGREGORIO_2023.pdf
+      \endverb
+      \keyw{broken}
+    \endentry
+    \entry{CONTRAINTEEtymologieCONTRAINTE}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{{CONTRAINTE}} : {{Etymologie}} de {{CONTRAINTE}}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\IMBURASM\2.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cnrtl.fr/etymologie/contrainte//2
+      \endverb
+      \verb{url}
+      \verb https://www.cnrtl.fr/etymologie/contrainte//2
+      \endverb
+    \endentry
+    \entry{DefinitionContrainte}{online}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{Définition : {{Contrainte}}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\7HXHCSNK\Contrainte.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.toupie.org/Dictionnaire/Contrainte.htm
+      \endverb
+      \verb{url}
+      \verb https://www.toupie.org/Dictionnaire/Contrainte.htm
+      \endverb
+    \endentry
+    \entry{francaiseContrainteDictionnaireLAcademie}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4ee8d360a31f4f53e4af49e844753f9a}{%
+           family={{française}},
+           familyi={f\bibinitperiod},
+           given={Académie},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{fullhash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{fullhashraw}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{bibnamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorbibnamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authornamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorfullhash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorfullhashraw}{4ee8d360a31f4f53e4af49e844753f9a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Définition de CONTRAINTE : Recours à la force, à la violence, à l’intimidation, pour obliger quelqu’un à faire quelque chose contre son gré ou l’empêcher d’agir comme il le voudrait.}
+      \field{langid}{french}
+      \field{title}{contrainte | Dictionnaire de l’Académie française | 9e édition}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\XRXWJZYR\A9C3882.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.dictionnaire-academie.fr/article/A9C3882
+      \endverb
+      \verb{url}
+      \verb http://www.dictionnaire-academie.fr/article/A9C3882
+      \endverb
+    \endentry
     \entry{GestionSureteFonctionnement2014}{standard}{}{}
       \list{publisher}{1}{%
         {AFNOR}%
@@ -90,8 +303,8 @@
       \strng{authornamehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorfullhash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorfullhashraw}{5801b4b5812607c02fa2d7d8737e4b88}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Les pratiques de webscraping (extraction automatique de données sur un site web) sont aujourd’hui employées de plus en plus fréquemment dans le cadre de projets de recherche. Le webscraping permet en effet d’obtenir des données non disponibles autrement, lorsqu’aucune API ou aucun portail open data ne sont disponibles pour accéder aux données. Cela représente un gain de temps important par rapport à l’extraction manuelle d’informations sur une page web (copier-coller). Cette technique offre la possibilité de cibler précisément les informations recherchées et de les organiser pour répondre aux problématiques traitées dans le projet de recherche. Le webscraping peut aussi être réalisé à plusieurs reprises dans le temps afin de mettre à jour régulièrement les données dans le cas d’études longitudinales. Néanmoins, ces pratiques de webscraping soulèvent plusieurs questions d’ordres techniques, juridiques, et éthiques, qu’il s’agit de considérer. - L'extraction d'informations issues du web est réglementée par les conditions générales d’utilisation (CGU) qui fixent contractuellement toutes les règles d'utilisation du site consulté et définissent les droits et obligations des internautes et de son propriétaire. Elle est également régie par un ensemble de textes juridiques, tels que les réglementations sur le droit d'auteur (en France, le Code de la propriété intellectuelle, en Europe, la Directive européenne 2019/790 sur le droit d’auteur) ou le règlement général sur la protection des données (RGPD). - Les techniques de webscraping nécessitent des compétences techniques : quels outils employer ? Comment paramétrer une requête ? Comment éviter le blocage du site web scrapé ? - Il s’agit aussi d’être attentif à la provenance et à la qualité des données collectées pour garantir l'intégrité et la fiabilité des données, ainsi que la reproductibilité des résultats dans une optique de recherche scientifique robuste.Dès le début d'un projet employant le webscraping, il est important de considérer l'ensemble des étapes du cycle de vie des données collectées pour anticiper au mieux les difficultés et blocages potentiels. Ce document vise à aider les porteurs et porteuses de projet utilisant cette méthode au sein d’INRAE à faire des choix éclairés tout au long du projet pour respecter l'ensemble des règles législatives et institutionnelles. Par le biais de checklists, de logigrammes et de recommandations, les porteurs et porteuses de projet seront capables d’anticiper au mieux chaque étape du webscraping. Ce document s'articule avec les autres documentations mises à disposition par INRAE (Gouvernance des Données, RGPD, Cybersécurité, etc.) et propose aussi une liste de ressources et de personnes soutiens au projet.}
@@ -120,8 +333,8 @@
       \keyw{broken}
     \endentry
     \entry{CodeProprieteIntellectuelle}{legislation}{}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Code De La Propriété Intellectuelle}
       \field{langid}{english}
@@ -132,6 +345,10 @@
       \keyw{broken}
     \endentry
   \enddatalist
+  \missing{ISO/CEI_2382}
+  \missing{ISO/CEI_2382-28}
+  \missing{ISO_19103:2024}
+  \missing{ISO_4351}
 \endrefsection
 \endinput
 

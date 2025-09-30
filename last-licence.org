@@ -20,3 +20,32 @@ Abstract
 ** Conclusion
 
 * Proposition
+Framework de licence libératives
+-> de la plus contraignante à la plus libre
+
+Principe à l'image de Creative Common
+(CC0, CC BY, CC BY SA, CC BY ND, CC BY SA ND, ...)
+
+- LL WATCH : Read Only (do nothing)
+- LL PERSO : Personal Projects 
+- LL LEARN : ACademics 
+    - All right granted to and exclusively to Schools, Research labs and students as a learning material or in use of a research project.
+- LL OFFIC : Public Officies & NGO (no commercial uses)
+    - "LEARN" extended to every non profit organisations and public officies of any forms.
+- LL FAIRU : Fair Use (limited commercial use)
+    - For everyone
+    - Copy distribution is limit to certain amount. If the distributor need more amount, he shall ask for a commercial exploitation licence.
+- LL NOWAR : No Warranty => MIT (commercial use allowed)
+    - Allow full commercial rights without limitation
+    - disclaim of every warranty
+    - use at your own risk
+- LL PUBLI : Public Domain => CC0 (do wtf you want)
+    - The only one without needs for credits
+
+Restrictions :
+- \forall : No branding rights, no pattern grant, Copyrights and attribution
+- Options :
+    - NA : No AI nor OCR processing and any kind of automatic file exploring
+    - ND : No Derivative work allowed
+    - NR : No Relicensing => derivatives shall use the same licence
+    - AK : AKnowledgement (BSD, CeCILL-B like), derived works must aknowledge the use of this project

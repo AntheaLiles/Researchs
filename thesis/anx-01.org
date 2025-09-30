@@ -37,40 +37,17 @@ Le webscraping consiste à extraire automatiquement (to scrape : gratter), de ma
 
 La légalité d'une telle opération semble parfois faire débat. (ref à ajouter)
 
-En droit français, le Code de la propriété intellectuelle précise les modalités de copie et de reproduction des bases de données :
+Certains acteurs, notamment l'AFNOR, s'oppose à la fouille automatisée des texte que l'organisme fournis ainsi qu'à l'emploi de modèles d'intelligence artificielle sur ceux-ci tels que l'exprime ce paragraphe apposés en première page de couverture :
 #+BEGIN_QUOTE
-Lorsqu'une base de données est mise à la disposition du public par le titulaire des droits, celui-ci ne peut interdire :
-
-[...]
-
-6° Les extractions, copies ou reproductions numériques d'une base de données, en vue de la fouille de textes et de données réalisée dans les conditions prévues à l'article L. 122-5-3. Pour l'application de cet article, les auteurs et titulaires des droits d'auteur s'entendent des producteurs de bases de données et les copies ou reproductions numériques d'œuvres s'entendent des extractions, copies ou reproductions numériques de bases de données ;
-
--- Article L342-3[cite:@CodeProprieteIntellectuelle]
+AFNOR, en tant que titulaire des droits d’auteur ou distributeur autorisé, s’oppose expressément à toute intégration, transmission ou absorption totale ou partielle du présent document par des moteurs ou algorithmes d’Intelligence Artificielle (IA). AFNOR s’oppose également à toute fouille de textes et de données ou création dérivée produite par une IA et basée sur le présent document.
 #+END_QUOTE
 
-Ce code précise également les droits de manipulation des textes dans un cadre de recherche :
+Cela dit, le Code de la propriété intellectuelle précise les modalités de copie et de reproduction des bases de données (Art. L342-3) et les droits de manipulation des textes dans un cadre de recherche scientifique (Art. L122-5 et L122-5-3)[cite:@CodeProprieteIntellectuelle] en précisant spécifiquement que :
 #+BEGIN_QUOTE
-Lorsque l'oeuvre a été divulguée, l'auteur ne peut interdire :
-
-[...]
-
-10° Les copies ou reproductions numériques d'une œuvre en vue de la fouille de textes et de données réalisée dans les conditions prévues à l'article L. 122-5-3 ;
-
--- Article L122-5[cite:@CodeProprieteIntellectuelle]
+Des copies ou reproductions numériques d'œuvres auxquelles il a été accédé de manière *licite* peuvent être réalisées *sans autorisation des auteurs* en vue de *fouilles de textes et de données* menées à bien aux seules fins de la recherche scientifique par les organismes de recherche [...] ou pour leur compte et à leur demande par d'autres personnes, y compris dans le cadre d'un partenariat sans but lucratif avec des acteurs privés. -- Article L122-5-3[cite:@CodeProprieteIntellectuelle]
 #+END_QUOTE
 
-Et :
-#+BEGIN_QUOTE
-I.-On entend par fouille de textes et de données, au sens du 10° de l'article L. 122-5, la mise en œuvre d'une technique d'analyse automatisée de textes et données sous forme numérique afin d'en dégager des informations, notamment des constantes, des tendances et des corrélations.
-
-II.-Des copies ou reproductions numériques d'œuvres auxquelles il a été accédé de manière licite peuvent être réalisées sans autorisation des auteurs en vue de fouilles de textes et de données menées à bien aux seules fins de la recherche scientifique par les organismes de recherche, les bibliothèques accessibles au public, les musées, les services d'archives ou les institutions dépositaires du patrimoine cinématographique, audiovisuel ou sonore, ou pour leur compte et à leur demande par d'autres personnes, y compris dans le cadre d'un partenariat sans but lucratif avec des acteurs privés.
-
-[...]
-
-Les copies et reproductions numériques effectuées lors d'une fouille de textes et de données sont stockées avec un niveau de sécurité approprié et peuvent être conservées à des fins exclusives de recherche scientifique, y compris pour la vérification des résultats de la recherche.
-
--- Article L122-5-3[cite:@CodeProprieteIntellectuelle]
-#+END_QUOTE
+L'exploration des textes publiés par l'AFNOR et obtenus de manière licite est donc autorisée.
 
 *** Données collectées
 Métadonnées accessibles publiquement via Norm’Info et Boutique AFNOR :
