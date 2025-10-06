@@ -34,9 +34,6 @@ Explorer les bonnes pratiques en IHM, Ui, Ux, définir les "prérequis"
 Explorer le Behavior Driven Design 
 
 *** Conclusion
-Faire table rase !
-
-
 Expliquer le besoin de rééquilibrer les responsabilités et d'assainir la base avant de construire, notion de refondation de la chaine de valeur.
 
 Objectif : proposer un cadre de travail scalable à forte valeur ajoutée et identification des rôles et périmètres 
@@ -50,10 +47,8 @@ Explorer la décentralisation de la confiance notamment à travers les ZKP
 Question principale :
 
 Questions complémentaires :
-
-Comment créer un environnement de gestion des contraintes hétéroclytes ?
-
-Comment décrire une contrainte en langage naturel ?
+- Comment créer un environnement de gestion des contraintes hétéroclytes ?
+- Comment décrire une contrainte en langage naturel ?
 
 
 ** Objectifs et contributions

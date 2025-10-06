@@ -4,10 +4,10 @@
 En outre, certains domaines techniques ont des acceptions spécifiques du terme. En droit, une contrainte peut désigner un acte coercitif [cite:@DefinitionContrainte]. En mécanique, le mot contrainte sert à traduire l’anglais stress, soit une force appliquée à un matériau qui tend à le déformer [cite:@francaiseContrainteDictionnaireLAcademie]. Ces usages spécialisés gardent néanmoins l’idée commune de force appliquée ou de limite imposée.
 
 Dans de nombreuses normes techniques et scientifiques, le terme contrainte est employé avec un sens plus formalisé, mais toujours avec l’idée centrale de restriction imposée : 
-- restriction de paramètres ou de degré de liberté (orientation, taille, position, proximité) [cite:@ISO_4351],
-- restriction attachée à un type de données [cite:@ISO/CEI_2382],
-- condition formelle "exprimée en langage naturel ou dans un langage formel" qui précise ou limite la sémantique d’un modèle  [cite:@ISO_19103:2024].
-- borne de l’espace de recherche de solutions [cite:@ISO/CEI_2382-28] dans les systèmes experts.
+- restriction de paramètres ou de degré de liberté (orientation, taille, position, proximité) [cite:@SpecificationGeometriqueProduits2023],
+- restriction attachée à un type de données [cite:@TechnologiesLinformationVocabulaire2015],
+- condition formelle "exprimée en langage naturel ou dans un langage formel" qui précise ou limite la sémantique d’un modèle  [cite:@NFISO191032024].
+- borne de l’espace de recherche de solutions [cite:@TechnologiesLinformationVocabulaire2015] dans les systèmes experts.
 
 En synthèse, qu’il s’agisse de géométrie, de données, de modélisation ou d’autres domaines, toutes ces définitions normatives s’accordent pour voir la contrainte comme un élément limitatif : c’est une condition, une règle ou un ensemble de paramètres qui restreignent les possibilités afin de satisfaire à des critères donnés. Une contrainte borne un espace (espace de tolérance, domaine de valeurs, comportement autorisé, etc.) *en écartant ce qui n’est pas admissible*.
 
@@ -24,7 +24,10 @@ Dans le domaine de l’ingénierie et de la gestion de projets de construction, 
 - Les spécifications : détaille les paramètres mesurables ("telle performance, telle dimension, tel standard à respecter")
 - Les prescriptions techniques : impose les moyens à mettre en oeuvre (un équipement, un composant, un matériau).
 
-En somme, toute condition à satisfaire, qu’elle provienne du contexte, d’un besoin, d’une règle ou d’un choix stratégique, constitue une contrainte du projet. Cette vision rejoint la définition mathématique d’une contrainte comme condition que doit satisfaire la solution d’un problème, la solution admissible étant celle qui respecte l’ensemble des contraintes. Dans un projet, les contraintes dessinent ainsi les frontières de l’acceptable : elles forment un cadre à l’intérieur duquel l’équipe de conception doit trouver sa liberté de manœuvre. Ainsi nous pouvons définir les contraintes tel que:
+En somme, toute condition à satisfaire, qu’elle provienne du contexte, d’un besoin, d’une règle ou d’un choix stratégique, constitue une contrainte du projet. Cette vision rejoint la définition mathématique d’une contrainte comme condition que doit satisfaire la solution d’un problème, la solution admissible étant celle qui respecte l’ensemble des contraintes. Dans un projet, les contraintes dessinent ainsi les frontières de l’acceptable : elles forment un cadre à l’intérieur duquel l’équipe de conception doit trouver sa liberté de manœuvre. Ainsi nous pouvons définir :
+
+#+CAPTION: Définition harmonisée de "contrainte"
+#+NAME: def:contrainte
 #+BEGIN_VERSE
 Expression d'une condition, limitation ou obligation, formulée en langage naturel, qui restreint l’espace des solutions possibles afin de garantir que la solution retenue soit conforme au contexte (légal, social, sociétal, environnemental, économique et technique) du projet.
 
@@ -37,55 +40,12 @@ Par cette définition, la notion de contrainte reste agnostique du cycle de vie 
 #+LATEX: \todo[inline]{Illustrer chaque catégorie de contrainte par des exemples précis}
 #+LATEX: \todo[inline]{expliciter le périmètre de contrainte de la thèse}
 
-#+BEGIN_SRC plantuml :file ./svg/taxonomie-mindmap.png
-@startmindmap
- * Nature
-  
- ** Technique
- *** Géométriques
- **** Espacements
- **** Tolérances
- *** Physique
- **** Énergie
- **** Signal
- **** Interférence
- **** Echauffement
- **** Vibration
+La littérature distingue plusieurs dimensions pour classifier les contraintes :
 
- *** Chimique
- **** Couple galvanique
-
- ** Fonctionnelle
- *** Finacière
- **** Limite budgétaire
-  
- ** Environnementale
-  
- ** Sécuritaire
- *** Cybersécurité
- *** Sécurité des personnes
- *** Stockage des produits dangereux
-
- ** Logique
-
- ** Organisationnelle  
- *** Protocolaire
- **** Procédure de validation
- **** Procédure de gestion de projet
- *** Sociétale
- **** Habilitation
- **** Hiérarchie  
- **** Formation
- *** Légale
- **** Propriété intellectuelle
- *** Temporelle
- **** Disponibilité des composants
- **** Disponibilité des ressources  
- **** Dépendance des actions
- *** Contractuelle
-@endmindmap 
-#+END_SRC
-
+#+CAPTION: Hierarchie des contraintes
+#+NAME: fig:taxonomie
+#+ATTR_LATEX: :placement [htbp]
+[[./svg/taxonomie.pdf]]
 
 Justifier le besoin d'une "méthode de rédaction générique".
 
@@ -161,7 +121,7 @@ Résolution des contraintes : ce volet recouvre la satisfaction effective des co
 
 Préservation des contraintes (capitalisation) : au-delà du respect ponctuel, il est crucial de préserver la mémoire des contraintes du projet et de leur évolution. Ce troisième volet consiste à historiser et documenter les contraintes, leurs justifications d’origine, et les éventuelles modifications apportées en cours de route (assouplissements, ajouts, suppressions), de sorte que l’on sache à tout moment pourquoi telle contrainte a été posée et pourquoi tel choix de conception a été fait en conséquence. Cette traçabilité garantit la cohérence du projet sur la durée et facilite la maintenance ou les évolutions futures. Par exemple, conserver dans un registre ou une base de connaissance le raisonnement ayant conduit à une contrainte particulière (issue d’une norme, d’un retour d’expérience, d’une demande client spécifique…) permettra, des années plus tard, à un nouvel intervenant de comprendre le rationnel de conception. La préservation des contraintes et de leur historique de négociation contribue ainsi à une gestion de configuration rigoureuse et à l’amélioration continue du référentiel de conception de l’entreprise.
 
-En conjuguant ces trois dimensions, on dote la notion de contrainte d’un véritable cadre de gestion sur le projet. Cela permet d’assurer la définition unifiée de "contrainte" proposée au paragraphe [[Définition de contrainte]].
+En conjuguant ces trois dimensions, on dote la notion de contrainte d’un véritable cadre de gestion sur le projet en respectant la définition [[def:contrainte]].
 
 ** Méthodes de traitement
 Langage naturel :

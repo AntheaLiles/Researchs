@@ -1,61 +1,55 @@
 #+glossary_sources: ~/org/glossary.org
 ** Introduction
-
 (Okoli, Tranfield)
 - **Contexte et problématique** : préciser le champ disciplinaire et la pertinence pratique/organisationnelle.
 - **Objectif scientifique** : situer la revue comme méthode de recherche en soi, permettant de cartographier un champ et de développer une contribution conceptuelle (typologie, cadre théorique, taxonomie, agenda de recherche).
 - **Pertinence managériale** : expliquer en quoi la revue éclaire les besoins des organisations et des acteurs.
 
-** Research protocol
-*** 3.1 Research questions
+** Protocole de recherche
+Research questions
 - RQ1 ::
 - RQ2 ::
 
-*** Methode SPIDER
+Methode SPIDER
 - **Sample (S)** : acteurs, organisations, secteurs étudiés (ex. entreprises, managers, équipes projets).
 - **Phenomenon of Interest (PI)** : pratiques, processus, technologies, comportements managériaux étudiés.
 - **Design (D)** : types de designs méthodologiques inclus (études de cas, enquêtes, analyses qualitatives, etc.).
 - **Evaluation (E)** : indicateurs ou dimensions étudiées (performance, adoption, impacts organisationnels).
 - **Research type (R)** : types de recherche acceptés (empirique, théorique, revue existante).
 
-*** Research string
+Research string
 - Construction des équations avec opérateurs booléens et synonymes.
-- Exemple générique :
 
 #+CAPTION: Requête SPIDER générique
 #+BEGIN_SRC :results verbatim
   ("knowledge management" OR "organizational learning") AND ("digital transformation" OR "IT adoption")
 #+END_SRC
 
-*** Targetted databases
-#+CAPTION: Déclinaison de la requête SPIDER par plateforme
-| Name                                | Query |
-|-------------------------------------+-------|
-| Scopus                              |       |
-| Web of Science                      |       |
-| Business Source Complete (EBSCO)    |       |
-| ScienceDirect                       |       |
-| Google Scholar (contrôle des biais) |       |
+#+CAPTION: Déclinaison de la requête SPIDER par bases de données ciblées
+| Name                             | Query |
+|----------------------------------+-------|
+| Scopus                           |       |
+| Web of Science                   |       |
+| Business Source Complete (EBSCO) |       |
+| ScienceDirect                    |       |
+| Google Scholar                   |       |
 
 Littérature grise
 - Rapports professionnels, thèses, working papers.
 - Justification de l’inclusion ou exclusion.
 
-*** Processus de sélection
-(Tranfield)
-Étapes
+Processus de sélection (Tranfield)
 1. **Recherche initiale** → collecte des références.
 2. **Déduplication**.
 3. **Screening par titre et résumé**.
 4. **Screening par texte intégral**.
 5. **Validation inter-évaluateurs** (au moins deux chercheurs, résolution des désaccords par consensus).
 
-Critères d’inclusion/exclusion
+Critères d’inclusion et d'exclusion
 - Inclusion : articles académiques en gestion/SHS, période temporelle définie, pertinence thématique.
 - Exclusion : non revu par les pairs (sauf gris justifié), hors champ, doublons.
 
-*** Formulaire d’extraction
-(Okoli)
+Formulaire d’extraction (Okoli)
 - Identifiant (ID)
 - Référence bibliographique
 - Contexte (secteur, pays, type d’organisation)
@@ -64,13 +58,12 @@ Critères d’inclusion/exclusion
 - Concepts/variables mobilisés
 - Contribution théorique ou pratique
 
-*** Évaluation de la qualité
-(Okoli)
+Évaluation de la qualité (Okoli)
 - Pertinence théorique (forte/moyenne/faible).
 - Validité méthodologique (forte/moyenne/faible).
 - Clarté de la contribution.
 
-*** Schéma de sélection
+** Résultats de recherche
 Nombre d’articles identifiés, filtrés, exclus, inclus.
 
 *PRISMA 2020 flow diagram* for new systematic reviews which included searches of databases and registers only
@@ -84,24 +77,17 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC12013547
 https://pubmed.ncbi.nlm.nih.gov/39038926
 https://www.equator-network.org/wp-content/uploads/2018/02/PRISMA-RR-protocol.pdf
   
-** Analysis and results
+** Analyses des résultats
 - **Analyse descriptive** : nombre d’articles, évolution temporelle, répartition par journaux/méthodes.
 - **Analyse thématique** : regroupement des contributions en catégories conceptuelles.
 - **Construction conceptuelle** : cadre, typologie, ou modèle explicatif.
 - **Agenda de recherche** : identification des lacunes et pistes futures.
 
 ** Discussion
- **Synthèse des apports** : résumé des résultats majeurs.
- **Implications théoriques** : enrichissement du corpus scientifique en gestion.
- **Implications pratiques** : recommandations pour les acteurs managériaux.
- **Limites méthodologiques** : biais de sélection, couverture des bases, etc.
- **Perspectives** : agenda pour futures recherches.
-
-** Treats to validity
-Risques de biais de publication.
-Risques liés à l’échantillonnage ou aux bases de données.
-Stratégies d’atténuation (diversification, double codage).
-
-** Research opportunity
+- **Synthèse des apports** : résumé des résultats majeurs.
+- **Implications théoriques** : enrichissement du corpus scientifique en gestion.
+- **Implications pratiques** : recommandations pour les acteurs managériaux.
+- **Limites méthodologiques** : biais de sélection, couverture des bases, etc. Risques de biais de publication, Risques liés à l’échantillonnage ou aux bases de données, Stratégies d’atténuation (diversification, double codage).
+- **Perspectives** : agenda pour futures recherches.
 
 ** Conclusion

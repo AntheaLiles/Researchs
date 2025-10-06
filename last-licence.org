@@ -49,3 +49,34 @@ Restrictions :
     - ND : No Derivative work allowed
     - NR : No Relicensing => derivatives shall use the same licence
     - AK : AKnowledgement (BSD, CeCILL-B like), derived works must aknowledge the use of this project
+
+#+LATEX: \clearpage
+# /Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage./
+
+* Références du document
+** Liste des figures
+  #+LATEX: \renewcommand{\listfigurename}{\vspace{-2em}}
+  #+LATEX: \listoffigures
+
+** Liste des tableaux
+  #+LATEX: \renewcommand{\listtablename}{\vspace{-2em}}
+  #+LATEX: \listoftables
+
+** Liste des codes sources
+  #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
+  #+LATEX: \lstlistoflistings
+
+** Liste des glosses
+  #+LATEX: \begin{multicols}{2}\small{
+  #+print_glossary: :type glossary :only-contents t
+  #+LATEX: }\end{multicols}
+  
+** Liste des acronymes
+  #+LATEX: \begin{multicols}{2}\small{
+  #+print_glossary: :type acronym :only-contents t
+  #+LATEX: }\clearpage\end{multicols}
+
+* Bibliographie
+  #+LATEX: \begin{multicols}{2}\small{
+  #+print_bibliography: :heading none
+  #+LATEX: }\clearpage\end{multicols}

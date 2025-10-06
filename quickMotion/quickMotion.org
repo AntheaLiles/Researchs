@@ -10,7 +10,9 @@
 Cet article examine comment les pratiques avancées des joueurs de jeux vidéo, qui apprennent de nombreux raccourcis clavier, peuvent éclairer la conception d’interfaces plus productives. Nous combinons des modèles théoriques de performance avec des études empiriques issues du monde du jeu et des logiciels professionnels. Les études montrent que si l’usage des raccourcis réduit significativement le temps de commande, leur adoption reste faible en raison de l’effort de mémorisation et des facteurs sociaux[cite:@peresKeyboardShortcutUsage2004;@raursoIntermodalImprovementNudging2020]. Les joueurs de jeux compétitifs démontrent cependant une remarquable capacité à intérioriser et à automatiser des centaines de raccourcis[cite:@huangMasterMakerUnderstanding2017]. Nous discutons ensuite comment ces leçons peuvent guider le design d’environnements de productivité, par exemple via des "nudges" contextuels pour inciter les utilisateurs à adopter les méthodes expertes[cite:@raursoIntermodalImprovementNudging2020]. L’article propose des pistes pour concevoir des aides à l’apprentissage des raccourcis et tirer parti de la capacité d’apprentissage des utilisateurs, en s’inspirant des routines d’entraînement des joueurs élites.
 #+end_abstract
 
-#+latex: \textbf{Mots clés : }\keywords{raccourcis clavier, ergonomie, productivité, apprentissage, intéraction humain-machine, jeux vidéo}
+#+BEGIN_keyword
+raccourcis clavier, ergonomie, productivité, apprentissage, intéraction humain-machine, jeux vidéo
+#+END_keyword
 
 * Introduction
 Dans un contexte de productivité logicielle, les raccourcis clavier (hotkeys) offrent un moyen d’exécuter les commandes plus rapidement qu’avec les menus graphiques. Des modèles classiques de l’Interaction Homme-Machine indiquent que la frappe de raccourcis peut être jusqu’à deux fois plus rapide qu’une série de clics[cite:@peresKeyboardShortcutUsage2004;@raursoIntermodalImprovementNudging2020]. Cependant, un paradoxe persiste : même les utilisateurs confirmés n’adoptent pas spontanément ces raccourcis. Par exemple, Peres et al. soulignent que bien que l’usage d’un raccourci prenne en moyenne la moitié du temps d’une commande par menu, la plupart des utilisateurs préfèrent cliquer sur l'interface graphique[cite:@peresKeyboardShortcutUsage2004]. L’apprentissage des raccourcis impose une charge mémorielle supplémentaire (il faut "apprendre par coeur" les combinaisons de touches) et d'autres facteurs (habitudes sociales, frustrations éventuelles) freinent leur adoption[cite:@peresKeyboardShortcutUsage2004;@raursoIntermodalImprovementNudging2020].
@@ -57,11 +59,33 @@ Etudier norme de communication des i/o RGB
 
 * Conclusion
 
-* Glossaire
+#+LATEX: \clearpage
+# /Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage./
+
+* Références du document
+** Liste des figures
+  #+LATEX: \renewcommand{\listfigurename}{\vspace{-2em}}
+  #+LATEX: \listoffigures
+
+** Liste des tableaux
+  #+LATEX: \renewcommand{\listtablename}{\vspace{-2em}}
+  #+LATEX: \listoftables
+
+** Liste des codes sources
+  #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
+  #+LATEX: \lstlistoflistings
+
+** Liste des glosses
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_glossary: :type glossary :only-contents t
-
-* Acronymes
+  #+LATEX: }\end{multicols}
+  
+** Liste des acronymes
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_glossary: :type acronym :only-contents t
+  #+LATEX: }\clearpage\end{multicols}
 
-* Références
+* Bibliographie
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_bibliography: :heading none
+  #+LATEX: }\clearpage\end{multicols}

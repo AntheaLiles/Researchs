@@ -16,6 +16,4 @@ Enregistrement (ex. OSF, Zenodo) :
 
 format : IMRaD (introduction, methode, results and discussion)
 
-
-
 * Bibliography

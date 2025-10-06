@@ -157,6 +157,164 @@
       \endverb
       \keyw{broken}
     \endentry
+    \entry{CONTRAINTEEtymologieCONTRAINTE}{online}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{{{CONTRAINTE}} : {{Etymologie}} de {{CONTRAINTE}}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\IMBURASM\2.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cnrtl.fr/etymologie/contrainte//2
+      \endverb
+      \verb{url}
+      \verb https://www.cnrtl.fr/etymologie/contrainte//2
+      \endverb
+    \endentry
+    \entry{DefinitionContrainte}{online}{}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Définition : {{Contrainte}}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\7HXHCSNK\Contrainte.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.toupie.org/Dictionnaire/Contrainte.htm
+      \endverb
+      \verb{url}
+      \verb https://www.toupie.org/Dictionnaire/Contrainte.htm
+      \endverb
+    \endentry
+    \entry{francaiseContrainteDictionnaireLAcademie}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4ee8d360a31f4f53e4af49e844753f9a}{%
+           family={{française}},
+           familyi={f\bibinitperiod},
+           given={Académie},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{fullhash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{fullhashraw}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{bibnamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorbibnamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authornamehash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorfullhash}{4ee8d360a31f4f53e4af49e844753f9a}
+      \strng{authorfullhashraw}{4ee8d360a31f4f53e4af49e844753f9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Définition de CONTRAINTE : Recours à la force, à la violence, à l’intimidation, pour obliger quelqu’un à faire quelque chose contre son gré ou l’empêcher d’agir comme il le voudrait.}
+      \field{langid}{french}
+      \field{title}{contrainte | Dictionnaire de l’Académie française | 9e édition}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\XRXWJZYR\A9C3882.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.dictionnaire-academie.fr/article/A9C3882
+      \endverb
+      \verb{url}
+      \verb http://www.dictionnaire-academie.fr/article/A9C3882
+      \endverb
+    \endentry
+    \entry{SpecificationGeometriqueProduits2023}{standard}{}{}
+      \list{publisher}{1}{%
+        {AFNOR}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{month}{12}
+      \field{number}{NF EN ISO 4351}
+      \field{pagetotal}{32}
+      \field{title}{Spécification géométrique des produits (GPS) - Association}
+      \field{type}{Norme Française}
+      \field{version}{1}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\6UCJT858\FA200111_20251006_151126.pdf
+      \endverb
+    \endentry
+    \entry{TechnologiesLinformationVocabulaire2015}{standard}{}{}
+      \list{publisher}{1}{%
+        {ISO/IEC}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{number}{ISO/IEC 2382}
+      \field{title}{Technologies de l'information - Vocabulaire}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:ed-1:v2:fr
+      \endverb
+      \verb{url}
+      \verb https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:ed-1:v2:fr
+      \endverb
+    \endentry
+    \entry{NFISO191032024}{standard}{}{}
+      \list{publisher}{1}{%
+        {AFNOR}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{french}
+      \field{month}{9}
+      \field{number}{NF EN ISO 19103}
+      \field{pagetotal}{110}
+      \field{title}{Information géographique - Langage de schéma conceptuel}
+      \field{type}{Norme Française}
+      \field{version}{2}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\PMM8Z5SF\NF EN ISO 19103.pdf
+      \endverb
+    \endentry
+    \entry{GestionSureteFonctionnement2014}{standard}{}{}
+      \list{publisher}{1}{%
+        {AFNOR}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Le présent document établit un cadre pour la gestion de la sûreté de fonctionnement. Il donne des lignes directrices sur la gestion de la sûreté de fonctionnement des produits, des systèmes, des processus ou des services impliquant des aspects matériels, logiciels et humains ou toute combinaison intégrant ces éléments.}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{NF EN 60300-1}
+      \field{pagetotal}{58}
+      \field{title}{Gestion de La Sûreté de Fonctionnement - Partie 1 : Lignes Directrices Pour La Gestion et l'application}
+      \field{type}{Norme Française}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\CPIERRE\Documents\My Library\storage\6GQG3BY3\NF EN 60300-1.pdf
+      \endverb
+    \endentry
     \entry{quesnevilleRecommandationsUsagesWebscraping2024}{article}{}{}
       \name{author}{8}{}{%
         {{hash=e4c96d1d49fcc89bab63ddd42d7677f5}{%
@@ -208,8 +366,8 @@
       \strng{authornamehash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorfullhash}{5801b4b5812607c02fa2d7d8737e4b88}
       \strng{authorfullhashraw}{5801b4b5812607c02fa2d7d8737e4b88}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Les pratiques de webscraping (extraction automatique de données sur un site web) sont aujourd’hui employées de plus en plus fréquemment dans le cadre de projets de recherche. Le webscraping permet en effet d’obtenir des données non disponibles autrement, lorsqu’aucune API ou aucun portail open data ne sont disponibles pour accéder aux données. Cela représente un gain de temps important par rapport à l’extraction manuelle d’informations sur une page web (copier-coller). Cette technique offre la possibilité de cibler précisément les informations recherchées et de les organiser pour répondre aux problématiques traitées dans le projet de recherche. Le webscraping peut aussi être réalisé à plusieurs reprises dans le temps afin de mettre à jour régulièrement les données dans le cas d’études longitudinales. Néanmoins, ces pratiques de webscraping soulèvent plusieurs questions d’ordres techniques, juridiques, et éthiques, qu’il s’agit de considérer. - L'extraction d'informations issues du web est réglementée par les conditions générales d’utilisation (CGU) qui fixent contractuellement toutes les règles d'utilisation du site consulté et définissent les droits et obligations des internautes et de son propriétaire. Elle est également régie par un ensemble de textes juridiques, tels que les réglementations sur le droit d'auteur (en France, le Code de la propriété intellectuelle, en Europe, la Directive européenne 2019/790 sur le droit d’auteur) ou le règlement général sur la protection des données (RGPD). - Les techniques de webscraping nécessitent des compétences techniques : quels outils employer ? Comment paramétrer une requête ? Comment éviter le blocage du site web scrapé ? - Il s’agit aussi d’être attentif à la provenance et à la qualité des données collectées pour garantir l'intégrité et la fiabilité des données, ainsi que la reproductibilité des résultats dans une optique de recherche scientifique robuste.Dès le début d'un projet employant le webscraping, il est important de considérer l'ensemble des étapes du cycle de vie des données collectées pour anticiper au mieux les difficultés et blocages potentiels. Ce document vise à aider les porteurs et porteuses de projet utilisant cette méthode au sein d’INRAE à faire des choix éclairés tout au long du projet pour respecter l'ensemble des règles législatives et institutionnelles. Par le biais de checklists, de logigrammes et de recommandations, les porteurs et porteuses de projet seront capables d’anticiper au mieux chaque étape du webscraping. Ce document s'articule avec les autres documentations mises à disposition par INRAE (Gouvernance des Données, RGPD, Cybersécurité, etc.) et propose aussi une liste de ressources et de personnes soutiens au projet.}
@@ -238,8 +396,8 @@
       \keyw{broken}
     \endentry
     \entry{CodeProprieteIntellectuelle}{legislation}{}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Code De La Propriété Intellectuelle}
       \field{langid}{english}

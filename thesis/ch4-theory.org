@@ -11,7 +11,7 @@ Elle est enrichie par :
 Théories des artefacts de conception et de l’action (DSR, ADR).
 Théories causales mécanistes (CIMO).
 Théorisation processuelle (Langley).
-Bases en sciences de gestion : routines organisationnelles (Pentland & Feldman), Knowledge Management (Nonaka, Davenport), écologie des interfaces (Vicente), théorie des jeux, graphes.
+Bases en sciences de gestion : routines organisationnelles (Pentland & Feldman), Knowledge Management (Nonaka, Davenport), interfaces écologiques (Vicente), théorie des jeux, graphes.
 
 *** Organisation
 La méthodologie est organisée en quatre parties :

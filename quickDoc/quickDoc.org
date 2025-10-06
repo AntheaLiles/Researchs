@@ -6,12 +6,13 @@
 #+setupfile: "~/org/config-tex.org"
 #+glossary_sources: ~/org/glossary.org
 
-#+begin_abstract
-Abstract
-#+end_abstract
+#+BEGIN_abstract
+Rédiger le résumé
+#+END_abstract
 
-#+latex: \textbf{Mots clés : }\keywords{Mots clés}
-
+#+BEGIN_keyword
+Mot clé 1, Mot clé 2
+#+END_keyword
 
 * Introduction
 
@@ -356,18 +357,38 @@ Markdown variants on the [[table:consistency]] are limited to those listed by IA
 * Typesystem compatibility
 # study Scrible, Typst, TeX, HTML...
 
-* Termes et définitions
-/Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage./
-#+LATEX: \begin{multicols}{3}
-** Glossaire
+* Conclusion
+
+#+LATEX: \clearpage
+# /Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage./
+
+* Références du document
+** Liste des figures
+  #+LATEX: \renewcommand{\listfigurename}{\vspace{-2em}}
+  #+LATEX: \listoffigures
+
+** Liste des tableaux
+  #+LATEX: \renewcommand{\listtablename}{\vspace{-2em}}
+  #+LATEX: \listoftables
+
+** Liste des codes sources
+  #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
+  #+LATEX: \lstlistoflistings
+
+** Liste des glosses
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_glossary: :type glossary :only-contents t
-
-** Acronymes
+  #+LATEX: }\end{multicols}
+  
+** Liste des acronymes
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_glossary: :type acronym :only-contents t
-#+LATEX: \end{multicols}
+  #+LATEX: }\clearpage\end{multicols}
 
-* Références
+* Bibliographie
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_bibliography: :heading none
+  #+LATEX: }\clearpage\end{multicols}
 
 * Footnotes
 [fn:1] *Document exécutable :* Désigne un document dont des éléments sont executé (p. ex. code) et remplacés par le produit de l'exécution (p. ex. schéma ou diagrammes).

@@ -6,13 +6,14 @@
 #+setupfile: "~/org/config-tex.org"
 #+glossary_sources: ~/org/glossary.org
 
-#+begin_abstract
+#+BEGIN_abstract
 \todo[inline]{Rédiger l'abstract}
-#+end_abstract
+#+END_abstract
 
-\renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
+#+BEGIN_keyword
+Visualisation de données, Graphique, Méthode
+#+END_keyword
 
-#+LaTeX: \begin{multicols}{2}\raggedcolumns
 * Table des matières
 :PROPERTIES:
 :UNNUMBERED:
@@ -817,31 +818,39 @@ Les références CIM-10 mensionnées dans le tableau [[table:persona]] sont : le
 
 La capacité de modifier la langue par défaut vise à limiter la barrière de la langue. Dans le même ordre, la rétrocompatibilité vise à limiter la fracture numérique. \todo[inline]{trouver si possible des lois ou travaux apparentés d'orientation de ces considérations}
 
-* Etudes futures
+* Discussions
 Des études complémentaires pourraient être menées sur les sujets suivants :
 
 La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF.
+* Conclusion
   
-* Références
+#+LATEX: \clearpage
+# /Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage./
+
+* Références du document
 ** Liste des figures
   #+LATEX: \renewcommand{\listfigurename}{\vspace{-2em}}
   #+LATEX: \listoffigures
 
 ** Liste des tableaux
   #+LATEX: \renewcommand{\listtablename}{\vspace{-2em}}
-  #+TOC: tables
+  #+LATEX: \listoftables
 
 ** Liste des codes sources
   #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
-  #+TOC: listings
+  #+LATEX: \lstlistoflistings
 
 ** Liste des glosses
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_glossary: :type glossary :only-contents t
-
+  #+LATEX: }\end{multicols}
+  
 ** Liste des acronymes
-  #+print_glossary: :type acronyms :only-contents t
+  #+LATEX: \begin{multicols}{2}\small{
+  #+print_glossary: :type acronym :only-contents t
+  #+LATEX: }\clearpage\end{multicols}
 
 * Bibliographie
+  #+LATEX: \begin{multicols}{2}\small{
   #+print_bibliography: :heading none
-
-#+LaTeX: \end{multicols}
+  #+LATEX: }\clearpage\end{multicols}

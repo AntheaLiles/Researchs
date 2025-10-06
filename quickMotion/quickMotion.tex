@@ -1,4 +1,4 @@
-% Created 2025-09-05 Fri 14:04
+% Created 2025-10-06 Mon 17:26
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -11,24 +11,22 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{luacode}
-\usepackage[french]{babel}
+\usepackage[english, french]{babel}
 \usepackage{microtype}
 \usepackage[autolanguage]{numprint}
 \npthousandsep{~}
-\usepackage{bxtexlogo}
-\bxtexlogoimport{*}
-\bxtexlogoimport{**}
 \usepackage{fontspec}
 \usepackage{ulem}
 \usepackage{soul}
 \setmainfont{Source Serif 4}[Path=/home/anthea/org/fonts/Source_Serif_4/static/, UprightFont=SourceSerif4-Regular.ttf, ItalicFont=SourceSerif4-Italic.ttf, BoldFont=SourceSerif4-Bold.ttf, BoldItalicFont=SourceSerif4-BoldItalic.ttf]
 \setsansfont{Source Sans 3}[Path=/home/anthea/org/fonts/Source_Sans_3/static/, UprightFont=SourceSans3-Regular.ttf, ItalicFont=SourceSans3-Italic.ttf, BoldFont=SourceSans3-Bold.ttf, BoldItalicFont=SourceSans3-BoldItalic.ttf]
-\setmonofont{Source Code Pro}[Path=/home/anthea/org/fonts/Source_Code_Pro/static/, UprightFont=SourceCodePro-Regular.ttf, ItalicFont=SourceCodePro-Italic.ttf, BoldFont=SourceCodePro-Bold.ttf, BoldItalicFont=SourceCodePro-BoldItalic.ttf]
+\setmonofont{Source Code Pro}[Path=/home/anthea/org/fonts/Source_Code_Pro/static/, UprightFont=SourceCodePro-Regular.ttf, ItalicFont=SourceCodePro-Italic.ttf, BoldFont=SourceCodePro-Bold.ttf, BoldItalicFont=SourceCodePro-BlackItalic.ttf]
 \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\tiny}{\small}
+\renewcommand{\scriptsize}{\small}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \definecolor{customgray}{HTML}{505050}
 \usepackage[top=3.2cm, bottom=3.2cm, left=2.4cm, right=2.4cm]{geometry}
-\usepackage[cm]{fullpage}
 \usepackage{setspace,fancyhdr,indentfirst,lastpage,datetime,authblk,ifthen,etoolbox,titling}
 \singlespacing
 \pagestyle{fancy}
@@ -62,7 +60,7 @@
 \usepackage{url,orcidlink,hyperref}
 \hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}, unicode=true}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\date{2025-09-05}
+\date{2025-10-06}
 \title{quickMotion\\\medskip
 \large Ergonomie et adoption des raccourcis clavier : enseignements des jeux vidéo et perspectives pour les environnements de productivité}
 \hypersetup{
@@ -81,16 +79,18 @@
 Cet article examine comment les pratiques avancées des joueurs de jeux vidéo, qui apprennent de nombreux raccourcis clavier, peuvent éclairer la conception d’interfaces plus productives. Nous combinons des modèles théoriques de performance avec des études empiriques issues du monde du jeu et des logiciels professionnels. Les études montrent que si l’usage des raccourcis réduit significativement le temps de commande, leur adoption reste faible en raison de l’effort de mémorisation et des facteurs sociaux\autocite{peresKeyboardShortcutUsage2004,raursoIntermodalImprovementNudging2020}. Les joueurs de jeux compétitifs démontrent cependant une remarquable capacité à intérioriser et à automatiser des centaines de raccourcis\autocite{huangMasterMakerUnderstanding2017}. Nous discutons ensuite comment ces leçons peuvent guider le design d’environnements de productivité, par exemple via des "nudges" contextuels pour inciter les utilisateurs à adopter les méthodes expertes\autocite{raursoIntermodalImprovementNudging2020}. L’article propose des pistes pour concevoir des aides à l’apprentissage des raccourcis et tirer parti de la capacité d’apprentissage des utilisateurs, en s’inspirant des routines d’entraînement des joueurs élites.
 \end{abstract}
 
-\textbf{Mots clés : }\keywords{raccourcis clavier, ergonomie, productivité, apprentissage, intéraction humain-machine, jeux vidéo}
+\begin{keyword}
+raccourcis clavier, ergonomie, productivité, apprentissage, intéraction humain-machine, jeux vidéo
+\end{keyword}
 \section{Introduction}
-\label{sec:orgc95e067}
+\label{sec:org7002616}
 Dans un contexte de productivité logicielle, les raccourcis clavier (hotkeys) offrent un moyen d’exécuter les commandes plus rapidement qu’avec les menus graphiques. Des modèles classiques de l’Interaction Homme-Machine indiquent que la frappe de raccourcis peut être jusqu’à deux fois plus rapide qu’une série de clics\autocite{peresKeyboardShortcutUsage2004,raursoIntermodalImprovementNudging2020}. Cependant, un paradoxe persiste : même les utilisateurs confirmés n’adoptent pas spontanément ces raccourcis. Par exemple, Peres et al. soulignent que bien que l’usage d’un raccourci prenne en moyenne la moitié du temps d’une commande par menu, la plupart des utilisateurs préfèrent cliquer sur l'interface graphique\autocite{peresKeyboardShortcutUsage2004}. L’apprentissage des raccourcis impose une charge mémorielle supplémentaire (il faut "apprendre par coeur" les combinaisons de touches) et d'autres facteurs (habitudes sociales, frustrations éventuelles) freinent leur adoption\autocite{peresKeyboardShortcutUsage2004,raursoIntermodalImprovementNudging2020}.
 
 La présente étude propose d'explorer ce paradoxe à travers le prisme des jeux vidéo et des logiciels experts : comment des environnements cognitivement exigeants incitent-ils à mémoriser et utiliser de nombreux raccourcis, et quelles leçons peut-on en tirer pour les interfaces métiers ? Nous développons d'abord les bases théoriques de la performance en interaction, puis examinons l'adoption des raccourcis en pratique (jeux vidéo, logiciels métiers, standards d'interface), avant de proposer des éléments de conception inspirés de ces enseignements.
 \section{Etat de l'art}
-\label{sec:orgefaf787}
+\label{sec:orga0bc8b4}
 \subsection{Impact des racourcis}
-\label{sec:org9a461ac}
+\label{sec:orgd0886c8}
 Les schémas de navigation en interface utilisateur opposent généralement deux modes : la navigation "par l'interface" (menus, écrans) et la navigation "par la connaissance" (raccourcis clavier). La théorie cognitive montre que les interfaces graphiques, en exposant les commandes à l'écran, allègent la mémoire de l'utilisateur\autocite{peresKeyboardShortcutUsage2004}. Comme l’ont montré Galitz et al., un utilisateur se repose sur des indices visuels lorsqu’ils sont disponibles\autocite{peresKeyboardShortcutUsage2004}. C’est pourquoi la documentation IBM Common User Access
  (\protect\hyperlink{gls-1}{\label{gls-1-use-1}CUA}) et les Graphical User Interfaces (\protect\hyperlink{gls-2}{\label{gls-2-use-1}GUIs}) modernes cherchent à présenter à l'écran les commandes disponibles (menus déroulants, barres d'outils, bulles d’aide). En situation de début d'apprentissage, les utilisateurs explorent souvent un menu (comportement dit "hill-climbing") pour trouver les options\autocite{peresKeyboardShortcutUsage2004}. Cependant, l’approche par raccourcis repose sur un schéma différent : les commandes doivent être intériorisées (stockage dans la mémoire de travail). C’est là que l'idée de l'"expertise muette" prend tout son sens : comme le notent Zhang \& Norman (1994), une information "dans la tête" est plus coûteuse à maintenir qu'une information "à l'écran". Les utilisateurs agissent souvent en "miserisant cognitif", préférant la solution de moindre effort mental\autocite{peresKeyboardShortcutUsage2004}. Ainsi, le schéma de navigation clavier nécessite un investissement initial (mémorisation et pratique) mais finit par offrir une navigation quasi-automatique, sans distraction visuelle.
 
@@ -100,11 +100,10 @@ Les modèles Goal, Operators, Methods, Section rules
 
 A effectif égal, l'usage des raccourcis se traduit par des gains de temps signifiants sur les tâches répétitives. Par exemple, Lane et al. ont mesuré que pour des tâches usuelles de bureautique, l'utilisation des raccourcis pouvait être deux fois plus rapide que l'usage de la souris\autocite{peresKeyboardShortcutUsage2004}. Sur un rythme journalier, même économiser quelques secondes par commande peut se traduire par plusieurs minutes gagnées par heure de travail\autocite{peresKeyboardShortcutUsage2004}. La littrature souligne également que les facteurs humains influencent fortement l'adoption. Le phénomène de "cognitive miser" suggère que les utilisateurs préfèrent les mécanismes facilitant leur charge mémorielle\autocite{peresKeyboardShortcutUsage2004}. En particulier, l'absence de signaux visuels (les raccourcis sont un savoir "dans la tête") explique en grande partie qu'une interface graphique demeurant visuelle (menus, icônes) soit préférée\autocite{peresKeyboardShortcutUsage2004}. Peres et al. ont montré que l'usage effectif des raccourcis est corrélé à des facteurs sociaux et à l'expérience pratique : un utilisateur travaillant dans un environnement où les collègues utilisent intensivement les raccourcis est lui-même plus enclin à les utiliser\autocite{peresKeyboardShortcutUsage2004}. Enfin, l'âge et l'expérience interfèrent peu : même des experts chevronnés renoncent volontiers aux raccourcis au profit du clavier-souris si l'effort d'apprentissage semble élevé\autocite{peresKeyboardShortcutUsage2004,raursoIntermodalImprovementNudging2020}.
 \subsection{Mises en pratiques}
-\label{sec:orgda9cab3}
+\label{sec:orgf75ae90}
 Plusieurs standards ou conventions historiques ont contribué à uniformiser les raccourcis. La norme IBM \protect\hyperlink{gls-1}{\label{gls-1-use-2}CUA} de 1987 a introduit des règles pour les interfaces standard (barre de menus, touches de fonction, etc.)\autocite{berryEvolutionCommonUser1992}. Elle visait à rendre cohérent l'ensemble des logiciels IBM et les systèmes compatibles, par exemple en utilisant \texttt{F10} ou \texttt{Alt} pour ouvrir les menus. Malgré cela, les programmes textuels ou éditeurs de texte (vi, emacs, etc.) continuèrent à exiger une maîtrise poussée du clavier. Historiquement, chaque logiciel avait ses propres raccourcis (comme l’illustre l'ouverture de fichier avec \texttt{:e} en vi ou \texttt{C-x C-f} en Emacs), si bien qu’apprendre une application était signe de grande expertise. Cette diversité de standards de fait montre que les raccourcis sont à la fois anciens (origine au début de l’informatique) et adaptatifs aux contextes d'usage.
 
-Dans les outils spécialisés de conception, beaucoup de commandes ne sont accessibles que par le clavier ou sont optimisées via des raccourcis. Par exemple, les logiciels de Conception Assisté par Ordinateur
- (\protect\hyperlink{gls-5}{\label{gls-5-use-1}CAO}) et Dessin Assisté par Ordinateur	
+Dans les outils spécialisés de conception, beaucoup de commandes ne sont accessibles que par le clavier ou sont optimisées via des raccourcis. Par exemple, les logiciels de  (\protect\hyperlink{gls-5}{\label{gls-5-use-1}CAO}) et Dessin Assisté par Ordinateur	
  (\protect\hyperlink{gls-6}{\label{gls-6-use-1}DAO}) (AutoCAD, SolidWorks, Adobe Illustrator, etc.) mettent à disposition des centaines de commandes claviers. Les professionnels expérimentés utilisent volontairement le clavier pour une majorité d’entre elles. De même, dans la Publication Assisté par Ordinateur
  (\protect\hyperlink{gls-7}{\label{gls-7-use-1}PAO}) ou les outils de développement, les raccourcis (copier/coller, conversion d'unités, etc.) font partie du workflow standard. Ces environnements intègrent parfois des "aperçus" ou infobulles pour aider à apprendre les raccourcis, ce qui atteste de la réalité de cet apprentissage. Cependant, comme dans l'environnement bureautique, beaucoup d'utilisateurs n'utilisent pas pleinement ces options efficaces, confirmant que le facteur didactique (apprentissage progressif des raccourcis) reste une barrière.
 
@@ -123,59 +122,80 @@ Les jeux vidéo compétitifs (e-sport) sont un terrain d'étude de premier plan 
 
 Ces catégories de jeux partagent le caractère compétitif et la volumétrie de raccourcis. Les données de jeu montrent que les pratiquants assidus apprennent rapidement un corpus étendu de combinaisons, générant une amélioration de performance mesurable\autocite{huangMasterMakerUnderstanding2017}. Cette efficacité acquise contraste avec la faible adoption des raccourcis dans les outils classiques, et suggère que l'entraînement et la motivation jouent un rôle clef dans leurs adoption.
 \subsection{Synthèse}
-\label{sec:orge1a1faa}
+\label{sec:org27b8c72}
 Les environnements de jeux compétitifs illustrent clairement que les utilisateurs peuvent apprendre de nombreux raccourcis et construire des routines efficaces si leur motivation et l'entraînement sont appropriés. Les modèles de performance valident que les raccourcis sont plus efficaces en temps pur, mais les craintes cognitives expliquent leur adoption lente dans les outils de productivité. Pour tirer parti des enseignements des jeux vidéo, il convient d'encourager activement l'apprentissage des raccourcis dans les logiciels métiers. Par exemple, des interfaces peuvent proposer des suggestions de raccourcis contextuelles ou des phases d'échauffement (comme les joueurs de StarCraft) pour familiariser les utilisateurs avec les commandes clés. Des recherches récentes sur le « nudging » interactionnel montrent que des indices visuels subtils (infobulles, messages non intrusifs) peuvent inciter les utilisateurs à essayer les raccourcis sans frustration, avec des premiers résultats prometteurs\autocite{raursoIntermodalImprovementNudging2020}. En somme, la double expérience cognitive des joueurs et des utilisateurs experts suggère des perspectives d'amélioration des ergonomies d'interface : en capitalisant sur la capacité d'apprentissage moteur et sur des interfaces de soutien (éducatives ou adaptatives), on peut rapprocher l'efficacité des raccourcis de son potentiel théorique.
 \section{Questions et hypothèses}
-\label{sec:orge744348}
+\label{sec:org1695822}
 
 \section{Un framework de définition de racourcis}
-\label{sec:orgcb535f2}
+\label{sec:org76a8829}
 \subsection{Importance du contexte d'execution}
-\label{sec:org87fe57a}
+\label{sec:orgfc0a4ec}
 
 \subsection{Schémas de navigation}
-\label{sec:orgaf05703}
+\label{sec:orgd9259fc}
 
 \subsection{Définition des racourcis}
-\label{sec:orgfaef367}
+\label{sec:orgdb21dda}
 \section{Assistance à l'apprentissage}
-\label{sec:org7250438}
+\label{sec:orga03c0f6}
 Un schéma d'assistance à l'apprentissage pourrait être imaginé par l'emplois de claviers RGB où les clés de racourcis seraient illuminés suivant un code couleur permettant de les identifier rapidement.
 
 Etudier norme de communication des i/o RGB
 \section{Conclusion}
-\label{sec:orgaa7a50d}
+\label{sec:org0832911}
 
-\section{Glossaire}
-\label{sec:orge93319c}
+\clearpage
+\subsection{Références du document}
+\label{sec:org9a4674e}
+\subsubsection{Liste des figures}
+\label{sec:orga9af9d5}
+\renewcommand{\listfigurename}{\vspace{-2em}}
+\listoffigures
+\subsubsection{Liste des tableaux}
+\label{sec:org754dc69}
+\renewcommand{\listtablename}{\vspace{-2em}}
+\listoftables
+\subsubsection{Liste des codes sources}
+\label{sec:org4b828f8}
+\renewcommand{\lstlistingname}{\vspace{-2em}}
+\lstlistoflistings
+\subsubsection{Liste des glosses}
+\label{sec:org98be5c9}
+\begin{multicols}{2}\small{
 
+}\end{multicols}
+\subsubsection{Liste des acronymes}
+\label{sec:org3dfbd5a}
+\begin{multicols}{2}\small{
+\textbf{\hypertarget{gls-59}{ARPG}}\hspace*{1em}Action Role-Playing Game\hspace*{.5em}\pageref{gls-12-use-1}
 
-\section{Acronymes}
-\label{sec:org0e72a80}
-\textbf{\hypertarget{gls-61}{ARPG}}\hspace*{1em}Action Role-Playing Game\hspace*{.5em}\pageref{gls-12-use-1}
+\textbf{\hypertarget{gls-55}{APM}}\hspace*{1em}Action Par Minute\hspace*{.5em}\pageref{gls-10-use-1}
 
-\textbf{\hypertarget{gls-57}{APM}}\hspace*{1em}Action Par Minute\hspace*{.5em}\pageref{gls-10-use-1}
+\textbf{\hypertarget{gls-111}{CUA}}\hspace*{1em}Common User Access\hspace*{.5em}\pageref{gls-1-use-1}, \pageref{gls-1-use-2}
 
-\textbf{\hypertarget{gls-113}{CUA}}\hspace*{1em}Common User Access\hspace*{.5em}\pageref{gls-1-use-1}, \pageref{gls-1-use-2}
+\textbf{\hypertarget{gls-86}{CAO}}\hspace*{1em}\hspace*{.5em}\pageref{gls-5-use-1}
 
-\textbf{\hypertarget{gls-88}{CAO}}\hspace*{1em}Conception Assisté par Ordinateur\hspace*{.5em}\pageref{gls-5-use-1}
-
-\textbf{\hypertarget{gls-115}{DAO}}\hspace*{1em}Dessin Assisté par Ordinateur\hspace*{.5em}\pageref{gls-6-use-1}
+\textbf{\hypertarget{gls-113}{DAO}}\hspace*{1em}Dessin Assisté par Ordinateur\hspace*{.5em}\pageref{gls-6-use-1}
 
 \textbf{\hypertarget{gls-178}{GUI}}\hspace*{1em}Graphical User Interface\hspace*{.5em}\pageref{gls-2-use-1}
 
-\textbf{\hypertarget{gls-177}{GOMS}}\hspace*{1em}Goal, Operators, Methods, Section rules\hspace*{.5em}\pageref{gls-3-use-1}
+\textbf{\hypertarget{gls-175}{GOMS}}\hspace*{1em}Goal, Operators, Methods, Section rules\hspace*{.5em}\pageref{gls-3-use-1}
 
-\textbf{\hypertarget{gls-198}{KLM}}\hspace*{1em}Keystroke-Level Model\hspace*{.5em}\pageref{gls-4-use-1}
+\textbf{\hypertarget{gls-199}{KLM}}\hspace*{1em}Keystroke-Level Model\hspace*{.5em}\pageref{gls-4-use-1}
 
-\textbf{\hypertarget{gls-225}{MOBA}}\hspace*{1em}Multiplayer Online Battle Arena\hspace*{.5em}\pageref{gls-11-use-1}
+\textbf{\hypertarget{gls-227}{MOBA}}\hspace*{1em}Multiplayer Online Battle Arena\hspace*{.5em}\pageref{gls-11-use-1}
 
-\textbf{\hypertarget{gls-221}{MMORPG}}\hspace*{1em}Massively Multiplayer Online Pole-Playing Game\hspace*{.5em}\pageref{gls-8-use-1}
+\textbf{\hypertarget{gls-223}{MMORPG}}\hspace*{1em}Massively Multiplayer Online Pole-Playing Game\hspace*{.5em}\pageref{gls-8-use-1}
 
-\textbf{\hypertarget{gls-246}{PAO}}\hspace*{1em}Publication Assisté par Ordinateur\hspace*{.5em}\pageref{gls-7-use-1}
+\textbf{\hypertarget{gls-249}{PAO}}\hspace*{1em}Publication Assisté par Ordinateur\hspace*{.5em}\pageref{gls-7-use-1}
 
-\textbf{\hypertarget{gls-294}{RTS}}\hspace*{1em}Real-Time Strategy\hspace*{.5em}\pageref{gls-9-use-1}
-\section{Références}
-\label{sec:org8701713}
+\textbf{\hypertarget{gls-296}{RTS}}\hspace*{1em}Real-Time Strategy\hspace*{.5em}\pageref{gls-9-use-1}
+
+}\clearpage\end{multicols}
+\subsection{Bibliographie}
+\label{sec:org23327e8}
+\begin{multicols}{2}\small{
 \printbibliography[heading=none]
+}\clearpage\end{multicols}
 \end{document}
