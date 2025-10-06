@@ -1,0 +1,144 @@
+Nom de la plateforme : - Scholie
+
+* Présentation
+:PROPERTIES:
+:CUSTOM_ID: présentation
+:END:
+** Le projet dataCraft
+:PROPERTIES:
+:CUSTOM_ID: le-projet-datacraft
+:END:
+dataCraft est une plateforme d'e-learning dédié à l'ingénierie de la
+construction.
+
+Son objectif est d'accompagner la montée en compétence des
+professionnels du bâtiment dans leurs usages des outils numériques.
+
+** La documentation
+:PROPERTIES:
+:CUSTOM_ID: la-documentation
+:END:
+La présente documentation vise à expliquer le fonctionnement attendu des
+différents composants du projet.
+
+** La stack
+:PROPERTIES:
+:CUSTOM_ID: la-stack
+:END:
+Pour assurer une interopérabilité native cross plateforme, nous avons
+retenus le Framework : Application WebAssembly Blazor .NET 8
+
+** Organisation du projet
+:PROPERTIES:
+:CUSTOM_ID: organisation-du-projet
+:END:
+** Mentions légales
+:PROPERTIES:
+:CUSTOM_ID: mentions-légales
+:END:
+L'ensemble du fonctionnement BackEnd et FrontEnd sont OpenSource sous
+licence MIT.
+
+Le matériel pédagogique (entendu ici les textes, vidéos, images,
+exercices et autres éléments d'apprentissages) sont décorrélés du projet
+dataCraft et sont la propriété exclusive de leurs auteurs.
+
+* Notes
+:PROPERTIES:
+:CUSTOM_ID: notes
+:END:
+Un apprentissage ludique et récompensant est plus efficace dans la
+transmission des connaissance et améliore l'assiduité
+
+| Idée                     | Facilité   | Valeur ajoutée |
+|--------------------------+------------+----------------|
+| Reward // progression    | Pas facile | Forte          |
+| Cours sur l'ifc          | Pas facile | Forte          |
+| Flashcards               | Pas facile | Forte          |
+| Collecter les avis       | Pas facile | Moyen          |
+| Forum amélioration       | Pas facile | Moyen          |
+| Rédaction évaluée par IA | Pas facile | Moyen          |
+| Fil Rouge                | Facile     | Forte          |
+| Correction des exercie   | Facile     | Moyen          |
+| Vidéo de démonstration   | Facile     | Forte          |
+| Boite à outil            | Facile     | Forte          |
+| QCM                      | Facile     | Moyen          |
+
+| Thématiques                         |
+|-------------------------------------|
+| Bases de données                    |
+| Context                             |
+| Gestion de chantier                 |
+| Gestion des informations            |
+| Infographie et VR                   |
+| Interopérabilité                    |
+| Management de projet                |
+| MN - Analyse du cycle de vie        |
+| MN - Conception architecturale      |
+| MN - Conception structurelle        |
+| MN - Coordination                   |
+| MN - Economie de la construction    |
+| MN - Electricité                    |
+| MN - Facility Management            |
+| MN - Génie climatique               |
+| MN - Gestion de patrimoine          |
+| MN - Maintenance                    |
+| MN - Phase EXE                      |
+| MN - Simulation Thermique Dynamique |
+| MN - Synthèse technique             |
+| Plannification chantier             |
+| Préparation chantier                |
+| Programation de l'ouvrage           |
+| Qualité des informations            |
+
+* Formations path
+:PROPERTIES:
+:CUSTOM_ID: formations-path
+:END:
+** Revit 
+:PROPERTIES:
+:CUSTOM_ID: revit
+:END:
+- Plugin dev (P. Navarra)
+- Family creation (B. Cemeli)
+- DB Connection (C. Pierre)
+
+** Navisworks 
+:PROPERTIES:
+:CUSTOM_ID: navisworks
+:END:
+- Plugin dev (R. Cadin)
+- DB Connection (C. Pierre)
+
+** AutoCad 
+:PROPERTIES:
+:CUSTOM_ID: autocad
+:END:
+- Pugin dev (???)
+- DB Connexion (C. Pierre)
+
+* Apprentissage
+:PROPERTIES:
+:CUSTOM_ID: apprentissage
+:END:
+Apprendre une notion :  Text + video + qcm + exercice + rappel
+
+Maintenir le souvenir : flashcard
+
+Parcours d'apprentissage : Préparation entretiens Entretiens fictif en
+visio Certification => User + Certif sur compétances
+
+Explications 5 niveaux  de difficultés => du strict nécessaire au
+perfectionnement
+
+Multiplier les sources Multiplier les formats Référer à la documentation
+
+Présenter les outils Expliquer comment ils fonctionnent Faire un exemple
+Proposer des exercices => inclure de la difficulté  ==> force à se poser
+des questions => Rapport d'erreurs expliquant ou se trouve le problème
+mais sans donner la solution => aide rappelant les notions à utiliser =>
+chatbot assistant apprentissage pour réexpliquer une notion =>
+communauté et groupes pour apprendre ensemble ==> systeme de
+référent/mentor
+
+Evaluer la compétence

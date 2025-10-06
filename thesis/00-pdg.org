@@ -47,7 +47,7 @@
   :UNNUMBERED: notoc
   :END:
 
-  #+LATEX: \end{center}
+#+LATEX: \end{center}
 
 *** Ecole doctorale :
   :PROPERTIES:

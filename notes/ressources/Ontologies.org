@@ -1,0 +1,30 @@
+Langages d'ontologies basé sur lisp.
+
+Objectifs :
+	Créer des "fonctions-objets" décrivant les propriétés, les comportements et la validation des objets 
+
+Points forts :
+	Rapide, flexible, executable, synthaxe simple (s-expression), ontologie au plus proche du format de fichier, logique first
+	Ecosystème Common Lisp.
+
+Interopérabilité : 
+	RDF, WOL, SPARQL => Créer un convertisseur in/out 
+	Mettre en place une API RESTful avec prise en charge des serveurs commes huchentoot
+
+
+voir : 
+"The Knowledge Machine"	(KM) => Lisp based ontology language
+	Synthaxe originelle à mettre en conformité avec Common Lisp ANSI
+	Vérifier les dépendances avec ASDF
+	
+UI/UX :
+	Créer une interface utilisateur moderne, intuitive, didactive et engageante
+	Pour le web et pour le desktop
+	Permettre la construction graphique des ontologies 
+		Visualisation des ontologies et des inférences
+
+Optimisations :
+	Algorythme d'intexation intéligent pour optimisation à la volée des performances de requette
+	Se baser sur un DBMS NewSQL pour la construction de l'application
+	
+	

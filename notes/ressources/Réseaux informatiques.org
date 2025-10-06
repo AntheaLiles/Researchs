@@ -1,0 +1,468 @@
+* Modèle OSI
+:PROPERTIES:
+:CUSTOM_ID: modèle-osi
+:END:
+| Rang | Couche       | Application Exemple                                                  | Matériel Protocoles                                                                                                  | DOD4 Model   |
+|------+--------------+----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+--------------|
+| 7    | Application  | Utilisateur final                                                    | Applications                                                                                                         | Process      |
+| 6    | Presentation | Syntaxe                                                              | JPEG, ASCII, EBDIC, TIFF, PICT                                                                                       | Process      |
+| 5    | Session      | Synchronisation et envois des messages sur un port                   | Ports logiques                                                                                                       | Process      |
+| 4    | Transport    | TCP host to host, flow control                                       | TCP/IP : Si message incomplet alors demande de réémissionUDP : Si message incomplet, continue quand même (streaming) | Host to host |
+| 3    | Network      | => Adresse IP                                                        | RoutersIP/IPX/ICMP                                                                                                   | Internet     |
+| 2    | Data link    | => Adresse MACcarte réseau--switch--carte réseauconnexion end-to-end | Switch, bridge, WAPPPP/SLIP                                                                                          | Network      |
+| 1    | Physical     | Structure physique                                                   | Hub                                                                                                                  | Network      |
+
+![[Drawings/Modèle ISO et TCP-IP.svg]] /Modèle OSI et TCP-IP/
+
+Ressource : [[https://fr.wikipedia.org/wiki/Mod%C3%A8le_OSI]]
+
+* Unités de données (Protocol Data Unit)
+:PROPERTIES:
+:CUSTOM_ID: unités-de-données-protocol-data-unit
+:END:
+Aux différentes couches du modèles OSI, les données échangées sont de
+nature différentes. On dénombre principalement: - Bit (Couche 1:
+Physique) -
+[[file:Mode%CC%80le%20OSI%20cb01f2636c454ff39f3434094f864bf3.md][Trame]]
+(Couche 2: Liaison) -
+[[file:Mode%CC%80le%20OSI%20cb01f2636c454ff39f3434094f864bf3.md][Paquet]]
+(Couche 3: Réseau) - Segment (TCP) / Datagramme (UDP) (Couche 4:
+Transport) - Données (Couches 6, 7 & 8)
+
+** Bit (Binary Digit)
+:PROPERTIES:
+:CUSTOM_ID: bit-binary-digit
+:END:
+Dans la théorie de l'information, un bit est la quantité minimale
+d'information transmise par un message, et constitue à ce titre l'unité
+de mesure de base de l'information en informatique.
+
+Bit est issu de la contraction de binary digit (chiffre binaire) en
+anglais. C'est un chiffre en base 2 qui ne peut prendre que deux
+valeurs. Ces valeurs sont /faux/ et /vrai/ en logique ou /0/ et /1/
+en arithmétique.
+
+#+begin_quote
+En informatique, les bits sont souvent assemblés en ensembles de 8 bits
+appelés octets.
+
+#+end_quote
+
+Un ensemble de bits forme un "mot binaire", la taille du mot traité est
+fonction du processeur, et peut être de 4, 8, 16, 32 ou 64 bits.
+
+** Trame (Frame)
+:PROPERTIES:
+:CUSTOM_ID: trame-frame
+:END:
+Une trame est un bloc d'information véhiculé au travers d'un support
+physique (cuivre, fibre optique ...).
+
+Une trame est composée d'un en-tête (header), des informations que l'on
+veut transmettre , et d'un postambule (trailer).
+
+#+begin_quote
+[[https://www.techno-science.net/definition/11512.html][Techno Science]]
+
+#+end_quote
+
+Il existe trois versions différentes dont une qui a été abandonnée. Le
+format standardisé est l'IEEE 802.3 illustré ci-dessous.
+
+![[Drawings/Réseau - Trame.svg]] /Trame IEEE 802.3/
+
+#+begin_quote
+[[https://fr.m.wikipedia.org/wiki/Trame_(informatique)][Wikipédia]]
+
+#+end_quote
+
+** ⚙️ Paquet (Network Packet)
+:PROPERTIES:
+:CUSTOM_ID: paquet-network-packet
+:END:
+Un paquet ne peut transiter directement sur un réseau physique: il est
+encapsulé à l'intérieur d'une trame.
+
+* Typologies de réseaux
+:PROPERTIES:
+:CUSTOM_ID: typologies-de-réseaux
+:END:
+** Bus (obsolète)
+:PROPERTIES:
+:CUSTOM_ID: bus-obsolète
+:END:
+Tous les nœuds sont reliés ensembles et forment une chaine.
+
+Une seule machine émet un bus qui circule sur le réseau jusqu'à ce qu'il
+arrive au destinataire.
+
+Si le réseau est coupé en un point cela condamne le reste du réseau.
+
+![[Drawings/Réseau bus.svg]] /Réseau bus/
+
+** Anneau (obsolète)
+:PROPERTIES:
+:CUSTOM_ID: anneau-obsolète
+:END:
+Les stations du réseau ne peuvent communiquer que quand elle possède le
+jeton.
+
+Le jeton est intercepté par la station qui souhaite émettre ou recevoir
+des trames.
+
+Cette typologie de réseau bride la communication à un client à la fois.
+
+![[Drawings/Réseau anneau.svg]] /Réseau anneau/
+
+L'animation suivante schématise le fonctionnement de ce réseau :
+
+![[Images/Réseau en Anneau.gif]]
+
+** Etoile
+:PROPERTIES:
+:CUSTOM_ID: etoile
+:END:
+Tous les clients sont connectés à un élément central (hub, router ou
+switch) qui va rediriger toutes les connexions.
+
+Si cet élément central tombe en panne, tout le réseau est hors service.
+Il convient donc de redonder cet équipement.
+
+La force de cette architecture est de pouvoir intervenir sur un client
+sans impacter le reste du réseau.
+
+Cette architecture nécessite plus de matériel et de câble informatique
+pour sa mise en œuvre.
+
+![[Drawings/Réseau étoile.svg]] /Réseau étoile/
+
+** Satellite
+:PROPERTIES:
+:CUSTOM_ID: satellite
+:END:
+Cette typologie de réseau est utilisé pour les appareils mobiles, le
+guidage GPS, la télévision satellite.
+
+![[Drawings/Réseau satellite.svg]] /Réseau satellite/
+
+** Maillé
+:PROPERTIES:
+:CUSTOM_ID: maillé
+:END:
+Cette typologie de réseau est la plus robuste mais pratiquement
+irréalisable (surtout à grande échelle).
+
+Elle consiste à connecter tous les clients les uns aux autres.
+
+![[Drawings/Réseau maillé.svg]] /Réseau maillé/
+
+De ce fait, aucun évènement sur le réseau n'aurait d'impact à large
+échelle puisqu'il existerait toujours un chemin de secours pour
+communiquer.
+
+En pratique, le nombre de câble a mettre en œuvre est démesuré. On peut
+calculer le nombre de câble nécessaire pour une installation comme ceci
+: \(N_{câble} = n(\frac{n-1}{2})\) où \(n\) correspond au nombre de
+client.
+
+![[Images/Evolution du nombre de câble en fonction du nombre de
+client.png]]
+
+** Arbre
+:PROPERTIES:
+:CUSTOM_ID: arbre
+:END:
+Cette typologie est principalement utilisé pour le nommage des domaines.
+
+![[../Drawings/Réseau_Arbre DNS.svg]] /Réseau en arbre : DNS/
+
+* Mode de propagation
+:PROPERTIES:
+:CUSTOM_ID: mode-de-propagation
+:END:
+** Propagation par diffusion
+:PROPERTIES:
+:CUSTOM_ID: propagation-par-diffusion
+:END:
+Envois au réseau et toutes les unités composant le réseau analyse si le
+message lui est adressé
+
+![[Drawings/Réseau propagation par diffusion.svg]] /Propagation par
+diffusion/
+
+* Peer-to-peer
+:PROPERTIES:
+:CUSTOM_ID: peer-to-peer
+:END:
+Envois vers une seule unité et le message est routé par des
+intermédiaires (les nœuds)
+
+![[Drawings/Réseau propagation p2p.svg]] /Propagation peer-to-peer/
+
+* Modes de transmissions
+:PROPERTIES:
+:CUSTOM_ID: modes-de-transmissions
+:END:
+![[Drawings/Réseau mode de transmission.svg]] /Modes de transmissions/
+
+* Protocole HTTP
+:PROPERTIES:
+:CUSTOM_ID: protocole-http
+:END:
+![[Drawings/Réseau architecture 3 tiers.svg]] /Architecture 3 tiers/
+
+* DHCP
+:PROPERTIES:
+:CUSTOM_ID: dhcp
+:END:
+DHCP : Dynamic Host Configuration Protocol = Attribution automatique
+d'adresse IP à un client pour un temps déterminé ainsi que d'autres
+paramètres (attention le client ne désigne pas un serveur).
+
+Divers équipements prennent en charge le protocole DHCP tel que les
+Routeurs ou les Switchs
+
+![[Drawings/Réseau adressage.svg]] /Adressage/
+
+Il s'agit d'une extension du protocole BOOTP (bootstrap protocol) qui
+permet à un client sans disque dur de démarrer et de configurer
+automatiquement TCP/IP. BOOTP ne permet pas d'affecter dynamiquement les
+adresses et nécessite donc de connaitre les adresses MAC.
+
+Les 4 phases d'obtention d'une adresse IP (DORA)
+
+![[Drawings/Réseau attribution IP.svg]] /Attribution d'adresse IP/
+
+- *D* - Discover → Demande le client demande une adresse IP à la source
+  0.0.0.0 avec la destination 255.255.255.255
+
+- *O* - Offer → Offre Des serveur propose une adresse IP associée à la
+  MAC adresse + masque de sous réseau + durée du bail + adresse du
+  serveur DHCP (ils réservent donc un adressage pour ce client)
+
+- *R* - Request → Sélection Le client sélectionne l'offre (souvent la
+  première réponse obtenu) le client annonce par diffusion qu'il a
+  accepté l'offre d'adressage ce message contient l'identification du
+  serveur sélectionné le serveur est donc informé que son offre a été
+  retenu les autres serveurs retirent leurs offres et libèrent les
+  adresses IP pour d'autres clients
+
+- *A* - Act → Accusé Le serveur sélectionné accuse réception au client
+  Son message contient éventuellement d'autres informations (serveur,
+  dns, passerelle, etc.)
+
+Un réseau peut avoir plusieurs services DHCP.
+
+Le DHCP effectue un contrôle des adresse attribués
+
+Utilisation des plages d'adresses IP : - Pour un masque de sous-réseau
+*255.255.255*.0 - 192.168.10.*0* : adresse du réseau, non utilisable -
+192.168.10.*255* : adresse de diffusion qui envois à toutes les
+machines - 192.168.10.*1* à *254* : toutes les adresses possibles du
+réseaux - une plage d'adresse IP se compose d'exclusions (exemple :
+imprimante), de réservations (pour un client donné, dédié à un usage
+spécifique), de baux et d'autres options éventuelles
+
+Cycle de vie de l'adresse IP : - Disponible → En cours d'affectation →
+Attribuée (non disponible) ou Libérée - à 50% de la durée du bail on
+regarde si adresse encore disponible sur le serveur - à 87.5% de la
+durée du bail on demande de renouvellement du bail au serveur
+
+Les informations permettant de suivre et réaliser l'adressage sont
+stockées dans la base de registre
+
+#+begin_src sh
+Hkey_Local_Machine
+    System
+        CurrentControlSet
+            Services
+                Nom_de_l'interface
+                    Parameters
+                        Tcpip
+#+end_src
+
+Renouvellement d'IP manuel avec la commande :
+
+=ipconfig /renew=
+
+[[https://en.wikipedia.org/wiki/Cmd.exe][cmd.exe - Wikipedia]]
+[[https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig][ipconfig
+| Microsoft Learn]]
+
+* Matériel
+:PROPERTIES:
+:CUSTOM_ID: matériel
+:END:
+** Répéteur
+:PROPERTIES:
+:CUSTOM_ID: répéteur
+:END:
+Fonctionnalités : - Amplificateur de signal: Permet d'augmenter la
+limite de distance que peut parcourir un signal dans un câble Ethernet
+
+** Pont (Bridge)
+:PROPERTIES:
+:CUSTOM_ID: pont-bridge
+:END:
+Un pont peut diviser un grand réseau en segments plus petits et sert
+également à connecter deux réseaux locaux (LAN) séparés à l'origine.
+
+#+begin_quote
+[[https://waytolearnx.com/2018/07/difference-entre-un-pont-et-une-passerelle-reseau-informatique.html][Way
+to Learn]]
+
+#+end_quote
+
+Fonctionnalités : - Permet de changer la nature du signal (liaison
+filaire vers non filaire) - Est toujours utilisé pour régénérer le
+signal et trouver le chemin le plus efficace pour transmettre une
+[[https://www.notion.so/fad927cba38b40d59e10c6e5b582d537?pvs=21][trame]].
+
+** Commutateur (Switch)
+:PROPERTIES:
+:CUSTOM_ID: commutateur-switch
+:END:
+Fonctionnalités : - Répéteur - Reçoit l'information d'une source et la
+transfert uniquement au destinataire - Gère l'adressage avec les
+adresses MAC (protocol BOOTP) - mode de fonctionnement : Full duplex
+
+Avantages : - Réduit le trafic au strict nécessaire
+
+** Routeur (Router)
+:PROPERTIES:
+:CUSTOM_ID: routeur-router
+:END:
+Un routeur peut accepter et transférer des paquets uniquement sur un
+réseau en utilisant des protocoles similaires, contrairement à une
+passerelle.
+
+Fonctionnalités : - DHCP - NAT/Firewall - Connait la cartographie de
+routeurs et la charge des réseaux
+
+Avantages : - Isole les machines du réseau avec l'internet en gérant une
+table de correspondance, de routage - Choisis le meilleur canal pour
+envoyer l'information le plus rapidement
+
+** Passerelle (Gateway)
+:PROPERTIES:
+:CUSTOM_ID: passerelle-gateway
+:END:
+Une passerelle est un logiciel installé dans un routeur.
+
+Elle fonctionne comme un « convertisseur de protocole » et est utilisée
+pour augmenter la compatibilité afin d'établir la communication entre
+deux réseaux utilisant deux protocoles différents.
+
+Fonctionnalités : - Traduit des paquets entre différents protocoles -
+Peut fonctionner sur toutes les couches du modèle OSI.
+
+** Concentrateur (Hub) (obsolète)
+:PROPERTIES:
+:CUSTOM_ID: concentrateur-hub-obsolète
+:END:
+Fonctionnalités : - Répéteur - Reçoit l'information d'une source et la
+transfert à tous les équipements connectés - mode de fonctionnement :
+Half Duplex
+
+Inconvénients : - Ne gère pas les adressage - Surcharge le trafic -
+Génère de la latence - Risque pour la sécurité
+
+** Câbles réseaux
+:PROPERTIES:
+:CUSTOM_ID: câbles-réseaux
+:END:
+Les câbles réseaux peuvent être de différentes natures.
+
+Le tableau suivant synthétise leurs caractéristiques :
+
+| Type             | Prise          | Débit            | Longueur   | Sniffing         |
+|------------------+----------------+------------------+------------+------------------|
+| Coaxial          | Prise coaxiale | 10Mb/s           | 500m max   | Vulnérable       |
+| Paires torsadées | sur prise RJ45 | de 10 à 1000Mb/s | 100m max   | Vulnérable       |
+| Fibre optique    | Tiroir optique | 100Mb/s          | théoriquem | moins vulnérable |
+
+Les câbles peuvent être blindés ou non.
+
+On remarquera le blindage avec les dénominations suivantes :
+
+- Paire torsadée non blindée (UTP) /Unshielded Twisted Pair/ Comme son
+  nom l'indique, un câble UTP n'est pas blindé. Il s'agit du type de
+  câble le plus utilisé et le plus basique. Le câble contient des paires
+  de fils torsadés ensemble pour réduire et prévenir les interférences
+  électromagnétiques.
+
+- Paire torsadée blindée (STP) /Shielded Twisted Pair/ Les câbles STP
+  sont similaires aux câbles UTP, les fils étant torsadés ensemble puis
+  enveloppés d'un matériau de blindage ou de blindage constitué d'une
+  feuille d'aluminium ou d'une gaine en tresse de cuivre.
+
+- Paire torsadée sur feuille (FTP) /Foil Twisted Pair/ Avec les câbles
+  FTP, chaque paire torsadée de câbles est enveloppée dans un blindage
+  de feuille pour protéger le câble des interférences électromagnétiques
+  et de la diaphonie.
+
+- Paire torsadée à feuille blindée (S/FTP) /Shielded Foil Twisted Pair/
+  Un câble classé S/FTP (Shielded Foil Twisted Pair) est une combinaison
+  des blindages FTP et STP. Les fils à l'intérieur du câble sont
+  torsadés puis blindés avec une feuille d'aluminium, puis le groupement
+  de 4 paires de fils blindés est blindé par une feuille d'aluminium ou
+  un écran tressé flexible. Cela permet d'obtenir le plus haut niveau de
+  protection contre les interférences électromagnétiques et la
+  diaphonie.
+
+Plus sur les câbles:
+[[http://hautrive.free.fr/reseaux/supports/cables-reseaux.html]]
+
+* DNS
+:PROPERTIES:
+:CUSTOM_ID: dns
+:END:
+![[Images/cartographie_serveurs_DNS.png]] /Répartition des serveurs DNS
+dans le monde/
+
+internet ⇒ réseaux ⇒ sous-réseaux ⇒ machines ⇒ adresses IP
+
+traduction du nom de domaine en adresse IP = résolution de nom
+
+[[https://fr.wikipedia.org/wiki/Domain_Name_System][Domain Name System
+--- Wikipédia]]
+
+Sens de lecture de l'url de droite à gauche
+
+[[https://www.les-infostrateges.com/article/comment-lire-une-url][Comment
+lire une URL ? - Les Infostratèges]]
+[[https://fr.wikipedia.org/wiki/Uniform_Resource_Locator][Uniform
+Resource Locator --- Wikipédia]]
+
+Ordre de résolution des url :
+
+Cache de résolution client/fichier host → dns → netbios → wins →
+diffusion → fichier lmhost
+
+* Active Directory
+:PROPERTIES:
+:CUSTOM_ID: active-directory
+:END:
+L'active directory est un gestionnaire d'identité installé dans un
+serveur DNS.
+
+Il supporte le protocole TCP/IP.
+
+Il est constitué d'un service d'annuaire de compte utilisateurs
+recensant les utilisateurs, les groupes d'utilisateurs, les ordinateurs,
+les contacts et les unités organisationnelles. Il permet d'identifier
+des ressources et d'y attribuer des droits d'accès grâce à des méthodes
+de nommage, des descriptions etc.
+
+![[Drawings/Réseau objets active directory.svg]] /Objets active
+directory/
+
+L'active Directory remplis également les rôles d'attribution automatique
+d'IP (fonction DHCP), de distribution de l'heure (SNTP), d'accès à
+l'annuaire (LDAP), d'authentification (Kerberos) et de synchronisation
+de l'annuaire (LDIF).
+
+Ressources : [[https://fr.wikipedia.org/wiki/Active_Directory][Active
+Directory --- Wikipédia]]
+[[https://www.it-connect.fr/chapitres/un-annuaire-active-directory-pourquoi/][Un
+annuaire Active Directory, pourquoi ? | IT-Connect]]

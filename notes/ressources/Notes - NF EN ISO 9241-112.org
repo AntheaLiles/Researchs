@@ -1,0 +1,58 @@
+💡 L'information présentée est exempte de distraction si l'information
+est présentée de sorte que l'information requise sera perçue sans qu'une
+autre information présentée n'entrave sa perception. > Du point de vue
+de l'utilisateur, les distractions peuvent résulter d'événements
+distrayants et d'une surcharge d'informations. > /Citation 1 : NF EN ISO
+9241-112 §6.2.1/
+
+#+begin_quote
+💡 La présentation de l'information est concise si seules les
+informations nécessaires sont présentées. /Citation 2 : NF EN ISO
+9241-112 §6.5.1/
+
+#+end_quote
+
+#+begin_quote
+💡 Il convient de faire preuve de minimalisme et de simplicité pour
+présenter l'information de façon concise. Il convient d'éviter les
+informations supplémentaires qui n'apportent aucune aide aux tâches de
+l'utilisateur. Il convient de réduire au minimum les informations
+redondantes, sauf si elles facilitent la compréhension. Il convient que
+le minimalisme et la simplicité ne limitent pas l'exhaustivité requise
+des informations ou l'accessibilité de ces informations. Il convient que
+des informations facilitant la reconnaissance des tâches pouvant être
+accomplies à ce moment de l'interaction soient présentées à
+l'utilisateur. Il convient que le système permette aux utilisateurs
+d'accéder à différentes quantités d'information pour répondre à leurs
+besoins individuels. /Citation 3 : NF EN ISO 9241-112 §6.5.2/
+
+#+end_quote
+
+#+begin_quote
+💡 Il convient que l'information présentée pertinente pour la tâche soit
+nettement distincte de toutes les informations d'arrière-plan ou
+évolutives qui sont ajoutées à la présentation à des fins non
+pertinentes pour la tâche (par exemple pour "améliorer" l'aspect
+artistique de la présentation). /Citation 4 : NF EN ISO 9241-112
+§6.2.2.1/
+
+#+end_quote
+
+#+begin_quote
+💡 Il convient de disposer de plusieurs manières de coder les propriétés
+de l'information. Il n'est pas approprié d'utiliser la couleur comme
+seul moyen de codage visuel des propriétés de l'information car
+certaines personnes ne peuvent pas distinguer les couleurs. /Citation 5
+: NF EN ISO 9241-112 §6.3.3.2/
+
+#+end_quote
+
+#+begin_quote
+💡 Il convient que l'information la plus importante (contenant des
+éléments critiques) soit présentée de manière à se distinguer des autres
+éléments d'information présentés et à capter l'attention de
+l'utilisateur. Une information critique est présentée sous forme d'un
+texte en caractères gras plus grands formant un contraste visuel dans un
+écran de visualisation. /Citation 9 : NF EN ISO 9241-112 §6.1.2.3/
+
+#+end_quote

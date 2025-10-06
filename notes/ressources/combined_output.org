@@ -1,0 +1,259 @@
+* SAV à distance par visioconférence + AR 
+
+grâce à un QR Code sur les équipements 
+- dépannage léger 
+- aide à l'utilisation 
+- campagne de mise à jour 
+- diagnostique
+
+* Améliorations des études
+
+- Matérialiser les limites de prestations 
+- Dès que possible : créer un raccord simple aux interfaces. (e.g. une boite de jonction, une prise 32A, un regard, un coffret, etc.) 
+- La gestion des interfaces est simplifiée par l'ajout des emplacement et modalités d'interfaces sur les fiches dédiées 
+- Utiliser une Sphère dans la MN à l'endroit d'une interface et y associer la fiche ad-hoc 
+- Repérer les points de distributions, si possible avec les puissances associées 
+- Elément de détail // Matrice des systèmes
+
+* Document store
+λ.qif.hdf5 qif ∈ dataset
+
+Archive de données : 
+- Accès rapide aux données : TAR ; LZ4 ; LZO 
+- Taux de compression : XZ ; LZMA ; BZIP2
+
+
+* Scinder les Chemins de câbles 
+lors d'un départ de câble (eg. vertical) pour créer des tronçons différents
+
+* Common Data Environment
+A 'Common Data Environment' (CDE) is defined in ISO 19650 as an: 
+Agreed source of information for any given project or asset, for collecting, managing and disseminating each information container through a managed process.[42] A CDE workflow describes the processes to be used while a CDE solution can provide the underlying technologies. A CDE is used to share data across a project or asset lifecycle, supporting collaboration across a whole project team. The concept of a CDE overlaps with enterprise content management, ECM, but with a greater focus on BIM issues.
+
+* Axes d'études
+
+Impact des approches basées sur les données dans l'ingénierie des systèmes complexes : Vers une efficacité accrue
+Approche méthodologique pour l'interopérabilité des logiciels dans l'ingénierie des systèmes électriques
+Automatisation des flux de travaux pour l'ingénierie des systèmes électriques : Vers une interconnexion des outils métiers
+Architecture de données pour la collaboration décentralisée dans l'ingénierie des systèmes électriques
+Optimisation de la chaîne de valeur dans l'ingénierie des systèmes complexes à l'aide d'une approche sémantique et ontologique
+
+* 
+
+Système	|-------> Equipement|--> Guide de fabrication (LOFC, Schémas, etc.) 
+							|--> Guide d'installation (LOMC, Plans, Mod'op...) 
+							|--> Guide d'utilisation (DEM etc.) 
+							|--> Objet STEP 
+							|
+							|-------> Composant |--> Fiche technique 
+												|--> Manuel utilisateur 
+												|--> Notice de montage 
+												|--> Profil environnemental 
+												|--> Symbole CAD 
+												|--> Objet STEP
+
+
+* Tout le monde devrait participer à la rédaction des standards
+* Templates de document
+* MES 
+
+Les logiciels de pilotage sont un secteur en pleine expansion depuis les années 1990. Chaque industrie le perçoit d'une manière qui lui est propre. Cependant une norme américaine et internationale a été mise en place, la norme ANSI/ISA-95, constituée de cinq parties, dont les deux premières ont été transposées en norme internationale sous les références IEC/ISO 62264-1: 2003 et IEC/ISO 62264-2: 2004.
+Cette norme définit les fonctions du logiciel de pilotage, au nombre de onze : 
+- acquisition des données ; 
+- ordonnancement ; 
+- Gestion du personnel ; 
+- Gestion des ressources ; 
+- cheminement des produits et des lots ; 
+- traçabilité produit et généalogie ; 
+- contrôle de la qualité ; 
+- gestion des procédés ; 
+- analyse des performances ; 
+- Gestion des documents ; 
+- gestion de la maintenance.
+
+
+* Isolants de réseaux
+Promat Armaflex Bourrelet coton
+
+Liste des épaisseurs de calorifuge en plomberie : 
+- Eau chaude (cas général): 
+- \(\phi Ext < 50mm : 25mm\) 
+- \(50mm < \phi Ext < 150mm : 35mm\) 
+- \(150mm < \phi Ext : 50mm\)
+
+Annoter les épaisseurs de calorifuges sur les plans en même temps que les réseaux
+
+
+* Utilisation de l'IA
+
+CCTP => IA => Smart Contracts Norme etc => exigences => précision et/ou surévaluation => mode de vérification (eg. Calcul) <= demande clause dérogatoires <= avis technique, preuve
+
+Point Cloud => IA => 3D Objects
+
+Vocation du numérique à réduire l'impact humaine sur l'environnement
+
+Math : statistique, optimisation sous contrainte
+
+
+* Laisser aux ingénieurs le plaisir d'ingénierer 
+
+Aux chefs de projets la capacité de cheffer Aux aux projeteurs le soin de projeter et aux dessinateurs le temps de dessiner
+
+
+
+* Logiciel spécial ETF 
+
+Avec modélisation des zones de couvertures foudres, mats, lignes tendues, puits de terre, electrodes, malts, pate d'oie, fond de fouilles et compteurs foudres
+
+
+
+* DYNAE - Adonis -> 
+
+mesure - Minute sécurité Synchronisé + SSE
+(affectation des risques aux equipements)
+
+Fiche de travail - planning minuté - détrail activités (quoi, qui, comment....)
+
+Dashboard avec vue chemin critique personnalisée
+
+
+* ZKP : Zeroknowledge Proof 
+
+Adapté à de la vérification d'avancement 
+
+POA : Proof Of Authority Adapté aux Visa Oracle ? 
+
+Carte d'identité + NFC
+
+Pas de blockchain pour : 
+- La finance 
+- Le commerce
+
+De la blockchain pour : 
+- La confiance 
+- L'authenticité des documents 
+- La protection de la propriété intellectuelle 
+- La traçabilité 
+- Passeport digital de produit (PDP) 
+- Suivi des modifications (Log) 
+- L'optimisation 
+- Contrats automatiques (Smart Contract) 
+- Vérification de données (IDS)
+- La sécurité 
+- Protection contre la fraude 
+- Protection contre le vol de propriété industriel
+
+
+
+* Distributed engineering 
+- Routing 
+- Engagement et management 
+- Outils efficaces Context less engineering 
+- Plateforme dépourvue de contexte 
+- Sécurité par concept : "une donnée seule ne vaut rien"
+
+
+* Charte Unique
+
+** Projet de recherche décentralisé
+Avec des 
+- psychologues (émotions) 
+- philosophes (vocable) 
+- anthropologue ? (Nature humaine) 
+- historien (rapport à la symbolique) 
+- experts 
+- techniciens 
+- utilisateurs non techniques 
+- etc.
+
+Réaliser la charte unique de l'ingénierie (couleurs, symboles, contrastes, informations, objet 3D, blocs CAO, etc.) 
+En format libre => QIF, IFC, [...]
+- mode de gouvernance
+- périmètre
+- organisation du projet
+- phylosophie / lignes directrice
+- déclaration volontée (stratégie, objectifs etc.)(repo dédié ?)
+
+2nd repo avec le matériel de prod ?
+
+3em repo avec des templates de developpement ?
+
+Créer des IDS etc.
+
+Rédiger stratégie de plan par phase avec stratégie synthèse comprenant synthèse des réseaux complète avec dimensionnement
+
+Faire cartouche
+
+- Transformateur Sec
+	- Non carrossé
+	- Carrossé
+	- HT HT, HT BT, BT, BT
+	- Générateur Homopolaire
+
+- Bornes enfichables
+- Verrouillage Tete HT
+- Tete HT (Droite ou Coudée avec angle réglable)
+- galets
+- Luminaire
+
+  #+begin_example
+  Tube fluo |---------|
+  #+end_example
+
+- Bloc Secours
+- Cellule HT
+- Chambre de tirage
+
+Identifier => Connecteurs ele puissance / données Cable => connecteurs canalisation, Connecteurs conduits
+
+BJ sur hote ?
+
+Sur pl RSV : mn str only
+
+Qu // nomenclatures imbriquées & espaces + Pset
+
+
+* Créer une documentation https://documentation.divio.com/
+
+
+* Sources de données 
+- Base de donnée nationale du bâtiment 
+- IGN 
+- INIES 
+- CSTB
+
+* Pas de solution facile pour réaliser le suivi de l'obsolescence
+Voir la possibilité de passer par eproc pour obtenir l'accès aux informations des fournisseurs (catalogue, dispo, prix)
+
+* File management
+=> Détection automatique des doublons, fichiers vides, dossiers vides, fichiers corrompus => Assignation de Tag, Métadonnées et Timestamp
+
+* La décomposition fonctionnelle donne des unités fonctionnelles
+
+
+* Régresser à l'objet les tableaux de points de mesure en GTB
+
+
+* Good algorithm >> any optimisation
+Never abstract until you really need it
+
+* Zero knowledge proof => Vote/questionnaire/exigence
+
+
+* Partage de la valeur : 
+
+blockchain
+	minage via travail 
+	revente au pot commun
+	financement du pot commun par un % des abonnements
+
+Focus client : intégrer et engager les clients dans le développement et l'amélioration
+
+
+* Penser l'environnement de développement 
+en même temps que la conception de l'outil pour offrir une meilleure expérience au développeur.
+Eléments de supervision, rechargement du code à chaud, etc.
+
+* Trémies
+Nature du rebouchage => calcul des volumes pour commandes Mortier, Mastic, Sacs coupe feu etc.
+

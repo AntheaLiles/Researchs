@@ -1,0 +1,823 @@
+* Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités
+:END:
+** Objet du document
+:PROPERTIES:
+:CUSTOM_ID: objet-du-document
+:END:
+Le présent document décrit l'organisation et les dispositions prises par
+CLEMESSY relatives à l'Assurance et au Contrôle de la qualité pour la
+réalisation et la mise en œuvre de constituants logiciels.
+
+Citer, le cas échéant, les autres documents contractuels.
+
+Ce Plan est réalisé selon la norme : Recommandations de Plan Qualité
+Logiciel (AFNOR Z 67 - 130).
+
+Le développement du logiciel se fera en application avec le Plan de
+Production Projet
+
+(éventuellement avec le Plan d'Assurance Qualité quand il existe).
+
+** Domaine d'application
+:PROPERTIES:
+:CUSTOM_ID: domaine-dapplication
+:END:
+Citer les logiciels concernés par le Plan Qualité Logiciel.
+
+Le présent document s'applique à l'ensemble de l'organisation du projet.
+A ce titre, il inclut : ( toute l'équipe de projet, les fournisseurs et
+sous-traitants internes et externes, les  partenaires et membres de
+groupements, ( toutes les phases du projet depuis l'entrée de la
+commande jusqu'à la  ) réception par le client et la levée des
+éventuelles réserves. ( Ce document constitue un complément au Plan
+d'Assurance Qualité
+
+Les logiciels concernés par ce plan qualité sont les suivants : ( - ) -
+( - ) -
+
+** Responsabilité associée au plan qualité logiciel
+:PROPERTIES:
+:CUSTOM_ID: responsabilité-associée-au-plan-qualité-logiciel
+:END:
+Indiquer les responsabilités associées au PQL, notamment : - la
+rédaction - la modification - la vérification  - l'approbation  - le
+contrôle de l'application du plan - l'évolution du plan.
+
+Le contrôle de l'application de ce Plan Qualité Logiciel est du ressort
+du responsable qualité du pôle.
+
+La gestion de l'évolution est de la responsabilité du chef de projet
+CLEMESSY nommé pour le projet.
+
+** Procédure d'évolution du plan qualité logiciel
+:PROPERTIES:
+:CUSTOM_ID: procédure-dévolution-du-plan-qualité-logiciel
+:END:
+Fixer les règles d'évolution en fonction des clauses exprimées par le
+donneur d'ordre.
+
+Ce document est une édition préliminaire du document contractuel qui
+sera finalisé lors de la première étape du projet (validation du
+projet).
+
+Une évolution se fait sur l'initiative du responsable Qualité de
+<Donneur d'Ordre> ou du responsable Qualité de CLEMESSY, avec l'accord
+du chef de projet de CLEMESSY.
+
+Le Plan Qualité Logiciel est un document de référence projet.
+
+De ce fait, son évolution suit les règles suivantes : - modification du
+texte par le Responsable Qualité Logiciel, - mise à jour de l'historique
+des modifications, - authentification de cette opération par apposition
+d'une signature, - vérification par le Responsable Qualité Logiciel, -
+incrémentation de l'indice de révision, - autorisation par le Chef de
+projet, - diffusion à l'équipe de développement CLEMESSY et au Chef de
+projet du <Donneur d'Ordre>.
+
+Ce présent Plan Qualité Logiciel sera soumis à l'approbation du <Donneur
+d'Ordre>.
+
+Le Plan Qualité Logiciel fait partie des documents référentiels dont la
+rédaction est initialisée dès le début du projet logiciel (au plus tard
+fin spécification).
+
+La première édition est soumise à la validation lors de la Revue de
+Spécification Logiciel.
+
+** Procédure en cas de non-application du plan
+:PROPERTIES:
+:CUSTOM_ID: procédure-en-cas-de-non-application-du-plan
+:END:
+Préciser les dispositions à prendre en cas de non-application du Plan
+Qualité Logiciel.
+
+Selon le cas, le client ou CLEMESSY peut établir un constat de
+non-application CLEMESSY identifie la cause (dispositions ou procédures
+applicables).
+
+La modification éventuelle de la disposition ou de la procédure
+incriminée sera effectuée par CLEMESSY.
+
+Le <Donneur d'Ordre> sera informé pour son approbation avant l'évolution
+en conséquence du plan qualité. Cette évolution suit la procédure
+décrite au §1.4.
+
+** Documents de références
+:PROPERTIES:
+:CUSTOM_ID: documents-de-références
+:END:
+*** Document généraux relatifs à la qualité
+:PROPERTIES:
+:CUSTOM_ID: document-généraux-relatifs-à-la-qualité
+:END:
+| N° | Référence  | Désignation                                       | Ind. | Date     |
+|----+------------+---------------------------------------------------+------+----------|
+| 1  | ISO 9001   | Systèmes de management de la qualité -- Exigences |      | 12/00    |
+| 2  | M-111      | Manuel Qualité Entreprise                         | D    | 27/02/08 |
+| 3  | NFZ 67-130 | Recommandations de Plan Qualité Logiciel          |      | 04/96    |
+
+Donner la référence des documents susceptibles de fournir des
+informations complémentaires et nécessaires à la réalisation du projet
+logiciel : normes, recommandations, articles de l'état de l'art, etc.
+
+( GAM-T17 Méthodologie de développement des logiciels intégrés)
+(systèmes militaires). ) NFZ 61-102 Vocabulaire de qualité logiciel. (
+ISO 6592 Principes généraux relatifs à la documentation des ) systèmes
+informatisés.
+
+*** Documents propres à la commande
+:PROPERTIES:
+:CUSTOM_ID: documents-propres-à-la-commande
+:END:
+| N° | Référence | Désignation | Ind. | Date |
+|----+-----------+-------------+------+------|
+|    |           |             |      |      |
+|    |           |             |      |      |
+|    |           |             |      |      |
+|    |           |             |      |      |
+|    |           |             |      |      |
+|    |           |             |      |      |
+|    |           |             |      |      |
+
+* Termes et définitions
+:PROPERTIES:
+:CUSTOM_ID: termes-et-définitions
+:END:
+** Glossaire des termes
+:PROPERTIES:
+:CUSTOM_ID: glossaire-des-termes
+:END:
+Donner un glossaire des termes ou expressions particuliers employés dans
+le PQL.
+
+Si la taille du glossaire dépasse une page, il est recommandé de le
+faire figurer en annexe et d'inscrire dans ce présent paragraphe la
+mention : (voir le glossaire en annexe <nom d'annexe>).
+
+** Abréviations
+:PROPERTIES:
+:CUSTOM_ID: abréviations
+:END:
+Donner la liste de chaque abréviation utilisée dans ce document avec sa
+signification correspondante. ) AQ : Assurance Qualité ( AQL : Assurance
+Qualité Logiciel ) BE : Bureau d'Etudes ( CY : ClemessY ) FE : Fiche
+d'écart ) GCL : Gestion de Configuration Logiciel ( GP : Grands
+Projets ) ITC : Ingénieur Technico-Commercial ) PPP : Plan de Production
+de Projet ( PAQ : Plan d'Assurance Qualité ) OT : Organigramme des
+tâches ) PLQ : Plan Qualité Logiciel
+
+* Organisation pour le projet
+:PROPERTIES:
+:CUSTOM_ID: organisation-pour-le-projet
+:END:
+( En cas d'existence d'un PAQ se référer aux paragraphes correspondants
+dans celui-ci) ## Présentation du projet global (description, objectifs,
+performances, contraintes, etc...)
+
+** Structure du projet global
+:PROPERTIES:
+:CUSTOM_ID: structure-du-projet-global
+:END:
+( (arborescence du projet global, sociétés, organismes et services)
+intervenants, rôles, etc...)
+
+** Présentation du projet Clemessy
+:PROPERTIES:
+:CUSTOM_ID: présentation-du-projet-clemessy
+:END:
+( (description des prestations, objectifs, performances, contraintes,
+etc...)
+
+** Organigramme
+:PROPERTIES:
+:CUSTOM_ID: organigramme
+:END:
+( (à compléter selon données propres au projet)
+
+** Rôles et missions
+:PROPERTIES:
+:CUSTOM_ID: rôles-et-missions
+:END:
+( (à compléter selon données propres au projet)
+
+* Démarche de développement
+:PROPERTIES:
+:CUSTOM_ID: démarche-de-développement
+:END:
+Indiquer la démarche retenue pour le développement du produit en donnant
+la référence de la norme ou standard appliqué.
+
+** Cycle de développement
+:PROPERTIES:
+:CUSTOM_ID: cycle-de-développement
+:END:
+Définir le cycle de vie du développement. Le cycle de développement
+adopté est illustré par l'annexe 1.
+
+Ce cycle comporte les phases suivantes : - spécification, - conception
+préliminaire, - conception détaillée, - codage, - tests unitaires, -
+intégration, - validation.
+
+Voir cycle de développement logiciel en annexe 1.
+
+| Phase                     | Activités principales                                                                                                                                             | Documents                                                                                                                  | Vérification                                    |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
+| SPECIFICATION DU LOGICIEL | Traduction des besoins du client en :- Fonctions- Interfaces- Performances- Contraintes- Exigences Qualité- éventuellement, vérifier la faisabilité (maquettage). | Entrée:Cahier des ChargesSortie:- Dossier de spécification du logiciel- Manuel provisoire d'utilisation et d''exploitation | - Vérification des études- Validation du client |
+
+| Phase                  | Activités principales                                                                                                                                                                          | Documents                                                                                                                                                                                        | Vérification                                                                             |
+|------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------|
+| CONCEPTIONPRELIMINAIRE | Conception de l'architecture du logiciel- Décomposition en traitements logiciels.- Préparation de l'intégration et la validation du logiciel.                                                  | Entrée:- Dossier de spécification du logiciel Sortie:- Dossier de conception préliminaire- Dossier provisoire des tests de validation                                                            | - Vérification des études- Validation du client                                          |
+| CONCEPTION DETAILLEE   | Conception de chaque traitement (fournir une solution algorithmique à chaque constituant, préciser les structures internes et les interfaces des constituants)Préparation des tests unitaires. | Entrée:- Dossier de conception préliminaire Sortie:- Dossier de conception détaillée- Dossier provisoire des tests unitaires                                                                     | - Vérification des études- Revue de conception                                           |
+| CODAGE                 | Coder les composants. Il s'agit de traduire, dans un langage de programmation, le résultat de la conception détaillée.                                                                         | Entrée:- Dossier de conception détailléeSortie:- listage des modules codés.- Dossier des Tests unitaires.                                                                                        | Lecture de code et vérification de conformité code par rapport à sa conception détaillée |
+| TESTS UNITAIRES        | Vérifier que chaque module codé est conforme à sa description dans le Dossier de conception détailléeTest unitaire de chaque traitement.                                                       | Entrée:- Dossier des Tests unitaires- Dossier de conception détailléeSortie:- Dossier des Tests unitaires.- listage des modules testés unitairement.- Dossier des Tests d'Intégration.           | - Vérification au travers des rapports de tests                                          |
+| INTEGRATION            | Assemblage progressif des traitements.Une plate-forme de tests et de simulations est mise en place. Les outils utilisés sont précisés.Réalisation des tests                                    | Entrée:- Dossier des Tests d'Intégration- Dossier de conception préliminaireSortie:- Dossier des tests d'Intégration- listage des modulestestés en Intégration.- Dossier des tests de validation | - Vérification au travers des rapports de tests                                          |
+
+| Phase      | Activités principales                                                                                                                                   | Documents                                                                                                                                                                                                                                       | Vérification                                    |
+|------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
+| VALIDATION | Tests du logiciel complet en fonctionnement opérationnel - vérifier qu'il correspond à la spécification technique du besoin- prononcer la qualification | Entrée:- Dossier des tests de validation- Dossier de spécification du logiciel- Cahier de recetteSortie:- Dossier des tests de validation- Dossiers définitifs des phases précédentes.- PV de Recette- Manuels d'utilisation et d'exploitation. | - Vérification au travers des rapports de tests |
+
+Tableau 1: Cycle de vie logiciel
+
+Définir avec l'approbation du donneur d'ordre les modifications à
+apporter à ce cycle de vie afin de l'adapter à ce présent projet.
+
+Compléter le tableau ci-dessous avec l'approbation du donneur d'ordre.
+
+| Phase                    | Revue en fin de phaseavec le Client |
+|--------------------------+-------------------------------------|
+| Spécification            | X                                   |
+| Conception Préliminaire  |                                     |
+| Conception Détaillée     |                                     |
+| Codage + Tests Unitaires |                                     |
+| Intégration              | X                                   |
+| Validation               | X                                   |
+
+Tableau 2 : Phases et revues
+
+** Description des phases du cycle de développement
+:PROPERTIES:
+:CUSTOM_ID: description-des-phases-du-cycle-de-développement
+:END:
+Le processus de développement est décomposé en phases distinctes. Chaque
+phase fournit des articles qui vont servir d'entrée à la phase suivante.
+L'ensemble des tâches effectuées dans une phase se décompose en un
+nombre fini d'activités ayant chacune ses objectifs, ses entrées, ses
+ressources et les résultats à produire.
+
+Les résultats des phases sont validés dans lors des revues spécifiés
+dans le tableau 4.
+
+* Documentation
+:PROPERTIES:
+:CUSTOM_ID: documentation
+:END:
+Selon procédure "Maîtrise des documents et des données propres aux
+projets".
+
+Donner toutes les informations nécessaires à l'élaboration, utilisation
+et la gestion de la documentation du projet.
+
+Pour tout document, indiquer : - état relatif aux fournitures
+contractuelles ( livrable, consultable ou privé), - responsables
+(rédaction, modification, approbation, diffusion), - périodes et
+conditions de mises à jour, - diffusion et application.
+
+** Les documents de gestion de projet
+:PROPERTIES:
+:CUSTOM_ID: les-documents-de-gestion-de-projet
+:END:
+C'est l'ensemble des documents administratifs de gestion et de suivi
+d'avancement du projet. Ces documents comprennent : - plan de Production
+Projet, - plan Qualité Logiciel, - planning détaillé, - rapport de Suivi
+de l'avancement, - comptes rendus de Revues et Audits, - comptes rendus
+des réunions.
+
+Ces documents sont enregistrés et font partie de la bibliothèque
+générale du projet.
+
+Au tableau 3 figurent les documents de gestion de projet à réaliser
+et/ou à livrer.
+
+Compléter le tableau ci-dessous avec l'approbation du donneur d'ordre.
+
+| Exigence document | à réaliser | à livrer | à soumettre à l'acceptation du client |
+|-------------------+------------+----------+---------------------------------------|
+| PPP               | X          |          |                                       |
+| Planning          | X          | X        | X                                     |
+| PQL               | X          | X        | X                                     |
+
+Tableau 3 : Documents de Gestion de Projet
+
+** Les documents techniques de réalisation
+:PROPERTIES:
+:CUSTOM_ID: les-documents-techniques-de-réalisation
+:END:
+Il s'agit des documents des référentiels (voir le cycle de vie), et des
+procédures spécifiques référencées par le Plan Qualité. L'exigence
+contractuelle retenue pour cet ensemble des documents figure au
+tableau 4.
+
+Compléter le tableau ci-dessous avec l'approbation du donneur d'ordre.
+
+| Exigence Document                    | à réaliser | à livrer | à soumettre à l'acceptation du client |
+|--------------------------------------+------------+----------+---------------------------------------|
+| Dossier de spécification du logiciel | X          | X        | X                                     |
+| Dossier de conception préliminaire   | X          |          |                                       |
+| Dossier de conception Détaillée      | X          |          |                                       |
+| Dossier de codage                    | X          |          |                                       |
+| Dossier de tests unitaires           | X          |          |                                       |
+| Dossier de tests d'intégration       | X          |          |                                       |
+| Listing                              | X          | X        |                                       |
+| Dossier de recette                   | X          | X        | X                                     |
+
+Tableau 4 : Documents Techniques de Réalisation 
+
+** Les manuels d'utilisation et d'exploitation
+:PROPERTIES:
+:CUSTOM_ID: les-manuels-dutilisation-et-dexploitation
+:END:
+Il s'agit des documents faisant partie du produit logiciel et à l'usage
+des utilisateurs. A ce titre, ils sont livrés sous forme de manuels :
+utilisateur de référence, de programmation et d'installation. Les
+exigences relatives aux manuels figurent au tableau 5 ci-dessous.
+
+Compléter le tableau ci-dessous avec l'approbation du donneur d'ordre.
+
+| Exigence Document                       | à réaliser | à livrer | à soumettre à l'acceptation du client |
+|-----------------------------------------+------------+----------+---------------------------------------|
+| Manuel d'Utilisation                    | X          | X        | X                                     |
+| Manuel d'Installation et d'exploitation | X          | X        | X                                     |
+
+Tableau 5 : Manuels d'Utilisation et d'Exploitation
+
+* Maitrise des documents
+:PROPERTIES:
+:CUSTOM_ID: maitrise-des-documents
+:END:
+** Maitrise de la documentation du projet
+:PROPERTIES:
+:CUSTOM_ID: maitrise-de-la-documentation-du-projet
+:END:
+La documentation liée à un projet recouvre l'ensemble des documents
+reçus, émis, crées et utilisés depuis l'entrée de la commande jusqu'à la
+fin de période de garantie.
+
+L'ensemble de cette documentation est classée dans le dossier de projet
+du CHEF DE PROJET.
+
+Les documents à jour sont recensés dans un dossier de référence et
+identifiés en tant que tel (Master, Témoin BE, etc.).
+
+Le détail de l'organisation, de la présentation et du contenu du dossier
+de projet est décrit dans la procédure "Maîtrise des documents et
+données propres aux projets".
+
+** Identification
+:PROPERTIES:
+:CUSTOM_ID: identification
+:END:
+Documents administratifs, de gestion, de suivi de projet : ces documents
+sont identifiés par le nom du projet, le numéro de la commande et la
+date. Documents techniques créés par le projet : ces documents sont
+identifiés selon le principe suivant : *8E - CCCCC - TT - DD - NN - A*
+*8E* : identification du Pôle GP *CCCCC* : 5 chiffres pour le N° de
+commande *TT* : 2 chiffres pour la tranche *DD* : 2 lettres pour le type
+de document *NN* : 2 chiffres pour le numéro du document *A* : 1 lettre
+pour l'indice de révision ### Présentation des documents techniques (Les
+standards de présentation des documents (page de garde pour les
+différents types de documents, formats, etc.) sont donnés en annexe.)
+
+*** Evolution des documents techniques
+:PROPERTIES:
+:CUSTOM_ID: evolution-des-documents-techniques
+:END:
+Les documents portent l'indice A depuis leur établissement jusqu'à leur
+première diffusion.
+
+Toute modification après diffusion d'un document incrémente l'indice de
+révision.
+
+** Recensement des documents techniques
+:PROPERTIES:
+:CUSTOM_ID: recensement-des-documents-techniques
+:END:
+L'ensemble des documents techniques reçus, créés, émis sont recensés sur
+des listes comprenant pour chaque document : - la référence du
+document, - son indice, - sa date de création ou de modification, -
+l'entité émettrice ou destinataire.
+
+*** Diffusion des documents techniques
+:PROPERTIES:
+:CUSTOM_ID: diffusion-des-documents-techniques
+:END:
+Les diffusions internes au pôle GP sont faites soit par listes de
+diffusion, soit par fiches de circulation, soit par annotation des
+documents.
+
+Les diffusions aux sous-traitants se font par bordereau.
+
+Les diffusions au client se font par bordereau signés par le CHEF DE
+PROJET.
+
+Le bordereau précise la nature des envois (Bon Pour Exécution, pour
+information, pour approbation, etc.).
+
+Les documents mentionnent le statut du document (Vu Sans Observation,
+Bon Pour Exécution, etc.).
+
+La liste des documents à jour est jointe aux diffusions ou mise à
+disposition des utilisateurs.
+
+** Maitrise du courrier
+:PROPERTIES:
+:CUSTOM_ID: maitrise-du-courrier
+:END:
+La méthode de maîtrise du courrier échangé avec l'extérieur est définie
+dans la procédure "Traitement du courrier".
+
+Ainsi : - le courrier reçu des clients et des partenaires (groupements)
+est enregistré à l'entrée avec - la date d'arrivée,  - l'entité
+réceptionnaire, - le destinataire, - le courrier destiné aux clients et
+aux partenaires est approuvé et signé par le CHEF DE PROJET selon les
+pouvoirs de signature en vigueur, daté et enregistré.
+
+** Echange client - prestataire
+:PROPERTIES:
+:CUSTOM_ID: echange-client---prestataire
+:END:
+Coordonnées des intervenants ( (tableau 6.4.1 du PLAN DE PRODUCTION
+PROJET)
+
+Règles d'échanges, de circulation, de diffusion ( (préciser les règles
+selon dispositions propres au projet)
+
+Les informations acheminées sur ce circuit concernent principalement les
+revues d'inspection, le processus d'actions correctrices et la recette.
+
+Documentations et informations relatives : - réunions, revues,
+réceptions, - modifications et anomalies, - relations contractuelles et
+commerciales, - assurance qualité (normes, standards,
+recommandations), - client final : formation, exploitation, maintenance.
+
+| InterlocuteursSujet      | CLEMESSY | <Donneur d'Ordre> | Sous-traitantexterne | Sous-traitantinterne |
+|--------------------------+----------+-------------------+----------------------+----------------------|
+| Relations contractuelles |          |                   |                      |                      |
+| Technique                |          |                   |                      |                      |
+| Assurance Qualité        |          |                   |                      |                      |
+
+Tableau 6 : Echanges d'informations relatives au projet
+
+* Gestion de la configuration
+:PROPERTIES:
+:CUSTOM_ID: gestion-de-la-configuration
+:END:
+Préciser les dispositions spécifiques prises pour gérer la configuration
+du logiciel.
+
+Un ensemble des fiches sont utilisées dans les différentes activités de
+gestion de la configuration du produit logiciel.
+
+** Identification de la configuration
+:PROPERTIES:
+:CUSTOM_ID: identification-de-la-configuration
+:END:
+L'identification concerne deux types d'éléments : - le processus de
+réalisation (procédures de génération, documents et outils
+spécifiques), - le produit logiciel (les programmes et la documentation
+associée).
+
+** Gestion des versions et contrôle de la configuration
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-versions-et-contrôle-de-la-configuration
+:END:
+- Les versions des logiciels de fourniture de tiers sont gérés tout au
+  long du projet.
+- Les versions de logiciels applicatifs sont gérées à partir de la
+  recette plate-forme, à chaque phase importante (recette, après la
+  levée des réserves, avant départ sur site, après réception, après la
+  levée des réserves sur le site) une sauvegarde est réalisée. A chaque
+  sauvegarde est associée une fiche d'identification de logiciel.
+- Tout au long de projet nous assurons une gestion des sauvegardes.
+
+** Suivi de la configuration
+:PROPERTIES:
+:CUSTOM_ID: suivi-de-la-configuration
+:END:
+L'ensemble des formulaires (voir page de présentation en annexe) permet
+de suivre la configuration lors de son évolution.
+
+** Gestion des supports et livraison
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-supports-et-livraison
+:END:
+Décrire les dispositions spécifiées pour la gestion des supports et la
+livraison des articles. Le Guide de Gestion de Configurations Logiciel
+rappelle les actions à effectuer.
+
+Indiquer les précautions à prendre pour la manipulation des supports
+non-standards.
+
+Définir les modalités de diffusion. ( Tout article livré au client est
+accompagné d'une fiche de distribution qui décrit la constitution de
+l'emballage ou package (voir la fiche FD en annexe). ( Les détails des
+articles constituants figurent sur leurs fiches de version respectives
+(voir) FV en annexe).
+
+* Gestion des modifications
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-modifications
+:END:
+Selon procédure  "Traitement des modifications" réf. : M-145 (décrire
+les particularités ou les exigences du projet).
+
+* Méthodes, outils et rêgles
+:PROPERTIES:
+:CUSTOM_ID: méthodes-outils-et-rêgles
+:END:
+Pour chaque phase ou activité, indiquer la méthode, technique et les
+outils de support choisis le développement et les tests. Préciser les
+normes et standards à respecter (exemple méthode d'analyse, standard de
+codage,  etc. ...).
+
+** Méthodes d'analyse
+:PROPERTIES:
+:CUSTOM_ID: méthodes-danalyse
+:END:
+La méthode utilisée pour le développement sera la suivante : (
+Prototypage de l'Interface Homme Machine (IHM) en début de phase de
+conception ) Validation de ce maquettage par le futur exploitant (
+Méthode d'analyse
+
+*** Exemple de Méthode d'analyse
+:PROPERTIES:
+:CUSTOM_ID: exemple-de-méthode-danalyse
+:END:
+(applicable depuis la phase de spécification logicielle jusqu'a la
+conception préliminaire).
+
+L'installation sera décomposée fonctionnellement en modules.
+
+Cette décomposition fonctionnelle est basée sur la méthode S.A.
+(Structured Analysis). Cette méthode est du type analyse descendante.
+Partant de fonctions générales, on décompose ces fonctions en
+sous-fonctions jusqu'à obtention des fonctions élémentaires.
+
+*** Descriptif du symbolisme utilisé
+:PROPERTIES:
+:CUSTOM_ID: descriptif-du-symbolisme-utilisé
+:END:
+. fonctions
+
+[[https://lh7-us.googleusercontent.com/xAgEQYgyLbuTlWEVgytlst8xcsd3jkVSA0CAxlcr00KU57cEcnDzEs0E0SpiJADz0F7Ge2cKJdKSpXshbvpQkAd4m9KcqCH_2rQxwxe9SwxoZ4lXMNsTjXIsxENQeu-Qlto16PaeO2ddQSiInT4B]]
+
+Elles décrivent les composants extérieurs au système (procédé ou
+périphérique) ou les opérateurs agissant sur le système.
+
+. flux de données
+
+[[https://lh7-us.googleusercontent.com/Az_wSHfv9TkUVOwxfQ_mOqwc0lxzf0Hu5mkE6CB3tC7iajTqRRF-AG5KrAtT106l9Wnrl6Yf6YURVYmaemGiqsXIjDECTp-ndhdtSRf5cltUCtJA1lGfJ5wrYHMTijA7qKZVh9gyWTdP8KuNKkmt]]
+
+. fichiers ou tables
+
+[[https://lh7-us.googleusercontent.com/_orhV-uTTuDzOSYZYDqTzacV7lUfm6WvYHrcONdIIE4FChJj5x1KiEfVYSpZET9_--5zvkooldHt0H38cqzeLVCUZFQWW77qedPG4fY-DJ_tZuSwqcdG4THxbbmKZSVv-wfeMxwCBUMelEJuufgO]](1)
+
+[[https://lh7-us.googleusercontent.com/4VfWekiV0aPgrHKXriXa64IkKw-MsxesWBIgFAYssSpiWvbKROXYdddLzuqvREbXL-3xQcS7IWIRHHA4iJBvrnZ-Hw0zTxNHa1lj1LWkMzC79NkRppniniGiZel0kPAx_K8SHeaXhZuNkqArVZGU]]
+
+[[https://lh7-us.googleusercontent.com/_orhV-uTTuDzOSYZYDqTzacV7lUfm6WvYHrcONdIIE4FChJj5x1KiEfVYSpZET9_--5zvkooldHt0H38cqzeLVCUZFQWW77qedPG4fY-DJ_tZuSwqcdG4THxbbmKZSVv-wfeMxwCBUMelEJuufgO]](2)
+
+Ils représentent un stockage permanent ou temporaire de données. Les
+flèches symbolisent l'écriture (1) ou la lecture (2) des données.
+
+*Fonction* Les fonctions représentent les traitements ou actions qui
+traitent les flux de données entrants pour élaborer les flux de données
+sortants.
+
+*Niveaux des fonctions* La boîte de premier niveau constitue le
+diagramme de contexte du système à réaliser.
+
+Elle contient la ou les fonctions les plus générales possibles du
+système, ensuite elles sont décomposées en sous-fonctions qui
+elles-mêmes peuvent être décomposées et ce jusqu'à obtention du niveau
+de détail souhaité.
+
+On décompose chaque fonction en sous-fonctions, de la façon suivante :
+
+[[https://lh7-us.googleusercontent.com/G4zMwZrDN5p1Syk5nJzZ7N7_sc8_YCuXYOjHzev06atr63t4gXpr6pgoD_tMx75fbUuwuBKdjCdma42P2qARIQ_UyY6--5OkU4RJFEunpejAQgLkvA9eGlEUxKXboW6JAUUXpyfJyE87LfIFloxG]]
+
+Une fois atteint le niveau de détail souhaité, les traitements assurés
+par les sous-fonctions sont décrits textuellement et graphiquement.
+
+*Simplification des liens entre les fonctions et les parties
+opératives.* Parfois, pour une question de clarté du diagramme, certains
+liens ne seront pas dessinés du tenant à l'aboutissant. Un numéro sera
+lié à la fonction.
+
+Ce numéro sera celui de la partie opérative normalement en liaison avec
+cette fonction.
+
+*Numérotation des fonctions* 1er niveau : diagramme de contexte
+fonctions situées dans la boîte de 1er niveau  : 1 à n fonctions qui
+composent la fonction i : i.1                            
+                                                               
+            : i.2
+                                                            
+               : i.3
+                                                            
+               : i.4
+
+*Abréviations utilisées dans les flux d'information* Elles représentent
+les données qui transitent.
+
+Le symbole / sépare les sens de flux ; le symbole & sépare les
+différents flux au sein d'un sens.
+
+Les libellés des données les plus significatifs seront énoncés avec ou
+sans abréviations.
+
+Ces abréviations seront principalement : CDE commande
+                                                                    PARA
+paramétrage
+                                                                    VISU
+visualisation
+                                                                    ARCH
+archivage
+
+Remarque : pour alléger les diagrammes, certains libellés représentent
+
+les données génériques. Celles-ci seront détaillées dans le document de
+conception préliminaire.
+
+** Standard de conception et de codage
+:PROPERTIES:
+:CUSTOM_ID: standard-de-conception-et-de-codage
+:END:
+(décrire ici les règles et standards propres au projet).
+
+* Contrôle des fournisseurs
+:PROPERTIES:
+:CUSTOM_ID: contrôle-des-fournisseurs
+:END:
+Selon procédures et fiche processus : - Approvisionnement, achat matière
+et sous-traitance réf. AL-021, - Réception des produits achetés réf.
+AL-226,\\
+- Guide de la sous-traitance et des achats de fournitures spécifiques
+réf. AL-109.
+
+Décrire les mesures prises pour contrôler la qualité des prestations des
+fournisseurs éventuels (co-traitants et sous-traitants), en précisant
+: - les prestations sous-traitées (logiciel, outil de développement ou
+de test,...) - les noms et adresses des sous-traitants, - les
+responsabilités dans le projet logiciel, - les mesures assurance et
+contrôle de la qualité des prestations : - contrats et clauses
+qualité, - plan qualité fournisseur, - réception des produits
+sous-traités.
+
+** MAITRISE DES ACHATS ET DE LA SOUS-TRAITANCE EXTERNES
+:PROPERTIES:
+:CUSTOM_ID: maitrise-des-achats-et-de-la-sous-traitance-externes
+:END:
+*** Evaluation des fournisseurs
+:PROPERTIES:
+:CUSTOM_ID: evaluation-des-fournisseurs
+:END:
+La sélection des fournisseurs est faite sur la base de leur aptitude à
+satisfaire les exigences, et en particulier celles concernant la
+Qualité.
+
+Les achats de produits sensibles ou à risques sont effectués chez des
+fournisseurs pour lesquels nous nous assurons au préalable de leurs
+aptitudes y compris sur le plan de la Qualité.
+
+La méthode d'évaluation des fournisseurs et les enregistrements
+correspondants sont traités dans la procédure "Evaluation et sélection
+des fournisseurs".
+
+*** Commandes d'achat
+:PROPERTIES:
+:CUSTOM_ID: commandes-dachat
+:END:
+Tout achat fait l'objet d'une commande écrite.
+
+Le responsable de l'expression du besoin en achat rédige et émet à
+l'intention de l'acheteur une demande d'achat, accompagnée de l'ensemble
+des spécifications d'achat permettant d'identifier le produit ou service
+à acheter, et comprenant, là où c'est applicable : - les exigences
+auxquelles le produit ou service doit répondre (référence à la
+documentation fournisseur, spécifications d'achat, etc.), - les
+contrôles particuliers à effectuer chez le fournisseur : - lors de la
+vérification (avec ou sans notre présence) des caractéristiques des
+produits commandés, - lors de la réception (spécification de contrôles
+et essais), - les exigences en matière d'AQ que le fournisseur doit
+respecter (norme ou cahier d'exigences, exigences d'AQ spécifiques)
+
+Les règles détaillées pour l'établissement des commandes d'achat ou de
+sous-traitance sont décrites dans des procédures.
+
+*** Réception
+:PROPERTIES:
+:CUSTOM_ID: réception
+:END:
+A toute commande correspond une réception enregistrée.
+
+La réception, qu'elle soit unique ou qu'elle soit composée d'un ensemble
+de réceptions partielles, atteste que les produits et services qui ont
+été commandés (y compris documentation, procès-verbal de contrôle,
+procès-verbal de réception, ...) ont bien été tous fournis et en bon
+état.
+
+La réception est complétée, si nécessaire, par un contrôle qualitatif.
+
+La réception est effectuée conformément la procédure "Réception des
+produits achetés".
+
+** Maitrise des achats et de la sous-traitance interne
+:PROPERTIES:
+:CUSTOM_ID: maitrise-des-achats-et-de-la-sous-traitance-interne
+:END:
+Ce chapitre traite des "achats" de produits ou de services que l'équipe
+de projet est amenée à effectuer auprès d'autres entités de CY.
+
+Sur le plan de la Qualité, cette sous-traitance interne est traitée de
+manière similaire à la sous-traitance externe. Les dispositions
+particulières à la sous-traitance sont définies dans les procédures
+"Règles de maîtrise de la sous-traitance", "Réception des produits
+achetés".
+
+* Reproduction, protection et livraison du produit
+:PROPERTIES:
+:CUSTOM_ID: reproduction-protection-et-livraison-du-produit
+:END:
+(Spécifier les particularités ou les impositions propres au projet dans
+les § suivants).
+
+** Reproduction
+:PROPERTIES:
+:CUSTOM_ID: reproduction
+:END:
+** Protection
+:PROPERTIES:
+:CUSTOM_ID: protection
+:END:
+** Livraison
+:PROPERTIES:
+:CUSTOM_ID: livraison
+:END:
+* Suivi de l'application du plan qualité
+:PROPERTIES:
+:CUSTOM_ID: suivi-de-lapplication-du-plan-qualité
+:END:
+Décrire les dispositions prises au cours de chaque phase du cycle (§
+5.1) pour maîtriser la qualité: - les actions du responsable qualité
+projet et du Responsable Qualité, - le type des actions de vérification
+envisagées (lecture croisée, inspection, recette, audit), - le choix des
+participants à ces actions, - la liste de diffusion de
+comptes-rendus,  - les conditions acceptation des documents identifiés
+au §6, - la réception des fournitures achetées ou sous-traitées, - les
+sujets d'audits et leurs modalités de déroulement.
+
+Remarque: Une grande partie des informations demandées dans ce
+paragraphe a été traités dans les paragraphes précédents. Il s'agit donc
+de récapituler ces informations en y apportant les précisions et
+compléments nécessaires.
+
+Les actions qualité projet qui sont de la responsabilité du chef de
+projet.
+
+comprennent : - l'application des méthodes techniques, - la conduite des
+revues techniques, - les tests et essais, - l'application des
+standards, - la gestion des modifications, - la métrologie (métriques,
+sûreté de fonctionnement, données des tableaux de bords), - la gestion
+des configurations.
+
+* Exigences diverses
+:PROPERTIES:
+:CUSTOM_ID: exigences-diverses
+:END:
+Ce paragraphe regroupe les dispositions relatives aux exigences
+particulières qui n'ont pas été prise en compte par les paragraphes
+précédents.
+
+Exemples: - procédure d'installation automatisée, - procédure de
+génération de l'exécutable (compilation), - procédure de sauvegarde
+automatisée, - procédure de télémaintenance, - etc ..
+
+* ANNEXE 1
+:PROPERTIES:
+:CUSTOM_ID: annexe-1
+:END:
+** CYCLE DE DEVELOPPEMENT LOGICIEL
+:PROPERTIES:
+:CUSTOM_ID: cycle-de-developpement-logiciel
+:END:
+* ANNEXE 2
+:PROPERTIES:
+:CUSTOM_ID: annexe-2
+:END:
+** FICHES DE SUIVI QUALITE
+:PROPERTIES:
+:CUSTOM_ID: fiches-de-suivi-qualite
+:END:
+Insérer ici les fiches de suivi qualité, notamment celles qui seront
+utilisées pour la mise en œuvre de ce Plan d'Assurance Qualité.

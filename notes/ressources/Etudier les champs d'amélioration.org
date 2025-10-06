@@ -1,0 +1,59 @@
+* Méthode
+:PROPERTIES:
+:CUSTOM_ID: méthode
+:END:
+Exit les DMAIC, DMADV, DMEDI et compagnie. Ces méthodes sont trop
+complexes et que faiblement pertinentes dans notre domaine d'étude.
+
+Aussi je propose de suivre un schéma plus pragmatique et, surtout,
+expliqué en français.
+
+Nous allons suivre les mêmes étapes qu'un marché de Conception,
+Réalisation, Exploitation et Maintenance (CREM).
+
+A savoir, votre rôle en tant que porteur de projet ira décrescendo à
+mesure que nous avancerons. L'objectif est bien de rendre autonome le
+processus, y compris dans son amélioration.
+
+* Conception
+:PROPERTIES:
+:CUSTOM_ID: conception
+:END:
+** Etat des lieux
+:PROPERTIES:
+:CUSTOM_ID: etat-des-lieux
+:END:
+1. SIPOC \(\Rightarrow\) Pose le périmètre de votre étude
+   1. Je vais prendre ici volontairement un périmètre très large afin de
+      couvrir par la suite une grande variété de sujet sous-jacent à
+      notre exercice. Vous pouvez parfaitement limiter votre domaine
+      d'étude à cette étape, c'est l'endroit idéal pour cela.
+2. Voice of process Collecter des informations Interview (c'est le
+   mieux) Sondages \(\Rightarrow\) filtrer les information pour ne
+   garder que le nécessaire
+3. Flow charts
+
+** Définition du besoin
+:PROPERTIES:
+:CUSTOM_ID: définition-du-besoin
+:END:
+Explorer la thématique, la creuser, générer des idées. Définir des
+jalons clairement identifiables Mettre en place des indicateurs de
+réussites Je choisis expressément de ne pas réaliser de cartographie de
+type Value Stream Mapping (VSM) car ce serait bien trop lourd et trop
+long tout en étant parfaitement inadapté à un service d'ingénierie.
+
+** Proposition
+:PROPERTIES:
+:CUSTOM_ID: proposition
+:END:
+4. [@4] Note d'intention
+
+* Réalisation
+:PROPERTIES:
+:CUSTOM_ID: réalisation
+:END:
+* Exploitation et Maintenance
+:PROPERTIES:
+:CUSTOM_ID: exploitation-et-maintenance
+:END:

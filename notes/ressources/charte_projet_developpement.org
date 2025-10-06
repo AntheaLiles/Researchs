@@ -1,0 +1,112 @@
+* Liberté et Transparence
+Publiez régulièrement des mises à jour sur le développement du projet et assurez-vous que toutes les décisions importantes sont documentées et accessibles à tous les membres de la communauté.
+=> Programmation lettrée ????
+
+* Collaboration et Inclusivité
+Encourager la collaboration et l'inclusivité parmi les contributeurs.
+Créez des espaces de discussion ouverts et encouragez la participation de tous les membres, indépendamment de leur niveau d'expérience ou de leur origine.
+
+* Partage de la connaissance
+Parler de ses outils à son entourage et les aider à les adopter s'ils montrent de l'intérêt.
+
+* Responsabilité Éthique
+Maintenir une approche éthique dans toutes les activités de développement.
+Établissez un code de conduite clair et veillez à ce que tous les membres de la communauté le respectent dans leurs interactions.
+
+* Engagement envers l'Innovation
+S'engager à adopter des technologies innovantes.
+Encouragez l'expérimentation et l'adoption de nouvelles technologies en organisant des hackathons et des ateliers réguliers.
+
+* Protection des Données
+Assurer la protection et la confidentialité des données des utilisateurs.
+Implémentez des mesures de sécurité robustes pour protéger les données des utilisateurs et assurez-vous que toutes les pratiques de gestion des données respectent les réglementations en vigueur.
+
+* Promotion de la Coopération
+Favoriser la coopération entre chercheurs et éducateurs.
+Établissez des partenariats avec des institutions académiques et des organisations pour favoriser la recherche collaborative.
+
+* Diversité des Savoirs
+Valoriser la diversité des approches académiques et scientifiques.
+Intégrez des experts de différents domaines pour enrichir les discussions et les orientations du projet.
+
+* Intégrité Scientifique
+Respecter la rigueur et l'éthique scientifique.
+=> Recherche reproductible
+=> Benchmarking strict, rigoureux et proche de la réalité.
+Assurez-vous que toutes les publications et résultats de recherche sont rigoureusement vérifiés et validés par des pairs.
+
+* Ouverture à l'Enseignement
+Intégrer l'enseignement dans les activités du projet.
+Développez des ressources éducatives libres et accessibles pour former les nouveaux contributeurs et utilisateurs.
+
+* Ouverture à la Recherche
+Encourager l'ouverture et l'accès aux résultats de recherche.
+Partagez librement les résultats de recherche et encouragez la réutilisation et l'amélioration des travaux existants.
+
+* Ouverture à la Société Civile
+Impliquer la société civile dans les projets de recherche.
+Impliquez les acteurs de la société civile dans les projets en organisant des consultations publiques et des ateliers participatifs.
+
+* Formats de Fichiers Libres
+Utiliser et promouvoir des formats de fichiers ouverts.
+Utilisez des formats ouverts pour toutes les données et documents du projet afin d'assurer l'interopérabilité et la pérennité.
+
+* Liberté de la Connaissance
+Partager librement les ressources éducatives et de recherche.
+Publiez toutes les ressources éducatives et les résultats de recherche sous des licences libres pour garantir un accès sans restriction.
+
+* Structure Organisationnelle
+Établir une structure claire pour la gouvernance du projet.
+Définissez clairement les rôles et responsabilités au sein de la communauté pour assurer une gouvernance efficace.
+
+* Processus de Prise de Décision
+Mettre en place des processus de décision transparents.
+Mettez en place des processus décisionnels transparents et participatifs, impliquant tous les membres concernés.
+
+* Rôles et Responsabilités
+Définir clairement les rôles et responsabilités des membres.
+Clarifiez les attentes et les responsabilités de chaque membre pour éviter les conflits et améliorer l'efficacité.
+
+* Méthodologie de Développement
+Adopter une méthodologie de développement structurée.
+Adoptez une méthodologie agile pour permettre une adaptation rapide aux changements et aux retours des utilisateurs.
+
+* Gestion des Versions
+Gérer efficacement les versions et contributions.
+Utilisez des systèmes de contrôle de version pour suivre les modifications et faciliter la collaboration entre les développeurs.
+
+* Intégration Continue et Tests
+Mettre en œuvre des pratiques d'intégration continue et de tests.
+Mettez en place des pipelines d'intégration continue pour automatiser les tests et garantir la qualité du code.
+
+* Canaux de Communication
+Utiliser des canaux de communication efficaces.
+Maintenez des canaux de communication clairs et accessibles pour tous les membres de la communauté.
+
+* Documentation Technique et Utilisateur
+Fournir une documentation complète et accessible.
+Fournissez une documentation complète et à jour pour aider les utilisateurs et les développeurs à comprendre et utiliser le projet.
+
+* Gestion des Connaissances
+Gérer et partager les connaissances au sein du projet.
+Créez une base de connaissances centralisée où toutes les informations pertinentes sont stockées et facilement accessibles.
+
+* Stratégies d'Inclusion et de Diversité
+Promouvoir l'inclusion et la diversité dans la communauté.
+Mettez en œuvre des initiatives pour attirer et retenir des contributeurs issus de milieux divers.
+
+* Programmes de Mentorat
+Mettre en place des programmes de mentorat et de formation.
+Offrez des programmes de mentorat pour soutenir les nouveaux contributeurs et faciliter leur intégration dans la communauté.
+
+* Événements et Conférences
+Organiser des événements pour renforcer l'engagement communautaire.
+Organisez régulièrement des événements pour renforcer les liens communautaires et partager les avancées du projet.
+
+* Indicateurs de Performance
+Définir des indicateurs pour mesurer le succès du projet.
+Définissez des indicateurs clairs pour mesurer les progrès et l'impact du projet.
+
+* Évaluation et Amélioration Continue 
+Évaluer et améliorer continuellement le projet.
+Évaluez régulièrement les processus et les résultats pour identifier les opportunités d'amélioration et ajuster les stratégies en conséquence.

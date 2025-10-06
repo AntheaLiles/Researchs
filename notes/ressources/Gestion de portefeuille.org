@@ -1,0 +1,60 @@
+Couts qualité délais (logiciel type PPM)
+
+*** Planification
+:PROPERTIES:
+:CUSTOM_ID: planification
+:END:
+La mise en œuvre d'un module de gestion de planning vise à unifier
+toutes les informations de planification produites par le management de
+projet.
+
+Cela concerne à la fois la production et la livraison de document, le
+suivi de l'avancement des collaborateurs, la livraison de donnée
+d'entrée, le suivi des sous-traitants, la planification des achats de
+matériel comme des livraisons et le suivi de chantier.
+
+Les besoins fonctionnels des utilisateurs sont : - Avoir une vision
+d'ensemble du projet Offrir aux chefs de projet des indicateurs et un
+tableau de bord fiable et reflétant l'état réel du projet - Suivre les
+heures de production (consommé et reste à faire) - Monitorer la
+production - Pouvoir faire des analyses des points bloquants ou
+chronophages - Améliorer la gestion de portefeuille (consommation
+d'heure de production) - Avoir une meilleure vision du plan de charge
+(disponibilité et mobilisation affinée des ressources) - Suivre les
+tâches et les prioriser suivant deux échelles - Macroscopique : à
+l'échelle du projet ou des sous-systèmes - Microscopique : à l'échelle
+du collaborateur - Expliciter les pointages sur affaire des
+collaborateurs
+
+En termes de fonctionnalité propre à l'élaboration de la planification,
+le module doit permettre : 
+- L'étude de chemin critique 
+- La simulation de scénarios 
+- Le traçage de la courbe en S 
+- L'analyse prévisionnelle
+
+Les outils graphiques attendus sont à minima de type : 
+- Diagramme de Gantt 
+- PERT
+
+Un point de vigilance est à porter sur la capacité du module à supporter
+une très grande quantité d'information sans perte notable de
+performance.
+
+La planification ainsi réalisée doit permettre de fournir à chaque
+collaborateur une vision claire de son périmètre et de ses objectifs
+personnels.
+
+*** Trésorerie
+:PROPERTIES:
+:CUSTOM_ID: trésorerie
+:END:
+- Import du chiffrage et des données de l'offre Optima
+- BPU et DPGF
+- Planification des dépenses (prévisionnel)
+- Suivi de la trésorerie projet
+- Rapport financier
+- Rétro analyse pour retour d'expérience à la cellule chiffrage (origine
+  des écarts)
+- Intégration de points de contrôle (gamme de matériel etc.) pour les
+  parties techniques

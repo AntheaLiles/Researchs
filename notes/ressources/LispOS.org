@@ -1,0 +1,116 @@
+* Note d'Intention pour le Projet de Conception d'un Nouveau Système d'Exploitation
+
+** Contexte et Philosophie
+
+Ce projet de système d'exploitation (OS) s'inspire de l'âge d'or des machines Lisp, où la programmation symbolique et l'interaction homme-machine étaient au cœur de l'innovation. 
+Ce projet vise à réintroduire cette philosophie en intégrant des technologies modernes de gestion de base de données et d'administration système et à offrir un environnement de développement flexible et fiable.
+
+** Architecture du Système
+
+Le système d'exploitation est structuré en quatre couches distinctes :
+- Le noyau,
+- Le système de gestion de base de donnée (DBMS)
+- Le gestionnaire de paquets
+- L'interface homme-machine
+
+*** Le noyau
+:note: à remplacer par GNU Hurd
+
+Linux-libre occupe la position fondamentale en tant que noyau du système. 
+
+Cette version modifiée du noyau Linux est entièrement débarrassée des composants propriétaires, garantissant ainsi que l'ensemble du système reste libre et open source. Cette approche respecte les principes fondamentaux du logiciel libre, permettant aux utilisateurs de modifier, distribuer et utiliser le système sans aucune contrainte liée à des éléments propriétaires.
+
+Le noyau Linux-libre est chargé de la gestion des ressources matérielles, telles que le processeur, la mémoire et le stockage. Il agit comme une interface essentielle entre les applications et le matériel, veillant à ce que les logiciels puissent fonctionner de manière optimale en exploitant efficacement les ressources disponibles.
+
+Dans le cadre du projet, qui est conçu pour répondre aux exigences des environnements orientés bases de données et cloud, Linux-libre fournit une base robuste et sécurisée pour l'exécution de tâches complexes et le traitement de volumes importants de données.
+
+En intégrant Linux-libre, l'OS bénéficie d'une architecture flexible et adaptable, capable de s'ajuster aux besoins spécifiques des utilisateurs tout en préservant la transparence et la sécurité inhérentes aux logiciels libres. 
+
+Cette synergie entre le noyau et le système d'exploitation permet d'assurer une expérience utilisateur cohérente et performante, tout en favorisant l'innovation et la collaboration au sein de la communauté logicielle.
+
+*** Le système de base de données
+
+Le système de gestion de base de données constitue le cœur du système. Intégré au noyau de l'OS, il gère les métadonnées, des relations complexes entre les processus, les fichiers, les codes sources, les librairies, les dépendances et les utilisateurs. Cela permet de modéliser précisément les ressources du système, d'en assurer un suivi rigoureux et de minimiser la redondance de code.
+
+Cette architecture garanti la cohérence d'ensemble du système.
+
+Il utilise SPARQL pour exécuter des requêtes sophistiquées et modélise les ressources système via des graphes RDF, assurant ainsi une représentation précise et dynamique du système.
+
+L'administration système est enrichie par la gestion spécialisée des graphes RDF, permettant des analyses complexes grâce aux requêtes SPARQL. 
+
+L'implémentation d'AllegroGraph comme DBMS étand les capacités de raisonnement sémantique et permet d'inférer de nouvelles informations à partir des données existantes, optimisant ainsi la gestion des ressources et renforçant la sécurité.
+
+La sécurité et l'accès sont garantis par des contrôles basés sur les graphes, utilisant la sécurité triple-niveau pour assurer la confidentialité des données. 
+
+La scalabilité et la flexibilité sont assurées par la capacité à gérer de grandes quantités de données RDF et à modéliser des relations complexes. 
+
+L'historisation des évolutions étant réalisé par des transactions atomiques, il est possible de suivre tous les changements sur le système et de revenir à des versions antérieures. Cette fonctionnalité assure également une traçabilité complète pour la vérification des développement comme pour l'administration système.
+
+L'implémentation en Common Lisp de ce DBMS défini un socle de développement commun et performant pour le reste du système. 
+
+*** Le gestionnaire de paquets
+
+La gestion des logiciels et de leurs dépendances est assuré par le gestionnaire GNU Guix.
+Il repose entièrement sur un modèle déclaratif, garantissant la reproductibilité des environnements. Ce modèle sert de fondation à l'ensemble des fonctionnalités, favorisant une gestion précise et fiable des logiciels.
+
+L'expérience utilisateur est enrichie par la gestion transactionnelle des paquets, où chaque installation et mise à jour est atomique et réversible. La reproductibilité est assurée, permettant de recréer exactement le même environnement logiciel à tout moment.
+
+La gestion des profils utilisateur est intégralement supportée, permettant à chaque utilisateur de gérer ses paquets sans nécessiter de privilèges administratifs.
+
+Cette flexibilité est complétée par un système de collecte des déchets (garbage collection) qui libère automatiquement de l'espace en supprimant les paquets non utilisés.
+
+Cette implémentation offre une personnalisation poussée et une intégration en profondeur avec le système, assurant une cohérence et une interopérabilité exceptionnelles entre chaque composant logiciel.
+
+*** L'interface homme-machine
+
+L'interface utilisateur de l'OS est intégralement supporté par un éditeur de text non modal (GNU Emacs). Celui-ci sert de plateforme principale à l'ensemble des applicatifs. Il favorise la légèreté de l'interface au profit d'une haute rapidité d'execution.
+
+L'expérience utilisateur est agrémenté par l'utilisation intensive et extensive des raccourcis clavier (Vim motion).
+La disposition des fenetres (buffer) est gérée automatiquement par un système d'empilement (tilling windows management).
+
+Intégralement implémenté en =elisp=, l'IHM est aussi configurable que le souhaite l'utilisateur. Cette implémentation permet également une intégration en profondeur de l'interface utilisateur avec le reste du système, offrant une expérience cohérente et une interopérabilité inégalée entre chaque brique technologique.
+
+** Innovation
+
+Ce système d'exploitation ouvre la voie à l'implémentation de nouvelles innovation. Voici quelques idées de technologies envisageables :
+- Intégration de système cryptographiques distribués pour assurer une traçabilité immuable et transparente des modifications du système.
+- Utilisation de modèle d'IA pour la surveillance en temps réel des vulnérabilités et comportements anormaux, renforçant ainsi la sécurité du système.
+- Implémentation d'algorithmes d'apprentissage automatique pour ajuster dynamiquement l'allocation des ressources en fonction des charges de travail.
+- Automatisation des actions d'administration courantes.
+- Utilisation d'interfaces adaptatives personnalisant l'expérience utilisateur selon les préférences et habitudes.
+- Anticipation et résolution automatique des conflits lors des mises à jour et installations.
+- Amélioration des capacités d'inférence pour une meilleure compréhension contextuelle des données.
+- Création d'environnements de développement isolés pour faciliter le développement, test et déploiement.
+- Auto conteneurisation de l'environnement de développement pour une mise en production simplifiée
+
+** Défis et améliorations
+
+La charge logique de ce système d'exploitation revenant en premier lieu au DBMS, il est absolument primordial de réaliser tous les ajustements nécessaires à son optimisation. 
+Celui-ci devra pouvoir assurer la mise en cache de tables clés-valeurs ainsi que la gestion de données structurées et relationnelles pour remplir certaines de ses missions.
+
+La modélisation en RDF apporte une couche de complexitée supplémentaire mais peut également succiter un changement de paradigme quand à l'approche de l'administration système.
+
+** Conclusion
+
+Le projet de conception d'un nouveau système d'exploitation s'inscrit dans une démarche réfléchie et ambitieuse, alliant les principes du logiciel libre à des technologies contemporaines. En réintroduisant la philosophie des machines Lisp tout en intégrant les dernières avancées technologiques, nous visons à créer un environnement de développement flexible et sécurisé.
+
+Les innovations potentielles ouvrent la voie à de nouvelles façons d'aborder les systèmes d'exploitations.
+
+En pensant le système avec une volontée centrale de collaboration entre les utilisateurs et en offrant des outils d'automatisation performants, nous souhaitons permettre aux développeurs de se concentrer sur des tâches essentielles tout en garantissant une expérience utilisateur fluide.
+
+Ce projet ne se limite pas à la création d'un simple système d'exploitation ; il aspire à établir un écosystème où l'innovation et la collaboration sont valorisées. En rassemblant une communauté autour de ces valeurs, nous espérons que ce système d'exploitation pourra transformer la manière dont les utilisateurs et les développeurs interagissent avec la technologie, tout en assurant une sécurité et une flexibilité adéquates.
+
+ce projet représente une opportunité de redéfinir l'avenir des systèmes d'exploitation, en plaçant l'utilisateur au centre de l'expérience et en exploitant les technologies émergentes pour construire un environnement numérique plus efficace et sécurisé. 
+
+Nous sommes confiants que, grâce à cette initiative, nous pourrons contribuer à une évolution positive dans le domaine des systèmes d'exploitation.
+
+* Applications
+
+Objectif : utilisation intensive du système de gestion de base de données.
+
+** Gestion des fichiers et documents
+
+Lispos (Dispo ?) n'utilise pas de structure en arbre pour l'enregistrement des fichiers et la navigation dans le système.
+A la place, c'est le gestionnaire de base de donnée qui collecte et met à disposition les éléments.
+De ce fait, l'utilisateur peut créer des requetes personalisées et les sauvegarder comme collection. (similaire à un dossier).
+Un fichier pourra alors être appelé dans de multiples collections, sans aucune duplication.

@@ -43,7 +43,7 @@ Principe à l'image de Creative Common
     - The only one without needs for credits
 
 Restrictions :
-- \forall : No branding rights, no pattern grant, Copyrights and attribution
+- $\forall$ : No branding rights, no pattern grant, Copyrights and attribution
 - Options :
     - NA : No AI nor OCR processing and any kind of automatic file exploring
     - ND : No Derivative work allowed

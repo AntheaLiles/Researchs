@@ -1,0 +1,34 @@
+MMORPG Idées :
+- Gestion de bâtiment
+- Gestion de patrimoine
+- Apprentissage technique et BIM
+- Metaverse
+- Créer une ville
+- Bâtiments
+- Terrain
+- Routes
+- Mobilier urbain
+- Réseaux et VRD
+- Outils
+  - IA
+  - Blockchain
+  - BOS
+  - Interfacé avec une banque (un graphe) de connaissance
+  - Note
+  - 1 maquette par bâtiment
+  - Mise à dispo des coordonnées topo
+  - Compilations via navisworks ?
+- Live Twich
+- Multi corp d'états (ARC, STR, 2nd Oeuvre, ELE, CVP, RSV, etc.)
+- Partie Tertiaire (bureaux)
+- Restauration collective avec cuisine professionnelle
+- Partie Hotel
+- Parking souterrain (sprinkler)
+- voieries et aménagements
+- Surface commerciale
+- ENR photovoltaïque et solaire thermique
+- Musée, galerie d'art, salon de l'innovation
+- Hall de réception, salle de conférence, salles de réunion, salle de
+formation
+- Créer un showroom numérique à intégrer sur le site web pour
+naviguer dedans & découvrir les métiers et domaines d'expertises

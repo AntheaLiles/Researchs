@@ -1,0 +1,234 @@
+** Qu'est-ce que la Voix du Client ?
+:PROPERTIES:
+:CUSTOM_ID: quest-ce-que-la-voix-du-client
+:END:
+La Voix du Client (VoC) est une méthode qui vise à recueillir
+l'expérience des clients d'une entreprise. Lorsque vous réalisez un
+sondage VoC, vous cherchez à comprendre la perception que vos clients
+ont de votre marque (notamment des produits et services que vous
+proposez).
+
+Grâce aux données obtenues à partir de votre sondage VoC, vous pouvez
+identifier les domaines à améliorer et les points sur lesquels les
+attentes de vos clients diffèrent de ce qu'ils obtiennent réellement de
+votre entreprise. Ces informations sont essentielles pour créer et
+améliorer vos personas client et prendre de meilleures décisions à
+l'échelle de votre organisation.
+
+Par exemple, si vous vendez des articles de sport en ligne, vous pouvez
+réaliser un sondage Voix du Client et découvrir que vos clients
+considèrent que votre marque est réservée aux salles de sport. Si vous
+imaginiez que la plupart de vos clients utilisaient cet équipement pour
+des séances d'entraînement à domicile, le fossé est considérable et vous
+devrez commencer à orienter vos efforts de marketing de manière à
+indiquer que vos produits sont en réalité destinés à un usage
+domestique. Toutefois, si vous n'aviez pas réalisé de sondage Voix du
+Client, vous n'auriez probablement jamais compris comment vos clients
+perçoivent votre entreprise et ses produits.
+
+** Ce qui rend la Voix du Client si importante
+:PROPERTIES:
+:CUSTOM_ID: ce-qui-rend-la-voix-du-client-si-importante
+:END:
+Une entreprise qui comprend parfaitement les attentes et les besoins de
+ses clients a plus de chances de réussir que celles qui se basent
+uniquement sur des suppositions. 
+
+Pour résumer, la VoC a un véritable impact sur votre chiffre d'affaires.
+Et il ne s'agit pas seulement de fournir un meilleur service à la
+clientèle, bien que cela puisse faire partie des observations que vous
+tirez de votre sondage Voix du Client. La VoC consiste plutôt à
+/comprendre/ vos clients afin de mieux répondre à leurs attentes à tous
+les niveaux de votre organisation.
+
+Cet exercice présente de nombreux avantages :
+
+- Vous serez en mesure d'identifier les besoins, les désirs et les
+  attentes de vos clients.
+- Vous serez en mesure de classer par ordre de priorité les
+  améliorations qui doivent être apportées à votre produit et à votre
+  service.
+- Vous serez en mesure de renforcer la fidélisation des clients.
+- Vous recueillerez de nouvelles idées pour des solutions créatives.
+- Vous verrez des signes avant-coureurs de crises potentielles avant
+  qu'elles ne se produisent.
+- Vous aurez une idée plus précise de l'efficacité de vos stratégies
+  marketing.
+- Vous serez en mesure de prendre de meilleures décisions sur la base
+  des enseignements tirés de vos sondages VoC.
+
+Ces avantages sont précieux et représentent un potentiel considérable
+pour renforcer votre marque, asseoir votre position sur le marché et, au
+final, améliorer votre notoriété afin de fidéliser vos clients.
+
+** Comment recueillir des données Voix du Client
+:PROPERTIES:
+:CUSTOM_ID: comment-recueillir-des-données-voix-du-client
+:END:
+Initialement, l'analyse client peut sembler insurmontable, surtout
+lorsque vous avez beaucoup de clients et que vous n'êtes pas très à
+l'aise pour vous adresser à des inconnus.
+
+#+caption: VOC Steps
+[[https://i0.wp.com/sixsigmamania.com/wp-content/uploads/2021/06/voc-steps.png?resize=768%2C432&ssl=1]]
+
+Que les introvertis se réjouissent : il existe différentes façons de
+recueillir ces informations. Voici les méthodes les plus courantes :
+
+#+caption: voix du client
+[[https://cdn-cashy-static-assets.lucidchart.com/lucidspark/marketing/blog/2020Q4/voice-of-customer/6-ways-to-collect-voice-of-the-customer-data@2x.png]]
+
+*** 1. Entretiens avec les clients
+:PROPERTIES:
+:CUSTOM_ID: entretiens-avec-les-clients
+:END:
+Oui, nous vous avons caché qu'il est parfois nécessaire de parler aux
+gens en personne, mais les informations que vous en retirez en valent
+vraiment la peine. Vous pourrez rencontrer vos clients (ou ceux qui ont
+choisi de ne pas l'être) en tête-à-tête et entendre leurs commentaires
+de leur propre bouche. Ils vous proposeront parfois des solutions
+auxquelles vous n'auriez jamais pensé, ce qui est inestimable.
+
+*** 2. Sondages client sur site
+:PROPERTIES:
+:CUSTOM_ID: sondages-client-sur-site
+:END:
+Inviter des clients dans vos locaux peut être une excellente occasion
+pour votre équipe de participer à l'étude. Les sondages client réalisés
+sur site permettent également de recueillir des commentaires sur une
+solution potentielle avant de la diffuser à l'ensemble de votre
+clientèle.
+
+*** 3. Chat en direct
+:PROPERTIES:
+:CUSTOM_ID: chat-en-direct
+:END:
+Les chats en direct sont de plus en plus couramment intégrés aux sites
+Web des entreprises. De nombreuses personnes préfèrent converser avec un
+chatbot plutôt que de parler à quelqu'un par téléphone. L'enregistrement
+des échanges peut être facilement partagé et la traduction permet de
+surmonter les barrières linguistiques.
+
+*** 4. Réseaux sociaux
+:PROPERTIES:
+:CUSTOM_ID: réseaux-sociaux
+:END:
+Rencontrez vos clients sur leur plateforme préférée : les réseaux
+sociaux. Qu'il s'agisse de réaliser des sondages formels sur les réseaux
+sociaux ou de poser une question par l'intermédiaire de votre page et de
+recueillir les réponses, ces plateformes offrent de nombreuses méthodes
+pour recueillir la voix de vos clients.
+
+*** 5. Net Promoter Score
+:PROPERTIES:
+:CUSTOM_ID: net-promoter-score
+:END:
+La probabilité que vos clients recommandent votre marque à d'autres
+personnes est appelée Net Promoter Score. Elle peut refléter la santé de
+votre marque. Ces scores qui permettent de comprendre la perception de
+votre marque peuvent être consultés régulièrement afin de déterminer si
+les solutions et processus mis en œuvre sont bénéfiques ou nuisibles à
+votre entreprise.
+
+*** 6. Formulaires de commentaires
+:PROPERTIES:
+:CUSTOM_ID: formulaires-de-commentaires
+:END:
+Si vous vous êtes déjà rendu dans un Apple Store pour acheter ou faire
+réparer un produit, vous avez reçu après votre visite un e-mail vous
+invitant à donner votre avis sur la qualité du service reçu. Les
+formulaires de commentaires de ce type sont un outil courant pour
+recueillir rapidement des informations auprès des clients.
+
+** Conseils pour un sondage Voix du Client réussi
+:PROPERTIES:
+:CUSTOM_ID: conseils-pour-un-sondage-voix-du-client-réussi
+:END:
+À présent, vous avez probablement hâte de commencer à utiliser les
+méthodes ci-dessus pour recueillir vos données VoC. Mais avant cela,
+familiarisez-vous avec les bonnes pratiques qui vous permettront
+d'obtenir des résultats plus utiles et plus précis.
+
+*** 1. Ne vous cantonnez pas à une seule méthode
+:PROPERTIES:
+:CUSTOM_ID: ne-vous-cantonnez-pas-à-une-seule-méthode
+:END:
+Recueillez des commentaires à différents points de contact pour
+atteindre plus de clients et obtenir des retours variés. Vous pouvez
+utiliser le chat en direct, les formulaires de commentaires, les
+enquêtes en ligne et les sondages rapides sur Internet. En matière de
+VoC, il est préférable de ne pas mettre tous vos œufs dans le même
+panier.
+
+*** 2. Partagez
+:PROPERTIES:
+:CUSTOM_ID: partagez
+:END:
+La collaboration interservices est indispensable. Tout le monde doit
+participer à la collecte des données VoC, de l'assistance client à
+l'équipe marketing. 
+
+*** 3. Utilisez des outils
+:PROPERTIES:
+:CUSTOM_ID: utilisez-des-outils
+:END:
+De très nombreuses entreprises se consacrent à la collecte de données
+VoC et vous allègent d'une partie du travail. Qu'il s'agisse d'intégrer
+un widget de sondage à votre site Web ou d'utiliser des modèles pour
+déterminer votre Net Promoter Score, cherchez les outils qui conviennent
+le mieux aux clients de votre entreprise.
+
+*** 4. Ne vous arrêtez pas aux données
+:PROPERTIES:
+:CUSTOM_ID: ne-vous-arrêtez-pas-aux-données
+:END:
+Si toutes les données de votre sondage VoC indiquent que votre
+assistance clientèle n'est pas à la hauteur, ne vous contentez pas de ce
+constat : utilisez vos connaissances pour apporter des changements. Ces
+informations doivent servir de catalyseur pour trouver des solutions
+rapides et efficaces.
+
+*** 5. Incitez par la récompense
+:PROPERTIES:
+:CUSTOM_ID: incitez-par-la-récompense
+:END:
+N'oubliez pas que le temps, c'est de l'argent. Vos clients vous rendent
+service en vous donnant leur avis sur votre marque. Vous devez donc les
+récompenser pour ce geste. Des cartes-cadeaux, des remises et d'autres
+incitations peuvent être utilisées pour recueillir davantage de
+commentaires de la part des clients, mais aussi pour les remercier des
+commentaires qu'ils ont fournis.
+
+*** 6. Personnalisez
+:PROPERTIES:
+:CUSTOM_ID: personnalisez
+:END:
+De plus en plus de statistiques soulignent l'importance de personnaliser
+votre contenu. Remplacez par exemple les e-mails génériques par des
+e-mails personnalisés, avec des tournures plus humaines. Si vous
+souhaitez obtenir des commentaires rapidement après un achat, invitez
+votre client à donner son avis sur l'article qu'il a acheté.
+
+*** 7. Et c'est reparti pour un tour
+:PROPERTIES:
+:CUSTOM_ID: et-cest-reparti-pour-un-tour
+:END:
+Votre VoC n'est pas statique : vos clients évoluent, tout comme leurs
+réactions. Procédez à des sondages fréquents pour suivre l'évolution des
+comportements et des perceptions et anticiper les crises qui pourraient
+survenir.
+
+Une VoC menée de manière appropriée peut fournir des informations
+essentielles qui aideront votre marque à atteindre un niveau supérieur.
+Lorsque toute votre entreprise se donne pour priorité de recueillir la
+Voix du Client et d'y répondre en ajustant le fonctionnement de
+l'organisation dans son ensemble, la santé et la résilience de votre
+marque s'en trouveront renforcées : vous aurez confiance en vos
+solutions et vous comprendrez parfaitement vos clients.
+
+* Suite
+:PROPERTIES:
+:CUSTOM_ID: suite
+:END:
+Après le reccueil des avis des utilisateurs, il faut les analyser. Pour
+ce faire, on utilisera un [[file:Diagramme%20de%20Kano%201.md][Diagramme de Kano 1]]

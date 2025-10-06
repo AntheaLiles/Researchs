@@ -1,0 +1,140 @@
+* Création d'un property set
+:PROPERTIES:
+:CUSTOM_ID: création-dun-property-set
+:END:
+Qu'est ce qu'un property set ? 
+
+Property Set (Pset) : *Ensemble de propriétés*
+
+C'est un type de paramètre des fichiers IFC. Il peut être vu comme un
+gabarit pour les IFC. Plutôt que de renseigner chaque champs un à un, on
+les renseigne une fois dans le Property Set et on applique ce Pset à nos
+IFC lors de l'export.
+
+#+begin_quote
+The IfcPropertySet is a container that holds properties within a
+property tree. These properties are interpreted according to their name
+attribute. Each individual property has a significant name string. Some
+property sets are included in the specification of this standard and
+have a predefined set of properties indicated by assigning a significant
+name. These property sets are listed under "property sets" within this
+specification. Property sets applicable to certain objects are listed in
+the object specification. The naming convention "Pset_Xxx" applies to
+all those property sets that are defined as part of this specification
+and it shall be used as the value of the Name attribute. 
+
+In addition any user defined property set can be captured. Property sets
+that are not declared as part of the IFC specification shall have a Name
+value not including the "Pset_" prefix. 
+
+IfcPropertySet can be assigned to object occurrences and object types.
+An IfcPropertySet assigned to an object type is shared among all
+occurrences of the same object type.
+https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/schema/ifckernel/lexical/ifcpropertyset.htm
+
+#+end_quote
+
+![[PSet_Liaisons Sémantiques.png]]
+
+** Méthode 1 : approche directe.
+:PROPERTIES:
+:CUSTOM_ID: méthode-1-approche-directe.
+:END:
+- Créer une nomenclature et la renommer avec un nom qui contient soit :
+
+  - IFC
+  - Pset
+  - Common Exemple : Pset_Information A ce stade, le conteneur est créé.
+
+- Ajouter l'ensemble des paramètres qu'on souhaite y mettre Exemple :
+  Code Espace, Numéro de niveau, nom du type de maquette.
+
+- Cliquer sur Fichier > exporter > IFC > modifier la configuration >
+  jeux de propriétés > cocher : Exporter uniquement les nomenclatures
+  contenant IFC, Pset ou Common dans le titre.
+
+- Attention, n'exporte pas IFCbuilidng et IFCSITE. Toujours dans
+  modifier la configuration > Clic sur Avancer > et cocher « inclure
+  IFCSITE» ## Méthode 2 : Table des paramètres.
+
+- Créer un fichier texte.
+
+- Il faut expliquer ligne par ligne comment on spécifie les éléments.
+  Chaque ligne est une propriété. Méthode : Premier terme = nom du Pset,
+  tabulation, le nom du paramètre créer dans l'IFC, tab, le nom du
+  parametre revit
+
+  Exemple d'une ligne : Pset_IN2C IfcSpace Code ESPACE
+
+- Lors de l'export, spécifier le fichier texte a utiliser pour qu'il
+  configure les champs IFC. ![[Chargement des PSet standardisés.png]]
+
+** Comparatif des méthodes :
+:PROPERTIES:
+:CUSTOM_ID: comparatif-des-méthodes
+:END:
+La deuxième méthode est plus longue mais permet d'uniformiser d'un
+projet à l'autre, par exemple, s'il existe un standard en interne. La
+première méthode quant à elle, exportera toutes les nomenclatures sans
+distinctions.
+
+* Mette en oeuvre la classification Uniformat II ASTM 2015
+:PROPERTIES:
+:CUSTOM_ID: mette-en-oeuvre-la-classification-uniformat-ii-astm-2015
+:END:
+** 1ère méthode : Interoperability Tools
+:PROPERTIES:
+:CUSTOM_ID: ère-méthode-interoperability-tools
+:END:
+*** Installation du plug-in.
+:PROPERTIES:
+:CUSTOM_ID: installation-du-plug-in.
+:END:
+- Sur Autodesk Access, chercher Revit.
+- Afficher les détails.
+- Chercher « Interoperability Tools for Revit”
+  - Attention à chercher la bonne version. - Procéder à l'installation.
+
+*** Ajouter la classification.
+:PROPERTIES:
+:CUSTOM_ID: ajouter-la-classification.
+:END:
+-          Lancer «Attribuer une classification » -          Choisir
+ASTM Uniformat II -          Charger la table -          Clic droit >
+Sélectionner toutes les occurrences de l'éléments désiré -         
+Choisir la classification adéquat (ici, Uniformat), Valider. -         
+Faire l'export IFC Les données de classifications apparaissent dans
+revit comme ceci : ![[Classification parameters 1.png]]
+
+→ Vérification dans Solibri Model Checker ![[Vérification de la
+classification dans SMC.png]] La classification s'est bien établie et
+cela à créer des paramètres dédiés dans les familles.
+
+** 2ème méthode :  Fonction natives Revit
+:PROPERTIES:
+:CUSTOM_ID: ème-méthode-fonction-natives-revit
+:END:
+*** Dans revit :
+:PROPERTIES:
+:CUSTOM_ID: dans-revit
+:END:
+- La case « Code d'assemblage correspond à l'uniformat II ASTM 2015.
+
+- Créer une nomenclature avec les éléments considérés
+
+- Trier par famille et type
+
+  - Ne pas détailler les occurrences
+
+- Attribuer la classification pour chaque ligne ![[via
+  nomenclature.png]]
+
+- Export IFC 2x3
+
+→ Contrôler dans SMC : Le paramètre de code d'assemblage s'est exporté
+dans les données de classifications. ![[Vue filtre.png]]
+
+Pour trouver les éléments non classifiés dans SMC, il est possible de
+créer une règle telle que :
+
+![[Solibri - Paramètrage pour éléments non classés.png]]

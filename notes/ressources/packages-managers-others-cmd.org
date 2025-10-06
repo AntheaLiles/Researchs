@@ -1,0 +1,65 @@
+aptitude
+	markauto	#To mark packages as having been automatically installed.
+	unmarkauto	#To mark packages as having been manually installed.
+	forbid-version	#To forbid aptitude from upgrading to a specific package version.
+	build-dep	#To install the build-dependencies of packages.
+	forget-new	#To forget what packages are “new”.
+	changelog	#To view a package’s changelog.
+	download	#To download the .deb file for a package (apt wrapper).
+	source	#To download source package (apt wrapper).
+	reinstall	#To reinstall a currently installed package.
+	why	#To get the explanation why a particular package should be installed.
+	why-not	#To get the explanation why a particular package cannot be installed.
+	add-user-tag	#To add user tag to packages/patterns.
+	remove-user-tag	#To remove user tag from packages/patterns.
+
+
+Sorcery
+	sorcery rebuild	#recompile les paquets
+	sorcery queue	#gère la file d'installation
+
+	cast -c [package-name]	#vérifie l'intégrité
+
+	gaze what [package-name]	#affiche les infos d'un paquet
+	gaze from [file-path]	#trouve le paquet d'un fichier
+
+	summon [grimoire-name]	#met à jour un grimoire
+	summon -a	#met à jour tous les grimoires
+
+	scribe add [grimoire-name]	#ajoute un grimoire
+	scribe remove [grimoire-name]	#supprime un grimoire
+	scribe update [grimoire-name]	#met à jour un grimoire
+
+	cleanse -o	#supprime les archives obsolètes
+
+	resurrect [package-name]	#restaure un paquet supprimé
+	alter [package-name]	#modifie les options d'un paquet
+	banish [package-name]	#supprime définitivement un paquet
+	exile [package-name]	#désactive temporairement un paquet
+	grimoire list	#liste les grimoires disponibles
+	grimoire update	#met à jour le grimoire actif
+	scry [package-name]	#vérifie les dépendances d'un paquet
+	transmute [file-format] [new-format]	#convertit un fichier
+
+Winget
+	info	#Displays metadata about the system (version numbers, architecture, log location, etc). Helpful for troubleshooting.
+	install	#Installs the specified application.
+	show	#Displays details for the specified application.
+	source	#Adds, removes, and updates the Windows Package Manager repositories accessed by the WinGet tool.
+	search	#Searches for an application.
+	list	#Display installed packages.
+	upgrade	#Upgrades the given package.
+	uninstall	#Uninstalls the given package.
+	hash	#Generates the SHA256 hash for the installer.
+	validate	#Validates a manifest file for submission to the Windows Package Manager repository.
+	settings	#Open settings.
+	features	#Shows the status of experimental features.
+	export	#Exports a list of the installed packages.
+	import	#Installs all the packages in a file.
+	pin	#Manage package pins.
+	configure	#Configures the system into a desired state.
+	download	#Downloads the specified application's installer.
+	
+	--info	#all detailed information on WinGet
+	--help / -?	#Shows additional help for WinGet
+	--version / -v	#Returns the current version of WinGet

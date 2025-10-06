@@ -1,0 +1,244 @@
+* Transferts thermique
+:PROPERTIES:
+:CUSTOM_ID: transferts-thermique
+:END:
+Tags: Thermique
+
+* Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités
+:END:
+Un transfert thermique est un transfert d'énergie entre deux milieux
+
+Le flux thermique va toujours du milieu le plus chaud vers le milieu le
+plus froid
+
+\[
+\boxed{T_{chaud}\Rightarrow T_{froid}}
+\]
+
+* Energie
+:PROPERTIES:
+:CUSTOM_ID: energie
+:END:
+\[
+\color{red}\boxed{\color{black}Q=P \cdot \Delta t}
+\]
+
+Q : Energie en \(J\)
+
+P : Puissance en \(W\), peut également être appelé flux thermique, dans
+ce cas on le notera \(\Phi\)
+
+\(\Delta t\) : temps en \(s\)
+
+* Densité de flux
+:PROPERTIES:
+:CUSTOM_ID: densité-de-flux
+:END:
+\[
+\color{red}\boxed{\color{black}\varphi=\frac{P}{S}=U \cdot \Delta T}
+\]
+
+\(\phi\) : densité de flux en \(W m^{-2}\)
+
+P : Puissance en \(W\)
+
+S : Surface en \(m^2\)
+
+U : Coefficient de transmission thermique surfacique en
+\(W K^{-1} m^{-2}\)
+
+\(\Delta T\) : Ecart de température en \(K\)
+
+* Résistance thermique
+:PROPERTIES:
+:CUSTOM_ID: résistance-thermique
+:END:
+\[
+\color{red}\boxed{\color{black}R = \frac{\Delta T}{\varphi}=\frac{e}{\lambda}}
+\]
+
+R : Résistance thermique en \(Km^2W^{-1}\)
+
+e : Epaisseur du matériau en \(m\)
+
+\(\lambda\) : Conductivité thermique en \(Wm^{-1} K^{-1}\)
+
+** Résistances superficielles
+:PROPERTIES:
+:CUSTOM_ID: résistances-superficielles
+:END:
+Il s'agit des résistances naturelles aux effets de convections le long
+de toute parois.
+
+| Paroi donnant sur :- L'exterieur- Un passage ouvert- Un local ouvert | Rsi  | Rse  | Rsi+e |
+|----------------------------------------------------------------------+------+------+-------|
+| flux horizontalinclinaison ≥ 60°                                     | 0.13 | 0.04 | 0.17  |
+| flux descendantinclinaison < 60°                                     | 0.10 | 0.04 | 0.14  |
+
+** Calcul de la résistance thermique
+:PROPERTIES:
+:CUSTOM_ID: calcul-de-la-résistance-thermique
+:END:
+*** Matériaux en série
+:PROPERTIES:
+:CUSTOM_ID: matériaux-en-série
+:END:
+On peut imaginer une paroi standard composée des matériaux suivants :
+
+- Plaque de plâtre
+- Laine de verre
+- Parpaings
+- Enduit
+
+Cette paroi offrira les résistances thermiques de chacune de ses couches
+plus des résistances superficielles.
+
+![[Images/Parois_homognes.svg]]
+
+La ligne rouge schématise l'évolution de la température à chaque
+position dans le mur.
+
+Ce système peut être symbolisé électriquement par une mise en série de
+résistances.
+
+![[Images/Parois_homognes_Rsistances.svg]]
+
+La résistance thermique totale de cette paroi se calcule simplement en
+additionnant chacune des résistances thermiques des matériaux et des
+résistances superficielles :
+
+\[
+\color{red}\boxed{\color{black}R_{tot}=\sum R_{série}}
+\]
+
+*** Matériaux en parallèle
+:PROPERTIES:
+:CUSTOM_ID: matériaux-en-parallèle
+:END:
+Certaines parois sont composées avec un empilage de divers matériaux
+(par exemple : brique et mortier)
+
+![[Images/Parois_htrogne.svg]]
+
+Ce système peut être symbolisé électriquement comme ceci :
+
+![[Images/Parois_htrogne_Rsistances.svg]]
+
+Il est, ici, nécessaire d'évaluer la résistance thermique de la zone où
+a lieu cet empilage.
+
+\[
+\color{red}\boxed{\color{black}R_{parallèle}=\frac{1}{\sum\frac{1}{R_{n}}}}
+\]
+
+La valeur de la résistance calculée précédemment représente les
+matériaux 2 et 3 comme formant 1 seul ensemble.
+
+Pour analyser le système complet on réalisera alors :
+
+\[
+\boxed{R_{tot}=R_{si}+R_1+\frac{1}{\Sigma\frac{1}{R_{2+3}}}+R_4+R_{se}}
+\]
+
+Ce qui revient à calculer :
+
+\[
+\color{red}\boxed{\color{black}Rtot=R_{parallèle}+\sum R_{série}}
+\]
+
+* Coefficient de transfert thermique
+:PROPERTIES:
+:CUSTOM_ID: coefficient-de-transfert-thermique
+:END:
+\[
+\color{red}\boxed{\color{black}U=\frac{1}{R}}
+\] # Déperditions thermiques
+
+** Coefficient de déperdition thermique
+:PROPERTIES:
+:CUSTOM_ID: coefficient-de-déperdition-thermique
+:END:
+On note \(H\) le *coefficient de déperdition thermique* d'un élément,
+exprimé en \(W\cdot K^{-1}\).
+
+On exprimera spécifiquement: - \(H_T \space (WK^{-1})\): Coefficient de
+déperdition thermique par transmission entre le *volume chauffé* d'une
+part et l'extérieur, le sol et les locaux non chauffés d'autre part. -
+\(H_D\space (W\cdot K^{-1})\): Coefficient de déperdition thermique par
+transmission *à travers une paroi donnant directement sur
+l'extérieur*. - \(H_S \space (W\cdot K^{-1})\): Coefficient de
+déperdition thermique par transmission *à travers une paroi en contact
+direct avec le sol*, un vide sanitaire ou un sous-sol non chauffé. -
+\(H_U \space (W\cdot K^{-1})\): Coefficient de déperdition thermique par
+transmission *à travers une paroi donnant sur un local non chauffé* (à
+l'exception des sous-sols et vides sanitaires). -
+\(H_V\space (W\cdot K^{-1})\) : Coefficient de déperdition thermique par
+*renouvellement d'air*.
+
+On a donc : \(\boxed{H_T = \sum H_D + \sum H_S + \sum H_U + H_V}\)
+
+*** Ponts thermiques structurels
+:PROPERTIES:
+:CUSTOM_ID: ponts-thermiques-structurels
+:END:
+\[
+H_D = ∑(A_iU_i) + ∑(L_jψ_j) + ∑(\chi_k)
+\] Avec : \(A_i\) = surface intérieure de la paroi i de l'enveloppe du
+bâtiment, en m² \(U_i\) = coefficient de transmission thermique de la
+paroi i de l'enveloppe du bâtiment. \(L_j\) = longueur du pont thermique
+j, en m \(ψ_j\) = coefficient de transmission thermique linéique du pont
+thermique de la liaison j. \(\chi_k\) = coefficient de transmission
+thermique ponctuel du pont thermique k.
+
+#+begin_quote
+Ne sont pas pris en compte pour le calcul des déperditions thermiques
+: - les parois donnant sur d'autres locaux chauffés ou considérés comme
+tel (chauffés à plus de 12°C en période d'occupation); - les parois
+donnant sur des circulations communes intérieures considérées comme
+faisant partie du volume non chauffé du bâtiment lorsque la totalité de
+ces parois sont isolées; - les vitrines.
+
+#+end_quote
+
+** Flux thermique
+:PROPERTIES:
+:CUSTOM_ID: flux-thermique
+:END:
+Le coefficient de déperdition thermique \(H\) traduit le flux thermique
+perdu par transmission pour un écart de température de 1°C. Pour décrire
+les pertes réelles, on décrit le flux thermique par:
+
+\[
+\Phi = H_T * (T_{int}-T_{ext})
+\]
+
+** Coefficient de transmission surfacique
+:PROPERTIES:
+:CUSTOM_ID: coefficient-de-transmission-surfacique
+:END:
+\[
+U_p = \sum A_iU_i \text{ (série)} \newline
+U_p = \frac{\sum A_iU_i }{\sum A_i}\text{ (parrallèle)}
+\]
+
+\[
+U_i=\frac{1}{\sum R_i}
+\]
+
+*** Parois vitrées
+:PROPERTIES:
+:CUSTOM_ID: parois-vitrées
+:END:
+Une paroi vitrée nue est constituée de deux composants principaux:
+remplissage et menuiserie. Dans le calcul de la performance, il convient
+d'ajouter un coefficient linéique de perte (équivalent à un pont
+thermique) intégré dans le coefficient de performance globale. $$ U_W =
+\frac{U_gA_g + U_fA_f + \psi_gL_g}{A_g+A_f}
+
+$$ Avec : \(U_W\): window (fenêtre) \(U_g\): glass (vitre) \(U_f\) :
+frame (menuiserie) \(A_g\): plus petite aire visible du vitrage.
+\(A_f\): plus grande aire projetée de la menuiserie \(\psi_g\) =
+coefficient de transmission thermique linéique \(L_g\) = périmètre du
+vitrage

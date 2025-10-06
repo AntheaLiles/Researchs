@@ -1,11 +1,9 @@
-#+glossary_sources: ~/org/glossary.org
-** Les contraintes dans la construction
-*** Définition de contrainte
+** Définition de contrainte
 À l’origine, contraindre et contrainte évoquent l’idée d’une pression exercée pour restreindre la liberté d’action d’une personne [cite:@CONTRAINTEEtymologieCONTRAINTE]. Dans le langage courant, une contrainte désigne tout ce qui force ou limite la liberté d’action [cite:@DefinitionContrainte]. Par extension, le mot s’applique à toute obligation ou règle à laquelle on doit se plier et qui réduit le champ de liberté.
 
 En outre, certains domaines techniques ont des acceptions spécifiques du terme. En droit, une contrainte peut désigner un acte coercitif [cite:@DefinitionContrainte]. En mécanique, le mot contrainte sert à traduire l’anglais stress, soit une force appliquée à un matériau qui tend à le déformer [cite:@francaiseContrainteDictionnaireLAcademie]. Ces usages spécialisés gardent néanmoins l’idée commune de force appliquée ou de limite imposée.
 
-Dans de nombreuses normes techniques et scientifiques, le terme contrainte est employé avec un sens plus formalisé, mais toujours avec l’idée centrale de restriction imposée. Voici quelques définitions normatives issues de standards ISO illustrant la variété d’usages du mot : 
+Dans de nombreuses normes techniques et scientifiques, le terme contrainte est employé avec un sens plus formalisé, mais toujours avec l’idée centrale de restriction imposée : 
 - restriction de paramètres ou de degré de liberté (orientation, taille, position, proximité) [cite:@ISO_4351],
 - restriction attachée à un type de données [cite:@ISO/CEI_2382],
 - condition formelle "exprimée en langage naturel ou dans un langage formel" qui précise ou limite la sémantique d’un modèle  [cite:@ISO_19103:2024].
@@ -28,46 +26,70 @@ Dans le domaine de l’ingénierie et de la gestion de projets de construction, 
 
 En somme, toute condition à satisfaire, qu’elle provienne du contexte, d’un besoin, d’une règle ou d’un choix stratégique, constitue une contrainte du projet. Cette vision rejoint la définition mathématique d’une contrainte comme condition que doit satisfaire la solution d’un problème, la solution admissible étant celle qui respecte l’ensemble des contraintes. Dans un projet, les contraintes dessinent ainsi les frontières de l’acceptable : elles forment un cadre à l’intérieur duquel l’équipe de conception doit trouver sa liberté de manœuvre. Ainsi nous pouvons définir les contraintes tel que:
 #+BEGIN_VERSE
-Expression d'une condition, limitation ou obligation, formulée en langage naturel ou formel, qui restreint l’espace des solutions possibles afin de garantir que la solution retenue soit conforme au contexte (environnement légal, social, économique, ecologique et technique) du projet.
+Expression d'une condition, limitation ou obligation, formulée en langage naturel, qui restreint l’espace des solutions possibles afin de garantir que la solution retenue soit conforme au contexte (légal, social, sociétal, environnemental, économique et technique) du projet.
 
 *Synonymes :* besoin, objectif, spécification, exigence.
 #+END_VERSE
 
 Par cette définition, la notion de contrainte reste agnostique du cycle de vie du projet. Qu’il s’agisse de la phase de planification, de conception, de réalisation ou d’exploitation, les contraintes forment le fil directeur immuable auquel se référer pour prendre les bonnes décisions.
 
-*** Taxonomie des contraintes
+** Taxonomie des contraintes
 #+LATEX: \todo[inline]{Illustrer chaque catégorie de contrainte par des exemples précis}
 #+LATEX: \todo[inline]{expliciter le périmètre de contrainte de la thèse}
-Nature technique :
-- Géométriques : espacements, tolérances…
-  Comment les décrire? eg. mode de pose des câbles, espacement d’une prise d’un point d’eau…
-  Quel parallèle entre contrainte géométrique et la langue naturelle + éventuellement jargon métier
-- Physiques : Énergie, signal, interférences, échauffements, sections, charges, vibrations, environnement (corrosion) : Électrique, Fluidique…
-- Chimiques : Couple galvanique
 
-Nature fonctionnelle :
-- Environnementales : Net 0, Emprunte carbone, biodiversité… ici se référer aux objectifs de transition écologique uniformisée par l’UE, explorer les critères “DNSH”
-- Sécuritaires : Cybersécurité, sécurité physique des personnes, Stockage produits dangereux, protection individuelle
-- Logiques : Behavior-Driven Design, Domain-Driven Design, Test-Driven Development...
+#+BEGIN_SRC plantuml :file ./svg/taxonomie-mindmap.png
+@startmindmap
+ * Nature
+  
+ ** Technique
+ *** Géométriques
+ **** Espacements
+ **** Tolérances
+ *** Physique
+ **** Énergie
+ **** Signal
+ **** Interférence
+ **** Echauffement
+ **** Vibration
 
-#+BEGIN_QUOTE
-Il peut aussi exister des contraintes liées au coût, à la disponibilité des composants ou des ressources de l’entité, ou des calendriers fixes susceptibles de nécessiter un compromis entre la fonctionnalité et la sûreté de fonctionnement. -- NF EN 60300-1:2014[cite:@GestionSureteFonctionnement2014]
-#+END_QUOTE
+ *** Chimique
+ **** Couple galvanique
 
-Nature organisationnelle :
-- Protocolaires : Procédures de validation, processus de gestion de projet
-- Politique : Urbanisme...
-- Sociétales :  Habilitations, formations...
-- Financières : Limite budgétaire
-- Sociales : 
-- Légales : Propriété intellectuelle, 
-- Temporelles : Hiérarchisation et dépendance des actions
-- Contractuelles : 
+ ** Fonctionnelle
+ *** Finacière
+ **** Limite budgétaire
+  
+ ** Environnementale
+  
+ ** Sécuritaire
+ *** Cybersécurité
+ *** Sécurité des personnes
+ *** Stockage des produits dangereux
+
+ ** Logique
+
+ ** Organisationnelle  
+ *** Protocolaire
+ **** Procédure de validation
+ **** Procédure de gestion de projet
+ *** Sociétale
+ **** Habilitation
+ **** Hiérarchie  
+ **** Formation
+ *** Légale
+ **** Propriété intellectuelle
+ *** Temporelle
+ **** Disponibilité des composants
+ **** Disponibilité des ressources  
+ **** Dépendance des actions
+ *** Contractuelle
+@endmindmap 
+#+END_SRC
 
 
 Justifier le besoin d'une "méthode de rédaction générique".
 
-*** Médiums et volumétrie
+** Médiums et volumétrie
 #+LATEX: \todo[inline]{expliciter la problèmatique : taille du corpus, diversité des sources, silotage des rédactions (pas de travail conjoint entre les organismes producteurs de contraintes), difficulté d'en connaitre, etc.}
 Sources, origines et finalités
 
@@ -83,7 +105,7 @@ Volume conséquent => faire un compte du nombre de pages par domaine pour illust
 
 #+LATEX: \todo[inline]{voie de recherche possible : création d'un service de fourniture de contrainte standardisé et unifié appelable via des requettes API}
 
-*** Exercice des contraintes
+** Exercice des contraintes
 #+LATEX: \todo[inline]{expliciter le cycle de vie des contraintes}
 Dans l'industrie de la construction, les parties prenantes se coordonnent dans la réponse à des exigences exprimées. Cette gestion des éxigences vise l'atteinte des objectifs du client en respect des contraintes légales, réglementaires et normatives.
 
@@ -124,13 +146,7 @@ La nature de sa composition s'apparente à une table de jonction d'une base de d
 #+ATTR_LATEX: :placement [htbp]
 [[./svg/db-exigences-lde.pdf]]
 
-Pour la suite de l'étude, le mot "contrainte" regroupera l'ensemble des éléments impactant la poursuite d'un projet. Il regroupera donc également la notion d'égigence et la notion de besoin.
-
-
-Démontrer l'hétérogénéité et le chaos actuels, et conclure sur l'inefficacité des approches qui tentent de "traduire" ce chaos au lieu de le "discipliner" à la source.
-La question "vers un DSL de la construction ?" (1.5.2) est la conclusion naturelle de cette analyse.
-
-*** Cadre de travail
+** Cadre de travail
 #+LATEX: \todo[inline]{on pose ici les 3 composantes du projet de recherche lié aux contraintes}
 Les contraintes étant centraux à la caractérisation d'un ouvrage, il convient de définir un cadre de travail rigoureux permettant leurs manipulation.
 
@@ -147,102 +163,12 @@ Préservation des contraintes (capitalisation) : au-delà du respect ponctuel, i
 
 En conjuguant ces trois dimensions, on dote la notion de contrainte d’un véritable cadre de gestion sur le projet. Cela permet d’assurer la définition unifiée de "contrainte" proposée au paragraphe [[Définition de contrainte]].
 
-** Génie électrique et systèmes contraints
-*** Spécificités du génie électrique
-Expression sous forme de diagramme SIPOC de la chaine de valeur en électrotechnique ?
-
-*** Contraintes en conception électrique
-*** Optimisation multicritères
-
-** Vérification et validation en ingénierie
-*** Concepts fondamentaux
-*Vérification* : "Construisons-nous le produit correctement ?" - Conformité aux spécifications
-
-*Validation* : "Construisons-nous le bon produit ?" - Adéquation aux besoins utilisateur
-
-*** Méthodes de traitement
+** Méthodes de traitement
 Langage naturel :
 - Rédaction
 - Affectation (par des tableaux et matrices)
 - Relecture (sur la base de listes à puces, checklist)
 - Simulations (éventuellement mais loop sur rapport produit)
 - Model checking : vérification exhaustive d'états finis, non systématique à date et loop sur rapport produit
-
-*** Défis en génie électrique
-
-
-** Apports du génie logiciel
-*** Programmation par contraintes
-Langage formels déclaratif textuel : Prolog, Claire, Raku, OCL, COBOL
-
-? : OCL
-
-Paradigme de programmation par les contraintes : Prolog, Claire, Raku
-
-Paradigme de programmation en langage proche du naturel : COBOL, SQL
-
-Solveurs de contraintes : CSL, SAT, etc.
-
-*** Programmation piloté par le comportement
-Fondements du BDD :
-- Une évolution du TDD avec des inspirations du DDD.
-
-Synthaxe
-
-#+CAPTION: Exemple de scénario Gherkin
-#+NAME: fig:gherkin-login
-#+ATTR_LATEX: :placement [htbp]
-#+begin_src gherkin :results verbatim
-  Fonctionnalité: Connexion utilisateur
-    Exemple: Connexion avec email inconnu
-      Etant donné que l'utilisateur est sur la page de connexion
-      Lorsqu' il saisit un email
-      Mais que cet email n'est pas connu par le SSO
-      Alors il ne peut pas renseigner son mot de passe
-    Exemple: Connexion avec un mot de passe non valide
-      Etant donné que l'utilisateur est sur la page de connexion
-      Lorsqu' il saisit un email valide
-      Et qu'il saisit un mot de passe non valide
-      Alors il ne peut pas se connecter
-#+end_src
-
-*** Traitement automatique langage
-Natural Language Processing, en français Traitement automatique du langage naturel.
-Large Language Model, Small Language Model...
-
-*** Business rule engine
-Langages formels déclaratif visuels : 
-- BPM et BPMN
-- Activity diagrams
-- Programmation visuelle (No-Code, Workflows...)
-- UML, SysML, UAFML… 
-
-*** Visualisations et interactions
-
-** Analyse critique et positionnement
-*** Lacunes identifiées
-Très hétéroclite, besoin d’abstraction pour généraliser les approches.
-
-La définition de l'environnement d'étude en particulier duquel le périmètre de texte institutionnel applicable n'est pas aisé à réalisé.
-Il manque en ce sens un mécanisme de sélection de l'environnement permettant de soucer automatiquement les contraintes appropriées.
-
-Exemple 1 : Travaux dans une base opérationnelle
-- imposition du respect de l'Arrêté Qualité de 1984 (AQ84)
-- import des contraintes de l'AQ84 dans la base des contraintes du projet.
-
-
-Exemple 2 : Travaux de distribution d'énergie électrique
-- imposition du respect de la norme obligatoire NF C15-100
-- import des contraintes de la NF C15-100 dans la base des contraintes du projet.
-
-
-Exemple 3 : Travaux d'installation d'équipement dans une zone sismique 3
-- imposition d'une résistance sismique particulière des équipements
-- import des contraintes de l'EUROCODE 3 dans la base des contraintes du projet.
-
-*** Opportunités de recherche
-Recherches potentiellements associées : gestion du contexte, quality information framework
-
-vers un DSL de la construction ?
 
 ** Conclusion

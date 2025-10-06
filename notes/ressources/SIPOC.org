@@ -1,0 +1,9 @@
+A SIPOC diagram is used in process improvement to represent the
+different components of a process. The acronym stands for Suppliers,
+Inputs, Process, Outputs, and Customers.
+
+*SIPOC diagrams are best for:* Providing a high-level view of a process
+which helps visualize the sequence of events and their interconnections.
+
+#+caption: example of a SIPOC diagram
+[[https://images.surferseo.art/6e541a01-3201-47cf-9155-fc0ba86d2c4b.jpeg]]

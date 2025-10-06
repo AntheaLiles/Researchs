@@ -1,0 +1,21 @@
+#+begin_quote
+💡 La couleur ne doit jamais être le seul moyen de codage. /Citation 6 :
+NF EN ISO 9241-125 §8.4.1/
+
+#+end_quote
+
+#+begin_quote
+💡 Il convient d'afficher ou de rendre facilement disponible une légende
+indiquant les codes couleur et leurs significations associées. Six
+niveaux de codage couleur ou plus nécessitent généralement une légende
+persistante. /Citation 7 : NF EN ISO 9241-125 §8.4.3/
+
+#+end_quote
+
+#+begin_quote
+💡 S'il est nécessaire de rappeler à la mémoire la signification de
+chaque couleur d'un jeu de couleurs, il convient alors de ne pas
+utiliser plus de six couleurs (voir l'ISO 9241-303:2011, §5.7.6.4).
+/Citation 8 : NF EN ISO 9241-125 §9.2.3/
+
+#+end_quote

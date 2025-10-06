@@ -2,8 +2,6 @@
 #+glossary_sources: ~/org/glossary.org
 #+OPTIONS: num:3
 
-# +latex: \begin{document}
-
 # Page de garde
   #+INCLUDE: "./00-pdg.org"
   #+LATEX: \clearpage
@@ -35,44 +33,52 @@
   #+LATEX: \renewcommand{\contentsname}{\vspace{-2em}}
   #+TOC: headlines 3
   
-* Annexes
-  :PROPERTIES:
-  :UNNUMBERED: notoc
-  :END:
-  #+LATEX: \listofappendices
-  #+LATEX: \clearpage
+# * Annexes
+#   :PROPERTIES:
+#   :UNNUMBERED: notoc
+#   :END:
+#   #+LATEX: \listofappendices
+   #+LATEX: \clearpage
   
   #+LATEX: \setcounter{section}{-1}
 * Introduction générale
-  #+INCLUDE: "./03-introduction.org"
+  #+INCLUDE: "./ch0-introduction.org"
+  #+LATEX: \clearpage
+
+* Exploration sectorielle
+  #+INCLUDE: "./ch1-exploration_sectorielle.org"
   #+LATEX: \clearpage
 
 * Etat de l'art
-  #+INCLUDE: "./04-chapitre-1.org"
+  #+INCLUDE: "./ch2-etat_de_l_art.org"
   #+LATEX: \clearpage
 
-* Problématique et méthodologie de recherche
-  #+INCLUDE: "./05-chapitre-2.org"
+* Problématique de recherche
+  #+INCLUDE: "./ch3-problematique.org"
+  #+LATEX: \clearpage  
+
+* Fondements théoriques
+  #+INCLUDE: "./ch4-theory.org"
+  #+LATEX: \clearpage
+
+* Taxonomie des contraintes
+  #+INCLUDE: "./ch8-taxonomy.org"
   #+LATEX: \clearpage
   
-* Approche de l'ingénierie par les contraintes
-  #+INCLUDE: "./06-chapitre-3.org"
-  #+LATEX: \clearpage
-
-* Implémentation
-  #+INCLUDE: "./07-chapitre-4.org"
+* Proposition
+  #+INCLUDE: "./ch5-proposition.org"
   #+LATEX: \clearpage
 
 * Validation expérimentale
-  #+INCLUDE: "./08-chapitre-5.org"
+  #+INCLUDE: "./ch6-validation.org"
   #+LATEX: \clearpage
 
 * Discussion et perspectives
-  #+INCLUDE: "./09-chapitre-6.org"
+  #+INCLUDE: "./ch7-discussion.org"
   #+LATEX: \clearpage
   
 * Conclusion générale
-  #+INCLUDE: "./10-conclusion.org"
+  #+INCLUDE: "./ch9-conclusion.org"
   #+LATEX: \clearpage
   
 * Références du document
@@ -82,11 +88,11 @@
 
 ** Liste des tableaux
   #+LATEX: \renewcommand{\listtablename}{\vspace{-2em}}
-  #+TOC: tables
+  #+LATEX: \listoftables
 
 ** Liste des codes sources
   #+LATEX: \renewcommand{\lstlistingname}{\vspace{-2em}}
-  #+TOC: listings
+  #+LATEX: \lstlistoflistings
 
 ** Liste des glosses
   #+print_glossary: :type glossary :only-contents t
@@ -99,8 +105,10 @@
 # Voir si pertinent
 
 * Bibliographie
+  #+LATEX: \small
   #+print_bibliography: :heading none
   # Associer les chapitres de livres aux livres sources (crossref in biblatex)
+  #+LATEX: \normalsize
   #+LATEX: \clearpage
 
 #+LATEX: \appendix
@@ -117,5 +125,3 @@ Panorama et comportement
 * Analyse des langages de balisage légers
 * Analyse des standards d'information
   #+LATEX: \clearpage
-  
-# +latex: \end{document}

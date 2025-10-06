@@ -1,0 +1,11 @@
+#+begin_quote
+*Entreprise*  [ɑ̃.tʁə.pʁiz] /(n. f.)/ Organisation humaine dont le but est
+de produire des biens ou des services en vue de les délivrer à des
+clients, cela dans un but d'équilibre ou d'excédent financier
+(rentabilité). /creeentreprise.fr/ [^1]
+
+#+end_quote
+
+[1]: Qu'est-ce qu'une entreprise ? /creeentreprise.fr/. [en ligne].
+Disponible à l'adresse:
+https://www.creerentreprise.fr/quest-ce-quune-entreprise-definition/

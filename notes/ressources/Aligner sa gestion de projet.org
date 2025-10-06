@@ -1,0 +1,19 @@
+- Automatisations
+
+Gestion documentaire : 
+- Homogénéiser ses documents en 
+  - Regroupant dans un même livrable les informations qui vont ensemble (eg. Schéma électrique, Schéma mécanique, Plan de bornier, Fiches de raccordement,
+Nomenclatures) 
+  - Harmonisant les noms des documents (eg. Plan; Schéma; Guide; Synoptique; Programme...)
+
+Exemple : Programme d'intervention = {Mode opératoire + Fiche d'intervention} + {Analyse des risques + Minute sécurité et EPI} + {Fiche de travail + Planning Minute}
+
+Temps de correction, d'attente, de stress = perte € (personnel trop stressé = perd en efficacité)
+
+
+Sémantique :
+
+| Nom        | Champ d'action | Description                                                                                                                                                                               |
+|------------+----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Convention | Entreprise     | Permet de définir la stratégie et le positionnement d'un organisme au regard d'une thématique. Elle donne le cadre général et aligne les volontés individuelles sur celle de l'organisme. |
+| Charte     | Entreprise     | Est un ensemble de règles d'usage et de représentation s'appliquant à l'intérieur d'un groupe social.Elle se traduit par un ensemble de configuration et trames de travail.               |

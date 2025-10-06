@@ -1,0 +1,40 @@
+* Distribution
+:PROPERTIES:
+:CUSTOM_ID: distribution
+:END:
+** Câbles
+:PROPERTIES:
+:CUSTOM_ID: câbles
+:END:
+** Catégorie feu
+:PROPERTIES:
+:CUSTOM_ID: catégorie-feu
+:END:
+Suivant arrêté du 21 Juillet 1994 - Version en vigueur au 06 Février
+2023
+
+| Euroclasse | Fumée                | Gouttelettes | Acidité    | Exigence Réglementaire   |
+|------------+----------------------+--------------+------------+--------------------------|
+| Aca        | ---                  | ---          | ---        | Série K20                |
+| B1ca       | s1a                  | d0, d1, d2   | a1         | Série K20                |
+| B2ca       | s1a                  | d0, d1, d2   | a1         | Série K20                |
+| B1ca       | s1a                  | d0, d1, d2   | a2         | C1 Halogen free, C1#, C1 |
+| B1ca       | s1b, s1, s2          | d0, d1, d2   | a1, a2     | C1 Halogen free, C1#, C1 |
+| B2ca       | s1b, s1, s2          | d0, d1, d2   | a1, a2     | C1 Halogen free, C1#, C1 |
+| Cca        | s1a, s1b, s1, s2     | d0, d1, d2   | a1, a2     | C1 Halogen free, C1#, C1 |
+| Cca        | s3                   | d0, d1, d2   | a1, a2, a3 | C2                       |
+| Dca        | s1a, s1b, s1, s2, s3 | d0, d1, d2   | a1, a2, a3 | C2                       |
+| Eca        | ---                  | ---          | ---        | C2                       |
+| Néant      | ---                  | ---          | ---        | C3                       |
+
+** Cheminements
+:PROPERTIES:
+:CUSTOM_ID: cheminements
+:END:
+- Mise en place d'un chemin de câble si + de 5 câbles en transit
+- sinon on mettra un tube hyro
+- dans les faux plafonds on pourra fixer des clips d'accroche sur la
+  dalle pour y passer les câbles des luminaires par exemple
+- Il faut faire attention au rayon de courbure minimum des raccords de
+  chemin de câble qui devront au minimum correspondre au rayon de
+  courbure le plus contraignant des câbles qui vont être accueillis

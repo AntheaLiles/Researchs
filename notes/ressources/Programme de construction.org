@@ -1,0 +1,180 @@
+* Préambule
+:PROPERTIES:
+:CUSTOM_ID: préambule
+:END:
+** Contexte de l'opération
+:PROPERTIES:
+:CUSTOM_ID: contexte-de-lopération
+:END:
+** Déroulement et étapes de l'étude
+:PROPERTIES:
+:CUSTOM_ID: déroulement-et-étapes-de-létude
+:END:
+** Les enjeux du projet
+:PROPERTIES:
+:CUSTOM_ID: les-enjeux-du-projet
+:END:
+* Programme architectural et fonctionnel
+:PROPERTIES:
+:CUSTOM_ID: programme-architectural-et-fonctionnel
+:END:
+** Le site et ses contraintes
+:PROPERTIES:
+:CUSTOM_ID: le-site-et-ses-contraintes
+:END:
+*** Situation et accès
+:PROPERTIES:
+:CUSTOM_ID: situation-et-accès
+:END:
+*** Situation dans la ville
+:PROPERTIES:
+:CUSTOM_ID: situation-dans-la-ville
+:END:
+*** Environnement immédiat
+:PROPERTIES:
+:CUSTOM_ID: environnement-immédiat
+:END:
+*** Accès
+:PROPERTIES:
+:CUSTOM_ID: accès
+:END:
+*** Contexte urbain
+:PROPERTIES:
+:CUSTOM_ID: contexte-urbain
+:END:
+*** Le projet de rénovation urbaine
+:PROPERTIES:
+:CUSTOM_ID: le-projet-de-rénovation-urbaine
+:END:
+*** Les contraintes réglementaires
+:PROPERTIES:
+:CUSTOM_ID: les-contraintes-réglementaires
+:END:
+*** Plan masse et organisation actuelle du site
+:PROPERTIES:
+:CUSTOM_ID: plan-masse-et-organisation-actuelle-du-site
+:END:
+** L'expression des besoins et les principes fonctionnels
+:PROPERTIES:
+:CUSTOM_ID: lexpression-des-besoins-et-les-principes-fonctionnels
+:END:
+*** Données de base
+:PROPERTIES:
+:CUSTOM_ID: données-de-base
+:END:
+*** La structure pédagogique prévisionnelle
+:PROPERTIES:
+:CUSTOM_ID: la-structure-pédagogique-prévisionnelle
+:END:
+*** Les besoins en personnel
+:PROPERTIES:
+:CUSTOM_ID: les-besoins-en-personnel
+:END:
+*** La restauration
+:PROPERTIES:
+:CUSTOM_ID: la-restauration
+:END:
+*** Les principes fonctionnels
+:PROPERTIES:
+:CUSTOM_ID: les-principes-fonctionnels
+:END:
+*** Organisation générale
+:PROPERTIES:
+:CUSTOM_ID: organisation-générale
+:END:
+*** Accès au site
+:PROPERTIES:
+:CUSTOM_ID: accès-au-site
+:END:
+*** Les principes d'évaluation des surfaces
+:PROPERTIES:
+:CUSTOM_ID: les-principes-dévaluation-des-surfaces
+:END:
+*** Schéma fonctionnel général
+:PROPERTIES:
+:CUSTOM_ID: schéma-fonctionnel-général
+:END:
+*** Fonctionnement détaillé par unité
+:PROPERTIES:
+:CUSTOM_ID: fonctionnement-détaillé-par-unité
+:END:
+*** Détail des besoins en surface
+:PROPERTIES:
+:CUSTOM_ID: détail-des-besoins-en-surface
+:END:
+* Programme technique détaillé
+:PROPERTIES:
+:CUSTOM_ID: programme-technique-détaillé
+:END:
+** Orientation technique générales
+:PROPERTIES:
+:CUSTOM_ID: orientation-technique-générales
+:END:
+*** Cadre réglementaire
+:PROPERTIES:
+:CUSTOM_ID: cadre-réglementaire
+:END:
+*** Sécurité
+:PROPERTIES:
+:CUSTOM_ID: sécurité
+:END:
+*** Durabilité
+:PROPERTIES:
+:CUSTOM_ID: durabilité
+:END:
+*** Flexibilité, Evolutivité
+:PROPERTIES:
+:CUSTOM_ID: flexibilité-evolutivité
+:END:
+** Exigences techniques spécifiques
+:PROPERTIES:
+:CUSTOM_ID: exigences-techniques-spécifiques
+:END:
+*** Gestion de l'énergie
+:PROPERTIES:
+:CUSTOM_ID: gestion-de-lénergie
+:END:
+*** Maintenance
+:PROPERTIES:
+:CUSTOM_ID: maintenance
+:END:
+*** Acoustique
+:PROPERTIES:
+:CUSTOM_ID: acoustique
+:END:
+*** Valorisation du site
+:PROPERTIES:
+:CUSTOM_ID: valorisation-du-site
+:END:
+*** Gestion des déchets d'activité
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-déchets-dactivité
+:END:
+*** Eclairage
+:PROPERTIES:
+:CUSTOM_ID: eclairage
+:END:
+*** Qualité sanitaire des espaces
+:PROPERTIES:
+:CUSTOM_ID: qualité-sanitaire-des-espaces
+:END:
+*** Exigences complémentaires par corps d'état
+:PROPERTIES:
+:CUSTOM_ID: exigences-complémentaires-par-corps-détat
+:END:
+** Fiches d'espaces
+:PROPERTIES:
+:CUSTOM_ID: fiches-despaces
+:END:
+*** Présentation des fiches
+:PROPERTIES:
+:CUSTOM_ID: présentation-des-fiches
+:END:
+*** Numérotation des fiches
+:PROPERTIES:
+:CUSTOM_ID: numérotation-des-fiches
+:END:
+*** Fiches par numéro
+:PROPERTIES:
+:CUSTOM_ID: fiches-par-numéro
+:END:

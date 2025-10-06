@@ -1,0 +1,75 @@
+* Protocoles web :web:
+
+Protocole de communication : HTTP/3 + UDP + QUIC
+
+* Technologies remarquables
+
+ * Peer-tube
+Architecture hybride entre peer-to-peer et client-serveur avec switch automatique permettant de rationnaliser la bande passante
+
+ * The Elder scroll Online 
+Algorithmes d'interpolation coté serveur permettant initialement d'éviter la triche en jeu. Il permet de prédire les états des clients avant leurs réponse et permet de fluidifier l'expérience utilisateur. Est très intéressant lorsqu'il y a beaucoup de clients à synchroniser.
+
+* Questions
+
+- Comment fonctionne les eSim et la téléphonie IP ?
+- Comment assurer la continuité numérique des projets d'électrotechnique ?
+- Quel est l'implication numérique de la théorie des graphes dans la collaboration en technique ?
+- Quels sont les meilleurs médiums d’informations techniques à l’ère du web 3.0, de l’avènement de l'intelligence artificielle et de l’industrie 4.0 ?
+- Comment la transmission d’une information technique est-elle influencée par la psychologie du destinataire ?
+- Considérer les phénomènes sociologiques améliore t’il la transmission de l’information technique ?
+- L’utilisation de la dialectique dans la présentation de l’information technique impacte-t-elle la bonne acquisition de celle-ci ?
+- L’adoption d’une démarche scientifique en ingénierie de système améliore t’il la qualité des livrables ?
+- Quel rôle joue la sémantique dans la diffusion d’une information technique ? (étude selon abstraction)
+- Quel est l'intérêt de créer un gestionnaire d’asset et d’information multiparadigme ?
+
+"Le cerveau humain n'aime pas le vide et cherchera toujours à le remplir."
+Comment utiliser ce principe dans 
+- La transmission de connaissance => Risque de remplissage par des hallucinations
+- La conduite du changement => peut favoriser l'émergence d'idées
+- L'ingénierie => à étudier
+
+* Citations
+
+"La première étape est de se doter d'un plan." J.M. Jancovici - PTEF
+
+* Démarche RH
+
+Cataloguer les compétences, prévoir plans de carrières et plans de formations
+
+* Architectures Logiciels
+
+SOA : Service Oriented Architecture
+En couche
+MVC : Model Vue Controleur
+MVVM : Model Vue Vue-Model
+
+Architecture microservice basé sur WASM et WASI avec Fermyon Spin 2.0
+Enjeux : portabilité et légèreté des applications en maintenant des performances élevés
+
+* Ultrapersonnalisation
+
+Rapprochement entre industrie 5.0 (ultra personnalisation) et l'industrie de la construction et l'ingéniérie de systeme complexes (construction en série de pièces uniques)
+
+* Token economie
+
+Token non secable
+Eg : bitcoin = sécable
+Donc : `uint128 unToken = 1`
+
+* Adoption technologique
+
+Ce qui fait l'adoption d'une innovation - militaire - Entertainment -
+Grand publique
+
+Est-ce que notre sujet est applicable dans ces secteurs ? Militaire :
+oui, facilement : gains sur les budgets, sur les opérations et leurs
+maitrise, la maintenance, la capacité d'analyse des moyens (tactique
+militaire) Entertainment : Grand publique :
+
+"L'approfondissement d'un apprentissage ne se fait qu'au regard des
+sciences humaines"
+
+- besoin d'expliquer, de mettre en valeur, de présenter, de convaincre
+
+* Facteur d'efficacité

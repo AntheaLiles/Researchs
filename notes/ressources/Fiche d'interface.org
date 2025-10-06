@@ -1,0 +1,23 @@
+/S'inspirer des fiches 8D (sécurité/qualité) pour préparer une trame par
+interface rencontrée/ # Désignation # N°Fiche
+
+* Description
+:PROPERTIES:
+:CUSTOM_ID: description
+:END:
+* Suivi de l'interface
+:PROPERTIES:
+:CUSTOM_ID: suivi-de-linterface
+:END:
+| Date       | Action                                                  |
+|------------+---------------------------------------------------------|
+| JJ/MM/AAAA | Logoden biniou degemer mat an penn, ar bed arabat komz. |
+
+* Résolution
+:PROPERTIES:
+:CUSTOM_ID: résolution
+:END:
+* Bilan
+:PROPERTIES:
+:CUSTOM_ID: bilan
+:END:

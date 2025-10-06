@@ -1,0 +1,5 @@
+Processus management contrat = perte € (non VA mais nécessaire) ###
+Types de marchés PPP : Partenariats Publique Privé
+MPGP : Marché Publique Global de Performance
+CREM : Conception Réalisation Exploitation Maintenance
+REM : Réalisation Exploitation Maintenance

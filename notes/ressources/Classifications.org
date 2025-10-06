@@ -1,0 +1,17 @@
+| Classification |   |   |   |   | IFC |
+|----------------+---+---+---+---+-----|
+| *Temporalité*  |   |   |   |   |     |
+| *Usages*       |   |   |   |   |     |
+
+
+| Classification | Temporalité                                                                | Usages                                                                                                                                  |
+|----------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------|
+| OmniClass      | Tout le cycle de vie d'un actif                                            | Organisation, tri et récupération des ==informations produits== pour tous les objets de l'environnement construit                       |
+| Uniclass       | Utilisé dans tous les aspects du processus de conception et de réalisation | Structuration de la ==documentation== et des informations                                                                               |
+| UniFormat      | Utilisé lors des estimations de coûts (Programmation et maintenance)       | Organiser l'information de construction autour des parties physiques d'une installation connues sous le nom d'==éléments fonctionnels== |
+| MasterFormat   | Utilisé dans les appels d'offres et les spécifications                     | Organiser les résultats, les exigences, les produits et les activités du ==chantier== en fonction d'une liste principale                |
+
+Standards de paramètre (COBie; Open dthX)
+
+Paramètre revit = Variable de développement = Rubrique de base de donnée
+Table de donnée = Entité

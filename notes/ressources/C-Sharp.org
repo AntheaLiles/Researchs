@@ -1,0 +1,246 @@
+* Présentation
+:PROPERTIES:
+:CUSTOM_ID: présentation
+:END:
+Langage de programmation fortement typé, orienté objet et utilisant le
+framework .NET
+
+Héritier du C++ et JavaScript
+
+Il Permet le développement de tout type d'application :
+
+- Web : ASP.NET et Blazor
+- Mobile : MAUI
+- Jeux Vidéo : Unity
+- Desktop
+- Intelligence artificielle : ML.NET
+- etc.
+
+Il s'agit également d'un langage pris en charge par Revit et Navisworks
+pour développer des plugins.
+
+Formation C# [[https://hts-learning.com/shop/course/infos/csharp]]
+code promo : YOUTUBECSHARP
+
+* Eléments de langage
+:PROPERTIES:
+:CUSTOM_ID: eléments-de-langage
+:END:
+** Types de variables
+:PROPERTIES:
+:CUSTOM_ID: types-de-variables
+:END:
+| Nom     | Stock   | Utilisation                                                                  | Particularités                 |
+|---------+---------+------------------------------------------------------------------------------+--------------------------------|
+| int     | Entier  | à favoriser dès que l'on est sûr que l'on va stocker un nombre entier        | NA                             |
+| float   | Décimal | Rapide mais imprécis                                                         | NA                             |
+| double  | Décimal | Plus rapide que "float" mais moins précis que "decimal", choix par défaut    | NA                             |
+| decimal | Décimal | Très précis mais gourmant en ressources, dédié aux manipulations financières | Ajouter un "m" après la valeur |
+
+#+begin_src csharp
+int myInt = 153 
+double myDouble = 1556.22 
+decimal myDecim = 14589865.32298m
+#+end_src
+
+** Modulo
+:PROPERTIES:
+:CUSTOM_ID: modulo
+:END:
+- symbole : %
+- opérateur servant à afficher le reste d'une division
+  - exemple : 5 % 3 = 2
+- Astuce : x % 2
+  - si = 0 : x est un nombre paire
+  - si = 1 : x est un nombre impaire
+
+** Calculs arithmétiques
+:PROPERTIES:
+:CUSTOM_ID: calculs-arithmétiques
+:END:
+#+begin_src csharp
+Math.Abs() // rapporte la valeure absolue de la variable 
+Math.Pow(a , b) // élève a à la puissance b, a et b sont des double 
+Math.Sqrt() // calcule la racine carrée (attention, n'accepte que les nombres paires) 
+Math.Min() // rapporte la valeure min de la liste 
+Math.Max() // rapporte la valeure max de la liste 
+Math.Ceiling() // réalise un arrondi sup 
+Math.Floor() // réalise un arrondi inf 
+Math.Round() // réalise un arrondi par convension (au plus proche) 
+
+//ARITHMETIC OPERATORS: +, -, *, / 
+// INCREMENT, DECREMENT: ++, -- 
+
+int a = 0;  
+a -- ; // diminue de 1 la valeure de a  
+a ++ ; // augmente de 1 la valeure de a 
+a += 5 ; // augmente de 5 la valeure de a   
+a-=2 ; // descend de 2 la valeur de a
+#+end_src
+
+** Booléens
+:PROPERTIES:
+:CUSTOM_ID: booléens
+:END:
+| ET    | True  | False |  | OU    | True | False |  | OU EXCLUSIF | True  | False |
+|-------+-------+-------+--+-------+------+-------+--+-------------+-------+-------|
+| True  | True  | False |  | True  | True | True  |  | True        | False | True  |
+| False | False | False |  | False | True | False |  | False       | True  | False |
+
+#+begin_src csharp
+// Test de toutes les solutions : un seul signe 
+//condition ET 
+bool etBool = conditionA & conditionB;  
+
+//condition OU 
+bool ouBool = conditionA | conditionB;  
+
+//condition OU EXCLUSIF 
+bool ouExBool = conditionA ^ conditionB;    
+
+// Test jusqu'a ce que l'on trouve un True puis stop : deux signes 
+// accélère le traitement 
+bool etBool = conditionA && conditionB; 
+bool ouBool = conditionA || conditionB; 
+bool ouExBool = conditionA ^^ conditionB;
+#+end_src
+
+** Créer un tableau ou une liste
+:PROPERTIES:
+:CUSTOM_ID: créer-un-tableau-ou-une-liste
+:END:
+#+begin_src csharp
+//Les tableaux consomment peu de mémoire puisqu'ils sont déclarés avec précisions 
+//Mais difficles à maintenir, à faire évoluer 
+int[] tableValeur = new int[10]{0,1,2,3,4,5,6,7,8,9};
+#+end_src
+
+#+caption: image_1684769813552_0.png
+[[file:Elements%20de%20langage%203687497848ac46cab1229de07e2adf15/image_1684769813552_0.png]]
+
+#+begin_src csharp
+int value = 12; 
+
+//Les listes sont des objets à l'inverse des tables 
+List listeValeur = new List(); 
+
+//Ajouter une entrée à la liste, le type doit correspondre au type de la liste 
+listeValeur.Add(value); 
+
+//On peut aussi stocker les valeurs à un index spécifique 
+value = listeValeur[0]
+#+end_src
+
+#+caption: image_1684776434829_0.png
+[[file:Elements%20de%20langage%203687497848ac46cab1229de07e2adf15/image_1684776434829_0.png]]
+
+** Les boucles
+:PROPERTIES:
+:CUSTOM_ID: les-boucles
+:END:
+Permet d'exécuter une fonction à chaque tour
+
+*** Boucle for
+:PROPERTIES:
+:CUSTOM_ID: boucle-for
+:END:
+#+begin_src csharp
+for ("ETAT DE DEPART" ; "CONDITION DE SORTIE" ; "FONCTION") 
+    { 
+        //code à executer
+    }
+#+end_src
+
+#+caption: image_1684777248602_0.png
+[[file:Elements%20de%20langage%203687497848ac46cab1229de07e2adf15/image_1684777248602_0.png]]
+
+Exemple :
+
+#+begin_src csharp
+//on défini un entier i qui vaut 0, c'est notre compteur de tour 
+//on compte 10 tour (dès que i = 10 on s'arrête) 
+//on incrémente i de 1 à chaque tour 
+
+for (int i = 0; i < 10; i++) 
+    {
+        //code à executer
+    }
+#+end_src
+
+*** Boucle while
+:PROPERTIES:
+:CUSTOM_ID: boucle-while
+:END:
+Attention à bien fermer la boucle sinon le programme va tourner en rond
+!
+
+#+caption: image_1684778625567_0.png
+[[file:Elements%20de%20langage%203687497848ac46cab1229de07e2adf15/image_1684778625567_0.png]]
+
+*** Boucle foreach
+:PROPERTIES:
+:CUSTOM_ID: boucle-foreach
+:END:
+il faut déclarer une variable locale et la collection à parcourir est
+une liste ou un tableau défini précédemment
+
+#+caption: image_1684780154011_0.png
+[[file:Elements%20de%20langage%203687497848ac46cab1229de07e2adf15/image_1684780154011_0.png]]
+
+** Conditions
+:PROPERTIES:
+:CUSTOM_ID: conditions
+:END:
+*** if, esle if, else
+:PROPERTIES:
+:CUSTOM_ID: if-esle-if-else
+:END:
+#+begin_src csharp
+string color; //En assumant que la couleur n'ai que 3 valeurs 
+
+if (color == "blue") 
+    { 
+        Console.WriteLine("color is blue"); 
+    } 
+else if (color == "red") 
+    { 
+        Console.WriteLine("color is red"); 
+    } 
+else 
+    { 
+        Console.WriteLine("color is green"); 
+    }
+#+end_src
+
+*** switch
+:PROPERTIES:
+:CUSTOM_ID: switch
+:END:
+Permet d'éviter de trop nombreux =esle if=
+
+#+begin_src csharp
+string color; 
+
+switch (color) 
+    { 
+        case "blue": Console.WriteLine("color is blue"); 
+            break; 
+        case "red": Console.WriteLine("color is red"); 
+            break; 
+        case "green": Console.WriteLine("color is green"); 
+            break; 
+        default: Console.WriteLine("there is no color");
+            break; 
+    }
+#+end_src
+
+*** Ternary operator : ?
+:PROPERTIES:
+:CUSTOM_ID: ternary-operator
+:END:
+#+begin_src csharp
+string color = "blue"; 
+
+//est-ce que la couleure est bleu ? si oui on sauvegarde bleu sinon pas bleu.
+string result = (color == "blue") ? "blue" : "Not blue"; 
+#+end_src

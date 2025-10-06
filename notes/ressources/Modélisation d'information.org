@@ -1,0 +1,514 @@
+* Méthodologie de conception
+:PROPERTIES:
+:CUSTOM_ID: méthodologie-de-conception
+:END:
+* Merise
+:PROPERTIES:
+:CUSTOM_ID: merise
+:END:
+Merise est une méthode de conception de bases de données et de systèmes
+d'information. Elle a été développée dans les années 1980 en France et
+est largement utilisée dans le domaine du génie logiciel.
+
+La méthode Merise propose une approche structurée pour analyser,
+concevoir et implémenter des systèmes d'information. Elle se base sur
+des concepts tels que les entités, les relations et les traitements pour
+modéliser les différentes composantes d'un système.
+
+L'approche Merise se divise généralement en trois étapes principales :
+l'analyse, la conception et la mise en œuvre. Pendant l'analyse, on
+étudie les besoins des utilisateurs et on identifie les entités du
+système, leurs relations et les traitements qu'elles effectuent.
+Ensuite, lors de la conception, on crée des modèles conceptuels et
+logiques pour représenter les données et les traitements. Enfin, lors de
+la mise en œuvre, on traduit ces modèles en structures de base de
+données et en programmes informatiques.
+
+Merise met l'accent sur la séparation des préoccupations et la
+modularité, ce qui facilite la maintenance et l'évolution des systèmes.
+Elle utilise également des notations graphiques telles que les
+diagrammes entité-relation et les diagrammes de flux de données pour
+représenter les différents aspects du système.
+
+En résumé, Merise est une méthode de conception de systèmes
+d'information qui offre une approche structurée pour modéliser et
+implémenter des bases de données et des traitements.
+
+Merise est une méthode de conception de bases de données et de systèmes
+d'information. Elle a été développée dans les années 1980 en France et
+est largement utilisée dans le domaine du génie logiciel.
+
+La méthode Merise propose une approche structurée pour analyser,
+concevoir et implémenter des systèmes d'information. Elle se base sur
+des concepts tels que les entités, les relations et les traitements pour
+modéliser les différentes composantes d'un système.
+
+L'approche Merise se divise généralement en trois étapes principales : -
+l'analyse, - la conception et - la mise en œuvre.
+
+Pendant l'analyse, on étudie les besoins des utilisateurs et on
+identifie les entités du système, leurs relations et les traitements
+qu'elles effectuent. Ensuite, lors de la conception, on crée des modèles
+conceptuels et logiques pour représenter les données et les traitements.
+Enfin, lors de la mise en œuvre, on traduit ces modèles en structures de
+base de données et en programmes informatiques.
+
+![[Drawings/MERISE.svg]] Cycle de vie de l'information
+
+Merise met l'accent sur la séparation des préoccupations et la
+modularité, ce qui facilite la maintenance et l'évolution des systèmes.
+Elle utilise également des notations graphiques telles que les
+diagrammes entité-relation et les diagrammes de flux de données pour
+représenter les différents aspects du système.
+
+En résumé, Merise est une méthode de conception de systèmes
+d'information qui offre une approche structurée pour modéliser et
+implémenter des bases de données et des traitements.
+
+* Recueil d'information
+:PROPERTIES:
+:CUSTOM_ID: recueil-dinformation
+:END:
+** Interview
+:PROPERTIES:
+:CUSTOM_ID: interview
+:END:
+En amont de l'édition d'un dictionnaire des données, il faut recenser
+toutes les sources d'informations.
+
+Pour ce faire, on réalise un audit de façon à récupérer les documents et
+objectifs de chaque acteurs, le cahier des charges si existant ainsi que
+les systèmes d'informations (logiciels) qui vont s'interfacer avec la
+base de donnée.
+
+On discute avec les utilisateurs et on note la façon dont ils
+travaillent, ce qu'ils font et pourquoi, ce qui fonctionne et ce qu'ils
+souhaitent améliorer.
+
+On cherche principalement les flux d'information entre les acteurs.
+
+A ce moment là il est important de récupérer les sources de données.
+Cela peut être tout type de document : facture, plan, PV,
+nomenclature...
+
+** CR Interview
+:PROPERTIES:
+:CUSTOM_ID: cr-interview
+:END:
+Cet audit débouche généralement sur un compte rendu d'ITW exprimant le
+fonctionnement d'un service.
+
+On met au propre nos prises de notes pour avoir une vue globale de la
+problématique
+
+* Diagramme de flux
+:PROPERTIES:
+:CUSTOM_ID: diagramme-de-flux
+:END:
+Ensuite, on dessine un diagramme organisationnel de flux (flow chart)
+pour représenter les flux entre les acteurs.
+
+Un acteur est une Unité active, une unité non active n'est donc pas un
+acteur et ne doit pas être considérée. Une plateforme de dépôt n'est pas
+un acteur.
+
+Un flux est un échange d'information entre acteurs
+
+Il représente, sous forme de Graphe, les flux d'informations dans un
+système donné.
+
+L'analyse est limité aux échanges de l'entreprise. Il ne faut pas
+s'intéresser aux échanges chez un sous-traitants ou chez un client par
+exemple.
+
+Par convention :
+
+- Les acteurs internes sont représentés avec des cercles en trait plein
+- Les acteurs externes sont représentés avec des traits en pointillés
+- Les flux sont représentés avec des flèches
+- Les flèches ne se croisent pas
+
+![[Exemple de diagramme de flux.svg]]
+
+/Exemple de diagramme de flux/
+
+* Tableau des rubriques
+:PROPERTIES:
+:CUSTOM_ID: tableau-des-rubriques
+:END:
+L'analyse de l'étude du réel permet de référencer un certain nombre de
+rubriques potentiellement utiles au système d'information. On les
+référence dans un tableau de rubrique que l'on agrémente au fur et à
+mesure.
+
+Dans l'ordre :
+
+1. Créer le tableau de donnée
+2. Identifier les Paramètres (ce sont les informations constantes et qui
+   ne nécessitent pas d'être stockées)
+3. Identifier les valeurs calculées (on en profite pour donner le calcul
+   à réaliser de façon à l'avoir en mémoire)
+4. Identifier le type de donnée (Texte, Entier, Décimal, Date...)
+5. Identifier la longueur de l'information (on cherche à connaitre
+   l'espace à allouer aux informations ici, exemple : String (20) =>
+   Chaine de 20 charactères maximums
+
+Voici les colonnes que l'on retrouvera dans notre tableau : *n°* : clé
+primaire de référencement d'une rubrique *Libellé* : Nom de la rubrique
+*Exemple* : valeur concrète associable à la rubrique *Type* : Type de
+format attendu (Numérique, Alphabétique, Alphanumérique, etc.) *Nature*
+: Est-ce que c'est une rubrique Primaire ou une rubrique Calculée ?
+*Calcul* : Noter ici l'opération à réaliser pour obtenir la valeur de la
+rubrique, si ce n'est pas une valeur calculée, peut être laissé nul.
+Attention référencer ici s'il s'agit d'une valeur de Paramètre (exemple
+: information immuable : Nom de notre société, TVA à taux unique sur
+tous les produits etc.) *Longueur* : longueur maximale allouée à la
+complétion de l'information. Modifier la longueur modifie également les
+performances du SGBD. la longueur est fixée arbitrairement et vient
+contraindre les utilisateurs. *Observation* : Note libre à l'utilisateur
+
+Repérer l'émetteur et le destinataire de l'information aidera à
+développer une gestion de cycle de vie des données.
+
+Exemple type d'un tableau des rubriques :
+
+| N° | Libellé              | Exemple  | Type | Nature | Calcul                  | Longueur | Observation | Emetteur | Destinataire |
+|----+----------------------+----------+------+--------+-------------------------+----------+-------------+----------+--------------|
+| 1  | n° Client            | 12345    | N    | P      |                         | 5        |             |          |              |
+| 2  | TVA                  | 20%      | N    | P      | Paramètre               | 4        | Invariable  |          |              |
+| 3  | Nom Client           | IN2C     | A    | P      |                         | 10       |             |          |              |
+| 4  | Prix Unitaire        | 12€      | N    | P      |                         | 10       |             |          |              |
+| 5  | Qtt                  | 2        | N    | P      |                         | 10       |             |          |              |
+| 6  | Total HT             | 24€      | N    | C      | [4] x [5]               | 10       |             |          |              |
+| 7  | Total TTC            | 28.80€   | N    | C      | [4] x [5] x ( 1 + [2] ) | 10       |             |          |              |
+| 8  | Référence du Produit | RC43-654 | AN   | P      |                         | 20       |             |          |              |
+
+L'association du Type et de la longueur des rubrique permet notamment de
+normaliser les données.
+
+* Dictionnaire des données
+:PROPERTIES:
+:CUSTOM_ID: dictionnaire-des-données
+:END:
+Il convient de retirer du tableau des rubriques, toutes les rubriques
+*/paramètres/* et les rubriques */calculée/*s pour constituer le
+Dictionnaire des données. C'est sur ce dernier que l'on s'appuie pour
+effectuer le Modèle conceptuel de donnée (MCD)
+
+Le Dictionnaire des données référence uniquement les rubriques utiles au
+système d'information.
+
+Ce sont uniquement des rubriques Primaires
+
+Exemple de Dictionnaire des données :
+
+| N° | Libellé              |
+|----+----------------------|
+| 1  | n° Client            |
+| 2  | Nom Client           |
+| 3  | Prix Unitaire        |
+| 4  | Qtt                  |
+| 5  | Référence du Produit |
+
+Sur cet exemple on distingue deux entités :
+
+- Client
+  - n° Client
+  - Nom Client
+  - Qtt
+- Produit
+  - Référence
+  - Prix Unitaire
+
+On peut rapidement identifier que l'association est : *ACHETER*
+
+Le client peut acheter de 0 à un nombre indéterminé de produit, et un
+type de produit peut être acheté par 0 à un nombre indéterminé de client
+
+[Client]----0,n----(ACHETER)----0,n----[Produit]
+
+* Etude des liens sémantiques
+:PROPERTIES:
+:CUSTOM_ID: etude-des-liens-sémantiques
+:END:
+** Dépendances fonctionnelles
+:PROPERTIES:
+:CUSTOM_ID: dépendances-fonctionnelles
+:END:
+Il est possible de réaliser un tableau d'étude de dépendance
+fonctionnelle en 3 niveaux (0, 1, 2) pour organiser les rubriques et
+voir comment elles sont liées entres elles.
+
+*Exemple*
+
+Dans ce cas, il faut se limiter à deux niveaux de dépendances. Autrement
+cela serait indicateur d'une erreur dans le postulat de modélisation.
+(ref?)
+
+Cette méthode ne fonctionnera que sur des cas extrêmement simples.
+
+Sinon elle sera très chronophage et fastidieuse à mettre en œuvre. Donc,
+à ne pas considérer dans notre processus.
+
+** Cartographie des données
+:PROPERTIES:
+:CUSTOM_ID: cartographie-des-données
+:END:
+Dessiner les liens fonctionnels entre les rubriques (hierarchies,
+dépendances...)
+
+![[Liens sémantiques.svg]] /Etude des liens sémantiques/
+
+* Modèle Conceptuel de Données
+:PROPERTIES:
+:CUSTOM_ID: modèle-conceptuel-de-données
+:END:
+Tags: Base de données
+
+La Modélisation Conceptuelle de Donnée permet de représenter sous forme
+de Graphe les relations entre des informations.
+
+Elle est constituée d'entités connectés entres elles au moyen
+d'associations.
+
+Un MCD est limité par la taille du domaine d'étude et sa vitesse
+d'évolution.
+
+** Entités
+:PROPERTIES:
+:CUSTOM_ID: entités
+:END:
+Objets indépendants des autres entités
+
+Une entité est représenté au moyen d'un bloc rectangulaire comprenant un
+titre (le nom de l'entité) suivi des différentes rubriques (paramètres)
+que contiens l'entité.
+
+Une classe d'entité regroupe toutes les rubriques associés aux entités
+
+Une entité possède *OBLIGATOIREMENT* une clé primaire (identifiant,
+index, ID n° [...]) permettant de différencier les Tuples / Nuples (les
+enregistrements).
+
+Cette clé primaire doit être renseignée, non nulle et Atomique (la plus
+petite possible).
+
+Les entités et leurs attributs sont définies en se basant sur le
+dictionnaire des données.
+
+** Associations
+:PROPERTIES:
+:CUSTOM_ID: associations
+:END:
+Il s'agit d'un verbe à l'infinitif représentant l'action reliant deux
+entités.
+
+Elles sont représentés au moyen d'un cercle ou d'un ovale.
+
+Il est possible que deux entités possèdent deux associations différents,
+leurs cardinalités sont forcément différentes dans ce cas, autrement les
+deux associations seraient confondue et l'on en garderait qu'une seule
+
+Il est possible qu'une entité s'associe à elle même, on parle alors
+d'*Association Réflective*
+
+Exemple : des produits composant des produits (Mousse compose Siège
+compose Voiture etc.)
+
+** Cardinalités
+:PROPERTIES:
+:CUSTOM_ID: cardinalités
+:END:
+Les cardinalités permettent de compter le nombre d'occurrence minimum et
+maximum dont l'entité participe à l'association
+
+** Synthèse
+:PROPERTIES:
+:CUSTOM_ID: synthèse
+:END:
+![[Drawings/Composition d'un MCD.svg]] /Constitution d'un modèle
+conceptuel de données/
+
+** Exemple
+:PROPERTIES:
+:CUSTOM_ID: exemple
+:END:
+Considérons le dictionnaire de donnée suivant : Afficher la table
+
+| N° | Nom logique       | Nom                                                     | Exemple                       | Type    | Longueur | Observations                                                           |
+|----+-------------------+---------------------------------------------------------+-------------------------------+---------+----------+------------------------------------------------------------------------|
+| 1  | id_reparation     | Identifiant de la réparation                            | 1                             | N       | 10       | PK Integer                                                             |
+| 2  | libelleRep        | Libellé des réparations                                 | Ravalement                    | A       | 50       |                                                                        |
+| 3  | coutPrevRep       | Coûts prévisionnels                                     | 186 000                       | N       | 10       | Decimalen €                                                            |
+| 4  | dureeRep          | Durée approximative                                     | 28                            | N       | 3        | IntegerEn jours                                                        |
+| 5  | anRep             | Année de réalisation                                    | 2023                          | N       | 4        | Integer                                                                |
+| 6  | rebelote          | Durée théorique avant réitération                       | 53                            | N       | 3        | IntegerEn mois                                                         |
+| #  | id_batiment       |                                                         |                               |         |          | FK                                                                     |
+| 7  | id_batiment       | Identifiant du bâtiment                                 | AB2                           | A       | 4        | PK                                                                     |
+| 8  | sPlancherBat      | Surface Plancher du batiment                            | 1586,06                       | N       | 6        | DoubleNot Nullen m²                                                    |
+| 9  | nbLvl             | Nombre de niveaux                                       | 4                             | N       | 1        | IntegerLe RDC compte comme un niveau                                   |
+| 10 | generalState      | Etat général du bâtiment                                | Bon                           | A       | 20       | Si choix prédéfinis, créer table de selection                          |
+| 11 | dateOuverture     | Date d'ouverture du bâtiment                            | 01/01/2023                    | DATE    |          | DD/MM/AAAA                                                             |
+| 12 | catErp            | Catégorie ERP                                           | 5                             | N       | 1        | Integer                                                                |
+| 13 | correspondant     | Correspondant                                           | Michel Dupont                 | A       | 50       | Si besoin d'information sur les correspondants, créer une table dédiée |
+| 14 | id_local          | Identifiant du local                                    | 202E                          | A       | 4        | PK                                                                     |
+| 15 | accessibilityType | Type d'accéssibilité                                    | Réservé                       | A       | 10       |                                                                        |
+| 16 | clos              | Local clos                                              | True                          | BOOLEAN |          |                                                                        |
+| 17 | sPlancherLoc      | Surface plancher du local                               | 50,24                         | N       | 5        | DécimalNot NULLEn m²                                                   |
+| 18 | nbWindow          | Nombre de fenêtres                                      | 7                             | N       | 2        | Integer                                                                |
+| 19 | nbDoor            | Nombre de portes                                        | 2                             | N       | 1        | Integer                                                                |
+| 20 | localState        | Etat du local                                           | Dégradé                       | A       | 20       |                                                                        |
+| #  | id_batiment       |                                                         |                               |         |          | FK                                                                     |
+| 22 | id_equipement     | Identifiant de l'équipement                             | TGBT01-AB2                    | A       | 10       | PK                                                                     |
+| 23 | famille           | Famille d'équipement                                    | Armoire Electrique            | A       | 50       |                                                                        |
+| 24 | type              | Sous-famille d'équipement                               | Tableau Général Basse tension | A       | 50       |                                                                        |
+| 25 | marque            | Marque de l'équipement                                  | Schneider                     | A       | 50       |                                                                        |
+| 26 | ref               | Référence du fabricant                                  | RX22792                       | A       | 10       |                                                                        |
+| 27 | launched          | Date de mise en service                                 | 02/02/2023                    | DATE    |          |                                                                        |
+| 28 | equipmentState    | Etat de l'équipement                                    | Bon                           | A       | 20       |                                                                        |
+| 29 | accessibility     | Contraintes d'accessibilités à l'équipement             | Personnel habilité            | A       | 20       |                                                                        |
+| #  | id_local          |                                                         |                               |         |          | FK                                                                     |
+| 31 | id_impliquer      | Référence de l'association des contrats aux équipements | TGBT01-AB2X28712UPHF          | A       | 20       | PK                                                                     |
+| #  | id_equipement     |                                                         |                               |         |          | FK                                                                     |
+| #  | id_contrat        |                                                         |                               |         |          | FK                                                                     |
+| 32 | id_contrat        | Référence du contrat                                    | X28712UPHF                    | A       | 10       | PK                                                                     |
+| 33 | type              | Type de contrat                                         | Contrôle réglementaire        | A       | 50       |                                                                        |
+| 34 | objet             | Objet du contrat                                        | Controle Electriques          | A       | 50       |                                                                        |
+| 35 | cost              | Coût du contrat                                         | 150 000,36€                   | N       | 10       | Décimal                                                                |
+| 36 | tauxFluc          | Taux de fluctuation du contrat                          | 0,82                          | N       | 4        | Décimal                                                                |
+| 37 | dateSignature     | Date de signature du contrat                            | 03/03/2023                    | DATE    |          | DD/MM/AAAA                                                             |
+| 38 | modeRenouv        | Mode de reconduction du contrat                         | Tacite                        | A       | 20       |                                                                        |
+| 39 | dureeContrat      | Durée du contrat                                        | 5                             | N       | 2        | IntegerEn année                                                        |
+| #  | id_prestataire    |                                                         |                               |         |          | FK                                                                     |
+| 40 | id_prestataire    | Identifiant                                             | 1865767435                    | N       | 10       | PK                                                                     |
+| 41 | siret             | Numéro de SIRET                                         | 19690192000013                | A       | 14       |                                                                        |
+| 42 | rasonSociale      | Raison sociale de la société                            | Equans                        | A       | 25       |                                                                        |
+| 43 | typePersonnel     | Type de personnel                                       | Habilité                      | A       | 15       |                                                                        |
+| 44 | website           | Site internet de l'entreprise                           | https://www.societe.com/      | A       | 50       |                                                                        |
+| 45 | interlocuteur     | Nom de l'interlocuteur                                  | Fabrice DUPONT                | A       | 50       |                                                                        |
+| 46 | phone             | Numéro de téléphone                                     | 06 00 01 01 02                | A       | 10       |                                                                        |
+| 47 | id_posseder       | Identifiant                                             | 1865767435ADU                 | N       | 20       | PK                                                                     |
+| #  | id_prestataire    |                                                         |                               |         |          | FK                                                                     |
+| #  | key               |                                                         |                               |         |          | FK                                                                     |
+| 48 | key               | Identifiant                                             | ADU                           | A       | 10       | PK                                                                     |
+| 49 | typeName          | Nom du type d'activité                                  | Entretiens Chaudière          | A       | 50       |                                                                        |
+
+Note : l'allocation de la longueur des chaines de caractères est
+purement indicative. SQLite n'empêchant pas son dépassement et
+PostgreSQL n'allouant pas d'espace par défaut aux rubriques.
+
+Voici le modèle conceptuel associé :
+
+![[Drawings/MCD Entretiens du bâtiment.svg]]
+
+Modèle de donnée pour la gestion de bâtiment
+
+On peut noter que cette représentation est bien plus lisible que le
+dictionnaire de donnée. Il est plus simple d'échanger avec les divers
+utilisateurs finaux à travers ce type de représentation de base de
+donnée.
+
+* Modèle Logique de Donnée
+:PROPERTIES:
+:CUSTOM_ID: modèle-logique-de-donnée
+:END:
+Aussi appelé Modèle Relationnel.
+
+Il permet de convertir le MCD en informatique et constitue une
+passerelle entre la représentation graphique et le code à donner à un
+logiciel de base de donnée.
+
+** Règles de passages
+:PROPERTIES:
+:CUSTOM_ID: règles-de-passages
+:END:
+Le passage entre MCD et MLD est régit par les règles suivantes :
+
+- Chaque entité devient une table (une relation)
+- Chaque identifiants devient une clé primaire
+- Chaque propriété devient un attribut
+- Chaque association avec une cardinalités maximales à *1* fait
+  apparaitre une clé étrangère
+  - Clé primaire : référence
+  - Clé étrangère : référence#
+
+Voici la représentation de l'affectation d'une clé étrangère avec une
+cardinalité *x,1 :*
+
+![[Drawings/Cardinalité x,1.svg]] /Cardinalité x,1/
+
+- Chaque association avec l'ensemble des cardinalisés maximales à *n*
+  devient une table dont *la clé primaire est composée des clés
+  primaires des tables composantes*
+
+Voici la représentation de la création d'une nouvelle table dû à la
+présence de deux cardinalités de type *x,n* :
+
+![[Drawings/Cardinalité x,n.svg]] /Cardinalité x,n/
+
+En cas d'association réflective (une entité qui s'associe à elle même),
+la clé primaire de la table se dédouble avec sa clé étrangère (permet de
+référencer le produit composant)
+
+** Ecriture du modèle logique
+:PROPERTIES:
+:CUSTOM_ID: ecriture-du-modèle-logique
+:END:
+Par convention, on souligne les clés primaires et on repère les clés
+étrangères en les précédant d'un #.
+
+En reprenant les deux modèles conceptuels précédents :
+
+*** Règle de passage pour cardinalité 1,1
+:PROPERTIES:
+:CUSTOM_ID: règle-de-passage-pour-cardinalité-11
+:END:
+#+begin_src jsx
+facture (id_facture, #id_presta)
+prestataire (id_presta)
+#+end_src
+
+*** Règle de passage pour cardinalités x,n - x,n
+:PROPERTIES:
+:CUSTOM_ID: règle-de-passage-pour-cardinalités-xn---xn
+:END:
+#+begin_src jsx
+travaux (id_facture)
+prestataire (id_prestataire)
+avoir (id_avoir, #id_facture, #id_prestataire)
+#+end_src
+
+** Notes
+:PROPERTIES:
+:CUSTOM_ID: notes
+:END:
+⚠️ Aucune valeur calculée dans le modèle, elles peuvent être calculées à
+tout moment et il est donc inutile voir même contre productif de les
+stocker dans la base de donnée.
+
+⚠️ Il est possible de stocker des constantes type TVA, Remise,
+Réduction, Ristourne [...]. Cela est à bien évaluer selon la nature de
+l'organisation.
+
+Une fois établis, le MLD peut être transformé en Modèle Physique de
+Donnée (MPD)
+
+* Modèle Physique de Données
+:PROPERTIES:
+:CUSTOM_ID: modèle-physique-de-données
+:END:
+Le Modèle Physique de Donnée peut être créé de façon - Graphique - Via
+le langage SQL
+
+Il est la traduction informatique du MLD.
+
+Sa mise en œuvre se fait directement dans le Système de Gestion de Base
+de Donnée (SGBD )
+
+Si je reprend l'exemple suivant =facture (id_facture, #id_presta)=
+
+La création de cette table en SQL s'écriera :
+
+#+begin_src sql
+CREATE TABLE facture (id_facture PRIMARY KEY, id_presta FOREIGN KEY);
+#+end_src

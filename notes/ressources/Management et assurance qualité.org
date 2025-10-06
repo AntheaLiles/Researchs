@@ -1,0 +1,1437 @@
+* GÉNÉRALITÉS
+:PROPERTIES:
+:CUSTOM_ID: généralités
+:END:
+** DÉFINITIONS
+:PROPERTIES:
+:CUSTOM_ID: définitions
+:END:
+PLAN QUALITE : Document spécifiant quelles procédures et ressources
+associées doivent être appliquées par qui et quand, pour un projet, un
+produit, un processus ou un contrat particulier. 
+
+PQP - Plan Qualité Projet
+
+** GESTION DU DOCUMENT
+:PROPERTIES:
+:CUSTOM_ID: gestion-du-document
+:END:
+Le présent document est le document cadre du système qualité du projet.
+Il est rédigé sous la responsabilité du chef de projet qui en effectue
+la validation technique.
+
+Le document est alors vérifié par le responsable QSE qui s'assure que
+toutes les exigences contractuelles sont prises en compte de façon
+satisfaisante pour la qualité, la sécurité et l'environnement.
+
+Le document est intégré au plan qualité global du projet qui est soumis
+pour approbation au client, puis est rendu exécutoire par le chef de
+projet. Ces différents actes sont formalisés par l'apposition des noms
+et signatures sur la page de garde.
+
+Le document est référencé, indicé et inscrit dans la liste des documents
+du projet.
+
+Les diffusions internes et externes sont assurées sous la responsabilité
+du chef de projet.
+
+Les modifications du document suivent les mêmes règles que son
+établissement. Les modifications sont revues et approuvées par les mêmes
+fonctions que lors de l'établissement.
+
+La diffusion du plan qualité est assurée par le chef de projet.
+
+L'application du plan qualité est placée sous la responsabilité des
+principaux intervenants dans leurs domaines respectifs.
+
+** OBJET DU DOCUMENT
+:PROPERTIES:
+:CUSTOM_ID: objet-du-document
+:END:
+Le présent document définit les dispositions mises en œuvre pour la
+réalisation de la commande: ### Référence du projet Client : Désignation
+du projet : N° de la commande :
+
+*** Identité juridique liée à la commande
+:PROPERTIES:
+:CUSTOM_ID: identité-juridique-liée-à-la-commande
+:END:
+Ce projet est piloté au sein de
+
+==Prestations du contrat avec les prestations associées à ne pas
+oublier==
+
+==quantités à produire, disponibilité, critères de qualité et de sûreté
+de fonctionnement de la production, respect de l'environnement, etc.==
+
+==conditions de production, planning des arrêts pour les travaux,
+indisponibilités de l'installation, langue officielle, impositions
+relatives aux conditions géographiques, etc.==
+
+** DOMAINE ET LIMITES D'APPLICATION
+:PROPERTIES:
+:CUSTOM_ID: domaine-et-limites-dapplication
+:END:
+Le présent document est applicable à toutes les prestations liées à
+cette commande et réalisées par l'équipe projet de CLEMESSY SA.
+
+** DOCUMENTS DE RÉFÉRENCE
+:PROPERTIES:
+:CUSTOM_ID: documents-de-référence
+:END:
+1. Documents généraux
+
+- Manuel Qualité CLEMESSY SII-M-111 indice C
+
+2. [@2] Documents spécifiques à la commande
+
+- Offre CLEMESSY D087087 indice C du 20 janvier 2006
+
+* ORGANISATION
+:PROPERTIES:
+:CUSTOM_ID: organisation
+:END:
+** ORGANIGRAMME
+:PROPERTIES:
+:CUSTOM_ID: organigramme
+:END:
+** RESPONSABILITÉS
+:PROPERTIES:
+:CUSTOM_ID: responsabilités
+:END:
+Le Chef de Projet assume la responsabilité globale du projet. A ce
+titre, ses activités sont : - organisation, planification et
+coordination du projet - gestion des ressources - animation de
+l'équipe - mesure de l'activité, comptabilité et gestion du contrat -
+préparation et animation des réunions avec le client, négociations -
+gestion des achats et sous-traitances - rapports, échanges avec le
+client et les fournisseurs, formalités diverses - définition et
+application des méthodes, outils et procédures de travail. - préparation
+et conduite des études. - Intégration, essais et validation des
+études. - Contrôle du respect des procédures qualité applicables sur le
+projet
+
+L'Assistant Qualité est indépendant du projet. Il met en oeuvre le
+système qualité de l'unité et s'assure de son application. - validation
+interne des plans qualité - audits qualité projet
+
+Le Responsable de Production +de l'unité D.I.I.+ s'assure de
+l'adéquation et de la disponibilité des ressources. Il est également
+responsable de l'application des procédures Assurance Qualité sur le
+projet. - approbation des moyens prévus par le chef de projet - mise à
+disposition de ces moyens - prise en compte des aspects de retour
+d'expérience, actions correctrices et préventives - Gestion des
+anomalies multi-projet - Contrôle global et participation aux revues
+clef (enclenchement, conception, fin d'affaire)
+
+Echanges d'informations relatives au projet
+
+| InterlocuteursSujet      |  |  |
+|--------------------------+--+--|
+| Relations Contractuelles |  |  |
+| Assurance Qualité        |  |  |
+
+** MOYENS
+:PROPERTIES:
+:CUSTOM_ID: moyens
+:END:
+Le Bureau d'Etudes sous l'autorité du responsable de production met les
+moyens d'étude (personnels et matériels) à disposition du projet.
+
+** SYSTÈME QUALITÉ
+:PROPERTIES:
+:CUSTOM_ID: système-qualité
+:END:
+Le Système de Management de la Qualité (SMQ) répond en particulier aux
+exigences de la norme ISO 9001 - V2000 
+
+Le SMQ définit l'ensemble des dispositions prises en organisation,
+méthodes et ressources permettant la mise en œuvre de la politique
+qualité et l'assurance de conformité des produits et prestations aux
+exigences spécifiées.
+
+Ce système qualité comprend une documentation structurée, maîtrisée et
+entretenue dont le détail est donné en Annexe 2.
+
+Le Système Qualité est l'ensemble des dispositions prises en
+organisation, méthodes et ressources permettant la mise en oeuvre de la
+politique qualité.
+
+Ce Système Qualité est décrit dans une documentation structurée,
+maîtrisée et entretenue. Les dispositions décrites sont appliquées. Des
+preuves suffisantes de leur application et de leur efficacité peuvent
+être apportées.
+
+Le Manuel Qualité est le document cadre du Système Qualité de l'Unité,
+qui décrit la politique qualité et les dispositions générales retenues
+pour la mettre en oeuvre dans l'Unité.
+
+Les documents généraux relatifs à la qualité décrivent les modalités
+pratiques d'application des dispositions du Manuel Qualité (procédures
+et instructions qualité). Les documents qualité en vigueur sont
+répertoriés sur la liste des documents exécutoires de l'Unité, avec leur
+codification et leur indice de révision.
+
+Les autres documents généraux ayant un impact sur la qualité sont
+identifiés, maîtrisés et rendus exécutoires selon des modalités définies
+par le Système Qualité. 
+
+Exemples : - normes et standards clients, - catalogues fournisseurs, -
+documents méthodes, - standards techniques.
+
+Les documents propres aux affaires ayant un impact sur la qualité sont
+identifiés, maîtrisés et rendus exécutoires sous la responsabilité du
+Chef de Projet selon des modalités définies par le Système Qualité. 
+
+Exemples : - éléments du contrat, - plan qualité, - plans et schémas
+d'études, - documents de préparation, - spécification d'achat, -
+spécification de contrôle.
+
+** FORMATION DU PERSONNEL
+:PROPERTIES:
+:CUSTOM_ID: formation-du-personnel
+:END:
+Le personnel affecté à l'équipe du projet est formé aux règles QSE
+applicables par le responsable QSE sur la base du présent plan qualité
+projet et du PPSPS.
+
+Sur site, le personnel est obligatoirement informé : - des règles de
+fonctionnement de l'équipe, - des types de travaux à réaliser, - des
+risques spécifiques liés aux sites et à la zone de travail.
+
+** HABILITATIONS
+:PROPERTIES:
+:CUSTOM_ID: habilitations
+:END:
+Les risques auxquels le personnel peut être confronté sont identifiés
+dans le Plan Particulier de Sécurité et de Prévention de la Santé
+(PPSPS). Et PP
+
+Afin de s'en prémunir, le personnel est formé en conséquence.
+
+Un titre d'habilitation définit les tâches qu'il peut réaliser, et ceci
+en fonction du niveau de formation acquis ainsi que de son expérience
+professionnelle.
+
+Les règles d'habilitation sont définies dans l'instruction «RCYE- RH-023
+Habilitations et autorisations des personnes ».
+
+* Maitrise du projet
+:PROPERTIES:
+:CUSTOM_ID: maitrise-du-projet
+:END:
+![[Processus_Commerce.png]]
+
+Le pilotage global du projet est assuré par le chef de projet.
+
+Il consiste principalement à : - Définir l'organisation du projet -
+Suivre les objectifs dans les domaines des coûts, de la qualité et des
+délais - S'assurer du respect du contrat et gérer les écarts avec les
+partenaires et le client   - Anticiper les problèmes par une analyse
+régulière des risques et la mise en place d'actions correctives
+nécessaires  - Arbitrer entre les différentes solutions proposées -
+Régler les litiges  - Piloter et coordonner l'équipe de pilotage de
+projet et  s'assurer du pilotage des ressources de l'ensemble du
+projet - Faire fonctionner l'organisation mise en place à
+l'enclenchement du projet et à l'adapter si nécessaire - Décider des
+parties à sous-traiter et organiser le pilotage des sous-traitants -
+Rendre compte à la hiérarchie de la situation du projet.
+
+** CYCLE DE VIE DU PROJET
+:PROPERTIES:
+:CUSTOM_ID: cycle-de-vie-du-projet
+:END:
+Ce cycle est basé sur une démarche méthodologique qui impose : - une
+décomposition du projet en phases distinctes, - l'élaboration de la
+documentation projet - la validation des différentes phases.
+
+Les différentes phases sont les suivantes : - études de conception et de
+réalisation - programmation et réalisation des équipements en usines -
+installation et montage sur site - mise en service industrielle et
+obtention des performances
+
+** ACTIVITÉ TECHNICO-COMMERCIALE
+:PROPERTIES:
+:CUSTOM_ID: activité-technico-commerciale
+:END:
+*** Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités-1
+:END:
+Le technico-commercial analyse les besoins du client et élabore l'offre.
+Dès l'enregistrement de la commande, il transmet à la production (chef
+de projet) et à la gestion, l'ensemble des éléments permettant sa prise
+en compte et sa réalisation. Il participe à : - la réunion
+d'enclenchement - la réception de nos prestations déclenchée par le chef
+de projet en accord avec le client. - la revue de fin d'affaire animée
+par le chef de projet
+
+Il assure le suivi du client (après réalisation) en s'entretenant avec
+lui et en prenant note des remarques du client sur le déroulement de la
+commande et ses attentes.
+
+*** Traitement de l'appel d'offre
+:PROPERTIES:
+:CUSTOM_ID: traitement-de-lappel-doffre
+:END:
+*Réception de l'appel d'offre* L'appel d'offre est réceptionné et
+préanalysé afin de décider d'élaborer l'offre ou de décliner (revue
+d'appel d'offre).
+
+*Elaboration de l'offre* L'élaboration de l'offre est confiée à un
+Technico-Commercial.
+
+Avant émission de l'offre, une revue d'offre est effectuée, afin de
+vérifier que cette offre répond bien aux exigences et attentes du client
+et que nous possédons l'aptitude à la produire en cas de commande.
+
+L'émission d'une offre doit respecter les limites des pouvoirs de
+signature des signataires de l'offre.
+
+La Direction de la Division attribue les pouvoirs de signature par une
+note adressée à chaque personne susceptible d'engager la société
+(Responsable Commercial, Technico-Commercial, Chargé d'Affaires, Chefs
+de Projets, Responsable de Production, Responsable du Support).
+
+*Groupement Interne et externe* Sans objet
+
+*Fournisseur critique* Sans objet. 
+
+*Négociations entre émission de l'offre et réception de la commande*
+Lorsque des négociations avec le client situées après l'émission de
+l'offre et avant réception de commande conduisent à modifier certains
+termes de cette offre, ces modifications sont enregistrées afin d'être
+exploitées lors de l'entrée de commande.
+
+*** Traitement de l'entrée de commande
+:PROPERTIES:
+:CUSTOM_ID: traitement-de-lentrée-de-commande
+:END:
+Cette phase prévoit les activités : - d'enregistrement administratif de
+la commande, - d'information interne, - de revue d'entrée de commande,
+de confirmation de la commande, - de transmission du dossier commercial
+à la production.
+
+A l'entrée de la commande est réalisée une "Revue d'entrée de
+commande". 
+
+Cette revue permet de transmettre les données du contrat à l'équipe
+projet et de s'assurer de la prise en compte des dernières évolutions et
+négociations.
+
+Cette "Revue du Contrat" est faite avant l'accusé de réception de la
+commande. A l'issue de cette revue, le chef de projet prend la
+responsabilité du projet.
+
+Elle entraîne ensuite l'exécution des activités d'enclenchement du
+projet.
+
+La commande est réceptionnée à son entrée.
+
+Une revue d'entrée de commande est faite par le responsable de l'offre
+avant acceptation de la commande afin de vérifier que cette commande : -
+est conforme à l'offre (éventuellement modifiée des négociations), -
+décrit clairement et suffisamment les exigences à satisfaire, - est
+réalisable de sorte que ces exigences puissent être satisfaites.
+
+Tout écart est traité afin de donner lieu à une solution.
+
+Un Accusé de Réception de la commande est transmis au client pour
+exprimer l'acceptation de la commande avec ou sans réserve ou le refus.
+
+L'enregistrement de cette revue est transmis avec le reste du dossier à
+la production pour exécution de la commande.
+
+Une commande verbale (petits travaux) fait l'objet d'une description
+écrite suffisante par la personne qui la reçoit, afin d'être traitée,
+vis à vis de la qualité, comme une commande écrite.
+
+*Traitement des avenants* Les travaux supplémentaires à un contrat font
+l'objet d'un avenant à ce contrat qui est réceptionné et traité comme
+une nouvelle commande.
+
+*Suivi des évolutions du contrat* Les évolutions techniques du contrat
+au cours de son exécution sont reçues et traitées par le Chef de Projet
+(traitement des modifications) en accord avec le client. Elles sont
+incorporées aux termes du contrat par un " ordre de service " (ou
+document équivalent) ou regroupées sous la forme d'un additif au contrat
+(régularisation des modifications effectuées).
+
+** PILOTAGE DE LA PRODUCTION DE LA COMMANDE
+:PROPERTIES:
+:CUSTOM_ID: pilotage-de-la-production-de-la-commande
+:END:
+*** Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités-2
+:END:
+Ce paragraphe décrit les dispositions qualité prises pour le pilotage de
+la production de la commande.
+
+*** Enclenchement du projet
+:PROPERTIES:
+:CUSTOM_ID: enclenchement-du-projet
+:END:
+Cette phase concerne la prise en compte de la commande et de la 
+préparation de sa production.
+
+Elle prévoit les activités : - d'examen des données d'entrée - de
+fixation des objectifs - de constitution des dossiers relatifs à la
+commande: - dossier commercial - dossier projet (gestion et technique) -
+dossier commande et revient - d'organisation et planification du
+projet - de rédaction du plan qualité projet et/ou du Plan de
+Production - de réunion d'information et d'enclenchement.
+
+Le chef de projet analyse les éléments qui lui ont été fournis et
+définit le cadre de la production de la commande.
+
+Une "réunion d'enclenchement" clôture cette phase. Elle est organisée
+par le chef de projet avec l'équipe projet et les fonctions
+transversales.
+
+Le chef de projet présente l'ensemble des dispositions qui seront
+appliquées pour la réalisation du projet dans les domaines : - de
+l'organisation, - de la qualité, - des méthodes, - et des ressources
+(hommes et outils).
+
+Ces dispositions prennent en compte les exigences liées au marché et au
+client.
+
+La réunion d'enclenchement donne lieu à un compte rendu.
+
+Elle entraîne ensuite l'exécution des activités de conduite du projet.
+
+La production de la commande est placée sous la responsabilité d'un Chef
+de Projet nommé, par le Responsable de Production, en fonction de ses
+compétences, de son expérience et de sa disponibilité.
+
+- Le Chef de Projet reçoit du Technico-Commercial l'ensemble du dossier
+  de la commande, avec ses commentaires si nécessaire, et de son
+  hiérarchique les objectifs et directives propres à la réalisation de
+  la commande.
+
+Il complète, si nécessaire les éléments de la revue d'entrée de commande
+faite par l'Ingénieur Technico-Commercial.
+
+- L'analyse de ces données d'entrée par le Chef de Projet lui permet : 
+- d'identifier et de traiter les manques, ambiguïtés,
+- d'identifier les points critiques,
+- d'identifier les éléments et les prestations à fournir,
+- de définir le cadre général de la production de la commande pour les
+  aspects tels que techniques, organisation, méthodes, moyens, qualité,
+  planning, budgets, etc.
+- L'ensemble de ces éléments est communiqué par le Chef de Projet aux
+  principaux intervenants de la commande lors d'une réunion
+  d'enclenchement.
+
+*** Conduite du projet
+:PROPERTIES:
+:CUSTOM_ID: conduite-du-projet
+:END:
+La conduite de projet est une tâche affectée au Chef de Projet durant
+tout le déroulement du projet jusqu'au transfert de propriété.
+
+Elle prévoit les activités : - d'affinage et de mise à jour du
+planning - d'évaluation de l'avancement et du reste à faire - de gestion
+financière, des risques, des ressources - de coordination des différents
+intervenants - d'information de la hiérarchie - de traitement des
+modifications et des anomalies.
+
+Cette phase se termine lors de la réception des fournitures et
+prestations par le client et est suivie des activités de bilan de fin de
+projet.
+
+*** Bilan de fin de projet
+:PROPERTIES:
+:CUSTOM_ID: bilan-de-fin-de-projet
+:END:
+Lorsque la commande est totalement exécutée, une analyse est faite sous
+la responsabilité du Chef de Projet sur les plans suivants : -
+information sur les résultats techniques, économiques et qualité
+obtenus - vérification de l'atteinte des objectifs fixés au lancement de
+la commande - retour sur les enseignements et problèmes rencontrés.
+
+La réalisation de cette phase termine la commande. La phase
+d'après-vente (garantie, maintenance) commence à la signature du proçès
+verbal de réception.
+
+** MAÎTRISE DES ÉTUDES
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-études
+:END:
+*** DEFINITION
+:PROPERTIES:
+:CUSTOM_ID: definition
+:END:
+Le terme "Etudes" pris au sens large recouvre la conception les études
+de réalisation.
+
+CONCEPTION Phase d'études devant élaborer et justifier l'architecture et
+les grands choix techniques. Sauf autre précision, le terme "conception"
+représente l'ensemble des activités appelées communément : - analyse ou
+spécification - conception préliminaire
+
+La conception est une étape préliminaire  aux études de réalisation.
+
+Le processus  CLEMESSY PRO-209 « Maîtrise de la conception d'ensemble
+mécanique » présente la méthode pour transformer l'expression des
+besoins du client en des dossiers de conception, de réalisation,
+d'achats, de réception permettant d'acheter, de fabriquer, de monter,
+d'essayer et de réceptionner l'ensemble des équipements et des
+prestations objet du contrat.
+
+ETUDES DE REALISATION Ensemble des activités permettant : - d'affiner
+les solutions d'une offre ou d'une conception sans les remettre en
+cause, - de définir les composants, - d'élaborer les documents de
+réalisation.
+
+La procédure CLEMESSY 200 43 022 « Maîtrise  des études » présente la
+méthode et les activités liées à la maîtrise technique de la phase
+d'études.
+
+*** GÉNÉRALITÉS
+:PROPERTIES:
+:CUSTOM_ID: généralités-3
+:END:
+Ce chapitre décrit les dispositions mises en oeuvre pour la maitrise des
+études.
+
+L'étude regroupe « l' étude de conception » et « l'étude de
+réalisation ». C'est l'ensemble des activités permettant de transformer
+l'expression du besoin en description des solutions techniques. Elle est
+validée sous la responsabilité du chef de projet.
+
+Liste des documents produits en fin de phase :
+
+| Phase                | Activité                       | Document                                    | Livré Client | Validationclient |
+|----------------------+--------------------------------+---------------------------------------------+--------------+------------------|
+| Etude de conception  | Spécifications fonctionnelles  | Plan qualité projet                         | x            | x                |
+|                      |                                | Spécifications fonctionnelles et techniques |              |                  |
+|                      | Conception préliminaire        |                                             |              |                  |
+|                      | (définition de l'architecture) |                                             |              |                  |
+| Etude de réalisation | Conception détaillée           |                                             |              |                  |
+| Recette              | Recette site                   | Manuel utilisateur                          | x            | x                |
+|                      |                                | Gestion de configuration                    | x            | x                |
+
+L'ensemble de la documentation sera rédigée en langue française.
+
+*** Processus études
+:PROPERTIES:
+:CUSTOM_ID: processus-études
+:END:
+![[Processus_Etudes.png]] ### PRÉPARATION ET CONDUITE DES ÉTUDES Au
+lancement des études, le chef de projet met à disposition du Bureau
+d'Etudes les éléments du dossier de projet nécessaires à la réalisation
+des études.
+
+Les études sont placées sous sa responsabilité, il doit préparer,
+organiser et conduire l'ensemble des activités d'études.
+
+Si des exigences incomplètes sont identifiées, elles font l'objet d'une
+solution en accord avec le chef de projet et, si nécessaire, avec le
+client.
+
+Les études relatives à un projet sont placées sous la responsabilité du
+Chef de Projet qui nomme si nécessaire un responsable de l'étude.
+
+La préparation des études comprend le recueil, l'établissement de la
+liste et l'examen des données de l'étude (données d'entrée). Cet examen
+permet d'identifier les manques et ambiguïtés, d'identifier les points
+critiques, d'établir la liste des documents à élaborer, de définir
+l'organisation, les méthodes, les ressources qualifiées.
+
+La conduite des études est similaire à la conduite de projet mais ciblée
+sur les activités d'étude et sous la responsabilité du responsable de
+l'étude. La phase se décompose en : - préparation technique et
+organisationnelle des études liées à la réalisation d'une commande. -
+conduite de ces études. - vérification des documents produits dans cette
+phase.
+
+*** MAÎTRISE DES ÉTUDES DE CONCEPTION
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-études-de-conception
+:END:
+Les études nécessitant une phase de conception sont identifiées lors de
+la phase enclenchement du projet.
+
+La revue de conception est réalisée au plus tôt, c'est-à-dire lorsque
+les grands choix techniques sont arrêtés et avant qu'une éventuelle
+remise en cause des études de détail ait des conséquences trop
+importantes. 
+
+Elle est effectuée sous la responsabilité du chef de projet. 
+
+Un expert ou des experts des domaines concernés, externes aux études
+participe à la revue pour valider la conception.
+
+La validation des documents de conception est enregistrée sur le
+cartouche.
+
+Ces études permettent de définir et de justifier l'architecture
+(matérielle et logicielle) du produit à réaliser et les choix
+techniques.
+
+Le but de ces études est de garantir que l'ensemble des besoins du
+client en terme de fonctionnalité, performances, contraintes sécurité,
+disponibilité, maintenance, etc, soit pris en compte au travers d'une
+solution technique adaptée.
+
+Ces études sont formalisées dans des documents (données de sortie de
+conception) tels que :
+
+analyse fonctionnelle,  conception préliminaire, ...
+
+Cette phase prévoit : - un découpage en phases des études de conception
+: - spécifications fonctionnelles (décomposition des fonctions demandées
+dans la cahier des charges) - conception préliminaire (élaboration de
+l'architecture et des principales solutions technologiques susceptibles
+de fournir les fonctions spécifiées). - des documents associés à chacune
+d'elles.
+
+*Spécifications fonctionnelles* L'activité de spécification
+fonctionnelle consiste à produire la spécification technique de besoin
+du logiciel sur la base du cahier des charges et des réunions effectuées
+pendant cette phase. Elle permet également d'initialiser le dossier de
+validation par un document provisoire.
+
+Ce dossier de spécification comprend sous la forme d'un seul document :
+
+| Spécifications fonctionnelles          |
+| Spécifications Interface Homme-Machine |
+
+Le dossier de spécifications, une fois validé, devient le document
+contractuel du projet.
+
+*Conception préliminaire* Les documents produits dans le dossier de
+conception sont:
+
+| Conception générale logicielle | Responsable Technique |
+
+La phase de conception permet également de finaliser le dossier de
+validation avec le document :
+
+| Dossier de validation | Chef de Projet |
+
+Le dossier de validation est transmis au chef de projet PSA/DSIN pour
+validation.
+
+*** MAÎTRISE DES ÉTUDES DE REALISATION
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-études-de-realisation
+:END:
+La vérification des documents d'études de réalisation se fait sur la
+base de listes de points de contrôle par métier.
+
+La vérification documentaire a lieu avant diffusion des documents pour
+exécution.
+
+Le chef de projet (ou la personne à qui il a confié la responsabilité
+des études) désigne les personnes chargées des vérifications des
+documents en fonction de leurs compétences par rapport aux sujets
+traités. L'approbation est faite par le chef de projet.
+
+La vérification documentaire comporte 3 niveaux : *1er niveau* : Un
+auto-contrôle réalisé par le rédacteur. Les corrections nécessaires sont
+apportées par le rédacteur. *2ème niveau* : Une vérification réalisée
+par le responsable de lot ou par une personne qu'il aura désigné. Les
+écarts détectés sont transmis au rédacteur concerné pour prise en compte
+et contrôlés après correction. Le dossier est alors transmis au chef de
+projet. *3ème niveau* : Une vérification de points particuliers est
+réalisée par le chef de projet, en fonction des risques techniques. Les
+écarts détectés sont enregistrés, transmis au rédacteur concerné pour
+prise en compte et contrôlés après correction. Cette vérification (avec
+reprise des écarts constatés) vaut approbation du document.
+
+Les 3 niveaux de contrôle sont effectués au minimum par 2 personnes
+différentes. (Le vérificateur doit être différent du rédacteur.)
+
+Ces vérifications sont formalisées sur le cartouche qui figure sur les
+documents.
+
+La vérification des notes de calculs est systématique. 
+
+La production des documents d'essai est la dernière étape des études de
+réalisation. 
+
+La validation globale d'une étude est obtenue par l'acceptation par le
+chef de projet des résultats des simulations, contrôles et essais à
+l'atelier et sur site.
+
+Cette phase permet : - d'affiner les solutions d'une offre ou d'une
+conception sans les remettre en cause, - de définir avec précision les
+composants, - d'élaborer les documents de réalisation.
+
+La phase de conception détaillée permet de finaliser le modèle de
+données.
+
+Les règles de codage seront énoncées dans une spécification à
+destination de l'équipe développeur.
+
+** MAÎTRISE DES MODIFICATIONS
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-modifications
+:END:
+*** Traitement des modifications
+:PROPERTIES:
+:CUSTOM_ID: traitement-des-modifications
+:END:
+L'origine d'une modification peut être une demande client ou le
+traitement d'un écart interne.
+
+Une modification est une remise en cause (ajout, retrait, changement)
+des données d'entrée qui peuvent être soit les éléments contractuels
+pour l'entreprise (y compris les documents CLEMESSY déjà approuvés par
+le client) soit les documents d'exécution déjà approuvés (plans BE,
+schémas,...) pour nos activités.
+
+Les modifications classées majeures sont : les modifications qui
+nécessitent la validation par le client du fait de leur impact sur le
+respect des clauses contractuelles les modifications qui touchent des
+principes déjà approuvés par les partenaires ou le client. les demandes
+supplémentaires du client
+
+Les modifications classées mineures sont : les modifications n'ayant pas
+de répercussions directes pour le client. Les modifications sont
+traitées par les chefs de projets à l'aide d'une fiche de modification.
+Les modifications « majeures » sont transmises au directeur de projet.
+
+La procédure CLEMESSY M-145 "Traitement des modifications" est
+appliquée. Le formulaire CLEMESSY M-156 « Fiche de modification, travaux
+supplémentaires et constat de non-conformité » est l'enregistrement
+associé.
+
+Une modification demandée par le client ou rendue nécessaire au vu
+d'éléments nouveaux survenant lors du projet est consignée sur une fiche
+« modification » fournie en annexe et étudiée sous la responsabilité du
+chef de projet.
+
+Sa prise en compte peut faire l'objet d'une négociation technique et
+commerciale avec le client. Elle est classée dans le dossier projet.
+
+Suivant son importance et ses incidences sur le projet, sa réalisation
+et sa planification sont discutées et décidées par les Chefs de projet.
+
+Demande de modification de faible ampleur et à réalisation immédiate:
+
+En cas de demande de modification facturable en cours de projet, la
+fiche « Bon d'intervention » en annexe peut être utilisée. Elle permet
+de consigner la demande, le temps forfaitaire nécessaire à sa
+réalisation ainsi que la vérification de la bonne et complète
+réalisation. Elle est signée par le client lors de la demande
+d'intervention  et après le contrôle de la prestation.
+
+Lorsqu'est atteint un volume suffisamment important en terme de temps de
+réalisation, ou en fin de projet, une facture de l'ensemble de ces
+prestations est envoyée au chef de projet client.
+
+*** Traitement des adaptations de réalisation
+:PROPERTIES:
+:CUSTOM_ID: traitement-des-adaptations-de-réalisation
+:END:
+En cas de réalisation sur site différente de ce qui est spécifié dans
+les documents techniques, ces derniers sont annotés. Le chef de projet
+valide ces modifications avant de décider une reprise des documents avec
+évolution d'indice.
+
+** MAÎTRISE DES DOCUMENTS
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-documents
+:END:
+*** GÉNÉRALITÉS
+:PROPERTIES:
+:CUSTOM_ID: généralités-4
+:END:
+Ensemble des activités ayant pour but, d'assurer la diffusion, le
+stockage et l'information de l'état de tous les documents utilisés pour
+l'exécution de la commande.
+
+*** MAÎTRISE DES DOCUMENTS PROPRES À LA COMMANDE
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-documents-propres-à-la-commande
+:END:
+Les documents utilisés dans le cadre des affaires, sont regroupés dans
+des dossiers constitués par chacune des fonctions concernées, aux
+différentes étapes du déroulement de l'affaire (commercial,
+production...).
+
+Les documents élaborés dans le cadre de l'affaire (offre ou projet) et
+utilisés pour exécution sont repérés, listés et gérés sous la
+responsabilité du Technico-Commercial (offre) et du Chef de Projet
+(projet) qui les approuvent avant diffusion.
+
+Les documents créés durant la commande et pour ses propres besoins, par
+les différents intervenants sont :
+
+*Compte-rendu de réunion* Les comptes-rendus de réunion sont rédigés
+dans un canevas prévu à cet effet. Ce compte-rendu est approuvé par les
+participants à la réunion (pour une réunion d'avancement, par les chefs
+de projet).
+
+En cas de désaccord portant sur le contenu du compte-rendu, les
+remarques seront signifiées par courrier ou télécopie dans un délai de
+15 jours après réception du compte-rendu de la réunion.
+
+*Documents techniques et courriers* Les documents réalisés en cours de
+projet sont référencés de la manière suivante :
+
+| LE | Lettre                   |
+| FX | Fax                      |
+| SP | Spécification            |
+| CP | Conception               |
+| CH | Cahier de tests, recette |
+| MN | Manuel                   |
+| PQ | Plan Qualité             |
+| OF | Offre                    |
+| NT | Note Technique           |
+| NI | Note interne             |
+| CF | Gestion de configuration |
+
+| ALO | Accès Logiques                                       |
+| ANI | Animateur de synoptiques                             |
+| ANO | Visualisation des Anomalies                          |
+| BCP | Base Capteur                                         |
+| EDT | Editeur de synoptiques                               |
+| AST | Alarmes Techniques RAP (Appel Astreinte)             |
+| ARC | Archivages                                           |
+| GRF | Grafcet (Editeur et Animateur)                       |
+| DES | Desinhibition des automates                          |
+| GEN | Outils de Génération                                 |
+| COU | Courbes (Edition Groupe et gabarit  + Visualisation) |
+| RAP | Rapports                                             |
+| NRJ | Energies                                             |
+| ICP | Temps de Réponse                                     |
+| SEQ | Séquences préprogrammées                             |
+
+Approbation et diffusion Tous les documents livrés sont rédigés sur
+traitement de texte WORD sur PC ou sur traitement de texte Framemaker
+sur PC.
+
+Les documents sont livrés sur format papier ou au format informatique
+via la messagerie internet (mail).
+
+L'ensemble des documents qui permettent de justifier la prise en compte
+des exigences des spécifications fonctionnelles est soumis à
+l'approbation du Chef de Projet PSA/DSIN après approbation interne par
+le Chef de Projet.
+
+Toute documentation concernant le projet est adressée au responsable du
+projet PSA/DSIN accompagnée de la fiche « bordereau de remise de
+document » 02443359.
+
+Les dates d'achèvement qui requièrent l'approbation du client sont
+fixées au plus tard deux semaines avant la date d'approbation, sauf pour
+la validation de la spécification fonctionnelle (délai de un mois). Si
+aucune remarque de la part de PSA/DSIN n'est adressée à CLEMESSY durant
+ce délai, le document est considéré comme approuvé.
+
+Les documents émis ou reçus sont classés dans le dossier projet. La
+« liste chrono » des documents consigne les documents émis et leurs
+destinataires ainsi que les documents reçus avec leur date. Cette liste
+« chrono » sera utilisée pour tracer tous les courriers ou documents
+échangés entre le client et le chef de projet.
+
+** MAÎTRISE DE LA DOCUMENTATION GÉNÉRALE
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-de-la-documentation-générale
+:END:
+Documentation d'ordre général : - recommandations, instructions, -
+méthodes, normes,  - matériels et logiciels achetés, outils.
+
+Aucune disposition générale ou particulière n'est prise pour cette
+documentation. Elle sera constituée par les intervenants suivant leur
+besoin et sous la responsabilité du chef de projet qui en gère la liste
+(nom du document, réunion, date ...) via la « liste chrono » du dossier
+projet.
+
+** CONFIDENTIALITÉ
+:PROPERTIES:
+:CUSTOM_ID: confidentialité
+:END:
+Toutes les précautions nécessaires sont prises afin que les produits et
+documents transmis par un client ne puissent être montrés ou transmis à
+des entreprises ne participant pas directement à l'exécution du contrat.
+
+Le contrat de non divulgation entre CLEMESSY et PSA/DSIN s'applique à
+l'ensemble des activités du projet et des intervenants CLEMESSY.
+
+** MAÎTRISE DU COURRIER
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-du-courrier
+:END:
+Tous les courriers, d'entrée ou de sortie, sous forme de lettres,
+télécopie ou télex, ... sont stockés dans l'ordre chronologique par type
+de correspondant dans le dossier projet du Chef de projet.
+
+Les lettres et télécopies émises sont référencées suivant la règle
+définie au chapitre 5.2 . Les courriers émis par le secrétariat
+comportent en plus un « numéro chrono » pour l'unité.
+
+* MAÎTRISE DES ACHATS
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-achats
+:END:
+** MAÎTRISE DES ACHATS EXTERNES
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-achats-externes
+:END:
+*** Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités-5
+:END:
+Ce chapitre traite des achats de produits ou de prestations de
+sous-traitance que la fonction Achats effectue auprès d'entreprises
+externes ou d'entreprises du groupe CY. La sous-traitance interne est
+traitée de manière similaire à la sous-traitance externe.
+
+*** Sélection et évaluation des fournisseurs
+:PROPERTIES:
+:CUSTOM_ID: sélection-et-évaluation-des-fournisseurs
+:END:
+La sélection des fournisseurs est faite sur la base de leur aptitude à
+satisfaire les exigences contractuelles, et les exigences CLEMESSY
+concernant la qualité, la sécurité et l'environnement.
+
+Les fournisseurs et sous-traitants du panel font l'objet d'évaluations
+régulières sur la qualité de leurs prestations et le respect de leurs
+obligations contractuelles et techniques.
+
+La sélection et l'évaluation des fournisseurs sont complétées si besoin
+par des audits.
+
+La méthode de sélection et d'évaluation des fournisseurs et les
+enregistrements correspondants sont traités dans l'instruction CLEMESSY
+AL-022 ” Sélection et évaluation des fournisseurs” et le guide CLEMESSY
+AL-213 « audit fournisseurs et sous-traitants ».
+
+*** Documentation fournisseurs
+:PROPERTIES:
+:CUSTOM_ID: documentation-fournisseurs
+:END:
+Sans objet.
+
+*** Consultation des fournisseurs
+:PROPERTIES:
+:CUSTOM_ID: consultation-des-fournisseurs
+:END:
+Sans objet.
+
+*** Commande d'achat
+:PROPERTIES:
+:CUSTOM_ID: commande-dachat
+:END:
+Tout achat fait l'objet d'une commande formalisée par les Achats, régie
+par un contrat individuel et/ou par les conditions générales d'achat ou
+de prestation du groupe CLEMESSY.
+
+La commande comprend la liste des documents contractuels par ordre
+d'application, en particulier : - Les conditions particulières
+d'achats  - Les spécifications techniques - Les spécifications
+documentaires liées au projet - Les conditions de contrôles et
+d'essais  - les exigences QSE.
+
+Les règles détaillées pour l'établissement des commandes d'achat ou de
+sous-traitance sont décrites dans la fiche processus CLEMESSY AL-021
+"Approvisionnement, Achat matière et sous-traitance" et le guide
+CLEMESSY AL-109 «Sous-traitance et achats spécifiques ».
+
+*** Surveillance de l'exécution de la commande
+:PROPERTIES:
+:CUSTOM_ID: surveillance-de-lexécution-de-la-commande
+:END:
+Sans objet.
+
+*** Réceptions
+:PROPERTIES:
+:CUSTOM_ID: réceptions
+:END:
+A toute commande correspond une réception enregistrée.
+
+L'enregistrement de la réception, qu'elle soit unique ou qu'elle soit
+composée d'un ensemble de réceptions partielles, atteste que les
+produits et services qui ont été commandés ont bien été tous fournis et
+conformes à la demande exprimée.
+
+Les équipements stratégiques font l'objet d'une réception quantitative
+et qualitative en usine chez le fournisseur, pour valider : - la
+conformité des performances techniques du matériel, - la conformité des
+documents produits par le fournisseur.
+
+L'ensemble des opérations est formalisé par un PV de contrôle et de
+réception.
+
+La réception est effectuée conformément à la procédure CLEMESSY AL-226
+"Réception des produits achetés".
+
+** MAÎTRISE DES ACHATS INTERNES
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-achats-internes
+:END:
+*** Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités-6
+:END:
+Ce chapitre décrit les dispositions qualité concernant les achats
+réalisés chez des fournisseurs internes à CLEMESSY SA.
+
+*** Produits extérieurs achetés au sein de la société
+:PROPERTIES:
+:CUSTOM_ID: produits-extérieurs-achetés-au-sein-de-la-société
+:END:
+Sans objet.
+
+*** Maîtrise de la sous-traitance interne
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-de-la-sous-traitance-interne
+:END:
+Sans objet.
+
+*** Maîtrise du groupement interne
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-du-groupement-interne
+:END:
+Sans objet.
+
+** PRODUITS FOURNIS PAR LE CLIENT
+:PROPERTIES:
+:CUSTOM_ID: produits-fournis-par-le-client
+:END:
+Les produits fournis par le client sont traités de la même manière que
+les produits achetés, tant au niveau conformité à la réception, qu'au
+niveau du suivi durant l'exécution de la commande.
+
+Ils sont rendus aux dates prévues au client qui les réceptionne au même
+titre que les autres fournitures. La liste de ces produits est annexée à
+la réunion d'enclenchement. .
+
+La fiche « prêt / retour après vente  » 02443130 jointe en annexe est
+renseignée conjointement par CLEMESSY et PSA/DSIN afin d'assurer la
+présentation de la fourniture.
+
+Les produits qui nous sont fournis ou mis à disposition (locaux,
+installations, données informatiques...) par notre client afin d'être
+incorporés dans nos prestations ou servir pour des tests sont
+réceptionnés et enregistrés.
+
+Ces dispositions sont décrites dans l'instruction CLEMESSY PRO-194
+« Maîtrise du produit fourni par le client ».
+
+* IDENTIFICATION ET TRAÇABILITÉ
+:PROPERTIES:
+:CUSTOM_ID: identification-et-traçabilité
+:END:
+** IDENTIFICATION DES PRODUITS
+:PROPERTIES:
+:CUSTOM_ID: identification-des-produits
+:END:
+L'identification  sert à faire le lien entre le produit et les documents
+associés.
+
+Dans le cas des prestations en informatique, l'identification est
+assurée par une gestion de configuration adaptée à la complexité et à la
+nature de la prestation.
+
+Chaque configuration est associée à une version logicielle sur support
+magnétique. Elle évolue d'indice sur modification majeure ou
+périodiquement pour intégrer plusieurs modifications mineures. Les
+modifications sont tracées par annotation des fiches 'anomalie' ou
+'modification' (zones 'réalisation' et 'test' avec renvoi sur les
+modules logiciels concernés).
+
+Les produits livrés seront identifiés par un étiquetage adéquat
+comportant la désignation du produit et de la commande. Ils sont
+inscrits sur le ou les bordereaux de livraisons 02443555 et bordereau de
+remise de document 02443359 en annexe.
+
+** TRAÇABILITÉ
+:PROPERTIES:
+:CUSTOM_ID: traçabilité
+:END:
+La traçabilité en interne est réalisé par le biais du numéro de
+projet CY.
+
+Les produits achetés afin d'être incorporés dans nos installations sont
+identifiés par le fournisseur par marquage direct sur le produit. 
+
+Les équipements spécifiques sont identifiés par le marquage CE. 
+
+Pour les programmes d'automatisme et les logiciels correspondants, il
+est établi une fiche d'identification du logiciel conformément à la
+procédure "Contrôle et recette en plate-forme".
+
+Pour les équipements principaux, les n° de séries sont indiqués sur le
+PV de recette usine.
+
+Les règles générales d'identification et de traçabilité sont décrites
+dans l'instruction CLEMESSY PRO-195 « Identification et traçabilité »
+
+Aucune disposition particulière n'est prise pour assurer la traçabilité
+des produit livrés.
+
+Tout produit prêté par le client sera consigné sur la fiche de prêt.
+
+Tout événement particulier fera l'objet d'un point lors de revues et
+réunions diverses et inscrit aux comptes-rendus et/ou dans les courriers
+y affairant.
+
+* MAÎTRISE DE LA RÉALISATION
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-de-la-réalisation
+:END:
+** GÉNÉRALITÉS
+:PROPERTIES:
+:CUSTOM_ID: généralités-7
+:END:
+Le processus DII «  Maitrise des études » en annexe décrit les
+opérations à réaliser.
+
+Le projet est soumis aux règles de l'Assurance Qualité définies dans le
+présent Plan Qualité Projet. Ceci concerne la réalisation de la
+prestation matérielle d'après les dossier techniques constitués lors de
+l'étude de réalisation (conception détaillée).
+
+** MAÎTRISE DE LA RÉALISATION EN ATELIER
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-de-la-réalisation-en-atelier
+:END:
+Les équipements sont achetés selon les spécifications techniques
+définies par le projet. Voir chapitre « Achats ».
+
+Sinon : décrire les spécificités de la réalisation des équipements du
+projet
+
+Les non-conformités sont traitées selon le chapitre "Maîtrise des
+non-conformités".
+
+** RÉALISATION DES PROGRAMMES D'AUTOMATISME ET LOGICIELS
+:PROPERTIES:
+:CUSTOM_ID: réalisation-des-programmes-dautomatisme-et-logiciels
+:END:
+La réalisation du codage, paramétrage, ou l'élaboration de logiciels se
+fait conformément au dossier de programmation élaboré durant la phase
+étude.
+
+Les modules de programme sensibles (ceux pour lesquels un
+dysfonctionnement peut entraîner la remise en cause de la conception),
+les modules répétitifs et les logiciels sont testés en laboratoire
+(tests unitaires).
+
+Après intégration, les programmes et logiciels sont intégralement testés
+et leur fonctionnement essayé. La partie opérative du process est
+simulée. Les résultats sont enregistrés.
+
+Les non-conformités sont traitées selon le chapitre "Maîtrise des
+non-conformités".
+
+L'ensemble des contrôles et essais est effectué conformément à la
+procédure "Contrôle et recette en plate-forme".
+
+** MAÎTRISE DE LA RÉALISATION EN CHANTIER
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-de-la-réalisation-en-chantier
+:END:
+La phase de préparation chantier comprend la constitution du dossier
+d'installation et du plan de production chantier.
+
+Chaque phase de montage est validée en effectuant les contrôles définis
+dans le dossier d'installation.
+
+Le responsable du chantier s'assure lors de la réception des prestations
+des sous-traitants, que l'ensemble des contrôles et essais prévus ont
+bien été réalisés et ont donné des résultats satisfaisants, conformément
+à la procédure CLEMESSY AL-226 "Réception des produits achetés".
+
+L'ensemble des contrôles et essais à effectuer, les résultats attendus,
+les résultats obtenus ainsi que les actions de remise en conformité, est
+formalisé sur les documents prévus à cet effet, tels que feuilles de
+contrôle, spécifications d'essais, etc.
+
+** MAÎTRISE DES PROCÉDÉS
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-procédés
+:END:
+Les paramètres propres à l'affaire (critères d'acceptation, test
+spécifiques...) sont décrits dans le dossier de validation (cahiers de
+recette).
+
+** MAINTENANCE DES MOYENS TECHNIQUES DE RÉALISATION
+:PROPERTIES:
+:CUSTOM_ID: maintenance-des-moyens-techniques-de-réalisation
+:END:
+Ils concernent l'ensemble des ressources matérielles et logicielles
+nécessaires aux activités du projet sur plate-forme et sur site. Le chef
+de projet s'assure que les ressources sont opérationnelles et coordonne
+leurs éventuelles actions de maintenance vis-à-vis des différents
+fournisseurs.
+
+Une maintenance appropriée des moyens techniques de réalisation est
+organisée sous la responsabilité du « responsable des moyens de
+réalisation » de façon à assurer en permanence l'aptitude des processus
+mis en oeuvre et la sécurité dans leur utilisation.
+
+* CONTRÔLES ET ESSAIS
+:PROPERTIES:
+:CUSTOM_ID: contrôles-et-essais
+:END:
+** CONTRÔLE DES FOURNITURES ET PRESTATIONS ACHETÉES
+:PROPERTIES:
+:CUSTOM_ID: contrôle-des-fournitures-et-prestations-achetées
+:END:
+Les fournitures achetées font l'objet d'une réception dans laquelle, au
+minimum, tous les examens sont faits afin de vérifier que la commande
+correspondante est satisfaite : - nombre de colis conformes et absence
+de détérioration, - quantité et références d'articles conformes avec la
+commande, - contrôle visuel de conformité et de non-détérioration, -
+présence des documents demandés, en particulier des documents qualité
+(PV de contrôle, ...), - etc
+
+Si une action de contrôle et d'essai est nécessaire (autre que celle de
+la responsabilité du magasinier) la vérification est de la
+responsabilité du chef de projet qui transmet le résultat au service
+achat. Le rapport d'anomalie fourni en annexe est utilisé en cas de
+litige. L'enregistrement du contrôle est consigné sur une fiche
+« rapport de contrôle ».
+
+** CONTRÔLE ET VALIDATION DE LA RÉALISATION
+:PROPERTIES:
+:CUSTOM_ID: contrôle-et-validation-de-la-réalisation
+:END:
+***  Démarche standard
+:PROPERTIES:
+:CUSTOM_ID: démarche-standard
+:END:
+Chaque composant matériel ou logiciel fourni dans le cadre du projet
+fait l'objet d'un test unitaire, d'intégration et de validation sur
+plate-forme Clemessy.
+
+La phase de validation permet de s'assurer et prouver que le logiciel
+satisfait le besoin, c'est à dire qu'il correspond au dossier de
+spécification, afin de prononcer sa qualification. 
+
+Les cahiers de tests décrivent les façons d'opérer pour prouver que la
+réalisation est conforme aux exigences contractuelles et qu'elle
+satisfait les besoins des utilisateurs. Les écarts éventuels sont
+corrigés.
+
+***  Méthodes et Outils
+:PROPERTIES:
+:CUSTOM_ID: méthodes-et-outils
+:END:
+Notre jeu de test sera basé sur une base de données de test et de
+scénarios de fonctionnement élaborés par Clemessy et validés par PSA.
+
+Les documents d'essai sont préparés en phase d'études.
+
+** RÉCEPTION CLIENT
+:PROPERTIES:
+:CUSTOM_ID: réception-client
+:END:
+La réception client est faite sur des produits et installations qui ont
+franchi de manière satisfaisante toutes les étapes de vérification et de
+validation prévues.
+
+La réception client est organisée en accord avec le client selon sa
+demande ou selon nos propositions.
+
+La recette s'effectue en trois phases : - La recette plateforme qui se
+restreint aux tests fonctionnels réalisables sur la plateforme CLEMESSY.
+Le dossier de validation indique quels sont les tests concernés. - La
+recette de pré-production à BESSONCOURT qui comprend les tests de
+non-régression de la version de SYNAUTO. - La validation de la version
+sur un ou deux sites pilotes désignés par PSA/DSIN.
+
+Ces trois phases sont sanctionnées par un Procès Verbal de Réception
+02443146 en annexe ou par un Procès Verbal fourni par le client.
+
+** MAÎTRISE DES ÉQUIPEMENTS DE CONTRÔLE, DE MESURE ET D'ESSAIS
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-équipements-de-contrôle-de-mesure-et-dessais
+:END:
+Sans objet.
+
+** ETAT DES CONTRÔLES ET DES ESSAIS
+:PROPERTIES:
+:CUSTOM_ID: etat-des-contrôles-et-des-essais
+:END:
+Sans objet
+
+** MAÎTRISE DES ANOMALIES
+:PROPERTIES:
+:CUSTOM_ID: maîtrise-des-anomalies
+:END:
+Les non conformités simples relevées dans les contrôles sont
+enregistrées et résolues par le responsable de réalisation, dans la
+mesure où la remise en conformité est possible et compatible avec la
+compétence et les moyens dont il dispose. La remise en conformité est
+contrôlée à nouveau. Si une étude complémentaire ou une exploitation
+ultérieure est nécessaire alors un rapport d'anomalie 02443249 fourni en
+annexe est rédigé.
+
+Le rapport d'anomalie s'utilise ensuite pour des défauts constatés après
+la recette site pendant la période de garantie ou dans le cadre d'un
+contrat de maintenance. Chaque anomalie rencontrée doit faire l'objet
+d'un rapport d'anomalie présentant le constat, les incidences et les
+causes possibles.
+
+Les fiches sont destinées au chef de projet CLEMESSY qui en assure la
+résolution par la ou les personnes concernées dans le cadre du projet.
+Il tient à jour pour le projet le répertoire des anomalies rencontrées
+(02443149) et consigne la suite donnée. Une information de synthèse est
+faite au responsable de production qui alimente le tableau de bord
+qualité de l'unité.
+
+** RETOUR D'EXPÉRIENCE, ACTIONS CORRECTIVES ET PRÉVENTIVES
+:PROPERTIES:
+:CUSTOM_ID: retour-dexpérience-actions-correctives-et-préventives
+:END:
+Le traitement des actions correctrices et préventives contribue à
+l'amélioration de la qualité en éliminant les causes de
+dysfonctionnement réels ou potentiels. Dans ce cas le chef de projet
+redige une fiche d'amélioration 02443250, fournie en annexe,  qu'il
+transmet à l'assistant qualité.
+
+Le projet bénéficie du retour d'expérience des autres projets
+comparables.
+
+La revue de bilan de projet permet d'alimenter la base d'expérience et
+d'initier des actions préventives ou correctrices.
+
+* MANUTENTION, STOCKAGE, CONDITIONNEMENT, PRÉSERVATION ET LIVRAISON
+:PROPERTIES:
+:CUSTOM_ID: manutention-stockage-conditionnement-préservation-et-livraison
+:END:
+** MANUTENTION
+:PROPERTIES:
+:CUSTOM_ID: manutention
+:END:
+Aucune disposition formalisée n'est prise dans ce cadre.
+
+Les personnes habilitées du service expédition de CLEMESSY S.A.
+s'assurent du fait que des mesures adéquates sont prises afin d'assurer
+la qualité des matériels et logiciel lors des transports.
+
+** STOCKAGE
+:PROPERTIES:
+:CUSTOM_ID: stockage
+:END:
+Sans objet.
+
+** TRANSPORT ET LIVRAISON
+:PROPERTIES:
+:CUSTOM_ID: transport-et-livraison
+:END:
+Sans objet.
+
+** ENREGISTREMENTS RELATIFS À LA QUALITÉ
+:PROPERTIES:
+:CUSTOM_ID: enregistrements-relatifs-à-la-qualité
+:END:
+Tous les enregistrements prévus dans le système qualité sont identifiés,
+établis, exploités, classés et archivés de manière à prouver à tout
+moment que le système qualité a bien été appliqué, que les résultats des
+actions et vérifications ont bien été satisfaisants et que le produit
+est bien conforme aux exigences spécifiées.
+
+Le support matériel des enregistrements ainsi que les conditions de
+classement et d'archivage garantissent la bonne conservation et
+consultation des informations pendant la durée prévue.
+
+* AUDITS QUALITÉ INTERNES
+:PROPERTIES:
+:CUSTOM_ID: audits-qualité-internes
+:END:
+L'Assistant qualité et le responsable de l'unité établissent ensemble un
+plan d'audits pour vérifier auprès des projets sélectionnés que les
+dispositions requises sont mises en oeuvre.
+
+L'Assistant Qualité est chargé d'examiner l'application et l'efficacité
+du système qualité de l'Unité par des audits qualité.
+
+Chaque audit fait l'objet d'un "rapport d'audit" précisant les écarts
+constatés et les recommandations proposées, qui est communiqué au
+responsable du secteur audité. Des actions correctives et préventives
+sont décidées et planifiées par ce responsable en accord avec
+l'Assistant Qualité.
+
+L'Assistant Qualité s'assure que ces actions ont bien été menées et
+qu'elles ont bien les effets escomptées.
+
+* FORMATION ET QUALIFICATION
+:PROPERTIES:
+:CUSTOM_ID: formation-et-qualification
+:END:
+Le chef de projet et le chef de production de l'unité s'assurent de la
+qualification des personnels employés pour les différentes activités du
+projet.
+
+L'adéquation des personnes affectées au projet, à ses besoins, est
+vérifiée lors de la réunion d'enclenchement.
+
+Le responsable de l'unité en rapport avec la DRH tient à jour la liste
+des formations des personnes en utilisant les logiciels société
+appropriés (formation, qualification...).
+
+* PRESTATIONS ASSOCIÉES
+:PROPERTIES:
+:CUSTOM_ID: prestations-associées
+:END:
+** GÉNÉRALITÉS
+:PROPERTIES:
+:CUSTOM_ID: généralités-8
+:END:
+Ce chapitre concerne toute prestation annexe au projet (garantie,
+maintenance, formation des utilisateurs, après-vente...)
+
+** INTERVENTION AU TITRE DE LA GARANTIE
+:PROPERTIES:
+:CUSTOM_ID: intervention-au-titre-de-la-garantie
+:END:
+Les prestations de garanties sont prises en compte dans la cadre du
+projet de développement jusqu'à validation des un ou deux sites pilotes
+et au plus tard un mois après la validation de la version sur
+plate-forme de préproduction.
+
+Après validation du ou des sites pilotes les interventions de
+diagnostique et de correction des anomalies sont régies par le contrat
+de maintenance du logiciel Synauto.
+
+** FORMATION, PERSONNEL PSA
+:PROPERTIES:
+:CUSTOM_ID: formation-personnel-psa
+:END:
+Sans objet.
+
+**  SOUTIEN APRÈS LA VENTE
+:PROPERTIES:
+:CUSTOM_ID: soutien-après-la-vente
+:END:
+En cas d'intervention sur site , la fiche 02443958 « Bon
+d'intervention » en annexe est utilisée. Elle est signée par le client
+lors de la demande d'intervention et après contrôle de la prestation.
+
+Le chef de projet rédige en interne un « rapport d'intervention ».
+
+** TECHNIQUES STATISTIQUES
+:PROPERTIES:
+:CUSTOM_ID: techniques-statistiques
+:END:
+Sans objet.
+
+* Gestion de la sous-traitance
+:PROPERTIES:
+:CUSTOM_ID: gestion-de-la-sous-traitance
+:END:
+
+--------------
+
+* Qualifications des ressources humaines
+:PROPERTIES:
+:CUSTOM_ID: qualifications-des-ressources-humaines
+:END:
+* Qualification des logiciels
+:PROPERTIES:
+:CUSTOM_ID: qualification-des-logiciels
+:END:
+* Qualification du matériel informatique
+:PROPERTIES:
+:CUSTOM_ID: qualification-du-matériel-informatique
+:END:

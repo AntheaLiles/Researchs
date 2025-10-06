@@ -1,0 +1,115 @@
+Pléiades QAI Indalo
+
+#+begin_quote
+De nombreux polluants de l'air présents à l'intérieur de nos bâtiments
+peuvent avoir des effets sur notre santé. Ils peuvent provenir de
+sources extérieures, mais aussi de nos activités : tabagisme, appareils
+à combustion, ménage, cuisine, bricolage, etc. Les matériaux de
+construction, mobiliers, produits de décoration et micro-organismes
+peuvent également émettre des polluants toxiques volatils. Domicile,
+lieu de travail, école ou moyens de transport, nous passons en moyenne
+85 % de notre temps dans des espaces clos. La qualité de l'air intérieur
+(QAI) est donc une préoccupation de santé publique, qui est notamment
+prise en compte dans le 4e plan national santé environnement.
+
+*Qualité de l'air intérieur*. /Ministère de la Transition Écologique et
+de la Cohésion des Territoires/. [en ligne]. [Consulté le 4 avril 2024].
+Disponible à l'adresse:
+https://www.ecologie.gouv.fr/qualite-lair-interieur
+
+#+end_quote
+
+* Les polluants
+:PROPERTIES:
+:CUSTOM_ID: les-polluants
+:END:
+- Radon
+
+- COx : Monoxyde de carbone, dioxyde de carbone etc.
+
+  Mesure et contrôle du taux par occupant en \(ppm\)
+
+  Complète les besoins de renouvellement d'air en \(m^3.pers^{-1}\) avec
+  une contrainte en \(ppm.pers^{-1}\)
+
+- COV : Composés Organiques Volatiles
+
+- Solvants
+
+- Biologiques
+
+  - Moisissures
+  - Virus
+  - Bactéries
+
+* Veiller à la QAI
+:PROPERTIES:
+:CUSTOM_ID: veiller-à-la-qai
+:END:
+** Limiter l'exposition à la pollution de l'air extérieur
+:PROPERTIES:
+:CUSTOM_ID: limiter-lexposition-à-la-pollution-de-lair-extérieur
+:END:
+Après évaluation du risque de pollution de l'air extérieur au bâtiment
+concerné (voierie à fort trafic, reflux industriels et autres), il
+convient d'étudier le système de ventilation de manière a capter et
+limiter l'entrée des polluants externes dans le bâtiment
+
+Cela peut être réalisé au moyen de filtres, laveurs d'airs etc.
+
+** Contrôler l'humidité
+:PROPERTIES:
+:CUSTOM_ID: contrôler-lhumidité
+:END:
+Les environnements à haut taux d'humidités sont favorables au
+développement de moisissures.
+
+Pour limiter ce risque, il est possible de mettre en œuvre un système de
+conditionnement d'air qui sera chargé d'assécher l'air intérieur.
+
+** Prescrire des matériels adaptés
+:PROPERTIES:
+:CUSTOM_ID: prescrire-des-matériels-adaptés
+:END:
+Les technologies de production d'ECS, de chauffage et de ventilations
+s'améliorent de jours en jours. Cependant, il est tout de même important
+de garder en mémoire certains aspects de QAI lorsqu'on les sélectionne.
+
+*** Eau Chaude Sanitaire
+:PROPERTIES:
+:CUSTOM_ID: eau-chaude-sanitaire
+:END:
+Hormis les contraintes liés au choix de l'énergie retenue pour la
+production d'ECS, il est important de bien respecter les réglementations
+liées au risque de développement de légionnelle. En effet, il s'agit du
+risque principal induit par la production d'ECS.
+
+*** Chauffage
+:PROPERTIES:
+:CUSTOM_ID: chauffage
+:END:
+Lorsque l'on s'intéresse à la production de chauffage ou de chaleur
+(toute finalité confondu), on sélectionne une source d'énergie primaire.
+En cas d'utilisation d'un système électrique, solaire ou thermodynamique
+il n'y a pas de réelle contraintes liées à la QAI.
+
+Par contre, lorsqu'une combustion entre en jeu (gaz, fioul, bois...) à
+ce moment il est important de bien veiller à l'étanchéité du réseau de
+fumisterie pour éviter la propagation des fumées potentiellement due à
+la perméabilité du réseau de cheminée. Egalement, le rejet des fumés
+doit s'effectuer dans une zone où elles ne risquent pas d'être à nouveau
+captée et réinjectée dans le bâtiment.
+
+Par convention, il est demandé d'éloigner les rejets d'air de 8m des
+points de prise d'air neuf. écartement pouvant être réduit à 5m (à
+confirmer) si les entrées et sorties se situent sur deux façades
+différentes.
+
+*** Moyens de leviers
+:PROPERTIES:
+:CUSTOM_ID: moyens-de-leviers
+:END:
+Ionisateur d'air : pour tuer les composés biologiques
+
+Conditionnement d'air : pour contrôler le renouvellement d'air et
+l'humidité

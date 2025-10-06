@@ -1,0 +1,108 @@
+Une affaire de stratégie.
+
+- Organisation-”
+- Hygiène de travail
+- Environnement numérique
+  - PC, écrans, claviers etc.
+  - Cloud computing
+  - Serveur
+  - Bande passante
+
+Gains sur les frais généraux : - Réduction du nombre de licences =
+gestion simplifiée - Simplification du parc de machine (micro pc + cloud
+computing) = réduction des frais hardware & réduction RH de gestion de
+parc informatique
+
+Philosophie : Focus sur la valeur intrinsèque de l'entreprise
+
+* Stratégies du numérique
+:PROPERTIES:
+:CUSTOM_ID: stratégies-du-numérique
+:END:
+** Stratégies des logiciels
+:PROPERTIES:
+:CUSTOM_ID: stratégies-des-logiciels
+:END:
+/Rationnaliser les outils = montée en compétence + capitalisation/
+/Fermer les logiciels non utilisés si €/h/ /Rationalisation des
+logiciels ⇒ maitrise des licences & couts associés/ /Prévention sur
+l'usage des logiciels et frais associés (fermer AutoCAD quand on ne
+l'utilise pas)/ /Déployer un logiciel seulement si l'utilisateur est
+formé/habilité (PIX, ACP...)/ ## Stratégies d'infogérance /Accès aux
+services de 7h à 19h jours ouvrés only (maitrise des couts de licences,
+force la déconnexion des utilisateurs)/ ## Stratégies de cybersécurité
+/Virtualisation du parc informatique ⇒ plus de PC "vieillissant"
+seulement un serveur à maintenir/ /Environnement sécurisé par défaut
+donc 1 seul SI au lieu de 2/ /Contraintes : IGI 1300, II900/
+/Problématique : 2 architectures réseaux/ /Solution : Virtualisation
+(VM)/ /Gains visés :/ /Diviser par 2 le parc info,/ /Simplifier sa
+gestion,/ /Réduire latence humaine (station blanche, passerelle...),/
+/Améliorer la collaboration et la circulation d'information (utilisation
+de teams, mail etc. Plus naturelle),/ /Déploiements et mises à jours
+logiciels simplifiée (possible de suivre les dernières mises à jours)/
+
+* Définir un organigramme
+:PROPERTIES:
+:CUSTOM_ID: définir-un-organigramme
+:END:
+Pour s'assurer d'une bonne montée en compétence des collaborateurs tout
+en maximisant l'efficacité métier, il est opportun d'organiser son
+entreprise en service thématiques.
+
+Nous pouvons trouver par exemple les services : - Ressources humaines -
+Chiffrages - Etudes - Chantiers - Qualité
+
+Suivant la nature de l'entreprise, ces services peuvent être plus ou
+moins découpés. Sur une grande structure d'électrotechnique, nous
+pouvons retrouver les services suivants : - Ressources humaines -
+Chiffrages - Etudes basses tension et courants faibles - Etudes
+d'automatismes - Etudes mécaniques - Achats - Assemblages (atelier) -
+Installation - etc.
+
+Engagement, leadership
+
+Il est vital que chaque secteur d'une entreprise participe à l'effort
+collectif de l'amélioration. De ce fait, les responsables de services
+doivent êtres chargés de missions d'amélioration et avoir des
+indicateurs associés.
+
+Gestion des processus Gestion des connaissances Gestion du changement
+
+* Le service qualité
+:PROPERTIES:
+:CUSTOM_ID: le-service-qualité
+:END:
+
+#+begin_quote
+*Qualité* Ensemble des propriétés et caractéristiques d'une entité
+(produit ou service) qui lui confèrent l'aptitude à satisfaire des
+besoins exprimés et implicites. *ISO 8402-94*
+#+end_quote
+
+Un service qualité doit être un service d'ingénierie dédié à
+l'amélioration. Son seul et unique objectif est de faire atteindre les
+exigences des clients en maximisant autant que possible la valeur
+ajoutée des collaborateurs.
+
+Qualité = Simplification + Formation + Automatisation + Vérification
+Système de Management de la Qualité
+
+Le responsable de service doit piloter l'atteinte des objectifs en
+matière de qualité de l'entreprise. Il en est le garant. Pour ce faire,
+il s'entour d'expert stratégiques tels que : - Un responsable en
+excellence opérationnelle qui conduit des chantiers de type Six Sigma, -
+Un responsable data management (chief data officer - CDO) qui accompagne
+l'organisme dans sa stratégie de gestion des données et dans son
+évolution numérique, - [...]
+
+#+caption: Roue de Deming
+[[../../Drawings/Processus%20BIM_PDCA.svg]]
+
+*** La méthode
+:PROPERTIES:
+:CUSTOM_ID: la-méthode
+:END:
+La méthode c'est définir "qui, quoi, ou, quand, comment et pourquoi"
+Permet de répondre avec efficacité, pertinence et précision aux
+besoins et usages. Méthode = processus + procédures + outils + chartes
+Standard = base audit & amélioration ### Les audits

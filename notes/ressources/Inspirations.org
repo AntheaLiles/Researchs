@@ -1,0 +1,87 @@
+* Sécurisé
+** Zero-Trust
+Architecture 100% zero-trust inspirée du fonctionnement de CubeOS
+Les applications sont construites à la demande dans des sandbox dédiées :tag: cl-isolated
+L'utilisation de sandbox plutot que des VM, micro-vm ou conteneurs permet une limitation fine des ressources allouées tout en restant léger en consommation de ressources
+
+* Personnalisable
+** Hacker-friendly
+Le systèmes est intégraglement implémenté en Common Lisp, ce qui le rend aisément personnalisable et reconfigurable.
+Ce langage est suffisement accessible pour permettre à un utilisateur currieux de commencer ses propres développements sans nécessiter de grandes compétences en développement.
+Le système d'exploitation offre un socle fonctionnel étendable par l'ajout de modules. Ces modules constituent les applications du systèmes. Ils s'apparentes aux plugins des navigateurs mais sont plus proches des modules d'Emacs.
+Le partage de l'espace mémoire à travers le module "shared memory" permet une grande capacité d'intéropérabilité des modules du systèmes.
+Les modules sont des pièces atomiques réalisant des objectifs précis. Ils sont ajouter par le téléversement de leurs code source depuis les repository officiels #Guix #QuikLisp vers la base de donnée du système.
+Immédiatement, est créé un registre de modification qui permettra de pister toutes les évolutions futures apportés par l'utilisateur ou le dépot officiel.
+Les modules sont analysés en avance de phases pour en identifier les dépendances. Si ces dernières existent dans le système d'exploitation alors elles ne seront pas chargées. Des algorythmes d'optimisations sémantiques sont réalisées pour assurer la bonne intégration des modules. :tag: Guix, FiveAM, Slime, Paredit, QuickLisp
+
+** Multi-users, multi-configurations
+Chaque utilisateur a la liberté autant d'environnement de travail qu'il le souhaite. #Guix
+Ceux-ci sont construits par la déclaration des modules de configurations à travers des documetns org dédiés.
+
+* Résiliant
+** Time-traveling
+L'intégralité des composantes du système d'exploitation est surveillé. 
+Les fichiers sont journalisés par des technologies de suivi de versions appropriés (git pour le texte, etc.)
+L'ensemble des transactions sont journalisés dans un registre cryptographique distribué.
+
+Ces éléments permettent de pouvoir, en tout instant, revenir à des états antérieurs du système et de façon très rapide.
+
+** Fault tolerant
+Le système d'exploitation embarque un superviseur hierarchique dans son noyau. Les erreurs de processus sont isolés et un système de redémarrage automatique assure la continuité de service. #BEAM_Erlang
+- Asynchrone et ordonancé #BEAM #cl-scheduler
+
+** Memory safe
+Le système d'exploitation embarque un ramasse miette (garbage collecteur) au nioveau de son noyau. Cela permet d'éviter toute faille de sécurité au niveau de la mémoire comme : la corruption de la méloire, les dangling pointers, la double libération, le buffer overflow, le use-after-free, les fuites de mémoires.
+
+** Distributed
+Le hardware est conçu comme un écosystème distribué à part entière.
+Chaque fonction spécifique est réalisée par une puce dédiée (GPU, DSP, NPU, VPU...). En cas de défaillance d'un de ces systèmes, le CPU est utilisé en système redondant.
+
+L'ensemble des ordinateurs sont maillables en un réseau d'entreprise peer-to-peer utilisant WebRTC pour communiquer. 
+Cela permet de distribuer le risque sur l'ensemble de son système d'information et évite les risques inérants à l'administration d'un serveur centralisé. En some, plus un organisme utilise le système, plus il devient résiliant.
+
+Le système permet également le partage des ressources non utilisés pour le calcul distribué, permettant la réalisation d'opérations complexes telle que le calcul de rayon ou la simulation par élément finis de façon optimale sans nécéssiter l'emploi de machine dédiée.
+
+L'utilisations d'algorythmes d'autentification cryptographiques assure une forte sécurité au niveau de l'authentification des utilisateurs.
+Les données sont stockées dans des iSIM qualifiés au plus haut niveau de résistance à la pénétration.
+
+Grace à ce système d'autentification robuste, l'administration du réseau peut s'effectué depuis n'importe quelle machine, sous réserve de s'etre authentifier avec le bon niveau de privilège.
+
+Orchestration des réseaux distribués automatiques #Kubernetes
+
+** Higly scalable
+S'adapte automatiquement aux ressources disponnibles sur l'équipement et sur le réseau.
+
+** Non-linéaire
+L'ensemble des éléments chargés sur un ordinateur est administré par un SGBD. Il n'y a pas de système de fichiers.
+Cette approche évite la pollution numérique en assurant qu'un fichier n'existe qu'une fois sur une machine. Son évolution est ensuite assuré par un système de suivi de version approprié au type de l'élément.
+
+* Productif
+** Collaboratif
+- prise en charge de plusieurs souris et claviers sur un même ordinateur,
+- synchronisation verticale de plusieurs ordinateurs d'un même réseau, #PowerToy_MouseWithoutBorders
+
+** Suffisant
+- généralisation de Org-Mode
+- simple, épuré, focus
+- une UI pour tout (CLOS, CLOG)
+
+** Reproductible
+- Packaging des environnement dans une VM dédiée et portable
+
+* Engagé
+** Power reduction
+- Utilisation d'un ecran eInk pour limiter la consommation d'energie 
+	Une fois que l'image est affichée, cela ne consomme plus d'énergie,
+- cadençage du système par une horloge variable : 
+	Gestion de la fréquence adaptée à la charge de travail, 
+	Reprise assurée par le maintiens in-memory des programmes grace aux STT-MRAM
+	Si pas de calcul à réaliser : arrêt des processus,
+
+* Adapté
+L'ordinateur intègre une iSim, un NPU et des antennes Wifi, 5G et Bluetooth.
+Cela lui permet de se connecter, au moyen des credentials de l'utilisateur, aux divers réseaux précités.
+
+L'écran est tactile sur demande (un switch en haut de l'écran active physiquement la fonctionnalité et la prise en charge du crayon)
+L'écran peut être rammené devant l'utilisateur pour une position en tablette graphique grace à son pied bi-articulé.
+

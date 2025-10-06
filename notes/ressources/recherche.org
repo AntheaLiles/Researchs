@@ -1,0 +1,39 @@
+#+TITLE: Optimisation de la chaîne de valeur dans l'ingénierie des systèmes complexes par une gestion consciente des connaissances
+#+bibliography: path/to/library.bib
+
+* Introduction 
+** Contexte et problématique
+*** Evolution de l'industrie manufacturière
+
+|           | Industrie 1.0    | Industrie 2.0        | Industrie 3.0                | Industrie 4.0 | Industrie 5.0                  |
+|-----------|------------------|-------------------- -|------------------------------|---------------|--------------------------------|
+| Période   | 18eme siècle     | 19eme siècle         | 20eme siècle                 | 2000          | 2020 et +                      |
+| Emergence | Machine à vapeur | Electrification      | Automatisation, Informatique | IoT, Big Data | IA, MR, Ultra-personnalisation |
+| Paradigme |                  | Chaine de production | Lean manufacturing           | Manufacturing System |                                |
+
+:SOURCES: 
+
+*** Evolution du web
+
+|           | Web 1.0      | Web 2.0  | Web 3.0    | Web 4.0                   | Web 5.0      |
+|-----------|--------------|----------|------------|---------------------------|--------------|
+| Période   | 1990         | 2000     | 2010       | 2020                      | Théorique    |
+| Emergence | HTTP et HTML | Big Data | Blockchain | Intelligence artificielle | Web immersif |
+| Paradigme 
+
+:SOURCES: https://www.researchgate.net/publication/337741822_Web_60_Journey_From_Web_10_To_Web_60
+
+*** Evolution de l'industrie de la construction
+Essayons maintenant d'établir une classification similaire pour l'industrie de la construction. 
+
+|           | Construction 1.0              | Construction 2.0             | Construction 3.0    | Construction 4.0              | Construction 5.0     |
+|-----------|-------------------------------|------------------------------|---------------------|-------------------------------|----------------------|
+| Période   | Pré révolution industrielle   | Post révolution industrielle | 20eme siècle        | 2000                          | 2020 et +            |
+| Emergence | Artisanat, Transmission orale | Mécanisation                 | CAO, Préfabrication | Big Data, Automatisation      | IoT, IA, MR          |
+| Paradigme | Compagnonage                  | Standards et normes          | Lean construction   | Building Information Modeling | Bâtiments résilients |
+
+:SOURCES: 
+
+*** Challenges de l'ingénierie des systèmes
+Ultra-personnalisation = hausse exponnentielle de la complexité
+Volonté de standard et de norme pour gagner du temps mais non "compatible" avec les expressions de besoins des clients.

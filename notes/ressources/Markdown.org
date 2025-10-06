@@ -1,0 +1,190 @@
+* Markdown
+:PROPERTIES:
+:CUSTOM_ID: markdown
+:END:
+Link: https://www.markdownguide.org/
+
+* Qu'est-ce que c'est ?
+:PROPERTIES:
+:CUSTOM_ID: quest-ce-que-cest
+:END:
+Le Markdown est une synthaxe de rédaction permettant la mise en forme du
+texte de façon dynamique.
+
+On retrouve son usage un peu partout sur le net :
+
+- Blog
+- Page web
+- Documentation
+- Logiciels de prise de note (comme Notion !)
+
+Il permet de se concentrer uniquement sur le contenu, le logiciel
+réalisant lui-même la mise en forme au fil de la rédaction.
+
+Exit le formatage mannuel des titres et autre styles de texte, les
+images qui sautent lors d'un renvois de ligne ou encore les tableurs
+hors formats ! Tout sera systématiquement ajusté à votre page.
+
+* Comment ça fonctionne ?
+:PROPERTIES:
+:CUSTOM_ID: comment-ça-fonctionne
+:END:
+Pour écrire en markdown il suffit... d'écrire, simplement, comme sur
+n'importe quel
+
+Maintenant quelques éléments de langage.
+
+* Texte à écrire
+:PROPERTIES:
+:CUSTOM_ID: texte-à-écrire
+:END:
+* Résultat
+:PROPERTIES:
+:CUSTOM_ID: résultat
+:END:
+** Mettre un titre
+:PROPERTIES:
+:CUSTOM_ID: mettre-un-titre
+:END:
+#+begin_src markdown
+# Ceci est un titre 1
+## Ceci est un titre 2
+### Et maintenant un titre 3
+etc.
+#+end_src
+
+* Ceci est un titre 1
+:PROPERTIES:
+:CUSTOM_ID: ceci-est-un-titre-1
+:END:
+** Ceci est un titre 2
+:PROPERTIES:
+:CUSTOM_ID: ceci-est-un-titre-2
+:END:
+*** Et maintenant un titre 3
+:PROPERTIES:
+:CUSTOM_ID: et-maintenant-un-titre-3
+:END:
+** Mettre en forme le texte
+:PROPERTIES:
+:CUSTOM_ID: mettre-en-forme-le-texte
+:END:
+Si vous souhaitez mettre des éléments en gras, en italique ou en
+surligné, procédez comme ceci :
+
+#+begin_src markdown
+**Ce texte est en gras**
+*Ce texte est en italique*
+==Ce texte est surligné==
+| Ce texte est une citation
+#+end_src
+
+Vous obtiendrez :
+
+*Ce texte est en gras*
+
+/Ce texte est en italique/
+
+==Ce texte est surligné==
+
+#+begin_quote
+Ce texte est une citation
+
+#+end_quote
+
+** Ajouter une ligne de séparation
+:PROPERTIES:
+:CUSTOM_ID: ajouter-une-ligne-de-séparation
+:END:
+#+begin_src markdown
+---
+#+end_src
+
+--------------
+
+** Ecrire une liste
+:PROPERTIES:
+:CUSTOM_ID: ecrire-une-liste
+:END:
+*** Ordonnée
+:PROPERTIES:
+:CUSTOM_ID: ordonnée
+:END:
+#+begin_src markdown
+1. item1
+2. item2
+3. item3
+#+end_src
+
+1. item1
+2. item2
+3. item3
+
+*** A puces
+:PROPERTIES:
+:CUSTOM_ID: a-puces
+:END:
+#+begin_src markdown
+* item1
+* item2
+* item3
+#+end_src
+
+- item1
+- item2
+- item3
+
+*** Avec encoches
+:PROPERTIES:
+:CUSTOM_ID: avec-encoches
+:END:
+#+begin_src markdown
+* [ ] item1
+* [ ] item2
+* [ ] item3
+#+end_src
+
+- [ ] item1
+- [ ] item2
+- [ ] item3
+
+(non supporté dans notion)
+
+** Ecrire du code
+:PROPERTIES:
+:CUSTOM_ID: ecrire-du-code
+:END:
+*** Dans le texte
+:PROPERTIES:
+:CUSTOM_ID: dans-le-texte
+:END:
+#+begin_src markdown
+`inline code`
+#+end_src
+
+=inline code=
+
+*** Dans un bloc avec prise en charge de la syntaxe
+:PROPERTIES:
+:CUSTOM_ID: dans-un-bloc-avec-prise-en-charge-de-la-syntaxe
+:END:
+#+begin_src markdown
+```C#
+string codeblock = "with synthax"; 
+Console.WriteLine(codeblock);
+#+end_src
+
+#+begin_example
+
+```csharp
+string codeblock = "with synthax"; 
+Console.WriteLine(codeblock);
+#+end_example
+
+--------------
+
+Il existe tout plein d'autres particularités comme comment faire des
+tableaux ou ajouter des images. Pour en apprendre plus, RDV sur :
+
+[[https://www.markdownguide.org/cheat-sheet/][Markdown Cheat Sheet |
+Markdown Guide]]

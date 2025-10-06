@@ -1,0 +1,207 @@
+source : https://piktochart.com/fr/blog/types-de-graphiques/
+
+* Bar chart
+Visualiser rapidement des ensembles de donnée et d'identifier rapidement la barre la plus haute ou la plus basse, y compris les différences incrémentales entre les barres.
+
+Quand utiliser les graphiques en barre ? 
+- Si vous avez plus de 10 articles ou catégories à comparer. 
+- Si les étiquettes ou les noms de vos catégories sont longs. 
+Meilleures techniques pour les graphiques en barres : 
+- Concentrez-vous sur une couleur pour un graphique en barres.
+- Les couleurs d'accentuation sont idéales si vous souhaitez mettre en évidence certaines données importantes.
+- Les barres doivent être plus larges que l'espace blanc entre les barres.
+- Pour une meilleure lisibilité de votre graphique en barres, écrivez les étiquettes horizontalement (et non verticalement). 
+- Classez les catégories par ordre alphabétique ou par valeur afin d'assurer la cohérence de votre graphique en barres.
+#+end_quote
+
+* Line chart
+Représenter des données continues ou des données dont les valeurs sont infinies.
+
+Quand utiliser les graphiques linéaires ? 
+- Comparer et présenter un grand nombre de données à la fois. 
+- Montrer les tendances ou les progrès au fil du temps. 
+- Mettre en évidence la décélération. 
+- Présenter les données prévisionnelles et partager l'incertitude dans un seul graphique linéaire. 
+- Représenter l'évolution d'une ou plusieurs quantités au fil du temps, ce qui les rend excellentes pour suivre la progression des points de données. 
+- Identifier le dépassement d'un seuil 
+
+Meilleures techniques pour les graphiques linéaires 
+- N'utilisez que des lignes pleines, car les lignes en pointillés ou en tirets ne retiennent pas l'attention. 
+- Veiller à ce que les points soient ordonnés de manière cohérente. 
+- Étiqueter directement les lignes et éviter d'utiliser des légendes dans un graphique linéaire. 
+- Ne pas tracer plus de quatre lignes pour éviter les distractions visuelles. 
+- La ligne de base zéro n'est pas obligatoire, mais elle est recommandée pour les graphiques linéaires.
+
+#+begin_quote
+« La plage allant de la plus petite valeur à la plus grande doit occuper environ 70 à 80 % de l'espace vertical disponible dans le graphique. »
+*Mike Cisneros*
+#+end_quote
+
+* Graphique en aires
+Un graphique en aires est semblable à un graphique linéaire, car il montre également les changements dans le temps. 
+La différence avec ces types de graphiques est que les graphiques en aires peuvent représenter le volume, qui est généralement coloré.
+
+Quand utiliser les graphiques en aires ? 
+- Afficher l'évolution des valeurs ou des valeurs multiples au fil du temps. 
+- Mettre en évidence l'ampleur d'un changement. 
+- Montrer des différences importantes entre les valeurs. 
+
+Meilleures pratiques pour ce type de graphiques 
+- Ne pas afficher plus de quatre catégories sur ce type de graphiques. 
+- Utilisez des couleurs transparentes pour éviter de masquer les données en arrière-plan sur ce type de graphiques. 
+- Ajouter des annotations et des explications à ce type de graphiques. 
+- Regroupez les petites valeurs en une seule plus grande afin d'éviter l'encombrement sur ce type de graphiques.
+
+#+begin_quote
+« Faites figurer la valeur la plus importante en bas du graphique et utilisez la couleur pour la faire ressortir. 
+Vos lecteurs peuvent comparer plus facilement les valeurs entre elles s'ils ont la même base de référence ». 
+*Charlotte Rost*
+#+end_quote
+
+* Nuage de points
+Permet de montrer la relation entre des éléments basés sur deux variables et ensembles de données différents. 
+Les points (ou données de tracé) sont inscrites dans un système de coordonnées x-y. 
+Dans certains nuages de points, une ligne de tendance est ajoutée au nuage.
+
+Quand utiliser un nuage de points ? 
+- Montrer les relations entre deux variables. 
+- Vous disposez de deux variables de données qui se complètent. 
+
+Meilleures pratiques pour les nuages de points 
+- La valeur de l'axe des y commence à zéro pour représenter les données avec précision. 
+- Tracez des variables de données supplémentaires en modifiant la taille et la couleur des points. 
+- Surligner avec de la couleur et des annotations.
+
+#+begin_quote
+« Ajoutez une ligne de tendance à votre nuage de points si vous souhaitez signaler la solidité de la relation entre les deux variables et si des points inhabituels affectent le calcul de la ligne de tendance ». 
+*Mike Yi de Chartio*
+#+end_quote
+
+* Pie chart
+Représente des nombres en pourcentages, et la somme totale de tous les diagrammes doit être égale à 100 %. 
+Lorsque vous envisagez d'utiliser des diagrammes et des graphiques pour visualiser des données, les diagrammes circulaires ont le plus d'impact sur votre public si vous disposez d'un petit ensemble de données.
+
+Le diagramme circulaire en forme de beignet, une variante du diagramme circulaire, montre un élément de conception ou la valeur totale de toutes les variables au centre.
+
+Quand utiliser les diagrammes circulaires ? 
+- Illustrer des comparaisons de partie à partie -- des tableaux et graphiques de l'entreprise à ceux de la salle de classe. 
+- Identifier les éléments les plus petits et les plus grands dans des ensembles de données. 
+- Comparer les différences entre plusieurs points de données dans un diagramme circulaire. Bonnes techniques pour l'utilisation d'un diagramme circulaire 
+- Limitez les catégories à 3 ou 5 pour assurer la différenciation entre les tranches du diagramme circulaire. 
+- Vérifiez que la valeur totale des tranches est égale à 100 %. 
+- Regroupez les tranches similaires en une seule tranche plus grande pour réduire l'encombrement. 
+- Faites ressortir votre tranche la plus importante grâce à la couleur. Utilisez des nuances de cette couleur spécifique pour mettre en valeur le reste des tranches. 
+- Organiser les tranches intelligemment. Par exemple, vous pouvez placer la plus grande section à la position 12 heures et aller dans le sens des aiguilles d'une montre à partir de là. Ou placez la deuxième plus grande section à la position 12 heures et continuez dans le sens inverse des aiguilles d'une montre à partir de là.
+
+Conseil de Robert Kosara, chercheur en communication visuelle chez Eager Eyes, pour les diagrammes et les graphiques :
+
+« Le diagramme circulaire n'est pas le bon type de diagramme à utiliser par défaut ; le graphique en barres est un bien meilleur choix pour cela. L'utilisation d'un diagramme circulaire demande beaucoup plus de réflexion, de soin et de conscience de ses limites que la plupart des autres diagrammes. »
+
+* Graphique en colonnes
+Un graphique en colonnes est idéal pour présenter des données chronologiques. 
+Également connu sous le nom de graphique à barres verticales, ce type de graphique fonctionne si vous ne disposez que de quelques dates pour mettre en évidence votre ensemble de données.
+
+Quand utiliser les graphiques en colonnes ? 
+- Afficher la comparaison entre des catégories ou des choses (données qualitatives). 
+- Montrer la situation à un moment donné à l'aide de différents points de données. 
+- Partagez les différences relativement importantes entre les valeurs de vos données numériques. 
+
+Meilleures techniques pour les graphiques en colonnes 
+- Tracer les colonnes par rapport à une valeur zéro de référence. 
+- Gardez vos colonnes rectangulaires et évitez les effets 3D. 
+- Ordonner les niveaux de catégorie de manière cohérente : du plus élevé au plus bas ou du plus bas au plus élevé.
+
+Astuce pour l'utilisation de graphiques en colonnes pour un ensemble de données, tirée de Storytelling with Data :
+#+begin_quote
+« Au fur et à mesure que vous ajoutez des séries de données, il devient plus difficile de se concentrer sur une colonne à la fois et d'en tirer des informations, c'est pourquoi il convient d'utiliser les graphiques en colonnes à séries multiples avec prudence.
+#+end_quote
+
+* Graphique à bulles
+Le graphique à bulles ressemble beaucoup au nuage de points. 
+Toutefois, les graphiques à bulles comportent un ou deux éléments visuels supplémentaires (taille et couleur des points) par rapport à un nuage de points afin de représenter une troisième ou une quatrième variable numérique.
+
+Quand utiliser un graphique à bulles ? 
+- Montrer les relations entre trois variables numériques ou plus 
+
+Meilleures techniques pour les diagrammes à bulles 
+- La zone de la bulle est mise à l'échelle en fonction de sa valeur, et non de son diamètre ou de son rayon. 
+- N'utilisez des formes circulaires que dans un diagramme à bulles. 
+- Indiquez clairement les points clés dans un diagramme à bulles.
+
+Astuce d'Elizabeth Ricks, formatrice en visualisation de données, pour créer un graphique à bulles :
+« Pensez à inclure des mots pour les graphiques à bulles statiques. 
+C'est toujours une bonne idée d'étiqueter vos axes, de donner des titres clairs à vos graphiques et d'annoter les points de données importants avec un contexte éclairant. 
+Cela est d'autant plus vrai lorsque vous utilisez un type de graphique dense en données, comme un graphique à bulles, et que vous ne vous tenez pas à côté pour expliquer toute confusion que les spectateurs pourraient avoir au premier coup d'œil. »
+
+* Graphique en jauge
+Un graphique en jauge, également connu sous le nom de graphique à cadran, est un type de graphique avancé qui indique si les valeurs des données se situent sur une échelle allant d'acceptable (bon) à inacceptable (mauvais). 
+Par exemple, vous pouvez créer un graphique en jauge pour afficher les chiffres de vente actuels et utiliser vos objectifs de vente trimestriels comme seuils. 
+Tous les graphiques ne permettent pas de présenter les données de cette manière.
+
+Les graphiques en jauge sont particulièrement utiles lorsque la valeur attendue des données est déjà connue. Cela permet aux organisations de [[https://piktochart.com/fr/rapport/][créer des rapports exploitables]] et d'aider les employés à comprendre où ils se situent en termes d'indicateurs en consultant le tableau.
+
+Quand utiliser les graphiques en jauge ? - Partager les mesures cibles et affichez le pourcentage de l'objectif cible qui a été atteint pour une certaine période. - Mettre en évidence les progrès de la mesure linéaire. - Comparer les variables en utilisant plusieurs calibres ou plusieurs aiguilles sur le même calibre. Meilleures techniques pour les graphiques en jauge - Limitez-vous à deux ou trois couleurs pour chaque jauge et évitez les combinaisons de couleurs très contrastées.
+
+* Diagramme en mosaïque
+Un diagramme en mosaïque est une représentation graphique de données catégorielles multivariées. Il s'agit d'une grille rectangulaire qui affiche la fréquence ou la proportion des variables. La surface de chaque rectangle correspond à la proportion d'occurrences d'une catégorie, compte tenu des multiples variables.
+
+Quand utiliser les diagrammes en mosaïque Lorsque vous souhaitez visualiser la distribution de variables catégorielles dans différentes catégories. Si vous essayez de comprendre la relation entre deux ou plusieurs variables catégorielles. Lorsque vous avez besoin de montrer des relations hiérarchiques au sein des données. Meilleures techniques pour les diagrammes en mosaïque Utiliser des couleurs contrastées pour distinguer les différentes catégories. Fournir une légende claire pour expliquer les catégories et le code couleur. Veiller à ce que la taille des rectangles représente correctement la proportion de la catégorie de données.
+
+Astuce pour les diagrammes en mosaïque de David Farrugia, expert en données :
+
+« Les diagrammes en mosaïque peuvent rapidement devenir complexes si le nombre de catégories est trop élevé ou si les catégories sont réparties de manière uniforme. »
+
+* Diagramme en radar
+Les diagrammes en radar, également connus sous le nom de diagrammes en toile d'araignée ou de diagrammes en étoile, utilisent un affichage circulaire avec plusieurs axes quantitatifs différents ressemblant aux rayons d'une roue pour montrer de multiples variables.
+
+Quand utiliser les diagrammes en radar ? - Pour comparer plusieurs variables quantitatives. - Si vous avez besoin d'analyser les performances dans plusieurs catégories simultanément. - Lorsque vous souhaitez visualiser des données multidimensionnelles. Meilleures pratiques pour les diagrammes en radar - Limitez le nombre de variables pour éviter le désordre et la confusion. - Identifier clairement chaque axe et veillez à ce que toutes les échelles soient cohérentes. - Utiliser des couleurs ou des symboles différents pour distinguer les différents ensembles de données.
+
+Astuce de Jeevan A Y, consultant senior en analyse, pour *les diagrammes en radar* :
+« Veillez à ne pas utiliser plus de deux variables. Sinon, il sera fastidieux pour l'utilisateur de comprendre et d'en tirer une conclusion. »
+
+* Diagramme en cascade
+Les diagrammes en cascade sont un type de visualisation de données utilisés pour montrer comment une valeur initiale est augmentée et diminuée par une série de valeurs intermédiaires, pour aboutir à une valeur finale.
+
+Quand utiliser les diagrammes en cascade ? Lors de la visualisation des états financiers et de la compréhension de la croissance des revenus. Si vous devez décomposer l'effet cumulatif de valeurs positives ou négatives introduites séquentiellement. Lorsque vous souhaitez montrer la contribution de différents éléments à un total. Meilleures techniques pour les diagrammes en cascade Identifier clairement chaque barre pour décrire ce qu'elle représente. Utiliser des couleurs contrastées pour différencier les valeurs positives et négatives. Inclure une barre « total » à la fin pour résumer le résultat final.
+
+Conseil de Wayne Winston, professeur émérite en sciences de la décision, pour les diagrammes en cascade :
+« Un diagramme en cascade met en évidence la façon dont une valeur augmente ou diminue au fil du temps pour atteindre une valeur finale. Les diagrammes en cascade sont parfaits pour décrire l'évolution dans le temps d'une quantité d'intérêt (par exemple, la position de trésorerie). »
+
+* Diagramme en entonnoir
+Un diagramme en entonnoir est un type de diagramme qui montre le flux d'utilisateurs à travers un processus de conversion. Chaque étape du processus est représentée par une section proportionnelle de l'entonnoir, qui est plus large en haut et plus étroit en bas, illustrant la diminution des nombres qui se produit à chaque étape.
+
+Quand utiliser les diagrammes en entonnoir ? Lors de la visualisation d'un processus ou d'un système comportant des étapes avec des quantités décroissantes. Si vous suivez le succès d'un entonnoir de vente ou de marketing. Lorsque vous souhaitez identifier les problèmes potentiels dans les processus d'une organisation. Meilleures techniques pour les diagrammes en entonnoir Identifier clairement chaque étape de l'entonnoir. Utiliser des couleurs différentes pour distinguer chaque étape. Assurez-vous que la largeur des segments de l'entonnoir représente correctement la proportion de l'ensemble à chaque étape.
+
+Astuce d'Andy Morris, spécialiste en marketing produit, pour les diagrammes en entonnoir :
+« Les diagrammes en entonnoir permettent de représenter les données de problèmes. Ils sont bien adaptés pour illustrer les étapes connectées et séquentielles d'un processus linéaire. »
+
+* Diagramme de Pareto
+Un diagramme de Pareto est un type de diagramme qui contient à la fois des barres et un graphique linéaire. Les barres représentent les valeurs individuelles (classées par ordre décroissant) et la ligne indique le total cumulé. Ce graphique porte le nom de Vilfredo Pareto, qui a observé le principe 80/20.
+
+Quand utiliser les diagrammes de Pareto ? Lorsque vous souhaitez hiérarchiser les problèmes ou les causes d'un processus. Si vous avez besoin d'identifier des domaines d'amélioration. Lorsque vous souhaitez démontrer le principe de Pareto (règle des 80/20). Meilleures techniques pour les diagrammes de Pareto Trier les catégories de données de la plus grande à la plus petite. S'assurer que l'axe vertical de gauche commence à 0 % et celui de droite à 100 %. Étiqueter vos catégories de manière claire et concise.
+
+Astuce pour les diagrammes de Pareto du spécialiste de l'expérience utilisateur, Evan Sunwell :
+
+« Investir exclusivement sur les 20 % pendant trop longtemps peut conduire à la stagnation et à la suroptimisation de quelques indicateurs au détriment des autres. Cela peut également renforcer les croyances des parties prenantes selon lesquelles seuls quelques indicateurs doivent guider la vision du produit et le travail de conception. Il faut éviter ce piège de la pensée « tout ou rien ».
+
+* Graphique en barres empilées
+Un graphique en barres empilées décompose et compare les parties d'un tout. Chaque barre représente un total, et les segments de la barre représentent différentes catégories ou parties de ce total.
+
+Quand utiliser les graphiques en barres empilées ? Lorsque vous devez comparer le total et une partie des totaux dans différentes catégories. Si vous souhaitez visualiser les relations de partie à partie. Lorsque vous souhaitez montrer comment une catégorie est divisée en sous-catégories. Par exemple, si vous mesurez des paramètres d'engagement spécifiques à l'application, tels que le taux de conversion par fonctionnalité. Meilleures techniques pour les graphiques en barres empilées utiliser des couleurs contrastées pour différencier les catégories. Disposer les segments de manière cohérente entre les barres pour faciliter la comparaison. Inclure une légende pour expliquer ce que chaque couleur représente.
+
+Astuce de l'expert en visualisation de données Vitaly Radionov pour les graphiques en barres empilées :
+
+« Les graphiques en barres empilées sont conçus pour vous aider à comparer simultanément les totaux et à remarquer les changements importants au niveau des articles qui sont susceptibles d'avoir le plus d'influence sur les mouvements des totaux de la catégorie ».
+
+* Diagramme en boîte
+Un diagramme en boîte, également connu sous le nom de boîte à moustaches, présente un résumé de l'étendue et de la distribution statistique d'un ensemble de données sur la base d'un résumé à cinq chiffres : minimum, premier quartile, médiane, troisième quartile et maximum.
+
+Quand utiliser les diagrammes en boîte ? Lorsque vous voulez voir la dispersion et l'asymétrie de vos données. Si vous avez besoin d'identifier des valeurs aberrantes dans votre ensemble de données. Lorsque vous comparez des distributions entre plusieurs groupes ou ensembles de données. Meilleures techniques pour les diagrammes en boîte Indiquer les axes avec précision et donnez un titre au graphique. Marquer clairement les valeurs aberrantes dans l'ensemble des données. Utiliser des diagrammes en boîte horizontaux ou verticaux en fonction du contexte et des données.
+
+#+begin_quote
+« Bien que les diagrammes en boîte puissent sembler primitifs par rapport à un histogramme ou à un diagramme de densité, ils ont l'avantage de prendre moins de place, ce qui est utile pour comparer les distributions entre de nombreux groupes ou ensembles de données. »
+*Michael Galarnyk*
+#+end_quote
+
+* Carte thermique
+Une carte thermique est une méthode de visualisation d'informations affichées sur un graphique ou un tableau organisé. Cette méthode est utilisée pour représenter différentes nuances et intensités de couleurs. L'utilisation d'une thermographie interactive est idéale pour l'analyse de données qui semblent interminables. Dans le cas de valeurs très larges, les cartes thermiques sont beaucoup plus faciles à utiliser pour analyser des représentations plus complexes de données et les visualiser rapidement.

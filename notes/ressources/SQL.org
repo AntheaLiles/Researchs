@@ -1,0 +1,779 @@
+* Utilisation
+:PROPERTIES:
+:CUSTOM_ID: utilisation
+:END:
+Permet la création de base de données, la définition de ses tables et la
+manipulation de l'ensemble.
+
+Cela se traduit dans l'exécution de tâches de gestion des données comme
+l'insertion, la modification, la suppression.
+
+Ce langage permet d'effectuer des requêtes simples comme complexes sur
+un jeu de donné défini.
+
+* Eléments de langage
+:PROPERTIES:
+:CUSTOM_ID: eléments-de-langage
+:END:
+** Généralités
+:PROPERTIES:
+:CUSTOM_ID: généralités
+:END:
+Les majuscules sont dédiés aux mots réservés par le SGBD (fonctions,
+déclarations...)
+
+Toutes les commandes se terminent par une virgule et toutes les requêtes
+se terminent par un point-virgule
+
+#+begin_src sql
+CREATE TABLE TClient, --instruction terminée avec une virgule 
+telClient AN(10); --requête terminée avec un point-virgule
+
+--Commentaire monoligne 
+/* Commentaire
+multi-lignes */
+#+end_src
+
+** Définitions d'une table (LDD)
+:PROPERTIES:
+:CUSTOM_ID: définitions-dune-table-ldd
+:END:
+*** CREATE TABLE
+:PROPERTIES:
+:CUSTOM_ID: create-table
+:END:
+
+#+begin_quote
+Pour créer une nouvelle table de donnée
+
+#+end_quote
+
+Ici on va créer la table =TClient= qui contient les rubriques suivantes
+:
+
+| numClient | nomClient | prenomClient | telClient |
+|-----------+-----------+--------------+-----------|
+
+#+begin_src sql
+CREATE TABLE TClient(numClient integer (10,0) PRIMARY KEY, nomClient varchar(15), prenomClient varchar(15), telClient varchar(10));
+#+end_src
+
+Attention, la longueur maximale d'une rubrique doit être évaluée et
+anticipée de façon à ne pas utiliser la valeur maximale offerte par le
+SGBD. Cela permet de réduire l'espace alloué au stockage des
+informations (objectif = optimisation)
+
+Il est possible d'ajouter des contraintes lors de la déclaration des
+rubriques de la table que l'on crée
+
+Voici quelques exemples de contraintes :
+
+#+begin_src sql
+PRIMARY KEY --clé primaire UNIQUE, la valeur doit être unique dans la table 
+NOT NULL --Non nul donc obligatoire 
+NULL --non utilisé par défaut donc espace de stockage non alloué 
+FOREIGN KEY --clé étrangère 
+DEFAULT --défini la valeur à renseigner par défaut dans la rubrique pour chaque ajout de ligne
+#+end_src
+
+*** DROP
+:PROPERTIES:
+:CUSTOM_ID: drop
+:END:
+*** ALTER TABLE
+:PROPERTIES:
+:CUSTOM_ID: alter-table
+:END:
+
+#+begin_quote
+pour ajouter ou retirer des colonnes à une table
+
+#+end_quote
+
+Ici on va ajouter la rubrique =ageClient= à la table =TClient=
+
+#+begin_src sql
+ALTER TABLE TClient ADD COLUMN ageClient N(3);
+#+end_src
+
+On remarque la déclaration du type : =N= pour numérique, et l'ajout
+d'une contrainte de taille : =(3)= indiquant que l'on attend au maximum
+3 chiffres dans cette case.
+
+** Mises à jour (LMD)
+:PROPERTIES:
+:CUSTOM_ID: mises-à-jour-lmd
+:END:
+*** INSERT INTO
+:PROPERTIES:
+:CUSTOM_ID: insert-into
+:END:
+
+#+begin_quote
+permet d'insérer une nouvelle ligne dans une table
+
+#+end_quote
+
+Ici on va ajouter une ligne dans notre tableau telle que :
+
+| numClient | nomClient | prenomClient | telClient  |
+|-----------+-----------+--------------+------------|
+| 22        | Marley    | Bob          | 0100000000 |
+
+#+begin_src sql
+INSERT INTO TClient(numClient, nomClient, prenomClient, telClient) VALUES (22, "Marley", "Bob", "0100000000");
+#+end_src
+
+*** UPDATE
+:PROPERTIES:
+:CUSTOM_ID: update
+:END:
+
+#+begin_quote
+permet de modifier les données d'une ligne de la table
+
+#+end_quote
+
+Ici on va mettre à jour notre tableau pour ajouter l'âge de M. Marley de
+façon à obtenir ce tableau :
+
+| numClient | nomClient | prenomClient | telClient  | ageClient |
+|-----------+-----------+--------------+------------+-----------|
+| 22        | Marley    | Bob          | 0100000000 | 36        |
+
+#+begin_src sql
+UPDATE TClient SET ageClient = 36 WHERE numClient = 22;
+#+end_src
+
+La syntaxe ce compose comme ceci : *UPDATE* permet de cibler la table
+qui nous intéresse, ici : =TClient= *SET* permet de cible la colonne que
+l'on souhaite modifier, ici : =ageClient= *WHERE* permet de restreindre
+la modification en ajoutant une condition, ici : =numClient=
+
+*** DELETE FROM
+:PROPERTIES:
+:CUSTOM_ID: delete-from
+:END:
+
+#+begin_quote
+permet de supprimer des lignes d'une table de donnée
+
+#+end_quote
+
+Dans cet exemple, on va supprimer toutes les lignes qui n'ont pas de
+valeur dans =ageClient= :
+
+#+begin_src sql
+DELETE FROM TClient WHERE ageClient IS NULL;
+#+end_src
+
+Cette requête supprime toutes les lignes de la table =TClient= qui ne
+contiennent pas d'information dans la colonne =age_client=.
+
+Remarque : *NULL* fait référence à l'absence ou à la non connaissance
+d'information.
+
+S'il y a un 0 de renseigné, l'information n'est pas nulle et la ligne ne
+sera pas supprimé ici.
+
+** Interrogations (LMD)
+:PROPERTIES:
+:CUSTOM_ID: interrogations-lmd
+:END:
+Fonctions d'agrégat ou fonctions statiques
+
+Elles peuvent êtres utilisés avec *SELECT*, *WHERE* et *HAVING*
+
+#+begin_src sql
+COUNT(*) --Compte tous les résultats même si la rubrique est nulle 
+COUNT(DISTINCT attribut) --Renvoie le nombre de valeurs dans la colonne. Si DISTINCT est précisé, les doublons sont éliminés. 
+SUM(attribut) --Renvoie la somme des valeurs de la colonne spécifiée. 
+MAX(attribut) --Renvoie la plus grande valeur de la colonne spécifiée. 
+MIN(attribut) --Renvoie la plus petite valeur de la colonne spécifiée. 
+AVG(attribut) --Renvoie la moyenne des valeurs de la colonne spécifiée. 
+AVG(DISTINCT attribut) 
+ROUND(attribut, 0) --Réalise un arrondi de la valeur, le chiffre spécifie la précision (le nombre de décimales souhaitées)
+ROUND(AVG(attribut), 2) --Calcule la valeur moyenne puis arrondis au centième
+#+end_src
+
+Exemple d'utilisation : sélectionner le prix le moins cher et le plus
+cher des téléviseurs du magasin
+
+#+begin_src sql
+SELECT MIN(articlePrix) AS "Moins cher", MAX(articlePrix) AS "Plus cher" 
+FROM Articles 
+WHERE articleName = "Téléviseur";
+#+end_src
+
+*** SELECT
+:PROPERTIES:
+:CUSTOM_ID: select
+:END:
+
+#+begin_quote
+pour choisir les données à afficher
+
+#+end_quote
+
+#+begin_src sql
+SELECT logement --affiche les logements
+#+end_src
+
+Il est possible de préciser le nom d'affichage de la colonne comme ceci
+:
+
+#+begin_src sql
+SELECT logement as maison --"as" permet de conditionner l'affichage de la rubrique en sortie 
+#+end_src
+
+Par défaut l'instruction *SELECT* réalise un *SELECT ALL*
+
+Pour ne garder que les résultats uniques il faut préciser *DISTINCT* ce
+qui permettra de supprimer les doublons :
+
+#+begin_src sql
+SELECT DISTINCT logement --Conservera uniquement la liste des logements différents
+#+end_src
+
+Pour sélectionner toutes les valeurs d'une table on écrira simplement :
+
+#+begin_src sql
+SELECT *
+#+end_src
+
+On peut, dès la sélection des données, choisir d'effectuer un calcul :
+
+#+begin_src sql
+--calcul de la valeur moyenne 
+SELECT AVG(ALL|DISTINCT expression) 
+--ALL considère toutes les valeurs 
+--DISTINCT considère seulement les valeurs uniques
+#+end_src
+
+Pour catégoriser des éléments en fonction d'une condition on utilisera
+*CASE* à la suite du select et avant le *FROM* comme ceci :
+
+#+begin_src sql
+SELECT logement, --Attention la virgule est obligatoire !   
+CASE
+WHEN surface > 50 THEN 'Large' 
+WHEN surface > 20 THEN 'Medium' --pas besoin de faire un between 
+ELSE 'Small' 
+END AS 'Taille' 
+From TLogement
+#+end_src
+
+Ici nous regardons la surface et renseignons une colonne en fonction de
+diverses conditions.
+
+*ELSE* donne la valeur à appliquer si aucune condition n'est remplie.
+
+Un *CASE* fini obligatoirement par un *END*
+
+*AS* permet de donner un nom à cette colonne. Cette colonne n'est pas
+ajoutée à la table, elle apparaitra uniquement en résultat de votre
+requête.
+
+*** FROM
+:PROPERTIES:
+:CUSTOM_ID: from
+:END:
+
+#+begin_quote
+pour expliquer où sont rangées les données
+
+#+end_quote
+
+#+begin_src sql
+FROM tableA, tableB --La ou les tables sources choisies
+#+end_src
+
+Il arrive que les noms des tables soient très longs. On peut leurs
+attribuer un alias le temps de la requête
+
+#+begin_src sql
+FROM tableA AS A, tableB AS B --tableA s'appellera désormais A et tableB s'appellera B pour la suite de la requête
+#+end_src
+
+*** JOIN
+:PROPERTIES:
+:CUSTOM_ID: join
+:END:
+
+#+begin_quote
+pour associer plusieurs tables de données
+
+#+end_quote
+
+Lorsque l'on effectue une recherche impliquant plusieurs tables de
+données, il est nécessaire d'expliquer les relations entre ces tables
+
+Pour ce faire, on réalise une jointure.
+
+Cela permet d'associer les colonnes des différentes tables.
+
+Il est nécessaire d'expliquer au DBMS (Database Management System,
+e.g. MySQL) comment réaliser l'association des tables.
+
+**** Jointure implicite (obsolète)
+:PROPERTIES:
+:CUSTOM_ID: jointure-implicite-obsolète
+:END:
+Historiquement les fonctions entre deux tables étaient réalisés de cette
+façon :
+
+#+begin_src sql
+SELECT * FROM tableA, tableB --sélection des tables étudiées 
+WHERE tableA.d1 = tableB.d1 --définition de la jointure entre les deux tables
+#+end_src
+
+Si nous nous intéressons à plusieurs tables en même temps, on utilisera
+un AND pour continuer à décrire les jointures
+
+#+begin_src sql
+SELECT * FROM tableA, tableB, tableC --sélection des tables étudiées 
+WHERE tableA.d1 = tableB.d1 --définition de la jointure entre les deux tables 
+AND tableB.c2 = tableC.c2
+#+end_src
+
+**** INNER JOIN
+:PROPERTIES:
+:CUSTOM_ID: inner-join
+:END:
+Pour réaliser une équijointure on utilisera la fonction *JOIN*
+
+Par défaut, cela réalisera un *INNER JOIN*
+
+#+begin_src sql
+SELECT * 
+FROM tableA 
+JOIN tableB --appel la seconde table    
+ON tableA.d1 = tableB.d1 --explique la jointure entre les deux tables
+#+end_src
+
+A ce moment, les résultats de la requête n'inclurons que les données qui
+vérifieront la condition *ON*
+
+#+caption: Illustration de la fonction =INNER JOIN=
+[[file:SQL%204f64fa1f87634b8cb29ce0b90225b2c3/inner-join_1678087229498_0.webp]]
+
+Illustration de la fonction =INNER JOIN=
+
+**** LEFT JOIN
+:PROPERTIES:
+:CUSTOM_ID: left-join
+:END:
+#+begin_src sql
+SELECT * 
+FROM tableA --Left table 
+LEFT JOIN tableB --Right table  
+ON tableA.d1 = tableB.d1 --explique la jointure entre les deux tables
+#+end_src
+
+Permet de récupérer les données de la table de droite que lorsqu'il y a
+une correspondance avec la table de gauche au niveau de la jointure.
+
+#+caption: left-join_1678087278034_0.webp
+[[file:SQL%204f64fa1f87634b8cb29ce0b90225b2c3/left-join_1678087278034_0.webp]]
+
+**** CROSS JOIN
+:PROPERTIES:
+:CUSTOM_ID: cross-join
+:END:
+Permet de lister tous les éléments de deux tables sans faire
+d'association sur une colonne.
+
+#+begin_src sql
+SELECT * 
+FROM tableA 
+CROSS JOIN tableB;
+#+end_src
+
+Cela va créer une table avec toutes les possibilités d'associations
+possibles
+
+![[../Images/CROSSJOIN.jpg]]
+
+*** UNION
+:PROPERTIES:
+:CUSTOM_ID: union
+:END:
+Permet de faire deux requêtes successives et de les afficher l'unes sur
+l'autre
+
+#+begin_src sql
+SELECT * 
+FROM tableA 
+UNION 
+SELECT * 
+FROM tableB;
+#+end_src
+
+RESTRICTIONS :
+
+- Les tables doivent avoir le même nombre de colonnes.
+- Les colonnes doivent avoir les mêmes types de données, dans le même
+  ordre que la première table.
+
+*** WITH
+:PROPERTIES:
+:CUSTOM_ID: with
+:END:
+Permet de créer une table temporaire avec une première requête, puis de
+l'associer à une deuxième.
+
+#+begin_src sql
+WITH table_temporaire AS (
+SELECT ...
+FROM ...
+...
+...
+)
+SELECT *
+FROM table_temporaire
+JOIN la_deuxieme_table
+ON ____ = ____ ;
+-- Voir INNER JOIN pour la jointure
+#+end_src
+
+*** WHERE
+:PROPERTIES:
+:CUSTOM_ID: where
+:END:
+
+#+begin_quote
+pour expliquer les particularités des lignes recherchées
+
+#+end_quote
+
+Il existe différentes conditions utilisables dans un WHERE, ce sont les
+*prédicats*
+
+**** *AND*
+:PROPERTIES:
+:CUSTOM_ID: and
+:END:
+
+#+begin_quote
+pour ajouter des conditions à vérifier
+
+#+end_quote
+
+On peut ajouter autant de condition avec *AND*. De ce fait on ajoutera
+des condition qui devront toutes êtres vérifiées.
+
+#+begin_src sql
+WHERE name = "Bob" 
+AND age > 36
+#+end_src
+
+![[../Images/SQL - AND.png]]
+
+**** OR
+:PROPERTIES:
+:CUSTOM_ID: or
+:END:
+
+#+begin_quote
+pour ajouter d'autres possibilités de vérifications
+
+#+end_quote
+
+On peut aussi utiliser la condition *OR*. Dans ce cas on vérifiera que
+l'une ou l'autre des condition est juste
+
+#+begin_src sql
+WHERE name = "Bob" OR age > 36
+#+end_src
+
+![[../Images/SQL - OR.png]]
+
+*** BETWEEN
+:PROPERTIES:
+:CUSTOM_ID: between
+:END:
+
+#+begin_quote
+pour délimiter des étendues (ou intervalles)
+
+#+end_quote
+
+#+begin_src sql
+WHERE num BETWEEN(20 AND 50) --inclusif 
+
+--Il est possible de réaliser une recherche entre deux lettres de l'alphabet 
+WHERE txt BETWEEN('A' AND 'D') 
+--renverra toutes les valeurs entre A et D mais pas commençant par une lettre entre A et D. 
+
+--Si vous souhaitez toutes les valeurs commençant par A jusqu'à D il faudra demander : 
+WHERE txt BETWEEN('A' AND 'E') 
+--si vous possédez une entrée txt = 'e' alors elle apparaitra également dans la liste
+#+end_src
+
+Note : Il est possible de réaliser une recherche entre deux lettres de
+l'alphabet
+
+*** IN
+:PROPERTIES:
+:CUSTOM_ID: in
+:END:
+
+#+begin_quote
+pour vérifier l'appartenance à un ensemble de valeur
+
+#+end_quote
+
+Il permet de définir une liste de valeurs attendue et de vérifier si une
+de ces valeurs apparait dans la liste d'élément requêté.
+
+#+begin_src sql
+WHERE color IN("rouge","vert","jaune")
+#+end_src
+
+Lorsque cette liste de valeur est connue et fixe, le *IN* peut être
+remplacé par une suite d'opérateurs logiques *OR*.
+
+#+begin_src sql
+WHERE color = "rouge" OR color = "vert"
+#+end_src
+
+Il est également possible de réaliser une requête qui retirera les
+résultats s'ils sont définis dans une liste en utilisant la fonction
+inverse du *IN* qui est simplement *NOT IN*
+
+#+begin_src sql
+WHERE color NOT IN("rouge","vert")
+#+end_src
+
+*** NULL
+:PROPERTIES:
+:CUSTOM_ID: null
+:END:
+
+#+begin_quote
+pour cibler les valeurs nulles ou non nulles
+
+#+end_quote
+
+Un attribut peut avoir la valeur "NULL" soit en raison d'information
+incomplète (la valeur n'était pas connue au moment de la saisie des
+données, ex : numéro de téléphone) soit parce que la donnée n'est pas
+pertinente.
+
+La valeur "NULL" est différente de la valeur par défaut de l'attribut :
+zéro pour un attribut de type numérique et espace pour un attribut de
+type caractère.
+
+#+begin_src sql
+WHERE color IS NULL 
+WHERE color IS NOT NULL
+#+end_src
+
+*** LIKE
+:PROPERTIES:
+:CUSTOM_ID: like
+:END:
+
+#+begin_quote
+pour faire des recherches approximatives
+
+#+end_quote
+
+A ce moment on introduit des caractères remplaçables lors de la
+recherche, ce sont les Jokers :
+
+#+begin_src sql
+WHERE nom_client = "Alice" --nom_client strictement égal à Alice 
+WHERE nom_client like "Al?ce" --le ? remplace n'importe quelle lettre
+#+end_src
+
+Ces Jokers changent en fonction du système de gestion de base de données
+que vous utilisez. Voici quelques exemples :
+
+|                                                         | MS Access | SQL Server | Exemple                                 |
+|---------------------------------------------------------+-----------+------------+-----------------------------------------|
+| Remplace zéro ou plusieurs caractères                   | *         | %          | Bl* : Black, Blue, Brown                |
+| Remplace un seul caractère                              | ?         | _          | h?t : hat, hit, hot                     |
+| Remplace par des caractères sélectionnés                | [ ]       | [ ]        | h[ao]t : hat, hot                       |
+| Remplace par des caractères non sélectionnés            | [!]       | [^]        | h[!ao]t : hit                           |
+| Remplace par des caractères dans une plage de sélection | [ - ]     | [ - ]      | h[a-m]t : hat, hit                      |
+| Remplace un caractère numérique                         | #         |            | 1# : 11, 12, 13, 14, 15, 16, 17, 18, 19 |
+
+Note : *LIKE* n'est pas sensible à la casse, c'est à dire qu'il
+considère que "A" et "a" sont identiques.
+
+En utilisant *NOT LIKE*, on obtient l'inverse des deux exemples
+précédents.
+
+#+begin_src sql
+WHERE nom_client NOT LIKE "*manu*"
+#+end_src
+
+- La comparaison : utilisation des opérateurs *<, >, =*
+
+#+begin_src sql
+--Comparaison 
+WHERE length = 100 --Egal 
+WHERE length != 100 --Non-égal 
+WHERE length > 100 --Superieur 
+WHERE length < 100 --Inférieur 
+WHERE length >= 100 --Supérieur ou égal 
+WHERE length <= 100 --Inférieur ou égal
+#+end_src
+
+- Opérations mathématiques comme condition à respecter
+
+#+begin_src sql
+--Produits dont le prix TTC est superieur à 1000 :
+WHERE prix_HT + prix_HT * 0.2 > 1000
+#+end_src
+
+*** GROUP BY
+:PROPERTIES:
+:CUSTOM_ID: group-by
+:END:
+
+#+begin_quote
+pour regrouper les résultats selon une même valeur de colonne
+
+#+end_quote
+
+Il s'agit d'une fonction d'agrégation. C'est à dire qu'elle va regrouper
+tous les résultats correspondant à son instruction.
+
+On peut l'utiliser lorsque l'on souhaite connaitre le nombre
+d'occurrence dans notre base de donné répondant à une certaine
+condition.
+
+Elle est utilisée en collaboration avec l'instruction SELECT pour
+organiser des données identiques en groupes :
+
+#+begin_src sql
+--Lister les couleurs et compter le nombre d'occurrence associées :
+SELECT articleColor, COUNT(articleName) 
+FROM Articles 
+GROUP BY articleColor;
+#+end_src
+
+*GROUP BY* doit être écris après les *WHERE* mais avant *ORDER BY* et
+*LIMIT*
+
+On peut indiqué le numéro de la colonne sélectionnée à *GROUP BY* plutot
+que de lui réécrire son nom. La requête précédente devient alors :
+
+#+begin_src sql
+SELECT articleColor, COUNT(articleName) 
+FROM Articles 
+GROUP BY 1; 
+--1 fait référence à la première colonne sélectionnée dans le SELECT
+#+end_src
+
+Si l'on souhaite regrouper les résultats suivant plusieurs facteurs on
+listera les conditions les unes à la suite des autres
+
+#+begin_src sql
+SELECT articleColor, articleType, articleMaterial, COUNT(articleName) 
+FROM Articles 
+GROUP BY 1, 2, 3; 
+--Regroupera les résultats par couleurs puis par type puis par matériau
+#+end_src
+
+*** HAVING
+:PROPERTIES:
+:CUSTOM_ID: having
+:END:
+
+#+begin_quote
+pour expliqués les particularités des groupes recherché
+
+#+end_quote
+
+Cette clause permet de préciser les résultats attendus au niveau d'un
+groupe.
+
+Par exemple : Regrouper des articles par couleurs et ne garder que le
+groupe de couleur "vert" :
+
+#+begin_src sql
+SELECT articleName 
+FROM Articles 
+GROUP BY articleColor 
+HAVING articleColor = "vert";
+#+end_src
+
+*HAVING* doit être décris après *GROUP BY* mais avant *ORDER BY* et
+*LIMIT* ### ORDER BY > pour organiser les résultats obtenus
+
+Cette fonction permet d'organiser les résultats de la requête en
+fonction des données de certains attributs (en fonction d'une colonne)
+
+#+begin_src sql
+ORDER BY tableA.value ASC --Organisation croissante 
+ORDER BY tableB.value DESC --Organisation décroissante
+#+end_src
+
+*** LIMIT
+:PROPERTIES:
+:CUSTOM_ID: limit
+:END:
+
+#+begin_quote
+pour définir un nombre maximum de résultat
+
+#+end_quote
+
+Cette fonction permet de définir un nombre maximum de résultat. Cela est
+très pratique pour faire des essais sans retourner l'intégralité de la
+base de donnée.
+
+#+begin_src sql
+SELECT articleName 
+FROM Articles 
+LIMIT 10;
+#+end_src
+
+On peut imaginer réaliser un top 3 des articles les plus vendus
+
+#+begin_src sql
+SELECT * 
+FROM Articles 
+ORDER BY qttVendu DESC 
+LIMIT 3;
+#+end_src
+
+** Gestion des droits d'accès
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-droits-daccès
+:END:
+*** GRANT
+:PROPERTIES:
+:CUSTOM_ID: grant
+:END:
+
+#+begin_quote
+pour allouer un droit d'accès
+
+#+end_quote
+
+*** REVOKE
+:PROPERTIES:
+:CUSTOM_ID: revoke
+:END:
+
+#+begin_quote
+pour retirer un droit d'accès
+
+#+end_quote
+
+** Gestion des transactions
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-transactions
+:END:
+*** COMMIT
+:PROPERTIES:
+:CUSTOM_ID: commit
+:END:
+*** ROLLBACK
+:PROPERTIES:
+:CUSTOM_ID: rollback
+:END:

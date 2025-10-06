@@ -1,0 +1,74 @@
+* FRONTMATTER
+# la carte grise du programme
+UUID : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+AUTHORS : Cyprien Pierre, Alice, Bob.
+LICENSE : MIT
+
+TYPE : CRON frequency ; Background worker
+       BATCH schedule
+       EVENT on channel
+       DICTIONARY define onthology, semantics, i18n etc. using tables
+       DATASET usign properties drawers in a JSON like style
+       
+* RECIPE
+# comment le récupérer, l'assembler, le compilier
+
+DATABASE : http://database.adress
+
+* REQUIREMENTS
+# Behavior and constraints part
+** EXPECTATIONS
+# Scénario, Règle...
+FEATURE:
+  RULE:
+  SCENARIO:
+  EXAMPLE:
+  - GIVEN
+    - WHEN 
+    - AND
+    - THEN MUST
+    - AND SHOULD
+    - AND CAN.
+
+** CONSTRAINTS
+  LOAD:
+    - NFC15-100
+    - ISO9001
+    - AQ84
+
+** DEFINITIONS
+
+** TESTS
+
+* PROGRAM
+# le programme en lui-même
+** DEPENDANCIES
+LOAD : a, b, c, d.
+
+** PROCEDURE
+  DEFINE function-async AS:
+    - IF condition IS valid DO:
+      - OPERATION-A,
+      - OPERATION-B,
+      - OPERATION-C.
+    - EXPOSE: RESULT, STATE, DURATION.
+    # ASYNC
+
+  DEFINE function-sync AS:
+    - DO:
+        1. OPERATION-1,
+        2. OPERATION-2,
+        3. PUBLISH RESULT.
+        # SYNC
+    - EXPOSE: RESULT, STATE, DURATION.
+  
+  DEFINE function-get AS:
+    1. SELECT ALL FROM table WHERE condition.
+    2. EXPOSE: RESULTS.
+
+  DEFINE integer AS :
+    - ALLOCATE MEMORY ...
+
+  DEFINE data-unit AS :
+    - TYPE integer LIMIT 3 DIGIT WITH UNIT year IF age IS 1 ELSE years.

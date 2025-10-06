@@ -1,0 +1,28 @@
+#+begin_quote
+[!Info] l'avant-propos, écrit nécessairement par l'auteur du texte,
+décrit les circonstances dans lesquelles il a été écrit. De fait, on a
+également deux sortes d'avant-propos.  
+- De quoi parle son travail et dans quel cadre. 
+- Pourquoi il a choisi ce sujet d'études. 
+- Qu'est-ce qui en fait l'intérêt. 
+- Quelles ont été les difficultés rencontrées.
+#+end_quote
+
+Après avoir passé ces dix dernières années à me demander %%insérer ici les axes de réflexions%% ou encore comment %%petite touche d'humour%%
+
+Je me suis alors mis en tête de rédiger un petit guide de transformation numérique des dinosaures de la construction... Bon, ce sujet étant bien trop ambitieux pour moi, j'ai finalement préféré me concentrer sur ce que j'apprécie le plus : L'optimisation des processus.
+
+Cet ouvrage vise alors à fournir des outils et des recommandations permettant de définir et améliorer la performance opérationnelle d'une entreprise d'ingénierie en mettant l'information et l'humain au cœur du sujet.
+
+Si vous êtes MOA, AMO, MOE, Entreprise générale ou n'importe quel autre acteur de la construction, je vous invite à parcourir la suite de ce livre. Il vous permettra à la fois de prendre connaissance des enjeux globaux liés au numérique dans notre profession et vous donnera également des pistes pour vous aider à suivre cette transformation.
+
+(Business, Entreprise, Customer non traités ici) ==Dans ce livre, je vais me concentrer sur l'amélioration des processus. Mais attention, ce n'est pas parce que l'on s'intéresse uniquement au processus que l'on peut s'affranchir des autres voies.
+
+Tout processus se doit d'être adapté aux enjeux stratégiques que sont :
+- Fournir un produit de qualité,
+- Valoriser les collaborateurs,
+- Etre rentable.
+
+Ces paramètres sont intégrés aux étapes clés de la démarche.
+
+L'enjeux est d'améliorer les aspects opérationnels et non pas les aspects de ressources humaines, de business ou de relation client. Ces activités concernent d'autres périmètres.

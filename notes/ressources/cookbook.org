@@ -1,0 +1,91 @@
+Recette @recepie : programation déclarative pure : liste des fonctions à utiliser pour atteindre un objectif
+
+Fonction @function : programmation fonctionnelle pure : décrit les transformation à réaliser sur un objet
+
+Réaction @reaction : programation réactive : décrit les réactions du système (void) à un programme
+
+Aspect @aspect : programmation par aspect : défini les environnements d'execution des programmes
+
+Contrat @contract : défini les obligations et garanties d'un programme
+
+Contrainte @constraint : programmation par contrainte : spécifie les conditions de succès (rédaction de tests)
+
+
+Logique @logic : Modélisation des données
+
+Flux @flux : Gestion des données
+
+---
+* Programmation déclarative
+
+@recepie Crêpes au froment
+
+
+	@function Mélanger(farine, sel, sucre)
+	@function Ajouter(mélange, œufs)
+	@function Incorporer(mélange, lait)
+	@function Ajouter(mélange, beurre fondu)
+	@function Laisser reposer(pâte, 1 heure)
+	@function Cuire(pâte, poêle chaude)
+
+---
+
+@function Mélanger(ingrédients_secs)
+
+    Combiner les ingrédients secs dans un bol
+    Mélanger jusqu'à obtention d'une répartition uniforme
+
+@function Ajouter(mélange, ingrédient)
+
+    Incorporer l'ingrédient au mélange existant
+    Remuer jusqu'à homogénéité
+
+@function Incorporer(mélange, liquide)
+
+    Verser progressivement le liquide dans le mélange
+    Fouetter continuellement pour éviter les grumeaux
+
+@function Laisser reposer(pâte, durée)
+
+    Couvrir le bol contenant la pâte
+    Attendre la durée spécifiée
+
+@function Cuire(pâte, surface)
+
+    Verser une louche de pâte sur la surface chaude
+    Étaler en tournant la poêle
+    Cuire jusqu'à ce que les bords se détachent
+    Retourner et cuire l'autre face
+
+@reaction Cuisson
+
+    Si la crêpe commence à fumer, retourner immédiatement
+    Si les bords brunissent trop vite, réduire la chaleur
+
+@aspect Environnement de cuisson
+
+    Surface de cuisson : poêle antiadhésive ou crêpière
+    Température : moyenne à élevée
+    Ustensiles : louche, spatule
+
+@contract Résultat final
+
+    La pâte doit être lisse et sans grumeaux
+    Les crêpes doivent être fines et dorées
+    Le goût doit être légèrement sucré
+
+@constraint Tests de réussite
+
+    La pâte coule facilement de la louche
+    La crêpe se détache facilement de la poêle
+    La texture est souple et non caoutchouteuse
+
+@flow Processus de préparation
+Ingrédients secs -> Mélange sec -> Ajout œufs -> Incorporation lait ->
+Ajout beurre -> Repos -> Cuisson -> Crêpe prête
+
+@rule Logique de cuisson
+
+    Si la pâte est trop épaisse, ajouter du lait
+    Si la pâte est trop liquide, ajouter de la farine
+    Si la crêpe colle, augmenter la quantité de beurre dans la poêle

@@ -1,0 +1,169 @@
+- Format de fichier combinant un STEP portant les données géométriques
+  et un ensemble de fichier XML portant les données alphanumériques des
+  éléments d'un projet.
+- Le schéma IFC propose des attributs pour accueillir les paramètres et
+  leurs valeurs, ainsi qu'un système de classification
+- Ces derniers étant simple à comprendre car écris en langage humain,
+  ils sont plus facile à intégrer. Une bonne stratégie serait de
+  paramétrer les valeurs d'exports IFC de chaque élément et d'utiliser
+  ces valeurs pour appeler les valeurs des autres systèmes de
+  classification.
+- Une fois cette démarche mise en œuvre, l'utilisation du standard IFC
+  devient intéressant uniquement pour ses schémas de données.
+- Les schémas de données IFC peuvent être utilisés et maintenus lors de
+  l'export dans un autre format ou l'intégration avec une base de
+  donnée.
+- Le problème encore actuel des IFC vient du fait qu'on procède à une
+  double conversion, celle du logiciel qui exporte puis celle du
+  logiciel qui importe. Ces conversions font augmenter les risques
+  d'erreurs, et les échanges doivent être vérifiés (manuellement ou à
+  l'aide d'applications telles Simplebim ou Solibri Model Checker).
+- IfcType
+- Pset
+
+* Parenthèse introductive sur l'IFC
+:PROPERTIES:
+:CUSTOM_ID: parenthèse-introductive-sur-lifc
+:END:
+IFC signifie « Industry Foundation Classes ». Il s'agit du langage
+orienté « objets » pouréchanger et partager des informations entre
+logiciels. Ce format de fichier est ouvert et a pour but d'assurer
+l'interopérabilité entre les outils métiers. On peut le comparer au PDF
+du BIM en quelques sortes. Dans une démarche de normalisation du BIM, le
+format IFC 2x3 est spécifié dans la norme ISO 10303-21. En 2013, la
+version 4 des IFC (IFC4) a été publiée par l'ISO 16739:2013.
+
+* L'IFC : vecteur de l'Open BIM
+:PROPERTIES:
+:CUSTOM_ID: lifc-vecteur-de-lopen-bim
+:END:
+L'openBIM assure un flux de données « libre et ouvert », permettant à
+n'importe quel acteur du projet de participer à l'opération, quels que
+soient les outils logiciels 3D qu'il utilise
+
+Il fournit des données durables pour une utilisation tout au long du
+cycle de vie des actifs, évitant les erreurs consécutives aux multiples
+ressaisies, et permet d'intégrer des données-produits directement dans
+le BIM
+
+L'openBIM permet également à tout éditeur de logiciel (petit ou
+grand) de proposer des solutions BIM en implémentant la norme d'échanges
+ISO-IFC permettant l'interopérabilité entre logiciels.
+
+C'est l'association BuildingSMART International qui est à l'initiative
+de l'open BIM.
+
+* L'association BuildingSMART
+:PROPERTIES:
+:CUSTOM_ID: lassociation-buildingsmart
+:END:
+1995 : Autodesk réunit 12 entreprises pour prouver les bénéfices de
+l'interopérabilité entre logiciels
+
+Au bout d'un an, les membres de cette alliance privée arrivent aux
+conclusions suivantes :
+
+- L'interopérabilité est viable et le potentiel commercial élevé
+- Les standards ne doivent pas être privés ou propriétaires mais ouverts
+  et internationaux
+- L'Alliance doit s'ouvrir aux autres
+
+Mai 1996 : création de l'IAI, Alliance Internationale pour
+l'Interopérabilité
+
+Janvier 2008 : l'IAI devient BuildingSMART.
+
+*BuildingSMART International* ou BSI regroupe, dans 24 pays, près de 500
+membres, tous professionnels du secteur de la construction. Sa mission
+fondamentale: « soutenir une amélioration qualitative, économique et
+environnementale de l'industrie de la construction via un meilleur
+partage de l'information, basé sur des normes internationales ouvertes
+». Le principal résultat des travaux réalisés par cette association
+internationale est la création et le développement des IFC. Les membres
+de BuildingSMART sont regroupés dans 18 chapitres, définis en fonction
+de leur langue ou de leur proximité géographique.
+
+Le chapitre francophone des travaux de BuildingSMART est géré depuis 18
+ans par l'association Mediaconstruct. L'association loi 1901 existe
+depuis 1989.
+
+* Zoom sur les MVD
+:PROPERTIES:
+:CUSTOM_ID: zoom-sur-les-mvd
+:END:
+*Model View Definition (MVD) :* Définit un sous-ensemble du schéma IFC
+nécessaire à l'échange de modèles. Le choix d'une MVD en particulier à
+un impact sur les informations contenues dans le fichier exporté en IFC.
+
+Le MVD est une vue filtrée qui permet aux utilisateurs d'exporter des
+packages spécifiques des informations issues du modèle pour répondre à
+une utilisation particulière.
+
+La fonction du MVD est de prendre en charge un scénario d'échange de
+données et de fournir une approche optimale pour que le logiciel
+interprète les bonnes informations IFC.
+
+C'est un filtre de la maquette numérique.
+
+*COORDINATION VIEW 2.0* : Cette vue a été conçue pour coordonner les
+trois modèles principaux de la conception d'un projet : le modèle
+architectural, le modèle structurel et le modèle fluides.
+
+Elle contient les définitions des éléments structurels, architecturaux
+et fluides qui sont nécessaires pour coordonner la conception entre ces
+trois disciplines.
+
+* De l'IFC 2x3 à l'IFC 4
+:PROPERTIES:
+:CUSTOM_ID: de-lifc-2x3-à-lifc-4
+:END:
+Le passage de la version IFC 2x3 à la version IFC 4 a permit l'ajout de
+113 nouvelles classes, ce qui porte le nombre de classes de 653 à 766.
+
+Les principales évolutions entre la version 2x3 et 4 des IFC sont les
+suivantes :
+
+- Ajout de 113 classes d'objet,
+- Interopérabilité entre BIM et SIG (Système d'Information
+  Géographique),
+- Extension des IFC au domaine de l'infrastructure pour le BTP.
+- Réduction des divergences d'interprétation des modèles.
+- Ajouts de nouvelles propriétés.
+- Amélioration du traitement de l'analyse énergétique.
+- Possibilité de modéliser des formes plus complexes.
+
+[[https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD1/HTML/]]
+
+* Les MVD de l'IFC 4
+:PROPERTIES:
+:CUSTOM_ID: les-mvd-de-lifc-4
+:END:
+La norme IFC4 prévoit deux MVD principales (Source : bimstandards) :
+
+- *Reference View 1.0 :* cette vue est plutôt destinée à des flux
+  d'échange unidirectionnels, l'émetteur du fichier restant propriétaire
+  du modèle. Elle garantit la cohérence géométrique du modèle et les
+  quantités de base, et en contrepartie, il n'est pas forcément possible
+  de récupérer ou modifier les objets de la maquette.
+- *Design Transfer View 1.0 :* cette vue conserve au maximum le
+  caractère éditable des objets IFC, elle permet donc d'intervenir à
+  posteriori sur le modèle et donne la possibilité d'ajouter, supprimer,
+  modifier ou extraire des éléments. La propriété du modèle peut être
+  transférée.
+
+* La certification IFC
+:PROPERTIES:
+:CUSTOM_ID: la-certification-ifc
+:END:
+Validation pour la mise en œuvre de normes et de solutions basées sur
+les classes de base de l'industrie (IFC). Ce service aide les éditeurs
+de logiciels à garantir que les échanges de données IFC sont cohérents
+et de qualité fiable.
+
+*Plateforme B-Cert :* Programme de certification logicielle dont
+l'objectif est de fournir des instructions de test, des outils de test
+automatisés et des fichiers de calibrage, afin d'aider à examiner,
+évaluer et documenter la qualité des interfaces d'importation et
+d'exportation IFC de divers logiciels.
+
+[[https://www.buildingsmart.org/compliance/software-certification/certified-software/]]

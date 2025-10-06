@@ -1,0 +1,94 @@
+Objectif : Planifier les activités
+
+#+begin_quote
+/« Work expands so as to fill the time available for its completion.
+General recognition of this fact is shown in the proverbial phrase: It
+is the busiest man who has time to spare »/ *C. Northcote Parkinson*
+
+#+end_quote
+
+Traduisible par : /« Le travail s'étend de manière à remplir le temps
+disponible pour son achèvement. La connaissance générale de ce fait est
+illustrée par la phrase proverbiale suivante : « C'est l'homme le plus
+occupé qui a du temps à perdre » »/
+
+à partir de trois éléments : 1. Le comportement des gaz, appliqué au
+travail : cet élément permet à C. N. Parkinson d'affirmer que « le
+travail étant extensible, il n'y a pas (ou très peu) de relation entre
+un travail donné et la taille de l'équipe qui en est chargée ». 2. Les
+deux forces qui dictent le comportement des bureaucrates, et que la
+longue expérience de C. N. Parkinson dans l'administration lui permet de
+mettre en évidence : 1. « un bureaucrate entend multiplier ses
+subordonnés, pas ses rivaux » : il a une tendance à diviser le travail
+pour éviter d'être remis en cause par l'un de ses collaborateurs. Il
+crée ainsi des besoins de coordination interne, qui entraînent une
+charge de travail supplémentaire, puis l'embauche de collaborateurs
+supplémentaires. On construit ainsi un système « autarcique » qui va
+consommer, de manière endogène, une part croissante de l'énergie
+disponible, conduisant à la deuxième force : 2. « les bureaucrates se
+créent mutuellement du travail. » Plus il y a de bureaucrates, plus les
+demandes d'approbation qu'ils se communiquent mutuellement, ou tâches
+comparables, les occupent, de sorte que le travail accompli d'un point
+de vue extérieur par l'administration dans son ensemble n'augmente
+pas. 3. Son analyse des évolutions des employés de deux ministères
+britanniques (Marine et Affaires coloniales), qui met en évidence une
+progression constante de leur nombre malgré une importante diminution
+des attributions de ces ministères. Ce dernier élément peut également
+être considéré comme une validation expérimentale.
+
+À partir de ces trois éléments, C. N. Parkinson construit sa loi,
+donnant le taux d'augmentation des effectifs d'une administration
+quelconque, qu'il énonce ainsi (en page 12 de l'édition originale) : 
+
+#+begin_quote
+« it now becomes possible to state Parkinson's Law in mathematical form:
+In any public administrative department not actually at war, the staff
+increase may be expected to follow this formula : » 
+
+#+end_quote
+
+Ici, une formule mathématique : 
+[[https://wikimedia.org/api/rest_v1/media/math/render/svg/d2e874cb0fd019282b2938d4a2f6c900e3fcda29]] 
+
+#+begin_quote
+« ... This figure will invariably prove to be between 5.17 per cent and
+6.56 per cent, irrespective of any variation of the amount of work (if
+any) to be done. » 
+
+#+end_quote
+
+Une version française possible est :  /« il devient désormais possible
+de présenter la loi de Parkinson sous une forme mathématique simple :
+dans une administration publique qui n'est pas engagée directement dans
+des actions de guerre, l'augmentation des effectifs peut être définie
+par la formule suivante : (ici, la même formule mathématique que
+précédemment). Cette valeur sera toujours comprise entre 5,17 % et
+6,56 %, indépendamment de toute variation de la quantité du travail
+(éventuel) à effectuer »./
+
+Les facteurs intervenant dans la formule sont : - x : le nombre de
+nouveaux embauchés chaque année, - k : le nombre de personnes qui
+recherchent une promotion via la nomination de subordonnés, - m :
+(exposant de k) le nombre d'heures de travail consacrées à répondre à
+des notes internes du Service, - a : le nombre d'années entre l'âge
+d'affectation au poste et l'âge de la retraite, - y : le total de
+bureaucrates de l'année précédente, - n : le nombre de nouveaux
+bureaucrates nécessaires par an.
+
+La loi de Parkinson est donc la loi qui prédit l'augmentation
+inéluctable des bureaucrates avec un taux d'environ 6 % par an,
+indépendamment de la quantité de travail à fournir ou même de sa simple
+légitimité. Elle est également appelée « Loi de la pyramide sans fin »
+et a conduit à des expressions comme « développement parkinsonien des
+administrations ». C. Northcote Parkinson a ainsi mis en évidence une
+maladie fondamentale des bureaucraties administratives.
+
+Dans son livre /Parkinson's Law And Other Studies In Administration/, C.
+N. Parkinson propose également deux autres lois :
+
+- la [[https://fr.wikipedia.org/wiki/Loi_de_futilit%C3%A9_de_Parkinson][loi de futilité]] : dans un comité financier, plus le budget discuté est
+  important, moins on y passe de temps, et inversement ;
+- le coefficient d'inefficacité : il définit le nombre critique des
+  membres d'un cabinet ou conseil des ministres, nombre à partir duquel
+  ce cabinet ministériel devient inefficace. Ce chiffre est toujours
+  compris entre 19,2 et 22,4.

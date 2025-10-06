@@ -1,0 +1,14 @@
+#+begin_quote
+/La simplicité est la sophistication suprême./ -- Léonard De Vinci
+#+end_quote
+
+#+begin_quote
+An idiot admires complexity, while a genius appreciates simplicity -- Terry Davis
+
+#+end_quote
+
+#+begin_quote
+/Dans un monde plus ouvert qu'il n'a jamais été, notre Société traverse une nouvelle mutation en passant de l'économie industrielle à l'économie du service et de la connaissance. -- Urban-Galindo, Cycle de vie des Produits et Gestion de Configuration. [En ligne] 2008.
+https://www.plmlab.fr/public/jjug/a61206%20UGC%20Gest_Conf_PLN_v0_97.pdf
+
+#+end_quote

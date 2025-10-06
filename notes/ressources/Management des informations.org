@@ -1,0 +1,585 @@
+/De l'ingénierie orienté documents à l'ingénierie orienté données -
+Application de la modélisation d'information en conception de systèmes
+complexes/
+
+Notes : intégrer la gestion de la connaissance au reste des sections
+(eg. roles des acteurs, modifications de processus, outils, routines
+etc.) Chapitre enjeux de la maitrise des informations
+
+--------------
+
+* Gestion des informations
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-informations
+:END:
+** Axe stratégique
+:PROPERTIES:
+:CUSTOM_ID: axe-stratégique
+:END:
+/De la donnée à l'émotion/
+
+** Cycle de vie des informations
+:PROPERTIES:
+:CUSTOM_ID: cycle-de-vie-des-informations
+:END:
+![[../Drawings/Processus BIM_DataModeling_V-Cycle.svg]] /Repérage des
+temporalités projets de l'utilisation de l'information/
+
+Le schéma précédent peut être rapproché d'un cycle en V utilisé en
+développement informatique.
+
+** Centralisation des informations
+:PROPERTIES:
+:CUSTOM_ID: centralisation-des-informations
+:END:
+Objectif = améliorer la collaboration et réduire les erreurs
+d'interprétations
+
+![[../Drawings/NiveauxDeCollaboration.svg]]
+
+** Besoin d'informations
+:PROPERTIES:
+:CUSTOM_ID: besoin-dinformations
+:END:
+Les maquettes numériques réalisées assurent un support fiable et unifié
+des informations de nos projets. Elles permettent de simplifier et
+d'harmoniser les échanges entre les différents intervenants du projet,
+augmentant l'efficacité des opérations de conception, de coordination et
+de synthèse.
+
+L'harmonisation des informations au sein de la maquette numérique permet
+à l'ensemble des parties prenantes du projet de disposer d'une source
+d'information commune, fiable et uniforme. Cela favorise la
+compréhension du modèle, réduit les risques d'incohérences et améliore
+les échanges entre les acteurs.
+
+Le niveau d'information est évalué pour répondre spécifiquement aux
+besoins liés aux métiers de la structure. Conformément à l'*ISO
+17412-1*, les informations renseignées dans la maquette numérique se
+limitent strictement à celles nécessaires pour répondre aux besoins
+identifiés.
+
+Tout ajout d'information ne répondant pas à une prérogative clairement
+exprimée dans le Cahier Des Charges BIM du projet ou dans le Protocole
+BIM de l'entreprise résulte en une dégradation globale des performances
+du modèle et est donc proscrit.
+
+Créer un modèle numérique unifié réduit considérablement le temps de
+traitement et garantit un travail cohérent et de haute qualité. Il
+permet de ne gérer qu'un seul fichier plutôt qu'un nombre indéfini.
+Cette approche simplifie grandement la phase de définition des
+livrables.
+
+Il permet également de focaliser nos réflexions sur ce que doit intégrer
+la maquette numérique pour augmenter la valeur ajoutée qu'elle apporte
+au projet et au client. Livrer une maquette unifiée à notre client lui
+apporte tous les avantages précités et simplifie également sa gestion
+d'actif numérique.
+
+Les modalités liées aux informations du processus interne de
+l'entreprise sont précisées dans la charte BIM.
+
+Les modalités liées aux informations spécifiques aux projets sont
+précisées dans les PEB.
+
+** Maitrise des paramètres
+:PROPERTIES:
+:CUSTOM_ID: maitrise-des-paramètres
+:END:
+La cellule BIM évite, autant que possible, d'utiliser des objets
+provenant de catalogues fournisseurs. Ces derniers sont enrichis de
+données généralement non-nécessaires, difficiles à maintenir et ayant
+des niveaux de détails graphiques trop important. Leurs utilisations
+engendrent une dégradation générale des performances des maquettes
+numériques.
+
+Cette approche permet également une gestion simplifiée et maitrisée de
+notre catalogue d'objet.
+
+Les propriétés globales prévues par l'éditeur doivent être priorisés
+avant toute idée de création d'un paramètre partagé ou spécifique. Cela
+permet d'augmenter la performance du modèle d'information tout en
+réduisant sa complexité.
+
+Pour toute création de paramètre partagé, la cellule BIM veille à ce que
+le même identifiant de paramètre soit utilisé sur l'intégralité des
+modèles. Ainsi, les maquettes numériques ne se voient jamais constituées
+de plusieurs paramètres équivalents.
+
+Tout besoin d'ajout de paramètres spécifiques à un projet est évalué par
+le BIM Manager en collaboration avec le Coordinateur BIM du dit projet.
+
+Les modalités de gestion des paramètres liés au processus interne de
+l'entreprise sont précisées dans la charte BIM.
+
+Les modalités de gestion des paramètres spécifiques aux projets sont
+précisées dans le PEB.
+
+** Démarche de commissionnement
+:PROPERTIES:
+:CUSTOM_ID: démarche-de-commissionnement
+:END:
+En tant que membre du groupement *Smart Building Alliance* à travers
+Eiffage Energies Systèmes et en accord avec la /Charte d'utilisation du
+BIM/, l'entreprise a la volonté de rendre les maquettes numériques
+contractuelles. En effet, leurs constitutions permettent de vérifier
+l'atteinte des objectifs techniques et opérationnels des projets.
+
+Pour assurer la maintenabilité du processus BIM, l'entreprise choisis le
+format IFC comme fondement de sa démarche de commissionnement. Par sa
+nature intrinsèque, ce format d'échange, ouvert et normalisé par l'*ISO
+16739* répond pleinement aux exigences d'interopérabilité nécessaires à
+une collaboration et une gestion efficace sur toute la durée de vie de
+l'ouvrage.
+
+![[../Drawings/Processus BIM_FonctionnementIfc.svg]] /Usage du format
+IFC dans une démarche de commissionnement/
+
+L'entreprise a pour ambition de faire des maquettes IFC l'unique
+livrable BIM de la cellule BIM. De ce fait, les éléments extraits de nos
+maquettes numériques viennent annexer cette dernière et répondre à des
+prérogatives de production telles que la mise en œuvre sur le chantier
+ou encore l'approvisionnement en matériel.
+
+Les formats natifs portent des données sensibles, propres à
+l'entreprise. Ils relèvent de la propriété industrielle et n'ont pas à
+être divulgués à un tiers.
+
+Par contre, la propriété des données et objets modélisés et publiés au
+format IFC revient à notre client.
+
+Les systèmes de gestions des actifs numériques peuvent s'appuyer sur la
+classification *OmniClass* associée à nos objets BIM. Ce standard répond
+aux exigences définies par l'*ISO 12006-2*.
+
+De manière générale, les composants modélisés sont associés à la
+classification qui les décrivent le mieux, qu'il s'agisse de la
+catégorie IFC, du code OmniClass ou encore de la catégorie d'objet issue
+du logiciel de modélisation.
+
+Pour favoriser les échanges entre les interlocuteurs, l'entreprise
+adopte le format BCF. Ce standard du BIM, supporté par le consortium
+*buildingSmart International,* permet l'échange d'annotations
+contextualisées directement dans les maquettes numériques.
+
+L'ensemble de ces mesures permet de garantir la performance sur le long
+terme des maquettes numériques et de leurs informations. Il réduit la
+complexité du traitement des informations grâce à une approche
+standardisée.
+
+Notre processus de conception répond aux principales prérogatives
+d'interopérabilité.
+
+![[../InteropérabilitéRevit.svg]]
+
+/Environnement de travail interopérable/
+
+** Qualité des informations
+:PROPERTIES:
+:CUSTOM_ID: qualité-des-informations
+:END:
+*** Caractères spéciaux
+:PROPERTIES:
+:CUSTOM_ID: caractères-spéciaux
+:END:
+Pas d'accents ni de caractères spéciaux dans : - Noms des maquettes -
+Noms des familles - Noms des types - Noms des paramètres - Valeurs des
+informations
+
+Occasionne des erreurs lors des exports IFC
+
+#+begin_quote
+*Exemple* : « é » deviens �
+
+#+end_quote
+
+Vigilance sur le poids de la maquette numérique, renvois au standard de
+configuration
+
+*** Cycle de vie
+:PROPERTIES:
+:CUSTOM_ID: cycle-de-vie
+:END:
+** Sureté des données
+:PROPERTIES:
+:CUSTOM_ID: sureté-des-données
+:END:
+La cellule BIM porte une grande vigilance sur la sureté des informations
+qu'elle génère.
+
+Le transfert des maquettes numériques est réalisé soit :
+
+- Via le File Transfert Service (FTS), logiciel de transfert sécurisé de
+  fichier volumineux,
+- Par dépôt sur une plateforme expressément identifiée par le projet.
+
+Lorsque la nature du marché le requiert et en lien avec les
+prescriptions émises par l'OSE,
+
+Le transfert des maquettes numériques est réalisé de façon sécurisé au
+moyen de conteneur crypté ACID ou de conteneur chiffré ZED.
+
+L'environnement de production des maquettes numériques respecte à minima
+les prescriptions et garanties de sécurité de la donnée de la plus haute
+classification demandée sur les projets.
+
+** Planification de l'information
+:PROPERTIES:
+:CUSTOM_ID: planification-de-linformation
+:END:
+** Administration du SI
+:PROPERTIES:
+:CUSTOM_ID: administration-du-si
+:END:
+- Affectation de droits en lecture/écriture affiné par document (NP, DR,
+  DRSF, SF...)
+- Gestion de groupe d'utilisateur
+- Création de projet et affectation des utilisateurs au projet
+- Gestion du cycle de vie des accès (durée d'accès avant révocation)
+- Association avec Active Directory
+- Gestion multi-disques
+- Gestion multi-sites ## Niveau de détail Les maquettes numériques sont
+  conçues comme les reflets fidèles des installations réalisées. Elles
+  intègrent les données techniques nécessaires à la gestion des actifs,
+  tout en étant maintenues à un niveau de détail minimal afin de
+  préserver leur simplicité d'usage et d'optimiser leur efficacité
+  opérationnelle.
+
+Le modèle 3D est destiné à : - Aider nos clients et les équipes du
+projet à contextualiser les installations projetées - Aider la cellule
+de synthèse dans ses opérations d'analyse et de gestion des interfaces -
+Aider les chefs de projets dans la maîtrise des budgets - Aider les
+acheteurs à préparer les commandes - Aider les équipes d'installations
+dans leurs mises en œuvre des réseaux et des équipements
+
+Les prescriptions liées au niveau de détail sont précisées dans la
+Charte BIM.
+
+Elles permettent de respecter un niveau de granularité suffisant et
+d'éviter de modéliser des éléments superflus. Cela permet de limiter le
+poids des modèles et le temps de production.
+
+Les objets BIM mis en œuvre sont en premier lieu des objets dits
+« Génériques ».
+
+Il s'agit d'objets représentant des éléments de construction mais ayant
+un niveau de précision graphique réduit aux enveloppes extérieures. Ils
+peuvent également inclure les zones de maintenance ou de servitudes.
+
+Leur emploi permet une gestion simplifiée des maquettes numériques tout
+en assurant les besoins intrinsèques tels que la validation des
+implantations, la prévision des zones de maintenance et de servitudes,
+etc.
+
+Certains éléments tels que les accessoires ou fournitures peuvent être
+gérés sous la forme de paramètres adaptés aux objets et intégrés aux
+nomenclatures à destination des équipes d'installation.
+
+Ces prescriptions permettent de maintenir un modèle numérique léger
+(poids de fichier réduit), simple à mettre à jour (moins d'objets à
+modifier) tout en atteignant un niveau de production équivalent (données
+produites égales).
+
+Les modalités liées aux précisions des géométries sont précisées dans la
+charte BIM.
+
+** Modélisation des systèmes
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-systèmes
+:END:
+Les systèmes sont distingués les uns des autres par l'emploi d'un code
+couleur.
+
+** Modélisation du matériel
+:PROPERTIES:
+:CUSTOM_ID: modélisation-du-matériel
+:END:
+Stratégie fabrication Processus de consultation et d'achat (logiciel
+type PDM)
+
+#+begin_quote
+💡 Un objet 3D est un support d'information offrant une haute faculté de
+contextualisation
+
+#+end_quote
+
+- Gestion de la codification (arborescences produits)
+- Consolidation des nomenclatures
+- Gestion des stocks et des zones de stockage
+- Gestion des moyens de manutention
+- Planification des commandes et des livraisons
+- Alerte sur les disponibilités et les délais de fab/livraison
+- Gestion du magasin
+- Gestion des nomenclatures par produit
+- Consolidation du carnet de câble
+- Gestion de la vie des câbles
+- Calcul des besoins de boulonnerie
+- Gestion du packaging
+- Gestion du parc à câble
+- Mise à disposition des outils et du matériel
+- Préparation chantier
+
+*** Modélisation des équipements
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-équipements
+:END:
+![[../Drawings/OpenCDE_CréationEquipement_BPMN.svg]] /BPMN : Création
+d'un équipement/
+
+*** Modélisation des composants
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-composants
+:END:
+Sont considérés comme composants l'ensemble des éléments constitutifs
+d'un équipement.
+
+- Symboles IEC
+
+** Modélisation des réseaux
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-réseaux
+:END:
+Sont considérés comme réseaux les éléments permettant de relier deux
+équipements et permettant le transfert d'un flux.
+
+Les flux sont de plusieurs natures : - Electriques - Alimentations -
+Communications - Fluidiques - Aérauliques - Hydrauliques -
+Pneumatiques - Physiques - Véhicules - Convoyages - Humains
+
+Les réseaux reprennent les codes couleurs des systèmes auxquels ils sont
+associés.
+
+*** Modélisation des câbles
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-câbles
+:END:
+La constitution des carnet de câbles occasionne systématiquement des
+débats durant les projets. Il n'existe ni standard, ni outil dédié, ni
+consensus visant à répondre à la question : > 🤯 Comment gère-t-on les
+câbles ?
+
+Pourtant, le carnet de câble sous forme de tableur Excel s'est imposé
+comme un outil absolument indispensable en conception et en gestion de
+projet. Avec celui-ci, les utilisateurs peuvent : - Echanger des
+informations entre eux (entre les DJD et la schématique, entre la
+schématique et les maquettes numériques, etc.) - Préparer les
+approvisionnement - Suive le stock - Suivre l'avancement des travaux
+
+Voici une représentation des opérations et échanges impliquant les
+carnets de câbles :
+
+![[CarnetDeCable_SequenceDiagram.svg]] /Cycle de vie d'un câble/
+
+Le carnet de câble est devenu le nœud central de la communication entre
+les acteurs. Or, ni sa forme, ni son format, ni son contenu ne peut
+répondre aux enjeux actuels de : - Collaboration en temps réel -
+Sécurité de l'information - Interconnexion des applications
+
+![[../Drawings/CarnetDeCable_ModeleConceptuelDesTraitements.svg]]
+
+Le pôle méthode propose d'améliorer la question du carnet de câble, et
+plus généralement, de la gestion du matériel, en développant un outil
+dédié : Elsa
+
+Les objectifs suivants sont identifiés comme devant être atteins à
+l'issue de la première campagne de développement : - Offrir une
+interface utilisateur conviviale pour - La saisie des câbles et leurs
+informations - La gestion des approvisionnements et des stocks - La
+préparation et le suivi de chantier - Réduire le temps nécessaire à la
+saisie unitaire ou multiple de câble - Permettre l'export mis en forme
+des documents de travail tel que les fiches de raccordement ou de test -
+Avertir les utilisateurs concernés lors de mises à jour d'information
+importante (longueur, section...) - Remonter des indicateurs
+d'avancement au management de projet
+
+Les objectifs suivants sont identifiés comme opportunités d'amélioration
+de l'outil après la première campagne de développement : -
+Interconnecter les outils numériques (notes de calculs, maquettes
+numériques, schématique, gestion électronique de document, gestion des
+exigences...) - synchroniser leurs données pour garantir le maintiens à
+jour de l'ensemble des éléments du projet - Servir de source de donnée
+pour des applications métiers (dimensionnement des chemins de câbles,
+rayons de courbures, cheminements...)
+
++Cette liste est non exhaustive et est amenée à évoluer en fonction des
+demandes des utilisateurs. Elle est donnée ici à titre d'exemple.+
+
+Voir INC Carnet de câble
+
+** Modélisation des appareillages
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-appareillages
+:END:
+Sont considérés comme appareillages l'ensemble des éléments
+d'interaction entre un environnement et un système qui n'est pas
+immédiatement inclus dans un équipements.
+
+Les appareillages sont associés à une symbolique permettant de les
+identifier aisément. Ils reprennent également le code couleur des
+systèmes auxquels ils sont associés.
+
+** Modélisation des accessoires
+:PROPERTIES:
+:CUSTOM_ID: modélisation-des-accessoires
+:END:
+Sont considérés comme accessoires l'ensemble des éléments constitutifs
+de l'installation ayant un rôle passif
+
+** Gestion des publications
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-publications
+:END:
+*** Carnets de plan
+:PROPERTIES:
+:CUSTOM_ID: carnets-de-plan
+:END:
+
+#+begin_quote
+💡 *plan* [plɑ̃] /masculin/ Projection sur une surface horizontale d'une
+construction ou d'un ensemble de constructions. Représentation graphique
+horizontale, en particulier dessin technique.
+
+#+end_quote
+
+Les carnets de plans sont constitués des folios suivants : - *Plans
+généraux* - Page de garde avec Repère de la zone - Sommaire - Notice
+d'utilisation - Standards de montage - *Plans d'interface* - Folio titre
+: Interfaces - Vue 3D des interfaces - Plan d'implantation des
+réservations et ancrages - Plan d'implantation des inserts et MALT -
+Plan d'implantation des fourreaux et chambres de tirages - *Plans des
+supports* - Folio titre : Supports - Nomenclature des supports - Vue 3D
+des supports - Plan d'implantation des supports - Assemblages mécaniques
+des supports - *Plans des cheminements* - Folio titre : Cheminements -
+Nomenclature des cheminements - Vue 3D des cheminements - Plan
+d'implantation des cheminements - Plan d'implantation des cheminements
+par système (si pertinent) - *Plans des équipements* - Folio titre :
+Equipements - Liste des équipements - Vue 3D des équipements - Plan de
+dépose (si concerné) - Plan d'implantation des accessoires - Plan
+d'implantation des équipements électriques - *Plans des raccordements* -
+Folio titre : Raccordements - Nomenclature des appareillages - Plan
+d'implantation des appareillages - Plan de raccordement des MALT - Plan
+de raccordement des éclairages - Plan de raccordement des éclairages
+secours - Plan de raccordement du réseau force - Plan de raccordement du
+réseau de communication - Plan de raccordement du réseau de sécurité -
+Plan de raccordement du SSI - *Carnets de coupes* - Folio titre :
+Coupes - Plan de repérage des coupes - Carnet de coupe ### Signature
+graphique Notre charte graphique et son application à travers nos
+opérations de modélisation est la signature de notre entreprise.
+
+Elle permet à l'entreprise de se démarquer de ses concurrents tout en
+offrant une grande aisance de lecture et d'appréciation du contenu.
+
+Cette charte est élaborée sur la base des normes suivantes :
+
+| Nom                | description                                                                                                                          |
+|--------------------+--------------------------------------------------------------------------------------------------------------------------------------|
+| NF EN ISO 128-2    | Documentation technique de produits (TPD) - Principes généraux de représentation - Partie 2 : Conventions de base pour les traits    |
+| NF EN ISO 128-3    | Documentation technique de produits (TPD) - Principes généraux de représentation - Partie 3 : Vues, sections et coupes               |
+| NF EN ISO 129-1    | Documentation technique de produits - Représentation des dimensions et tolérances - Partie 1 : Principes généraux                    |
+| NF EN ISO 9241-112 | Ergonomie de l'interaction homme-système - Partie 112 : Principes et lignes directrices relatives à la présentation de l'information |
+| NF EN ISO 9241-125 | Ergonomie de l'interaction homme-système - Partie 125 : Recommandations relatives à la présentation visuelle d'informations          |
+| NF C15-100         | Installations électriques à basse tension                                                                                            |
+| NF EN ISO 9241-112 |                                                                                                                                      |
+| NF EN ISO 9241-125 |                                                                                                                                      |
+
+*** Règles
+:PROPERTIES:
+:CUSTOM_ID: règles
+:END:
+- Un plan ne doit posséder qu'une seule fonction. Cela aide à sa
+  lisibilité et sa compréhension.
+- Les éléments en fonds de plans doivent permettre une bonne lisibilité
+  des éléments projetés.
+- Les éléments projetés doivent être étiquetés même s'ils possèdent une
+  couleur légendée.
+- Si un plan présente plus de 6 couleurs distinctes il est impératif de
+  rappeler la légende des couleurs sur le folio concerné. Autrement, il
+  est possible de laisser la légende dans un folio distinct. De manière
+  générale, nous préférerons ajouter systématiquement la légende sur
+  chaque folio. Cette démarche assure une meilleure acquisition des
+  informations. Sur les carnets de plans au format A3, nous
+  privilégierons l'utilisation des légendes au format ruban.
+
+*** Typographie
+:PROPERTIES:
+:CUSTOM_ID: typographie
+:END:
+Les typographies utilisées sur les logiciels de modélisations et de
+dessins doivent correspondre à la charte documentaire de Clemessy ADS.
+
+Nous utiliserons les configurations suivantes :
+
+| Destination           | Configuration                  |
+|-----------------------+--------------------------------|
+| Titre de la feuille   | Arial -- 32pts -- 8mm          |
+| Sous-titre            | Arial -- 16pts -- 4mm          |
+| Titre de la vue       | Arial -- 14pts -- 3.5mm        |
+| Détails de la vue     |                                |
+| Texte des étiquettes  |                                |
+| Texte des annotations |                                |
+| Texte des cotes       | Arial -- 11pts -- 2.75mm       |
+| Annotation importante | Arial -- 12pts -- 3mm -- Rouge |
+
+Note : la hauteur de texte sous Revit correspond à la hauteur de
+majuscule. Les configurations sont données en hauteur de traitement de
+texte (Word, pts) puis en hauteur de majuscule (Revit, mm).
+
+*** Préparation des zones
+:PROPERTIES:
+:CUSTOM_ID: préparation-des-zones
+:END:
+/Création des zones, espaces et préparation des vues et nomenclatures/
+/Renvois à batch sheetgen/ /1 carnet de plan par ZD, 1 ZD = 1 Zone
+chantier/ /Découpage f(gestion chantier)/ /Taille maximum de la zone de
+définition/ /Fonction de la taille du cartouche/ /Méthodo affectation de
+zone // pièces & attribution noms + étiquetage auto/ /Toutes les zones
+doivent êtres étiquetées sur les plans !/
+
+** Gestion des documents
+:PROPERTIES:
+:CUSTOM_ID: gestion-des-documents
+:END:
+(Logiciel type GED et GEID)
+
+#+begin_quote
+💡 *document* [dɔ.ky.mɑ̃] /masculin/ Source de renseignement ou de
+preuve, quel que soit le support matériel (film, photographie,
+disquette, etc.) /Malheureusement nous avons rarement des éléments
+suffisants pour reconstituer cette histoire avec vraisemblance. Les
+documents fossiles tertiaires sont assez rares [...]./ (Henri Gaussen,
+/Géographie des Plantes/, Armand Colin, 1933, p.69)
+
+#+end_quote
+
+Objectifs : - Réduire le temps de traitement des documents - Fiabiliser
+la traçabilité - Monitorer l'avancement - Import de la LDA -
+Constitution de la LDE - Codification des documents - Circuit de VISA et
+de FED - Affectation des temps et des ressources (rôles) - Planification
+de la production - Planification de la livraison - Suivi des
+avancements - Notification anticipée des utilisateurs - Notification du
+circuit de vérification - Export format MS Excel suivant une trame mise
+en forme (LDE) - Rédaction des documents native (sans sortir de la
+plateforme) - Affectation de trame (modèle) de publication - Export dans
+un modèle de document - Export au format HTML et constitution d'une
+documentation de projet sous forme de site internet. Exemple :
+[[https://ifc43-docs.standards.buildingsmart.org/][IFC 4.3.2
+Documentation (buildingsmart.org)]]
+
+La rédaction et l'application de l'ensemble de la documentation d'un
+projet est un travail fastidieux qu'il convient de simplifier.
+
+Lors de la rédaction d'un document, il convient d'utiliser des mentions
+renvoyant à tout ou partie d'un autre document plutôt que de réécrire
+l'intégralité du texte
+
+"se référer à [DOCUMENT X]" \(\Rightarrow\) par exemple : renvoyer au
+plan d'échange d'information pour la planification des livrables,
+l'agenda de revue BIM etc.
+
+/note sur la nécessité de pouvoir référencer efficacement les sources et
+citations du corpus documentaire d'un projet pour renvoyer aux
+documents./ /note sur l'intérêt de mettre à disposition des blocs de
+textes partagés pour les éléments généraux/ /note sur la pertinence de
+créer des recettes de construction de documentaire pour assembler les
+trames, éléments communs, mentions de protection et la rédaction propre
+du document à livrer/

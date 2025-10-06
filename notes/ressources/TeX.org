@@ -1,0 +1,1125 @@
+* LaTeX
+:PROPERTIES:
+:CUSTOM_ID: latex
+:END:
+Link: https://www.latex-project.org/
+
+Permet, entre autre, de rédiger des équations mathématiques complexes
+
+#+begin_src latex
+\frac{1}{2}
+#+end_src
+
+\[
+\frac{1}{2}
+\]
+
+#+begin_src latex
+\sqrt{4}
+#+end_src
+
+\[
+\sqrt{4}
+\]
+
+* Apprendre LaTeX en ligne :
+:PROPERTIES:
+:CUSTOM_ID: apprendre-latex-en-ligne
+:END:
+[[https://www.overleaf.com/learn][Documentation]]
+
+![[Images/Screen_Shot_2020-06-10_at_11.13.55_AM.png]]
+
+* Couleurs
+:PROPERTIES:
+:CUSTOM_ID: couleurs
+:END:
+![[Images/Screen_Shot_2020-03-24_at_1.09.09_PM.png]] # Tables
+
+\[
+\begin{array}{c:ccccccc}
+Daily & Mo & Tu & We & Th & Fr & Sa & Su \\ \hline
+Run & [x] & [] & [x] & [x] & [] & [x] & []\\
+Work & [x] & [x] & [x] & [x] & [] & [] & [x] \\ 
+Meds & [x] & [] & [x] & [] & [x] & [] & [] \\
+\end {array}
+\]
+
+#+begin_src latex
+\begin{array}{c:ccccccc}
+Daily & Mo & Tu & We & Th & Fr & Sa & Su \\ \hline
+Run & [x] & [] & [x] & [x] & [] & [x] & []\\
+Work & [x] & [x] & [x] & [x] & [] & [] & [x] \\ 
+Meds & [x] & [] & [x] & [] & [x] & [] & [] \\
+\end {array}
+#+end_src
+
+\[
+\begin{array}{c:c}
+\text{Quad 1} & \text{Quad 2} \\ \\ \hdashline \\
+\text{Quad 3} & \text{Quad 4}\\
+\end {array}
+\]
+
+#+begin_src latex
+\begin{array}{c:c}
+\text{Quad 1} & 
+\text{Quad 2} \\ \\ \hdashline \\
+\text{Quad 3} & 
+\text{Quad 4}\\
+\end {array}
+#+end_src
+
+\[
+\begin{array}{c:c:c:c} 
+\color{blue}\text{Accents} & 
+\color{red}\text{Name} & 
+\color{red}\text{French} & 
+\color{red}\text{Letters Used} \\ \hline & 
+\text{acute accent} & 
+\text{accent aigu} & 
+\text{é only} \\ \hdashline & 
+\text{grave accent} & 
+\text{accent grave} & 
+\text{è, à, ù } \\ \hdashline & 
+\text{circumflex} & 
+\text{accent circonflexe} & 
+\text{â, ê, î, ô, û} \\ \hdashline & 
+\text{diaeresis} & 
+\text{tréma} & 
+\text{ë, ï, ü, ÿ} &  
+\\ \hdashline & 
+\text{cedilla} & 
+\text{cédille} & 
+\text{ç only } \end{array}
+\]
+
+#+begin_src latex
+\begin{array}{c:c:c:c} 
+\color{blue}\text{Accents} & 
+\color{red}\text{Name} & 
+\color{red}\text{French} & 
+\color{red}\text{Letters Used} \\ \hline & 
+\text{acute accent} & 
+\text{accent aigu} & 
+\text{é only} \\ \hdashline & 
+\text{grave accent} & 
+\text{accent grave} & 
+\text{è, à, ù } \\ \hdashline & 
+\text{circumflex} & 
+\text{accent circonflexe} & 
+\text{â, ê, î, ô, û} \\ \hdashline & 
+\text{diaeresis} & 
+\text{tréma} & 
+\text{ë, ï, ü, ÿ} &  
+\\ \hdashline & 
+\text{cedilla} & 
+\text{cédille} & 
+\text{ç only } \end{array}
+#+end_src
+
+\[
+\begin{array}{cccc}
+\text{Title 1} & 
+\text{Title 2} & 
+\text{Title 3} & 
+\text{Title 4} & 
+\text{Title 5} \\ \hline \\
+\text{Data}^1 & 
+\text{Data}^2 &   
+\text{Data}^3 & 
+\text{Data}^4 &
+\text{Data}^5
+\end {array}
+\]
+
+#+begin_src latex
+\begin{array}{cccc}
+\text{Title 1} & 
+\text{Title 2} & 
+\text{Title 3} & 
+\text{Title 4} & 
+\text{Title 5} \\ \hline \\
+\text{Data}^1 & 
+\text{Data}^2 &   
+\text{Data}^3 & 
+\text{Data}^4 &
+\text{Data}^5
+\end {array}
+#+end_src
+
+\[
+\begin{array}{c:c}
+\color{green}\fbox{Pro} & 
+\color{red}\fbox{Con} \\ \hline
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & 
+\end {array}
+\]
+
+#+begin_src latex
+\begin{array}{c:c}
+\color{green}\fbox{Pro} & 
+\color{red}\fbox{Con} \\ \hline
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & \\ \\
+\text{Data that is positive} & 
+\text{Data that is negative} & 
+\end {array}
+#+end_src
+
+\[
+\begin{array}{c:c}
+\colorbox{yellow}{Title Here} & 
+\text{Sub Title} \\ \hline \\
+\text{Data 1} & 
+\text{SubData For Data 1} \\ & 
+\text{SubData For Data 1} \\ & 
+\text{SubData For Data 1} \\ \\
+\text{Data 2} & 
+\text{SubData For Data 2} \\ & 
+\text{SubData For Data 2} \\ & 
+\text{SubData For Data 2} \\ \\
+\text{Data 3} & 
+\text{SubData For Data 3} \\ & 
+\text{SubData For Data 3} \\ & 
+\text{SubData For Data 3} \\
+\end {array}
+\]
+
+#+begin_src latex
+\begin{array}{c:c}
+\colorbox{yellow}{Title Here} & 
+\text{Sub Title} \\ \hline \\
+\text{Data 1} & 
+\text{SubData For Data 1} \\ & 
+\text{SubData For Data 1} \\ & 
+\text{SubData For Data 1} \\ \\
+\text{Data 2} & 
+\text{SubData For Data 2} \\ & 
+\text{SubData For Data 2} \\ & 
+\text{SubData For Data 2} \\ \\
+\text{Data 3} & 
+\text{SubData For Data 3} \\ & 
+\text{SubData For Data 3} \\ & 
+\text{SubData For Data 3} \\
+\end {array}
+#+end_src
+
+* Colorbox tags
+:PROPERTIES:
+:CUSTOM_ID: colorbox-tags
+:END:
+Red: \(\color{white}\colorbox{red}{8:00am}\) Blue:
+\(\color{white}\colorbox{blue}{8:00am}\) Gray:
+\(\color{white}\colorbox{gray}{8:00am}\) Green:
+\(\color{white}\colorbox{green}{8:00am}\) Orange:
+\(\color{white}\colorbox{orange}{8:00am}\) Purple:
+\(\color{white}\colorbox{purple}{8:00am}\) Tan:
+\(\color{white}\colorbox{tan}{8:00am}\) Teal:
+\(\color{white}\colorbox{teal}{8:00am}\) Violet:
+\(\color{white}\colorbox{violet}{8:00am}\)
+
+#+begin_src latex
+\color{white}\colorbox{red}{8:00am}
+#+end_src
+
+* X bullet point
+:PROPERTIES:
+:CUSTOM_ID: x-bullet-point
+:END:
+Red: \(\color{red}\times\text{8:00am}\) Blue:
+\(\color{blue}\times\text{8:00am}\) Gray:
+\(\color{gray}\times\text{8:00am}\) Green:
+\(\color{green}\times\text{8:00am}\) Orange:
+\(\color{orange}\times\text{8:00am}\) Purple:
+\(\color{purple}\times\text{8:00am}\) Tan:
+\(\color{tan}\times\text{8:00am}\) Teal:
+\(\color{teal}\times\text{8:00am}\) Violet:
+\(\color{violet}\times\text{8:00am}\)
+
+#+begin_src latex
+\color{red}\times\text{8:00am}
+#+end_src
+
+* Colored border tags
+:PROPERTIES:
+:CUSTOM_ID: colored-border-tags
+:END:
+Red: \(\color{red}\fbox{8:00am}\) Blue: \(\color{blue}\fbox{8:00am}\)
+Gray: \(\color{gray}\fbox{8:00am}\) Green:
+\(\color{green}\fbox{8:00am}\) Orange: \(\color{orange}\fbox{8:00am}\)
+Purple: \(\color{purple}\fbox{8:00am}\) Tan:
+\(\color{tan}\fbox{8:00am}\) Teal: \(\color{teal}\fbox{8:00am}\) Violet:
+\(\color{violet}\fbox{8:00am}\)
+
+#+begin_src latex
+\color{red}\fbox{8:00am}
+#+end_src
+
+* Colored bullet and text
+:PROPERTIES:
+:CUSTOM_ID: colored-bullet-and-text
+:END:
+Red: \(\color{red}{\bullet}\text{ 8:00am}\) Blue:
+\(\color{blue}{\bullet}\text{ 8:00am}\) Gray:
+\(\color{gray}{\bullet}\text{ 8:00am}\) Green:
+\(\color{green}{\bullet}\text{ 8:00am}\) Orange:
+\(\color{orange}{\bullet}\text{ 8:00am}\) Purple:
+\(\color{purple}{\bullet}\text{ 8:00am}\) Tan:
+\(\color{tan}{\bullet}\text{ 8:00am}\) Teal:
+\(\color{teal}{\bullet}\text{ 8:00am}\) Violet:
+\(\color{violet}{\bullet}\text{ 8:00am}\)
+
+#+begin_src latex
+\color{red}{\bullet}\text{ 8:00am}
+#+end_src
+
+* Colored bullet point
+:PROPERTIES:
+:CUSTOM_ID: colored-bullet-point
+:END:
+Red: \(\textcolor{red}{\bullet}\text{ 8:00am}\) Blue:
+\(\textcolor{blue}{\bullet}\text{ 8:00am}\) Gray:
+\(\textcolor{gray}{\bullet}\text{ 8:00am}\) Green:
+\(\textcolor{green}{\bullet}\text{ 8:00am}\) Orange:
+\(\textcolor{orange}{\bullet}\text{ 8:00am}\) Purple:
+\(\textcolor{purple}{\bullet}\text{ 8:00am}\) Tan:
+\(\textcolor{tan}{\bullet}\text{ 8:00am}\) Teal:
+\(\textcolor{teal}{\bullet}\text{ 8:00am}\) Violet:
+\(\textcolor{violet}{\bullet}\text{ 8:00am}\)
+
+#+begin_example
+\textcolor{red}{\bullet}\text{ 8:00am}
+#+end_example
+
+* Crossed bullet point
+:PROPERTIES:
+:CUSTOM_ID: crossed-bullet-point
+:END:
+Red: \(\color{red}^+\text{8:00am}\) Blue:
+\(\color{blue}^+\text{8:00am}\) Gray: \(\color{gray}^+\text{8:00am}\)
+Green: \(\color{green}^+\text{8:00am}\) Orange:
+\(\color{orange}^+\text{8:00am}\) Purple:
+\(\color{purple}^+\text{8:00am}\) Tan: \(\color{tan}^+\text{8:00am}\)
+Teal: \(\color{teal}^+\text{8:00am}\) Violet:
+\(\color{VIOLET}^+\text{8:00am}\)
+
+#+begin_src latex
+\color{red}^+\text{8:00am}
+#+end_src
+
+| Outline bullet point                                                                                                                                                                                                                                                                                                                                                                                                                              | Filled in border                                                                                                                                                                                                                                                                                                                                                                                                     | Diamond bullet point                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                 |                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+-------------------------------------------|
+| =\textcolor{red}{\circ}\text{ 8:00am}=                                                                                                                                                                                                                                                                                                                                                                                                            | =\fcolorbox{red}{pink}{8:00am}=                                                                                                                                                                                                                                                                                                                                                                                      | =\textcolor{red}{\diamond}\text{ 8:00am}=                                                                                                                                                                                                                                                                                                                                                                                                                                    | =\fcolorbox{red}{pink}{8:00am}= | =\textcolor{red}{\diamond}\text{ 8:00am}= |
+| Red: \(\textcolor{red}{\circ}\text{ 8:00am}\)Blue: \(\textcolor{blue}{\circ}\text{ 8:00am}\)Gray: \(\textcolor{gray}{\circ}\text{ 8:00am}\)Green: \(\textcolor{green}{\circ}\text{ 8:00am}\)Orange: \(\textcolor{orange}{\circ}\text{ 8:00am}\)Purple: \(\textcolor{purple}{\circ}\text{ 8:00am}\)Tan: \(\textcolor{tan}{\circ}\text{ 8:00am}\)Teal: \(\textcolor{teal}{\circ}\text{ 8:00am}\)Violet: \(\textcolor{violet}{\circ}\text{ 8:00am}\) | Red: \(\fcolorbox{red}{pink}{8:00am}\)Blue: \(\fcolorbox{blue}{lightskyblue}{8:00am}\)Gray: \(\fcolorbox{gray}{lightgray}{8:00am}\)Green: \(\fcolorbox{green}{palegreen}{8:00am}\)Orange: \(\fcolorbox{orange}{beige}{8:00am}\)Purple: \(\fcolorbox{purple}{thistle}{8:00am}\)Tan: \(\fcolorbox{tan}{oldlace}{8:00am}\)Teal: \(\fcolorbox{teal}{lightcyan}{8:00am}\)Violet: \(\fcolorbox{violet}{lavender}{8:00am}\) | Red: \(\textcolor{red}{\diamond}\text{ 8:00am}\)Blue: \(\textcolor{blue}{\diamond}\text{ 8:00am}\)Gray: \(\textcolor{gray}{\diamond}\text{ 8:00am}\)Green: \(\textcolor{green}{\diamond}\text{ 8:00am}\)Orange: \(\textcolor{orange}{\diamond}\text{ 8:00am}\)Purple: \(\textcolor{purple}{\diamond}\text{ 8:00am}\)Tan: \(\textcolor{tan}{\diamond}\text{ 8:00am}\)Teal: \(\textcolor{teal}{\diamond}\text{ 8:00am}\)Violet: \(\textcolor{violet}{\diamond}\text{ 8:00am}\) |                                 |                                           |
+
+* View This In Dark Mode
+:PROPERTIES:
+:CUSTOM_ID: view-this-in-dark-mode
+:END:
+\(\Huge\text{I Want A Huge Heading}\newline\LARGE\text{I Want A Large Subheading}\newline\large\text{Written By: Red Gregory}\newline\normalsize\text{June 7th, 2020}\)
+
+#+begin_html
+  <aside>
+#+end_html
+
+⭐ By the way, you can technically use inline KaTeX inside the actually
+heading of a notion page, but beware, the entire syntax will appear as
+the page's name.
+
+#+begin_html
+  </aside>
+#+end_html
+
+--------------
+
+- All font sizes
+
+  \(\Huge\text{This is an example of Huge font}\)
+
+  \(\huge\text{This is an example of huge font}\)
+
+  \(\LARGE\text{This is an example of LARGE font}\)
+
+  \(\Large\text{This is an example of Large font}\)
+
+  \(\large\text{This is an example of large font}\)
+
+  \(\normalsize\text{This is an example of normalsize font}\)
+
+  \(\small\text{This is an example of small font}\)
+
+  \(\footnotesize\text{This is an example of footnotesize font}\)
+
+  \(\text{}\)\(\scriptsize\text{This is an example of scriptsize font}\)
+
+  \(\tiny\text{This is an example of tiny font}\)
+
+* Inline Math
+:PROPERTIES:
+:CUSTOM_ID: inline-math
+:END:
+*Note: trigger LaTeX with "/math"
+
+** Brackets & Parenthesis
+:PROPERTIES:
+:CUSTOM_ID: brackets-parenthesis
+:END:
+=\{ x+y \}=
+
+\[
+\{ x+y \}
+\]
+
+=\langle x+y \rangle=
+
+\[
+\langle x+y \rangle
+\]
+
+=|x+y|=
+
+\[
+|x+y|
+\]
+
+=\|x+y\|=
+
+\[
+\|x+y\|
+\]
+
+*** Bracket Sizing & Adjustment
+:PROPERTIES:
+:CUSTOM_ID: bracket-sizing-adjustment
+:END:
+=\big( \Big( \bigg( \Bigg(=
+
+\[
+\big( \Big( \bigg( \Bigg(
+\]
+
+=\big) \Big) \bigg) \Bigg)=
+
+\[
+\big) \Big) \bigg) \Bigg)
+\]
+
+Etc ...
+
+\left and \right can dynamically adjust the size as well → *EXAMPLES →*
+
+=\Bigg \langle 3x+7 \bigg \rangle=
+
+\[
+\Bigg \langle 3x+7 \bigg \rangle
+\]
+
+=F = G \left( \frac{m_1 m_2}{r^2} \right)=
+
+\[
+F = G \left( \frac{m_1 m_2}{r^2} \right)
+\]
+
+=\left[ \frac{ N } { \left( \frac{L}{p} \right) - (m+n) } \right]=
+
+\[
+\left[  \frac{ N } { \left( \frac{L}{p} \right)  - (m+n) }  \right]
+\]
+
+** Fractions & Binomials
+:PROPERTIES:
+:CUSTOM_ID: fractions-binomials
+:END:
+=\frac{1}{2}=
+
+\[
+\frac{1}{2}
+\]
+
+=\binom{n}{k} = \frac{n!}{k!(n-k)!}=
+
+\[
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+
+=f(x)=\frac{P(x)}{Q(x)} \ \ \textrm{and}  \ \ f(x)=\textstyle\frac{P(x)}{Q(x)}=
+
+\[
+f(x)=\frac{P(x)}{Q(x)} \ \ \textrm{and}  \ \ f(x)=\textstyle\frac{P(x)}{Q(x)}
+\]
+
+=\frac{1+\frac{a}{b}}{1+\frac{1}{1+\frac{1}{a}}}=
+
+\[
+\frac{1+\frac{a}{b}}{1+\frac{1}{1+\frac{1}{a}}}
+\]
+
+** Write Superscripts & Subscripts
+:PROPERTIES:
+:CUSTOM_ID: write-superscripts-subscripts
+:END:
+=x^n + y^n = z^n=
+
+\[
+x^n + y^n = z^n
+\]
+
+=a_1^2 + a_2^2 = a_3^2=
+
+\[
+a_1^2 + a_2^2 = a_3^2
+\]
+
+=x^{2 \alpha} - 1 = y_{ij} + y_{ij}=
+
+\[
+x^{2 \alpha} - 1 = y_{ij} + y_{ij}
+\]
+
+=(a^n)^{r+s} = a^{nr+ns}=
+
+\[
+(a^n)^{r+s} = a^{nr+ns}
+\]
+
+** Write Operators using subscripts & superscripts
+:PROPERTIES:
+:CUSTOM_ID: write-operators-using-subscripts-superscripts
+:END:
+=\sum_{i=1}^{\infty} \frac{1}{n^s}  = \prod_p \frac{1}{1 - p^{-s}}=
+
+\[
+\sum_{i=1}^{\infty} \frac{1}{n^s}  = \prod_p \frac{1}{1 - p^{-s}}
+\]
+
+*** Additional Examples: Operators / Superscripts & Subscripts
+:PROPERTIES:
+:CUSTOM_ID: additional-examples-operators-superscripts-subscripts
+:END:
+=a_{n_i}=
+
+\[
+a_{n_i}
+\]
+
+=\int_{i=1}^n=
+
+\[
+\int_{i=1}^n
+\]
+
+=\sum_{i=1}^{\infty}=
+
+\[
+\sum_{i=1}^{\infty}
+\]
+
+=\prod_{i=1}^n=
+
+\[
+\prod_{i=1}^n
+\]
+
+=\cup_{i=1}^n=
+
+\[
+\cup_{i=1}^n
+\]
+
+=\cap_{i=1}^n=
+
+\[
+\cap_{i=1}^n
+\]
+
+=\oint_{i=1}^n=
+
+\[
+\oint_{i=1}^n
+\]
+
+=\coprod_{i=1}^n=
+
+\[
+\coprod_{i=1}^n
+\]
+
+* Diagrams With KaTeX
+:PROPERTIES:
+:CUSTOM_ID: diagrams-with-katex
+:END:
+* Get Started
+:PROPERTIES:
+:CUSTOM_ID: get-started
+:END:
+- Trigger "/mathb"
+
+#+begin_src basic
+\begin{CD}
+...code here...
+\end{CD}
+#+end_src
+
+* Commutative Diagram Arrows
+:PROPERTIES:
+:CUSTOM_ID: commutative-diagram-arrows
+:END:
+*@<<<* left arrow
+
+*[cite/t:@AAA]* up arrow
+
+*[cite/t:@VVV]* down arrow
+
+*@.* empty arrow.
+
+*@>>>* right arrow
+
+*@=* horizontal equals
+
+*@|* vertical equals
+
+\[
+\begin{CD}
+     @>>> @<<< @AAA @VVV @= @| @.
+\end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     @>>> @<<< @AAA @VVV @= @| @.
+\end{CD}
+#+end_src
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+\[
+\begin{CD}
+     1 @<<< 2 @= 3\\
+     @. @| @VVV\\
+     @. 4 @= 5
+\end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     1 @<<< 2 @= 3\\
+     @. @| @VVV\\
+     @. 4 @= 5
+\end{CD}
+#+end_src
+
+** Labels
+:PROPERTIES:
+:CUSTOM_ID: labels
+:END:
+*Upper*
+
+\[
+\begin{CD}
+     \text{A} @>label>> \text{B}
+\end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     \text{A} @>label>> \text{B}
+\end{CD}
+#+end_src
+
+*Lower*
+
+\[
+\begin{CD}
+     \text{A} @>>label> \text{B}
+\end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     \text{A} @>>label> \text{B}
+\end{CD}
+#+end_src
+
+*Left*
+
+\[
+\begin{CD}
+     \text{A}
+     \\@VlabelVV\\
+     \text{B}
+ \end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     \text{A}
+     \\@VlabelVV\\
+     \text{B}
+ \end{CD}
+#+end_src
+
+*Right*
+
+\[
+\begin{CD}
+     \text{A}
+     \\@VVlabelV\\
+     \text{B}
+ \end{CD}
+\]
+
+#+begin_src basic
+\begin{CD}
+     \text{A}
+     \\@VVlabelV\\
+     \text{B}
+ \end{CD}
+#+end_src
+
+** Long Label Alignment
+:PROPERTIES:
+:CUSTOM_ID: long-label-alignment
+:END:
+*Before*
+
+$$
+\begin{CD}
+
+1 @>>> 2
+
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5@>>> 6
+
+\end{CD}
+$$
+
+#+begin_src basic
+\begin{CD}
+1 @>>> 2
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5@>>> 6
+\end{CD}
+#+end_src
+
+*After*
+
+$$
+\begin{CD}
+
+1 @>>> 2
+
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5 @>{\phantom{\text{this is a really long label}}}>>  6
+
+\end{CD}
+$$
+
+#+begin_src basic
+\begin{CD}
+
+1 @>>> 2
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5 @>{\phantom{\text{this is a really long label}}}>> 6
+
+\end{CD}
+#+end_src
+
+*** Long Label Alignment + Label
+:PROPERTIES:
+:CUSTOM_ID: long-label-alignment-label
+:END:
+$$
+\begin{CD}
+
+1 @>>> 2
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5 @>{\rlap{$\scriptstyle{\text{shorter}}$}\phantom{\text{this is a really long label}}}>> 6
+
+\end{CD}
+$$
+
+#+begin_src basic
+\begin{CD}
+
+1 @>>> 2
+@>\text{this is a really long label}>> 3\\
+
+@VVV @VVV @VVV\\
+
+4 @>>> 5 @>{\rlap{$\scriptstyle{\text{shorter}}$}\phantom{\text{this is a really long label}}}>> 6
+
+\end{CD}
+#+end_src
+
+* Note Relationship Diagram
+:PROPERTIES:
+:CUSTOM_ID: note-relationship-diagram
+:END:
+$$
+\begin{CD}
+
+\text{High-Tier}
+@>\text{next entry}>> 
+\text{Parent}
+@>\text{next entry}>>
+\text{Orphan} \\ 
+
+@VrelatedVV 
+@VrelatedVV \\
+
+\text{Connector} 
+@>\text{next entry}>> 
+\text{Child}\\ 
+
+@VrelatedVV \\
+
+\text{Child}\\
+
+\end{CD}
+$$
+
+#+begin_src basic
+\begin{CD}
+
+\text{High-Tier}
+@>\text{next entry}>> 
+\text{Parent}
+@>\text{next entry}>>
+\text{Orphan} \\ 
+
+@VrelatedVV 
+@VrelatedVV \\
+
+\text{Connector} 
+@>\text{next entry}>> 
+\text{Child}\\ 
+
+@VrelatedVV \\
+
+\text{Child}\\
+
+\end{CD}
+#+end_src
+
+* Array Diagram Arrows
+:PROPERTIES:
+:CUSTOM_ID: array-diagram-arrows
+:END:
+[[https://www.sascha-frank.com/Arrow/latex-arrows.html][LaTeX arrows]]
+
+** Array Diagram
+:PROPERTIES:
+:CUSTOM_ID: array-diagram
+:END:
+$$
+\begin{array}{ccccc}
+
+&& \text{High-Tier} && \\
+
+& \swarrow & \downarrow & \searrow & \\
+
+\text{Connector} && \text{Child} && \text{Connector} \\
+
+\downarrow &&&& \downarrow \\
+
+\text{Child} &&&& \text{Child}
+
+\end{array}
+$$
+
+#+begin_src basic
+\begin{array}{ccccc}
+
+&& \text{High-Tier} && \\
+
+& \swarrow & \downarrow & \searrow & \\
+
+\text{Connector} && \text{Child} && \text{Connector} \\
+
+\downarrow &&&& \downarrow \\
+
+\text{Child} &&&& \text{Child}
+
+\end{array}
+#+end_src
+
+* Customize Layout With LaTeX
+:PROPERTIES:
+:CUSTOM_ID: customize-layout-with-latex
+:END:
+\[
+\text {HELLO WORLD!}
+\]
+
+\[
+\color{red}\text{HELLO WORLD!}
+\]
+
+\[
+\color{blue}\text{HELLO WORLD!}
+\]
+
+\[
+\color{green}\text{HELLO WORLD!}
+\]
+
+\[
+\color{purple}\text{HELLO WORLD!}
+\]
+
+#+caption: Customize%20Layout%20With%20LaTeX%20c1805aa318f94c16b781d517df825ae1/Screen_Shot_2020-03-24_at_1.09.09_PM.png
+[[file:Customize%20Layout%20With%20LaTeX%20c1805aa318f94c16b781d517df825ae1/Screen_Shot_2020-03-24_at_1.09.09_PM.png]]
+
+=\text {HELLO WORLD!}=
+
+=\color{red} \text {HELLO WORLD!}=
+
+--------------
+
+\[
+\text{a) Step 1} \\ \text{b) Step 2} \\ \text{c) Step 3}
+\]
+
+=\text{a) Step 1} \\ \text{b) Step 2} \\ \text{c) Step 3}=
+
+- Visualize
+
+  \text{a) Step 1} \
+
+  \text{b) Step 2} \
+
+  \text{c) Step 3}
+
+--------------
+
+\[
+\text {Duis posuere mi nec urna sollicitudin fringilla.} \\ \text {Nam convallis ipsum libero, id suscipit ipsum molestie sed.} \\ \text {Phasellus ut felis nec neque efficitur laoreet.}
+\]
+
+=\text {Duis posuere mi nec urna sollicitudin fringilla.} \\ \text {Nam convallis ipsum libero, id suscipit ipsum molestie sed.} \\ \text {Phasellus ut felis nec neque efficitur laoreet.}=
+
+- Visualize
+
+  \text {Duis posuere mi nec urna sollicitudin fringilla.}
+
+  \
+
+  \text {Nam convallis ipsum libero, id suscipit ipsum molestie sed.}
+
+  \
+
+  \text {Phasellus ut felis nec neque efficitur laoreet.}
+
+--------------
+
+\[
+\begin{aligned} \text{Subject, Teacher} ~~||~~ \text {March 24th 2020}\\ \text{Title of document} ~~||~~ \text{Due: April 1st}\end{aligned}
+\]
+
+=\begin{aligned} \text{Subject, Teacher} || \text {March 24th 2020}\\ \text{Title of document} || \text{Due: April 1st}\end{aligned}=
+
+- Visualize
+
+  \begin{aligned} 
+
+    \text{Subject, Teacher} || 
+
+    \text {March 24th 2020}\\ 
+
+    \text{Title of document} || 
+
+    \text{Due: April 1st}
+
+    \end{aligned}
+
+--------------
+
+\[
+\begin{array}{ccc} Heading~1 & Heading~2 & Heading~3 \\ \hline Data~A1 & Data~A2 & Data~A3\\ Data~B1 & Data~B2 & Data~B3 \\ Data~C1 & Data~C2 & Data~C3 \\ \end{array}
+\]
+
+=\begin{array}{ccc} Heading~1 & Heading~2 & Heading~3 \\ \hline Data~A1 & Data~A2 & Data~A3\\ Data~B1 & Data~B2 & Data~B3 \\ Data~C1 & Data~C2 & Data~C3 \\ \end{array}=
+
+- Visualize
+
+  \begin{array}{ccc} 
+
+    Heading~1 & Heading~2 & Heading~3 \\
+
+    \hline 
+
+    Data~A1 & Data~A2 & Data~A3\\ 
+
+    Data~B1 & Data~B2 & Data~B3 \\ 
+
+    Data~C1 & Data~C2 & Data~C3 \\ 
+
+    \end{array}
+
+--------------
+
+\[
+\begin{array}{l|l:c:r} Heading~1 & Heading~2 & Heading~3 & Heading~4\\ \hline Line~1 & Data~A1 & Data~A2 & Data~A3\\ Line~2 & Data~B1 & Data~B2 & Data~B3\\ Line~3 & Data~C1 & Data~C2 & Data~C3\\ \hline & Sum~C1 & Sum~C2 & Sum~C3\\ \end{array}
+\]
+
+=\begin{array}{l|l:c:r} Heading~1 & Heading~2 & Heading~3 & Heading~4\\ \hline Line~1 & Data~A1 & Data~A2 & Data~A3\\ Line~2 & Data~B1 & Data~B2 & Data~B3\\ Line~3 & Data~C1 & Data~C2 & Data~C3\\ \hline & Sum~C1 & Sum~C2 & Sum~C3\\ \end{array}=
+
+- Visualize $$
+  \begin{array}{l|l:c:r} 
+
+    Heading~1 & Heading~2 & Heading~3 & Heading~4\\ 
+
+    \hline 
+
+    Line~1 & Data~A1 & Data~A2 & Data~A3\\ 
+
+    Line~2 & Data~B1 & Data~B2 & Data~B3\\ 
+
+    Line~3 & Data~C1 & Data~C2 & Data~C3\\ 
+
+    \hline & Sum~C1 & Sum~C2 & Sum~C3\\ 
+
+    \end{array}
+  $$
+
+--------------
+
+\[
+\begin{array}{cccccccc} Daily & Mo & Tu & We & Th & Fr & Sa & Su \\ \hline exer & x & [] & [] & x & [] & [] & [] \\ \hline meds & [] & [] & [re] & [] & [] & [] & [] \\ \end{array}
+\]
+
+=\begin{array}{cccccccc} Daily & Mo & Tu & We & Th & Fr & Sa & Su \\ \hline exer & x & [] & [] & x & [] & [] & [] \\ \hline meds & [] & [] & [re] & [] & [] & [] & [] \\ \end{array}=
+
+- Visualize
+
+  \begin{array}{cccccccc} 
+
+    Daily & Mo & Tu & We & Th & Fr & Sa & Su \\ 
+
+    \hline 
+
+    exer & x & [] & [] & x & [] & [] & [] \\ 
+
+    \hline 
+
+    meds & [] & [] & [re] & [] & [] & [] & [] \\ 
+
+    \end{array}
+
+| Nom                 | Result                  |
+|---------------------+-------------------------|
+| \angle              | \(\angle\)              |
+| \approx             | \(\approx\)             |
+| \approxeq           | \(\approxeq\)           |
+| \asymp              | \(\asymp\)              |
+| \between            | \(\between\)            |
+| \bigcirc            | \(\bigcirc\)            |
+| \bigstar            | \(\bigstar\)            |
+| \bigtriangledown    | \(\bigtriangledown\)    |
+| \bigtriangleup      | \(\bigtriangleup\)      |
+| \blacklozenge       | \(\blacklozenge\)       |
+| \blacksquare        | \(\blacksquare\)        |
+| \blacktriangle      | \(\blacktriangle\)      |
+| \blacktriangledown  | \(\blacktriangledown\)  |
+| \blacktriangleleft  | \(\blacktriangleleft\)  |
+| \blacktriangleright | \(\blacktriangleright\) |
+| \bot                | \(\bot\)                |
+| \bowtie             | \(\bowtie\)             |
+| \boxdot             | \(\boxdot\)             |
+| \boxminus           | \(\boxminus\)           |
+| \boxplus            | \(\boxplus\)            |
+| \boxtimes           | \(\boxtimes\)           |
+| \bullet             | \(\bullet\)             |
+| \Bumpeq             | \(\Bumpeq\)             |
+| \checkmark          | \(\checkmark\)          |
+| \circ               | \(\circ\)               |
+| \circeq             | \(\circeq\)             |
+| \circlearrowleft    | \(\circlearrowleft\)    |
+| \circledast         | \(\circledast\)         |
+| \circledcirc        | \(\circledcirc\)        |
+| \circleddash        | \(\circleddash\)        |
+| \clubs              | \(\clubs\)              |
+| \colonapprox        | \(\colonapprox\)        |
+| \Cup                | \(\Cup\)                |
+| \curlyeqprec        | \(\curlyeqprec\)        |
+| \curlyeqsucc        | \(\curlyeqsucc\)        |
+| \dag                | \(\dag\)                |
+| \darr               | \(\darr\)               |
+| \ddag               | \(\ddag\)               |
+| \degree             | \(\degree\)             |
+| \Diamond            | \(\Diamond\)            |
+| \diamond            | \(\diamond\)            |
+| \diamonds           | \(\diamonds\)           |
+| \divideontimes      | \(\divideontimes\)      |
+| \doublebarwedge     | \(\doublebarwedge\)     |
+| \doublecap          | \(\doublecap\)          |
+| \flat               | \(\flat\)               |
+| \gg                 | \(\gg\)                 |
+| \gtrdot             | \(\gtrdot\)             |
+| \hearts             | \(\hearts\)             |
+| \infty              | \(\infty\)              |
+| \larr               | \(\larr\)               |
+| \leadsto            | \(\leadsto\)            |
+| \leftrightarrow     | \(\leftrightarrow\)     |
+| \ll                 | \(\ll\)                 |
+| \maltese            | \(\maltese\)            |
+| \measuredangle      | \(\measuredangle\)      |
+| \mho                | \(\mho\)                |
+| \multimap           | \(\multimap\)           |
+| \nabla              | \(\nabla\)              |
+| \natural            | \(\natural\)            |
+| \odot               | \(\odot\)               |
+| \ominus             | \(\ominus\)             |
+| \oplus              | \(\oplus\)              |
+| \oslash             | \(\oslash\)             |
+| \otimes             | \(\otimes\)             |
+| \pounds             | \(\pounds\)             |
+| \rarr               | \(\rarr\)               |
+| \rtimes             | \(\rtimes\)             |
+| \sharp              | \(\sharp\)              |
+| \spades             | \(\spades\)             |
+| \spadesuit          | \(\spadesuit\)          |
+| \sphericalangle     | \(\sphericalangle\)     |
+| \square             | \(\square\)             |
+| \star               | \(\star\)               |
+| \surd               | \(\surd\)               |
+| \text{\textdollar}  | \(\text{\textdollar}\)  |
+| \top                | \(\top\)                |
+| \triangle           | \(\triangle\)           |
+| \triangledown       | \(\triangledown\)       |
+| \triangleleft       | \(\triangleleft\)       |
+| \triangleq          | \(\triangleq\)          |
+| \triangleright      | \(\triangleright\)      |
+| \uarr               | \(\uarr\)               |
+| \updownarrow        | \(\updownarrow\)        |
+| \uplus              | \(\uplus\)              |
+| \yen                | \(\yen\)                |

@@ -1,0 +1,569 @@
+* Fondamentaux
+:PROPERTIES:
+:CUSTOM_ID: fondamentaux
+:END:
+** Sources d'information
+:PROPERTIES:
+:CUSTOM_ID: sources-dinformation
+:END:
+Quoi qu'il arrive, il est toujours nécessaire de récupérer les
+informations auprès des fabricant des matériels que vous allez utiliser.
+
+Tous les coefficients génériques ou valeurs usuelles doivent être
+critiqués et utilisés dans le seul but de réaliser une étude
+préliminaire.
+
+Si vous souhaitez réaliser une étude précise, seules les données des
+constructeurs peuvent vous permettre d'atteindre le bon niveau de
+précision.
+
+Cela est valable pour l'entièreté des constituants de votre réseau, de
+la pompe aux canalisations en passant par les vannes, raccords etc.
+
+** Puissance, Débit et Vitesse
+:PROPERTIES:
+:CUSTOM_ID: puissance-débit-et-vitesse
+:END:
+*** Calcul de la puissance
+:PROPERTIES:
+:CUSTOM_ID: calcul-de-la-puissance
+:END:
+\[\color{red}\boxed{\color{black}P=\rho \cdot c \cdot Q_v \cdot\Delta\theta}\]
+Avec : P : Puissance en \(W\) ρ : Masse volumique en \(kg/m^3\) c :
+capacité thermique massique du fluide en \(J/kg.K\) Qv : Débit en
+\(m^3/s\) ΔΘ : écart de température en \(K\)
+
+A noter qu'un écart de température étant relatif, il peut tout aussi
+bien être calculé en degré Celsius.
+
+En utilisant la capacité thermique volumique en \(J/m^3.K\) l'expression
+devient :
+\[\color{red}\boxed{\color{black}P=c \cdot Q_v \cdot\Delta\theta}\]
+
+*** Calcul du débit
+:PROPERTIES:
+:CUSTOM_ID: calcul-du-débit
+:END:
+Le débit est calculable de plusieurs façon. La plus commune est de
+remonter en partant de la puissance.
+
+En effet, il est commun d'évaluer la puissance calorifique ou
+frigorifique d'un système en premier (définition du besoin) par exemple
+en réalisant un bilan thermique d'un local, ce qui servira de valeur de
+référence pour le reste de l'étude.
+
+Dans ce cas, on calculera le débit de cette façon :
+\[\color{red}\boxed{\color{black}Qv=\frac{P}{\rho\cdot c \cdot\Delta\Theta}}\]
+
+Si on connait les caractéristiques du réseau (vitesse d'écoulement du
+fluide et section de passage) le débit peut être calculer simplement par
+: \[\color{red}\boxed{\color{black}Qv=v\cdot S}\] Avec : v : vitesse
+d'écoulement en \(ms^{-1}\) S : Section de passage en \(m\)
+
+*** Calcul de la vitesse
+:PROPERTIES:
+:CUSTOM_ID: calcul-de-la-vitesse
+:END:
+Concernant la vitesse, on la retrouvera en partant du calcul du débit et
+en considérant la section de passage
+\[\color{red}\boxed{\color{black}v=\frac{Qv}{S}}\] Dans une canalisation
+ou une gaine circulaire, on peut utiliser directement le diamètre du
+réseau \[\color{red}\boxed{\color{black}v=\frac{4Qv}{\pi\cdot D^2}}\]
+
+** Equation de Bernoulli
+:PROPERTIES:
+:CUSTOM_ID: equation-de-bernoulli
+:END:
+Lorsque l'on étudie un réseau fluidique, la première chose à faire est
+de poser l'équation de Bernoulli.
+
+\[\color{red}\boxed{\color{black}P_A + \rho g z_A + \frac{1}{2}\rho v_A^2 + W_{pompe} = P_B + \rho g z_B + \frac{1}{2}\rho v_B^2 + \Delta P_{A+B}}\]
+
+Ce que l'on recherche généralement est la Hauteur Manométrique de la
+pompe : \(W_{pompe}\)
+
+Il s'agit de la pression que doit fournir la pompe pour le bon
+fonctionnement du réseau
+
+On isole le terme qui nous intéresse dans l'équation de Bernoulli et on
+factorise l'expression :
+\[\color{red}\boxed{\color{black}W_{pompe}=(P_B-P_A)+\rho g(z_B-z_A)+\frac{1}{2}\rho(v_B^2-v_A^2)+\Delta P_{A+B}}\]
+
+On remarque que la pompe sert à compenser les pertes de charges
+suivantes :
+
+La différence de pression \((P_B-P_A)\) La différence de hauteur
+\(\rho g(z_B-z_A)\) La différence de vitesse
+\(\frac{1}{2}\rho(v_B^2-v_A^2)\) Les pertes de charges induite par le
+réseau \(\Delta P_{A+B}\)
+
+Ensuite on analyse le réseau pour évaluer les constantes et simplifier
+cette équation
+
+** Etude d'un réseau
+:PROPERTIES:
+:CUSTOM_ID: etude-dun-réseau
+:END:
+Tags: Mécanique des fluides
+
+*** Réseau ouvert - Système complet
+:PROPERTIES:
+:CUSTOM_ID: réseau-ouvert---système-complet
+:END:
+Dans ce système, tous les paramètres sont à étudier
+![[IllustrationRéseauSystèmeComplet.png]]
+
+On conserve donc l'équation complète :
+\[\color{red}\boxed{\color{black}W_{pompe}=(P_B-P_A)+\rho g(z_B-z_A)+\frac{1}{2}\rho(v_B^2-v_A^2)+\Delta P_{A+B}}\]
+
+*** Réseau ouvert aux mêmes conditions de pression
+:PROPERTIES:
+:CUSTOM_ID: réseau-ouvert-aux-mêmes-conditions-de-pression
+:END:
+Dans ce système, il y a les mêmes conditions de pression de part et
+d'autre du réseau : donc \(P_B-P_A = 0\)
+
+![[IllustrationRéseauPressionConstante.png]]
+
+On simplifie l'équation comme ceci :
+
+\[\color{red}\boxed{\color{black}W_{pompe}=\rho g(z_B-z_A)+\frac{1}{2}\rho(v_B^2-v_A^2)+\Delta P_{A+B}}\]
+
+*** Réseau ouvert sur des très grands réservoirs
+:PROPERTIES:
+:CUSTOM_ID: réseau-ouvert-sur-des-très-grands-réservoirs
+:END:
+Si le réseau est ouvert et que le début et la fin du réseau sont
+constitué de très grands réservoirs dont la variation de la vitesse à la
+surface est infime \(v_B \approx v_A\)
+
+![[IllustrationRéseauVitesseConstante.png]]
+
+On négligera l'étude de la vitesse et on simplifiera l'expression comme
+ceci :
+\[\color{red}\boxed{\color{black}W_{pompe}=(P_B-P_A)+\rho g(z_B-z_A)+\Delta P_{A+B}}\]
+
+*** Réseau ouvert sur des très grands réservoirs et au mêmes conditions de pression
+:PROPERTIES:
+:CUSTOM_ID: réseau-ouvert-sur-des-très-grands-réservoirs-et-au-mêmes-conditions-de-pression
+:END:
+Si le réseau est ouvert, constitué de part et d'autre de grands
+réservoirs et que ces deux éléments subissent la même pression en
+surface (exemple : pression atmosphérique), alors \(P_B = P_A\), et
+\(v_B \approx v_A\).
+
+Du coup \((P_B-P_A)+\frac{1}{2}\rho(v_B^2-v_A^2) = 0\)
+
+![[IllustrationRéseauVitesseEtPressionConstante.png]]
+
+On obtient l'équation suivante :
+\[\color{red}\boxed{\color{black}W_{pompe}=\rho g(z_B-z_A)+\Delta P_{A+B}}\]
+
+*** Réseau fermé simple
+:PROPERTIES:
+:CUSTOM_ID: réseau-fermé-simple
+:END:
+Si le réseau est fermé alors il n'y a pas de différence de hauteur entre
+le début et la fin du réseau puisque ces derniers sont ramenés au niveau
+de la pompe \(z_B=z_A\).
+
+De la même façon, \(P_B = P_A\), et \(v_B = v_A\).
+
+Du coup \((P_B-P_A)+\frac{1}{2}\rho(v_B^2-v_A^2)+\rho g(z_B-z_A) = 0\)
+
+![[IllustrationRéseauFerméSimple.png]]
+
+On obtient l'équation suivante :
+
+\[\color{red}\boxed{\color{black}W_{pompe}=\Delta P_{A+B}}\]
+
+Remarque : en réseau fermé, la pompe compense uniquement les pertes de
+charges inhérentes au réseau.
+
+*** Réseau fermé avec plusieurs embranchements
+:PROPERTIES:
+:CUSTOM_ID: réseau-fermé-avec-plusieurs-embranchements
+:END:
+Comme on est en réseau fermé, on a toujours
+\[\color{red}\boxed{\color{black}W_{pompe}=\Delta P_{A+B}}\]
+
+Cependant, pour déterminer \(\Delta P_{A+B}\) on conservera seulement le
+réseau le plus défavorable.
+
+![[IllustrationRéseauFerméMultiple.png]]
+
+On calcul donc : les pertes de charges du réseau commun
+\(\Delta P_{R_{commun}}\), celles du réseau 1 : \(\Delta P_{R_{1}}\) et
+celle du réseau 2 : \(\Delta P_{R_{2}}\).
+\[\color{red}\boxed{\color{black}\Delta P_{A+B} = \Delta P_{R_{commun}} + \max({\Delta P_{R_{1}},\Delta P_{R_{2}}})}\]
+
+* Calcul des pertes de charges (PdC)
+:PROPERTIES:
+:CUSTOM_ID: calcul-des-pertes-de-charges-pdc
+:END:
+** PdC Linéaires
+:PROPERTIES:
+:CUSTOM_ID: pdc-linéaires
+:END:
+Ce sont les pertes de charges entrainées par les conduits eux mêmes.
+
+Elles dépendent principalement de la rugosité des parois au contact du
+fluide.
+
+*** Avec abaques
+:PROPERTIES:
+:CUSTOM_ID: avec-abaques
+:END:
+L'unité de la perte de charge dépendra de l'abaque utilisé
+\[\color{red}\boxed{\color{black}{\Delta P_{lin}=j\cdot L}}\] Avec : j :
+coefficient fournis par l'abaque L : longueur du réseau étudié
+
+Faites attention à prendre le bon abaque !
+
+Ils sont réalisés en fonction du matériau constituant la canalisation ET
+en fonction de la température du fluide qui s'y écoule !
+
+*** Sans abaques
+:PROPERTIES:
+:CUSTOM_ID: sans-abaques
+:END:
+L'unité de la perte de charge calculée sera en Pascal
+\[\color{red}\boxed{\color{black}\Delta P_{lin}=\Lambda\cdot\frac{L}{D}\cdot\rho\cdot\frac{v^2}{2}}\]
+Avec : Λ : Coefficient de perte de charges (sans dimension) L : longueur
+du réseau étudié en \(m\) D : diamètre intérieur de la canalisation en
+\(m\) ρ : masse volumique en \(kg/m^3\) v : vitesse du fluide en \(m/s\)
+
+On remarque que les pertes de charges linéaires évoluent : -
+Proportionnellement à la longueur de canalisation Plus la longueur
+augmente plus il y a de perte de charges - Proportionnellement à la
+vitesse d'écoulement du fluide Plus le fluide s'écoule rapidement plus
+les pertes de charges augmentent - Fortement en fonction du diamètre
+Plus le diamètre est petit, plus le fluide aura des difficultés à
+s'écouler.
+
+Exemple : - 1 m de canalisation en \(\phi\) 14, on obtient le rapport :
+\[\frac{L}{D}=\frac{1}{14\cdot 10^-3}=71.43\]
+
+- 1 m de canalisation en \(\phi\) 12, on obtient le rapport :
+  \[\frac{L}{D}=\frac{1}{12\cdot 10^-3}=83.33\]
+
+- 1 m de canalisation en \(\phi\) 10, on obtient le rapport :
+  \[\frac{L}{D}=\frac{1}{10\cdot 10^-3}=100\]
+
+*** Coefficient \(\Lambda\)
+:PROPERTIES:
+:CUSTOM_ID: coefficient-lambda
+:END:
+Pour déterminer le coefficient \(\Lambda\), on commence par calculer le
+nombre de Reynolds En fonction de la viscosité cinématique
+\[Re=\frac{v\cdot D}{\nu}\] En fonction de la viscosité dynamique
+\[Re=\frac{\rho\cdot v\cdot D}{\mu}\] Avec : v : vitesse en
+\(m\cdot s^{-1}\) D : diamètre interne du conduit en \(m\) \(\mu\) :
+viscosité cinématique en \(m^2\cdot s^{-1}\) \(\rho\) : masse volumique
+en \(kg\cdot m^{-3}\) v : vitesse en \(m\cdot s^{-1}\) D : diamètre
+interne du conduit en \(m\) \(\mu\) : viscosité dynamique en
+\(kg\cdot m^{-1}\cdot s^{-1}\)
+
+Nota : Lorsque l'on utilise de l'eau glycolée, il faut calculer la
+viscosité cinématique de cette façon :
+\[\color{red}\boxed{\color{black}\nu=309\cdot(37+t)^{-1.42}\cdot e^{1.1\cdot a\cdot(256-t)\cdot 0.0001}}\]
+Avec : a : pourcentage de glycol dans le mélange t : température en
+\(°C\)
+
+*** Régime d'écoulement
+:PROPERTIES:
+:CUSTOM_ID: régime-découlement
+:END:
+Le nombre de Reynolds permet de déterminer le régime d'écoulement du
+fluide. Le coefficient de perte de charge est calculé en fonction du
+régime d'écoulement
+
+| Régime laminaire          | Régime transitoire       | Régime turbulant                                                                                                                  |
+|---------------------------+--------------------------+-----------------------------------------------------------------------------------------------------------------------------------|
+| \(Re < 2000\)             | \(2000\leq Re\leq 4000\) | \(4000<Re\)                                                                                                                       |
+| \(\Lambda=\frac{64}{Re}\) | Impossible               | Formule de Colebrook :\[\frac{1}{\sqrt{\Lambda}}=-2\log_{10}(\frac{2.51}{Re}\cdot\frac{1}{\sqrt{\Lambda}}+\frac{k}{3.7\cdot D})\] |
+
+Avec : Re : Nombre de Reynolds \(\Lambda\) : Coefficient de perte de
+charges k : Indice de rugosité du tube en \(mm\) D : Diamètre interne du
+tube Re : Nombre de Reynolds
+
+On comprend ici que, lorsqu'on est en régime turbulant, il est très
+compliqué de calculer le coefficient de perte de charges.
+
+Pour les motivés, voici quelques exemples de k :
+
+| Nature de la surface interne | k             |
+|------------------------------+---------------|
+| Cuivre, Plomb, Laiton        | 0.001 à 0.002 |
+| Tube PVC                     | 0.0015        |
+| Acier inox                   | 0.015         |
+| Acier noir                   | 0.045 à 0.09  |
+| Acier étiré                  | 0.015         |
+| Acier soudé                  | 0.045         |
+| Acier galvanisé              | 0.15          |
+| Acier rouillé                | 0.25 à 0.8    |
+| Fonte neuve                  | 0.25 à 0.8    |
+| Fonte usagée                 | 0.8 à 1.5     |
+| Ciment lissé                 | 0.3           |
+| Béton ordinaire              | 1             |
+
+A moins d'avoir un programme sous la main ou un peu de temps devant sois
+pour résoudre la formule de Colebrook, il convient d'utiliser un outils
+plus convivial.
+
+L'outil parfait est le *Diagramme de Moody*
+
+Voici un schéma illustrant comment se servir de ce diagramme :
+
+![[IllustrationDiagrammeMoody.png]]
+
+Le nombre de Reynolds fixe le point sur la courbe
+
+La courbe est sélectionnée en calculant la rugosité relative :
+\(\frac{\varepsilon}{D}\) \(\varepsilon\) : rugosité en mm
+
+Voici à quoi ressemble le diagramme de Moody : ![[DiagrammeDeMoody.png]]
+/Par Marc.derumaux --- Travail personnel, CC BY-SA 4.0,
+[[https://commons.wikimedia.org/w/index.php?curid=52681202]]/
+
+** PdC Singulières
+:PROPERTIES:
+:CUSTOM_ID: pdc-singulières
+:END:
+Ce sont les pertes de charges entrainées par toutes les accidents de
+parcours du réseau.
+
+On comprendra ici : tout ce qui n'est pas une canalisation droite
+
+Exemple : Coude, Té, entrée ou sortie de cuve, rétrécissement etc.
+
+** Estimation
+:PROPERTIES:
+:CUSTOM_ID: estimation
+:END:
+Si vous n'avez que très peu de temps pour évaluer ces pertes de charges,
+vous pouvez réaliser une évaluation sommaire avant d'y revenir plus
+tard.
+
+Attention, il s'agit vraiment d'une estimation "a vue de nez"
+
+Selon l'exigüité du réseau, les pertes de charges singulières vont
+varier de 5% à 33% des pertes de charges linéaires. \[
+\color{red}\boxed{\color{black}\Delta P_{sing} \approx 0.05 \text{ to } 0.33 \times \Delta P_{lin}}
+\]
+
+** Longueur équivalente
+:PROPERTIES:
+:CUSTOM_ID: longueur-équivalente
+:END:
+Suivant le matériau de vos canalisations, vous pourrez trouver des
+abaques référençant les longueurs équivalents des raccords.
+
+Le principe est très simple : un raccord ajoute autant de perte de
+charge d'une longueur de \(x\) mètres. \[
+\color{red}\boxed{\color{black}\Delta P_{sing}=j \cdot L_{equivalente}}
+\]
+
+** Coefficient de perte de charge
+:PROPERTIES:
+:CUSTOM_ID: coefficient-de-perte-de-charge
+:END:
+Les pertes de charges singulières peuvent être calculée grâce à des
+coefficients dépendant de la nature de la singularité : ζ (Zeta) \[
+\color{red}\boxed{\color{black}\Delta P_{sing}=\zeta \cdot \rho \cdot \frac{v^2}{2}}
+\]
+
+A noter ici : \(\rho \cdot \frac{v^2}{2}\) est la pression dynamique du
+fluide.
+
+Si la vitesse d'écoulement dans le réseau est constante, la pression
+dynamique est constante également.
+
+Dans ce cas, il est possible de réaliser la somme des \(\zeta\)du réseau
+et d'y multiplier la pression dynamique pour obtenir directement le
+\(\Delta P_{sing}\) du réseau.
+
+On obtient donc : \[
+\color{red}\boxed{\color{black}\Delta P_{sing}=\Sigma \zeta \cdot \rho \cdot \frac{v^2}{2}}
+\]
+
+*** Détermination du ζ
+:PROPERTIES:
+:CUSTOM_ID: détermination-du-ζ
+:END:
+Il existe deux catégories pour les pertes de charges singulières :
+
+Les pertes de charges à coefficient constant qui sont principalement
+dues aux changements de section
+
+Les pertes de charges à coefficient variable (variant en fonction du
+diamètre) qui sont principalement dues aux pertes par frottement et
+turbulence.
+
+**** Coefficients constants
+:PROPERTIES:
+:CUSTOM_ID: coefficients-constants
+:END:
+***** Elargissement concentrique
+:PROPERTIES:
+:CUSTOM_ID: elargissement-concentrique
+:END:
+Pour trouver le ζ associé à votre changement de section, commencez par
+calculer le rapport du plus petit diamètre sur le plus grand \[
+\frac{D1}{D2}
+\]
+
+![[IllustrationElargissementConcentrique.png]]
+
+Le tableau suivant donne les valeur de coefficient à prendre en compte
+en fonction du ratio obtenu
+
+| Ratio | ζ     |
+|-------+-------|
+| 0.90  | 0.026 |
+| 0.80  | 0.13  |
+| 0.75  | 0.16  |
+| 0.67  | 0.28  |
+| 0.50  | 0.5   |
+
+***** Rétrécissement concentrique
+:PROPERTIES:
+:CUSTOM_ID: rétrécissement-concentrique
+:END:
+Pour trouver le ζ associé à votre changement de section, commencez par
+calculer le rapport du plus petit diamètre sur le plus grand \[
+\frac{D1}{D2}
+\]
+
+![[IllustrationRéductionConcentrique.png]]
+
+Le tableau suivant donne les valeur de coefficient à prendre en compte
+en fonction du ratio obtenu
+
+| Ratio | ζ     |
+|-------+-------|
+| 0.90  | 0.008 |
+| 0.80  | 0.041 |
+| 0.75  | 0.049 |
+| 0.67  | 0.085 |
+| 0.50  | 0.16  |
+
+**** Coefficients variables
+:PROPERTIES:
+:CUSTOM_ID: coefficients-variables
+:END:
+
+#+begin_quote
+/WIP/
+
+#+end_quote
+
+** PdC Echangeurs
+:PROPERTIES:
+:CUSTOM_ID: pdc-echangeurs
+:END:
+Ici on évalue la perte de charge des échangeurs.
+
+Pour réaliser le calcul, on utilise la constante de l'échangeur fournis
+par le fabricant. \[
+\color{red}\boxed{\color{black}\Delta P_{ech}=a_{ech}\cdot Qv^2}
+\] Avec : \(a_{ech}\) : constante d'échangeur, attention aux unités !
+Effectuez les conversions nécessaires. Qv : débit du fluide
+\(m^3 h^{-1}\)
+
+Parfois, le fabricant donnera une perte de charge à un débit donné.
+
+On recalcule alors la constante de l'échangeur en faisant le rapport :
+\[\color{red}\boxed{\color{black}a_{ech}=\frac{\Delta P_{donné}}{Qv_{donné}^2}}\]
+
+** PdC Vannes de régulation
+:PROPERTIES:
+:CUSTOM_ID: pdc-vannes-de-régulation
+:END:
+On utilise ces vannes pour ajuster les pertes de charges lorsqu'il y a
+plusieurs départs sur un réseau.
+
+Cela permet de s'assurer que les bons débits de fluide parcourront
+chaque division du réseau.
+
+Ce qui nous intéresse n'est pas particulièrement la perte de charge en
+sois mais plutôt le réglage de la vanne.
+
+La perte de charge est calculée comme cela : \[
+\color{red}\boxed{\color{black}\Delta P_{vanne}=(\frac{Qv}{Kv})^2\cdot 10.2}
+\] Avec : Qv : Débit du fluide en \(m^3 h^{-1}\) Kv : Débit traversant
+la vanne pour une perte de charge de 1 bar
+
+Ici, la perte de charge est en \(mCE\) (mètre de colonne d'eau parfois
+écris \(mH_2O\))
+
+Le Kv de la vanne est calculé comme ceci : \[
+\color{red}\boxed{\color{black}Kv=\frac{Qv}{\sqrt{\Delta P_{vanne}}}}
+\] Avec : \(\Delta P_{vanne}\) en \(bar\)
+
+On pourra distinguer les pertes de charges des vannes TA
+(\(\Delta P_{TA}\)) des pertes de charges des vannes d'équilibrages
+(\(\Delta P_{reg}\))
+
++On utilisera le Kvs (ouverture de la vanne à 100%) pour connaitre
+l'autorité de la vanne.+
+
+- Si \(\Delta P_v \ll \Delta P_r\) alors : faible autorité de la vanne,
+  donc mauvaise progressivité du réglage
+- Si \(\Delta P_v \leqslant \Delta P_r\) : Grande autorité de la vanne
+  et bonne progressivité du réglage
+
+![[Images/IllustrationAutoritéVanne.png]]
+
+L'autorité "\(a\)" est théoriquement égale à :
+
+\[
+\color{green}
+\boxed{
+\color{black} 
+a = \frac{
+\Delta P_{vanne à 100% d'ouverture}}
+{\Delta P_{vanne à 0% d'ouverture}}
+}
+}
+\]
+
+Ce qui donnerait une autorité infinie.
+
+En réalité, nous allons chercher à obtenir une autorité de : \(a=0,5\)
+
+Nous calculons cette valeur de façon itérative tel que :
+
+\[
+\color{red}\boxed{\color{black}a = \frac{\Delta P_{vanne à 100% d'ouverture}}{\Delta P_{réseaux régulé par la vanne}}}
+\]
+
+Une valeur comprise entre 0.3 et 0.7 est acceptable :
+\(\color{red}\boxed{\color{black}0,3<a<0.7}\)
+
+* Bilan des PdC
+:PROPERTIES:
+:CUSTOM_ID: bilan-des-pdc
+:END:
+Pour préparer la sélection de la pompe ou du ventilateur, on constitue
+un tableau récapitulant les pertes de charges :
+
+| *Type de PdC* | \(\Delta P_{lin}\)                                                                                              | \(\Delta P_{R_1}\) | \(\Delta P_{R_{...}}\) | \(\Delta P_{sing}\)                | \(\Sigma\zeta\) + v ;\(\Sigma L_{eq}\) | \(\Delta P_{ech}\)                                                              | \(\Delta P_{TA}\) | \(\Delta P_{reg}\) |
+|---------------+-----------------------------------------------------------------------------------------------------------------+--------------------+------------------------+------------------------------------+----------------------------------------+---------------------------------------------------------------------------------+-------------------+--------------------|
+| *Paramètres*  | \(\Lambda\) , L, D, Qv, v, Re, \(\nu\) ou \(\mu\) et \(\epsilon\) Abaque : Qv, DN, L et donc j avec \(V_{max}\) |                    |                        | 5%, 15% ou 33% des PdC linéaires ; |                                        | \(a_{ech}\) et Qv ou \(\Delta P_{donné}\) à \(Qv_{donné}\) ;Abaque constructeur | Kv                | Kvs                |
+
+\(\Delta z_{B-A}\)
+
+Positif (+) si arrivé au dessus du départ Négatif (-) si inversement Nul
+: si système fermé
+
+\(\Delta P_{B-A}\)
+
+Positif (+) si pression à l'arrivé au dessus de celle de départ Négatif
+(-) si inversement Nul : si système fermé ou à pression égale de part et
+d'autre
+
+*HMT minimum :*
+
+\(\Sigma\Delta P_{commun}\) \(\Sigma\Delta P_{R_1}\)
+\(\Sigma\Delta P_{R_{...}}\)

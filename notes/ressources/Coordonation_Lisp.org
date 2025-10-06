@@ -1,0 +1,1 @@
+Créer une plateforme pour coordonner les efforts de développement de la communauté lisp

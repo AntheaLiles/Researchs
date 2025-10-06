@@ -1,0 +1,10 @@
+Le format BCF (BIM Collaboration Format) a été introduit suite à une
+idée des logiciels Tekla et Solibri de séparer la communication des
+messages décrivant les problèmes découverts sur la maquette numérique du
+modèle lui-même.
+
+Le format BCF permet l'ajout d'annotation directement sur la maquette
+numérique. Il permet également d'y attacher une petite partie du modèle
+BIM et des vues associées.
+
+C'est BuildingSMART qui s'occupe maintenant du format BCF.
