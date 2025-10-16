@@ -138,5 +138,7 @@ https://www.uphf.fr/recherche/lecole-doctorale/reglement-interieur
 * Superviseur de la thèse côté EIFFAGE ENERGIE SYSTEMES
 - *Mathieu Chapel*, Responsable de projet : [[mailto:Mathieu.Chapel@eiffage.com]]
 
-# Références et bibliographie
-#+INCLUDE: ~/org/fin-de-doc.org
+* Bibliographie
+  #+LATEX: \begin{multicols}{2}\small{
+  #+print_bibliography: :heading none
+  #+LATEX: }\clearpage\end{multicols}

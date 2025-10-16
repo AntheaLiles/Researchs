@@ -9,11 +9,15 @@
 Abstract
 #+end_abstract
 
-#+latex: \textbf{Mots clés : }\keywords{Mots clés}
+#+begin_keyword
+Mots clés
+#+end_keyword
 
 Version et date du protocole : 
 Enregistrement (ex. OSF, Zenodo) : 
 
 format : IMRaD (introduction, methode, results and discussion)
+
+#+INCLUDE: ./thesis/ch01-exploration_sectorielle.org
 
 * Bibliography

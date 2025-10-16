@@ -42,43 +42,47 @@
   
   #+LATEX: \setcounter{section}{-1}
 * Introduction générale (15p)
-  #+INCLUDE: "./ch0-introduction.org"
+  #+INCLUDE: "./ch00-introduction.org"
   #+LATEX: \clearpage
 
 * Exploration sectorielle (20p)
-  #+INCLUDE: "./ch1-exploration_sectorielle.org"
+  #+INCLUDE: "./ch01-exploration_sectorielle.org"
   #+LATEX: \clearpage
 
 * Etat de l'art (80p)
-  #+INCLUDE: "./ch2-etat_de_l_art.org"
+  #+INCLUDE: "./ch02-etat_de_l_art.org"
   #+LATEX: \clearpage
 
 * Problématique de recherche (20p)
-  #+INCLUDE: "./ch3-problematique.org"
+  #+INCLUDE: "./ch03-problematique.org"
   #+LATEX: \clearpage  
 
 * Fondements théoriques (20p)
-  #+INCLUDE: "./ch4-theory.org"
+  #+INCLUDE: "./ch04-theory.org"
   #+LATEX: \clearpage
 
 * Taxonomie des contraintes (20p)
-  #+INCLUDE: "./ch8-taxonomy.org"
+  #+INCLUDE: "./ch05-taxonomy.org"
   #+LATEX: \clearpage
   
 * Proposition (80p)
-  #+INCLUDE: "./ch5-proposition.org"
+  #+INCLUDE: "./ch06-proposition.org"
+  #+LATEX: \clearpage
+
+* Protocol expérimental (15p)
+  #+INCLUDE: "./ch07-protocol.org"
   #+LATEX: \clearpage
 
 * Validation expérimentale (50p)
-  #+INCLUDE: "./ch6-validation.org"
+  #+INCLUDE: "./ch08-validation.org"
   #+LATEX: \clearpage
-
+  
 * Discussion et perspectives (15p)
-  #+INCLUDE: "./ch7-discussion.org"
+  #+INCLUDE: "./ch09-discussion.org"
   #+LATEX: \clearpage
   
 * Conclusion générale (10p)
-  #+INCLUDE: "./ch9-conclusion.org"
+  #+INCLUDE: "./ch10-conclusion.org"
   #+LATEX: \clearpage
   
 #+LATEX: \clearpage
@@ -103,25 +107,21 @@
   #+LATEX: }\end{multicols}
   
 ** Liste des acronymes
-  #+LATEX: \begin{multicols}{2}\small{
+  
   #+print_glossary: :type acronym :only-contents t
   #+LATEX: }\clearpage\end{multicols}
 
 * Bibliographie
   #+LATEX: \begin{multicols}{2}\small{
   #+print_bibliography: :heading none
-  #+LATEX: }\clearpage\end{multicols}
+  #+LATEX: }\clearpage\end{multicols} 
 
 #+LATEX: \appendix
 * Analyse des normes
-  #+INCLUDE: "./anx-01.org"
+  #+INCLUDE: "./chAnx01.org"
   #+LATEX: \clearpage
 
 * Analyse des ontologies
-Echanger avec A.Vial du CSTB pour une collaboration
-Application des ontologies en gestion des contraintes
-Panorama et comportement
-
 * Analyse des méthodes de test logiciels
 * Analyse des langages de balisage légers
 * Analyse des standards d'information

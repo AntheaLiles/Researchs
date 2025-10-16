@@ -1,11 +1,11 @@
 #+glossary_sources: ~/org/glossary.org
-** Introduction
+* Introduction
 (Okoli, Tranfield)
 - **Contexte et problématique** : préciser le champ disciplinaire et la pertinence pratique/organisationnelle.
 - **Objectif scientifique** : situer la revue comme méthode de recherche en soi, permettant de cartographier un champ et de développer une contribution conceptuelle (typologie, cadre théorique, taxonomie, agenda de recherche).
 - **Pertinence managériale** : expliquer en quoi la revue éclaire les besoins des organisations et des acteurs.
 
-** Protocole de recherche
+* Protocole de recherche
 Research questions
 - RQ1 ::
 - RQ2 ::
@@ -20,12 +20,14 @@ Methode SPIDER
 Research string
 - Construction des équations avec opérateurs booléens et synonymes.
 
-#+CAPTION: Requête SPIDER générique
-#+BEGIN_SRC :results verbatim
+#+CAPTION: Requête générique
+#+NAME: lst:rlr-query-generic
+#+BEGIN_SRC sql :results verbatim
   ("knowledge management" OR "organizational learning") AND ("digital transformation" OR "IT adoption")
 #+END_SRC
 
-#+CAPTION: Déclinaison de la requête SPIDER par bases de données ciblées
+#+CAPTION: Déclinaison de la requête générique par bases de données ciblées
+#+NAME: tbl:rlr-query-variants
 | Name                             | Query |
 |----------------------------------+-------|
 | Scopus                           |       |
@@ -63,7 +65,7 @@ Formulaire d’extraction (Okoli)
 - Validité méthodologique (forte/moyenne/faible).
 - Clarté de la contribution.
 
-** Résultats de recherche
+* Résultats de recherche
 Nombre d’articles identifiés, filtrés, exclus, inclus.
 
 *PRISMA 2020 flow diagram* for new systematic reviews which included searches of databases and registers only
@@ -77,17 +79,17 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC12013547
 https://pubmed.ncbi.nlm.nih.gov/39038926
 https://www.equator-network.org/wp-content/uploads/2018/02/PRISMA-RR-protocol.pdf
   
-** Analyses des résultats
+* Analyses des résultats
 - **Analyse descriptive** : nombre d’articles, évolution temporelle, répartition par journaux/méthodes.
 - **Analyse thématique** : regroupement des contributions en catégories conceptuelles.
 - **Construction conceptuelle** : cadre, typologie, ou modèle explicatif.
 - **Agenda de recherche** : identification des lacunes et pistes futures.
 
-** Discussion
+* Discussion
 - **Synthèse des apports** : résumé des résultats majeurs.
 - **Implications théoriques** : enrichissement du corpus scientifique en gestion.
 - **Implications pratiques** : recommandations pour les acteurs managériaux.
 - **Limites méthodologiques** : biais de sélection, couverture des bases, etc. Risques de biais de publication, Risques liés à l’échantillonnage ou aux bases de données, Stratégies d’atténuation (diversification, double codage).
 - **Perspectives** : agenda pour futures recherches.
 
-** Conclusion
+* Conclusion

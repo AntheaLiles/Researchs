@@ -1,31 +1,46 @@
 #+glossary_sources: ~/org/glossary.org
-** Méthodologie
-*** Stratégie de recherche
+* Méthodologie
+** Stratégie de recherche
 La stratégie repose sur la Design Science Research (DSR) (Hevner et al., 2004 ; Peffers et al., 2007 ; Gregor & Jones, 2007) comme ancrage principal pour construire une théorie de conception en gestion de projet.
 Elle est enrichie par :
 - l’Action Design Research (ADR) (Sein et al., 2011) afin d’intégrer les utilisateurs dans la boucle de recherche,
 - le cadre CIMO / Realist Evaluation (Pawson & Tilley, 1997 ; Denyer et al., 2008) pour structurer les mécanismes explicatifs,
 - l’approche processuelle de Langley (1999) pour représenter la dynamique organisationnelle et ses évolutions.
 
-*** Socles théoriques
+** Socles théoriques
 Théories des artefacts de conception et de l’action (DSR, ADR).
 Théories causales mécanistes (CIMO).
 Théorisation processuelle (Langley).
 Bases en sciences de gestion : routines organisationnelles (Pentland & Feldman), Knowledge Management (Nonaka, Davenport), interfaces écologiques (Vicente), théorie des jeux, graphes.
 
-*** Organisation
+*** TODO Théories de l’interface écologique
+   #+SOURCE: 00.01-Sujet.pdf §3.2 p.8-9
+   Décrire les principes de l’Ecological Interface Design (Vicente, 1999).  
+   Expliquer les notions de visibilité, affordance, abstraction hierarchy et situation awareness.
+
+*** TODO Sensibilité au contexte et cognition située
+   #+SOURCE: 00.01-Sujet.pdf §3.2 p.10-11
+   Définir les dimensions de contexte (utilisateur, tâche, environnement, système).  
+   Citer Dey & Abowd (2000), Kaptelinin & Nardi (2006), Hollnagel (2002).
+
+*** TODO Visualisation et interaction pour la négociation de contraintes
+#+SOURCE: 00.02-eduBIM2025.pdf §3 p.9-10
+Présenter les approches de visualisation : overview + zoom + filter + details (Shneiderman, 1996).  
+Décrire les besoins de représentation et d’interaction pour la compréhension et la négociation.
+
+** Organisation
 La méthodologie est organisée en quatre parties :
 - Définition des objectifs (DSR + ADR)
 - Principes de conception (DSR)
 - Mécanismes causaux (CIMO)
 - Dynamiques processuelles (Langley)
 
-** Définition des objectifs
+* Définition des objectifs
 - Structurer les objectifs de recherche en six étapes (problem identification, objectifs, design, démonstration, évaluation, communication) [cite:@Peffers et al. (2007)].
 - Garantir la pertinence (problèmes issus du terrain) et la rigueur scientifique (bases théoriques) [cite:@Hevner et al. (2004)].
 - Formuler les objectifs conjointement avec les praticiens, en laboratoire puis en contexte industriel [cite:@Sein et al. (2011) (ADR)].
 
-** Principes de conception
+* Principes de conception
 Structuration des principes [cite:@Gregor & Jones (2007)] :
 - But & portée : Développer une pratique organisationnelle de gestion de projet qui permet de modéliser, résoudre et préserver les contraintes, tout en assurant traçabilité, faisabilité et adaptation continue.
 - Constructs : Acteur, rôle, objet-projet, contrainte, test, graphe de dépendances, mécanisme de propagation, événement, log, interface écologique.
@@ -39,7 +54,7 @@ Structuration des principes [cite:@Gregor & Jones (2007)] :
 
 Justificatory knowledge : S’appuie sur la littérature en routines organisationnelles, gestion des connaissances (SECI), écologie des interfaces (EID), planification par contraintes (TOC/PERT/CPM), théorie des jeux et graphes.
 
-** Mécanismes causaux
+* Mécanismes causaux
 Utilisation du cadre CIMO (Denyer et al., 2008 ; Pawson & Tilley, 1997) pour exprimer les mécanismes :
 - Contexte (type de projet, maturité organisationnelle)
 - Intervention (instanciation du graphe de contraintes, IHM écologique)
@@ -51,7 +66,7 @@ Exemple
 Dans un projet à forte complexité contractuelle (C), l’instanciation d’un pipeline CNL→Graphe (I) active le mécanisme de détection précoce des conflits (M), réduisant le temps moyen de résolution (O).
 #+END_EXAMPLE
 
-** Dynamiques processuelles
+* Dynamiques processuelles
 Théoriser les dynamiques organisationnelles [cite:@Langley (1999)].
 Méthodes utilisées :
 - Temporal bracketing (séquençage des phases contraintes/tests).
@@ -60,7 +75,7 @@ Méthodes utilisées :
 
 Apport : démonstration que la pratique organisationnelle évolue par itérations, au-delà d’une simple modélisation statique.
 
-** Formulation finalisée de la théorie
+* Formulation finalisée de la théorie
 (Design Theory Statement)
 
 Conformément à Gregor & Jones (2007), la formulation finale de la théorie issue de l’étude peut être structurée en huit éléments. Ci-dessous un exemple de rédaction, que vous raffinerez ensuite à partir des résultats empiriques :
@@ -75,9 +90,9 @@ Théorie :
 In complex projects (Where), actors with decision or coordination roles (Who), when provided with an ecological HCI (How) integrating executable business rules (What), during planning and monitoring phases (When), will experience a measurable reduction in resolution time (How much) and increased compliance (Outcome), because mechanisms of visibility, propagation, and traceability (Why) support better coordination across actors (CIMO).
 #+END_EXAMPLE
 
-** Discussion
+* Discussion
 
-** Conclusion
+* Conclusion
 Le chapitre aboutit à une architecture de théorisation hybride et multi-niveaux :
 Macro-niveau (DSR/ADR) : définition et validation itérative d’une design theory.
 Mésos-niveau (CIMO) : formalisation des mécanismes causaux.

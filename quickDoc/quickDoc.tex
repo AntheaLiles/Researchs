@@ -1,4 +1,4 @@
-% Created 2025-09-29 Mon 11:31
+% Created 2025-10-14 Tue 19:21
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -11,23 +11,7 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{luacode}
-\usepackage[french]{babel}
-\usepackage{microtype}
-\usepackage[autolanguage]{numprint}
-\npthousandsep{~}
-\usepackage{bxtexlogo}
-\bxtexlogoimport{*}
-\bxtexlogoimport{**}
-\usepackage{fontspec}
-\usepackage{ulem}
-\usepackage{soul}
-\setmainfont{Source Serif 4}[Path=/home/anthea/org/fonts/Source_Serif_4/static/, UprightFont=SourceSerif4-Regular.ttf, ItalicFont=SourceSerif4-Italic.ttf, BoldFont=SourceSerif4-Bold.ttf, BoldItalicFont=SourceSerif4-BoldItalic.ttf]
-\setsansfont{Source Sans 3}[Path=/home/anthea/org/fonts/Source_Sans_3/static/, UprightFont=SourceSans3-Regular.ttf, ItalicFont=SourceSans3-Italic.ttf, BoldFont=SourceSans3-Bold.ttf, BoldItalicFont=SourceSans3-BoldItalic.ttf]
-\setmonofont{JetBrains Mono}[Path=/home/anthea/org/fonts/JetBrains_Mono/static/, UprightFont=JetBrainsMono-Regular.ttf, ItalicFont=JetBrainsMono-Italic.ttf, BoldFont=JetBrainsMono-Bold.ttf, BoldItalicFont=JetBrainsMono-BoldItalic.ttf]
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\definecolor{customgray}{HTML}{505050}
-\usepackage[top=3.2cm, bottom=3.2cm, left=2.4cm, right=2.4cm]{geometry}
+\usepackage[top=3.2cm,bottom=3.2cm,left=2.4cm,right=2.4cm]{geometry}
 \usepackage{setspace,fancyhdr,indentfirst,lastpage,datetime,authblk,ifthen,etoolbox,titling}
 \singlespacing
 \pagestyle{fancy}
@@ -39,12 +23,35 @@
 \setlength{\columnsep}{0.8cm}
 \setlength{\marginparwidth}{1.6cm}
 \setcounter{page}{1}
-\usepackage{csquotes}
-\usepackage{array,booktabs,multirow,tabularx,colortbl,diagbox,makecell,ltablex,adjustbox,multicol}
+\usepackage[main=french, english, french]{babel}
+\usepackage{microtype}
+\usepackage[autolanguage]{numprint}\npthousandsep{~}
+\usepackage{fontspec}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{customgray}{HTML}{505050}
+\usepackage{graphicx}
+\usepackage{caption,subcaption}
+\usepackage{float,longtable,booktabs}
+\captionsetup{labelfont=bf,font=small}
+\setmainfont{Source Serif 4}[Path=/home/anthea/org/fonts/Source_Serif_4/static/, UprightFont=SourceSerif4-Regular.ttf, ItalicFont=SourceSerif4-Italic.ttf, BoldFont=SourceSerif4-Bold.ttf, BoldItalicFont=SourceSerif4-BoldItalic.ttf]
+\setsansfont{Source Sans 3}[Path=/home/anthea/org/fonts/Source_Sans_3/static/, UprightFont=SourceSans3-Regular.ttf, ItalicFont=SourceSans3-Italic.ttf, BoldFont=SourceSans3-Bold.ttf, BoldItalicFont=SourceSans3-BoldItalic.ttf]
+\setmonofont{Source Code Pro}[Path=/home/anthea/org/fonts/Source_Code_Pro/static/, UprightFont=SourceCodePro-Regular.ttf, ItalicFont=SourceCodePro-Italic.ttf, BoldFont=SourceCodePro-Bold.ttf, BoldItalicFont=SourceCodePro-BlackItalic.ttf]
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{marginnote}\reversemarginpar
+\usepackage{perpage}\MakePerPage{footnote}
+\renewcommand{\thefootnote}{\alph{footnote}}
+\newcounter{rmq}
+\renewcommand{\thermq}{\arabic{rmq}}
+\newcommand{\RMQ}[1]{\refstepcounter{rmq}\marginnote{\textbf{RMQ~\thermq.}~\footnotesize #1}\textsuperscript{\textsf{R\thermq}}}
 \usepackage{enumitem}\setlist{nosep}\setlist[itemize]{leftmargin=*}
+\usepackage{adjustbox,array,booktabs,colortbl,diagbox,ltablex,makecell,multicol,multirow,tabularx}
 \usepackage[toc,page]{appendix}
 \usepackage[nottoc]{tocbibind}
 \newenvironment{keyword}{\begin{trivlist}\item[]{\bfseries Mots-clés :}}{\end{trivlist}}
+\usepackage[acronym]{glossaries}
+\makenoidxglossaries
 \usepackage{graphicx,caption,wrapfig}
 \usepackage[most,breakable,xparse,listings,skins]{tcolorbox}
 \usepackage[colorinlistoftodos]{todonotes}
@@ -56,12 +63,28 @@
 \usepackage{algorithm2e}
 \usepackage{pgf,tikz,pgfplots,pgfplotstable,arydshln,subcaption,forest}
 \pgfplotsset{compat=1.18}
-\usepackage[acronym]{glossaries}
-\makenoidxglossaries
+\usepackage{csquotes}
+\usepackage[style=iso-numeric,citestyle=numeric-comp,doi=true,isbn=true,mincrossrefs=2,sorting=none,backend=biber]{biblatex}
 \usepackage{url,orcidlink,hyperref}
-\hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}, unicode=true}
+\hypersetup{unicode=true}
+\pdfstringdefDisableCommands{%
+\let\par\empty
+\let\\\empty
+\def\footnote#1{}%
+\def\marginpar#1{}%
+\def\marginnote#1{}%
+\def\todo#1{}%
+\def\href#1#2{#2}%
+\def\textcolor#1#2{#2}%
+\def\uline#1{#1}%
+\def\sout#1{#1}%
+\def\enquote#1{#1}%
+}
+\hypersetup{colorlinks=true,linkcolor=customgray,citecolor=customgray,urlcolor=customgray,pdfborder={0 0 0},unicode=true}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\date{2025-09-29}
+\date{2025-10-14}
 \title{quickDoc\\\medskip
 \large An ergonomic lightweight markup language with mnemonic inspirations for writing all kind of documents}
 \hypersetup{
@@ -71,18 +94,18 @@
  pdfsubject={},
  pdfcreator={},
  pdflang={French}}
-\usepackage[style=backend=biber,style=iso-numeric,citestyle=numeric-comp,doi=true,isbn=true,mincrossrefs=2,autocite=superscript]{biblatex}
-\addbibresource{~/org/references.bib}
 \begin{document}
 
 \maketitle
 \begin{abstract}
-Abstract
+Rédiger le résumé
 \end{abstract}
 
-\textbf{Mots clés : }\keywords{Mots clés}
+\begin{keyword}
+Mot clé 1, Mot clé 2
+\end{keyword}
 \section{Introduction}
-\label{sec:org8eeffe3}
+\label{sec:org475b478}
 
 \begin{verbatim}
 parler en revue de litérature de l'avantage des LML // LaTeX et // word
@@ -96,16 +119,15 @@ parler des problématiques d'incohérences et des specs non rigides
 parler des limites actuelles
 \end{verbatim}
 \section{Etat de l'art}
-\label{sec:org3f75bc9}
+\label{sec:orgf18c2e0}
 Il existe de multiples approches à la production de documents formatés. L'utilisation de logiciels de traitement de texte tels que MS Word, Google Docs ou encore Only Office est probablement la voies la plus largement répendue. Ces solutions proposent des environnements graphiques qui présentent aux utilisateurs les modifications qu'ils peuvent apporter à leurs document. Cette approche a des limitation notamment dans la réalisations de documents exécutable \footnote{\textbf{Document exécutable :} Désigne un document dont des éléments sont executé (p. ex. code) et remplacés par le produit de l'exécution (p. ex. schéma ou diagrammes).}.
 
 Une autre approche très répendue est d'écrire le formatage du texte en même temps que le contenu. Cette seconde approche implique généralement l'utilisation d'un éditeur de texte comme Neovim, Emacs, iA Writter, etc. associé à un logiciel adapté à la convention de rédaction choisie par l'utilisateur. De manière générale, l'utilisateur utilisera un langage de balisage pour déclarer le formatage.
 
-Il existe ainsi deux grandes catégories de langages de balisages appliqués à la rédaction de documents : les langages formels (\TeX{}, HTML, TEI\ldots{}) et les langages informels (Markdown, Org-Mode, AsciiDoc\ldots{})\autocite{leonardGuidanceMarkdownDesign2016}. Cette seconde catégorie constitue la famille des Lightweight Markup Language
- (\protect\hyperlink{gls-1}{\label{gls-1-use-1}LML}).
+Il existe ainsi deux grandes catégories de langages de balisages appliqués à la rédaction de documents : les langages formels (\TeX{}, HTML, TEI\ldots{}) et les langages informels (Markdown, Org-Mode, AsciiDoc\ldots{})(??, ????). Cette seconde catégorie constitue la famille des LML.
 \subsection{Langages de définition de documents}
-\label{sec:org39da9f3}
-Le standard actuel de rédaction de documents aux mises en formes rigoureuse est \TeX{}. Il s'agit à la fois un langage de programmation et un logiciel d'impression de document. Pour l'utiliser lors de la rédaction de document nous utilisons un format de rédaction tels que \LaTeX{}, ConTeXt, Texinfo, ou encore OpTeX. Ces formats emploient des macros \TeX{} pour faciliter la mise en page. Le format le plus répendu, nottament dans le monde académique, est le \LaTeX{}. La production d'un fichier \TeX{} prêt à être exporté (en PDF, DVI, HTML, PostScript\ldots{}) requiert une ou plusieurs étapes de compilation du texte source. Les compilateurs (ou moteurs) les plus fréquents sont pdfTeX, LuaTeX, et XeTeX et ils utilisent respectivement les variantes \LaTeX{} que sont pdfLaTeX, LuaLaTeX et XeLaTeX. Ces variantes sont similaires à \LaTeX{} avec des fonctions complémentaires adaptées au moteur choisis. \LaTeX{} bénéficie d'extensions communautaires compatibles ou spécialisées à un moteur et permettant de créer programmatiquement les documents. Nous pouvons citer ici les paquets XyMTeX pour dessiner des structures moléculaires, Biber pour générer les bibliographies, TikZ pour réaliser tout type de dessins ou encore ArabTeX qui permet la prise en charge des langues arabes. Pour rédiger des documents \LaTeX{}, il est nécessaire d'installer une distribution \TeX{}. La plus connue est \TeX{} Live dont il existe de multiples dérivés et pour les utilisateurs de Windows il semblerait que MikTeX soit apprécié. Enfin, l'emploi d'un éditeur (Emacs avec AUCTeX, le logiciel LyX, ou encore l'application web Overleaf) facilite la rédaction grace à des fonctionnalités d'assistance et de précomplétion. Des projets comme LTeX+\autocite{LtexplusLtexlsplus2025}  et Writefull\autocite{Writefull} permettent de porter ces techniques d'assistances dans d'autres logiciels.
+\label{sec:org3b5143d}
+Le standard actuel de rédaction de documents aux mises en formes rigoureuse est \TeX{}. Il s'agit à la fois un langage de programmation et un logiciel d'impression de document. Pour l'utiliser lors de la rédaction de document nous utilisons un format de rédaction tels que \LaTeX{}, ConTeXt, Texinfo, ou encore OpTeX. Ces formats emploient des macros \TeX{} pour faciliter la mise en page. Le format le plus répendu, nottament dans le monde académique, est le \LaTeX{}. La production d'un fichier \TeX{} prêt à être exporté (en PDF, DVI, HTML, PostScript\ldots{}) requiert une ou plusieurs étapes de compilation du texte source. Les compilateurs (ou moteurs) les plus fréquents sont pdfTeX, LuaTeX, et XeTeX et ils utilisent respectivement les variantes \LaTeX{} que sont pdfLaTeX, LuaLaTeX et XeLaTeX. Ces variantes sont similaires à \LaTeX{} avec des fonctions complémentaires adaptées au moteur choisis. \LaTeX{} bénéficie d'extensions communautaires compatibles ou spécialisées à un moteur et permettant de créer programmatiquement les documents. Nous pouvons citer ici les paquets XyMTeX pour dessiner des structures moléculaires, Biber pour générer les bibliographies, TikZ pour réaliser tout type de dessins ou encore ArabTeX qui permet la prise en charge des langues arabes. Pour rédiger des documents \LaTeX{}, il est nécessaire d'installer une distribution \TeX{}. La plus connue est \TeX{} Live dont il existe de multiples dérivés et pour les utilisateurs de Windows il semblerait que MikTeX soit apprécié. Enfin, l'emploi d'un éditeur (Emacs avec AUCTeX, le logiciel LyX, ou encore l'application web Overleaf) facilite la rédaction grace à des fonctionnalités d'assistance et de précomplétion. Des projets comme LTeX+(??, 2025)  et Writefull(??, a) permettent de porter ces techniques d'assistances dans d'autres logiciels.
 
 A la lecture de ce descriptif nous remarquons que la production de document avec \LaTeX{} implique en de multiples endroits de réaliser des choix et des arbitrages avant même de commencer à rédiger. Quel compileur utiliser ? Quels sont les extensions les plus à jours ou les plus stables ? Dans quel environnement vais-je travailler ? etc. Ces considérations persistent durant tout le processus de rédaction ce qui entraine des périodes de déconcentration et parasite le travail de l'utilisateur. Ce constat semble inciter à la création d'un système probablement plus restreint mais résiliant. 
 
@@ -113,36 +135,36 @@ A la lecture de ce descriptif nous remarquons que la production de document avec
 Parler de Typst/Quatro et de Scribble (lisp)
 \end{verbatim}
 \subsection{Langages de balisage léger}
-\label{sec:org39ff988}
-Markdown est le \protect\hyperlink{gls-1}{\label{gls-1-use-2}LML} le plus populaire mais aussi le plus critiqué. Sa définition simple (MD Basics) en fait un langage très facile d'approche, facile à apprendre par tout individu. Ses faiblaisses résident néanmoins de la diversité de ses implémentations. MD Basic est supporté de façon homogène mais n'inclus pas l'ensemble des usages textuels possibles. Ces ommissions ont tendu à la création de douzaines de dérivés non cohérents entres eux. Les utilisateurs sont donc contraint d'apprendre plusieurs Markdown selon l'environnement dans lequel ils rédigent leurs documents.
+\label{sec:org7e4c35c}
+Markdown est le LML le plus populaire mais aussi le plus critiqué. Sa définition simple (MD Basics) en fait un langage très facile d'approche, facile à apprendre par tout individu. Ses faiblaisses résident néanmoins de la diversité de ses implémentations. MD Basic est supporté de façon homogène mais n'inclus pas l'ensemble des usages textuels possibles. Ces ommissions ont tendu à la création de douzaines de dérivés non cohérents entres eux. Les utilisateurs sont donc contraint d'apprendre plusieurs Markdown selon l'environnement dans lequel ils rédigent leurs documents.
 
 \begin{verbatim}
 Parler de RestructuredText, de Org-Mode et AsciiDoc au minimum
 \end{verbatim}
 
-Org-mode, dont le document Orgdown décris la synthaxe, est un \protect\hyperlink{gls-1}{\label{gls-1-use-3}LML} très respecté par les utilisateurs d'Emacs. Ce langage est bien plus structuré que le Markdown et offre de nombreuses possibilités grâce à son étroite intégration avec \LaTeX{} et les macros d'Emacs. Son intrication profonde avec Emacs le rend difficilement portable à d'autres environnements de rédaction.
+Org-mode, dont le document Orgdown décris la synthaxe, est un LML très respecté par les utilisateurs d'Emacs. Ce langage est bien plus structuré que le Markdown et offre de nombreuses possibilités grâce à son étroite intégration avec \LaTeX{} et les macros d'Emacs. Son intrication profonde avec Emacs le rend difficilement portable à d'autres environnements de rédaction.
 
-AsciiDoc est une référence majeure des \protect\hyperlink{gls-1}{\label{gls-1-use-4}LML}. Il bénéficie d'une gouvernance de projet communautaire éprouvée, administrée par l'Eclipse Foundation. Ce langage couvre probablement tous les besoins de rédaction existant. Sa documentation est riche mais peut être intimidante pour un nouvel utilisateur.
+AsciiDoc est une référence majeure des LML. Il bénéficie d'une gouvernance de projet communautaire éprouvée, administrée par l'Eclipse Foundation. Ce langage couvre probablement tous les besoins de rédaction existant. Sa documentation est riche mais peut être intimidante pour un nouvel utilisateur.
 \subsection{Emergence d'un besoin}
-\label{sec:org5f9f0af}
+\label{sec:orgb885cb3}
 => Specify (github)
 => LLM
 => CBE
 
 conclusion : création de \textbf{quickDoc}
 \section{Syntaxe}
-\label{sec:org273971a}
+\label{sec:org8734ad1}
 \subsection{Définition}
-\label{sec:orgac35a72}
+\label{sec:org69c93bf}
 Un bloc de texte est constituée d'une ligne continue et de la première ligne vide immédiatement en dessous. Un retour chario n'entraine alors pas de création d'un nouveau bloc.
 \subsection{Balisage}
-\label{sec:orgd1165fe}
+\label{sec:orgaa3c234}
 Le texte d'un bloc peut être formaté au niveau d'une lettre, d'un mot, d'une ligne continue ou d'un ensemble de ligne continue espacées entres elles d'un unique retour chariot.
 
-Le formattage se réalise en entourant \emph{explicitement} le contenu à formater par les balises de formatage. Ces balises sont des symboles textuels accessibles facilement sur un clavier. Le tableau \ref{tab:org93900dd} liste les balises utilisées par \textbf{quickDoc} et présente 3 des modalitées d'emplois. Il existe une tollérance pour le formatage d'une ligne complète, comme l'ensemble de la ligne est formatée jusqu'au retour chariot alors il convient d'apposer \emph{uniquement} une double marque en début de ligne.  
+Le formattage se réalise en entourant \emph{explicitement} le contenu à formater par les balises de formatage. Ces balises sont des symboles textuels accessibles facilement sur un clavier. Le tableau \ref{tab:org86661f2} liste les balises utilisées par \textbf{quickDoc} et présente 3 des modalitées d'emplois. Il existe une tollérance pour le formatage d'une ligne complète, comme l'ensemble de la ligne est formatée jusqu'au retour chariot alors il convient d'apposer \emph{uniquement} une double marque en début de ligne.  
 
 \begin{longtable}{llllll}
-\caption{\label{tab:org93900dd}Liste des balisages}
+\caption{\label{tab:org86661f2}Liste des balisages}
 \\
 \hline
 Type & Balise & HTML5 & Une lettre & Un mot & Une ligne\\
@@ -246,7 +268,7 @@ Les blocs de mathématiques peuvent être associées à un résolveur d'équatio
 \texttt{\$\$ [[[set solver:<nom du résolveur>]]] <equation>}
 Quelques exemples de résolveurs : Math.js, SymPy, Maxima, SageMath, Wolfram Alpha, etc.
 \newline
-Les blocs verbatims peuvent être mis en forme en renseignant un type en lieu et place du <parametres> sous la forme \texttt{[[[set type:<value>]]]}. Ces types de blocs s'appellent des \emph{admonitions}\autocite{donathAdmonitionsMaterialMkDocs} et peuvent prendre les valeurs suivantes : note, abstract, info, tip, success, question, warning, failure, danger, bug, exemple, quote, keywords, answer, hypothesis, theorem, proof.
+Les blocs verbatims peuvent être mis en forme en renseignant un type en lieu et place du <parametres> sous la forme \texttt{[[[set type:<value>]]]}. Ces types de blocs s'appellent des \emph{admonitions}(Donath, Martin, ????) et peuvent prendre les valeurs suivantes : note, abstract, info, tip, success, question, warning, failure, danger, bug, exemple, quote, keywords, answer, hypothesis, theorem, proof.
 
 Les verbatims peuvent également être utilisés pour collecter des entrées utilisateurs et créer des formulaires en écrivant \texttt{:[[[get <property> <key>:<value>]]]:} où \texttt{<key>} correspond au type attendu et \texttt{<value>} correspond à la contrainte associée. Par exemple, voici des appels d'entrées valides :
 \begin{itemize}
@@ -254,10 +276,10 @@ Les verbatims peuvent également être utilisés pour collecter des entrées uti
 \item \texttt{:[[[get user-lang string:2]]]:} donnera \texttt{\_\_} et sera affecté à la propriété "user-lang".
 \end{itemize}
 
-Les balises peuvent être combinées entre elles dans les limites de la matrice de compatibilité présentée par le tableau \ref{tab:org734ee2d}. La combinaison du superscript et du subscript produit un middlescript.
+Les balises peuvent être combinées entre elles dans les limites de la matrice de compatibilité présentée par le tableau \ref{tab:orge661d5a}. La combinaison du superscript et du subscript produit un middlescript.
 
 \begin{table}[htbp]
-\caption{\label{tab:org734ee2d}Compatibility matrix between formatings}
+\caption{\label{tab:orge661d5a}Compatibility matrix between formatings}
 \centering
 \begin{tabular}{lrlllllllllll}
 \hline
@@ -322,11 +344,11 @@ Sublevels (nested lists) are supported for headers, ordered and unordered lists.
 \end{verbatim}
 \end{multicols}
 
-The export \protect\hyperlink{gls-2}{\label{gls-2-use-1}backend} shall provide settings to customise desired formatting outputs of ordered lists (alpha-numeric numbering, dots, parentheses\ldots{}) 
+The export backend shall provide settings to customise desired formatting outputs of ordered lists (alpha-numeric numbering, dots, parentheses\ldots{}) 
 \subsection{Snippets}
-\label{sec:org971a147}
+\label{sec:orgb73281b}
 Tous les blocs de textes peuvent être associées à des tags.
-Un tag s'écrit \texttt{\#<tag>} peut être insérée à n'importe quel endroit du bloc de texte en respectant les rêgles de balisage décrites au paragraphe \ref{sec:orgd1165fe}.
+Un tag s'écrit \texttt{\#<tag>} peut être insérée à n'importe quel endroit du bloc de texte en respectant les rêgles de balisage décrites au paragraphe \ref{sec:orgaa3c234}.
 
 \begin{table}[htbp]
 \caption{liste des snippets}
@@ -352,7 +374,7 @@ L'instruction \texttt{[[[get blocs:?nom-du-tag]]]} peut être complété par un 
 
 Un système de trâme permettant aux utilisateurs de préconfigurer ces documents et de modifier en lot leurs configuration serait un atoût en matière d'expérience utilisateur.
 \subsection{Callouts}
-\label{sec:org8a188ff}
+\label{sec:org9294c20}
 Callouts are bidirectional links inside the current document. They are used to quickly jump to content, a reference, or a definition.
 
 \begin{table}[htbp]
@@ -373,7 +395,7 @@ Header jump & \texttt{[header]} & \\
 \end{tabular}
 \end{table}
 \subsection{Links}
-\label{sec:org9136aab}
+\label{sec:orgd3b3f80}
 Tous les liens suivent l'écriture \texttt{[[<CONTEXT>:<LINK>:<QUERY>][<TEXT>]]} pù seul le \texttt{<LINK>} \textbf{doit} être renseigné. Les autres éléments sont : 
 \begin{itemize}
 \item \texttt{<CONTEXT>} fournis des informations complémentaires pour l'affichage du lien. Cela permet de mettre en oeuvre des affichages adaptés aux images, vidéos, player de musique, flux RSS, etc.
@@ -405,7 +427,7 @@ Email & \texttt{[[mailto:<email>]]} & Display a contact form\\
 \end{tabular}
 \end{table}
 \subsection{Macroprogramme}
-\label{sec:org53a60a1}
+\label{sec:org5e342db}
 Des utilisations avancées de documentation programmatique peuvent faire appel à des macros définies par l'utilisateur ou par la plateforme de service.
 
 Dans quickDoc, ces macros sont appellées avec trois crochets tels que : \texttt{[[[<macro-name>]]]}
@@ -417,15 +439,15 @@ Elles sont définies par l'utilisateur comme ceci :
 ]]]
 \end{verbatim}
 \subsection{Configuration}
-\label{sec:org5f7e3ea}
+\label{sec:org61ed0a6}
 One might consider using a separate file to manage, preserve, and share all its configurations.
-That might be a file for \protect\hyperlink{gls-1}{\label{gls-1-use-5}LML} styles and tweaks, one for special export settings (e.g., \TeX{}, ODT, or HTML).
+That might be a file for LML styles and tweaks, one for special export settings (e.g., \TeX{}, ODT, or HTML).
 A good way to go is by declaring at the first line of the document 
 \begin{verbatim}
 ;;[[[set config file:file1 file:file... file:fileN]]]
 \end{verbatim}
 \subsubsection{Text layout}
-\label{sec:org0b50a57}
+\label{sec:orgf9ec3da}
 First, define a style like
 \begin{verbatim}
 [[[set text_style name:paraghaphe scope:raw-text al:justif size:12 long:80char color:black font:source-sans-pro columns:nil]]]
@@ -436,28 +458,28 @@ Then apply it, it will be set from the statement until the new one.
 [[[use text-style name:paragraphe]]]
 \end{verbatim}
 \section{Consistency analysis}
-\label{sec:org22c5cf5}
+\label{sec:orgddf1e0d}
 A consistent lightweight markup language shall have only one way to format text.
 
-Markdown variants on the \ref{tab:org5bfcfec} are limited to those listed by IANA's "Markdown Variant" \autocite{MarkdownVariants2023}. We exclude SSW and Quarto, the first one is too contextual and the second is based on Pandoc markdown.
+Markdown variants on the \ref{tab:org81af1c1} are limited to those listed by IANA's "Markdown Variant" (??, 2023). We exclude SSW and Quarto, the first one is too contextual and the second is based on Pandoc markdown.
 
 \begin{table}[htbp]
-\caption{\label{tab:org5bfcfec}Text formatting consistency versus Markdown variants}
+\caption{\label{tab:org81af1c1}Text formatting consistency versus Markdown variants}
 \centering
 \begin{tabular}{lrrrrrrrrrrrr}
 \hline
 Format & Bol & Ita & OrL & UnL & Und & Hig & Str & Ver & Cod & Sup & Sub & Com\\
 \hline
 quickDoc & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
-Common Markdown\autocite{johnmacfarlaneCommonMarkSpec2024} &  &  &  &  &  &  &  &  &  &  &  & \\
-MultiMarkdown\autocite{fletchert.penneyMultiMarkdownUsersGuide2023} &  &  &  &  &  &  &  &  &  &  &  & \\
-Github Flavored Markdown\autocite{GitHubFlavoredMarkdown2019} &  &  &  &  &  &  &  &  &  &  &  & \\
-Pandoc\autocite{johnmacfarlanePandocUsersGuide2025} &  &  &  &  &  &  &  &  &  &  &  & \\
-Fountain\autocite{SyntaxFountain} &  &  &  &  &  &  &  &  &  &  &  & \\
-Markdown for RFCs\autocite{thomasleitnerKramdownSyntax} &  &  &  &  &  &  &  &  &  &  &  & \\
+Common Markdown(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+MultiMarkdown(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+Github Flavored Markdown(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+Pandoc(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+Fountain(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+Markdown for RFCs({Thomas Leitner}, ????) &  &  &  &  &  &  &  &  &  &  &  & \\
 Pandoc2rfc &  &  &  &  &  &  &  &  &  &  &  & \\
-Markdown Extra\autocite{PHPMarkdownExtra} &  &  &  &  &  &  &  &  &  &  &  & \\
-Markedly Structured Text\autocite{JupyterbookMystmd2025} &  &  &  &  &  &  &  &  &  &  &  & \\
+Markdown Extra(??, a) &  &  &  &  &  &  &  &  &  &  &  & \\
+Markedly Structured Text(??, 2025a) &  &  &  &  &  &  &  &  &  &  &  & \\
 AsciiDoc &  &  &  &  &  &  &  &  &  &  &  & \\
 reStructuredText &  &  &  &  &  &  &  &  &  &  &  & \\
 Orgdown (Org-Mode) &  &  &  &  &  &  &  &  &  &  &  & \\
@@ -489,23 +511,63 @@ Setext &  &  &  &  &  &  &  &  &  &  &  & \\
 \end{multicols}
 \end{tablenotes}
 \section{Capacity analysis}
-\label{sec:org9d29ef0}
+\label{sec:orgee9d433}
 
 \section{Typesystem compatibility}
-\label{sec:orgdd03df3}
-\section{Termes et définitions}
-\label{sec:org1eb7196}
-\emph{Nous avons beau parler la même langue, nous ne parlons pas toujours le même langage.}
-\begin{multicols}{3}
-\subsection{Glossaire}
-\label{sec:org857aefb}
-\textbf{\hypertarget{gls-5}{Backend}}\hspace*{1em}Couche logicielle gérant la logique métier, la gestion des données et la communication entre les applications\hspace*{.5em}\pageref{gls-2-use-1}
-\subsection{Acronymes}
-\label{sec:org5978807}
-\textbf{\hypertarget{gls-206}{LML}}\hspace*{1em}Lightweight Markup Language\hspace*{.5em}\pageref{gls-1-use-1}, \pageref{gls-1-use-2}, \pageref{gls-1-use-3}, \pageref{gls-1-use-4}, \pageref{gls-1-use-5}
+\label{sec:org1e92624}
+\section{Conclusion}
+\label{sec:org21130ee}
 
-\end{multicols}
-\section{Références}
-\label{sec:org44c844f}
-\printbibliography[heading=none]
+\clearpage
+\section{Références du document}
+\label{sec:org132f5da}
+\subsection{Liste des figures}
+\label{sec:orgd7f2fe1}
+\renewcommand{\listfigurename}{\vspace{-2em}}
+\listoffigures
+\subsection{Liste des tableaux}
+\label{sec:org7b63354}
+\renewcommand{\listtablename}{\vspace{-2em}}
+\listoftables
+\subsection{Liste des codes sources}
+\label{sec:org2666e37}
+\renewcommand{\lstlistingname}{\vspace{-2em}}
+\lstlistoflistings
+\subsection{Liste des glosses}
+\label{sec:org7f3386f}
+\begin{multicols}{2}\small{
+
+}\end{multicols}
+\subsection{Liste des acronymes}
+\label{sec:org14b0d28}
+\begin{multicols}{2}\small{
+
+}\clearpage\end{multicols}
+\section{Bibliographie}
+\label{sec:orgff93bde}
+\begin{multicols}{2}\small{
+\noindent
+Donath, Martin (). \emph{Admonitions - {{Material}} for {{MkDocs}}}.
+
+\noindent
+ (2025). \emph{Ltex-plus/Ltex-Ls-Plus}.
+
+\noindent
+ (a). \emph{Writefull}.
+
+\noindent
+ (2023). \emph{Markdown {{Variants}}}.
+
+\noindent
+ (a). \emph{Syntax – {{Fountain}}}.
+
+\noindent
+ (a). \emph{{{PHP Markdown Extra}}}.
+
+\noindent
+ (2025a). \emph{Jupyter-Book/Mystmd}.
+
+\noindent
+{Thomas Leitner} (). \emph{Kramdown {{Syntax}}}.
+}\clearpage\end{multicols}
 \end{document}

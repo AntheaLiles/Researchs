@@ -1,4 +1,4 @@
-** Définition de contrainte
+* Définition de contrainte
 À l’origine, contraindre et contrainte évoquent l’idée d’une pression exercée pour restreindre la liberté d’action d’une personne [cite:@CONTRAINTEEtymologieCONTRAINTE]. Dans le langage courant, une contrainte désigne tout ce qui force ou limite la liberté d’action [cite:@DefinitionContrainte]. Par extension, le mot s’applique à toute obligation ou règle à laquelle on doit se plier et qui réduit le champ de liberté.
 
 En outre, certains domaines techniques ont des acceptions spécifiques du terme. En droit, une contrainte peut désigner un acte coercitif [cite:@DefinitionContrainte]. En mécanique, le mot contrainte sert à traduire l’anglais stress, soit une force appliquée à un matériau qui tend à le déformer [cite:@francaiseContrainteDictionnaireLAcademie]. Ces usages spécialisés gardent néanmoins l’idée commune de force appliquée ou de limite imposée.
@@ -36,7 +36,7 @@ Expression d'une condition, limitation ou obligation, formulée en langage natur
 
 Par cette définition, la notion de contrainte reste agnostique du cycle de vie du projet. Qu’il s’agisse de la phase de planification, de conception, de réalisation ou d’exploitation, les contraintes forment le fil directeur immuable auquel se référer pour prendre les bonnes décisions.
 
-** Taxonomie des contraintes
+* Taxonomie des contraintes
 #+LATEX: \todo[inline]{Illustrer chaque catégorie de contrainte par des exemples précis}
 #+LATEX: \todo[inline]{expliciter le périmètre de contrainte de la thèse}
 
@@ -49,23 +49,18 @@ La littérature distingue plusieurs dimensions pour classifier les contraintes :
 
 Justifier le besoin d'une "méthode de rédaction générique".
 
-** Médiums et volumétrie
-#+LATEX: \todo[inline]{expliciter la problèmatique : taille du corpus, diversité des sources, silotage des rédactions (pas de travail conjoint entre les organismes producteurs de contraintes), difficulté d'en connaitre, etc.}
-Sources, origines et finalités
+** TODO Contraintes dans l’électrotechnique
+   #+SOURCE: main.pdf §1.2 p.10-12
+   Présenter les contraintes spécifiques aux systèmes électriques (IEC 60364, NF C15-100, sécurité, synchronisation).  
+   Donner un exemple concret (poste de transformation).
 
-# Définition
-Brevets, Normes, Législation, Contrats, Jurisprudences...
+* Cycle de vie des contraintes
+#+SOURCE: 00.02-eduBIM2025.pdf §2.1 p.5-7
+# Identifier les types de contraintes : techniques, fonctionnelles, organisationnelles, environnementales.  
+# Décrire leur cycle de vie : apparition, interprétation, négociation, exécution, vérification.  
+# Faire référence au schéma (fig.1 du document EduBIM).
 
-Volume conséquent => faire un compte du nombre de pages par domaine pour illustrer la problématique.
-
-#+CAPTION: Proposition de représentation des environnements de contraintes
-#+NAME: fig:360-view-engineering-environment
-#+ATTR_LATEX: :placement [htbp]
-[[./svg/360-view-engineering-environment.pdf]]
-
-#+LATEX: \todo[inline]{voie de recherche possible : création d'un service de fourniture de contrainte standardisé et unifié appelable via des requettes API}
-
-** Exercice des contraintes
+** TODO Exercice des contraintes
 #+LATEX: \todo[inline]{expliciter le cycle de vie des contraintes}
 Dans l'industrie de la construction, les parties prenantes se coordonnent dans la réponse à des exigences exprimées. Cette gestion des éxigences vise l'atteinte des objectifs du client en respect des contraintes légales, réglementaires et normatives.
 
@@ -106,7 +101,28 @@ La nature de sa composition s'apparente à une table de jonction d'une base de d
 #+ATTR_LATEX: :placement [htbp]
 [[./svg/db-exigences-lde.pdf]]
 
-** Cadre de travail
+* Impact sur la charge cognitive
+** TODO Médiums et volumétrie
+#+LATEX: \todo[inline]{expliciter la problèmatique : taille du corpus, diversité des sources, silotage des rédactions (pas de travail conjoint entre les organismes producteurs de contraintes), difficulté d'en connaitre, etc.}
+Sources, origines et finalités
+
+# Définition
+Brevets, Normes, Législation, Contrats, Jurisprudences...
+
+Volume conséquent => faire un compte du nombre de pages par domaine pour illustrer la problématique.
+
+#+CAPTION: Proposition de représentation des environnements de contraintes
+#+NAME: fig:360-view-engineering-environment
+#+ATTR_LATEX: :placement [htbp]
+[[./svg/360-view-engineering-environment.pdf]]
+
+#+LATEX: \todo[inline]{voie de recherche possible : création d'un service de fourniture de contrainte standardisé et unifié appelable via des requettes API}
+** TODO Environnement multi-acteur
+   #+SOURCE: 00.02-eduBIM2025.pdf §3 p.8-9
+   Décrire la multiplicité des acteurs et la complexité des interactions.  
+   Présenter les risques d’asymétrie d’information et la charge cognitive associée.  
+   Relier à la théorie de la cognition distribuée (Hutchins, 1995).
+* Cadre de travail
 #+LATEX: \todo[inline]{on pose ici les 3 composantes du projet de recherche lié aux contraintes}
 Les contraintes étant centraux à la caractérisation d'un ouvrage, il convient de définir un cadre de travail rigoureux permettant leurs manipulation.
 
@@ -123,7 +139,7 @@ Préservation des contraintes (capitalisation) : au-delà du respect ponctuel, i
 
 En conjuguant ces trois dimensions, on dote la notion de contrainte d’un véritable cadre de gestion sur le projet en respectant la définition [[def:contrainte]].
 
-** Méthodes de traitement
+** TODO Méthodes de traitement
 Langage naturel :
 - Rédaction
 - Affectation (par des tableaux et matrices)
@@ -131,4 +147,4 @@ Langage naturel :
 - Simulations (éventuellement mais loop sur rapport produit)
 - Model checking : vérification exhaustive d'états finis, non systématique à date et loop sur rapport produit
 
-** Conclusion
+* Conclusion

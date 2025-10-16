@@ -1,0 +1,83 @@
+#+glossary_sources: ~/org/glossary.org
+* Cas d'étude 1 :
+** TODO Présentation du cas d’étude
+   #+SOURCE: 00.02-eduBIM2025.pdf §4 p.10-11
+   Décrire le contexte du poste de transformation ferroviaire.  
+   Lister les acteurs impliqués, leurs rôles et contraintes spécifiques.
+
+** TODO Déploiement du prototype
+   #+SOURCE: main.pdf §6.2 p.80-85
+   Décrire l’architecture logicielle : pipeline CNL → Graph → Solveur → IHM.  
+   Identifier les flux, les technologies, et le protocole d’observation.
+
+** TODO Collecte et analyse des données
+   #+SOURCE: main.pdf §6.4-6.5 p.90-92
+   Présenter la méthodologie d’analyse mixte (quantitative et qualitative).  
+   Décrire les indicateurs de performance et les observations comportementales.
+
+** TODO Validation expérimentale
+   #+SOURCE: main.pdf §7 p.93-95
+   Présenter les résultats et la discussion.  
+   Évaluer l’efficacité du prototype : charge cognitive réduite, détection d’incohérences, traçabilité accrue.
+
+* Cas d'étude 2 : 
+** TODO Présentation du cas d’étude
+   #+SOURCE: 00.02-eduBIM2025.pdf §4 p.10-11
+   Décrire le contexte du poste de transformation ferroviaire.  
+   Lister les acteurs impliqués, leurs rôles et contraintes spécifiques.
+
+** TODO Déploiement du prototype
+   #+SOURCE: main.pdf §6.2 p.80-85
+   Décrire l’architecture logicielle : pipeline CNL → Graph → Solveur → IHM.  
+   Identifier les flux, les technologies, et le protocole d’observation.
+
+** TODO Collecte et analyse des données
+   #+SOURCE: main.pdf §6.4-6.5 p.90-92
+   Présenter la méthodologie d’analyse mixte (quantitative et qualitative).  
+   Décrire les indicateurs de performance et les observations comportementales.
+
+** TODO Validation expérimentale
+   #+SOURCE: main.pdf §7 p.93-95
+   Présenter les résultats et la discussion.  
+   Évaluer l’efficacité du prototype : charge cognitive réduite, détection d’incohérences, traçabilité accrue.
+
+* Cas d'étude 3 : 
+** TODO Présentation du cas d’étude
+   #+SOURCE: 00.02-eduBIM2025.pdf §4 p.10-11
+   Décrire le contexte du poste de transformation ferroviaire.  
+   Lister les acteurs impliqués, leurs rôles et contraintes spécifiques.
+
+** TODO Déploiement du prototype
+   #+SOURCE: main.pdf §6.2 p.80-85
+   Décrire l’architecture logicielle : pipeline CNL → Graph → Solveur → IHM.  
+   Identifier les flux, les technologies, et le protocole d’observation.
+
+** TODO Collecte et analyse des données
+   #+SOURCE: main.pdf §6.4-6.5 p.90-92
+   Présenter la méthodologie d’analyse mixte (quantitative et qualitative).  
+   Décrire les indicateurs de performance et les observations comportementales.
+
+** TODO Validation expérimentale
+   #+SOURCE: main.pdf §7 p.93-95
+   Présenter les résultats et la discussion.  
+   Évaluer l’efficacité du prototype : charge cognitive réduite, détection d’incohérences, traçabilité accrue.
+
+* Analyse des résultats
+** Descriptions
+
+- Analyse de contenu détaillée : En appliquant la méthode d’analyse de contenu au corpus (selon Bardin, par exemple), on poursuit après le codage avec le comptage et la description des thèmes identifiés. Il s’agit de quantifier la fréquence d’apparition de chaque type de problème ou de commentaire pour évaluer leur importance relative. [[https://journals.openedition.org/ripes/2996#:~:text=n%C3%A9gociation%20entre%20ses%20croyances%20propres,Ces%20derni%C3%A8res%20peuvent]]
+
+** Interprétations
+
+- Outils d’analyse qualitative : On peut recourir à des outils informatiques pour faciliter le traitement des données textuelles (par ex. le logiciel RQDA sous R, comme dans l’étude de Chartofylaka et al. [[https://journals.openedition.org/ripes/2996#:~:text=n%C3%A9gociation%20entre%20ses%20croyances%20propres,Ces%20derni%C3%A8res%20peuvent]], ou un logiciel d’analyse qualitative tel que NVivo, Atlas.ti, etc.). Ces outils permettent de coder des segments de texte, de regrouper par thème et d’extraire toutes les citations liées à un thème donné, ce qui accélère l’analyse tout en la rendant traçable.
+- Utilisation du schéma de Barnum : D’après Barnum (domaine de l’ergonomie IHM), une bonne triangulation en évaluation d’interface consiste à comparer trois volets : (1) les mesures de performance objectives, (2) les mesures subjectives (questionnaires, interviews) et (3) la liste des problèmes d’utilisabilité identifiés [[https://cs4760.csl.mtu.edu/2020/lectures/usability-testing/#:~:text=Barnum%20suggests%20triangulation%20analysis%20which,is%20a%20comparison%20of]].
+- Illustration par des exemples : Pour rendre la description des résultats vivante et compréhensible, on prendra soin d’intégrer dans le rapport final des exemples concrets tirés des données qualitatives.
+
+#+CAPTION: Matrice de validation expérimentale — IHM écologique et gestion des contraintes
+#+NAME: table:analyse-validation
+| ID | Variable indépendante (manipulée) | Variable dépendante (mesurée) | Type d’évaluation | Instruments / métriques |
+|----+-----------------------------------+-------------------------------+-------------------+-------------------------|
+|    |                                   |                               |                   |                         |
+|    |                                   |                               |                   |                         |
+
+* Conclusion

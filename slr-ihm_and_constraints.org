@@ -1,4 +1,5 @@
-#+TITLE: Human-computer interaction for business rule management through an ecological interface design, a systematic litterature review 
+#+TITLE: Human-computer interaction for business rule management through an ecological interface design
+#+SUBTITLE: a systematic litterature review 
 #+AUTHOR: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
@@ -9,11 +10,15 @@
 Abstract
 #+end_abstract
 
-#+latex: \textbf{Mots clés : }\keywords{Mots clés}
+#+begin_keyword
+Mots clés
+#+end_keyword
 
 Version et date du protocole : 
 Enregistrement (ex. OSF, Zenodo) : 
 
 format : IMRaD (introduction, methode, results and discussion)
+
+#+INCLUDE: ./thesis/ch02-etat_de_l_art.org
 
 * Bibliography

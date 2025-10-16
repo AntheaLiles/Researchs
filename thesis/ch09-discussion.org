@@ -1,0 +1,42 @@
+#+glossary_sources: ~/org/glossary.org
+* Analyse des contributions
+#+SOURCE: 00.01-Sujet.pdf §9 p.20-21
+** Contributions théoriques
+** Contributions méthodologiques
+- Protocole d’évaluation centré utilisateur
+  
+** Contributions pratiques
+- Modèle d’IHM écologique sensible aux contraintes
+- Prototype validé en environnement réel
+
+* Limites et recommandations
+#+SOURCE: main.pdf §8 p.97-99
+** Limites théoriques
+** Limites pratiques
+** Recommandations
+
+* Perspectives et opportunités
+** Extensions théoriques
+
+#+CAPTION: Vers une ingénierie sans confiance ?
+#+NAME: fig:long-term-goal
+#+ATTR_LATEX: :placement [htbp]
+[[./svg/long-term-goal.pdf]]
+
+** Opportunités de recherche
+- IA
+- Block Chain
+- Solveur de contrainte
+- Analyse statique du texte (NLP)
+- Intégration dynamique d'ontologies métiers
+  
+** Transfert technologique
+#+SOURCE: 00.02-eduBIM2025.pdf §5 p.12-13
+à d'autres industries,
+à la fabrique de la norme et de la législation...
+
+* Impact scientifique et industriel
+** Impact sur la recherche
+** Impact industriel
+** Impact sociétal
+Discuter de la faisabilité et des implications de la refonte de la filière.
